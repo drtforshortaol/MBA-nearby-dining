@@ -1,7 +1,8 @@
 {
-  "appVersion": "0.1.0",
+  "appVersion": "0.1.6",
   "databaseDate": "2026-11-05",
   "eligibleCount": 205,
   "photoCount": 8,
-  "dataPolicy": "Only 205 visitor-recommendation-enabled records exposed; other research remains in original archival package."
+  "dataPolicy": "Only 205 visitor-recommendation-enabled records exposed; other research remains in original archival package.",
+  "mapType": "Offline geographic orientation diagram; no street, route or traffic data"
 }
