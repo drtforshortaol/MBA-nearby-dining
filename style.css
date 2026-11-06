@@ -10,3 +10,6 @@ header{flex-wrap:wrap}.topnav{order:3;display:flex;gap:8px;flex:0 0 100%;align-i
 
 /* 0.1.6: lightweight offline geographic orientation, loaded only when map expands */
 .offlineMap{display:block;width:100%;max-height:300px;aspect-ratio:320/220;border:1px solid #c2d8d8;border-radius:10px;background:#e7f1ef}.mapcontent .muted{line-height:1.45;margin:8px 0}.mapdetails summary{cursor:pointer}
+
+/* v0.1.8 data-derived nearby streets; no external map tiles */
+.streetsMap{max-height:360px;background:#e7eeeb}.mapdetails .mapcontent{padding:8px 0 2px}
