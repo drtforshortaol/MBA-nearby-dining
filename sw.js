@@ -1,0 +1,5 @@
+const CACHE='mba-eatery-v0.1.0';
+const CORE=['./','./index.html','./style.css','./app.js','./qr-local.js','./icon.svg','./manifest.webmanifest','./data/eateries.json','./data/metadata.json'];
+self.addEventListener('install',evt=>{evt.waitUntil(caches.open(CACHE).then(async cache=>{await cache.addAll(CORE);let data=await (await cache.match('./data/eateries.json')).json();await Promise.all(data.filter(r=>r.photo).map(r=>cache.add('./'+r.photo).catch(()=>{})))}).then(()=>self.skipWaiting()))});
+self.addEventListener('activate',evt=>evt.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('mba-eatery-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
+self.addEventListener('fetch',evt=>{let req=evt.request;if(req.method!=='GET'||new URL(req.url).origin!==self.location.origin)return;evt.respondWith(caches.match(req,{ignoreSearch:true}).then(hit=>hit||fetch(req).then(res=>{if(res.ok&&new URL(req.url).pathname.startsWith(new URL(self.registration.scope).pathname)){let clone=res.clone();caches.open(CACHE).then(c=>c.put(req,clone))}return res}).catch(()=>caches.match('./index.html'))))});
