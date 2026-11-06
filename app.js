@@ -1,5 +1,5 @@
 'use strict';
-const APP_VERSION='0.1.6', BASKET_KEY='mba-eatery-basket-v1', FAV_KEY='mba-eatery-favorites-v1';
+const APP_VERSION='0.1.7', BASKET_KEY='mba-eatery-basket-v1', FAV_KEY='mba-eatery-favorites-v1';
 let eateries=[],byId=new Map(),basket=[],favorites=[],mode='explore',selected=null,travel='walk',query='',quick='',limit='all',sort='name',photoExpanded=false,shared=false,navHistory=[],filters={cuisine:'all',price:[],family:'all',alcohol:'all',ocean:'all',entertainment:'all'};
 const $=id=>document.getElementById(id);
 const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -47,6 +47,22 @@ function offlineMapSVG(r){
     <text x="12" y="205" font-size="10" fill="#31545c">Not a street map · position approximate · no route guidance</text>
   </svg><p class="muted">${safe(subtitle)} Map uses stored coordinates and works without internet. Grid is not a representation of streets. Approximate viewing radius: ${viewScale} km.</p>`;
 }
+
+/* Approximate, static proximity estimates, not mapped route lengths. Replace with
+   separately sourced walking/driving routing measurements as they are verified. */
+const AQUARIUM_ENTRANCE={lat:36.617833,lon:-121.902000};
+function travelEstimate(r,method){
+  if(!Number.isFinite(r.lat)||!Number.isFinite(r.lon))return null;
+  const rad=Math.PI/180, dLat=(r.lat-AQUARIUM_ENTRANCE.lat)*rad;
+  const dLon=(r.lon-AQUARIUM_ENTRANCE.lon)*rad;
+  const h=Math.sin(dLat/2)**2+Math.cos(r.lat*rad)*Math.cos(AQUARIUM_ENTRANCE.lat*rad)*Math.sin(dLon/2)**2;
+  const straight=3958.7613*2*Math.asin(Math.min(1,Math.sqrt(h)));
+  // Local detour allowances are deliberately rough: NOT an actual pedestrian or road route.
+  const miles=Math.max(0.1,straight*(method==='drive'?1.5:1.3));
+  const minutes=Math.max(method==='drive'?3:2,Math.ceil((miles/(method==='drive'?15:3))*60+(method==='drive'?2:0)));
+  return {miles:Math.round(miles*10)/10,minutes,method:'coordinate-proxy'};
+}
+const travelLabel=(r,method)=>{let e=travelEstimate(r,method);return e?('~'+e.miles.toFixed(1)+' mi · ~'+e.minutes+' min'):'Distance/time not yet estimated'};
 
 function filtered(){let a=eateries.filter(r=>{if(query&&!([r.name,r.address,r.cuisine,r.city].join(' ').toLowerCase().includes(query.toLowerCase())))return false;if(quick){let s=(r.cuisine+' '+r.name).toLowerCase();if(quick==='seafood'&&!/seafood|fish|oyster|clam|crab|sushi/.test(s))return false;if(quick==='pizza'&&!/pizza|pizzeria|italian/.test(s))return false;if(quick==='coffee'&&!/coffee|cafe|espresso|bakery|tea/.test(s))return false;if(quick==='favorites'&&!favorites.includes(r.id))return false;}if(filters.cuisine!=='all'&&cuisineGroup(r)!==filters.cuisine)return false;if(filters.price.length&&!filters.price.includes(verifiedFacet(r,'price')))return false;for(let key of ['family','alcohol','ocean','entertainment']){if(filters[key]!=='all'&&verifiedFacet(r,key)!==filters[key])return false}if(limit!=='all'){let est=travelEstimate(r,travel);if(!est||est.minutes>Number(limit))return false;}return true});if(sort==='name')a.sort((x,y)=>x.name.localeCompare(y.name));else if(sort==='distance')a.sort((x,y)=>(travelEstimate(x,travel)?.miles??Infinity)-(travelEstimate(y,travel)?.miles??Infinity)||x.name.localeCompare(y.name));return a}
 function card(r){let inBasket=basket.includes(r.id),fav=favorites.includes(r.id);return `<article class="card"><div class="cardhead">${photo(r)}<div class="cardbody"><h2>${safe(r.name)} ${fav?'★':''}</h2><div class="meta">${safe(r.address)}<br><span class="small">${safe(r.cuisine||'Cuisine not yet verified')}</span></div><div class="small">Walk: ${travelLabel(r,'walk')}<br>Drive: ${travelLabel(r,'drive')}<br>Price not verified</div></div></div><div class="actions"><a href="${r.phoneDigits?'tel:'+safe(r.phoneDigits):'#'}" ${r.phoneDigits?'':'aria-disabled="true" onclick="return false"'}>Call</a><button data-action="copyAddress" data-id="${r.id}">Copy Address</button><a href="${safe(r.website||'#')}" ${r.website?'target="_blank" rel="noopener"':'aria-disabled="true" onclick="return false"'}>Website/Menu</a></div><div class="actions"><button data-action="basket" data-id="${r.id}" class="${inBasket?'selected':''}">${inBasket?'✓ Added':'＋ Add to Share'}</button><button data-action="go" data-id="${r.id}" class="primary">Let's Go →</button><button data-action="favorite" data-id="${r.id}" aria-label="${fav?'Remove favorite':'Mark favorite'}">${fav?'★':'☆'}</button></div><details><summary>Details & availability</summary><div class="detail"><b>Hours:</b> ${safe(r.hours||'Current hours not verified')}<br><b>Menu:</b> ${r.website?`<a href="${safe(r.website)}" target="_blank" rel="noopener">Restaurant website / research lead</a>`:'No verified menu link'}<br><b>Restaurant accessibility:</b> Not verified<br><b>Route accessibility:</b> Not verified<br><b>Outdoor seating:</b> Not verified<br><b>Dietary options:</b> Not verified<br>${r.statusNote?`<b>Important note:</b> ${safe(r.statusNote)}<br>`:''}${r.photo&&r.photoCaution?`<b>Photo:</b> ${safe(r.photoCaution)}<br>`:''}${r.photo&&r.photoCreator?`<b>Photo credit:</b> ${safe(r.photoCreator)} (${safe(r.photoDate||'date unknown')}). <a href="${safe(r.photoSource)}" target="_blank" rel="noopener">Source and reuse terms</a>. ${safe(r.photoLicense)}<br>`:''}<span class="muted">Research ID: ${safe(r.id)}</span></div></details>${locationMap(r)}</article>`}
