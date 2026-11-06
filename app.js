@@ -1,5 +1,5 @@
 'use strict';
-const APP_VERSION='0.1.7', BASKET_KEY='mba-eatery-basket-v1', FAV_KEY='mba-eatery-favorites-v1';
+const APP_VERSION='0.1.8', BASKET_KEY='mba-eatery-basket-v1', FAV_KEY='mba-eatery-favorites-v1';
 let eateries=[],byId=new Map(),basket=[],favorites=[],mode='explore',selected=null,travel='walk',query='',quick='',limit='all',sort='name',photoExpanded=false,shared=false,navHistory=[],filters={cuisine:'all',price:[],family:'all',alcohol:'all',ocean:'all',entertainment:'all'};
 const $=id=>document.getElementById(id);
 const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -17,52 +17,81 @@ function home(){if($('lightbox'))$('lightbox').remove();navHistory=[];mode='expl
 const cuisineGroup=r=>{let s=(r.cuisine||'').toLowerCase();if(/seafood|fish|oyster|clam|crab|sushi/.test(s))return 'seafood';if(/pizza|pizzeria/.test(s))return 'pizza';if(/coffee|café|cafe|espresso|tea|bakery/.test(s))return 'coffee';if(/mexican|taco|burrito|latin/.test(s))return 'mexican';if(/italian|pasta/.test(s))return 'italian';if(/asian|japanese|chinese|thai|korean|vietnamese|ramen/.test(s))return 'asian';if(/american|burger|sandwich|bbq|steak|grill/.test(s))return 'american';return 'other'};
 const verifiedFacet=(r,key)=>{let v=r.attributes?.[key];return v&&v.status==='verified'?String(v.value).toLowerCase():null};
 const facetOptions=(key,items)=>items.map(([value,label])=>`<option value="${value}" ${filters[key]===value?'selected':''}>${label}</option>`).join('');
-function locationMap(r){return `<details class="mapdetails" data-map-id="${safe(r.id)}"><summary>🗺 Offline location map (tap to open)</summary><div class="mapcontent" data-map-content><p class="muted">Open to show a simple offline location diagram.</p></div></details>`}
+function locationMap(r){return `<details class="mapdetails" data-map-id="${safe(r.id)}"><summary>🗺 Nearby streets & landmarks (offline)</summary><div class="mapcontent" data-map-content><p class="muted">Tap to view nearby street corridors and landmarks.</p></div></details>`}
 function offlineMapSVG(r){
-  if(!Number.isFinite(r.lat)||!Number.isFinite(r.lon))return `<p class="notice">An accurate location pin has not yet been established for this eatery. Copy the address to find it in your preferred map app.</p>`;
-  // Geographic marker orientation only — no streets, turns, routes, or traffic.
-  const rad=Math.PI/180, lat0=(r.lat+AQUARIUM_ENTRANCE.lat)/2;
-  const lon0=(r.lon+AQUARIUM_ENTRANCE.lon)/2;
-  const kmPerLat=111.195,kmPerLon=111.195*Math.cos(lat0*rad);
-  const deltaX=(r.lon-AQUARIUM_ENTRANCE.lon)*kmPerLon,deltaY=(r.lat-AQUARIUM_ENTRANCE.lat)*kmPerLat;
-  const separation=Math.hypot(deltaX,deltaY);
-  const range=Math.max(.28,separation*.74);
-  const position=(lat,lon)=>({
-    x:160+(lon-lon0)*kmPerLon/range*113,
-    y:110-(lat-lat0)*kmPerLat/range*73
-  });
-  const aquarium=position(AQUARIUM_ENTRANCE.lat,AQUARIUM_ENTRANCE.lon),destination=position(r.lat,r.lon);
-  const viewScale=Math.max(.1,Math.round(range*100)/100);
-  const subtitle=separation<.08?'Nearby location markers may overlap.':'Line shows straight-line separation, not a walking or driving route.';
-  return `<svg class="offlineMap" viewBox="0 0 320 220" role="img" aria-label="Offline orientation diagram with Monterey Bay Aquarium and ${safe(r.name)} pins">
-    <rect x="0" y="0" width="320" height="220" rx="10" fill="#e7f1ef"/>
-    <path d="M0 55H320 M0 110H320 M0 165H320 M80 0V220 M160 0V220 M240 0V220" stroke="#c9dbd8" stroke-width="1" fill="none" aria-hidden="true"/>
-    <text x="16" y="22" font-size="12" font-weight="700" fill="#234a55">OFFLINE LOCATION DIAGRAM</text>
-    <text x="284" y="22" font-size="12" font-weight="700" fill="#234a55">N ↑</text>
-    <line x1="${aquarium.x.toFixed(1)}" y1="${aquarium.y.toFixed(1)}" x2="${destination.x.toFixed(1)}" y2="${destination.y.toFixed(1)}" stroke="#5a8490" stroke-dasharray="5 5" stroke-width="2"/>
-    <circle cx="${aquarium.x.toFixed(1)}" cy="${aquarium.y.toFixed(1)}" r="10" fill="#0b687a" stroke="white" stroke-width="3"/>
-    <text x="${aquarium.x.toFixed(1)}" y="${(aquarium.y+25).toFixed(1)}" font-size="11" font-weight="700" text-anchor="middle" fill="#17414d">Aquarium</text>
-    <circle cx="${destination.x.toFixed(1)}" cy="${destination.y.toFixed(1)}" r="10" fill="#ca6536" stroke="white" stroke-width="3"/>
-    <text x="${destination.x.toFixed(1)}" y="${(destination.y-16).toFixed(1)}" font-size="11" font-weight="700" text-anchor="middle" fill="#783f25">Eatery</text>
-    <text x="12" y="205" font-size="10" fill="#31545c">Not a street map · position approximate · no route guidance</text>
-  </svg><p class="muted">${safe(subtitle)} Map uses stored coordinates and works without internet. Grid is not a representation of streets. Approximate viewing radius: ${viewScale} km.</p>`;
+  if(!Number.isFinite(r.lat)||!Number.isFinite(r.lon))return '<p class="notice">Location coordinates are not yet verified. Copy the address to locate this eatery in your maps app.</p>';
+  const anchor=AQUARIUM_ENTRANCE;
+  const kmLon=111.195*Math.cos(((r.lat+anchor.lat)/2)*Math.PI/180);
+  const xy=p=>({x:p.lon*kmLon,y:p.lat*111.195});
+  const A=xy(anchor),B=xy(r),center={x:(A.x+B.x)/2,y:(A.y+B.y)/2};
+  const factor=Math.min(280/(Math.abs(B.x-A.x)+.8),184/(Math.abs(B.y-A.y)+.6),300);
+  const project=p=>{const q=xy(p);return {x:180+(q.x-center.x)*factor,y:135-(q.y-center.y)*factor}};
+  const visible=p=>p.x>-20&&p.x<380&&p.y>-20&&p.y<290;
+  const title='OFFLINE NEIGHBORHOOD ORIENTATION';
+  const segments=[];
+  const groups=new Map();
+  const normalizeStreet=address=>{
+    if(!address)return null;
+    let s=address.replace(/^\s*\d+[A-Z\-\/]*\s+/i,'').replace(/,.*$/,'').replace(/\s+(?:Suite|Ste|Unit|#)\s*[\w-]+.*$/i,'').trim();
+    s=s.replace(/\bAvenue\b/gi,'Ave').replace(/\bStreet\b/gi,'St').replace(/\bBoulevard\b/gi,'Blvd').replace(/\bRoad\b/gi,'Rd');
+    if(!/\b(?:St|Ave|Blvd|Row|Rd)\b/i.test(s)||s.length>32)return null;
+    return s;
+  };
+  for(const item of eateries){
+    if(!Number.isFinite(item.lat)||!Number.isFinite(item.lon))continue;
+    const name=normalizeStreet(item.address);
+    if(!name)continue;
+    const p=project(item);
+    if(!visible(p))continue;
+    const key=name.toLowerCase();
+    if(!groups.has(key))groups.set(key,{name,points:[]});
+    let arr=groups.get(key).points;
+    if(!arr.some(q=>Math.hypot(q.x-p.x,q.y-p.y)<2))arr.push(p);
+  }
+  const strokes=[],labels=[];
+  for(const group of groups.values()){
+    const points=group.points;
+    if(points.length<2)continue;
+    const dx=Math.max(...points.map(p=>p.x))-Math.min(...points.map(p=>p.x));
+    const dy=Math.max(...points.map(p=>p.y))-Math.min(...points.map(p=>p.y));
+    points.sort((p,q)=>dx>dy?p.x-q.x:p.y-q.y);
+    let best=null;
+    for(let i=1;i<points.length;i++){
+      const a=points[i-1],b=points[i],length=Math.hypot(a.x-b.x,a.y-b.y);
+      if(length>factor*.7||length<3)continue; // Don't connect distant, disconnected venues.
+      strokes.push('<path d="M'+a.x.toFixed(1)+' '+a.y.toFixed(1)+' L'+b.x.toFixed(1)+' '+b.y.toFixed(1)+'" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>');
+      strokes.push('<path d="M'+a.x.toFixed(1)+' '+a.y.toFixed(1)+' L'+b.x.toFixed(1)+' '+b.y.toFixed(1)+'" fill="none" stroke="#aec6c2" stroke-width="5" stroke-linecap="round"/>');
+      if(!best||length>best.length)best={length,x:(a.x+b.x)/2,y:(a.y+b.y)/2};
+    }
+    if(best&&best.x>25&&best.x<335&&best.y>35&&best.y<235)labels.push({text:group.name,x:best.x,y:best.y});
+  }
+  const out=['<svg class="offlineMap streetsMap" viewBox="0 0 360 285" role="img" aria-label="Offline neighborhood diagram with approximate street corridors, the Aquarium and the selected eatery">',
+   '<rect width="360" height="285" rx="12" fill="#e7eeeb"/>',
+   '<text x="12" y="19" font-size="11" font-weight="700" fill="#154d5b">'+title+'</text>',
+   '<text x="326" y="19" font-size="12" font-weight="700" fill="#154d5b">N ↑</text>'];
+  out.push(...strokes);
+  let occupied=[];
+  for(let item of labels.sort((a,b)=>a.text.localeCompare(b.text))){
+    if(occupied.some(p=>Math.hypot(item.x-p.x,item.y-p.y)<31))continue;
+    occupied.push(item);
+    out.push('<text x="'+item.x.toFixed(1)+'" y="'+(item.y-5).toFixed(1)+'" text-anchor="middle" font-size="10.5" font-weight="600" stroke="#e7eeeb" stroke-width="3" paint-order="stroke" fill="#42636b">'+safe(item.text)+'</text>');
+  }
+  const wharf=eateries.filter(e=>/Fisherman.s Wharf/i.test(e.address||'')&&Number.isFinite(e.lat)&&Number.isFinite(e.lon));
+  if(wharf.length>=2){
+    const p=project({lat:wharf.reduce((a,b)=>a+b.lat,0)/wharf.length,lon:wharf.reduce((a,b)=>a+b.lon,0)/wharf.length});
+    if(visible(p))out.push('<circle cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="4" fill="#617e82"/><text x="'+p.x.toFixed(1)+'" y="'+(p.y-12).toFixed(1)+'" font-size="10" text-anchor="middle" fill="#345964">Old Fisherman’s Wharf area</text>');
+  }
+  const a=project(anchor),b=project(r);
+  const pin=(p,color,text,dy)=>'<circle cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="10" fill="'+color+'" stroke="white" stroke-width="3"/><text x="'+p.x.toFixed(1)+'" y="'+(p.y+dy).toFixed(1)+'" font-size="12" font-weight="700" text-anchor="middle" stroke="#e7eeeb" stroke-width="3.5" paint-order="stroke" fill="#143c47">'+text+'</text>';
+  out.push(pin(a,'#08667a','Aquarium',25),pin(b,'#c85830','Selected eatery',-16));
+  const scalePx=factor*.25;
+  out.push('<rect x="0" y="260" width="360" height="25" fill="#d6e7e2"/>',
+    '<path d="M15 275 h'+scalePx.toFixed(1)+'" stroke="#1f535d" stroke-width="3"/>',
+    '<text x="'+(20+scalePx).toFixed(1)+'" y="278" font-size="10" fill="#1f535d">~250 m</text>',
+    '<text x="350" y="278" font-size="9" fill="#45636b" text-anchor="end">Schematic street corridors</text>','</svg>');
+  const n=strokes.length/2;
+  return out.join('')+'<p class="muted">Neighborhood orientation only: '+n+' approximate street segments inferred from restaurant coordinates. Street shapes, intersections and entrances are <strong>not surveyed or route-ready</strong>. No internet required. Copy the address for actual navigation.</p>';
 }
-
-/* Approximate, static proximity estimates, not mapped route lengths. Replace with
-   separately sourced walking/driving routing measurements as they are verified. */
-const AQUARIUM_ENTRANCE={lat:36.617833,lon:-121.902000};
-function travelEstimate(r,method){
-  if(!Number.isFinite(r.lat)||!Number.isFinite(r.lon))return null;
-  const rad=Math.PI/180, dLat=(r.lat-AQUARIUM_ENTRANCE.lat)*rad;
-  const dLon=(r.lon-AQUARIUM_ENTRANCE.lon)*rad;
-  const h=Math.sin(dLat/2)**2+Math.cos(r.lat*rad)*Math.cos(AQUARIUM_ENTRANCE.lat*rad)*Math.sin(dLon/2)**2;
-  const straight=3958.7613*2*Math.asin(Math.min(1,Math.sqrt(h)));
-  // Local detour allowances are deliberately rough: NOT an actual pedestrian or road route.
-  const miles=Math.max(0.1,straight*(method==='drive'?1.5:1.3));
-  const minutes=Math.max(method==='drive'?3:2,Math.ceil((miles/(method==='drive'?15:3))*60+(method==='drive'?2:0)));
-  return {miles:Math.round(miles*10)/10,minutes,method:'coordinate-proxy'};
-}
-const travelLabel=(r,method)=>{let e=travelEstimate(r,method);return e?('~'+e.miles.toFixed(1)+' mi · ~'+e.minutes+' min'):'Distance/time not yet estimated'};
 
 function filtered(){let a=eateries.filter(r=>{if(query&&!([r.name,r.address,r.cuisine,r.city].join(' ').toLowerCase().includes(query.toLowerCase())))return false;if(quick){let s=(r.cuisine+' '+r.name).toLowerCase();if(quick==='seafood'&&!/seafood|fish|oyster|clam|crab|sushi/.test(s))return false;if(quick==='pizza'&&!/pizza|pizzeria|italian/.test(s))return false;if(quick==='coffee'&&!/coffee|cafe|espresso|bakery|tea/.test(s))return false;if(quick==='favorites'&&!favorites.includes(r.id))return false;}if(filters.cuisine!=='all'&&cuisineGroup(r)!==filters.cuisine)return false;if(filters.price.length&&!filters.price.includes(verifiedFacet(r,'price')))return false;for(let key of ['family','alcohol','ocean','entertainment']){if(filters[key]!=='all'&&verifiedFacet(r,key)!==filters[key])return false}if(limit!=='all'){let est=travelEstimate(r,travel);if(!est||est.minutes>Number(limit))return false;}return true});if(sort==='name')a.sort((x,y)=>x.name.localeCompare(y.name));else if(sort==='distance')a.sort((x,y)=>(travelEstimate(x,travel)?.miles??Infinity)-(travelEstimate(y,travel)?.miles??Infinity)||x.name.localeCompare(y.name));return a}
 function card(r){let inBasket=basket.includes(r.id),fav=favorites.includes(r.id);return `<article class="card"><div class="cardhead">${photo(r)}<div class="cardbody"><h2>${safe(r.name)} ${fav?'★':''}</h2><div class="meta">${safe(r.address)}<br><span class="small">${safe(r.cuisine||'Cuisine not yet verified')}</span></div><div class="small">Walk: ${travelLabel(r,'walk')}<br>Drive: ${travelLabel(r,'drive')}<br>Price not verified</div></div></div><div class="actions"><a href="${r.phoneDigits?'tel:'+safe(r.phoneDigits):'#'}" ${r.phoneDigits?'':'aria-disabled="true" onclick="return false"'}>Call</a><button data-action="copyAddress" data-id="${r.id}">Copy Address</button><a href="${safe(r.website||'#')}" ${r.website?'target="_blank" rel="noopener"':'aria-disabled="true" onclick="return false"'}>Website/Menu</a></div><div class="actions"><button data-action="basket" data-id="${r.id}" class="${inBasket?'selected':''}">${inBasket?'✓ Added':'＋ Add to Share'}</button><button data-action="go" data-id="${r.id}" class="primary">Let's Go →</button><button data-action="favorite" data-id="${r.id}" aria-label="${fav?'Remove favorite':'Mark favorite'}">${fav?'★':'☆'}</button></div><details><summary>Details & availability</summary><div class="detail"><b>Hours:</b> ${safe(r.hours||'Current hours not verified')}<br><b>Menu:</b> ${r.website?`<a href="${safe(r.website)}" target="_blank" rel="noopener">Restaurant website / research lead</a>`:'No verified menu link'}<br><b>Restaurant accessibility:</b> Not verified<br><b>Route accessibility:</b> Not verified<br><b>Outdoor seating:</b> Not verified<br><b>Dietary options:</b> Not verified<br>${r.statusNote?`<b>Important note:</b> ${safe(r.statusNote)}<br>`:''}${r.photo&&r.photoCaution?`<b>Photo:</b> ${safe(r.photoCaution)}<br>`:''}${r.photo&&r.photoCreator?`<b>Photo credit:</b> ${safe(r.photoCreator)} (${safe(r.photoDate||'date unknown')}). <a href="${safe(r.photoSource)}" target="_blank" rel="noopener">Source and reuse terms</a>. ${safe(r.photoLicense)}<br>`:''}<span class="muted">Research ID: ${safe(r.id)}</span></div></details>${locationMap(r)}</article>`}
