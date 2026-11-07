@@ -1,0 +1,31 @@
+name: Eatery QC
+on:
+  push:
+    branches:
+      - qc/integration-20261107
+      - 'work/**'
+  workflow_dispatch:
+jobs:
+  static-checks:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate coordinates and permanent IDs
+        run: node qc/check-coordinates.cjs
+      - name: Validate offline assets and photo references
+        run: node qc/check-offline-assets.cjs
+      - name: Validate hours audit against restaurant data
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const rows=JSON.parse(fs.readFileSync('data/eateries.json','utf8'));
+          const audit=JSON.parse(fs.readFileSync('qc/hours-audit-20261107.json','utf8'));
+          const missing=rows.filter(r=>!r.hours).map(r=>r.id);
+          if(audit.missingHoursCount!==missing.length||JSON.stringify(audit.missingHoursIds)!==JSON.stringify(missing))throw Error('Hours audit out of sync');
+          console.log('Hours audit matches '+rows.length+' records; '+missing.length+' missing schedules');
+          NODE

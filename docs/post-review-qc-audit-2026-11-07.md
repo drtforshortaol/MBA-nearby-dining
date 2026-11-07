@@ -1,0 +1,514 @@
+# Post-review database QC audit — 2026-11-07
+
+Source: main at 4a1aca791696dbb3445d4b6987f1d9d0cacee532. Automated static field audit only; no external restaurant verification or device testing.
+
+| Check | Count |
+|---|---:|
+| Restaurants | 205 |
+| Unique permanent IDs | 205 |
+| Batch review objects | 205 |
+| Missing coordinates | 9 |
+| Out-of-region numeric coordinates | 0 |
+| Missing hours | 122 |
+| Hours not marked verified | 140 |
+| Missing website | 7 |
+| Missing photo | 196 |
+| Present photo references | 9 |
+| Duplicate normalized names | 0 |
+| Incomplete standard review fields | 5 |
+
+Counts overlap; do not sum as unique affected records. Photo paths and URLs were not checked for reachability. Hours verification flag is not a substitute for independent verification. Status, address accuracy, photo correctness and conflicting hours require additional source research.
+
+## Missing coordinates (9)
+- MBA-DINE-0102 — Crabby Jim's
+- MBA-DINE-0103 — Crab Louie's Bistro
+- MBA-DINE-0104 — Domenico's on the Wharf
+- MBA-DINE-0105 — Grotto Fish Market / Kokomo's
+- MBA-DINE-0113 — Dock Side Fish Market
+- MBA-DINE-0179 — Sandbar & Grill
+- MBA-DINE-0190 — Cold Stone Creamery (Del Monte Center)
+- MBA-DINE-0194 — Little Korea
+- MBA-DINE-0210 — Comanche Cellars Wine Room
+
+## Missing websites (7)
+- MBA-DINE-0002 — Beans of Eden
+- MBA-DINE-0045 — La Bahia Mexican American Restaurant
+- MBA-DINE-0054 — Sunrise Cafe
+- MBA-DINE-0181 — Gelato By The Sea
+- MBA-DINE-0199 — Chopstix Vietnamese Restaurant
+- MBA-DINE-0200 — Krua Thai Restaurant
+- MBA-DINE-0201 — The Wild Plum Cafe
+
+## Incomplete review metadata (5)
+- MBA-DINE-0010 — Ghirardelli Ice Cream & Chocolate Shop (missing verifiedFields)
+- MBA-DINE-0013 — Lalla Oceanside Grill (missing verifiedFields)
+- MBA-DINE-0015 — Louie Linguini's (missing verifiedFields)
+- MBA-DINE-0031 — Bistro Moulin (missing verifiedFields)
+- MBA-DINE-0032 — Monterey Bay Aquarium Cafe (missing verifiedFields)
+
+## Missing hours (122)
+- MBA-DINE-0002 — Beans of Eden
+- MBA-DINE-0005 — Cannery Pizza Company
+- MBA-DINE-0008 — Dippin' Dots
+- MBA-DINE-0010 — Ghirardelli Ice Cream & Chocolate Shop
+- MBA-DINE-0011 — Great American Cookies
+- MBA-DINE-0014 — Lilly Mae's Cinnamon Rolls
+- MBA-DINE-0017 — Paper Wing Theatre & Supper Club
+- MBA-DINE-0023 — The Fish Hopper
+- MBA-DINE-0027 — Tipsy Putt Monterey
+- MBA-DINE-0028 — Troya Turkish Delight & Coffee
+- MBA-DINE-0034 — Osteria Al Mare
+- MBA-DINE-0035 — Piccolo
+- MBA-DINE-0036 — American Burger
+- MBA-DINE-0038 — Curry Journey
+- MBA-DINE-0042 — Hula's Island Grill
+- MBA-DINE-0045 — La Bahia Mexican American Restaurant
+- MBA-DINE-0054 — Sunrise Cafe
+- MBA-DINE-0058 — Starbucks Coffee (Lighthouse District)
+- MBA-DINE-0065 — Cafe Guarani
+- MBA-DINE-0069 — Happy Girl Kitchen Company
+- MBA-DINE-0070 — Hops and Fog Brewing Co
+- MBA-DINE-0072 — International Cuisine
+- MBA-DINE-0073 — La Mia Cucina Ristorante
+- MBA-DINE-0074 — Monarch Pub & Restaurant
+- MBA-DINE-0075 — Pacific Thai Cuisine
+- MBA-DINE-0078 — The Perfect Crumb Bakery
+- MBA-DINE-0079 — Petra Restaurant
+- MBA-DINE-0081 — Red House Cafe
+- MBA-DINE-0084 — Toasties Cafe
+- MBA-DINE-0086 — Wild Fish Restaurant
+- MBA-DINE-0087 — Winston's - A Brunch Place
+- MBA-DINE-0088 — Zum Sushi
+- MBA-DINE-0089 — Alfredo's Pastaria & Mozzarella Bar
+- MBA-DINE-0090 — Jersey Mike's Subs
+- MBA-DINE-0092 — Little Chicken House
+- MBA-DINE-0093 — Los Amigos Restaurante
+- MBA-DINE-0094 — Love Thai Cuisine
+- MBA-DINE-0096 — Michael's Grill & Taqueria
+- MBA-DINE-0097 — Patisserie Bechler
+- MBA-DINE-0099 — Subway Sandwiches
+- MBA-DINE-0100 — Rockfish Harbor Grill
+- MBA-DINE-0101 — Abalonetti Bar & Grill
+- MBA-DINE-0102 — Crabby Jim's
+- MBA-DINE-0103 — Crab Louie's Bistro
+- MBA-DINE-0104 — Domenico's on the Wharf
+- MBA-DINE-0105 — Grotto Fish Market / Kokomo's
+- MBA-DINE-0106 — Old Fisherman's Grotto
+- MBA-DINE-0107 — The Gig Monterey (formerly Paluca Trattoria)
+- MBA-DINE-0108 — Monterey Crab House
+- MBA-DINE-0113 — Dock Side Fish Market
+- MBA-DINE-0114 — Fish and Chips Cafe
+- MBA-DINE-0115 — Domenico's Fish Market and Deli
+- MBA-DINE-0116 — Monterey Bay Creamery
+- MBA-DINE-0117 — Kafe Toribashi
+- MBA-DINE-0118 — Ad Astra Bread Co
+- MBA-DINE-0119 — Albatross Ridge Winery & Kitchen
+- MBA-DINE-0120 — Alejandro's
+- MBA-DINE-0125 — Bagel Bakery
+- MBA-DINE-0127 — Bobalicious and Bites
+- MBA-DINE-0130 — China Garden
+- MBA-DINE-0131 — Chipotle
+- MBA-DINE-0132 — Chong's Szechwan Restaurant
+- MBA-DINE-0134 — Crown and Anchor
+- MBA-DINE-0136 — East Village Cafe
+- MBA-DINE-0138 — Esteban Restaurant
+- MBA-DINE-0139 — Fin + Field
+- MBA-DINE-0140 — Full Moon Mandarin Cuisine
+- MBA-DINE-0141 — Ike's Love and Sandwiches
+- MBA-DINE-0143 — Jamba
+- MBA-DINE-0144 — Kuma Sushi
+- MBA-DINE-0145 — La Casa del Sazon
+- MBA-DINE-0147 — Melville Tavern
+- MBA-DINE-0148 — MidiCi Neapolitan Pizza
+- MBA-DINE-0150 — Mundos Sandwich & Burger House
+- MBA-DINE-0151 — Nacho Bizness
+- MBA-DINE-0152 — Nami
+- MBA-DINE-0153 — Nick the Greek
+- MBA-DINE-0154 — Ocean Sushi Deli
+- MBA-DINE-0155 — Old Monterey Cafe
+- MBA-DINE-0156 — Panda Express
+- MBA-DINE-0157 — Papa Chano's Taqueria
+- MBA-DINE-0159 — Peet's Coffee & Tea
+- MBA-DINE-0160 — Perfectly Pressed Juice
+- MBA-DINE-0162 — Petra Cafe
+- MBA-DINE-0163 — Plumes Coffee House
+- MBA-DINE-0164 — Red's Donuts
+- MBA-DINE-0167 — Round Table Pizza
+- MBA-DINE-0168 — Siamese Bay Restaurant
+- MBA-DINE-0169 — Six Over Coffee and Company
+- MBA-DINE-0171 — Subway Sandwiches & Salads
+- MBA-DINE-0173 — Taco Bell
+- MBA-DINE-0174 — Terra Superfoods
+- MBA-DINE-0175 — Toribashi
+- MBA-DINE-0176 — Turn 12 Bar & Grill
+- MBA-DINE-0177 — TZone Monterey
+- MBA-DINE-0180 — Taste Cafe & Bistro
+- MBA-DINE-0181 — Gelato By The Sea
+- MBA-DINE-0185 — Aquino's Birrieria & Brunch
+- MBA-DINE-0188 — Monterey’s Fish House
+- MBA-DINE-0189 — Chipotle Mexican Grill (Del Monte Center)
+- MBA-DINE-0191 — Dametra Fresh Mediterranean
+- MBA-DINE-0192 — Kona Steak & Seafood
+- MBA-DINE-0193 — Lalla Grill Del Monte
+- MBA-DINE-0194 — Little Korea
+- MBA-DINE-0195 — Pizza My Heart (Del Monte Center)
+- MBA-DINE-0196 — Poke House (Del Monte Center)
+- MBA-DINE-0197 — Starbucks (Del Monte Center)
+- MBA-DINE-0198 — California Pizza Kitchen (Del Monte Center)
+- MBA-DINE-0199 — Chopstix Vietnamese Restaurant
+- MBA-DINE-0200 — Krua Thai Restaurant
+- MBA-DINE-0201 — The Wild Plum Cafe
+- MBA-DINE-0204 — Rice and Roots
+- MBA-DINE-0205 — Scoops Ice Cream Parlor
+- MBA-DINE-0212 — Carmel Bakery and Coffee House
+- MBA-DINE-0213 — Indian Summer Hookah Lounge, Bar & Grill
+- MBA-DINE-0215 — Puma Road at Portola Plaza
+- MBA-DINE-0217 — Benny Walker's
+- MBA-DINE-0218 — Compact Disco — EAT takeout window
+- MBA-DINE-0224 — Mountain Mike's Pizza — Monterey/Abrego
+- MBA-DINE-0225 — Pretzelmaker
+- MBA-DINE-0229 — Whole Foods Market — Prepared Foods
+- MBA-DINE-0235 — Starbucks Coffee — Downtown Alvarado
+
+## Hours not marked verified (140)
+- MBA-DINE-0002 — Beans of Eden
+- MBA-DINE-0005 — Cannery Pizza Company
+- MBA-DINE-0008 — Dippin' Dots
+- MBA-DINE-0010 — Ghirardelli Ice Cream & Chocolate Shop
+- MBA-DINE-0011 — Great American Cookies
+- MBA-DINE-0014 — Lilly Mae's Cinnamon Rolls
+- MBA-DINE-0017 — Paper Wing Theatre & Supper Club
+- MBA-DINE-0023 — The Fish Hopper
+- MBA-DINE-0027 — Tipsy Putt Monterey
+- MBA-DINE-0028 — Troya Turkish Delight & Coffee
+- MBA-DINE-0030 — Wave Street Cafe
+- MBA-DINE-0034 — Osteria Al Mare
+- MBA-DINE-0035 — Piccolo
+- MBA-DINE-0036 — American Burger
+- MBA-DINE-0038 — Curry Journey
+- MBA-DINE-0040 — First Awakenings
+- MBA-DINE-0042 — Hula's Island Grill
+- MBA-DINE-0043 — International Cafe
+- MBA-DINE-0044 — International Market & Deli
+- MBA-DINE-0045 — La Bahia Mexican American Restaurant
+- MBA-DINE-0047 — Mission 19 Taqueria
+- MBA-DINE-0051 — Paprika Cafe
+- MBA-DINE-0054 — Sunrise Cafe
+- MBA-DINE-0055 — Taqueria Del Mar
+- MBA-DINE-0056 — Zab Zab Thai Cuisine
+- MBA-DINE-0057 — Baskin-Robbins
+- MBA-DINE-0058 — Starbucks Coffee (Lighthouse District)
+- MBA-DINE-0065 — Cafe Guarani
+- MBA-DINE-0066 — Colette's Ice Cream
+- MBA-DINE-0069 — Happy Girl Kitchen Company
+- MBA-DINE-0070 — Hops and Fog Brewing Co
+- MBA-DINE-0072 — International Cuisine
+- MBA-DINE-0073 — La Mia Cucina Ristorante
+- MBA-DINE-0074 — Monarch Pub & Restaurant
+- MBA-DINE-0075 — Pacific Thai Cuisine
+- MBA-DINE-0078 — The Perfect Crumb Bakery
+- MBA-DINE-0079 — Petra Restaurant
+- MBA-DINE-0081 — Red House Cafe
+- MBA-DINE-0084 — Toasties Cafe
+- MBA-DINE-0086 — Wild Fish Restaurant
+- MBA-DINE-0087 — Winston's - A Brunch Place
+- MBA-DINE-0088 — Zum Sushi
+- MBA-DINE-0089 — Alfredo's Pastaria & Mozzarella Bar
+- MBA-DINE-0090 — Jersey Mike's Subs
+- MBA-DINE-0092 — Little Chicken House
+- MBA-DINE-0093 — Los Amigos Restaurante
+- MBA-DINE-0094 — Love Thai Cuisine
+- MBA-DINE-0096 — Michael's Grill & Taqueria
+- MBA-DINE-0097 — Patisserie Bechler
+- MBA-DINE-0098 — Pizza My Way
+- MBA-DINE-0099 — Subway Sandwiches
+- MBA-DINE-0100 — Rockfish Harbor Grill
+- MBA-DINE-0101 — Abalonetti Bar & Grill
+- MBA-DINE-0102 — Crabby Jim's
+- MBA-DINE-0103 — Crab Louie's Bistro
+- MBA-DINE-0104 — Domenico's on the Wharf
+- MBA-DINE-0105 — Grotto Fish Market / Kokomo's
+- MBA-DINE-0106 — Old Fisherman's Grotto
+- MBA-DINE-0107 — The Gig Monterey (formerly Paluca Trattoria)
+- MBA-DINE-0108 — Monterey Crab House
+- MBA-DINE-0113 — Dock Side Fish Market
+- MBA-DINE-0114 — Fish and Chips Cafe
+- MBA-DINE-0115 — Domenico's Fish Market and Deli
+- MBA-DINE-0116 — Monterey Bay Creamery
+- MBA-DINE-0117 — Kafe Toribashi
+- MBA-DINE-0118 — Ad Astra Bread Co
+- MBA-DINE-0119 — Albatross Ridge Winery & Kitchen
+- MBA-DINE-0120 — Alejandro's
+- MBA-DINE-0124 — Ambrosia India Bistro
+- MBA-DINE-0125 — Bagel Bakery
+- MBA-DINE-0127 — Bobalicious and Bites
+- MBA-DINE-0130 — China Garden
+- MBA-DINE-0131 — Chipotle
+- MBA-DINE-0132 — Chong's Szechwan Restaurant
+- MBA-DINE-0134 — Crown and Anchor
+- MBA-DINE-0135 — Denny's Restaurant
+- MBA-DINE-0136 — East Village Cafe
+- MBA-DINE-0138 — Esteban Restaurant
+- MBA-DINE-0139 — Fin + Field
+- MBA-DINE-0140 — Full Moon Mandarin Cuisine
+- MBA-DINE-0141 — Ike's Love and Sandwiches
+- MBA-DINE-0143 — Jamba
+- MBA-DINE-0144 — Kuma Sushi
+- MBA-DINE-0145 — La Casa del Sazon
+- MBA-DINE-0147 — Melville Tavern
+- MBA-DINE-0148 — MidiCi Neapolitan Pizza
+- MBA-DINE-0150 — Mundos Sandwich & Burger House
+- MBA-DINE-0151 — Nacho Bizness
+- MBA-DINE-0152 — Nami
+- MBA-DINE-0153 — Nick the Greek
+- MBA-DINE-0154 — Ocean Sushi Deli
+- MBA-DINE-0155 — Old Monterey Cafe
+- MBA-DINE-0156 — Panda Express
+- MBA-DINE-0157 — Papa Chano's Taqueria
+- MBA-DINE-0159 — Peet's Coffee & Tea
+- MBA-DINE-0160 — Perfectly Pressed Juice
+- MBA-DINE-0162 — Petra Cafe
+- MBA-DINE-0163 — Plumes Coffee House
+- MBA-DINE-0164 — Red's Donuts
+- MBA-DINE-0165 — Revival Ice Cream
+- MBA-DINE-0167 — Round Table Pizza
+- MBA-DINE-0168 — Siamese Bay Restaurant
+- MBA-DINE-0169 — Six Over Coffee and Company
+- MBA-DINE-0171 — Subway Sandwiches & Salads
+- MBA-DINE-0173 — Taco Bell
+- MBA-DINE-0174 — Terra Superfoods
+- MBA-DINE-0175 — Toribashi
+- MBA-DINE-0176 — Turn 12 Bar & Grill
+- MBA-DINE-0177 — TZone Monterey
+- MBA-DINE-0179 — Sandbar & Grill
+- MBA-DINE-0180 — Taste Cafe & Bistro
+- MBA-DINE-0181 — Gelato By The Sea
+- MBA-DINE-0185 — Aquino's Birrieria & Brunch
+- MBA-DINE-0186 — Carl's Jr. (902 Lighthouse)
+- MBA-DINE-0188 — Monterey’s Fish House
+- MBA-DINE-0189 — Chipotle Mexican Grill (Del Monte Center)
+- MBA-DINE-0191 — Dametra Fresh Mediterranean
+- MBA-DINE-0192 — Kona Steak & Seafood
+- MBA-DINE-0193 — Lalla Grill Del Monte
+- MBA-DINE-0194 — Little Korea
+- MBA-DINE-0195 — Pizza My Heart (Del Monte Center)
+- MBA-DINE-0196 — Poke House (Del Monte Center)
+- MBA-DINE-0197 — Starbucks (Del Monte Center)
+- MBA-DINE-0198 — California Pizza Kitchen (Del Monte Center)
+- MBA-DINE-0199 — Chopstix Vietnamese Restaurant
+- MBA-DINE-0200 — Krua Thai Restaurant
+- MBA-DINE-0201 — The Wild Plum Cafe
+- MBA-DINE-0203 — Pazzo Italian Cafe
+- MBA-DINE-0204 — Rice and Roots
+- MBA-DINE-0205 — Scoops Ice Cream Parlor
+- MBA-DINE-0212 — Carmel Bakery and Coffee House
+- MBA-DINE-0213 — Indian Summer Hookah Lounge, Bar & Grill
+- MBA-DINE-0215 — Puma Road at Portola Plaza
+- MBA-DINE-0217 — Benny Walker's
+- MBA-DINE-0218 — Compact Disco — EAT takeout window
+- MBA-DINE-0224 — Mountain Mike's Pizza — Monterey/Abrego
+- MBA-DINE-0225 — Pretzelmaker
+- MBA-DINE-0229 — Whole Foods Market — Prepared Foods
+- MBA-DINE-0232 — Wedo’s Tacos — Dust Bowl Tap Depot resident food truck
+- MBA-DINE-0235 — Starbucks Coffee — Downtown Alvarado
+
+## Missing photos (196)
+- MBA-DINE-0002 — Beans of Eden
+- MBA-DINE-0003 — Bubba Gump Shrimp Company
+- MBA-DINE-0005 — Cannery Pizza Company
+- MBA-DINE-0006 — Chart House
+- MBA-DINE-0007 — Coniglio Brothers Italian Deli
+- MBA-DINE-0008 — Dippin' Dots
+- MBA-DINE-0009 — El Torito
+- MBA-DINE-0010 — Ghirardelli Ice Cream & Chocolate Shop
+- MBA-DINE-0011 — Great American Cookies
+- MBA-DINE-0012 — Jack's Bao
+- MBA-DINE-0013 — Lalla Oceanside Grill
+- MBA-DINE-0014 — Lilly Mae's Cinnamon Rolls
+- MBA-DINE-0015 — Louie Linguini's
+- MBA-DINE-0016 — Nico's Ice Cream
+- MBA-DINE-0017 — Paper Wing Theatre & Supper Club
+- MBA-DINE-0018 — Quickly Boba Tea
+- MBA-DINE-0020 — Schooners Monterey
+- MBA-DINE-0022 — The C Restaurant + Bar
+- MBA-DINE-0024 — The Salty Seal Brewpub & Sports Bar
+- MBA-DINE-0026 — Tidal Coffee
+- MBA-DINE-0027 — Tipsy Putt Monterey
+- MBA-DINE-0028 — Troya Turkish Delight & Coffee
+- MBA-DINE-0029 — Whaling Station Steakhouse
+- MBA-DINE-0030 — Wave Street Cafe
+- MBA-DINE-0032 — Monterey Bay Aquarium Cafe
+- MBA-DINE-0033 — Sea Harvest Restaurant & Fish Market
+- MBA-DINE-0034 — Osteria Al Mare
+- MBA-DINE-0035 — Piccolo
+- MBA-DINE-0036 — American Burger
+- MBA-DINE-0037 — Crystal Fish Sushi
+- MBA-DINE-0038 — Curry Journey
+- MBA-DINE-0039 — El Cantaro Vegan Mexican Restaurant
+- MBA-DINE-0040 — First Awakenings
+- MBA-DINE-0041 — Gianni's Pizza
+- MBA-DINE-0043 — International Cafe
+- MBA-DINE-0044 — International Market & Deli
+- MBA-DINE-0045 — La Bahia Mexican American Restaurant
+- MBA-DINE-0046 — Lighthouse Bistro Global Cuisine
+- MBA-DINE-0047 — Mission 19 Taqueria
+- MBA-DINE-0048 — Namaste India Bistro
+- MBA-DINE-0049 — Oystertown
+- MBA-DINE-0050 — O-Town Espresso Bar
+- MBA-DINE-0051 — Paprika Cafe
+- MBA-DINE-0053 — Pelican Pizza
+- MBA-DINE-0054 — Sunrise Cafe
+- MBA-DINE-0055 — Taqueria Del Mar
+- MBA-DINE-0056 — Zab Zab Thai Cuisine
+- MBA-DINE-0057 — Baskin-Robbins
+- MBA-DINE-0058 — Starbucks Coffee (Lighthouse District)
+- MBA-DINE-0061 — Aliotti's Victorian Corner Restaurant
+- MBA-DINE-0062 — Beach House Restaurant + Bar
+- MBA-DINE-0064 — The BookWorks
+- MBA-DINE-0065 — Cafe Guarani
+- MBA-DINE-0066 — Colette's Ice Cream
+- MBA-DINE-0067 — Fandango Restaurant
+- MBA-DINE-0068 — Goodies Delicatessen
+- MBA-DINE-0069 — Happy Girl Kitchen Company
+- MBA-DINE-0070 — Hops and Fog Brewing Co
+- MBA-DINE-0071 — il Vecchio Restaurant
+- MBA-DINE-0072 — International Cuisine
+- MBA-DINE-0073 — La Mia Cucina Ristorante
+- MBA-DINE-0074 — Monarch Pub & Restaurant
+- MBA-DINE-0075 — Pacific Thai Cuisine
+- MBA-DINE-0076 — Passionfish
+- MBA-DINE-0077 — Peppers MexiCali Cafe
+- MBA-DINE-0078 — The Perfect Crumb Bakery
+- MBA-DINE-0079 — Petra Restaurant
+- MBA-DINE-0080 — PG Meetinghouse
+- MBA-DINE-0081 — Red House Cafe
+- MBA-DINE-0082 — Snack Shack at Lovers Point
+- MBA-DINE-0083 — Spotted Duck Restaurant
+- MBA-DINE-0084 — Toasties Cafe
+- MBA-DINE-0085 — Vivolo's Chowder House
+- MBA-DINE-0086 — Wild Fish Restaurant
+- MBA-DINE-0087 — Winston's - A Brunch Place
+- MBA-DINE-0088 — Zum Sushi
+- MBA-DINE-0089 — Alfredo's Pastaria & Mozzarella Bar
+- MBA-DINE-0090 — Jersey Mike's Subs
+- MBA-DINE-0091 — Julia's Vegetarian Restaurant
+- MBA-DINE-0092 — Little Chicken House
+- MBA-DINE-0093 — Los Amigos Restaurante
+- MBA-DINE-0094 — Love Thai Cuisine
+- MBA-DINE-0095 — Lucy's on Lighthouse
+- MBA-DINE-0096 — Michael's Grill & Taqueria
+- MBA-DINE-0097 — Patisserie Bechler
+- MBA-DINE-0098 — Pizza My Way
+- MBA-DINE-0099 — Subway Sandwiches
+- MBA-DINE-0100 — Rockfish Harbor Grill
+- MBA-DINE-0101 — Abalonetti Bar & Grill
+- MBA-DINE-0102 — Crabby Jim's
+- MBA-DINE-0103 — Crab Louie's Bistro
+- MBA-DINE-0104 — Domenico's on the Wharf
+- MBA-DINE-0106 — Old Fisherman's Grotto
+- MBA-DINE-0107 — The Gig Monterey (formerly Paluca Trattoria)
+- MBA-DINE-0108 — Monterey Crab House
+- MBA-DINE-0111 — Cafe Fina
+- MBA-DINE-0113 — Dock Side Fish Market
+- MBA-DINE-0114 — Fish and Chips Cafe
+- MBA-DINE-0115 — Domenico's Fish Market and Deli
+- MBA-DINE-0116 — Monterey Bay Creamery
+- MBA-DINE-0117 — Kafe Toribashi
+- MBA-DINE-0118 — Ad Astra Bread Co
+- MBA-DINE-0119 — Albatross Ridge Winery & Kitchen
+- MBA-DINE-0120 — Alejandro's
+- MBA-DINE-0122 — Alta Bakery + Cafe
+- MBA-DINE-0123 — Alvarado Street Brewery & Grill
+- MBA-DINE-0124 — Ambrosia India Bistro
+- MBA-DINE-0125 — Bagel Bakery
+- MBA-DINE-0126 — Benihana Monterey
+- MBA-DINE-0127 — Bobalicious and Bites
+- MBA-DINE-0128 — Bulgogi House
+- MBA-DINE-0129 — Cella Restaurant and Bar
+- MBA-DINE-0130 — China Garden
+- MBA-DINE-0131 — Chipotle
+- MBA-DINE-0132 — Chong's Szechwan Restaurant
+- MBA-DINE-0133 — Crepes of Brittany
+- MBA-DINE-0134 — Crown and Anchor
+- MBA-DINE-0135 — Denny's Restaurant
+- MBA-DINE-0136 — East Village Cafe
+- MBA-DINE-0137 — El Charrito Express
+- MBA-DINE-0138 — Esteban Restaurant
+- MBA-DINE-0139 — Fin + Field
+- MBA-DINE-0140 — Full Moon Mandarin Cuisine
+- MBA-DINE-0141 — Ike's Love and Sandwiches
+- MBA-DINE-0142 — Jacks Monterey
+- MBA-DINE-0143 — Jamba
+- MBA-DINE-0144 — Kuma Sushi
+- MBA-DINE-0145 — La Casa del Sazon
+- MBA-DINE-0146 — Manasiri's Crepes and Sandwiches
+- MBA-DINE-0147 — Melville Tavern
+- MBA-DINE-0148 — MidiCi Neapolitan Pizza
+- MBA-DINE-0150 — Mundos Sandwich & Burger House
+- MBA-DINE-0151 — Nacho Bizness
+- MBA-DINE-0152 — Nami
+- MBA-DINE-0153 — Nick the Greek
+- MBA-DINE-0154 — Ocean Sushi Deli
+- MBA-DINE-0155 — Old Monterey Cafe
+- MBA-DINE-0156 — Panda Express
+- MBA-DINE-0157 — Papa Chano's Taqueria
+- MBA-DINE-0158 — Parker-Lusseau Pastries & Cafe
+- MBA-DINE-0159 — Peet's Coffee & Tea
+- MBA-DINE-0160 — Perfectly Pressed Juice
+- MBA-DINE-0161 — Peter B's Brewpub
+- MBA-DINE-0162 — Petra Cafe
+- MBA-DINE-0163 — Plumes Coffee House
+- MBA-DINE-0164 — Red's Donuts
+- MBA-DINE-0165 — Revival Ice Cream
+- MBA-DINE-0167 — Round Table Pizza
+- MBA-DINE-0168 — Siamese Bay Restaurant
+- MBA-DINE-0169 — Six Over Coffee and Company
+- MBA-DINE-0170 — Stokes Adobe
+- MBA-DINE-0171 — Subway Sandwiches & Salads
+- MBA-DINE-0172 — Sur Burger
+- MBA-DINE-0173 — Taco Bell
+- MBA-DINE-0174 — Terra Superfoods
+- MBA-DINE-0175 — Toribashi
+- MBA-DINE-0176 — Turn 12 Bar & Grill
+- MBA-DINE-0177 — TZone Monterey
+- MBA-DINE-0178 — La Cote Bleue
+- MBA-DINE-0179 — Sandbar & Grill
+- MBA-DINE-0180 — Taste Cafe & Bistro
+- MBA-DINE-0181 — Gelato By The Sea
+- MBA-DINE-0182 — Fishwife at Asilomar
+- MBA-DINE-0183 — Coastal Kitchen
+- MBA-DINE-0184 — Lobby Lounge at Monterey Plaza
+- MBA-DINE-0185 — Aquino's Birrieria & Brunch
+- MBA-DINE-0186 — Carl's Jr. (902 Lighthouse)
+- MBA-DINE-0188 — Monterey’s Fish House
+- MBA-DINE-0189 — Chipotle Mexican Grill (Del Monte Center)
+- MBA-DINE-0190 — Cold Stone Creamery (Del Monte Center)
+- MBA-DINE-0191 — Dametra Fresh Mediterranean
+- MBA-DINE-0192 — Kona Steak & Seafood
+- MBA-DINE-0193 — Lalla Grill Del Monte
+- MBA-DINE-0194 — Little Korea
+- MBA-DINE-0195 — Pizza My Heart (Del Monte Center)
+- MBA-DINE-0196 — Poke House (Del Monte Center)
+- MBA-DINE-0197 — Starbucks (Del Monte Center)
+- MBA-DINE-0198 — California Pizza Kitchen (Del Monte Center)
+- MBA-DINE-0199 — Chopstix Vietnamese Restaurant
+- MBA-DINE-0200 — Krua Thai Restaurant
+- MBA-DINE-0201 — The Wild Plum Cafe
+- MBA-DINE-0203 — Pazzo Italian Cafe
+- MBA-DINE-0204 — Rice and Roots
+- MBA-DINE-0205 — Scoops Ice Cream Parlor
+- MBA-DINE-0210 — Comanche Cellars Wine Room
+- MBA-DINE-0212 — Carmel Bakery and Coffee House
+- MBA-DINE-0213 — Indian Summer Hookah Lounge, Bar & Grill
+- MBA-DINE-0215 — Puma Road at Portola Plaza
+- MBA-DINE-0217 — Benny Walker's
+- MBA-DINE-0218 — Compact Disco — EAT takeout window
+- MBA-DINE-0224 — Mountain Mike's Pizza — Monterey/Abrego
+- MBA-DINE-0225 — Pretzelmaker
+- MBA-DINE-0229 — Whole Foods Market — Prepared Foods
+- MBA-DINE-0231 — Dust Bowl Brewing Co. — Monterey Tap Depot
+- MBA-DINE-0232 — Wedo’s Tacos — Dust Bowl Tap Depot resident food truck
+- MBA-DINE-0235 — Starbucks Coffee — Downtown Alvarado
+
+## Version discrepancy
+app.js, sw.js and index.html: 0.2.9; data/metadata.json: 0.2.6. No production version or cache modification performed during audit.
