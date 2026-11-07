@@ -8,7 +8,7 @@ assert.equal(restaurants.length,meta.eligibleCount,'Restaurant count mismatch');
 const ids=restaurants.map(r=>r.id);
 assert.equal(new Set(ids).size,ids.length,'Duplicate restaurant IDs');
 for(const r of restaurants){
- assert.match(r.id,/^MBA-DINE-\\d{4}$/,'Invalid restaurant ID');
+ assert.match(r.id,/^MBA-DINE-\d{4}$/,'Invalid restaurant ID');
  assert.ok(r.name?.trim(),'Missing restaurant name: '+r.id);
 }
 const version=String(meta.appVersion);
