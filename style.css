@@ -19,3 +19,6 @@ header{flex-wrap:wrap}.topnav{order:3;display:flex;gap:8px;flex:0 0 100%;align-i
 
 /* v0.2.1: pin key remains readable when nearby destinations overlap */
 .mapLegend{display:flex;flex-wrap:wrap;gap:8px 15px;font-size:12px;font-weight:650;margin:9px 0 6px}.mapLegend span{display:inline-flex;gap:7px;align-items:center}.mapLegend i{display:inline-block;width:14px;height:14px;min-width:14px;border:2px solid white;box-shadow:0 0 0 1px #a3babe;border-radius:50%}.aquariumDot{background:#08667a}.eateryDot{background:#c85830}
+
+/* v0.2.2: source-grounded waterfront reference landmarks */
+.mapLegend .landmarkDot{display:inline-flex;align-items:center;justify-content:center;width:17px;height:17px;min-width:17px;border-radius:50%;background:#6d5986;color:white;border:1px solid #fff;font-style:normal;font-weight:750;font-size:10px;box-shadow:0 0 0 1px #a3babe}.mapLegend span{max-width:100%;line-height:1.25}
