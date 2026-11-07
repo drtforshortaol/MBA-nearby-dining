@@ -22,7 +22,7 @@ const missingHours=data.filter(r=>!r.hours);
 const reviewedHours=data.filter(r=>r.batchReview?.hoursVerified===true);
 for(const r of photoRecords){
   // Only relative bundled image paths can be used offline.
-  assert(!/^(?:https?:|\\/|\\.\\.)/i.test(r.photo),'Non-bundled photo: '+r.id);
+  assert(!r.photo.startsWith('/')&&!r.photo.startsWith('..')&&!r.photo.includes('://'),'Non-bundled photo: '+r.id);
   assert(fs.existsSync(path.join(root,r.photo)),'Missing bundled photo: '+r.id+' '+r.photo);
 }
 assert(reviewedHours.length<=data.length,'Invalid hours verification count');
