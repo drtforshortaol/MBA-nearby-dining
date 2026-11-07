@@ -36,3 +36,14 @@ header{flex-wrap:wrap}.topnav{order:3;display:flex;gap:8px;flex:0 0 100%;align-i
 .lightbox .photoDialog .placeholder{height:min(50dvh,300px);}
 .lightbox .photoDialog figcaption{color:#f4f9fb;line-height:1.5;margin:10px 3px;}
 .lightbox .photoDialog figcaption a{color:#c5eefb;}
+
+/* v0.2.4: identity and address above actions in expanded photo, call on map */
+.photoIdentity{display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch;gap:8px;overflow-wrap:anywhere}
+.photoIdentity strong{font-size:17px;line-height:1.28;flex-basis:auto;white-space:normal;overflow-wrap:anywhere}
+.photoIdentity .photoAddress{font-size:14px;min-width:0;line-height:1.4}
+.photoActionButtons,.mapActionButtons{display:flex;flex-wrap:wrap;gap:9px;width:100%;align-items:stretch}
+.photoActionButtons .photoCopy,.photoActionButtons .photoCall,.mapActionButtons button,.mapActionButtons a{display:inline-flex;align-items:center;justify-content:center;flex:1;min-height:44px;min-width:110px;text-align:center;border-radius:10px;padding:9px 11px;font-size:14px;font-weight:650;text-decoration:none}
+.photoActionButtons .photoCopy,.mapActionButtons button{background:#08667a;color:#fff;border:1px solid #08667a}
+.photoActionButtons .photoCall,.mapActionButtons a{background:#eff7f5;color:#075369;border:1px solid #9cb9bd}
+.mapActionBar{border-top:1px solid #dbe6e6;margin-top:8px;padding:12px 4px 4px;display:grid;gap:10px}
+.mapAddress{font-size:13px;line-height:1.4;font-weight:600;overflow-wrap:anywhere}
