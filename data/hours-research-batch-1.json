@@ -105,11 +105,11 @@
       "website": "https://www.starbucks.com/store-locator/store/1008792",
       "sourceStatus": "existing-record-only",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
+      "verificationStatus": "provisional-location-listing",
       "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "sourceUrl": "https://www.starbucks.com/store-locator/store/1008792",
+      "checkedOn": "2026-11-07",
+      "notes": "Location-specific business listing reports Mon–Sat 4:30 AM–9 PM, Sun 4:30 AM–8:30 PM at 865 Lighthouse Ave. Official Starbucks store page has not independently yielded full hours; retain as provisional, not verified."
     },
     {
       "id": "MBA-DINE-0074",
