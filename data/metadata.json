@@ -1,10 +1,25 @@
 {
-  "appVersion": "0.2.0",
+  "appVersion": "0.2.2",
   "databaseDate": "2026-11-05",
   "eligibleCount": 205,
   "photoCount": 8,
   "dataPolicy": "Only 205 visitor-recommendation-enabled records exposed; other research remains in original archival package.",
   "mapType": "Authentic offline Monterey County GIS street centerlines",
   "mapAccuracy": "Orientation only; road shapes and intersections not surveyed",
-  "mapSource": "https://maps.co.monterey.ca.us/server/rest/services/Transportation/Road_Centerline/FeatureServer/0"
+  "mapSource": "https://maps.co.monterey.ca.us/server/rest/services/Transportation/Road_Centerline/FeatureServer/0",
+  "landmarks": [
+    {
+      "name": "McAbee Beach",
+      "source": "https://opendivesites.org/McAbee_Beach"
+    },
+    {
+      "name": "San Carlos Beach",
+      "source": "https://geo.mytopo.com/feature/california/monterey/beach/1703295/san-carlos-beach/"
+    },
+    {
+      "name": "Old Fisherman's Wharf entrance area",
+      "source": "https://www.hmdb.org/m.asp?m=30190"
+    }
+  ],
+  "landmarkCaution": "Approximate orientation points, not surveyed entrances."
 }
