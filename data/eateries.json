@@ -131,7 +131,10 @@
         "address",
         "visitorTip"
       ]
-    }
+    },
+    "hoursConfidence": "unverified",
+    "hoursProvisional": "Mon–Thu 7 AM–6 PM; Fri–Sun 7 AM–8 PM",
+    "hoursCaution": "Conflicting directory listings; call to confirm."
   },
   {
     "id": "MBA-DINE-0003",
@@ -791,7 +794,10 @@
         "address",
         "visitorTip"
       ]
-    }
+    },
+    "hoursConfidence": "unknown",
+    "hoursProvisional": null,
+    "hoursCaution": "Dining depends on ticketed shows; check the event calendar."
   },
   {
     "id": "MBA-DINE-0018",
@@ -4702,7 +4708,10 @@
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": []
-    }
+    },
+    "hoursConfidence": "unknown",
+    "hoursProvisional": null,
+    "hoursCaution": "Market/deli counter hours unknown; dining room has different hours."
   },
   {
     "id": "MBA-DINE-0116",
@@ -5877,7 +5886,10 @@
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": []
-    }
+    },
+    "hoursConfidence": "unverified",
+    "hoursProvisional": "Daily 5–10 PM",
+    "hoursCaution": "Conflicts with Chamber and ordering hours; call for dine-in schedule."
   },
   {
     "id": "MBA-DINE-0145",
@@ -8669,7 +8681,10 @@
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": []
-    }
+    },
+    "hoursConfidence": "unverified",
+    "hoursProvisional": "Daily 4–8 PM (reported soft opening)",
+    "hoursCaution": "Reported October 2026; hours may change November 11. Check operator."
   },
   {
     "id": "MBA-DINE-0218",
@@ -8706,7 +8721,10 @@
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": []
-    }
+    },
+    "hoursConfidence": "unverified",
+    "hoursProvisional": "Fri–Sat 10 PM–2 AM (June report)",
+    "hoursCaution": "Historical schedule for EAT walk-up window, not nightclub."
   },
   {
     "id": "MBA-DINE-0224",
@@ -8836,7 +8854,10 @@
       "verifiedFields": [
         "shoppingCenterListing"
       ]
-    }
+    },
+    "hoursConfidence": "unverified",
+    "hoursProvisional": "Daily 9 AM–8 PM (Market Cocina / Sandwich listings)",
+    "hoursCaution": "Provisional counter listings; hot bar hours unknown."
   },
   {
     "id": "MBA-DINE-0231",
