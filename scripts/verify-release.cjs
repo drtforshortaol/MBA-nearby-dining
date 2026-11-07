@@ -20,6 +20,8 @@ for(const [i,r] of data.entries()){
 const photoRecords=data.filter(r=>r.photo);
 const missingHours=data.filter(r=>!r.hours);
 const reviewedHours=data.filter(r=>r.batchReview?.hoursVerified===true);
+const hoursReviewQueue=missingHours.map(r=>({id:r.id,name:r.name,address:r.address,website:r.website||null,phone:r.phone||null}));
+if(process.argv.includes('--hours-queue'))console.log(JSON.stringify({total:hoursReviewQueue.length,restaurants:hoursReviewQueue},null,2));
 for(const r of photoRecords){
   // Only relative bundled image paths can be used offline.
   assert(!r.photo.startsWith('/')&&!r.photo.startsWith('..')&&!r.photo.includes('://'),'Non-bundled photo: '+r.id);
