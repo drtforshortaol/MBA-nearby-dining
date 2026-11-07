@@ -22,16 +22,16 @@
       "id": "MBA-DINE-0008",
       "name": "Dippin' Dots",
       "website": "https://www.dippindots.com/",
-      "sourceStatus": "conflicting",
-      "hoursVerified": false,
-      "verificationStatus": "conflicting",
-      "verifiedHours": null,
-      "sourceUrl": "https://www.restaurantji.com/ca/monterey/dippin-dots-/",
+      "sourceStatus": "verified-corroborated-business-listings",
+      "hoursVerified": true,
+      "verificationStatus": "verified-corroborated-business-listings",
+      "verifiedHours": "Sun–Fri noon–6 PM; Sat 11 AM–8 PM",
+      "sourceUrl": "https://www.menupix.com/california/restaurants/5548663/Dippin-Dots-Menu-Monterey-CA",
       "checkedOn": "2026-11-07",
-      "notes": "Restaurantji gives Sun–Fri noon–6 PM and Sat 11 AM–8 PM. A prior location listing gave daily 11 AM–5:30 PM, and SuperPages warns hours may vary. The destination directory confirms the location without hours. Call (831) 655-5080 for current shop hours. The official brand locator names the Cannery Row store and confirms the phone, but its source data leaves store_business_hours empty.",
+      "notes": "MenuPix, Restaurantji, and SuperPages publish the same seven-day schedule for the shop at 711 Cannery Row and the same phone number. SuperPages says hours may vary. The official chain locator confirms the shop and phone. Its store-hours field is empty. The earlier 11 AM–5:30 PM candidate lacked an identifiable hours page.",
       "corroboratingSources": [
-        "https://www.seemonterey.com/directory/dippin-dots/",
-        "https://www.superpages.com/carmel-by-the-sea-ca/ice-cream-and-frozen-desserts-wholesale-and-manufacturers",
+        "https://www.restaurantji.com/ca/monterey/dippin-dots-/",
+        "https://www.superpages.com/pebble-beach-ca/ice-cream-frozen-desserts",
         "https://www.dippindots.com/locations/",
         "https://www.storemapper.co/api/users/14171/stores.js?callback=SMcallback2"
       ]
@@ -46,12 +46,14 @@
       "verifiedHours": null,
       "sourceUrl": "https://maps.roadtrippers.com/us/monterey-ca/food-drink/great-american-cookies-monterey",
       "checkedOn": "2026-11-07",
-      "notes": "Roadtrippers and Restaurant Guru list daily 11 AM–8 PM, and 411.info labels its matching time range owner-verified. SuperPages lists daily 11 AM–9 PM. The Cannery Row directory confirms the storefront but gives no hours. Confirm closing time at (831) 641-9300.",
+      "notes": "Roadtrippers and Restaurant Guru list daily 11 AM–8 PM, and 411.info labels its matching time range owner-verified. SuperPages lists daily 11 AM–9 PM. The Cannery Row directory confirms the storefront but gives no hours. Confirm closing time at (831) 641-9300. Restaurantji's Oct 16, 2026 update lists daily 11 AM–9 PM. The official chain site links to an ordering locator without a verified storefront schedule.",
       "corroboratingSources": [
         "https://restaurantguru.com/Great-American-Cookies-Monterey",
         "https://411.info/business/Great-American-Cookies-Monterey-CA-20248729",
         "https://www.superpages.com/del-rey-oaks-ca/gift-baskets",
-        "https://canneryrow.com/business/nestle-toll-house-cafe/"
+        "https://canneryrow.com/business/nestle-toll-house-cafe/",
+        "https://www.restaurantji.com/ca/monterey/great-american-cookies-/",
+        "https://ordernew.greatamericancookies.com/locations/"
       ]
     },
     {
@@ -80,10 +82,12 @@
       "verifiedHours": null,
       "sourceUrl": "https://www.paperwing.com/",
       "checkedOn": "2026-11-07",
-      "notes": "The theater advertises specific shows and ticketed dining events. The Chamber's Mon–Fri 10 AM–5 PM applies to its office, and its Thu–Mon 4–10 PM listing applies to a separate sushi walk-up window. Call (831) 905-5684 for the event's meal service time or to confirm any regular dining hours.",
+      "notes": "The theater advertises specific shows and ticketed dining events. The Chamber's Mon–Fri 10 AM–5 PM applies to its office, and its Thu–Mon 4–10 PM listing applies to a separate sushi walk-up window. Call (831) 905-5684 for the event's meal service time or to confirm any regular dining hours. The current theater calendar directs visitors to individual showtimes. The VIP Dinner Package page confirms that dinner can be part of a particular ticket.",
       "corroboratingSources": [
         "https://members.montereychamber.com/list/member/paper-wing-theatre-supper-club-monterey-7231",
-        "https://www.seemonterey.com/directory/paper-wing-theatre-company-supper-club/"
+        "https://www.seemonterey.com/directory/paper-wing-theatre-company-supper-club/",
+        "https://www.paperwing.com/paper-wing-events-2/",
+        "https://www.paperwing.com/the-rocky-horror-show-vip-dinner-package/"
       ]
     },
     {
@@ -171,12 +175,13 @@
       "verifiedHours": null,
       "sourceUrl": "https://www.restaurantji.com/ca/monterey/the-perfect-crumb-bakery-inc-/",
       "checkedOn": "2026-11-07",
-      "notes": "Current listings at the Pacific Grove location give Sat–Mon and Wed–Thu 6:30 AM–5 PM, Fri 7 AM–5 PM, Tue closed. The official home page and Chamber confirm the move, but the official contact page still displays a temporary move closure and no weekly hours. Call (831) 241-6269 to confirm the current schedule. The official site's embedded schedule differs from both the listings and its own visible closure message. Restaurantji's current HTML has Mon and Wed–Sun 7 AM–5 PM, Tue closed, while its older snapshot and joe coffee give some 6:30 AM opening times.",
+      "notes": "Current listings at the Pacific Grove location give Sat–Mon and Wed–Thu 6:30 AM–5 PM, Fri 7 AM–5 PM, Tue closed. The official home page and Chamber confirm the move, but the official contact page still displays a temporary move closure and no weekly hours. Call (831) 241-6269 to confirm the current schedule. The official site's embedded schedule differs from both the listings and its own visible closure message. Restaurantji's current HTML has Mon and Wed–Sun 7 AM–5 PM, Tue closed, while its older snapshot and joe coffee give some 6:30 AM opening times. Edible Monterey Bay gives Wed–Mon 6:30 AM–5 PM at the current address.",
       "corroboratingSources": [
         "https://joe.coffee/locations/ca/pacific-grove/the-perfect-crumb-bakery-inc-pacific-grove/",
         "https://www.theperfectcrumbbakery.net/",
         "https://www.theperfectcrumbbakery.net/contact",
-        "https://business.pacificgrove.org/directory/Details/the-perfect-crumb-bakery-4214002"
+        "https://business.pacificgrove.org/directory/Details/the-perfect-crumb-bakery-4214002",
+        "https://ediblemontereybay.com/dine-local-guide/dine-local-guide-the-perfect-crumb-bakery/"
       ]
     },
     {
@@ -269,17 +274,18 @@
       "id": "MBA-DINE-0127",
       "name": "Bobalicious and Bites",
       "website": "https://bobaliciousbites.com/",
-      "sourceStatus": "provisional",
+      "sourceStatus": "conflicting",
       "hoursVerified": false,
-      "verificationStatus": "provisional",
+      "verificationStatus": "conflicting",
       "verifiedHours": null,
       "sourceUrl": "https://www.restaurantji.com/ca/monterey/bobalicious-and-bites-/",
       "checkedOn": "2026-11-07",
-      "notes": "Current Restaurantji listing gives daily noon–8 PM, while its older snapshot gave noon–7 PM weekdays and noon–7:30 PM weekends. A merchant-authored summer promotion confirms noon–8 PM for Mondays only during the promotion. The official site has no readable weekly schedule. Call (831) 666-7030 to verify all days.",
+      "notes": "Current Restaurantji listing gives daily noon–8 PM, while its older snapshot gave noon–7 PM weekdays and noon–7:30 PM weekends. A merchant-authored summer promotion confirms noon–8 PM for Mondays only during the promotion. The official site has no readable weekly schedule. Call (831) 666-7030 to verify all days. Wanderlog's current location listing gives the shorter hours from the older Restaurantji snapshot, weekdays noon–7 PM and weekends noon–7:30 PM.",
       "corroboratingSources": [
         "https://www.oldmonterey.org/news/2026/06/monterey-mondays-special-locals-bobalicious-bites",
         "https://www.oldmonterey.org/biz/bobalicious-and-bites",
-        "https://bobaliciousbites.com/"
+        "https://bobaliciousbites.com/",
+        "https://wanderlog.com/place/details/4426726"
       ]
     }
   ]
