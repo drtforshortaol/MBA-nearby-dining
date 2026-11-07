@@ -34,4 +34,5 @@ assert(sw.includes('data/eateries.json')&&sw.includes('data/roads.json'),'Offlin
 assert(fs.existsSync(path.join(root,'data/roads.json')),'Offline road data missing');
 const cache=sw.match(/mba-eatery-v[^'"]+/);
 assert(cache,'Offline cache version missing');
-console.log('PASS: '+data.length+' unique eateries, coordinates, '+photoRecords.length+' bundled photos, required app controls, offline assets; cache '+cache[0]);\nconsole.log('AUDIT: '+reviewedHours.length+' records marked hours-verified; '+missingHours.length+' records missing hours. These counts do not establish current opening status.');
+console.log('PASS: '+data.length+' unique eateries, coordinates, '+photoRecords.length+' bundled photos, required app controls, offline assets; cache '+cache[0]);
+console.log('AUDIT: '+reviewedHours.length+' records marked hours-verified; '+missingHours.length+' records missing hours. These counts do not establish current opening status.');
