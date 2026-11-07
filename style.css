@@ -16,3 +16,6 @@ header{flex-wrap:wrap}.topnav{order:3;display:flex;gap:8px;flex:0 0 100%;align-i
 
 /* v0.2.0: actual offline county road centerlines */
 .realStreetMap{max-height:390px;background:#e4efec;border:1px solid #ccdad5}.mapButtons{display:flex;gap:8px;margin:8px 0}.mapButtons button{flex:1;min-height:44px;font-weight:650}
+
+/* v0.2.1: pin key remains readable when nearby destinations overlap */
+.mapLegend{display:flex;flex-wrap:wrap;gap:8px 15px;font-size:12px;font-weight:650;margin:9px 0 6px}.mapLegend span{display:inline-flex;gap:7px;align-items:center}.mapLegend i{display:inline-block;width:14px;height:14px;min-width:14px;border:2px solid white;box-shadow:0 0 0 1px #a3babe;border-radius:50%}.aquariumDot{background:#08667a}.eateryDot{background:#c85830}
