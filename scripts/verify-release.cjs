@@ -32,6 +32,15 @@ const app=read('app.js'),sw=read('sw.js'),html=read('index.html');
 for(const token of ['function offlineMapSVG(','function travelEstimate(','case\'loadMore\'','case\'mapReset\'','data-action="resetSearch"','shown.map(card)','slot.innerHTML=offlineMapSVG(r,roadData,1)'])
   assert(app.includes(token),'Missing application feature: '+token);
 assert(html.includes('app.js')&&html.includes('style.css'),'Missing app entrypoints');
+const meta=JSON.parse(read('data/metadata.json'));
+const appVersion=app.match(/APP_VERSION='([^']+)'/)?.[1];
+assert(appVersion,'Application version marker missing');
+assert.equal(meta.appVersion,appVersion,'Database metadata version differs from application');
+assert(html.includes('Eatery App <b>v'+appVersion+'</b>'),'Visible footer version differs from application');
+assert(sw.includes('mba-eatery-v'+appVersion),'Service worker cache version differs from application');
+assert.equal(meta.eligibleCount,data.length,'Database eligible count differs from records');
+assert.equal(meta.databaseDate,'2026-11-07','Unexpected database date; update release metadata intentionally');
+
 assert(sw.includes('data/eateries.json')&&sw.includes('data/roads.json'),'Offline essentials not cached');
 assert(fs.existsSync(path.join(root,'data/roads.json')),'Offline road data missing');
 const cache=sw.match(/mba-eatery-v[^'"]+/);
