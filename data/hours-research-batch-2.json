@@ -21,11 +21,11 @@
       "website": "https://www.eastvillagecafemonterey.com/",
       "sourceStatus": "existing-record-only; requires independent source verification",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
+      "verificationStatus": "corroborated-secondary-needs-official",
       "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g32737-d2207114-Reviews-East_Village_Cafe-Monterey_Monterey_County_California.html",
+      "checkedOn": "2026-11-07",
+      "notes": "Tripadvisor lists daily 7 AM–5 PM; independent geographic listing also reports daily 7 AM–5 PM at 498 Washington St. Official restaurant site hours not confirmed; do not mark official verified."
     },
     {
       "id": "MBA-DINE-0144",
@@ -105,11 +105,11 @@
       "website": "https://toribashi.com/",
       "sourceStatus": "existing-record-only; requires independent source verification",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
-      "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "verificationStatus": "verified-official-restaurant-website",
+      "verifiedHours": "Mon–Fri 11:00 AM–2:00 PM and 5:00–8:00 PM (Fri dinner to 8:30 PM); Sat–Sun 11:00 AM–2:30 PM and 5:00–8:30 PM",
+      "sourceUrl": "https://toribashi.com/",
+      "checkedOn": "2026-11-07",
+      "notes": "Official website explicitly lists Toribashi at 487 Alvarado St. Separate from Kafe Toribashi at Fisherman's Wharf; holiday exceptions published. Online ordering cutoff may precede closing."
     },
     {
       "id": "MBA-DINE-0176",
