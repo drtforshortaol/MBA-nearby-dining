@@ -81,11 +81,11 @@
       "website": "https://locations.tacobell.com/ca/monterey/321-alvarado-st.html",
       "sourceStatus": "existing-record-only; requires independent source verification",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
+      "verificationStatus": "partial-official-hours",
       "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "sourceUrl": "https://locations.tacobell.com/ca/monterey/321-alvarado-st.html",
+      "checkedOn": "2026-11-07",
+      "notes": "Official location page indexed Wednesday dine-in 10 AM–11 PM; other indexed official pages show Mon/Tue/Sun 10 AM–midnight, inconsistent with current business listing. Do not publish a full weekly schedule until reconciled."
     },
     {
       "id": "MBA-DINE-0174",
