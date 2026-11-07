@@ -117,11 +117,11 @@
       "website": "https://www.turn12barandgrill.com/",
       "sourceStatus": "existing-record-only; requires independent source verification",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
-      "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "verificationStatus": "verified-official-location",
+      "verifiedHours": "Mon–Fri 11:30 AM–1:00 AM; Sat–Sun 10:00 AM–1:00 AM (closing next day)",
+      "sourceUrl": "https://www.turn12barandgrill.com/location/",
+      "checkedOn": "2026-11-07",
+      "notes": "Official location page; 400 Tyler St."
     },
     {
       "id": "MBA-DINE-0177",
