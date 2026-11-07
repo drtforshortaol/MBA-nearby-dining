@@ -13,3 +13,6 @@ header{flex-wrap:wrap}.topnav{order:3;display:flex;gap:8px;flex:0 0 100%;align-i
 
 /* v0.1.8 data-derived nearby streets; no external map tiles */
 .streetsMap{max-height:360px;background:#e7eeeb}.mapdetails .mapcontent{padding:8px 0 2px}
+
+/* v0.2.0: actual offline county road centerlines */
+.realStreetMap{max-height:390px;background:#e4efec;border:1px solid #ccdad5}.mapButtons{display:flex;gap:8px;margin:8px 0}.mapButtons button{flex:1;min-height:44px;font-weight:650}
