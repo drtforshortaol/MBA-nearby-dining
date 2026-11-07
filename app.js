@@ -1,5 +1,5 @@
 'use strict';
-const APP_VERSION='0.2.1', BASKET_KEY='mba-eatery-basket-v1', FAV_KEY='mba-eatery-favorites-v1';
+const APP_VERSION='0.2.2', BASKET_KEY='mba-eatery-basket-v1', FAV_KEY='mba-eatery-favorites-v1';
 let eateries=[],byId=new Map(),basket=[],favorites=[],mode='explore',selected=null,travel='walk',query='',quick='',limit='all',sort='name',photoExpanded=false,shared=false,navHistory=[],roadData=null,mapZoom=1,filters={cuisine:'all',price:[],family:'all',alcohol:'all',ocean:'all',entertainment:'all'};
 const $=id=>document.getElementById(id);
 const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -18,6 +18,12 @@ const cuisineGroup=r=>{let s=(r.cuisine||'').toLowerCase();if(/seafood|fish|oyst
 const verifiedFacet=(r,key)=>{let v=r.attributes?.[key];return v&&v.status==='verified'?String(v.value).toLowerCase():null};
 const facetOptions=(key,items)=>items.map(([value,label])=>`<option value="${value}" ${filters[key]===value?'selected':''}>${label}</option>`).join('');
 function locationMap(r){return `<details class="mapdetails" data-map-id="${safe(r.id)}"><summary>🗺 Real nearby streets (offline)</summary><div class="mapcontent" data-map-content><p class="muted">Tap to view nearby street corridors and landmarks.</p></div></details>`}
+/* Public landmark coordinates; points are approximate, not entrances. */
+const OFFLINE_LANDMARKS=[
+ {key:'1',name:'McAbee Beach',lat:36.615627,lon:-121.899212},
+ {key:'2',name:'San Carlos Beach',lat:36.609682,lon:-121.895510},
+ {key:'3',name:'Old Fisherman’s Wharf entrance area',lat:36.603650,lon:-121.893367}
+];
 function offlineMapSVG(r,roads,zoom=1){
   if(!Number.isFinite(r.lat)||!Number.isFinite(r.lon))return '<p class="notice">Coordinates unavailable. Copy the address.</p>';
   if(!roads?.features?.length)return '<p class="notice">Offline street data is unavailable.</p>';
@@ -54,17 +60,24 @@ function offlineMapSVG(r,roads,zoom=1){
     labels.push('<text x="'+item.x.toFixed(1)+'" y="'+(item.y-5).toFixed(1)+'" text-anchor="middle" font-size="11" font-weight="650" fill="#355665" stroke="#f7f9f7" stroke-width="3.5" paint-order="stroke">'+safe(item.name)+'</text>');
   }
   const marker=(p,title,color)=>'<circle cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="11" stroke="white" stroke-width="3.5" fill="'+color+'"/><title>'+safe(title)+'</title>';
+  const landmarkPins=[],landmarkLegend=[];
+  for(const landmark of OFFLINE_LANDMARKS){
+    const p=point(landmark.lon,landmark.lat);
+    if(!inView(p,8))continue;
+    landmarkPins.push('<g><circle cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="9.5" stroke="white" stroke-width="2.5" fill="#6d5986"/><text x="'+p.x.toFixed(1)+'" y="'+(p.y+3.7).toFixed(1)+'" font-size="10" font-weight="750" text-anchor="middle" fill="white">'+landmark.key+'</text><title>'+safe(landmark.name)+'</title></g>');
+    landmarkLegend.push('<span><i class="landmarkDot">'+landmark.key+'</i> '+safe(landmark.name)+'</span>');
+  }
   const aquarium=point(AQUARIUM_ENTRANCE.lon,AQUARIUM_ENTRANCE.lat),destination=point(r.lon,r.lat);
   return '<svg class="offlineMap realStreetMap" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Authentic offline Monterey County streets near the selected eatery">'
     +'<rect x="0" y="0" width="'+W+'" height="'+H+'" rx="12" fill="#e4efec"/>'
-    +roadsSvg.join('')+labels.join('')
+    +roadsSvg.join('')+labels.join('')+landmarkPins.join('')
     +(inView(aquarium,0)?marker(aquarium,'Monterey Bay Aquarium','#08667a'):'<text x="12" y="287" font-size="11" fill="#365e67">Aquarium outside this map view</text>')
     +marker(destination,'Selected eatery: '+r.name,'#c85830')
     +'<rect x="0" y="0" width="'+W+'" height="26" fill="#e3efeb" opacity=".94"/>'
     +'<text x="12" y="18" font-size="12" font-weight="700" fill="#164d5c">MONTEREY · OFFLINE STREETS</text><text x="365" y="18" font-size="12" font-weight="700" fill="#164d5c">N ↑</text>'
     +'<rect x="0" y="295" width="'+W+'" height="15" fill="#e3efeb"/>'
     +'<path d="M15 302 h'+(pxPerKm*.25).toFixed(1)+'" stroke="#1f5963" stroke-width="3"/><text x="'+(20+pxPerKm*.25).toFixed(1)+'" y="305" font-size="10" fill="#1f5963">250 m</text></svg>'
-    +'<div class="mapLegend"><span><i class="aquariumDot"></i> Monterey Bay Aquarium</span><span><i class="eateryDot"></i> '+safe(r.name)+'</span></div>'
+    +'<div class="mapLegend"><span><i class="aquariumDot"></i> Monterey Bay Aquarium</span><span><i class="eateryDot"></i> '+safe(r.name)+'</span>'+landmarkLegend.join('')+'</div>'
     +'<div class="mapButtons"><button data-action="mapZoom" data-zoom="in" type="button">＋ Zoom</button><button data-action="mapZoom" data-zoom="out" type="button">－ Zoom</button></div>'
     +'<p class="muted">Real road-centerline geometry © County of Monterey GIS. Not turn-by-turn directions, sidewalk information, or an entrance survey. The map works offline.</p>';
 }
