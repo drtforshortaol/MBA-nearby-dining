@@ -1225,7 +1225,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Sat 10 AM–8 PM; Sun 10 AM–7 PM",
     "serviceClass": "Turkish delight, baklava, Turkish coffee",
     "area": "Monterey",
     "batchReview": {
@@ -1243,6 +1243,12 @@
       "verifiedFields": [
         "visitorTip"
       ]
+    },
+    "hoursEvidence": {
+      "status": "official-location-verified",
+      "source": "https://troyamry.com/pages/contact",
+      "checkedOn": "2026-11-07",
+      "note": "Regular published hours; verify holiday and temporary changes."
     }
   },
   {
@@ -6996,7 +7002,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Thu 11 AM–2 PM and 5–8 PM; Fri 11 AM–2 PM and 5–8:30 PM; Sat–Sun 11 AM–2:30 PM and 5–8:30 PM",
     "serviceClass": "Japanese / ramen",
     "area": "Monterey",
     "batchReview": {
@@ -7010,6 +7016,12 @@
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": []
+    },
+    "hoursEvidence": {
+      "status": "official-location-verified",
+      "source": "https://toribashi.com/",
+      "checkedOn": "2026-11-07",
+      "note": "Regular published hours; verify holiday and temporary changes."
     }
   },
   {
@@ -7033,7 +7045,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Fri 11:30 AM–1 AM; Sat–Sun 10 AM–1 AM (following day)",
     "serviceClass": "Restaurant / prepared meals",
     "area": "Monterey",
     "batchReview": {
@@ -7047,6 +7059,12 @@
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": []
+    },
+    "hoursEvidence": {
+      "status": "official-location-verified",
+      "source": "https://www.turn12barandgrill.com/location/",
+      "checkedOn": "2026-11-07",
+      "note": "Regular published hours; verify holiday and temporary changes."
     }
   },
   {
@@ -7650,7 +7668,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Thu 4–9 PM; Fri–Sun 3–9 PM; Fri–Sat late-night dining until 10 PM",
     "serviceClass": "Steakhouse and seafood",
     "area": "Monterey",
     "batchReview": {
@@ -7668,6 +7686,12 @@
       "verifiedFields": [
         "shoppingCenterListing"
       ]
+    },
+    "hoursEvidence": {
+      "status": "official-location-verified",
+      "source": "https://www.konamonterey.com/",
+      "checkedOn": "2026-11-07",
+      "note": "Regular published hours; verify holiday and temporary changes."
     }
   },
   {
