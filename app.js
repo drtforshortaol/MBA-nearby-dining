@@ -29,8 +29,13 @@ const OFFLINE_LANDMARKS=[
 function offlineMapSVG(r,roads,zoom=1){
   if(!Number.isFinite(r.lat)||!Number.isFinite(r.lon))return '<p class="notice">Coordinates unavailable. Copy the address.</p>';
   if(!roads?.features?.length)return '<p class="notice">Offline street data is unavailable.</p>';
-  const W=400,H=310,lat0=r.lat,lon0=r.lon;
-  const pxPerKm=130*Math.max(.65,Math.min(1.75,zoom));
+  const W=400,H=310;
+  // Frame both the aquarium and destination, with a modest margin. Zoom remains
+  // relative to this fit, rather than losing the aquarium off-screen by default.
+  const lat0=(r.lat+AQUARIUM_ENTRANCE.lat)/2,lon0=(r.lon+AQUARIUM_ENTRANCE.lon)/2;
+  const separationKm=Math.hypot((r.lon-AQUARIUM_ENTRANCE.lon)*111.195*Math.cos(lat0*Math.PI/180),(r.lat-AQUARIUM_ENTRANCE.lat)*111.195);
+  const fitPxPerKm=Math.min(175,Math.max(18,240/Math.max(separationKm,0.25)));
+  const pxPerKm=fitPxPerKm*Math.max(.65,Math.min(1.75,zoom));
   const east=111.195*Math.cos(lat0*Math.PI/180),north=111.195;
   const point=(lon,lat)=>({x:W/2+(lon-lon0)*east*pxPerKm,y:H/2-(lat-lat0)*north*pxPerKm});
   const inView=(p,pad=16)=>p.x>=-pad&&p.x<=W+pad&&p.y>=-pad&&p.y<=H+pad;
@@ -47,7 +52,7 @@ function offlineMapSVG(r,roads,zoom=1){
     roadsSvg.push('<path d="'+d+'" fill="none" stroke="'+(major?'#c6d3c9':'#d1dad4')+'" stroke-width="'+(major?11:7)+'" stroke-linejoin="round" stroke-linecap="round"/>');
     roadsSvg.push('<path d="'+d+'" fill="none" stroke="white" stroke-width="'+(major?7:4.8)+'" stroke-linejoin="round" stroke-linecap="round"/>');
     const name=String(feature.n||'').trim();
-    if(!name||name==='<Null>'||minx<0||maxx>W||miny<0||maxy>H)continue;
+    if(!name||name==='<Null>'||minx<8||maxx>W-8||miny<30||maxy>H-18)continue;
     const length=Math.hypot(maxx-minx,maxy-miny);
     if(length<23)continue;
     const mid=pts[Math.floor(pts.length/2)];
@@ -73,8 +78,9 @@ function offlineMapSVG(r,roads,zoom=1){
   return '<svg class="offlineMap realStreetMap" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Authentic offline Monterey County streets near the selected eatery">'
     +'<rect x="0" y="0" width="'+W+'" height="'+H+'" rx="12" fill="#e4efec"/>'
     +roadsSvg.join('')+labels.join('')+landmarkPins.join('')
-    +(inView(aquarium,0)?marker(aquarium,'Monterey Bay Aquarium','#08667a'):'<text x="12" y="287" font-size="11" fill="#365e67">Aquarium outside this map view</text>')
+    +(inView(aquarium,0)?marker(aquarium,'Monterey Bay Aquarium','#08667a')+'<text x="'+Math.max(8,Math.min(W-125,aquarium.x+13)).toFixed(1)+'" y="'+Math.max(37,Math.min(H-20,aquarium.y-12)).toFixed(1)+'" font-size="11" font-weight="750" fill="#075369" stroke="#fff" stroke-width="3" paint-order="stroke">Aquarium</text>':'<text x="12" y="287" font-size="11" fill="#365e67">Aquarium outside this zoom</text>')
     +marker(destination,'Selected eatery: '+r.name,'#c85830')
+    +'<text x="'+Math.max(8,Math.min(W-105,destination.x+14)).toFixed(1)+'" y="'+Math.max(37,Math.min(H-20,destination.y-12)).toFixed(1)+'" font-size="11" font-weight="750" fill="#9a3c20" stroke="#fff" stroke-width="3" paint-order="stroke">Restaurant</text>'
     +'<rect x="0" y="0" width="'+W+'" height="26" fill="#e3efeb" opacity=".94"/>'
     +'<text x="12" y="18" font-size="12" font-weight="700" fill="#164d5c">MONTEREY · OFFLINE STREETS</text><text x="365" y="18" font-size="12" font-weight="700" fill="#164d5c">N ↑</text>'
     +'<rect x="0" y="295" width="'+W+'" height="15" fill="#e3efeb"/>'
