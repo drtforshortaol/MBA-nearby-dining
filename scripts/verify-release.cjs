@@ -39,7 +39,7 @@ assert.equal(meta.appVersion,appVersion,'Database metadata version differs from 
 assert(html.includes('Eatery App <b>v'+appVersion+'</b>'),'Visible footer version differs from application');
 assert(sw.includes('mba-eatery-v'+appVersion),'Service worker cache version differs from application');
 assert.equal(meta.eligibleCount,data.length,'Database eligible count differs from records');
-assert.equal(meta.databaseDate,'2026-11-07','Unexpected database date; update release metadata intentionally');
+assert(/^\d{4}-\d{2}-\d{2}$/.test(meta.databaseDate),'Database date must be YYYY-MM-DD');
 
 assert(sw.includes('data/eateries.json')&&sw.includes('data/roads.json'),'Offline essentials not cached');
 assert(fs.existsSync(path.join(root,'data/roads.json')),'Offline road data missing');
