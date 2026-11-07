@@ -6096,20 +6096,25 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Sun–Thu 11 AM–9 PM; Fri–Sat 11 AM–10 PM.",
     "serviceClass": "Greek / quick service",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch8-2026-11-07",
+      "batch": "hours-qc-2026-11-07-next-cycle",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.45,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Greek / quick service at 481 Alvarado St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.nickthegreek.com/monterey/"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ],
+      "hoursNote": "Official location-specific hours; subject to change."
     }
   },
   {
@@ -6383,20 +6388,25 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Fri 7 AM–5 PM; Sat–Sun 8 AM–4 PM (Monterey location).",
     "serviceClass": "Juice / smoothie shop",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch8-2026-11-07",
+      "batch": "hours-qc-2026-11-07-next-cycle",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.46,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Juice / smoothie shop at 491 Alvarado St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.perfectlypressedjuice.com/contact-1"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ],
+      "hoursNote": "Official location-specific hours; subject to change."
     }
   },
   {
@@ -6499,20 +6509,23 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 6 AM–8:30 PM (navigation directory listing; confirm).",
     "serviceClass": "Bakery / café",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch6-2026-11-07",
+      "batch": "hours-qc-2026-11-07-next-cycle",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.34,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "directory-hours-provisional",
       "visitorTip": "Bakery / café at 400 Alvarado St. Verify current operating status, hours and menu before recommending.",
-      "sources": [],
+      "sources": [
+        "https://www.waze.com/live-map/directions/us/ca/monterey/plumes-coffee-and-tea?to=place.ChIJaR6TxyPkjYARA1HuUVvhKYc"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [],
+      "hoursNote": "Third-party hours, unconfirmed by business."
     }
   },
   {
@@ -6701,20 +6714,25 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Sat lunch 11 AM–2:45 PM, dinner 4:30–8 PM; Sun lunch noon–3 PM, dinner 5–8 PM.",
     "serviceClass": "Restaurant / prepared meals",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch9-2026-11-07",
+      "batch": "hours-qc-2026-11-07-next-cycle",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.6,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Restaurant / prepared meals at 131 Webster St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.siamesebayrestaurant.com/contact/"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ],
+      "hoursNote": "Official location-specific hours; subject to change."
     }
   },
   {
