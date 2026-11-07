@@ -9,11 +9,11 @@
       "website": "https://www.delmontecenter.com/directory",
       "sourceStatus": "shopping-center-directory-checked; hours not verified",
       "hoursVerified": false,
-      "verificationStatus": "provisional-location-listing",
-      "verifiedHours": null,
+      "verificationStatus": "corroborated-current-business-listing",
+      "verifiedHours": "Mon–Thu 11 AM–9 PM; Fri–Sat 11 AM–10 PM; Sun 10 AM–9 PM",
       "sourceUrl": "https://www.delmontecenter.com/directory",
       "checkedOn": "2026-11-07",
-      "notes": "Location listing for Lalla Grill at 1400 Del Monte Center reports Mon–Thu 11 AM–9 PM, Fri–Sat 11 AM–10 PM, Sun 10 AM–9 PM. Confirm with restaurant before publishing."
+      "notes": "Location-specific structured business listing at 1400 Del Monte Center, corroborates prior research. Official restaurant hours not yet verified."
     },
     {
       "id": "MBA-DINE-0195",
@@ -21,11 +21,11 @@
       "website": "https://www.delmontecenter.com/directory",
       "sourceStatus": "shopping-center-directory-checked; hours not verified",
       "hoursVerified": false,
-      "verificationStatus": "provisional-location-listing",
-      "verifiedHours": null,
-      "sourceUrl": "https://www.delmontecenter.com/directory",
+      "verificationStatus": "verified-official-location",
+      "verifiedHours": "Sun–Thu 11:00 AM–10:00 PM; Fri–Sat 11:00 AM–midnight (next day)",
+      "sourceUrl": "https://www.pizzamyheart.com/location/pizza-my-heart-monterey/",
       "checkedOn": "2026-11-07",
-      "notes": "Location listing for Pizza My Heart at 660 Del Monte Center reports Sun–Thu 11 AM–10 PM, Fri–Sat 11 AM–midnight. Verify against restaurant location page before publishing."
+      "notes": "Official Pizza My Heart Monterey location at 660 Del Monte Center; weekly schedule explicit."
     },
     {
       "id": "MBA-DINE-0196",
@@ -33,11 +33,11 @@
       "website": "https://www.delmontecenter.com/directory",
       "sourceStatus": "shopping-center-directory-checked; hours not verified",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
+      "verificationStatus": "current-business-listing-needs-official",
       "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "sourceUrl": "https://www.delmontecenter.com/directory",
+      "checkedOn": "2026-11-07",
+      "notes": "Poke House at 515 Del Monte Center: current location business listing reports daily 11 AM–8 PM. Official merchant hours not yet independently confirmed."
     },
     {
       "id": "MBA-DINE-0197",
@@ -45,11 +45,11 @@
       "website": "https://www.delmontecenter.com/directory",
       "sourceStatus": "shopping-center-directory-checked; hours not verified",
       "hoursVerified": false,
-      "verificationStatus": "provisional-location-listing",
-      "verifiedHours": null,
-      "sourceUrl": "https://www.delmontecenter.com/directory",
+      "verificationStatus": "corroborated-current-business-listing",
+      "verifiedHours": "Mon–Thu/Sun 5 AM–9 PM; Fri–Sat 5 AM–9:30 PM",
+      "sourceUrl": "https://www.starbucks.com/store-locator/store/66442",
       "checkedOn": "2026-11-07",
-      "notes": "Location listing at 492 Del Monte Center reports Mon–Thu/Sun 5 AM–9 PM and Fri–Sat 5 AM–9:30 PM; mall hours are not tenant hours. Needs Starbucks confirmation."
+      "notes": "CAUTION: URL store/66442 is downtown Starbucks, not Del Monte. Business listing identifies 492 Del Monte Center and hours; official URL must be replaced after store identity confirmed. Do not publish as official verified."
     },
     {
       "id": "MBA-DINE-0198",
@@ -57,11 +57,11 @@
       "website": "https://www.delmontecenter.com/directory",
       "sourceStatus": "shopping-center-directory-checked; hours not verified",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
+      "verificationStatus": "current-business-listing-needs-official",
       "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "sourceUrl": "https://www.delmontecenter.com/directory",
+      "checkedOn": "2026-11-07",
+      "notes": "California Pizza Kitchen at 1100 Del Monte Center: current location business listing reports Sun–Thu 11 AM–9 PM, Fri–Sat 11 AM–10 PM; third-party hotel directory reports conflicting shorter hours. Do not publish until reconciled."
     },
     {
       "id": "MBA-DINE-0199",
