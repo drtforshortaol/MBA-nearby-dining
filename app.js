@@ -88,7 +88,7 @@ function offlineMapSVG(r,roads,zoom=1){
     +'<rect x="0" y="295" width="'+W+'" height="15" fill="#e3efeb"/>'
     +'<path d="M15 302 h'+scaleWidth.toFixed(1)+'" stroke="#1f5963" stroke-width="3"/><text x="'+(20+scaleWidth).toFixed(1)+'" y="305" font-size="10" fill="#1f5963">'+(scaleMeters===1000?'1 km':scaleMeters+' m')+'</text></svg>'
     +'<div class="mapLegend"><span><i class="aquariumDot"></i> Monterey Bay Aquarium</span><span><i class="eateryDot"></i> '+safe(r.name)+'</span>'+landmarkLegend.join('')+'</div>'
-    +'<div class="mapButtons"><button data-action="mapZoom" data-zoom="in" type="button" aria-label="Zoom in on offline map">＋ Zoom</button><button data-action="mapZoom" data-zoom="out" type="button" aria-label="Zoom out on offline map">－ Zoom</button><button data-action="mapReset" type="button">↺ Fit both</button></div>'
+    +'<div class="mapButtons"><button data-action="mapZoom" data-zoom="in" type="button" aria-label="Zoom in on offline map">＋ Zoom</button><button data-action="mapZoom" data-zoom="out" type="button" aria-label="Zoom out on offline map">－ Zoom</button><button data-action="mapReset" type="button">↺ Fit All</button></div>'
     +'<p class="muted">Real road-centerline geometry © County of Monterey GIS. Not turn-by-turn directions, sidewalk information, or an entrance survey. The map works offline.</p>';
 }
 /* Approximate, static proximity estimates, not mapped route lengths. Replace with
