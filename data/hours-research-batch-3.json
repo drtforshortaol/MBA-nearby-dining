@@ -142,17 +142,17 @@
       "id": "MBA-DINE-0205",
       "name": "Scoops Ice Cream Parlor",
       "website": "https://www.oldmonterey.org/dining-guide",
-      "sourceStatus": "conflicting",
-      "hoursVerified": false,
-      "verificationStatus": "conflicting",
-      "verifiedHours": null,
-      "sourceUrl": "https://www.oldmonterey.org/biz/scoops-ice-cream-parlor",
+      "sourceStatus": "verified-official-operator-post",
+      "hoursVerified": true,
+      "verificationStatus": "verified-official-operator-post",
+      "verifiedHours": "Mon–Thu 1–10 PM; Fri 1–11 PM; Sat–Sun noon–11 PM",
+      "sourceUrl": "https://www.oldmonterey.org/news/2026/07/affogato-lattes-now-scoops",
       "checkedOn": "2026-11-07",
-      "notes": "Call (831) 521-1339. Downtown association confirms Suite 103 at 595 Munras Ave but lists only a one-time grand opening. Roadtrippers lists Mon–Thu 1–10 PM, Fri 1–11 PM, Sat noon–11 PM, Sun noon–10 PM. MenuPix has a substantially different schedule. Confirm current hours with the shop.",
+      "notes": "The shop posted these regular hours for 595 Munras Avenue on the downtown association website on July 7, 2026. Its Social Wave merchant listing matches. Roadtrippers lists an earlier Sunday close, while MenuPix lists a substantially different weekly schedule. Prefer the operator schedule corroborated by the Social Wave merchant listing.",
       "corroboratingUrls": [
+        "https://www.socialwave.net/biz/scoops-ice-cream-parlor",
         "https://maps.roadtrippers.com/us/monterey-ca/food-drink/scoops-ice-cream-parlor-monterey-ca--0",
-        "https://www.menupix.com/california/restaurants/34475772/Scoops-Ice-Cream-Parlor-Monterey-CA",
-        "https://www.instagram.com/monterey.scoops/"
+        "https://www.menupix.com/california/restaurants/34475772/Scoops-Ice-Cream-Parlor-Monterey-CA"
       ]
     },
     {
@@ -214,16 +214,17 @@
       "id": "MBA-DINE-0218",
       "name": "Compact Disco — EAT takeout window",
       "website": "https://www.oldmonterey.org/biz/compact-disco",
-      "sourceStatus": "verified-corroborated-local-publication",
-      "hoursVerified": true,
-      "verificationStatus": "verified-corroborated-local-publication",
-      "verifiedHours": "Takeout window Fri–Sat 10 PM–2 AM next day",
-      "sourceUrl": "https://ediblemontereybay.com/blog/compact-disco-adds-rare-late-night-food-option/",
+      "sourceStatus": "provisional-window-hours",
+      "hoursVerified": false,
+      "verificationStatus": "provisional-window-hours",
+      "verifiedHours": null,
+      "sourceUrl": "https://www.oldmonterey.org/news/2026/06/late-night-eats-compact-disco",
       "checkedOn": "2026-11-07",
-      "notes": "Edible Monterey Bay’s June 30, 2026 report gives the opening and closing times of the walk-up EAT window. Compact Disco’s June 8, 2026 announcement confirms the Friday and Saturday 2 AM close for the outdoor EAT window at 420 Tyler Street. The current downtown association listing confirms the window is still at that address. Club and happy-hour hours are separate.",
+      "notes": "Compact Disco’s June announcement gives a 2 AM close for the all-ages walk-up window at 420 Tyler Street on Friday and Saturday nights. Edible Monterey Bay reported 10 PM–2 AM on those nights in June. Later operator social posts describe different opening hours for the 21+ pub kitchen. The current downtown association listing confirms the window exists at 420 Tyler Street but omits hours. Confirm the current takeout window schedule separately from club, happy-hour and in-pub kitchen hours.",
       "corroboratingUrls": [
-        "https://www.oldmonterey.org/news/2026/06/late-night-eats-compact-disco",
-        "https://www.oldmonterey.org/biz/compact-disco"
+        "https://ediblemontereybay.com/blog/compact-disco-adds-rare-late-night-food-option/",
+        "https://www.oldmonterey.org/biz/compact-disco",
+        "https://www.findglocal.com/US/Monterey/107541552329400/Compact-Disco-831"
       ]
     },
     {
