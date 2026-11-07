@@ -21,11 +21,11 @@
       "website": "https://www.dippindots.com/",
       "sourceStatus": "partial-verified",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
+      "verificationStatus": "provisional-local-business-listing",
       "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "sourceUrl": "https://canneryrow.com/plan-your-visit/dine/",
+      "checkedOn": "2026-11-07",
+      "notes": "Cannery Row directory confirms Dippin' Dots at 711 Cannery Row; location-specific business search reports daily 11:00 AM–5:30 PM, but the directory does not publish those hours. Hold for direct confirmation; not verified."
     },
     {
       "id": "MBA-DINE-0011",
@@ -153,11 +153,11 @@
       "website": "https://www.jerseymikes.com/",
       "sourceStatus": "existing-record-only; requires independent source verification",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
+      "verificationStatus": "needs-location-match",
       "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "sourceUrl": "https://www.jerseymikes.com/",
+      "checkedOn": "2026-11-07",
+      "notes": "Local business search returned Jersey Mike's at 100 Country Club Gate Center, Pacific Grove (daily 10 AM–9 PM); confirm this is the intended app record before using hours. Do not substitute another branch's hours."
     },
     {
       "id": "MBA-DINE-0107",
