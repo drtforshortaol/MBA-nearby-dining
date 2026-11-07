@@ -80,12 +80,12 @@
       "name": "Taco Bell",
       "website": "https://locations.tacobell.com/ca/monterey/321-alvarado-st.html",
       "sourceStatus": "online-research-needs-direct-confirmation",
-      "hoursVerified": false,
-      "verificationStatus": "provisional-needs-manual-review",
-      "verifiedHours": null,
+      "hoursVerified": true,
+      "verificationStatus": "verified-official-location",
+      "verifiedHours": "Dine-in Sun–Thu 10 AM–11 PM; Fri–Sat 10 AM–2 AM next day",
       "sourceUrl": "https://locations.tacobell.com/ca/monterey/321-alvarado-st.html",
       "checkedOn": "2026-11-07",
-      "notes": "The latest official location snapshots show 10 AM–11 PM Tue–Thu but expose only one day per snapshot. FindOpen lists Sun–Thu 10 AM–11 PM and Fri–Sat 10 AM–2 AM as general hours, while Waze lists 10 PM closing Sun–Thu. Older chain category pages show midnight on some weekdays. Call to confirm the full dine-in schedule, especially Fri–Sat."
+      "notes": "The official location page for 321 Alvarado St embeds all seven days in its Restaurant JSON-LD openingHoursSpecification, explicitly labeled Dine-In. The visible daily snapshot shows only one day. The full schedule matches FindOpen. Older chain category pages and some directories show different closing times."
     },
     {
       "id": "MBA-DINE-0174",
