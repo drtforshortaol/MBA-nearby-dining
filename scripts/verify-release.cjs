@@ -37,7 +37,8 @@ const appVersion=app.match(/APP_VERSION='([^']+)'/)?.[1];
 assert(appVersion,'Application version marker missing');
 assert.equal(meta.appVersion,appVersion,'Database metadata version differs from application');
 assert(html.includes('Eatery App <b>v'+appVersion+'</b>'),'Visible footer version differs from application');
-assert(sw.includes('mba-eatery-v'+appVersion),'Service worker cache version differs from application');
+assert.equal(sw.match(/const CACHE='([^']+)'/)?.[1],'mba-eatery-v'+appVersion,'Service worker cache version differs from application');
+assert.equal(html.match(/Eatery App <b>v([^<]+)<\/b>/)?.[1],appVersion,'Visible footer version differs from application');
 assert.equal(meta.eligibleCount,data.length,'Database eligible count differs from records');
 assert(/^\d{4}-\d{2}-\d{2}$/.test(meta.databaseDate),'Database date must be YYYY-MM-DD');
 
