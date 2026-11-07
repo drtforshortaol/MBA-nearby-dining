@@ -1,9 +1,10 @@
 {
-  "appVersion": "0.1.8",
+  "appVersion": "0.2.0",
   "databaseDate": "2026-11-05",
   "eligibleCount": 205,
   "photoCount": 8,
   "dataPolicy": "Only 205 visitor-recommendation-enabled records exposed; other research remains in original archival package.",
-  "mapType": "Offline schematic street corridors inferred from geocoded eatery locations, not official road centerlines",
-  "mapAccuracy": "Orientation only; road shapes and intersections not surveyed"
+  "mapType": "Authentic offline Monterey County GIS street centerlines",
+  "mapAccuracy": "Orientation only; road shapes and intersections not surveyed",
+  "mapSource": "https://maps.co.monterey.ca.us/server/rest/services/Transportation/Road_Centerline/FeatureServer/0"
 }
