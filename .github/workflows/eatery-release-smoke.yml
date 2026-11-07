@@ -20,5 +20,12 @@ jobs:
           node --check sw.js
           node --check qr-local.js
           node --check scripts/verify-release.cjs
+          node --check scripts/browser-smoke.cjs
       - name: Verify restaurant data and offline assets
         run: node scripts/verify-release.cjs
+      - name: Install browser test runtime
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Mobile browser and offline smoke test
+        run: node scripts/browser-smoke.cjs
