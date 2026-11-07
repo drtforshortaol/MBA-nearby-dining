@@ -49,17 +49,15 @@
       "id": "MBA-DINE-0197",
       "name": "Starbucks (Del Monte Center)",
       "website": "https://www.delmontecenter.com/directory",
-      "sourceStatus": "conflicting",
-      "hoursVerified": false,
-      "verificationStatus": "conflicting",
-      "verifiedHours": null,
-      "sourceUrl": "https://www.delmontecenter.com/store/starbucks-coffee",
+      "sourceStatus": "verified-official-location",
+      "hoursVerified": true,
+      "verificationStatus": "verified-official-location",
+      "verifiedHours": "Sun–Thu 5 AM–9 PM; Fri–Sat 5 AM–9:30 PM",
+      "sourceUrl": "https://www.starbucks.com/store-locator/store/18425",
       "checkedOn": "2026-11-07",
-      "notes": "Call (831) 642-0736. Mall tenant page confirms this cafe and phone but publishes no weekly hours. Waze gives daily 6 AM–7 PM at 492 Del Monte Center. The existing research listing reported 5 AM–9/9:30 PM. The store locator for this cafe is 18425 and supplies no readable hours. Store 66442 is downtown.",
+      "notes": "The official locator’s public response identifies store 18425 at Del Monte Center and gives the full weekly schedule in the cafe’s local time. The cafe is distinct from the downtown Alvarado store. The shopping-center tenant page’s structured opening hours repeat mall-wide defaults. The locator requests its data using Accept: application/json and X-Requested-With: XMLHttpRequest.",
       "corroboratingUrls": [
-        "https://www.waze.com/live-map/directions/starbucks-del-monte-center-492-monterey?to=place.w.156041582.1560415818.2679990",
-        "https://www.starbucks.com/store-locator/store/18425",
-        "https://monterey-ca.findstorenearme.us/coffee-shop/"
+        "https://www.starbucks.com/apiproxy/v1/locations?lat=36.603&lng=-121.902"
       ]
     },
     {
@@ -204,10 +202,11 @@
       "verifiedHours": null,
       "sourceUrl": "https://ediblemontereybay.com/blog/shiny-new-benny-walkers-soft-opens/",
       "checkedOn": "2026-11-07",
-      "notes": "Soft-opening hours reported as daily 4–8 PM at 444 Alvarado St, with longer 11 AM–10:30 PM hours possible as soon as Nov 11. Downtown association lists the venue but no standing schedule. Confirm the post-soft-opening schedule with the operator.",
+      "notes": "Soft-opening hours reported as daily 4–8 PM at 444 Alvarado St, with longer 11 AM–10:30 PM hours possible as soon as Nov 11. Downtown association lists the venue but no standing schedule. Confirm the post-soft-opening schedule with the operator. The downtown association lists the operator’s Instagram but no phone number or permanent hours.",
       "corroboratingUrls": [
         "https://www.oldmonterey.org/biz/benny-walkers",
-        "https://hoodline.com/2026/10/benny-walker-s-soft-opens-in-downtown-monterey-with-a-1-700-year-old-sequoia-bar/"
+        "https://hoodline.com/2026/10/benny-walker-s-soft-opens-in-downtown-monterey-with-a-1-700-year-old-sequoia-bar/",
+        "https://www.instagram.com/bennywalkersmonterey/"
       ]
     },
     {
@@ -220,28 +219,30 @@
       "verifiedHours": null,
       "sourceUrl": "https://www.oldmonterey.org/news/2026/06/late-night-eats-compact-disco",
       "checkedOn": "2026-11-07",
-      "notes": "Compact Disco’s June announcement gives a 2 AM close for the all-ages walk-up window at 420 Tyler Street on Friday and Saturday nights. Edible Monterey Bay reported 10 PM–2 AM on those nights in June. Later operator social posts describe different opening hours for the 21+ pub kitchen. The current downtown association listing confirms the window exists at 420 Tyler Street but omits hours. Confirm the current takeout window schedule separately from club, happy-hour and in-pub kitchen hours.",
+      "notes": "Compact Disco’s June announcement gives a 2 AM close for the all-ages walk-up window at 420 Tyler Street on Friday and Saturday nights. Edible Monterey Bay reported 10 PM–2 AM on those nights in June. Later operator social posts describe different opening hours for the 21+ pub kitchen. The current downtown association listing confirms the window exists at 420 Tyler Street but omits hours. Confirm the current takeout window schedule separately from club, happy-hour and in-pub kitchen hours. See Monterey lists the venue phone as (831) 920-2518. Ask specifically for the all-ages EAT window.",
       "corroboratingUrls": [
         "https://ediblemontereybay.com/blog/compact-disco-adds-rare-late-night-food-option/",
         "https://www.oldmonterey.org/biz/compact-disco",
-        "https://www.findglocal.com/US/Monterey/107541552329400/Compact-Disco-831"
+        "https://www.findglocal.com/US/Monterey/107541552329400/Compact-Disco-831",
+        "https://www.seemonterey.com/directory/compact-disco/",
+        "https://www.compactdisco.org/"
       ]
     },
     {
       "id": "MBA-DINE-0225",
       "name": "Pretzelmaker",
       "website": "https://www.delmontecenter.com/store/pretzelmaker",
-      "sourceStatus": "conflicting",
-      "hoursVerified": false,
-      "verificationStatus": "conflicting",
-      "verifiedHours": null,
-      "sourceUrl": "https://www.delmontecenter.com/store/pretzelmaker",
+      "sourceStatus": "verified-official-location",
+      "hoursVerified": true,
+      "verificationStatus": "verified-official-location",
+      "verifiedHours": "Mon–Fri 11 AM–8 PM; Sat 11 AM–7 PM; Sun 11 AM–5 PM",
+      "sourceUrl": "https://www.pretzelmaker.com/locations/",
       "checkedOn": "2026-11-07",
-      "notes": "Call (831) 521-6001. Official tenant page confirms the location but has no weekly hours. Restaurantji and Yellow Pages list Mon–Fri 11 AM–8 PM, Sat 11 AM–7 PM, Sun 11 AM–5 PM. USA Restaurants lists Friday until 9 PM with a different phone number. Confirm the tenant’s Friday closing time and weekly schedule.",
+      "notes": "The brand locator’s public store response identifies Pretzelmaker Del Monte Mall at 520 Del Monte Center, phone (831) 521-6001, and publishes these as weekly business hours. It lists delivery hours separately. Restaurantji and Yellow Pages match. The mall page’s structured hours repeat mall-wide defaults.",
       "corroboratingUrls": [
+        "https://www.pretzelmaker.com/wp-admin/admin-ajax.php?action=store_search&lat=36.58484&lng=-121.89589&max_results=10&search_radius=10",
         "https://www.restaurantji.com/ca/monterey/pretzelmaker-/",
-        "https://www.yellowpages.com/monterey-ca/mip/pretzel-time-8200450",
-        "https://usarestaurants.info/explore/united-states/california/monterey-county/monterey/695645-pretzelmaker.htm"
+        "https://www.yellowpages.com/monterey-ca/mip/pretzel-time-8200450"
       ]
     },
     {
@@ -254,25 +255,21 @@
       "verifiedHours": null,
       "sourceUrl": "https://www.wholefoodsmarket.com/stores/monterey",
       "checkedOn": "2026-11-07",
-      "notes": "Call (831) 333-1600 for the Prepared Foods counter and hot bar. The location page confirms the hot bar but publishes only supermarket hours. Counter service may run on a different schedule."
+      "notes": "Call (831) 333-1600 for the Prepared Foods counter and hot bar. The location page confirms the hot bar but publishes only supermarket hours. Counter service may run on a different schedule. The location page’s embedded listing data describes the Hot Bar as an amenity without separate hours."
     },
     {
       "id": "MBA-DINE-0235",
       "name": "Starbucks Coffee — Downtown Alvarado",
       "website": "https://www.starbucks.com/store-locator/store/66442",
-      "sourceStatus": "verified-corroborated-business-listings",
+      "sourceStatus": "verified-official-location",
       "hoursVerified": true,
-      "verificationStatus": "verified-corroborated-business-listings",
-      "verifiedHours": "Daily 4:30 AM–9 PM",
-      "sourceUrl": "https://www.yellowpages.com/monterey-ca/mip/starbucks-coffee-472670766?lid=472670766",
+      "verificationStatus": "verified-official-location",
+      "verifiedHours": "Mon–Sat 4:30 AM–9 PM; Sun 4 AM–9 PM",
+      "sourceUrl": "https://www.starbucks.com/store-locator/store/66442",
       "checkedOn": "2026-11-07",
-      "notes": "Yellow Pages, Restaurantji and EatOutMap agree on the weekly cafe schedule at 316 Alvarado St. Cylex agrees except for a dated Saturday holiday exception. A SuperPages search summary shows Sunday at 4 AM but the associated location-specific listing matches the 4:30 AM opening. Starbucks official locator does not expose a readable schedule.",
+      "notes": "The official locator’s public response identifies store 66442 at 316 Alvarado Street. The response shows Sunday opens at 4 AM, correcting the 4:30 AM Sunday time shown in some directories. The locator requests its data using Accept: application/json and X-Requested-With: XMLHttpRequest.",
       "corroboratingUrls": [
-        "https://www.restaurantji.com/ca/monterey/starbucks-/",
-        "https://eatoutmap.com/en/usa/monterey/starbucks-coffee-company",
-        "https://www.cylex.us.com/company/starbucks-coffee-company-36350858.html",
-        "https://www.superpages.com/monterey-ca/bpp/starbucks-coffee-472670766",
-        "https://www.starbucks.com/store-locator/store/66442"
+        "https://www.starbucks.com/apiproxy/v1/locations?lat=36.603&lng=-121.902"
       ]
     }
   ]
