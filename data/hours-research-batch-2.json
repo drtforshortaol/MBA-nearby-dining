@@ -57,11 +57,11 @@
       "website": "https://oldmontereycafeca.com/",
       "sourceStatus": "existing-record-only; requires independent source verification",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
+      "verificationStatus": "corroborated-location-listing-needs-primary-source",
       "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "sourceUrl": "https://www.oldmonterey.org/biz/old-monterey-cafe",
+      "checkedOn": "2026-11-07",
+      "notes": "Old Monterey directory confirms operating cafe but does not show exact hours. Local listing reports daily 6:45 AM–2:30 PM; not yet entered as verified without accessible corroborating primary source."
     },
     {
       "id": "MBA-DINE-0162",
@@ -177,11 +177,11 @@
       "website": "https://montereyfishhouse.com",
       "sourceStatus": "existing-record-only; requires independent source verification",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
-      "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "verificationStatus": "verified-current-chamber-directory",
+      "verifiedHours": "Lunch daily 11:30 AM–2:00 PM; dinner nightly 5:00–8:30 PM",
+      "sourceUrl": "https://members.montereychamber.com/list/member/monterey-s-fish-house-1773",
+      "checkedOn": "2026-11-07",
+      "notes": "Monterey Peninsula Chamber of Commerce business listing; 2114 Del Monte Ave."
     },
     {
       "id": "MBA-DINE-0189",
