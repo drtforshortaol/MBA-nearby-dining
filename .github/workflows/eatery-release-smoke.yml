@@ -1,0 +1,24 @@
+name: Eatery release smoke checks
+on:
+  push:
+    branches: [qc/integration-20261107, work/app-testing-20261107]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  release-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify JavaScript syntax
+        run: |
+          node --check app.js
+          node --check sw.js
+          node --check qr-local.js
+          node --check scripts/verify-release.cjs
+      - name: Verify restaurant data and offline assets
+        run: node scripts/verify-release.cjs
