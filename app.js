@@ -1,6 +1,6 @@
 'use strict';
-const APP_VERSION='0.1.9', BASKET_KEY='mba-eatery-basket-v1', FAV_KEY='mba-eatery-favorites-v1';
-let eateries=[],byId=new Map(),basket=[],favorites=[],mode='explore',selected=null,travel='walk',query='',quick='',limit='all',sort='name',photoExpanded=false,shared=false,navHistory=[],filters={cuisine:'all',price:[],family:'all',alcohol:'all',ocean:'all',entertainment:'all'};
+const APP_VERSION='0.2.0', BASKET_KEY='mba-eatery-basket-v1', FAV_KEY='mba-eatery-favorites-v1';
+let eateries=[],byId=new Map(),basket=[],favorites=[],mode='explore',selected=null,travel='walk',query='',quick='',limit='all',sort='name',photoExpanded=false,shared=false,navHistory=[],roadData=null,mapZoom=1,filters={cuisine:'all',price:[],family:'all',alcohol:'all',ocean:'all',entertainment:'all'};
 const $=id=>document.getElementById(id);
 const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const readStorage=(key)=>{try{return JSON.parse(localStorage.getItem(key))||[]}catch{return []}};
@@ -17,82 +17,56 @@ function home(){if($('lightbox'))$('lightbox').remove();navHistory=[];mode='expl
 const cuisineGroup=r=>{let s=(r.cuisine||'').toLowerCase();if(/seafood|fish|oyster|clam|crab|sushi/.test(s))return 'seafood';if(/pizza|pizzeria/.test(s))return 'pizza';if(/coffee|café|cafe|espresso|tea|bakery/.test(s))return 'coffee';if(/mexican|taco|burrito|latin/.test(s))return 'mexican';if(/italian|pasta/.test(s))return 'italian';if(/asian|japanese|chinese|thai|korean|vietnamese|ramen/.test(s))return 'asian';if(/american|burger|sandwich|bbq|steak|grill/.test(s))return 'american';return 'other'};
 const verifiedFacet=(r,key)=>{let v=r.attributes?.[key];return v&&v.status==='verified'?String(v.value).toLowerCase():null};
 const facetOptions=(key,items)=>items.map(([value,label])=>`<option value="${value}" ${filters[key]===value?'selected':''}>${label}</option>`).join('');
-function locationMap(r){return `<details class="mapdetails" data-map-id="${safe(r.id)}"><summary>🗺 Nearby streets & landmarks (offline)</summary><div class="mapcontent" data-map-content><p class="muted">Tap to view nearby street corridors and landmarks.</p></div></details>`}
-function offlineMapSVG(r){
-  if(!Number.isFinite(r.lat)||!Number.isFinite(r.lon))return '<p class="notice">Location coordinates are not yet verified. Copy the address to locate this eatery in your maps app.</p>';
-  const anchor=AQUARIUM_ENTRANCE;
-  const kmLon=111.195*Math.cos(((r.lat+anchor.lat)/2)*Math.PI/180);
-  const xy=p=>({x:p.lon*kmLon,y:p.lat*111.195});
-  const A=xy(anchor),B=xy(r),center={x:(A.x+B.x)/2,y:(A.y+B.y)/2};
-  const factor=Math.min(280/(Math.abs(B.x-A.x)+.8),184/(Math.abs(B.y-A.y)+.6),300);
-  const project=p=>{const q=xy(p);return {x:180+(q.x-center.x)*factor,y:135-(q.y-center.y)*factor}};
-  const visible=p=>p.x>-20&&p.x<380&&p.y>-20&&p.y<290;
-  const title='OFFLINE NEIGHBORHOOD ORIENTATION';
-  const segments=[];
-  const groups=new Map();
-  const normalizeStreet=address=>{
-    if(!address)return null;
-    let s=address.replace(/^\s*\d+[A-Z\-\/]*\s+/i,'').replace(/,.*$/,'').replace(/\s+(?:Suite|Ste|Unit|#)\s*[\w-]+.*$/i,'').trim();
-    s=s.replace(/\bAvenue\b/gi,'Ave').replace(/\bStreet\b/gi,'St').replace(/\bBoulevard\b/gi,'Blvd').replace(/\bRoad\b/gi,'Rd');
-    if(!/\b(?:St|Ave|Blvd|Row|Rd)\b/i.test(s)||s.length>32)return null;
-    return s;
-  };
-  for(const item of eateries){
-    if(!Number.isFinite(item.lat)||!Number.isFinite(item.lon))continue;
-    const name=normalizeStreet(item.address);
-    if(!name)continue;
-    const p=project(item);
-    if(!visible(p))continue;
-    const key=name.toLowerCase();
-    if(!groups.has(key))groups.set(key,{name,points:[]});
-    let arr=groups.get(key).points;
-    if(!arr.some(q=>Math.hypot(q.x-p.x,q.y-p.y)<2))arr.push(p);
+function locationMap(r){return `<details class="mapdetails" data-map-id="${safe(r.id)}"><summary>🗺 Real nearby streets (offline)</summary><div class="mapcontent" data-map-content><p class="muted">Tap to view nearby street corridors and landmarks.</p></div></details>`}
+function offlineMapSVG(r,roads,zoom=1){
+  if(!Number.isFinite(r.lat)||!Number.isFinite(r.lon))return '<p class="notice">Coordinates unavailable. Copy the address.</p>';
+  if(!roads?.features?.length)return '<p class="notice">Offline street data is unavailable.</p>';
+  const W=400,H=310,lat0=r.lat,lon0=r.lon;
+  const pxPerKm=130*Math.max(.65,Math.min(1.75,zoom));
+  const east=111.195*Math.cos(lat0*Math.PI/180),north=111.195;
+  const point=(lon,lat)=>({x:W/2+(lon-lon0)*east*pxPerKm,y:H/2-(lat-lat0)*north*pxPerKm});
+  const inView=(p,pad=16)=>p.x>=-pad&&p.x<=W+pad&&p.y>=-pad&&p.y<=H+pad;
+  const roadsSvg=[],names=new Map();
+  for(const feature of roads.features){
+    const coords=feature.p||[];
+    if(coords.length<2)continue;
+    const pts=coords.map(q=>point(q[0],q[1]));
+    const xs=pts.map(q=>q.x),ys=pts.map(q=>q.y);
+    const minx=Math.min(...xs),maxx=Math.max(...xs),miny=Math.min(...ys),maxy=Math.max(...ys);
+    if(maxx<0||minx>W||maxy<0||miny>H)continue;
+    const d=pts.map((p,i)=>(i?'L':'M')+p.x.toFixed(1)+' '+p.y.toFixed(1)).join(' ');
+    const major=/arterial|collector|highway/i.test(feature.c||'');
+    roadsSvg.push('<path d="'+d+'" fill="none" stroke="'+(major?'#c6d3c9':'#d1dad4')+'" stroke-width="'+(major?11:7)+'" stroke-linejoin="round" stroke-linecap="round"/>');
+    roadsSvg.push('<path d="'+d+'" fill="none" stroke="white" stroke-width="'+(major?7:4.8)+'" stroke-linejoin="round" stroke-linecap="round"/>');
+    const name=String(feature.n||'').trim();
+    if(!name||name==='<Null>'||minx<0||maxx>W||miny<0||maxy>H)continue;
+    const length=Math.hypot(maxx-minx,maxy-miny);
+    if(length<23)continue;
+    const mid=pts[Math.floor(pts.length/2)];
+    const score=length+(major?12:0)+(/cannery|wave|lighthouse|foam|alvarado|central|del monte|munras|forest/i.test(name)?35:0);
+    if(!names.has(name)||names.get(name).score<score)names.set(name,{name,x:mid.x,y:mid.y,score});
   }
-  const strokes=[],labels=[];
-  for(const group of groups.values()){
-    const points=group.points;
-    if(points.length<2)continue;
-    const dx=Math.max(...points.map(p=>p.x))-Math.min(...points.map(p=>p.x));
-    const dy=Math.max(...points.map(p=>p.y))-Math.min(...points.map(p=>p.y));
-    points.sort((p,q)=>dx>dy?p.x-q.x:p.y-q.y);
-    let best=null;
-    for(let i=1;i<points.length;i++){
-      const a=points[i-1],b=points[i],length=Math.hypot(a.x-b.x,a.y-b.y);
-      if(length>factor*.7||length<3)continue; // Don't connect distant, disconnected venues.
-      strokes.push('<path d="M'+a.x.toFixed(1)+' '+a.y.toFixed(1)+' L'+b.x.toFixed(1)+' '+b.y.toFixed(1)+'" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>');
-      strokes.push('<path d="M'+a.x.toFixed(1)+' '+a.y.toFixed(1)+' L'+b.x.toFixed(1)+' '+b.y.toFixed(1)+'" fill="none" stroke="#aec6c2" stroke-width="5" stroke-linecap="round"/>');
-      if(!best||length>best.length)best={length,x:(a.x+b.x)/2,y:(a.y+b.y)/2};
-    }
-    if(best&&best.x>25&&best.x<335&&best.y>35&&best.y<235)labels.push({text:group.name,x:best.x,y:best.y});
-  }
-  const out=['<svg class="offlineMap streetsMap" viewBox="0 0 360 285" role="img" aria-label="Offline neighborhood diagram with approximate street corridors, the Aquarium and the selected eatery">',
-   '<rect width="360" height="285" rx="12" fill="#e7eeeb"/>',
-   '<text x="12" y="19" font-size="11" font-weight="700" fill="#154d5b">'+title+'</text>',
-   '<text x="326" y="19" font-size="12" font-weight="700" fill="#154d5b">N ↑</text>'];
-  out.push(...strokes);
-  let occupied=[];
-  for(let item of labels.sort((a,b)=>a.text.localeCompare(b.text))){
-    if(occupied.some(p=>Math.hypot(item.x-p.x,item.y-p.y)<31))continue;
+  const labels=[],occupied=[];
+  for(const item of [...names.values()].sort((a,b)=>b.score-a.score)){
+    if(labels.length>=22)break;
+    if(occupied.some(p=>Math.hypot(item.x-p.x,item.y-p.y)<38))continue;
     occupied.push(item);
-    out.push('<text x="'+item.x.toFixed(1)+'" y="'+(item.y-5).toFixed(1)+'" text-anchor="middle" font-size="10.5" font-weight="600" stroke="#e7eeeb" stroke-width="3" paint-order="stroke" fill="#42636b">'+safe(item.text)+'</text>');
+    labels.push('<text x="'+item.x.toFixed(1)+'" y="'+(item.y-5).toFixed(1)+'" text-anchor="middle" font-size="11" font-weight="650" fill="#355665" stroke="#f7f9f7" stroke-width="3.5" paint-order="stroke">'+safe(item.name)+'</text>');
   }
-  const wharf=eateries.filter(e=>/Fisherman.s Wharf/i.test(e.address||'')&&Number.isFinite(e.lat)&&Number.isFinite(e.lon));
-  if(wharf.length>=2){
-    const p=project({lat:wharf.reduce((a,b)=>a+b.lat,0)/wharf.length,lon:wharf.reduce((a,b)=>a+b.lon,0)/wharf.length});
-    if(visible(p))out.push('<circle cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="4" fill="#617e82"/><text x="'+p.x.toFixed(1)+'" y="'+(p.y-12).toFixed(1)+'" font-size="10" text-anchor="middle" fill="#345964">Old Fisherman’s Wharf area</text>');
-  }
-  const a=project(anchor),b=project(r);
-  const pin=(p,color,text,dy)=>'<circle cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="10" fill="'+color+'" stroke="white" stroke-width="3"/><text x="'+p.x.toFixed(1)+'" y="'+(p.y+dy).toFixed(1)+'" font-size="12" font-weight="700" text-anchor="middle" stroke="#e7eeeb" stroke-width="3.5" paint-order="stroke" fill="#143c47">'+text+'</text>';
-  out.push(pin(a,'#08667a','Aquarium',25),pin(b,'#c85830','Selected eatery',-16));
-  const scalePx=factor*.25;
-  out.push('<rect x="0" y="260" width="360" height="25" fill="#d6e7e2"/>',
-    '<path d="M15 275 h'+scalePx.toFixed(1)+'" stroke="#1f535d" stroke-width="3"/>',
-    '<text x="'+(20+scalePx).toFixed(1)+'" y="278" font-size="10" fill="#1f535d">~250 m</text>',
-    '<text x="350" y="278" font-size="9" fill="#45636b" text-anchor="end">Schematic street corridors</text>','</svg>');
-  const n=strokes.length/2;
-  return out.join('')+'<p class="muted">Neighborhood orientation only: '+n+' approximate street segments inferred from restaurant coordinates. Street shapes, intersections and entrances are <strong>not surveyed or route-ready</strong>. No internet required. Copy the address for actual navigation.</p>';
+  const marker=(p,title,color,above)=>'<circle cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="10" stroke="white" stroke-width="3" fill="'+color+'"/><text x="'+p.x.toFixed(1)+'" y="'+(p.y+(above?-17:24)).toFixed(1)+'" text-anchor="middle" font-size="12" font-weight="750" stroke="#f7f9f7" stroke-width="4" paint-order="stroke" fill="#17434a">'+title+'</text>';
+  const aquarium=point(AQUARIUM_ENTRANCE.lon,AQUARIUM_ENTRANCE.lat),destination=point(r.lon,r.lat);
+  return '<svg class="offlineMap realStreetMap" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Authentic offline Monterey County streets near the selected eatery">'
+    +'<rect x="0" y="0" width="'+W+'" height="'+H+'" rx="12" fill="#e4efec"/>'
+    +roadsSvg.join('')+labels.join('')
+    +(inView(aquarium,0)?marker(aquarium,'Aquarium','#08667a',false):'<text x="12" y="287" font-size="11" fill="#365e67">Aquarium outside this map view</text>')
+    +marker(destination,'Eatery','#c85830',true)
+    +'<rect x="0" y="0" width="'+W+'" height="26" fill="#e3efeb" opacity=".94"/>'
+    +'<text x="12" y="18" font-size="12" font-weight="700" fill="#164d5c">MONTEREY · OFFLINE STREETS</text><text x="365" y="18" font-size="12" font-weight="700" fill="#164d5c">N ↑</text>'
+    +'<rect x="0" y="295" width="'+W+'" height="15" fill="#e3efeb"/>'
+    +'<path d="M15 302 h'+(pxPerKm*.25).toFixed(1)+'" stroke="#1f5963" stroke-width="3"/><text x="'+(20+pxPerKm*.25).toFixed(1)+'" y="305" font-size="10" fill="#1f5963">250 m</text></svg>'
+    +'<div class="mapButtons"><button data-action="mapZoom" data-zoom="in" type="button">＋ Zoom</button><button data-action="mapZoom" data-zoom="out" type="button">－ Zoom</button></div>'
+    +'<p class="muted">Real road-centerline geometry © County of Monterey GIS. Not turn-by-turn directions, sidewalk information, or an entrance survey. The map works offline.</p>';
 }
-
 /* Approximate, static proximity estimates, not mapped route lengths. Replace with
    separately sourced walking/driving routing measurements as they are verified. */
 const AQUARIUM_ENTRANCE={lat:36.617833,lon:-121.902000};
@@ -120,12 +94,12 @@ function guestView(){let ids=idsFromUrl(),rs=ids.map(id=>byId.get(id)).filter(Bo
 function goView(){let r=byId.get(selected);if(!r)return explore();return `<div class="pagehead"><button data-action="backgo">← ${shared?'Suggestions':'Explore'}</button><div class="chips"><button data-action="settravel" data-value="walk" class="${travel==='walk'?'active':''}">Walk</button><button data-action="settravel" data-value="drive" class="${travel==='drive'?'active':''}">Drive</button></div></div><div class="destination panel"><h1>${safe(r.name)}</h1>${photo(r,'heroPhoto')}<p class="caption">${r.photo?safe(r.photoCaption||'Reference storefront photo; entrance appearance should be verified.'): 'Storefront photo pending. Use the address to confirm the entrance.'}</p><p><strong>${safe(addr(r))}</strong></p><div class="actions"><button class="primary" data-action="copyAddress" data-id="${r.id}">Copy Address</button>${r.phoneDigits?`<a href="tel:${r.phoneDigits}">Call</a>`:''}</div>${locationMap(r)}<p><strong>${travel==='walk'?'Walking':'Driving'} estimate:</strong> ${travelLabel(r,travel)}</p><p class="muted">Estimate is based on geographic proximity, not mapped streets, paths, hills, signals or traffic. Copy the address into your preferred navigation app for an actual route.</p></div>`}
 function showPhoto(id){let r=byId.get(id);if(!r)return;let l=document.createElement('div');l.className='lightbox';l.id='lightbox';l.innerHTML=`<button data-action="closePhoto" aria-label="Close photo">✕ Close</button><figure>${r.photo?`<img src="${safe(r.photo)}" alt="Reference photo of ${safe(r.name)}">`:`<div class="placeholder"><span>🍽</span><strong>${safe(r.name)}</strong></div>`}<figcaption>${safe(r.photoCaption||'Storefront image placeholder')} ${r.photo?`<br>Appearance may have changed. Photo: ${safe(r.photoCreator||'creator unknown')}. ${safe(r.photoLicense||'')} ${r.photoSource?`<a href="${safe(r.photoSource)}" target="_blank" rel="noopener">Source</a>`:''}`:''}</figcaption></figure>`;document.body.append(l)}
 function render(){let filtersOpen=$('app')?.querySelector('.filterdetails')?.open??false;save();$('basketTop').hidden=shared;$('navBack').disabled=mode==='explore'&&!navHistory.length;$('navHome').disabled=mode==='explore'&&!shared&&!navHistory.length;let content=mode==='guest'?guestView():mode==='go'?goView():mode==='basket'?basketView():mode==='share'?shareView():explore();$('app').innerHTML=content;let newFilters=$('app').querySelector('.filterdetails');if(newFilters)newFilters.open=filtersOpen;const input=$('search');if(input){input.addEventListener('input',e=>{let pos=e.target.selectionStart;query=e.target.value;let focus=document.activeElement===input;let oldY=window.scrollY;render();if(focus){$('search').focus();$('search').setSelectionRange(pos,pos);scrollTo(0,oldY)}})}$('offlineStatus').textContent=navigator.onLine?'Online':'Offline · cached content';}
-document.addEventListener('click',async e=>{let b=e.target.closest('[data-action]');if(!b)return;let a=b.dataset.action,id=b.dataset.id;switch(a){case'photo':showPhoto(id);break;case'closePhoto':$('lightbox')?.remove();break;case'basket':if(basket.includes(id))basket=basket.filter(x=>x!==id);else if(basket.length<5)basket.push(id);else{alert('Share Basket holds up to 5 eateries.');return}render();break;case'favorite':favorites=favorites.includes(id)?favorites.filter(x=>x!==id):[...favorites,id];render();break;case'go':nav('go',id);break;case'back':case'backgo':case'backbasket':back();break;case'clear':basket=[];render();break;case'share':nav('share');break;case'quick':quick=quick===b.dataset.value?'':b.dataset.value;render();break;case'clearfilters':filters={cuisine:'all',price:[],family:'all',alcohol:'all',ocean:'all',entertainment:'all'};render();break;case'settravel':travel=b.dataset.value;render();break;case'copyAddress':{let r=byId.get(id);if(!r)break;let address=addr(r);try{await navigator.clipboard.writeText(address);alert('Address copied. Paste into your preferred maps app.')}catch{prompt('Copy this address:',address)}break;}case'copy':try{await navigator.clipboard.writeText(sharedUrl(basket));alert('Link copied')}catch{prompt('Copy this link:',sharedUrl(basket))}break;case'nativeShare':{let url=sharedUrl(basket);try{if(navigator.share)await navigator.share({title:'Nearby dining recommendations',url});else await navigator.clipboard.writeText(url)}catch(e){if(e.name!=='AbortError')alert('Could not share. Use Copy Link.')}break;}}});
+document.addEventListener('click',async e=>{let b=e.target.closest('[data-action]');if(!b)return;let a=b.dataset.action,id=b.dataset.id;switch(a){case'photo':showPhoto(id);break;case'closePhoto':$('lightbox')?.remove();break;case'basket':if(basket.includes(id))basket=basket.filter(x=>x!==id);else if(basket.length<5)basket.push(id);else{alert('Share Basket holds up to 5 eateries.');return}render();break;case'favorite':favorites=favorites.includes(id)?favorites.filter(x=>x!==id):[...favorites,id];render();break;case'go':nav('go',id);break;case'back':case'backgo':case'backbasket':back();break;case'clear':basket=[];render();break;case'share':nav('share');break;case'quick':quick=quick===b.dataset.value?'':b.dataset.value;render();break;case'mapZoom':{mapZoom=Math.max(.65,Math.min(1.75,mapZoom*(b.dataset.zoom==='in'?1.35:1/1.35)));let section=b.closest('.mapdetails'),r=byId.get(section?.dataset.mapId),slot=section?.querySelector('[data-map-content]');if(r&&slot&&roadData)slot.innerHTML=offlineMapSVG(r,roadData,mapZoom);break;}case'clearfilters':filters={cuisine:'all',price:[],family:'all',alcohol:'all',ocean:'all',entertainment:'all'};render();break;case'settravel':travel=b.dataset.value;render();break;case'copyAddress':{let r=byId.get(id);if(!r)break;let address=addr(r);try{await navigator.clipboard.writeText(address);alert('Address copied. Paste into your preferred maps app.')}catch{prompt('Copy this address:',address)}break;}case'copy':try{await navigator.clipboard.writeText(sharedUrl(basket));alert('Link copied')}catch{prompt('Copy this link:',sharedUrl(basket))}break;case'nativeShare':{let url=sharedUrl(basket);try{if(navigator.share)await navigator.share({title:'Nearby dining recommendations',url});else await navigator.clipboard.writeText(url)}catch(e){if(e.name!=='AbortError')alert('Could not share. Use Copy Link.')}break;}}});
 $('basketTop').addEventListener('click',()=>nav('basket'));
 $('navBack').addEventListener('click',back);
 $('navHome').addEventListener('click',home);
 window.addEventListener('keydown',e=>{if(e.key==='Escape')back()});
-document.addEventListener('toggle',e=>{const section=e.target;if(!section.matches?.('.mapdetails')||!section.open)return;const slot=section.querySelector('[data-map-content]');if(!slot||slot.dataset.loaded)return;const r=byId.get(section.dataset.mapId);if(!r)return;slot.innerHTML=offlineMapSVG(r);slot.dataset.loaded='yes'},true);
+document.addEventListener('toggle',async e=>{const section=e.target;if(!section.matches?.('.mapdetails')||!section.open)return;const slot=section.querySelector('[data-map-content]');if(!slot||slot.dataset.loaded)return;const r=byId.get(section.dataset.mapId);if(!r)return;slot.innerHTML='<p class="muted">Loading county streets…</p>';try{if(!roadData){const response=await fetch('./data/roads.json');if(!response.ok)throw Error('Street snapshot not installed');roadData=await response.json()}if(!section.isConnected||!section.open)return;slot.innerHTML=offlineMapSVG(r,roadData,mapZoom);slot.dataset.loaded='yes'}catch(err){slot.innerHTML='<p class="notice">Offline street map unavailable. '+safe(err.message)+' Reconnect to download map data.</p>'}},true);
 document.addEventListener('change',e=>{if(e.target.matches('[data-price]')){let v=e.target.dataset.price;if(v==='all'){filters.price=[]}else{let choices=new Set(filters.price);if(e.target.checked)choices.add(v);else choices.delete(v);filters.price=[...choices]}render();return}if(e.target.id==='travel'){travel=e.target.value;limit='all';render()}if(e.target.id==='limit'){limit=e.target.value;render()}if(e.target.id==='sort'){sort=e.target.value;render()}if(e.target.id?.startsWith('facet-')){filters[e.target.id.slice(6)]=e.target.value;render()}});
 window.addEventListener('online',render);window.addEventListener('offline',render);
 (async()=>{try{if(typeof travelEstimate!=='function'||typeof travelLabel!=='function'||typeof offlineMapSVG!=='function')throw Error('App integrity check failed: map/time functions unavailable');let res=await fetch('./data/eateries.json');if(!res.ok)throw Error('Failed to load eatery database');eateries=await res.json();byId=new Map(eateries.map(x=>[x.id,x]));basket=readStorage(BASKET_KEY).filter(x=>byId.has(x)).slice(0,5);favorites=readStorage(FAV_KEY).filter(x=>byId.has(x));shared=idsFromUrl().length>0;mode=shared?'guest':'explore';render();if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch(e=>console.warn('Offline install unavailable',e));}catch(err){let msg=err&&err.message?err.message:'Unknown startup error';$('app').innerHTML='<div class="notice"><strong>Eatery App loading problem</strong><br>'+safe(msg)+'<br><button type="button" onclick="location.reload()">Retry loading</button><p>Version '+APP_VERSION+'. If the problem continues, send a screenshot of this message.</p></div>';console.error(err)}})();
