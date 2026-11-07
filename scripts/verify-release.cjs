@@ -21,7 +21,7 @@ const photoRecords=data.filter(r=>r.photo);
 const missingHours=data.filter(r=>!r.hours);
 const reviewedHours=data.filter(r=>r.batchReview?.hoursVerified===true);
 const hoursReviewQueue=missingHours.map(r=>({id:r.id,name:r.name,address:r.address,website:r.website||null,phone:r.phone||null}));
-if(process.argv.includes('--hours-queue'))console.log(JSON.stringify({total:hoursReviewQueue.length,restaurants:hoursReviewQueue},null,2));
+
 for(const r of photoRecords){
   // Only relative bundled image paths can be used offline.
   assert(!r.photo.startsWith('/')&&!r.photo.startsWith('..')&&!r.photo.includes('://'),'Non-bundled photo: '+r.id);
@@ -45,5 +45,6 @@ assert(sw.includes('data/eateries.json')&&sw.includes('data/roads.json'),'Offlin
 assert(fs.existsSync(path.join(root,'data/roads.json')),'Offline road data missing');
 const cache=sw.match(/mba-eatery-v[^'"]+/);
 assert(cache,'Offline cache version missing');
+if(process.argv.includes('--hours-queue')){console.log(JSON.stringify({total:hoursReviewQueue.length,restaurants:hoursReviewQueue},null,2));process.exit(0);}
 console.log('PASS: '+data.length+' unique eateries, coordinates, '+photoRecords.length+' bundled photos, required app controls, offline assets; cache '+cache[0]);
 console.log('AUDIT: '+reviewedHours.length+' records marked hours-verified; '+missingHours.length+' records missing hours. These counts do not establish current opening status.');
