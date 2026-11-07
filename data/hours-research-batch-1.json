@@ -177,11 +177,11 @@
       "website": "https://www.crabhousemonterey.com/",
       "sourceStatus": "existing-record-only; requires independent source verification",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
-      "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "verificationStatus": "verified-current-destination-directory",
+      "verifiedHours": "Daily 11:00 AM–9:00 PM",
+      "sourceUrl": "https://www.seemonterey.com/directory/crab-house/",
+      "checkedOn": "2026-11-07",
+      "notes": "See Monterey destination directory explicitly lists lunch and dinner seven days a week 11am–9pm; 60 Fisherman's Wharf. Not an official restaurant-site confirmation."
     },
     {
       "id": "MBA-DINE-0114",
@@ -201,11 +201,11 @@
       "website": "https://domenicosmonterey.com/",
       "sourceStatus": "existing-record-only; requires independent source verification",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
+      "verificationStatus": "needs-separate-counter-hours",
       "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "sourceUrl": "https://www.montereywharf.com/dining/",
+      "checkedOn": "2026-11-07",
+      "notes": "Wharf lists Domenico's Fish Market and Deli as separate entry; Domenico's on the Wharf official site lists dining room opening 11:30 AM daily, but deli-specific hours are not established. Do not reuse dining room hours."
     },
     {
       "id": "MBA-DINE-0127",
