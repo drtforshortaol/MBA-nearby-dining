@@ -622,7 +622,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 9 AM–7:30 PM",
     "serviceClass": "Bakery / coffee",
     "area": "Monterey",
     "batchReview": {
@@ -635,11 +635,18 @@
       "sources": [
         "https://canneryrow.com/plan-your-visit/dine/"
       ],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": [
-        "visitorTip"
+        "visitorTip",
+        "hours"
       ]
+    },
+    "hoursEvidence": {
+      "status": "verified-corroborated-business-listings",
+      "source": "https://www.tripadvisor.com.mx/Restaurant_Review-g32737-d849140-Reviews-Lilly_Mae_s_Cinnamon_Rolls-Monterey_Monterey_County_California.html",
+      "checkedOn": "2026-11-07",
+      "note": "Tripadvisor and Yellow Pages publish the same seven-day schedule at Suite H, 700 Cannery Row. The Cannery Row business directory confirms address and phone."
     }
   },
   {
@@ -1238,10 +1245,11 @@
       "sources": [
         "https://troyamry.com/"
       ],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": [
-        "visitorTip"
+        "visitorTip",
+        "hours"
       ]
     },
     "hoursEvidence": {
@@ -1963,7 +1971,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Tue–Sun 11 AM–8 PM; Mon closed",
     "serviceClass": "Mexican restaurant",
     "area": "Monterey",
     "batchReview": {
@@ -1974,9 +1982,17 @@
       "sourceStatus": "existing-record-only",
       "visitorTip": "Mexican-American restaurant at 675 Lighthouse Avenue. Verify current operating hours and menu before directing visitors.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-district-business-directory",
+      "source": "https://www.lighthousedistrict.net/biz/la-bahia-restaurant",
+      "checkedOn": "2026-11-07",
+      "note": "The local district lists indoor dining hours for the exact address and phone. The current Roadtrippers listing agrees."
     }
   },
   {
@@ -2312,7 +2328,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Thu–Tue 8 AM–2 PM; Wed closed",
     "serviceClass": "Breakfast / lunch café",
     "area": "Monterey",
     "batchReview": {
@@ -2323,9 +2339,17 @@
       "sourceStatus": "existing-record-only; official website not independently verified",
       "visitorTip": "Breakfast / lunch café at 204 Lighthouse Ave. Current menu, hours and operating status require confirmation before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-merchant-district-post",
+      "source": "https://www.lighthousedistrict.net/news/2023/02/hot-drinks-go-sunrise-cafe",
+      "checkedOn": "2026-11-07",
+      "note": "The cafe's post on the district site specifies the schedule at 204 Lighthouse Avenue. A current location listing with 2026 reviews corroborates it."
     }
   },
   {
@@ -3565,7 +3589,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Wed–Mon 8 AM–2:30 PM; Tue closed",
     "serviceClass": "Restaurant / prepared meals",
     "area": "Pacific Grove",
     "batchReview": {
@@ -3576,9 +3600,17 @@
       "sourceStatus": "existing-record-only; official website not independently verified",
       "visitorTip": "Restaurant / prepared meals at 602 Lighthouse Ave. Current menu, hours and operating status require confirmation before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-chamber-directory",
+      "source": "https://business.pacificgrove.org/directory/Details/winston-s-a-brunch-place-2340963",
+      "checkedOn": "2026-11-07",
+      "note": "The Chamber's entry for 602 Lighthouse Avenue and the current Tripadvisor listing agree. Shorter online ordering times are separate."
     }
   },
   {
@@ -3686,7 +3718,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 10 AM–9 PM",
     "serviceClass": "Sandwich shop / quick service",
     "area": "Pacific Grove",
     "batchReview": {
@@ -3697,9 +3729,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Sandwich shop / quick service at 100 Country Club Gate. Verify current operating status, hours and menu before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-official-location",
+      "source": "https://www.jerseymikes.com/20397/pacific-grove-ca",
+      "checkedOn": "2026-11-07",
+      "note": "The chain's official store page identifies 100 Country Club Gate Center in Pacific Grove and gives explicit store hours."
     }
   },
   {
@@ -4393,7 +4433,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 11:30 AM–9 PM",
     "serviceClass": "Italian / trattoria (directory description may be outdated; verify current identity)",
     "area": "Monterey",
     "batchReview": {
@@ -4404,9 +4444,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Italian / trattoria (directory description may be outdated; verify current identity) at 6 Old Fisherman's Wharf. Verify current menu, operating status and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-reservation-listing",
+      "source": "https://www.opentable.com/r/the-gig-monterey",
+      "checkedOn": "2026-11-07",
+      "note": "OpenTable lists hours of operation for The Gig at 6 Old Fisherman's Wharf. The current Tripadvisor listing agrees. Older Paluca information is for the prior operator."
     }
   },
   {
@@ -4441,9 +4489,11 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Seafood / waterfront dining at 60 Fisherman's Wharf #1. Verify current menu, operating status and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
     },
     "hoursEvidence": {
       "status": "destination-directory-verified",
@@ -4555,7 +4605,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "Wharf-listed food counter shares Abalonetti address/phone. Independent management not established; keep concept relationship visible.",
-    "hours": "",
+    "hours": "Daily 11 AM–9 PM",
     "serviceClass": "Fish and chips / chowder / casual outdoor dining",
     "area": "Monterey",
     "batchReview": {
@@ -4566,9 +4616,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Fish and chips / chowder / casual outdoor dining at 57 Old Fisherman's Wharf. Verify current menu, operating status and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-corroborated-business-listings",
+      "source": "https://frankiapp.com/business/fish-chips-cafe-262253",
+      "checkedOn": "2026-11-07",
+      "note": "Franki and Restaurant Guru agree on hours for the named cafe at 57 Fisherman's Wharf. Franki matches the wharf association's phone and links to the cafe listing. This is the outdoor cafe; Abalonetti's full-service dining schedule is separate."
     }
   },
   {
@@ -5253,7 +5311,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Tue–Sun 11 AM–9 PM; Mon closed",
     "serviceClass": "Restaurant / prepared meals",
     "area": "Monterey",
     "batchReview": {
@@ -5264,9 +5322,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Restaurant / prepared meals at 485 Tyler St. Verify operating status, current menu and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-official-restaurant-website",
+      "source": "https://www.chongsszechwan.com/",
+      "checkedOn": "2026-11-07",
+      "note": "Restaurant contact section gives hours at 485 Tyler St. Old Monterey Business Association corroborates the schedule and identifies indoor dining and takeout."
     }
   },
   {
@@ -5412,7 +5478,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 7 AM–5 PM",
     "serviceClass": "Bakery / café",
     "area": "Monterey",
     "batchReview": {
@@ -5423,9 +5489,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Bakery / café at 498 Washington St. Verify operating status, current menu and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-local-merchant-directory",
+      "source": "https://www.socialwave.net/biz/east-village-cafe",
+      "checkedOn": "2026-11-07",
+      "note": "The local merchant directory gives a full week at 498 Washington St, corroborated by the claimed Tripadvisor listing. The cafe website could not be reached."
     }
   },
   {
@@ -5988,7 +6062,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Fri 10 AM–5 PM; Sat–Sun 10 AM–4 PM",
     "serviceClass": "Restaurant / prepared meals",
     "area": "Monterey",
     "batchReview": {
@@ -5999,9 +6073,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Restaurant / prepared meals at 170 Webster St. Verify operating status, current menu and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-corroborated-business-listings",
+      "source": "https://www.restaurantji.com/ca/monterey/mundos-sandwich-and-burger-house-2/",
+      "checkedOn": "2026-11-07",
+      "note": "Restaurantji's location listing updated September 23, 2026 matches SuperPages at 170 Webster St. Uber Eats lists delivery hours. The 3 Mundos website represents the separate 2233 N Fremont St storefront."
     }
   },
   {
@@ -6195,7 +6277,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 6:45 AM–2:30 PM",
     "serviceClass": "Bakery / café",
     "area": "Monterey",
     "batchReview": {
@@ -6206,9 +6288,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Bakery / café at 489 Alvarado St. Verify operating status, current menu and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-corroborated-business-listings",
+      "source": "https://www.waze.com/live-map/directions/old-monterey-cafe-alvarado-st-489?to=place.w.156041582.1560481356.1645584",
+      "checkedOn": "2026-11-07",
+      "note": "Waze and Roadtrippers agree on the full week for 489 Alvarado St. The cafe previously published the same hours through the Old Monterey Business Association. Its own linked domain was inaccessible."
     }
   },
   {
@@ -6484,7 +6574,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 11 AM–9 PM",
     "serviceClass": "Bakery / café",
     "area": "Monterey",
     "batchReview": {
@@ -6495,9 +6585,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Bakery / café at 435 Alvarado St. Verify operating status, current menu and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-corroborated-business-listings",
+      "source": "https://www.menupix.com/california/restaurants/map/5548743/Petra-Cafe-Monterey-CA/",
+      "checkedOn": "2026-11-07",
+      "note": "MenuPix and Tripadvisor match for regular hours at 435 Alvarado St. Old Monterey's merchant page confirms seven-day dine-in and separate late-night Fri–Sat takeout. Exact late-night takeout hours remain unconfirmed."
     }
   },
   {
@@ -6934,7 +7032,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Dine-in Sun–Thu 10 AM–11 PM; Fri–Sat 10 AM–2 AM next day",
     "serviceClass": "Restaurant / prepared meals",
     "area": "Monterey",
     "batchReview": {
@@ -6945,9 +7043,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Restaurant / prepared meals at 321 Alvarado St. Verify current operating status, hours and menu before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-official-location",
+      "source": "https://locations.tacobell.com/ca/monterey/321-alvarado-st.html",
+      "checkedOn": "2026-11-07",
+      "note": "The official location page for 321 Alvarado St embeds all seven days in its Restaurant JSON-LD openingHoursSpecification, explicitly labeled Dine-In. The visible daily snapshot shows only one day. The full schedule matches FindOpen. Older chain category pages and some directories show different closing times."
     }
   },
   {
@@ -6971,7 +7077,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Sat 7:30 AM–7 PM; Sun 7:30 AM–6 PM",
     "serviceClass": "Plant-based bowls / café",
     "area": "Monterey",
     "batchReview": {
@@ -6982,9 +7088,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Plant-based bowls / café at 475 Alvarado Street. Verify operating status, current menu and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-official-restaurant-website",
+      "source": "https://terrasuperfoods.com/",
+      "checkedOn": "2026-11-07",
+      "note": "Official homepage publishes hours under its Monterey storefront at 475 Alvarado St."
     }
   },
   {
@@ -7019,9 +7133,11 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Japanese / ramen at 487 Alvarado St. Verify operating status, current menu and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
     },
     "hoursEvidence": {
       "status": "official-location-verified",
@@ -7062,9 +7178,11 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Restaurant / prepared meals at 400 Tyler St. Verify operating status, current menu and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
     },
     "hoursEvidence": {
       "status": "official-location-verified",
@@ -7094,7 +7212,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Sun–Thu 11 AM–8 PM; Fri–Sat 11 AM–9 PM",
     "serviceClass": "Tea / beverage shop",
     "area": "Monterey",
     "batchReview": {
@@ -7105,9 +7223,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Tea / beverage shop at 460 Alvarado St. Verify operating status, current menu and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-corroborated-business-listings",
+      "source": "https://www.restaurantji.com/ca/monterey/tzone-monterey-/",
+      "checkedOn": "2026-11-07",
+      "note": "Restaurantji and Boba Places independently display the same full week for 460 Alvarado St. The Old Monterey merchant directory confirms the location and contact. The Tripadvisor hours are malformed and the linked brand site was inaccessible."
     }
   },
   {
@@ -7216,7 +7342,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Dinner Tue–Sat 4:30–8 PM; Sun–Mon closed",
     "serviceClass": "Bakery / café",
     "area": "Pacific Grove",
     "batchReview": {
@@ -7227,9 +7353,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Bakery / café at 1199 Forest Ave. Verify operating status, current menu and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-official-restaurant-website",
+      "source": "https://www.tastecafebistro.com/",
+      "checkedOn": "2026-11-07",
+      "note": "The restaurant homepage explicitly labels these as current hours for 1199 Forest Ave. RestaurantJump corroborates Sunday closure. The directions page includes Sunday, which conflicts with the homepage. The online order window closes earlier."
     }
   },
   {
@@ -7425,7 +7559,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Regular store hours Tue–Sun 11 AM–8 PM; Mon closed. Call to confirm weekend brunch opening.",
     "serviceClass": "Restaurant / prepared meals",
     "area": "Pacific Grove",
     "batchReview": {
@@ -7436,9 +7570,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Restaurant / prepared meals at 1116A Forest Ave. Verify current operating status, hours and menu before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-official-restaurant-website",
+      "source": "https://aquinosbirrieria.com/",
+      "checkedOn": "2026-11-07",
+      "note": "Official Store tab at 1116A Forest Ave lists 11 AM–8 PM Tue–Sun, corroborated by Roadtrippers. The separate brunch page lists Tue–Fri 11 AM–3 PM and Sat–Sun 9 AM–3 PM, conflicting with the current Store tab on weekend opening. The homepage also advertises brunch all day. Publish regular store hours with a call-ahead note and keep exact brunch times pending."
     }
   },
   {
@@ -7515,9 +7657,11 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Seafood; American; Italian-American pasta at 2114 Del Monte Avenue. Verify current operating status, menu and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
     },
     "hoursEvidence": {
       "status": "chamber-directory-verified",
@@ -7560,10 +7704,11 @@
       "sources": [
         "https://www.delmontecenter.com/directory"
       ],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": [
-        "shoppingCenterListing"
+        "shoppingCenterListing",
+        "hours"
       ]
     },
     "hoursEvidence": {
@@ -7639,7 +7784,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 11 AM–9 PM",
     "serviceClass": "Mediterranean",
     "area": "Monterey",
     "batchReview": {
@@ -7652,11 +7797,18 @@
       "sources": [
         "https://www.delmontecenter.com/directory"
       ],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": [
-        "shoppingCenterListing"
+        "shoppingCenterListing",
+        "hours"
       ]
+    },
+    "hoursEvidence": {
+      "status": "verified-official-location",
+      "source": "https://dametra.com/visit-us/",
+      "checkedOn": "2026-11-07",
+      "note": "The official Visit Us page and homepage both list daily hours for 630 Del Monte Center, corroborating each other. The Chamber listing omits Tue–Thu and differs on Sun–Mon, while the shopping center page leaves merchant hours blank."
     }
   },
   {
@@ -7693,10 +7845,11 @@
       "sources": [
         "https://www.delmontecenter.com/directory"
       ],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": [
-        "shoppingCenterListing"
+        "shoppingCenterListing",
+        "hours"
       ]
     },
     "hoursEvidence": {
@@ -7740,10 +7893,11 @@
       "sources": [
         "https://www.delmontecenter.com/directory"
       ],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": [
-        "shoppingCenterListing"
+        "shoppingCenterListing",
+        "hours"
       ]
     },
     "hoursEvidence": {
@@ -7830,10 +7984,11 @@
       "sources": [
         "https://www.delmontecenter.com/directory"
       ],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": [
-        "shoppingCenterListing"
+        "shoppingCenterListing",
+        "hours"
       ]
     },
     "hoursEvidence": {
@@ -7864,7 +8019,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 11 AM–8 PM",
     "serviceClass": "Poke",
     "area": "Monterey",
     "batchReview": {
@@ -7877,11 +8032,18 @@
       "sources": [
         "https://www.delmontecenter.com/directory"
       ],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": [
-        "shoppingCenterListing"
+        "shoppingCenterListing",
+        "hours"
       ]
+    },
+    "hoursEvidence": {
+      "status": "verified-official-location",
+      "source": "https://poke.house/locations/ca/monterey/515-del-monte-center",
+      "checkedOn": "2026-11-07",
+      "note": "Official location at 515 Del Monte Center distinguishes store hours from its 7:45 PM online cutoff. Restaurantji and Birdeye confirm store hours. A Squarespace regional site lists 9 PM closing, and an Ordersave ordering page lists 10 AM opening. The current canonical location page and corroborating storefront listings agree."
     }
   },
   {
@@ -7946,7 +8108,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Sun–Thu 11 AM–9 PM; Fri–Sat 11 AM–10 PM",
     "serviceClass": "Pizza and American",
     "area": "Monterey",
     "batchReview": {
@@ -7959,11 +8121,18 @@
       "sources": [
         "https://www.delmontecenter.com/directory"
       ],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": [
-        "shoppingCenterListing"
+        "shoppingCenterListing",
+        "hours"
       ]
+    },
+    "hoursEvidence": {
+      "status": "verified-corroborated-business-listings",
+      "source": "https://www.restaurantji.com/ca/monterey/california-pizza-kitchen-/",
+      "checkedOn": "2026-11-07",
+      "note": "Restaurantji and Carmel.com publish identical full dining hours at 1100 Del Monte Center. Mall and tourism listings confirm the address and phone but omit schedules. The prior research note mentions shorter hotel-directory hours without identifying a source. The named location-specific listings agree."
     }
   },
   {
@@ -7987,7 +8156,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 11 AM–8 PM",
     "serviceClass": "Vietnamese",
     "area": "Monterey",
     "batchReview": {
@@ -7998,9 +8167,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Vietnamese at 1244 Munras Ave. Verify current operating status, menu and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-corroborated-business-listings",
+      "source": "https://www.restaurantji.com/ca/monterey/chopstix-vietnamese-restaurant-/",
+      "checkedOn": "2026-11-07",
+      "note": "Restaurantji and MenuToEat both publish the full weekly restaurant schedule at 1244 Munras Ave. Tourism directory confirms the address and phone. The restaurant website displays the menu without hours."
     }
   },
   {
@@ -8024,7 +8201,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon 4–8 PM; Tue–Fri 11 AM–2:30 PM and 4:30–8 PM; Sat noon–2:30 PM and 4:30–8 PM; Sun closed",
     "serviceClass": "Thai",
     "area": "Monterey",
     "batchReview": {
@@ -8035,9 +8212,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Thai at 731 Munras Ave Suite A. Verify operating status, current menu and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-official-location",
+      "source": "https://kruathaimonterey.com/contact/",
+      "checkedOn": "2026-11-07",
+      "note": "Official contact schedule at 731 Munras Avenue explicitly lists Monday hours. Footer omits Monday. Tripadvisor independently confirms Monday 4–8 PM. The website lists a break between lunch and dinner Tuesday through Saturday."
     }
   },
   {
@@ -8061,7 +8246,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Wed–Mon 7 AM–3:30 PM; Tue closed",
     "serviceClass": "Cafe and bakery",
     "area": "Monterey",
     "batchReview": {
@@ -8072,9 +8257,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Cafe and bakery at 731 Munras Ave Suite B. Verify operating status, current menu and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-official-location",
+      "source": "https://www.thewildplumcafe.com/contact",
+      "checkedOn": "2026-11-07",
+      "note": "Official downtown location at 731 Munras Ave, Suite B, lists daily hours with an explicit Tuesday closure. Ryan Ranch is a separate location."
     }
   },
   {
@@ -8135,7 +8328,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Thu–Tue 11 AM–8 PM; Wed closed",
     "serviceClass": "Vietnamese; pho, rice dishes, banh mi, boba",
     "area": "Monterey",
     "batchReview": {
@@ -8146,9 +8339,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Vietnamese; pho, rice dishes, banh mi, boba at 422 Tyler St. Verify operating status, current menu and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-official-location",
+      "source": "https://riceandrootsmonterey.com/",
+      "checkedOn": "2026-11-07",
+      "note": "Official website lists new hours with Wednesday closed. The older downtown association opening announcement says daily. The newer first-party schedule supersedes it."
     }
   },
   {
@@ -8172,7 +8373,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Thu 1–10 PM; Fri 1–11 PM; Sat–Sun noon–11 PM",
     "serviceClass": "Dessert / snacks",
     "area": "Monterey",
     "batchReview": {
@@ -8183,9 +8384,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Dessert / snacks at 595 Munras Ave, Suite 103. Verify operating status, current menu and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-official-operator-post",
+      "source": "https://www.oldmonterey.org/news/2026/07/affogato-lattes-now-scoops",
+      "checkedOn": "2026-11-07",
+      "note": "The shop posted these regular hours for 595 Munras Avenue on the downtown association website on July 7, 2026. Its Social Wave merchant listing matches. Roadtrippers lists an earlier Sunday close, while MenuPix lists a substantially different weekly schedule. Prefer the operator schedule corroborated by the Social Wave merchant listing."
     }
   },
   {
@@ -8251,7 +8460,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 7:30 AM–3 PM",
     "serviceClass": "Bakery, coffee and beverages",
     "area": "Monterey",
     "batchReview": {
@@ -8262,9 +8471,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Bakery, coffee and beverages at 220 Alvarado St. Verify current menu, operating status and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-official-location",
+      "source": "https://chefpepe.com/carmel-bakery-at-portola-hotel/",
+      "checkedOn": "2026-11-07",
+      "note": "Official bakery location page confirms the Monterey shop at 220 Alvarado St, Suite 220. Its weekly retail hours are separate from the special Paseo Night Market listing."
     }
   },
   {
@@ -8288,7 +8505,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "Hookah/bar venue; confirm food service, age restrictions and smoke exposure before visiting.",
-    "hours": "",
+    "hours": "Lounge hours: Mon 7 PM–midnight; Tue–Thu and Sun 5 PM–midnight; Fri–Sat 5 PM–2 AM next day. Kitchen hours unconfirmed.",
     "serviceClass": "Bar and grill; hookah lounge",
     "area": "Monterey",
     "batchReview": {
@@ -8299,9 +8516,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Bar and grill; hookah lounge at 220 Olivier St. Verify current menu, operating status and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-official-location",
+      "source": "https://indiansummermry.com/#visit",
+      "checkedOn": "2026-11-07",
+      "note": "Official venue hours at 220 Olivier Street. The published schedule applies to the hookah lounge and cocktail bar. Separate kitchen hours are unavailable and should be confirmed with the venue."
     }
   },
   {
@@ -8325,7 +8550,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "Wine tasting and charcuterie/small bites; not a full-service restaurant.",
-    "hours": "",
+    "hours": "Sun–Thu 2–7 PM; Fri–Sat 2–8 PM",
     "serviceClass": "Wine tasting; charcuterie and small bites",
     "area": "Monterey",
     "batchReview": {
@@ -8336,9 +8561,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Wine tasting; charcuterie and small bites at 281 Alvarado St. Verify current operating status, hours and menu before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-chamber-directory",
+      "source": "https://members.montereychamber.com/members/member/puma-road-at-portola-plaza-7181",
+      "checkedOn": "2026-11-07",
+      "note": "Chamber member listing at 281 Alvarado Street identifies these as tasting room hours. The winery’s pickup schedule for that tasting room matches."
     }
   },
   {
@@ -8642,7 +8875,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 4:30 AM–9 PM",
     "serviceClass": "Coffee shop / quick breakfast / pastries",
     "area": "Monterey",
     "batchReview": {
@@ -8653,9 +8886,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Coffee shop / quick breakfast / pastries at 316 Alvarado St. Verify current operating status, hours and menu before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-corroborated-business-listings",
+      "source": "https://www.yellowpages.com/monterey-ca/mip/starbucks-coffee-472670766?lid=472670766",
+      "checkedOn": "2026-11-07",
+      "note": "Yellow Pages, Restaurantji and EatOutMap agree on the weekly cafe schedule at 316 Alvarado St. Cylex agrees except for a dated Saturday holiday exception. A SuperPages search summary shows Sunday at 4 AM but the associated location-specific listing matches the 4:30 AM opening. Starbucks official locator does not expose a readable schedule."
     }
   }
 ]
