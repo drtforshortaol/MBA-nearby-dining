@@ -213,11 +213,11 @@
       "website": "https://www.delmontecenter.com/directory",
       "sourceStatus": "shopping-center-directory-checked; hours not verified",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
-      "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "verificationStatus": "verified-official-restaurant-website",
+      "verifiedHours": "Mon–Thu 4:00–9:00 PM; Fri–Sun 3:00–9:00 PM; Fri–Sat late-night dining until 10:00 PM",
+      "sourceUrl": "https://www.konamonterey.com/",
+      "checkedOn": "2026-11-07",
+      "notes": "Official Kona Steak & Seafood website lists regular hours and separate Friday/Saturday late-night dining. 1200 Del Monte Center."
     }
   ]
 }
