@@ -28,10 +28,12 @@
       "verifiedHours": null,
       "sourceUrl": "https://www.restaurantji.com/ca/monterey/dippin-dots-/",
       "checkedOn": "2026-11-07",
-      "notes": "Restaurantji gives Sun–Fri noon–6 PM and Sat 11 AM–8 PM. A prior location listing gave daily 11 AM–5:30 PM, and SuperPages warns hours may vary. The destination directory confirms the location without hours. Call (831) 655-5080 for current shop hours.",
+      "notes": "Restaurantji gives Sun–Fri noon–6 PM and Sat 11 AM–8 PM. A prior location listing gave daily 11 AM–5:30 PM, and SuperPages warns hours may vary. The destination directory confirms the location without hours. Call (831) 655-5080 for current shop hours. The official brand locator names the Cannery Row store and confirms the phone, but its source data leaves store_business_hours empty.",
       "corroboratingSources": [
         "https://www.seemonterey.com/directory/dippin-dots/",
-        "https://www.superpages.com/carmel-by-the-sea-ca/ice-cream-and-frozen-desserts-wholesale-and-manufacturers"
+        "https://www.superpages.com/carmel-by-the-sea-ca/ice-cream-and-frozen-desserts-wholesale-and-manufacturers",
+        "https://www.dippindots.com/locations/",
+        "https://www.storemapper.co/api/users/14171/stores.js?callback=SMcallback2"
       ]
     },
     {
@@ -130,16 +132,15 @@
       "id": "MBA-DINE-0058",
       "name": "Starbucks Coffee (Lighthouse District)",
       "website": "https://www.starbucks.com/store-locator/store/1008792",
-      "sourceStatus": "conflicting",
-      "hoursVerified": false,
-      "verificationStatus": "conflicting",
-      "verifiedHours": null,
-      "sourceUrl": "https://www.starbucks.com/store-locator/store/1008792",
+      "sourceStatus": "verified-official-location",
+      "hoursVerified": true,
+      "verificationStatus": "verified-official-location",
+      "verifiedHours": "Mon–Sat 4:30 AM–9 PM; Sun 4:30 AM–8:30 PM",
+      "sourceUrl": "https://www.starbucks.com/apiproxy/v1/locations?lat=36.603&lng=-121.902",
       "checkedOn": "2026-11-07",
-      "notes": "Official location page yielded no readable schedule. Tripadvisor reports daily 5 AM–8 PM, Waze daily 5:30 AM–8 PM, and Yellow Pages reports 4:30 AM–9 PM Mon–Sat and 4:30 AM–8:30 PM Sun. Call (831) 656-9390 to distinguish cafe and drive-through hours.",
+      "notes": "The public Starbucks locator response (JSON with the site's XMLHttpRequest header) identifies store 1008792 at 865 Lighthouse Ave and returns one store schedule. It does not provide a separate drive-through schedule.",
       "corroboratingSources": [
-        "https://www.tripadvisor.ca/Restaurant_Review-g32737-d8606756-Reviews-Starbucks-Monterey_Monterey_County_California.html",
-        "https://www.waze.com/es-419/live-map/directions?from=place.w.156041582.1560415822.2678913",
+        "https://www.starbucks.com/store-locator/store/1008792",
         "https://www.yellowpages.com/monterey-ca/mip/starbucks-coffee-504705829"
       ]
     },
@@ -147,29 +148,30 @@
       "id": "MBA-DINE-0074",
       "name": "Monarch Pub & Restaurant",
       "website": "https://business.pacificgrove.org/directory/Details/monarch-pub-restaurant-the-2115337",
-      "sourceStatus": "conflicting",
-      "hoursVerified": false,
-      "verificationStatus": "conflicting",
-      "verifiedHours": null,
-      "sourceUrl": "https://business.pacificgrove.org/directory/Details/the-monarch-pub-restaurant-2115337",
+      "sourceStatus": "verified-merchant-post-and-visitor-guide",
+      "hoursVerified": true,
+      "verificationStatus": "verified-merchant-post-and-visitor-guide",
+      "verifiedHours": "Daily 11 AM–10 PM",
+      "sourceUrl": "https://www.findglocal.com/US/Pacific-Grove/1897955690215352/The-Monarch-Pub-%26-Restaurant",
       "checkedOn": "2026-11-07",
-      "notes": "Chamber directory reports a Sun–Thu close of 10 AM, an apparent error, and Fri–Sat at 11 PM. Tripadvisor reports Sun–Thu 10 PM and Fri–Sat 10:30 PM; the 2026 Pacific Grove guide reports 10 PM daily. Call (831) 324-4987 for food service and pub closing times.",
+      "notes": "An Aug 10, 2026 merchant post reproduced on FindGlocal explicitly gives daily dine-in and takeout hours at 617 Lighthouse Ave. The listing's seven-day schedule and the 2026 Pacific Grove visitor guide agree. The Chamber entry has an apparent AM/PM typo and other listings vary on late hours. A separate bar closing time was not confirmed.",
       "corroboratingSources": [
-        "https://www.tripadvisor.com/Restaurant_Review-g32840-d15053928-Reviews-The_Monarch_Pub_and_Restaurant-Pacific_Grove_Monterey_County_California.html",
-        "https://fbs.advantageinc.com/pacificgrove/guide2026/26/"
+        "https://fbs.advantageinc.com/pacificgrove/guide2026/26/",
+        "https://business.pacificgrove.org/directory/Details/the-monarch-pub-restaurant-2115337",
+        "https://www.tripadvisor.com/Restaurant_Review-g32840-d15053928-Reviews-The_Monarch_Pub_and_Restaurant-Pacific_Grove_Monterey_County_California.html"
       ]
     },
     {
       "id": "MBA-DINE-0078",
       "name": "The Perfect Crumb Bakery",
       "website": "https://www.theperfectcrumbbakery.net/",
-      "sourceStatus": "provisional",
+      "sourceStatus": "conflicting",
       "hoursVerified": false,
-      "verificationStatus": "provisional",
+      "verificationStatus": "conflicting",
       "verifiedHours": null,
       "sourceUrl": "https://www.restaurantji.com/ca/monterey/the-perfect-crumb-bakery-inc-/",
       "checkedOn": "2026-11-07",
-      "notes": "Current listings at the Pacific Grove location give Sat–Mon and Wed–Thu 6:30 AM–5 PM, Fri 7 AM–5 PM, Tue closed. The official home page and Chamber confirm the move, but the official contact page still displays a temporary move closure and no weekly hours. Call (831) 241-6269 to confirm the current schedule.",
+      "notes": "Current listings at the Pacific Grove location give Sat–Mon and Wed–Thu 6:30 AM–5 PM, Fri 7 AM–5 PM, Tue closed. The official home page and Chamber confirm the move, but the official contact page still displays a temporary move closure and no weekly hours. Call (831) 241-6269 to confirm the current schedule. The official site's embedded schedule differs from both the listings and its own visible closure message. Restaurantji's current HTML has Mon and Wed–Sun 7 AM–5 PM, Tue closed, while its older snapshot and joe coffee give some 6:30 AM opening times.",
       "corroboratingSources": [
         "https://joe.coffee/locations/ca/pacific-grove/the-perfect-crumb-bakery-inc-pacific-grove/",
         "https://www.theperfectcrumbbakery.net/",
