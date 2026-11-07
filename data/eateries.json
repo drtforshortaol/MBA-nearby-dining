@@ -229,24 +229,27 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Fri 11 AM–3:30 PM; Sat–Sun 11 AM–6 PM.",
     "serviceClass": "Quick-service pizza; made-to-order",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-2026-11-07",
+      "batch": "hours-qc-two-batches-2026-11-07",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "straight-line estimate from aquarium coordinates; NOT walking distance",
       "straightLineMilesApprox": 0.17,
-      "sourceStatus": "partial-verified",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Build-your-own, made-to-order pizza at 751 Cannery Row; a casual family-friendly option.",
       "sources": [
-        "https://canneryrow.com/plan-your-visit/dine/"
+        "https://canneryrow.com/plan-your-visit/dine/",
+        "https://cannerypizzaco.webnode.page/contact/"
       ],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": [
-        "visitorTip"
-      ]
+        "visitorTip",
+        "hours"
+      ],
+      "hoursNote": "Location-specific published schedule checked 2026-11-07; holiday changes possible."
     }
   },
   {
@@ -3186,12 +3189,15 @@
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1,
-      "sourceStatus": "existing-record-only; official website not independently verified",
+      "sourceStatus": "official-website-reports-temporarily-closed",
       "visitorTip": "Bakery / breakfast / lunch / espresso at 650 Lighthouse Ave Suite 100. Current menu, hours and operating status require confirmation before recommending.",
-      "sources": [],
+      "sources": [
+        "https://www.theperfectcrumbbakery.net/contact"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [],
+      "hoursNote": "Official contact page says 'Temporary Closed- We are moving'; homepage also says moved to Pacific Grove. Conflicting site content; do not present operating hours until confirmed."
     }
   },
   {
@@ -3632,20 +3638,25 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Wed–Sun 5–9 PM; closed Mon–Tue. Closed Thanksgiving and Christmas.",
     "serviceClass": "Italian / fresh pasta / mozzarella bar",
     "area": "Pacific Grove",
     "batchReview": {
-      "batch": "nearby-20-batch7-2026-11-07",
+      "batch": "hours-qc-two-batches-2026-11-07",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.39,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Italian / fresh pasta / mozzarella bar at 1188 Forest Ave. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://alfredospastariaandmozzarellabar.com/contact"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ],
+      "hoursNote": "Location-specific published schedule checked 2026-11-07; holiday changes possible."
     }
   },
   {
@@ -3790,20 +3801,25 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Tue–Sun 11 AM–9 PM; closed Mon.",
     "serviceClass": "Mexican / Oaxacan specialties",
     "area": "Pacific Grove",
     "batchReview": {
-      "batch": "nearby-20-batch7-2026-11-07",
+      "batch": "hours-qc-two-batches-2026-11-07",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.38,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Mexican / Oaxacan specialties at 1184 Forest Ave Suite H. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://losamigosrestaurantepg.com/"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ],
+      "hoursNote": "Location-specific published schedule checked 2026-11-07; holiday changes possible."
     }
   },
   {
@@ -3951,20 +3967,25 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Tue–Sat 7 AM–3 PM; Sun 7 AM–noon; closed Mon. Lunch Tue–Sat 11 AM–2 PM.",
     "serviceClass": "French patisserie / bakery / cafe lunch",
     "area": "Pacific Grove",
     "batchReview": {
-      "batch": "nearby-20-batch7-2026-11-07",
+      "batch": "hours-qc-two-batches-2026-11-07",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.4,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "French patisserie / bakery / cafe lunch at 1225 Forest Ave. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.patisseriebechler.com/contactus.shtml"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ],
+      "hoursNote": "Location-specific published schedule checked 2026-11-07; holiday changes possible."
     }
   },
   {
@@ -4638,20 +4659,23 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Reported Mon–Fri 8 AM–3:30 PM; Sat–Sun 8 AM–5 PM. Confirm before visiting.",
     "serviceClass": "Ramen bar / ice cream / café (wharf district listing)",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch5-2026-11-07",
+      "batch": "hours-qc-two-batches-2026-11-07",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.09,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "directory-hours-provisional",
       "visitorTip": "Ramen bar / ice cream / café (wharf district listing) at 95 Old Fisherman's Wharf. Verify current menu, operating status and hours before recommending.",
-      "sources": [],
+      "sources": [
+        "https://www.montereywharf.com/dining/kafe-toribashi.html"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [],
+      "hoursNote": "Wharf directory gives an undated schedule; provisional, not independently confirmed current."
     }
   },
   {
@@ -4719,20 +4743,25 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Sun 1–6 PM; Tue & Thu 4–8 PM; Fri–Sat 2–9 PM; closed Mon & Wed.",
     "serviceClass": "Winery with restaurant / kitchen",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch6-2026-11-07",
+      "batch": "hours-qc-two-batches-2026-11-07",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.29,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Winery with restaurant / kitchen at 316 Alvarado St. Verify current operating status, hours and menu before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.albatrossridge.com/tasting-rooms/"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ],
+      "hoursNote": "Location-specific published schedule checked 2026-11-07; holiday changes possible."
     }
   },
   {
