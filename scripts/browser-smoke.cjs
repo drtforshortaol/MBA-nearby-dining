@@ -16,6 +16,7 @@ let browser;
     const errors=[];
     page.on('pageerror',e=>errors.push(e.message));
     await page.goto('http://127.0.0.1:'+port+'/',{waitUntil:'networkidle'});
+    assert.equal(await page.locator('footer').innerText().then(t=>t.includes('v3.0')),true,'Version 3.0 should be visible');
     await page.locator('.card').first().waitFor();
     assert.equal(await page.locator('.card').count(),30,'Initial list should show 30 cards');
     await page.getByRole('button',{name:/Show 30 more/}).click();
