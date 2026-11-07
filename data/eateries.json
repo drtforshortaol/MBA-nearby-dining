@@ -7517,7 +7517,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Sun 10:45 AM–10 PM",
     "serviceClass": "Mexican fast casual",
     "area": "Monterey",
     "batchReview": {
@@ -7535,6 +7535,12 @@
       "verifiedFields": [
         "shoppingCenterListing"
       ]
+    },
+    "hoursEvidence": {
+      "status": "official-location-verified",
+      "source": "https://locations.chipotle.com/ca/monterey/500-del-monte-ctr",
+      "checkedOn": "2026-11-07",
+      "note": "Regular published hours; holidays and temporary changes may differ."
     }
   },
   {
@@ -7769,7 +7775,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Sun–Thu 11 AM–10 PM; Fri–Sat 11 AM–midnight",
     "serviceClass": "Pizza",
     "area": "Monterey",
     "batchReview": {
@@ -7787,6 +7793,12 @@
       "verifiedFields": [
         "shoppingCenterListing"
       ]
+    },
+    "hoursEvidence": {
+      "status": "official-location-verified",
+      "source": "https://www.pizzamyheart.com/location/pizza-my-heart-monterey/",
+      "checkedOn": "2026-11-07",
+      "note": "Regular published hours; holidays and temporary changes may differ."
     }
   },
   {
