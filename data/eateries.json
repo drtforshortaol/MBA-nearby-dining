@@ -4953,24 +4953,26 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Sat 7 AM–3 PM; Sun 11 AM–2 PM (directory-listed; confirm before visiting).",
     "serviceClass": "Bagels / bakery",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch7-2026-11-07",
+      "batch": "hours-qc-2026-11-07-batches-5-6",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.41,
-      "sourceStatus": "official-source-checked",
+      "sourceStatus": "directory-or-conflicting-hours-provisional",
       "visitorTip": "Bagel bakery at 452 Alvarado Street; official locations page confirms address but does not establish current hours.",
       "sources": [
-        "https://www.thebagelbakery.com/location.html"
+        "https://www.thebagelbakery.com/location.html",
+        "https://www.yellowpages.com/monterey-ca/mip/the-bagel-bakery-11779487"
       ],
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": [
         "visitorTip"
-      ]
+      ],
+      "hoursNote": "Provisional or conflicting schedule; source checked but not confirmed as current official hours."
     }
   },
   {
@@ -5157,20 +5159,23 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Tue and Thu–Sun 11 AM–3 PM, 4–8 PM; closed Wed (directory-listed; confirm).",
     "serviceClass": "Chinese / Hunan / Mandarin / Szechuan",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch9-2026-11-07",
+      "batch": "hours-qc-2026-11-07-batches-5-6",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.59,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "directory-or-conflicting-hours-provisional",
       "visitorTip": "Chinese / Hunan / Mandarin / Szechuan at 600 Munras Ave. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
+      "sources": [
+        "https://www.restaurantji.com/ca/monterey/china-garden-/"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [],
+      "hoursNote": "Provisional or conflicting schedule; source checked but not confirmed as current official hours."
     }
   },
   {
@@ -5516,20 +5521,25 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Restaurant daily 6:30–11 AM and 5–10 PM; bar daily 3–11 PM.",
     "serviceClass": "Hotel restaurant",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch6-2026-11-07",
+      "batch": "hours-qc-2026-11-07-batches-5-6",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.29,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Hotel restaurant at 350 Calle Principal. Verify current operating status, hours and menu before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.marriott.com/en-us/hotels/mryca-monterey-marriott/dining/"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ],
+      "hoursNote": "Current location-specific official schedule checked; holiday changes possible."
     }
   },
   {
@@ -6247,20 +6257,25 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Sun–Thu 10 AM–10 PM; Fri–Sat 10 AM–11 PM.",
     "serviceClass": "Mexican / taqueria",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch8-2026-11-07",
+      "batch": "hours-qc-2026-11-07-batches-5-6",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.42,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Mexican / taqueria at 462 Alvarado St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.papachanostaqueria.com/"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ],
+      "hoursNote": "Current location-specific official schedule checked; holiday changes possible."
     }
   },
   {
@@ -6646,20 +6661,23 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 11 AM–10 PM; Fri–Sat until 11 PM (official ordering page also displays conflicting Tuesday/Wednesday opening times; confirm).",
     "serviceClass": "Restaurant / prepared meals",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch6-2026-11-07",
+      "batch": "hours-qc-2026-11-07-batches-5-6",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.32,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "directory-or-conflicting-hours-provisional",
       "visitorTip": "Restaurant / prepared meals at 375 Alvarado St. Verify current operating status, hours and menu before recommending.",
-      "sources": [],
+      "sources": [
+        "https://ordering.roundtablepizza.com/site/rt79"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [],
+      "hoursNote": "Provisional or conflicting schedule; source checked but not confirmed as current official hours."
     }
   },
   {
@@ -6720,20 +6738,23 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Wed–Mon 6:30 AM–2:30 PM; closed Tue (business-submitted January 2026 announcement; confirm current hours).",
     "serviceClass": "Bakery / café",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch9-2026-11-07",
+      "batch": "hours-qc-2026-11-07-batches-5-6",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.59,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "directory-or-conflicting-hours-provisional",
       "visitorTip": "Bakery / café at 160 Webster St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
+      "sources": [
+        "https://www.oldmonterey.org/blogs?page=5"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [],
+      "hoursNote": "Provisional or conflicting schedule; source checked but not confirmed as current official hours."
     }
   },
   {
@@ -6799,20 +6820,25 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Sun–Thu 8 AM–10 PM; Fri–Sat 8 AM–11 PM.",
     "serviceClass": "Restaurant / prepared meals",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch6-2026-11-07",
+      "batch": "hours-qc-2026-11-07-batches-5-6",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.32,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Restaurant / prepared meals at 195 W Franklin St. Verify current operating status, hours and menu before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://restaurants.subway.com/united-states/ca/monterey/195-w-franklin-st"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ],
+      "hoursNote": "Current location-specific official schedule checked; holiday changes possible."
     }
   },
   {
