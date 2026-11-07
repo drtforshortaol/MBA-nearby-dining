@@ -17,6 +17,15 @@ for(const [i,r] of data.entries()){
   assert(Number.isFinite(r.lon)&&r.lon> -123&&r.lon< -121,'Invalid longitude: '+r.id);
   if(r.photo)assert(r.photoCaution||r.photoSource,'Photo lacks caution/source: '+r.id);
 }
+const photoRecords=data.filter(r=>r.photo);
+const missingHours=data.filter(r=>!r.hours);
+const reviewedHours=data.filter(r=>r.batchReview?.hoursVerified===true);
+for(const r of photoRecords){
+  // Only relative bundled image paths can be used offline.
+  assert(!/^(?:https?:|\\/|\\.\\.)/i.test(r.photo),'Non-bundled photo: '+r.id);
+  assert(fs.existsSync(path.join(root,r.photo)),'Missing bundled photo: '+r.id+' '+r.photo);
+}
+assert(reviewedHours.length<=data.length,'Invalid hours verification count');
 const app=read('app.js'),sw=read('sw.js'),html=read('index.html');
 for(const token of ['function offlineMapSVG(','function travelEstimate(','case\'loadMore\'','case\'mapReset\'','data-action="resetSearch"','shown.map(card)','slot.innerHTML=offlineMapSVG(r,roadData,1)'])
   assert(app.includes(token),'Missing application feature: '+token);
@@ -25,4 +34,4 @@ assert(sw.includes('data/eateries.json')&&sw.includes('data/roads.json'),'Offlin
 assert(fs.existsSync(path.join(root,'data/roads.json')),'Offline road data missing');
 const cache=sw.match(/mba-eatery-v[^'"]+/);
 assert(cache,'Offline cache version missing');
-console.log('PASS: '+data.length+' unique eateries, coordinates, required app controls, offline assets; cache '+cache[0]);
+console.log('PASS: '+data.length+' unique eateries, coordinates, '+photoRecords.length+' bundled photos, required app controls, offline assets; cache '+cache[0]);\nconsole.log('AUDIT: '+reviewedHours.length+' records marked hours-verified; '+missingHours.length+' records missing hours. These counts do not establish current opening status.');
