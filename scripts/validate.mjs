@@ -5,6 +5,8 @@ import { spawnSync } from 'node:child_process';
 const app = fs.readFileSync('app.js', 'utf8');
 const html = fs.readFileSync('index.html', 'utf8');
 const worker = fs.readFileSync('sw.js', 'utf8');
+const streets = JSON.parse(fs.readFileSync('data/roads.json', 'utf8'));
+assert.ok(Array.isArray(streets.features) && streets.features.length >= 80, 'Real county roads missing');
 const eateries = JSON.parse(fs.readFileSync('data/eateries.json', 'utf8'));
 assert.equal(eateries.length, 205, 'Expected 205 visitor-eligible eateries');
 assert.equal(new Set(eateries.map(r => r.id)).size, eateries.length, 'Duplicate eatery IDs');
