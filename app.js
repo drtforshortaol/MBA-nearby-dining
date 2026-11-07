@@ -42,13 +42,15 @@ function offlineMapSVG(r,roads,zoom=1){
   const point=(lon,lat)=>({x:W/2+(lon-lon0)*east*pxPerKm,y:H/2-(lat-lat0)*north*pxPerKm});
   const inView=(p,pad=16)=>p.x>=-pad&&p.x<=W+pad&&p.y>=-pad&&p.y<=H+pad;
   const roadsSvg=[],names=new Map();
+  let visibleRoadCount=0;
   for(const feature of roads.features){
     const coords=feature.p||[];
     if(coords.length<2)continue;
     const pts=coords.map(q=>point(q[0],q[1]));
-    const xs=pts.map(q=>q.x),ys=pts.map(q=>q.y);
-    const minx=Math.min(...xs),maxx=Math.max(...xs),miny=Math.min(...ys),maxy=Math.max(...ys);
+    let minx=Infinity,maxx=-Infinity,miny=Infinity,maxy=-Infinity;
+    for(const p of pts){if(p.x<minx)minx=p.x;if(p.x>maxx)maxx=p.x;if(p.y<miny)miny=p.y;if(p.y>maxy)maxy=p.y;}
     if(maxx<0||minx>W||maxy<0||miny>H)continue;
+    visibleRoadCount++;
     const d=pts.map((p,i)=>(i?'L':'M')+p.x.toFixed(1)+' '+p.y.toFixed(1)).join(' ');
     const major=/arterial|collector|highway/i.test(feature.c||'');
     roadsSvg.push('<path d="'+d+'" fill="none" stroke="'+(major?'#c6d3c9':'#d1dad4')+'" stroke-width="'+(major?11:7)+'" stroke-linejoin="round" stroke-linecap="round"/>');
