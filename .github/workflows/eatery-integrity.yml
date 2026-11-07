@@ -1,0 +1,28 @@
+name: Eatery integrity
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  integrity:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: JavaScript syntax
+        run: |
+          node --check app.js
+          node --check sw.js
+          node --check qr-local.js
+      - name: Restaurant and version integrity
+        run: node scripts/check-release-integrity.mjs
+      - name: Install browser test runtime
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Mobile and offline browser smoke test
+        run: node scripts/browser-smoke.cjs

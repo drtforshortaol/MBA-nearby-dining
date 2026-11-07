@@ -25,7 +25,7 @@ let browser;
     const search=page.locator('#search');
     await search.fill('unfindable-restaurant-xyz');
     assert.equal(await page.locator('.card').count(),0,'Search should filter results');
-    await page.getByRole('button',{name:/Reset Search & Filters/}).click();
+    await page.getByRole('button',{name:/Clear search and all filters/}).click();
     assert.equal(await page.locator('.card').count(),30,'Reset should restore first page');
     const map=page.locator('.mapdetails').first();
     await map.locator('summary').click();
