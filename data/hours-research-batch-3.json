@@ -219,13 +219,14 @@
       "verifiedHours": null,
       "sourceUrl": "https://www.oldmonterey.org/news/2026/06/late-night-eats-compact-disco",
       "checkedOn": "2026-11-07",
-      "notes": "Compact Disco’s June announcement gives a 2 AM close for the all-ages walk-up window at 420 Tyler Street on Friday and Saturday nights. Edible Monterey Bay reported 10 PM–2 AM on those nights in June. Later operator social posts describe different opening hours for the 21+ pub kitchen. The current downtown association listing confirms the window exists at 420 Tyler Street but omits hours. Confirm the current takeout window schedule separately from club, happy-hour and in-pub kitchen hours. See Monterey lists the venue phone as (831) 920-2518. Ask specifically for the all-ages EAT window.",
+      "notes": "Compact Disco’s June announcement gives a 2 AM close for the all-ages walk-up window at 420 Tyler Street on Friday and Saturday nights. Edible Monterey Bay reported 10 PM–2 AM on those nights in June. Later operator social posts describe different opening hours for the 21+ pub kitchen. The current downtown association listing confirms the window exists at 420 Tyler Street but omits hours. Confirm the current takeout window schedule separately from club, happy-hour and in-pub kitchen hours. See Monterey lists the venue phone as (831) 920-2518. Ask specifically for the all-ages EAT window. Uber Eats lists the same-address food menu for delivery but provides no current schedule for the physical walk-up window.",
       "corroboratingUrls": [
         "https://ediblemontereybay.com/blog/compact-disco-adds-rare-late-night-food-option/",
         "https://www.oldmonterey.org/biz/compact-disco",
         "https://www.findglocal.com/US/Monterey/107541552329400/Compact-Disco-831",
         "https://www.seemonterey.com/directory/compact-disco/",
-        "https://www.compactdisco.org/"
+        "https://www.compactdisco.org/",
+        "https://www.ubereats.com/store/compact-disco/wVMENo1CX0G_q7jkwBLn8A"
       ]
     },
     {
@@ -255,7 +256,12 @@
       "verifiedHours": null,
       "sourceUrl": "https://www.wholefoodsmarket.com/stores/monterey",
       "checkedOn": "2026-11-07",
-      "notes": "Call (831) 333-1600 for the Prepared Foods counter and hot bar. The location page confirms the hot bar but publishes only supermarket hours. Counter service may run on a different schedule. The location page’s embedded listing data describes the Hot Bar as an amenity without separate hours."
+      "notes": "Call (831) 333-1600 for the Prepared Foods counter and hot bar. The location page confirms the hot bar but publishes only supermarket hours. Counter service may run on a different schedule. The location page’s embedded listing data describes the Hot Bar as an amenity without separate hours. Monterey’s Market Cocina and Market Sandwich each have a provisional daily 9 AM–8 PM lead in public listings. Waze also lists Market Cocina at those hours. The public listings may share an upstream source. Whole Foods lists both counters separately from the Hot Bar and publishes no hours for any of the three. Confirm the named counter and hot bar hours separately.",
+      "corroboratingUrls": [
+        "https://www.waze.com/live-map/directions/us/ca/monterey/market-cocina?to=place.ChIJi7xNXirkjYARkOJNmwBO2Lg",
+        "https://location.com/categories/food-and-dining/us/ca/monterey/market-cocina-2132168781",
+        "https://location.com/categories/food-and-dining/us/ca/monterey/market-sandwich-3153027503"
+      ]
     },
     {
       "id": "MBA-DINE-0235",
