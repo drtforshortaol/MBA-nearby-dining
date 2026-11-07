@@ -9,11 +9,11 @@
       "website": "https://www.delmontecenter.com/directory",
       "sourceStatus": "shopping-center-directory-checked; hours not verified",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
+      "verificationStatus": "provisional-location-listing",
       "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "sourceUrl": "https://www.delmontecenter.com/directory",
+      "checkedOn": "2026-11-07",
+      "notes": "Location listing for Lalla Grill at 1400 Del Monte Center reports Mon–Thu 11 AM–9 PM, Fri–Sat 11 AM–10 PM, Sun 10 AM–9 PM. Confirm with restaurant before publishing."
     },
     {
       "id": "MBA-DINE-0195",
@@ -21,11 +21,11 @@
       "website": "https://www.delmontecenter.com/directory",
       "sourceStatus": "shopping-center-directory-checked; hours not verified",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
+      "verificationStatus": "provisional-location-listing",
       "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "sourceUrl": "https://www.delmontecenter.com/directory",
+      "checkedOn": "2026-11-07",
+      "notes": "Location listing for Pizza My Heart at 660 Del Monte Center reports Sun–Thu 11 AM–10 PM, Fri–Sat 11 AM–midnight. Verify against restaurant location page before publishing."
     },
     {
       "id": "MBA-DINE-0196",
@@ -45,11 +45,11 @@
       "website": "https://www.delmontecenter.com/directory",
       "sourceStatus": "shopping-center-directory-checked; hours not verified",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
+      "verificationStatus": "provisional-location-listing",
       "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "sourceUrl": "https://www.delmontecenter.com/directory",
+      "checkedOn": "2026-11-07",
+      "notes": "Location listing at 492 Del Monte Center reports Mon–Thu/Sun 5 AM–9 PM and Fri–Sat 5 AM–9:30 PM; mall hours are not tenant hours. Needs Starbucks confirmation."
     },
     {
       "id": "MBA-DINE-0198",
@@ -189,11 +189,11 @@
       "website": "https://www.delmontecenter.com/store/pretzelmaker",
       "sourceStatus": "shopping-center-directory-checked; hours not verified",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
+      "verificationStatus": "provisional-location-listing",
       "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "sourceUrl": "https://www.delmontecenter.com/store/pretzelmaker",
+      "checkedOn": "2026-11-07",
+      "notes": "Del Monte Center official tenant page has blank hours; location business listing reports Mon–Fri 11 AM–8 PM, Sat 11 AM–7 PM, Sun 11 AM–5 PM. Mall-wide hours differ; needs direct merchant confirmation."
     },
     {
       "id": "MBA-DINE-0229",
@@ -213,11 +213,11 @@
       "website": "https://www.starbucks.com/store-locator/store/66442",
       "sourceStatus": "existing-record-only; requires independent source verification",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
+      "verificationStatus": "provisional-location-listing",
       "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "sourceUrl": "https://www.starbucks.com/store-locator/store/66442",
+      "checkedOn": "2026-11-07",
+      "notes": "Location business listing at 316 Alvarado St reports Mon–Sat 4:30 AM–9 PM, Sun 4 AM–9 PM; official location schedule not directly confirmed. Holiday exceptions exist."
     }
   ]
 }
