@@ -1,18 +1,13 @@
 {
   "generatedOn": "2026-11-07",
-  "sourceBranch": "work/hours-publish-followup-20261107",
+  "sourceBranch": "work/hours-publish-cannery-row-20261107",
   "totalRecords": 205,
-  "missingHoursCount": 12,
+  "missingHoursCount": 7,
   "missingHoursIds": [
     "MBA-DINE-0002",
-    "MBA-DINE-0008",
-    "MBA-DINE-0011",
     "MBA-DINE-0017",
-    "MBA-DINE-0078",
     "MBA-DINE-0115",
-    "MBA-DINE-0127",
     "MBA-DINE-0144",
-    "MBA-DINE-0181",
     "MBA-DINE-0217",
     "MBA-DINE-0218",
     "MBA-DINE-0229"
@@ -67,6 +62,6 @@
     "MBA-DINE-0203",
     "MBA-DINE-0232"
   ],
-  "explicitlyVerifiedHoursCount": 146,
+  "explicitlyVerifiedHoursCount": 151,
   "note": "Snapshot after the missing-hours research batches. Provisional hours counts refer to previously populated, unverified schedules. The missing-hours queue documents unpublished findings separately."
 }

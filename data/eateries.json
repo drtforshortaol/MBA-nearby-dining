@@ -363,7 +363,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Sun–Fri noon–6 PM; Sat 11 AM–8 PM",
     "serviceClass": "Ice cream / dessert",
     "area": "Monterey",
     "batchReview": {
@@ -377,11 +377,18 @@
         "https://canneryrow.com/plan-your-visit/dine/",
         "https://canneryrow.com/experience/snack-attack/"
       ],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": [
-        "visitorTip"
+        "visitorTip",
+        "hours"
       ]
+    },
+    "hoursEvidence": {
+      "status": "verified-corroborated-business-listings",
+      "source": "https://www.menupix.com/california/restaurants/5548663/Dippin-Dots-Menu-Monterey-CA",
+      "checkedOn": "2026-11-07",
+      "note": "MenuPix, Restaurantji, and SuperPages publish the same seven-day schedule for the shop at 711 Cannery Row and the same phone number. SuperPages says hours may vary. The official chain locator confirms the shop and phone. Its store-hours field is empty. The earlier 11 AM–5:30 PM candidate lacked an identifiable hours page."
     }
   },
   {
@@ -493,7 +500,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 11 AM–9 PM",
     "serviceClass": "Cookies; desserts; bakery",
     "area": "Monterey",
     "batchReview": {
@@ -507,12 +514,19 @@
         "https://canneryrow.com/plan-your-visit/dine/",
         "https://www.restaurantji.com/ca/monterey/great-american-cookies-/"
       ],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": [
         "address",
-        "visitorTip"
+        "visitorTip",
+        "hours"
       ]
+    },
+    "hoursEvidence": {
+      "status": "verified-corroborated-current-business-listings",
+      "source": "https://www.google.com/maps/place/Great+American+Cookies/@36.6167293,-121.9011177,17z/data=!3m1!4b1!4m6!3m5!1s0x808de5fe4f4d71af:0x1e0b49cf25aecf55!8m2!3d36.6167293!4d-121.9011177!16s%2Fg%2F11scw84v81?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D",
+      "checkedOn": "2026-11-07",
+      "note": "The live Google Maps profile for 751 Cannery Row #105 and Restaurantji's October 16, 2026 update both show 11 AM–9 PM on all seven days. SuperPages agrees. Restaurantji's older snapshot, Roadtrippers, Restaurant Guru, and the owner-labeled 411.info listing showed 8 PM closing. The latter listings do not establish a more recent hours update."
     }
   },
   {
@@ -3227,7 +3241,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "Use current 650 Lighthouse Ave, Pacific Grove location; former Monterey storefront is historical.",
-    "hours": "",
+    "hours": "Wed–Mon 7 AM–5 PM; Tue closed",
     "serviceClass": "Bakery / breakfast / lunch / espresso",
     "area": "Pacific Grove",
     "batchReview": {
@@ -3240,10 +3254,18 @@
       "sources": [
         "https://www.theperfectcrumbbakery.net/contact"
       ],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": [],
+      "verifiedFields": [
+        "hours"
+      ],
       "hoursNote": "Official contact page says 'Temporary Closed- We are moving'; homepage also says moved to Pacific Grove. Conflicting site content; do not present operating hours until confirmed."
+    },
+    "hoursEvidence": {
+      "status": "verified-corroborated-current-business-listings",
+      "source": "https://www.google.com/maps/place/The+Perfect+Crumb+Bakery+Inc./@36.6221055,-121.919425,17z/data=!3m1!4b1!4m6!3m5!1s0x808de41d25610d33:0xe60db9dd60942948!8m2!3d36.6221055!4d-121.919425!16s%2Fg%2F11cjt4d7pc?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D",
+      "checkedOn": "2026-11-07",
+      "note": "The live Google Maps profile for 650 Lighthouse Ave in Pacific Grove and the October 31, 2026 Restaurantji update agree on every day. Restaurantji's August 19 snapshot and Restaurant Guru's June 14 update carried the older 6:30 AM schedule also listed by joe coffee and Edible Monterey Bay. The official site's embedded hours identify the old 301 Lighthouse Ave location in Monterey. Its visible contact page still carries a move notice, while its home page confirms the new storefront."
     }
   },
   {
@@ -5124,7 +5146,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily noon–8 PM",
     "serviceClass": "Bubble tea / milk tea / drinks / desserts",
     "area": "Monterey",
     "batchReview": {
@@ -5135,9 +5157,17 @@
       "sourceStatus": "existing-record-only; requires independent source verification",
       "visitorTip": "Bubble tea / milk tea / drinks / desserts at 474 Tyler St. Verify operating status, current menu and hours before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "verified-corroborated-current-business-listings",
+      "source": "https://www.google.com/maps/place/Bobalicious+and+Bites/@36.5983842,-121.8942005,17z/data=!3m1!4b1!4m6!3m5!1s0x808de5b7f060101f:0x933763ce33976d96!8m2!3d36.5983842!4d-121.8942005!16s%2Fg%2F11k7b6rpmc?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D",
+      "checkedOn": "2026-11-07",
+      "note": "The live Google Maps profile for 474 Tyler St and the October 31, 2026 Restaurantji update agree on the full week. Wanderlog attributes its data to Google and repeats the shorter times seen in an older Restaurantji snapshot. The shop's June 2026 district post also confirms noon–8 PM on Mondays during the promotion. Online ordering times are separate."
     }
   },
   {
@@ -7403,7 +7433,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Thu 11 AM–9 PM; Fri–Sun 11 AM–10 PM",
     "serviceClass": "Gelato / dessert",
     "area": "Monterey",
     "batchReview": {
@@ -7416,11 +7446,18 @@
       "sources": [
         "https://www.montereycountynow.com/eat_drink/morsels/sweet-sea/article_9cd294dd-90a8-4299-b706-776f3feb091b.html"
       ],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": [
-        "visitorTip"
+        "visitorTip",
+        "hours"
       ]
+    },
+    "hoursEvidence": {
+      "status": "verified-current-business-listing",
+      "source": "https://www.google.com/maps/place/Gelato+By+The+Sea/@36.6163708,-121.8997753,17z/data=!3m1!4b1!4m6!3m5!1s0x808de5faceade5dd:0x676b8e0fc1c0b2c8!8m2!3d36.6163708!4d-121.8997753!16s%2Fg%2F11nvvchgtt?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D",
+      "checkedOn": "2026-11-07",
+      "note": "The live Google Maps weekly hours are for 700 Cannery Row, Suite O, Monterey. The Carmel branch has a separate Maps listing with different hours. The Cannery Row property directory and Monterey County Now confirm the Suite O shop next to The Fish Hopper. MenuPix corroborates the Cannery Row address and the shared 831-869-7798 phone. Google Maps flags possible holiday exceptions."
     }
   },
   {
