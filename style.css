@@ -59,3 +59,6 @@ header{flex-wrap:wrap}.topnav{order:3;display:flex;gap:8px;flex:0 0 100%;align-i
   width:100%;min-width:0;min-height:44px;transform:none;margin:0;
 }
 .lightbox .lightboxClose{position:fixed}
+
+/* Search field reset control: right-aligned, large enough for touch. */
+.searchWrap{position:relative;width:100%}.searchWrap .search{padding-right:55px}.searchClear{position:absolute;right:4px;top:3px;width:40px;height:40px;min-height:40px;padding:0;border:0;background:transparent;font-size:29px;line-height:1;color:#526971}.searchClear:hover,.searchClear:focus-visible{background:#e8f1f1}
