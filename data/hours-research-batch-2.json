@@ -189,11 +189,11 @@
       "website": "https://www.delmontecenter.com/directory",
       "sourceStatus": "shopping-center-directory-checked; hours not verified",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
-      "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "verificationStatus": "verified-official-location",
+      "verifiedHours": "Monday–Sunday 10:45 AM–10:00 PM",
+      "sourceUrl": "https://locations.chipotle.com/ca/monterey/500-del-monte-ctr",
+      "checkedOn": "2026-11-07",
+      "notes": "Official Chipotle location page explicitly lists 500 Del Monte Ctr, Monterey, with daily restaurant hours. Holiday exceptions possible."
     },
     {
       "id": "MBA-DINE-0191",
