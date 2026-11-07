@@ -4430,7 +4430,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 11 AM–9 PM",
     "serviceClass": "Seafood / waterfront dining",
     "area": "Monterey",
     "batchReview": {
@@ -4444,6 +4444,12 @@
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": []
+    },
+    "hoursEvidence": {
+      "status": "destination-directory-verified",
+      "source": "https://www.seemonterey.com/directory/crab-house/",
+      "checkedOn": "2026-11-07",
+      "note": "Published regular hours; holidays and temporary changes may differ."
     }
   },
   {
@@ -7498,7 +7504,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily lunch 11:30 AM–2 PM; dinner 5–8:30 PM",
     "serviceClass": "Seafood; American; Italian-American pasta",
     "area": "Monterey",
     "batchReview": {
@@ -7512,6 +7518,12 @@
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": []
+    },
+    "hoursEvidence": {
+      "status": "chamber-directory-verified",
+      "source": "https://members.montereychamber.com/list/member/monterey-s-fish-house-1773",
+      "checkedOn": "2026-11-07",
+      "note": "Published regular hours; holidays and temporary changes may differ."
     }
   },
   {
@@ -7715,7 +7727,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Thu 11 AM–9 PM; Fri–Sat 11 AM–10 PM; Sun 10 AM–9 PM",
     "serviceClass": "American bar and grill",
     "area": "Monterey",
     "batchReview": {
@@ -7733,6 +7745,12 @@
       "verifiedFields": [
         "shoppingCenterListing"
       ]
+    },
+    "hoursEvidence": {
+      "status": "official-location-verified",
+      "source": "https://www.lallagrill.com/location/del-monte/",
+      "checkedOn": "2026-11-07",
+      "note": "Published regular hours; holidays and temporary changes may differ."
     }
   },
   {
