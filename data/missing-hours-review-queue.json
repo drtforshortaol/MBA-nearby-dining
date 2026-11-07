@@ -1,0 +1,385 @@
+{
+  "generatedFrom": "data/eateries.json",
+  "purpose": "Unverified missing-hours research queue; no hours inferred",
+  "count": 54,
+  "restaurants": [
+    {
+      "id": "MBA-DINE-0002",
+      "name": "Beans of Eden",
+      "website": null,
+      "sourceStatus": "partial-verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0008",
+      "name": "Dippin' Dots",
+      "website": "https://www.dippindots.com/",
+      "sourceStatus": "partial-verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0011",
+      "name": "Great American Cookies",
+      "website": "https://www.greatamericancookies.com/",
+      "sourceStatus": "partial-verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0014",
+      "name": "Lilly Mae's Cinnamon Rolls",
+      "website": "https://canneryrow.com/business/lilly-maes-cinnamon-rolls/",
+      "sourceStatus": "partial-verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0017",
+      "name": "Paper Wing Theatre & Supper Club",
+      "website": "https://www.paperwing.com/",
+      "sourceStatus": "partial-verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0028",
+      "name": "Troya Turkish Delight & Coffee",
+      "website": "https://troyamry.com/",
+      "sourceStatus": "official-verified-partial",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0045",
+      "name": "La Bahia Mexican American Restaurant",
+      "website": null,
+      "sourceStatus": "existing-record-only",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0054",
+      "name": "Sunrise Cafe",
+      "website": null,
+      "sourceStatus": "existing-record-only; official website not independently verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0058",
+      "name": "Starbucks Coffee (Lighthouse District)",
+      "website": "https://www.starbucks.com/store-locator/store/1008792",
+      "sourceStatus": "existing-record-only",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0074",
+      "name": "Monarch Pub & Restaurant",
+      "website": "https://business.pacificgrove.org/directory/Details/monarch-pub-restaurant-the-2115337",
+      "sourceStatus": "existing-record-only; official website not independently verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0078",
+      "name": "The Perfect Crumb Bakery",
+      "website": "https://www.theperfectcrumbbakery.net/",
+      "sourceStatus": "official-website-reports-temporarily-closed",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0087",
+      "name": "Winston's - A Brunch Place",
+      "website": "https://business.pacificgrove.org/directory/Details/winston-s-a-brunch-place-2340963",
+      "sourceStatus": "existing-record-only; official website not independently verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0090",
+      "name": "Jersey Mike's Subs",
+      "website": "https://www.jerseymikes.com/",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0107",
+      "name": "The Gig Monterey (formerly Paluca Trattoria)",
+      "website": "https://www.thegigmonterey.com/",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0108",
+      "name": "Monterey Crab House",
+      "website": "https://www.crabhousemonterey.com/",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0114",
+      "name": "Fish and Chips Cafe",
+      "website": "https://www.montereywharf.com/dining/fish-and-chips-cafe.html",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0115",
+      "name": "Domenico's Fish Market and Deli",
+      "website": "https://domenicosmonterey.com/",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0127",
+      "name": "Bobalicious and Bites",
+      "website": "https://bobaliciousbites.com/",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0132",
+      "name": "Chong's Szechwan Restaurant",
+      "website": "https://www.chongmonterey.com/",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0136",
+      "name": "East Village Cafe",
+      "website": "https://www.eastvillagecafemonterey.com/",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0144",
+      "name": "Kuma Sushi",
+      "website": "https://kuma.menu11.com/monterey/order",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0150",
+      "name": "Mundos Sandwich & Burger House",
+      "website": "https://mundoscafemonterey.com/",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0155",
+      "name": "Old Monterey Cafe",
+      "website": "https://oldmontereycafeca.com/",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0162",
+      "name": "Petra Cafe",
+      "website": "http://petracafe.com",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0173",
+      "name": "Taco Bell",
+      "website": "https://locations.tacobell.com/ca/monterey/321-alvarado-st.html",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0174",
+      "name": "Terra Superfoods",
+      "website": "https://terrasuperfoods.com/",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0175",
+      "name": "Toribashi",
+      "website": "https://toribashi.com/",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0176",
+      "name": "Turn 12 Bar & Grill",
+      "website": "https://www.turn12barandgrill.com/",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0177",
+      "name": "TZone Monterey",
+      "website": "https://www.oldmonterey.org/biz/tzone",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0180",
+      "name": "Taste Cafe & Bistro",
+      "website": "https://www.tastecafebistro.com/",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0181",
+      "name": "Gelato By The Sea",
+      "website": null,
+      "sourceStatus": "local-report-verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0185",
+      "name": "Aquino's Birrieria & Brunch",
+      "website": "https://aquinosbirrieria.com/",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0188",
+      "name": "Monterey’s Fish House",
+      "website": "https://montereyfishhouse.com",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0189",
+      "name": "Chipotle Mexican Grill (Del Monte Center)",
+      "website": "https://www.delmontecenter.com/directory",
+      "sourceStatus": "shopping-center-directory-checked; hours not verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0191",
+      "name": "Dametra Fresh Mediterranean",
+      "website": "https://www.delmontecenter.com/directory",
+      "sourceStatus": "shopping-center-directory-checked; hours not verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0192",
+      "name": "Kona Steak & Seafood",
+      "website": "https://www.delmontecenter.com/directory",
+      "sourceStatus": "shopping-center-directory-checked; hours not verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0193",
+      "name": "Lalla Grill Del Monte",
+      "website": "https://www.delmontecenter.com/directory",
+      "sourceStatus": "shopping-center-directory-checked; hours not verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0195",
+      "name": "Pizza My Heart (Del Monte Center)",
+      "website": "https://www.delmontecenter.com/directory",
+      "sourceStatus": "shopping-center-directory-checked; hours not verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0196",
+      "name": "Poke House (Del Monte Center)",
+      "website": "https://www.delmontecenter.com/directory",
+      "sourceStatus": "shopping-center-directory-checked; hours not verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0197",
+      "name": "Starbucks (Del Monte Center)",
+      "website": "https://www.delmontecenter.com/directory",
+      "sourceStatus": "shopping-center-directory-checked; hours not verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0198",
+      "name": "California Pizza Kitchen (Del Monte Center)",
+      "website": "https://www.delmontecenter.com/directory",
+      "sourceStatus": "shopping-center-directory-checked; hours not verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0199",
+      "name": "Chopstix Vietnamese Restaurant",
+      "website": null,
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0200",
+      "name": "Krua Thai Restaurant",
+      "website": null,
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0201",
+      "name": "The Wild Plum Cafe",
+      "website": null,
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0204",
+      "name": "Rice and Roots",
+      "website": "https://www.oldmonterey.org/dining-guide",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0205",
+      "name": "Scoops Ice Cream Parlor",
+      "website": "https://www.oldmonterey.org/dining-guide",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0212",
+      "name": "Carmel Bakery and Coffee House",
+      "website": "https://www.oldmonterey.org/biz/carmel-bakery-and-coffee-house",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0213",
+      "name": "Indian Summer Hookah Lounge, Bar & Grill",
+      "website": "https://www.oldmonterey.org/biz/indian-summer-hookah-lounge-bar-grill",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0215",
+      "name": "Puma Road at Portola Plaza",
+      "website": "https://www.oldmonterey.org/biz/puma-road-portola-plaza",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0217",
+      "name": "Benny Walker's",
+      "website": "https://ediblemontereybay.com/blog/shiny-new-benny-walkers-soft-opens/",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0218",
+      "name": "Compact Disco — EAT takeout window",
+      "website": "https://www.oldmonterey.org/biz/compact-disco",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0225",
+      "name": "Pretzelmaker",
+      "website": "https://www.delmontecenter.com/store/pretzelmaker",
+      "sourceStatus": "shopping-center-directory-checked; hours not verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0229",
+      "name": "Whole Foods Market — Prepared Foods",
+      "website": "https://www.delmontecenter.com/pdfs/directoryMap.pdf",
+      "sourceStatus": "shopping-center-directory-checked; hours not verified",
+      "hoursVerified": false
+    },
+    {
+      "id": "MBA-DINE-0235",
+      "name": "Starbucks Coffee — Downtown Alvarado",
+      "website": "https://www.starbucks.com/store-locator/store/66442",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false
+    }
+  ]
+}
