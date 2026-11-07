@@ -31,6 +31,7 @@ let browser;
     await map.getByRole('button',{name:/Zoom in/}).click();
     await map.getByRole('button',{name:/Fit both/}).click();
     assert.equal(await map.getAttribute('data-zoom'),'1','Fit both resets this map');
+    await page.evaluate(async()=>{await navigator.serviceWorker.ready;if(!navigator.serviceWorker.controller)await new Promise(resolve=>navigator.serviceWorker.addEventListener('controllerchange',resolve,{once:true}));});
     await context.setOffline(true);
     await page.reload({waitUntil:'domcontentloaded'});
     await page.locator('.card').first().waitFor({timeout:15000});
