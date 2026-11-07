@@ -1,5 +1,5 @@
 'use strict';
-const APP_VERSION='3.0.6', BASKET_KEY='mba-eatery-basket-v1', FAV_KEY='mba-eatery-favorites-v1';
+const APP_VERSION='3.0.7', BASKET_KEY='mba-eatery-basket-v1', FAV_KEY='mba-eatery-favorites-v1';
 let eateries=[],byId=new Map(),basket=[],favorites=[],mode='explore',selected=null,travel='walk',query='',quick='',limit='all',sort='name',photoExpanded=false,shared=false,navHistory=[],roadData=null,visibleCount=30,lastFilterKey='',filters={cuisine:'all',price:[],family:'all',alcohol:'all',ocean:'all',entertainment:'all'};
 const $=id=>document.getElementById(id);
 const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -36,9 +36,10 @@ function offlineMapSVG(r,roads,zoom=1){
   // relative to this fit, rather than losing the aquarium off-screen by default.
   const lat0=(r.lat+AQUARIUM_ENTRANCE.lat)/2,lon0=(r.lon+AQUARIUM_ENTRANCE.lon)/2;
   const separationKm=Math.hypot((r.lon-AQUARIUM_ENTRANCE.lon)*111.195*Math.cos(lat0*Math.PI/180),(r.lat-AQUARIUM_ENTRANCE.lat)*111.195);
-  const fitPxPerKm=Math.min(175,Math.max(18,240/Math.max(separationKm,0.25)));
+  // Always fit the aquarium and destination, including restaurants farther from Cannery Row.
+  const fitPxPerKm=Math.min(175,240/Math.max(separationKm,0.25));
   const pxPerKm=fitPxPerKm*Math.max(.65,Math.min(1.75,zoom));
-  const scaleMeters=pxPerKm>=90?250:pxPerKm>=45?500:1000;
+  const scaleMeters=pxPerKm>=90?250:pxPerKm>=45?500:pxPerKm>=12?1000:5000;
   const scaleWidth=pxPerKm*scaleMeters/1000;
   const east=111.195*Math.cos(lat0*Math.PI/180),north=111.195;
   const point=(lon,lat)=>({x:W/2+(lon-lon0)*east*pxPerKm,y:H/2-(lat-lat0)*north*pxPerKm});
@@ -88,7 +89,7 @@ function offlineMapSVG(r,roads,zoom=1){
     +'<rect x="0" y="0" width="'+W+'" height="26" fill="#e3efeb" opacity=".94"/>'
     +'<text x="12" y="18" font-size="12" font-weight="700" fill="#164d5c">MONTEREY · OFFLINE STREETS</text><text x="365" y="18" font-size="12" font-weight="700" fill="#164d5c">N ↑</text>'
     +'<rect x="0" y="295" width="'+W+'" height="15" fill="#e3efeb"/>'
-    +'<path d="M15 302 h'+scaleWidth.toFixed(1)+'" stroke="#1f5963" stroke-width="3"/><text x="'+(20+scaleWidth).toFixed(1)+'" y="305" font-size="10" fill="#1f5963">'+(scaleMeters===1000?'1 km':scaleMeters+' m')+'</text></svg>'
+    +'<path d="M15 302 h'+scaleWidth.toFixed(1)+'" stroke="#1f5963" stroke-width="3"/><text x="'+(20+scaleWidth).toFixed(1)+'" y="305" font-size="10" fill="#1f5963">'+(scaleMeters>=1000?(scaleMeters/1000)+' km':scaleMeters+' m')+'</text></svg>'
     +'<div class="mapLegend"><span><i class="aquariumDot"></i> Monterey Bay Aquarium</span><span><i class="eateryDot"></i> '+safe(r.name)+'</span>'+landmarkLegend.join('')+'</div>'
     +'<div class="mapButtons"><button data-action="mapZoom" data-zoom="in" type="button" aria-label="Zoom in on offline map">＋ Zoom</button><button data-action="mapZoom" data-zoom="out" type="button" aria-label="Zoom out on offline map">－ Zoom</button><button data-action="mapReset" type="button">↺ Fit All</button></div>'
     +'<p class="muted">Real road-centerline geometry © County of Monterey GIS. Not turn-by-turn directions, sidewalk information, or an entrance survey. The map works offline.</p>';
