@@ -201,11 +201,11 @@
       "website": "https://www.delmontecenter.com/pdfs/directoryMap.pdf",
       "sourceStatus": "shopping-center-directory-checked; hours not verified",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
+      "verificationStatus": "needs-department-hours",
       "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "sourceUrl": "https://www.wholefoodsmarket.com/stores/monterey",
+      "checkedOn": "2026-11-07",
+      "notes": "Official store hours 8 AM–9 PM daily, but Prepared Foods counter hours are NOT confirmed; do not substitute store hours."
     },
     {
       "id": "MBA-DINE-0235",
