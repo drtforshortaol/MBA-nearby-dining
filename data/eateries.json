@@ -2502,7 +2502,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Sat 4:30 AM–9 PM; Sun 4:30 AM–8:30 PM",
     "serviceClass": "Bakery / café",
     "area": "Monterey",
     "batchReview": {
@@ -2513,9 +2513,17 @@
       "sourceStatus": "existing-record-only",
       "visitorTip": "Starbucks location in Monterey's Lighthouse District. Coffee and quick breakfast or snack items; confirm opening hours in the store locator.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "official-location-verified",
+      "source": "https://www.starbucks.com/store-locator/store/1008792",
+      "checkedOn": "2026-11-07",
+      "note": "Starbucks’ official store locator response lists all seven days for store 1008792 at 865 Lighthouse Ave. These are general store hours. The response lists a drive-through but does not supply a separate schedule for it."
     }
   },
   {
@@ -3048,7 +3056,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Dine-in and takeout daily 11 AM–10 PM",
     "serviceClass": "Restaurant / prepared meals",
     "area": "Pacific Grove",
     "batchReview": {
@@ -3059,9 +3067,17 @@
       "sourceStatus": "existing-record-only; official website not independently verified",
       "visitorTip": "Restaurant / prepared meals at 617 Lighthouse Ave. Current menu, hours and operating status require confirmation before recommending.",
       "sources": [],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
+    },
+    "hoursEvidence": {
+      "status": "merchant-post-verified",
+      "source": "https://www.findglocal.com/US/Pacific-Grove/1897955690215352/The-Monarch-Pub-%26-Restaurant",
+      "checkedOn": "2026-11-07",
+      "note": "The pub’s August 10, 2026 post reproduced in the listing gives daily dine-in and takeout hours at 617 Lighthouse Ave. The 2026 Pacific Grove Guide gives the same schedule. Other directories list different closing times. Separate bar hours are unconfirmed."
     }
   },
   {
@@ -8067,7 +8083,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Sun–Thu 5 AM–9 PM; Fri–Sat 5 AM–9:30 PM",
     "serviceClass": "Coffee and cafe",
     "area": "Monterey",
     "batchReview": {
@@ -8080,11 +8096,18 @@
       "sources": [
         "https://www.delmontecenter.com/directory"
       ],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": [
-        "shoppingCenterListing"
+        "shoppingCenterListing",
+        "hours"
       ]
+    },
+    "hoursEvidence": {
+      "status": "official-location-verified",
+      "source": "https://www.starbucks.com/store-locator/store/18425",
+      "checkedOn": "2026-11-07",
+      "note": "Starbucks’ official store locator response lists all seven days for store 18425 at 492 Del Monte Center. This is the café’s own schedule."
     }
   },
   {
@@ -8710,7 +8733,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Fri 11 AM–8 PM; Sat 11 AM–7 PM; Sun 11 AM–5 PM",
     "serviceClass": "Pretzels / quick snack",
     "area": "Monterey",
     "batchReview": {
@@ -8723,11 +8746,18 @@
       "sources": [
         "https://www.delmontecenter.com/directory"
       ],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": [
-        "shoppingCenterListing"
+        "shoppingCenterListing",
+        "hours"
       ]
+    },
+    "hoursEvidence": {
+      "status": "official-location-verified",
+      "source": "https://www.pretzelmaker.com/locations/",
+      "checkedOn": "2026-11-07",
+      "note": "The brand’s store locator publishes these store hours for 520 Del Monte Center, phone 831-521-6001. It lists delivery separately. Restaurantji and Yellow Pages corroborate the schedule."
     }
   },
   {
@@ -8875,7 +8905,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "Daily 4:30 AM–9 PM",
+    "hours": "Mon–Sat 4:30 AM–9 PM; Sun 4 AM–9 PM",
     "serviceClass": "Coffee shop / quick breakfast / pastries",
     "area": "Monterey",
     "batchReview": {
@@ -8893,10 +8923,10 @@
       ]
     },
     "hoursEvidence": {
-      "status": "verified-corroborated-business-listings",
-      "source": "https://www.yellowpages.com/monterey-ca/mip/starbucks-coffee-472670766?lid=472670766",
+      "status": "official-location-verified",
+      "source": "https://www.starbucks.com/store-locator/store/66442",
       "checkedOn": "2026-11-07",
-      "note": "Yellow Pages, Restaurantji and EatOutMap agree on the weekly cafe schedule at 316 Alvarado St. Cylex agrees except for a dated Saturday holiday exception. A SuperPages search summary shows Sunday at 4 AM but the associated location-specific listing matches the 4:30 AM opening. Starbucks official locator does not expose a readable schedule."
+      "note": "Starbucks’ official store locator response for store 66442 at 316 Alvarado St confirms the Sunday 4 AM opening. This supersedes the prior directory schedule, which listed 4:30 AM daily."
     }
   }
 ]

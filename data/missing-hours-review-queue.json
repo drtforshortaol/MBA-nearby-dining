@@ -1,13 +1,13 @@
 {
   "generatedFrom": "data/eateries.json",
   "purpose": "Restaurants still missing publishable hours after source review",
-  "count": 16,
+  "count": 12,
   "restaurants": [
     {
       "id": "MBA-DINE-0002",
       "name": "Beans of Eden",
       "address": "711 Cannery Row, Suites A & E",
-      "phone": "Not identified",
+      "phone": "(831) 215-6209",
       "website": null,
       "hoursVerified": false,
       "verificationStatus": "conflicting",
@@ -52,30 +52,6 @@
       "notes": "The theater advertises specific shows and ticketed dining events. The Chamber's Mon–Fri 10 AM–5 PM applies to its office, and its Thu–Mon 4–10 PM listing applies to a separate sushi walk-up window. Call (831) 905-5684 for the event's meal service time or to confirm any regular dining hours."
     },
     {
-      "id": "MBA-DINE-0058",
-      "name": "Starbucks Coffee (Lighthouse District)",
-      "address": "865 Lighthouse Ave",
-      "phone": "831-656-9390",
-      "website": "https://www.starbucks.com/store-locator/store/1008792",
-      "hoursVerified": false,
-      "verificationStatus": "conflicting",
-      "sourceUrl": "https://www.starbucks.com/store-locator/store/1008792",
-      "checkedOn": "2026-11-07",
-      "notes": "Official location page yielded no readable schedule. Tripadvisor reports daily 5 AM–8 PM, Waze daily 5:30 AM–8 PM, and Yellow Pages reports 4:30 AM–9 PM Mon–Sat and 4:30 AM–8:30 PM Sun. Call (831) 656-9390 to distinguish cafe and drive-through hours."
-    },
-    {
-      "id": "MBA-DINE-0074",
-      "name": "Monarch Pub & Restaurant",
-      "address": "617 Lighthouse Ave",
-      "phone": "831-324-4987",
-      "website": "https://business.pacificgrove.org/directory/Details/monarch-pub-restaurant-the-2115337",
-      "hoursVerified": false,
-      "verificationStatus": "conflicting",
-      "sourceUrl": "https://business.pacificgrove.org/directory/Details/the-monarch-pub-restaurant-2115337",
-      "checkedOn": "2026-11-07",
-      "notes": "Chamber directory reports a Sun–Thu close of 10 AM, an apparent error, and Fri–Sat at 11 PM. Tripadvisor reports Sun–Thu 10 PM and Fri–Sat 10:30 PM; the 2026 Pacific Grove guide reports 10 PM daily. Call (831) 324-4987 for food service and pub closing times."
-    },
-    {
       "id": "MBA-DINE-0078",
       "name": "The Perfect Crumb Bakery",
       "address": "650 Lighthouse Ave Suite 100",
@@ -115,13 +91,13 @@
       "id": "MBA-DINE-0144",
       "name": "Kuma Sushi",
       "address": "414 Alvarado St",
-      "phone": "(916) 709-0870",
+      "phone": "(831) 324-4745",
       "website": "https://kuma.menu11.com/monterey/order",
       "hoursVerified": false,
       "verificationStatus": "conflicting-needs-manual-review",
       "sourceUrl": "https://members.montereychamber.com/list/member/kuma-sushi-7433",
       "checkedOn": "2026-11-07",
-      "notes": "At 414 Alvarado St, the Chamber lists Tue–Thu 4:30–9 PM, Fri–Sat 4:30–9:30 PM and Sun 1–7 PM, while Tripadvisor lists daily 5–10 PM and online ordering posts a separate split schedule. Call the current number in the Old Monterey merchant directory, 831-324-4745, to confirm dine-in hours."
+      "notes": "The current Old Monterey merchant directory gives this phone at 414 Alvarado St. Restaurantji, updated September 30, and Wanderlog agree on daily 5–10 PM and show the same number. The Chamber lists a different schedule and different number, and the ordering page posts a split schedule. Confirm current dine-in hours directly."
     },
     {
       "id": "MBA-DINE-0181",
@@ -133,19 +109,7 @@
       "verificationStatus": "unavailable-needs-manual-review",
       "sourceUrl": "https://canneryrow.com/properties/700-cannery-row/",
       "checkedOn": "2026-11-07",
-      "notes": "The Cannery Row property directory and Monterey County Now confirm the new branch at 700 Cannery Row, Suite O. No visitor hours were found for this branch. The Carmel schedule and hiring shift hours cannot establish the Cannery Row schedule. Confirm hours directly at this storefront."
-    },
-    {
-      "id": "MBA-DINE-0197",
-      "name": "Starbucks (Del Monte Center)",
-      "address": "492 Del Monte Center",
-      "phone": null,
-      "website": "https://www.delmontecenter.com/directory",
-      "hoursVerified": false,
-      "verificationStatus": "conflicting",
-      "sourceUrl": "https://www.delmontecenter.com/store/starbucks-coffee",
-      "checkedOn": "2026-11-07",
-      "notes": "Call (831) 642-0736. Mall tenant page confirms this cafe and phone but publishes no weekly hours. Waze gives daily 6 AM–7 PM at 492 Del Monte Center. The existing research listing reported 5 AM–9/9:30 PM. The store locator for this cafe is 18425 and supplies no readable hours. Store 66442 is downtown."
+      "notes": "The Cannery Row property directory confirms 700 Cannery Row, Suite O, near The Fish Hopper. MenuPix lists (831) 869-7798 but gives no hours. The Carmel location also lists that number, so ask specifically for the Cannery Row schedule. The property office is a fallback at (831) 649-6690."
     },
     {
       "id": "MBA-DINE-0217",
@@ -157,31 +121,19 @@
       "verificationStatus": "provisional-soft-opening",
       "sourceUrl": "https://ediblemontereybay.com/blog/shiny-new-benny-walkers-soft-opens/",
       "checkedOn": "2026-11-07",
-      "notes": "Soft-opening hours reported as daily 4–8 PM at 444 Alvarado St, with longer 11 AM–10:30 PM hours possible as soon as Nov 11. Downtown association lists the venue but no standing schedule. Confirm the post-soft-opening schedule with the operator."
+      "notes": "Soft-opening hours reported as daily 4–8 PM at 444 Alvarado St, with longer 11 AM–10:30 PM hours possible as soon as Nov 11. Downtown association lists the venue but no standing schedule. Confirm the post-soft-opening schedule with the operator. The downtown association lists the operator’s Instagram but no phone number or permanent hours."
     },
     {
       "id": "MBA-DINE-0218",
       "name": "Compact Disco — EAT takeout window",
       "address": "420 Tyler St",
-      "phone": null,
+      "phone": "(831) 920-2518",
       "website": "https://www.oldmonterey.org/biz/compact-disco",
       "hoursVerified": false,
       "verificationStatus": "provisional-window-hours",
       "sourceUrl": "https://www.oldmonterey.org/news/2026/06/late-night-eats-compact-disco",
       "checkedOn": "2026-11-07",
-      "notes": "Compact Disco’s June announcement gives a 2 AM close for the all-ages walk-up window at 420 Tyler Street on Friday and Saturday nights. Edible Monterey Bay reported 10 PM–2 AM on those nights in June. Later operator social posts describe different opening hours for the 21+ pub kitchen. The current downtown association listing confirms the window exists at 420 Tyler Street but omits hours. Confirm the current takeout window schedule separately from club, happy-hour and in-pub kitchen hours."
-    },
-    {
-      "id": "MBA-DINE-0225",
-      "name": "Pretzelmaker",
-      "address": "520 Del Monte Center",
-      "phone": "(831) 521-6001",
-      "website": "https://www.delmontecenter.com/store/pretzelmaker",
-      "hoursVerified": false,
-      "verificationStatus": "conflicting",
-      "sourceUrl": "https://www.delmontecenter.com/store/pretzelmaker",
-      "checkedOn": "2026-11-07",
-      "notes": "Call (831) 521-6001. Official tenant page confirms the location but has no weekly hours. Restaurantji and Yellow Pages list Mon–Fri 11 AM–8 PM, Sat 11 AM–7 PM, Sun 11 AM–5 PM. USA Restaurants lists Friday until 9 PM with a different phone number. Confirm the tenant’s Friday closing time and weekly schedule."
+      "notes": "Compact Disco’s June announcement gives a 2 AM close for the all-ages walk-up window at 420 Tyler Street on Friday and Saturday nights. Edible Monterey Bay reported 10 PM–2 AM on those nights in June. Later operator social posts describe different opening hours for the 21+ pub kitchen. The current downtown association listing confirms the window exists at 420 Tyler Street but omits hours. Confirm the current takeout window schedule separately from club, happy-hour and in-pub kitchen hours. See Monterey lists the venue phone as (831) 920-2518. Ask specifically for the all-ages EAT window."
     },
     {
       "id": "MBA-DINE-0229",
@@ -193,7 +145,7 @@
       "verificationStatus": "needs-department-hours",
       "sourceUrl": "https://www.wholefoodsmarket.com/stores/monterey",
       "checkedOn": "2026-11-07",
-      "notes": "Call (831) 333-1600 for the Prepared Foods counter and hot bar. The location page confirms the hot bar but publishes only supermarket hours. Counter service may run on a different schedule."
+      "notes": "Call (831) 333-1600 for the Prepared Foods counter and hot bar. The location page confirms the hot bar but publishes only supermarket hours. Counter service may run on a different schedule. The location page’s embedded listing data describes the Hot Bar as an amenity without separate hours."
     }
   ]
 }
