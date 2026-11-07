@@ -37,7 +37,7 @@
       "verifiedHours": null,
       "sourceUrl": "https://members.montereychamber.com/list/member/kuma-sushi-7433",
       "checkedOn": "2026-11-07",
-      "notes": "At 414 Alvarado St, the Chamber lists Tue–Thu 4:30–9 PM, Fri–Sat 4:30–9:30 PM and Sun 1–7 PM. Restaurantji (page updated September 30, 2026), Wanderlog and Tripadvisor list daily 5–10 PM. Restaurantji and Wanderlog match the Old Monterey merchant directory's phone, 831-324-4745. A 2022 Monterey County Weekly reopening article reported 5–10 PM Wed–Sun. The Chamber uses a different phone number and its linked website could not be reached. The online ordering page displays a separate split schedule. Call 831-324-4745 to resolve current dine-in hours. Additional sources: https://www.restaurantji.com/ca/monterey/sushi-kuma-/ , https://wanderlog.com/place/details/1233324/sushi-kuma , https://www.oldmonterey.org/biz/kuma-sushi ."
+      "notes": "Google Maps lists daily 5–10 PM at 414 Alvarado St with the same 831-324-4745 phone as Old Monterey's merchant directory. Restaurantji and Wanderlog match. The Chamber lists a different schedule (Tue–Thu 4:30–9 PM, Fri–Sat 4:30–9:30 PM and Sun 1–7 PM) and contact number. Its linked site could not be reached. Kuma's Wix menu shows no hours, Instagram requires sign-in and its ordering page shows a separate split schedule. Call 831-324-4745 to resolve the dine-in schedule. Google Maps evidence: https://www.google.com/maps/place/Sushi+Kuma/@36.5995793,-121.8946533,17z/data=!3m1!4b1!4m6!3m5!1s0x808de5ca6361c5af:0xecb2a100fa17c12f!8m2!3d36.5995793!4d-121.8946533!16s%2Fg%2F11qypjdnc2?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D"
     },
     {
       "id": "MBA-DINE-0150",
@@ -151,13 +151,13 @@
       "id": "MBA-DINE-0181",
       "name": "Gelato By The Sea",
       "website": null,
-      "sourceStatus": "online-research-needs-direct-confirmation",
-      "hoursVerified": false,
-      "verificationStatus": "unavailable-needs-manual-review",
-      "verifiedHours": null,
-      "sourceUrl": "https://canneryrow.com/properties/700-cannery-row/",
+      "sourceStatus": "dated-source-evidence",
+      "hoursVerified": true,
+      "verificationStatus": "verified-current-business-listing",
+      "verifiedHours": "Mon–Thu 11 AM–9 PM; Fri–Sun 11 AM–10 PM",
+      "sourceUrl": "https://www.google.com/maps/place/Gelato+By+The+Sea/@36.6163708,-121.8997753,17z/data=!3m1!4b1!4m6!3m5!1s0x808de5faceade5dd:0x676b8e0fc1c0b2c8!8m2!3d36.6163708!4d-121.8997753!16s%2Fg%2F11nvvchgtt?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D",
       "checkedOn": "2026-11-07",
-      "notes": "The Cannery Row property directory and September 17 Monterey County Now coverage confirm the branch at 700 Cannery Row, Suite O, next to The Fish Hopper. MenuPix lists 831-869-7798 for this address and shows no posted hours. Carmel's tourism directory lists the same number for the Carmel shop. Ask for Cannery Row Suite O specifically when calling, or verify in person. The Cannery Row Company lists 831-649-6690 for property inquiries. No Cannery Row visitor hours were found. Additional sources: https://www.menupix.com/california/restaurants/34584333/Gelato-By-The-Sea-Monterey-CA , https://www.carmelcalifornia.com/shopping-gelato_by_the_sea_1034.htm ."
+      "notes": "The live Google Maps weekly hours are for 700 Cannery Row, Suite O, Monterey. The Carmel branch has a separate Maps listing with different hours. The Cannery Row property directory and Monterey County Now confirm the Suite O shop next to The Fish Hopper. MenuPix corroborates the Cannery Row address and the shared 831-869-7798 phone. Google Maps flags possible holiday exceptions."
     },
     {
       "id": "MBA-DINE-0185",
