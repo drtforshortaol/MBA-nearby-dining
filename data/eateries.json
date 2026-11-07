@@ -8382,20 +8382,24 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 10 AM–10 PM.",
     "serviceClass": "Pizza; dine-in; takeout; delivery",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch9-2026-11-07",
+      "batch": "hours-qc-2026-11-07-next",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.7,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Pizza; dine-in; takeout; delivery at 724 Abrego St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.mountainmikespizza.com/locations/monterey-abrego/"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ]
     }
   },
   {
