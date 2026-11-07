@@ -1,7 +1,7 @@
 {
   "generatedFrom": "data/eateries.json",
   "purpose": "Restaurants still missing publishable hours after source review",
-  "count": 12,
+  "count": 7,
   "restaurants": [
     {
       "id": "MBA-DINE-0002",
@@ -13,31 +13,11 @@
       "verificationStatus": "conflicting",
       "sourceUrl": "https://maps.roadtrippers.com/us/monterey-ca/food-drink/beans-of-eden-monterey-ca--0",
       "checkedOn": "2026-11-07",
-      "notes": "Two dated snapshots of the same directory give daily 7 AM–8 PM and 8 AM–8 PM. Cannery Row confirms the address without hours. Call the listed cafe number (831) 215-6209 to confirm current opening time."
-    },
-    {
-      "id": "MBA-DINE-0008",
-      "name": "Dippin' Dots",
-      "address": "711 Cannery Row",
-      "phone": "(831) 655-5080",
-      "website": "https://www.dippindots.com/",
-      "hoursVerified": false,
-      "verificationStatus": "conflicting",
-      "sourceUrl": "https://www.restaurantji.com/ca/monterey/dippin-dots-/",
-      "checkedOn": "2026-11-07",
-      "notes": "Restaurantji gives Sun–Fri noon–6 PM and Sat 11 AM–8 PM. A prior location listing gave daily 11 AM–5:30 PM, and SuperPages warns hours may vary. The destination directory confirms the location without hours. Call (831) 655-5080 for current shop hours."
-    },
-    {
-      "id": "MBA-DINE-0011",
-      "name": "Great American Cookies",
-      "address": "751 Cannery Row, Suite 105",
-      "phone": "(831) 641-9300",
-      "website": "https://www.greatamericancookies.com/",
-      "hoursVerified": false,
-      "verificationStatus": "conflicting",
-      "sourceUrl": "https://maps.roadtrippers.com/us/monterey-ca/food-drink/great-american-cookies-monterey",
-      "checkedOn": "2026-11-07",
-      "notes": "Roadtrippers and Restaurant Guru list daily 11 AM–8 PM, and 411.info labels its matching time range owner-verified. SuperPages lists daily 11 AM–9 PM. The Cannery Row directory confirms the storefront but gives no hours. Confirm closing time at (831) 641-9300."
+      "notes": "Two dated snapshots of the same directory give daily 7 AM–8 PM and 8 AM–8 PM. Cannery Row confirms the address without hours. Call the listed cafe number (831) 215-6209 to confirm current opening time. Live Google Maps at the exact address shows Mon–Thu 7 AM–6 PM and Fri–Sun 7 AM–8 PM. The conflicting Roadtrippers snapshots did not show that day split, and no second source has confirmed it.",
+      "corroboratingSources": [
+        "https://canneryrow.com/business/beans-of-eden/",
+        "https://www.google.com/maps/place/Beans+of+Eden/@36.6160266,-121.9004639,17z/data=!3m1!4b1!4m6!3m5!1s0x808de5717c5a1af1:0xb73654171bf56c2c!8m2!3d36.6160266!4d-121.9004639!16s%2Fg%2F11z5s74kjy?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D"
+      ]
     },
     {
       "id": "MBA-DINE-0017",
@@ -49,19 +29,13 @@
       "verificationStatus": "needs-manual-review",
       "sourceUrl": "https://www.paperwing.com/",
       "checkedOn": "2026-11-07",
-      "notes": "The theater advertises specific shows and ticketed dining events. The Chamber's Mon–Fri 10 AM–5 PM applies to its office, and its Thu–Mon 4–10 PM listing applies to a separate sushi walk-up window. Call (831) 905-5684 for the event's meal service time or to confirm any regular dining hours."
-    },
-    {
-      "id": "MBA-DINE-0078",
-      "name": "The Perfect Crumb Bakery",
-      "address": "650 Lighthouse Ave Suite 100",
-      "phone": "(831) 241-6269",
-      "website": "https://www.theperfectcrumbbakery.net/",
-      "hoursVerified": false,
-      "verificationStatus": "provisional",
-      "sourceUrl": "https://www.restaurantji.com/ca/monterey/the-perfect-crumb-bakery-inc-/",
-      "checkedOn": "2026-11-07",
-      "notes": "Current listings at the Pacific Grove location give Sat–Mon and Wed–Thu 6:30 AM–5 PM, Fri 7 AM–5 PM, Tue closed. The official home page and Chamber confirm the move, but the official contact page still displays a temporary move closure and no weekly hours. Call (831) 241-6269 to confirm the current schedule."
+      "notes": "The theater advertises specific shows and ticketed dining events. The Chamber's Mon–Fri 10 AM–5 PM applies to its office, and its Thu–Mon 4–10 PM listing applies to a separate sushi walk-up window. Call (831) 905-5684 for the event's meal service time or to confirm any regular dining hours. The current theater calendar directs visitors to individual showtimes. The VIP Dinner Package page confirms that dinner can be part of a particular ticket.",
+      "corroboratingSources": [
+        "https://members.montereychamber.com/list/member/paper-wing-theatre-supper-club-monterey-7231",
+        "https://www.seemonterey.com/directory/paper-wing-theatre-company-supper-club/",
+        "https://www.paperwing.com/paper-wing-events-2/",
+        "https://www.paperwing.com/the-rocky-horror-show-vip-dinner-package/"
+      ]
     },
     {
       "id": "MBA-DINE-0115",
@@ -76,18 +50,6 @@
       "notes": "The Wharf Association lists the market and deli separately without hours. Domenico's site explicitly gives daily 11:30 AM to close for the dining room only. Call (831) 372-3655 for separate market counter hours."
     },
     {
-      "id": "MBA-DINE-0127",
-      "name": "Bobalicious and Bites",
-      "address": "474 Tyler St",
-      "phone": "(831) 666-7030",
-      "website": "https://bobaliciousbites.com/",
-      "hoursVerified": false,
-      "verificationStatus": "provisional",
-      "sourceUrl": "https://www.restaurantji.com/ca/monterey/bobalicious-and-bites-/",
-      "checkedOn": "2026-11-07",
-      "notes": "Current Restaurantji listing gives daily noon–8 PM, while its older snapshot gave noon–7 PM weekdays and noon–7:30 PM weekends. A merchant-authored summer promotion confirms noon–8 PM for Mondays only during the promotion. The official site has no readable weekly schedule. Call (831) 666-7030 to verify all days."
-    },
-    {
       "id": "MBA-DINE-0144",
       "name": "Kuma Sushi",
       "address": "414 Alvarado St",
@@ -97,19 +59,7 @@
       "verificationStatus": "conflicting-needs-manual-review",
       "sourceUrl": "https://members.montereychamber.com/list/member/kuma-sushi-7433",
       "checkedOn": "2026-11-07",
-      "notes": "The current Old Monterey merchant directory gives this phone at 414 Alvarado St. Restaurantji, updated September 30, and Wanderlog agree on daily 5–10 PM and show the same number. The Chamber lists a different schedule and different number, and the ordering page posts a split schedule. Confirm current dine-in hours directly."
-    },
-    {
-      "id": "MBA-DINE-0181",
-      "name": "Gelato By The Sea",
-      "address": "700 Cannery Row",
-      "phone": "831-869-7798",
-      "website": null,
-      "hoursVerified": false,
-      "verificationStatus": "unavailable-needs-manual-review",
-      "sourceUrl": "https://canneryrow.com/properties/700-cannery-row/",
-      "checkedOn": "2026-11-07",
-      "notes": "The Cannery Row property directory confirms 700 Cannery Row, Suite O, near The Fish Hopper. MenuPix lists (831) 869-7798 but gives no hours. The Carmel location also lists that number, so ask specifically for the Cannery Row schedule. The property office is a fallback at (831) 649-6690."
+      "notes": "Google Maps lists daily 5–10 PM at 414 Alvarado St with the same 831-324-4745 phone as Old Monterey's merchant directory. Restaurantji and Wanderlog match. The Chamber lists a different schedule (Tue–Thu 4:30–9 PM, Fri–Sat 4:30–9:30 PM and Sun 1–7 PM) and contact number. Its linked site could not be reached. Kuma's Wix menu shows no hours, Instagram requires sign-in and its ordering page shows a separate split schedule. Call 831-324-4745 to resolve the dine-in schedule. Google Maps evidence: https://www.google.com/maps/place/Sushi+Kuma/@36.5995793,-121.8946533,17z/data=!3m1!4b1!4m6!3m5!1s0x808de5ca6361c5af:0xecb2a100fa17c12f!8m2!3d36.5995793!4d-121.8946533!16s%2Fg%2F11qypjdnc2?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D"
     },
     {
       "id": "MBA-DINE-0217",
@@ -133,7 +83,7 @@
       "verificationStatus": "provisional-window-hours",
       "sourceUrl": "https://www.oldmonterey.org/news/2026/06/late-night-eats-compact-disco",
       "checkedOn": "2026-11-07",
-      "notes": "Compact Disco’s June announcement gives a 2 AM close for the all-ages walk-up window at 420 Tyler Street on Friday and Saturday nights. Edible Monterey Bay reported 10 PM–2 AM on those nights in June. Later operator social posts describe different opening hours for the 21+ pub kitchen. The current downtown association listing confirms the window exists at 420 Tyler Street but omits hours. Confirm the current takeout window schedule separately from club, happy-hour and in-pub kitchen hours. See Monterey lists the venue phone as (831) 920-2518. Ask specifically for the all-ages EAT window."
+      "notes": "Compact Disco’s June announcement gives a 2 AM close for the all-ages walk-up window at 420 Tyler Street on Friday and Saturday nights. Edible Monterey Bay reported 10 PM–2 AM on those nights in June. Later operator social posts describe different opening hours for the 21+ pub kitchen. The current downtown association listing confirms the window exists at 420 Tyler Street but omits hours. Confirm the current takeout window schedule separately from club, happy-hour and in-pub kitchen hours. See Monterey lists the venue phone as (831) 920-2518. Ask specifically for the all-ages EAT window. Uber Eats lists the same-address food menu for delivery but provides no current schedule for the physical walk-up window."
     },
     {
       "id": "MBA-DINE-0229",
@@ -145,7 +95,7 @@
       "verificationStatus": "needs-department-hours",
       "sourceUrl": "https://www.wholefoodsmarket.com/stores/monterey",
       "checkedOn": "2026-11-07",
-      "notes": "Call (831) 333-1600 for the Prepared Foods counter and hot bar. The location page confirms the hot bar but publishes only supermarket hours. Counter service may run on a different schedule. The location page’s embedded listing data describes the Hot Bar as an amenity without separate hours."
+      "notes": "Call (831) 333-1600 for the Prepared Foods counter and hot bar. The location page confirms the hot bar but publishes only supermarket hours. Counter service may run on a different schedule. The location page’s embedded listing data describes the Hot Bar as an amenity without separate hours. Monterey’s Market Cocina and Market Sandwich each have a provisional daily 9 AM–8 PM lead in public listings. Waze also lists Market Cocina at those hours. The public listings may share an upstream source. Whole Foods lists both counters separately from the Hot Bar and publishes no hours for any of the three. Confirm the named counter and hot bar hours separately."
     }
   ]
 }
