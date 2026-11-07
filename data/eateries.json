@@ -4785,20 +4785,25 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Thu 5–9 PM; Fri–Sat 4:30–10 PM (kitchen; bar until 11 PM); Sun 4:30–9 PM.",
     "serviceClass": "Restaurant / full service",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch8-2026-11-07",
+      "batch": "hours-qc-next-two-batches-2026-11-07",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.44,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Restaurant / full service at 474 Alvarado St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.alejandros.co/location/alejandros/"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ],
+      "hoursNote": "Published location-specific hours checked; holiday changes possible."
     }
   },
   {
@@ -5548,20 +5553,25 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Wed–Mon 11 AM–3 PM and 4:30–9:30 PM; closed Tue.",
     "serviceClass": "Chinese restaurant",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch7-2026-11-07",
+      "batch": "hours-qc-next-two-batches-2026-11-07",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.38,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Chinese restaurant at 429 Alvarado St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.fullmoonca.com/"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ],
+      "hoursNote": "Published location-specific hours checked; holiday changes possible."
     }
   },
   {
@@ -5748,20 +5758,25 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Tue–Sat 11 AM–8 PM; Sun 10 AM–8 PM; Monday not listed (confirm closure).",
     "serviceClass": "Mexican / Michoacán cuisine",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch8-2026-11-07",
+      "batch": "hours-qc-next-two-batches-2026-11-07",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.41,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Mexican / Michoacán cuisine at 431 Tyler St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://lacasadelsazonmonterey.com/"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ],
+      "hoursNote": "Published location-specific hours checked; holiday changes possible."
     }
   },
   {
@@ -5827,20 +5842,25 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Thu 11:30 AM–9 PM; Fri 11:30 AM–10 PM; Sat 10 AM–10 PM; Sun 10 AM–8 PM.",
     "serviceClass": "Gastropub / burgers / wood-fired pizza / brunch",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch8-2026-11-07",
+      "batch": "hours-qc-next-two-batches-2026-11-07",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.49,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Gastropub / burgers / wood-fired pizza / brunch at 484 Washington St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://melvilletav.com/"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ],
+      "hoursNote": "Published location-specific hours checked; holiday changes possible."
     }
   },
   {
@@ -5864,20 +5884,23 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Online-ordering page shows noon–11:30 PM; daily schedule not established. Confirm before visiting.",
     "serviceClass": "Neapolitan pizza / Italian / pasta",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch8-2026-11-07",
+      "batch": "hours-qc-next-two-batches-2026-11-07",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.43,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "published-hours-partial-or-conflicting",
       "visitorTip": "Neapolitan pizza / Italian / pasta at 467 Alvarado St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
+      "sources": [
+        "https://www.midicitheneapolitanmonterey.com/"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [],
+      "hoursNote": "Provisional or conflicting published schedule; do not present as verified."
     }
   },
   {
@@ -5980,20 +6003,23 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Published schedules conflict: official pages list Sun–Thu 11 AM–9 PM / Fri–Sat 11 AM–10 PM versus Sun–Thu 11 AM–7:40 PM / Fri–Sat 11 AM–9:40 PM. Confirm before visiting.",
     "serviceClass": "Loaded nachos / burritos / comfort food",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch8-2026-11-07",
+      "batch": "hours-qc-next-two-batches-2026-11-07",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.43,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "published-hours-partial-or-conflicting",
       "visitorTip": "Loaded nachos / burritos / comfort food at 470 Alvarado St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
+      "sources": [
+        "https://www.nachobiz.biz/"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [],
+      "hoursNote": "Provisional or conflicting published schedule; do not present as verified."
     }
   },
   {
@@ -6017,15 +6043,15 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Official homepage lists Sun–Thu 8:30 AM–8 PM, Fri–Sat 8:30 AM–9 PM, but its location footer lists different hours. Confirm before visiting.",
     "serviceClass": "Asian fusion restaurant / bar",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch6-2026-11-07",
+      "batch": "hours-qc-next-two-batches-2026-11-07",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.28,
-      "sourceStatus": "official-source-checked-hours-conflict",
+      "sourceStatus": "published-hours-partial-or-conflicting",
       "visitorTip": "Japanese fusion, seafood and steak with breakfast, lunch and dinner; the official page displays conflicting hours, so confirm before visiting.",
       "sources": [
         "https://namimonterey.com/"
@@ -6035,7 +6061,8 @@
       "verifiedFields": [
         "visitorTip"
       ],
-      "verificationNote": "Official homepage has conflicting hours listings; not verified."
+      "verificationNote": "Official homepage has conflicting hours listings; not verified.",
+      "hoursNote": "Provisional or conflicting published schedule; do not present as verified."
     }
   },
   {
@@ -6096,25 +6123,28 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Sat 11:30 AM–7 PM; Sunday not listed.",
     "serviceClass": "Restaurant / prepared meals",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch9-2026-11-07",
+      "batch": "hours-qc-next-two-batches-2026-11-07",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.59,
-      "sourceStatus": "official-source-checked-hours-partial-or-conflicting",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Casual sushi, bento and Japanese comfort food, with dine-in and takeout. Official site disagrees on opening time (11:30 AM versus noon); closed Sunday.",
       "sources": [
-        "https://www.oceansushi.com/locations-menus-hours"
+        "https://www.oceansushi.com/locations-menus-hours",
+        "https://www.oceansushi.com/"
       ],
-      "hoursVerified": false,
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": [
-        "visitorTip"
+        "visitorTip",
+        "hours"
       ],
-      "verificationNote": "Official home says Mon–Sat 11:30 AM–7 PM, official hours page says noon–7 PM. Opening time not verified."
+      "verificationNote": "Official home says Mon–Sat 11:30 AM–7 PM, official hours page says noon–7 PM. Opening time not verified.",
+      "hoursNote": "Published location-specific hours checked; holiday changes possible."
     }
   },
   {
@@ -6491,20 +6521,25 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 6 AM–1 PM (Monterey location; not Seaside).",
     "serviceClass": "Bakery / café",
     "area": "Monterey",
     "batchReview": {
-      "batch": "nearby-20-batch7-2026-11-07",
+      "batch": "hours-qc-next-two-batches-2026-11-07",
       "reviewedOn": "2026-11-07",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.39,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Bakery / café at 433 Alvarado St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.redsdonutsinc.com/menu"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "hours"
+      ],
+      "hoursNote": "Published location-specific hours checked; holiday changes possible."
     }
   },
   {
