@@ -69,11 +69,11 @@
       "website": "https://troyamry.com/",
       "sourceStatus": "official-verified-partial",
       "hoursVerified": false,
-      "verificationStatus": "pending-source-check",
-      "verifiedHours": null,
-      "sourceUrl": null,
-      "checkedOn": null,
-      "notes": ""
+      "verificationStatus": "verified-official-location",
+      "verifiedHours": "Mon–Sat 10:00 AM–8:00 PM; Sun 10:00 AM–7:00 PM",
+      "sourceUrl": "https://troyamry.com/pages/contact",
+      "checkedOn": "2026-11-07",
+      "notes": "Official contact page; 685 Cannery Row #107."
     },
     {
       "id": "MBA-DINE-0045",
