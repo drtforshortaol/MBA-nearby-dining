@@ -29,6 +29,7 @@ TABLES = {
  "ResearchStatus": ["restaurant_id","section","status","last_researched","next_review"],
  "Relationships": ["relationship_id","restaurant_id","target_restaurant_id","relation_type","note"],
  "ResearchHistory": ["history_id","restaurant_id","field_path","evidence_id","recorded_at","researcher","action","previous_value","proposed_value","disposition"],
+ "ReviewQueue": ["review_id","history_id","restaurant_id","field_path","decision","reviewer","reviewed_at","reason"],
  "LegacyFields": ["restaurant_id","raw_json_payload","sha256","original_excel_projection"]
 }
 FIELDS = TABLES["Restaurants"][1:]
@@ -86,6 +87,10 @@ def export(src,dst):
   ws.add_data_validation(rule);rule.add(f"{col}2:{col}10000")
  # History is append-only research metadata. Proposed changes are not applied to
  # the app until separately reviewed and promoted through the export gate.
+ review=DataValidation(type="list",formula1='"pending,accepted,rejected,conflicting,needs_more_evidence"',allow_blank=True)
+ review.showErrorMessage=True
+ wb["ReviewQueue"].add_data_validation(review)
+ review.add("E2:E10000")
  wb["LegacyFields"].column_dimensions["B"].width=65
  wb.save(dst)
  # Capture values exactly as Excel will return them (blank cells and float rounding).
