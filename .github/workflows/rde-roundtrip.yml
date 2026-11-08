@@ -439,3 +439,20 @@ jobs:
           assert not dest.exists(), 'Rejected proposals must not produce a workbook'
           print('PASS: duplicate field proposals rejected without output')
           PY
+
+      - name: Verify browser duplicate and destructive-action safeguards
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
+          const script=html.match(/<script>([\\s\\S]*?)<\\/script>/)?.[1];
+          assert.ok(script);
+          new vm.Script(script);
+          assert.match(script,/proposals\\.some\\(p=>p\\.restaurant_id===rid&&p\\.field_path===field\\)/);
+          assert.match(script,/pendingWork\\(\\)&&!confirm\\('Loading another file/);
+          assert.match(script,/pendingWork\\(\\)&&!confirm\\('Discard all unsaved edits/);
+          assert.match(script,/raw!==raw\\.trim\\(\\)\\|\\|\\/\\\\s\\//);
+          console.log('PASS: duplicate target and unsaved-work guards present');
+          JS
