@@ -8997,8 +8997,8 @@
     "cuisine": "Italian / fresh pasta / sourdough pizza / American",
     "distanceMiles": null,
     "distanceVerified": false,
-    "lat": null,
-    "lon": null,
+    "lat": 36.620545,
+    "lon": -121.916944,
     "website": "https://www.rudolfoseatery.com/",
     "photo": null,
     "photoCaption": "",
@@ -9018,7 +9018,8 @@
       "visitorTip": "Italian-inspired pasta and sourdough pizza; Sunday is Heatwaves. Confirm current menu and reservations directly.",
       "sources": [
         "https://www.rudolfoseatery.com/",
-        "https://www.rudolfoseatery.com/frequently-asked-questions"
+        "https://www.rudolfoseatery.com/frequently-asked-questions",
+        "https://maps.roadtrippers.com/us/pacific-grove-ca/food-drink/rudolfos-pacific-grove-ca--0"
       ],
       "hoursVerified": true,
       "photoVerified": false,
@@ -9028,7 +9029,7 @@
         "cuisine",
         "website"
       ],
-      "verificationNote": "Official restaurant website confirms address, menu concept and posted hours; phone supported by tourism directory. No real-time availability asserted."
+      "verificationNote": "Official restaurant website confirms address, menu concept and posted hours; phone supported by tourism directory. No real-time availability asserted. Approximate coordinates cross-checked with public map listing; not surveyed."
     }
   }
 ]
