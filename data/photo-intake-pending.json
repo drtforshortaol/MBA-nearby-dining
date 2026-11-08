@@ -14,7 +14,14 @@
       "permission_record": "docs/photo-intake-goodies-delicatessen-20261108.md",
       "source_asset": "conversation upload 2026-11-08",
       "repository_asset_path": null,
-      "offline_verified": false
+      "offline_verified": false,
+      "source_image_verified": true,
+      "source_image_format": "JPEG",
+      "source_image_dimensions_px": {
+        "width": 1408,
+        "height": 1074
+      },
+      "source_image_visual_check": "Storefront shows DELICATESSEN sign above entrance, Goodies window logo, patio seating, and seasonal decorations."
     }
   ]
 }
