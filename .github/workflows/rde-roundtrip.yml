@@ -574,3 +574,28 @@ jobs:
           }
           console.log('PASS: browser JSON exports end with valid newline escape');
           JS
+      - name: Beta gate rejects empty approved values and production output
+        run: |
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          source=Path('/tmp/rde-deferred-final.xlsx')
+          wb=load_workbook(source)
+          history=wb['ResearchHistory']
+          accepted={r[1] for r in list(wb['ReviewQueue'].values)[1:] if r[4]=='accepted'}
+          match=next(i for i in range(2,history.max_row+1) if 'INGEST:H:'+str(history.cell(i,1).value) in accepted)
+          history.cell(match,9).value='   '
+          invalid=Path('/tmp/rde-empty-accepted.xlsx')
+          wb.save(invalid)
+          output=Path('/tmp/rde-empty-accepted.json')
+          output.unlink(missing_ok=True)
+          result=subprocess.run(['python','scripts/rde_approve.py',str(invalid),'data/eateries.json',str(output)],capture_output=True,text=True)
+          assert result.returncode!=0 and 'nonempty' in result.stderr.lower(),result.stderr
+          assert not output.exists()
+          result=subprocess.run(['python','scripts/rde_approve.py',str(source),'data/eateries.json','data/eateries.json'],capture_output=True,text=True)
+          assert result.returncode!=0 and 'overwrite' in result.stderr.lower(),result.stderr
+          result=subprocess.run(['python','scripts/rde_approve.py',str(source),'/tmp/rde-deferred-candidate.json','data/eateries.json'],capture_output=True,text=True)
+          assert result.returncode!=0 and 'canonical production' in result.stderr.lower(),result.stderr
+          print('PASS: empty accepted values and canonical production overwrite blocked')
+          PY
