@@ -53,6 +53,18 @@ jobs:
             assert row[column] in ids, f'Orphan {sheet}: {row[column]}'
           print(f'PASS: {len(categories)} categories and {len(relations)} restaurant links; no orphan references')
           PY
+      - name: Validate research status vocabulary and dropdowns
+        run: |
+          python - <<'PY'
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-eatery.xlsx')
+          for name in ['ResearchStatus','RestaurantCategories','Features','Hours','Menus','Evidence']:
+           ws=wb[name]
+           assert len(ws.data_validations.dataValidation)>0, f'Missing dropdown: {name}'
+          allowed={'verified_yes','verified_no','unverified','unknown','not_applicable','not_yet_researched','researched_no_result','conflicting','outdated'}
+          assert 'verified_no' in allowed and 'unknown' in allowed and 'researched_no_result' in allowed
+          print('PASS: explicit research status dropdowns present')
+          PY
       - name: Verify intentional editing and reject legacy corruption
         run: |
           python - <<'PY'
