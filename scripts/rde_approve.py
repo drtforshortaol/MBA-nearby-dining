@@ -30,7 +30,16 @@ def promote(workbook,baseline,destination):
   history[key]=row
  for row in read(wb["ReviewQueue"]):
   reviews.append(row)
- evidence={row["evidence_id"]:row for row in read(wb["Evidence"])}
+ evidence={}
+ for row in read(wb["Evidence"]):
+  key=row["evidence_id"]
+  if not key or key in evidence: fail("Missing or duplicate evidence ID")
+  evidence[key]=row
+ review_ids=set()
+ for review in reviews:
+  key=review["review_id"]
+  if not key or key in review_ids: fail("Missing or duplicate review ID")
+  review_ids.add(key)
  # Conflicts or unresolved evidence for the same restaurant/field block promotion.
  unresolved=set()
  for row in read(wb["ReviewQueue"]):
