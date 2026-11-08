@@ -5,9 +5,9 @@
 ## Preparation
 1. Obtain the current `data/eateries.json` from this development branch.
 2. Open `tools/rde-local-editor.html` locally in a desktop browser; no web hosting or Excel required.
-3. Choose the JSON file and confirm **206** records load. Search for a restaurant, edit a text field, and use **Discard edits** to confirm the original value returns.
+3. Choose the JSON file and confirm **206** records load. Search for a restaurant, edit a text field, export the clearly labeled **unapproved edit draft**, and use **Discard edits** to confirm the original value returns.
 4. Choose a restaurant and enter a research proposal with a plausible source URL, researcher, proposed value, and reason. Export **research proposals**. The app's JSON must remain unchanged.
-5. Open `tools/rde-local-reviewer.html` locally. Load the research proposal bundle. Choose a decision, reviewer, and reason. Export **review decisions**. The researcher cannot accept their own finding.
+5. In the same editor, select the queued proposal, choose a decision, reviewer, and reason, then export **review decisions**. The researcher cannot accept their own finding. The standalone `tools/rde-local-reviewer.html` remains available as an alternative for a separate reviewer.
 
 ## Developer-controlled integration
 These commands use local copies and never write to `data/eateries.json`:
@@ -26,7 +26,7 @@ The approval exporter requires accepted findings, an independent reviewer, and e
 ## Acceptance checklist
 - [ ] 206 restaurant records load; IDs remain unchanged.
 - [ ] Search and discard edits work.
-- [ ] Local candidate JSON downloads without network access.
+- [ ] Local unapproved edit draft downloads without network access and is not treated as approved.
 - [ ] Research proposal includes source, author, and reason.
 - [ ] Research proposal export is marked not approved.
 - [ ] Independent review accepts/rejects/flags conflicts.
@@ -38,7 +38,7 @@ The approval exporter requires accepted findings, an independent reviewer, and e
 - [ ] No GitHub production branch or deployment changes.
 
 ## Known limitations
-- Browser editor's **direct candidate JSON export** is an unapproved draft, not evidence-backed promotion. Do not publish it.
+- Browser editor's **direct edit-draft export** is unapproved and cannot substitute for evidence-backed promotion. Do not publish it.
 - Browser screens and integration commands are separate prototypes; there is no unified single-page workflow yet.
 - Local files are not automatically saved; keep exported bundles securely.
 - Browser smoke tests and GitHub CI are not a substitute for hands-on iPhone usability testing.
