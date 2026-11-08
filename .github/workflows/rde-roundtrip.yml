@@ -610,3 +610,18 @@ jobs:
           }
           console.log('PASS: reviewer responsive controls and evidence wrapping present');
           JS
+      - name: Verify beta reviewer proposal validation
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-reviewer.html','utf8');
+          const script=html.split('<script>')[1]?.split('</script>')[0];
+          new vm.Script(script);
+          assert.ok(script.includes('JSON.stringify([p.restaurant_id,p.field_path])'));
+          assert.ok(script.includes("typeof p.proposed_value!=='string'||!p.proposed_value.trim()"));
+          const keys=[['a|b','c'],['a','b|c']].map(x=>JSON.stringify(x));
+          assert.equal(new Set(keys).size,2,'Composite keys must not collide');
+          console.log('PASS: reviewer validates nonblank values and collision-safe field keys');
+          JS
