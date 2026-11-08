@@ -610,6 +610,22 @@ jobs:
           }
           console.log('PASS: reviewer responsive controls and evidence wrapping present');
           JS
+      - name: Verify editor unsaved-work and replacement safeguards
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
+          const script=html.split('<script>')[1]?.split('</script>')[0];
+          new vm.Script(script);
+          assert.ok(script.includes("window.addEventListener('beforeunload'"));
+          assert.ok(script.includes("if(pendingWork()){event.preventDefault();event.returnValue=''"));
+          const validation=script.indexOf('valid(parsed);');
+          const prompt=script.indexOf("if(pendingWork()&&!confirm('Loading another file");
+          assert.ok(validation>=0&&prompt>validation,'Replacement must validate before discard confirmation');
+          console.log('PASS: unsaved work warning and validation-first replacement');
+          JS
       - name: Verify distinct iPhone review download names
         run: |
           node --input-type=module <<'JS'
