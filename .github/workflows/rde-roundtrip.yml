@@ -360,6 +360,21 @@ jobs:
           for(const term of ['Choose restaurant JSON → Browse','Safari Downloads','function pendingWork()','proposals.length>0','reviews.length>0','if(pendingWork())','Queue a research proposal before exporting'])assert.ok(html.includes(term),term);
           console.log('PASS: mobile file handling guidance and unsaved-work warning');
           JS
+      - name: Check failed-import isolation and URL validation
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
+          const fn=html.match(/function validSourceUrl\(raw\)\{[^\n]+/);
+          assert.ok(fn,'Missing source URL validation');
+          const sandbox={URL};vm.createContext(sandbox);vm.runInContext(fn[0]+';this.check=validSourceUrl;',sandbox);
+          for(const url of ['https://example.org/article','http://example.org'])assert.equal(sandbox.check(url),true);
+          for(const url of ['javascript:alert(1)','file:///tmp/x','https://user:pass@example.org','invalid','https://'])assert.equal(sandbox.check(url),false,url);
+          for(const term of ["proposals=[];reviews=[];for(const id of", "'reviewList').replaceChildren()", "'count').textContent='0 restaurants'"])assert.ok(html.includes(term),term);
+          console.log('PASS: source URL checks and failed-import state isolation');
+          JS
       - name: Verify existing application
         run: node scripts/validate.mjs
       - uses: actions/upload-artifact@v4
