@@ -342,6 +342,15 @@ jobs:
           assert not dest.exists()
           print('PASS: final exporter blocks self-approval')
           PY
+      - name: Verify iPhone acceptance checklist
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const guide=fs.readFileSync('docs/rde-iphone-acceptance.md','utf8');
+          for(const term of ['206 restaurants','rde-local-editor.html','unapproved edit draft','Self-approval','not','No production deployment','iOS'])assert.ok(guide.toLowerCase().includes(term.toLowerCase()),term);
+          console.log('PASS: iPhone acceptance guide covers mobile, safety and limitations');
+          JS
       - name: Verify existing application
         run: node scripts/validate.mjs
       - uses: actions/upload-artifact@v4
