@@ -8,6 +8,11 @@ import json
 from pathlib import Path
 
 ID = "MBA-DINE-0068"
+def item_asset_path(root):
+    intake=json.loads((root/"data/photo-intake-pending.json").read_text())
+    item=next((i for i in intake["items"] if i["restaurant_id"]==ID),None)
+    return item.get("repository_asset_path") if item else None
+
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--image",required=True)
@@ -20,6 +25,8 @@ def main():
     full=root/image
     if not full.is_file() or full.stat().st_size==0:
         p.error("Image bytes must already exist in the repository")
+    if image.as_posix()!=item_asset_path(root):
+        p.error("Image path must match the authorized intake record")
     intake=json.loads((root/"data/photo-intake-pending.json").read_text())
     item=next((i for i in intake["items"] if i["restaurant_id"]==ID),None)
     if not item or item["permission_status"]!="owner_confirmed_via_project_owner":
