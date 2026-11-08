@@ -458,3 +458,16 @@ jobs:
           ]) assert.ok(script.includes(term),'Missing browser guard: '+term);
           console.log('PASS: duplicate target and unsaved-work guards present');
           JS
+      - name: Verify failed replacement imports preserve existing work
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
+          const script=html.split('<script>')[1]?.split('</script>')[0];
+          new vm.Script(script);
+          assert.ok(script.includes("if(records){e.target.value='';$('message').textContent='Import blocked; existing work preserved: '"));
+          assert.ok(script.includes("original=null;records=null;proposals=[];reviews=[]"));
+          console.log('PASS: invalid replacement preserves loaded state; initial invalid import clears state');
+          JS
