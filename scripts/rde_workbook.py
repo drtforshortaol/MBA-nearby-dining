@@ -27,7 +27,7 @@ TABLES = {
  "Evidence": ["evidence_id","restaurant_id","source_id","field_path","claim","status","reviewed_on"],
  "ResearchStatus": ["restaurant_id","section","status","last_researched","next_review"],
  "Relationships": ["relationship_id","restaurant_id","target_restaurant_id","relation_type","note"],
- "LegacyFields": ["restaurant_id","raw_json_payload","sha256"]
+ "LegacyFields": ["restaurant_id","raw_json_payload","sha256","original_excel_projection"]
 }
 FIELDS = TABLES["Restaurants"][1:]
 def canonical(obj):
@@ -61,6 +61,16 @@ def export(src,dst):
   wb["ResearchStatus"].append([rid,"general","not_yet_researched",None,None])
  wb["LegacyFields"].column_dimensions["B"].width=65
  wb.save(dst)
+ # Capture values exactly as Excel will return them (blank cells and float rounding).
+ # The raw JSON remains authoritative for every untouched field.
+ check=load_workbook(dst,read_only=True,data_only=True)
+ projections={r["restaurant_id"]:{k:r.get(k) for k in FIELDS} for r in rows(check["Restaurants"])}
+ check.close()
+ legacy=wb["LegacyFields"]
+ for row in list(legacy.iter_rows(min_row=2)):
+  rid=row[0].value
+  row[3].value=canonical(projections[rid])
+ wb.save(dst)
  print("EXPORTED",len(records),"records to",dst)
 def import_(src,dst):
  wb=load_workbook(src,read_only=True,data_only=True)
@@ -71,18 +81,18 @@ def import_(src,dst):
   if rid in base or digest(raw)!=row["sha256"]: raise ValueError("Legacy payload corrupted or duplicate: "+str(rid))
   obj=json.loads(raw)
   if obj.get("id")!=rid: raise ValueError("ID mismatch "+str(rid))
-  base[rid]=obj
+  base[rid]=(obj,json.loads(row["original_excel_projection"]))
  if len(edits)!=len(base): raise ValueError("Restaurant count changed; additions require separate approval")
  seen=set();out=[]
  for row in edits:
   rid=row["restaurant_id"]
   if rid in seen or rid not in base: raise ValueError("Unknown or duplicate ID: "+str(rid))
-  seen.add(rid);obj=base[rid].copy()
+  seen.add(rid);original,projection=base[rid];obj=original.copy()
   for field in FIELDS:
    value=row.get(field)
    old=obj.get(field)
    # Preserve null vs blank in unchanged projections; explicit edits can replace populated values.
-   if value==old or (value is None and old is None): continue
+   if value==projection.get(field): continue
    if isinstance(old,(dict,list)) and value==canonical(old): continue
    if value is None and field not in obj: continue
    obj[field]=value
