@@ -642,6 +642,20 @@ jobs:
           assert.ok(validation>=0&&prompt>validation,'Replacement must validate before discard confirmation');
           console.log('PASS: unsaved work warning and validation-first replacement');
           JS
+      - name: Verify unexported review selection protections
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-reviewer.html','utf8');
+          const script=html.split('<script>')[1]?.split('</script>')[0];
+          new vm.Script(script);
+          for(const token of ["let bundle=null,decisions=[],dirty=false","if(dirty&&!confirm(","select.addEventListener('change',()=>{dirty=true;})","['reviewer','reason']","if(bundle)dirty=true","window.addEventListener('beforeunload'","dirty=false;$('status')"]){
+            assert.ok(script.includes(token),'Missing review protection: '+token);
+          }
+          console.log('PASS: unexported reviewer selections and metadata guarded');
+          JS
       - name: Verify distinct iPhone review download names
         run: |
           node --input-type=module <<'JS'
