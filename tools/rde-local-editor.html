@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MBA RDE — Local Research Editor (Prototype)</title>
+<style>
+body{font:15px system-ui,sans-serif;margin:1.5rem;color:#183047;background:#f5f8fa}h1{margin-bottom:.2rem}
+header,section{background:white;padding:1rem;border:1px solid #d4e0e8;border-radius:10px;margin-bottom:1rem}
+button,input,select{font:inherit;padding:.5rem;margin:.25rem}button{cursor:pointer;background:#174a67;color:white;border:0;border-radius:5px}
+button:disabled{opacity:.5}table{border-collapse:collapse;width:100%;background:white}th,td{padding:.5rem;border:1px solid #dae2e8;text-align:left}
+th{position:sticky;top:0;background:#e6f1f7}.scroll{max-height:65vh;overflow:auto}input[type=text]{max-width:220px}
+small{color:#526579}.warning{color:#8a4400}#message{font-weight:600}label{display:inline-block}
+</style></head><body>
+<header><h1>Research Data Editor</h1><p>Local-only prototype • No Excel required • No automatic publishing</p>
+<p class="warning">Load a copy of the current restaurant JSON. Exports are candidate files for review, not production updates. Research evidence and approval must be handled separately.</p>
+<label>Choose restaurant JSON <input id="file" type="file" accept=".json,application/json"></label>
+<label>Search <input id="search" type="search" placeholder="Restaurant name or ID"></label>
+<button id="download" disabled>Export candidate JSON</button><button id="discard" disabled>Discard edits</button>
+<p id="message" role="status">No data loaded.</p></header>
+<section><strong id="count">0 restaurants</strong><small> — Editable fields: name, address, city, phone, website, hours, cuisine, area. Permanent IDs and all other fields remain protected.</small></section>
+<div class="scroll"><table><thead><tr><th>Permanent ID</th><th>Restaurant</th><th>City</th><th>Cuisine</th><th>Phone</th><th>Website</th><th>Hours</th></tr></thead><tbody id="rows"></tbody></table></div>
+<script>
+'use strict';
+const FIELDS=['name','city','cuisine','phone','website','hours'];
+const EDITABLE=new Set(['name','address','city','phone','website','hours','cuisine','area']);
+let original=null,records=null;
+const $=id=>document.getElementById(id);
+const clone=value=>JSON.parse(JSON.stringify(value));
+function valid(items){
+ if(!Array.isArray(items)||items.length!==206)throw Error('Expected 206 restaurant records; no data imported.');
+ const ids=new Set();
+ for(const item of items){
+  if(!item||typeof item.id!=='string'||!/^MBA-DINE-\d+$/.test(item.id)||ids.has(item.id))throw Error('Invalid or duplicate permanent ID.');
+  ids.add(item.id);
+ }
+}
+function changed(){
+ return records&&JSON.stringify(records)!==JSON.stringify(original);
+}
+function render(){
+ const query=$('search').value.trim().toLowerCase();
+ const tbody=$('rows');tbody.replaceChildren();
+ if(!records)return;
+ const matches=records.filter(r=>[r.id,r.name,r.city,r.cuisine].some(v=>String(v??'').toLowerCase().includes(query)));
+ for(const item of matches.slice(0,206)){
+  const tr=document.createElement('tr'),id=document.createElement('td');id.textContent=item.id;tr.append(id);
+  for(const field of FIELDS){
+   const td=document.createElement('td'),input=document.createElement('input');
+   input.type='text';input.value=String(item[field]??'');input.setAttribute('aria-label',field+' for '+item.id);
+   input.addEventListener('change',()=>{
+    if(!EDITABLE.has(field))return;
+    const previous=item[field];
+    const next=input.value;
+    if(previous===next)return;
+    if(typeof previous==='number'||typeof previous==='boolean'||(previous!==undefined&&previous!==null&&typeof previous!=='string')){
+     input.value=String(previous);$('message').textContent='Non-text field requires separate review.';return;
+    }
+    if(previous===undefined&&next==='')return;
+    item[field]=next;
+    $('message').textContent='Unsaved candidate edits. No application data changed.';
+   });
+   td.append(input);tr.append(td);
+  }
+  tbody.append(tr);
+ }
+ $('count').textContent=matches.length+' of '+records.length+' restaurants';
+}
+$('file').addEventListener('change',async e=>{
+ try{
+  const file=e.target.files[0];if(!file)return;
+  const parsed=JSON.parse(await file.text());valid(parsed);
+  original=clone(parsed);records=clone(parsed);$('download').disabled=false;$('discard').disabled=false;
+  $('message').textContent='Loaded '+records.length+' restaurants locally. No server upload.';render();
+ }catch(err){original=null;records=null;$('download').disabled=true;$('discard').disabled=true;$('message').textContent='Import blocked: '+err.message;$('rows').replaceChildren();}
+});
+$('search').addEventListener('input',render);
+$('discard').addEventListener('click',()=>{if(!original)return;records=clone(original);$('message').textContent='Edits discarded.';render();});
+$('download').addEventListener('click',()=>{
+ try{
+  valid(records);
+  const before=original.map(r=>r.id),after=records.map(r=>r.id);
+  if(JSON.stringify(before)!==JSON.stringify(after))throw Error('Restaurant IDs or order changed.');
+  for(let i=0;i<records.length;i++){
+   for(const key of new Set([...Object.keys(original[i]),...Object.keys(records[i])])){
+    if(!EDITABLE.has(key)&&JSON.stringify(original[i][key])!==JSON.stringify(records[i][key]))throw Error('Protected field changed: '+key);
+   }
+  }
+  const blob=new Blob([JSON.stringify(records,null,2)+'\n'],{type:'application/json'});
+  const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='rde-candidate-review-only.json';a.click();
+  setTimeout(()=>URL.revokeObjectURL(url),3000);
+  $('message').textContent='Candidate downloaded for validation and review. Not published.';
+ }catch(err){$('message').textContent='Export blocked: '+err.message;}
+});
+window.addEventListener('beforeunload',e=>{if(changed()){e.preventDefault();e.returnValue='';}});
+</script></body></html>
