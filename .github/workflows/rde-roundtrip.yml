@@ -232,6 +232,39 @@ jobs:
           assert.ok(!/\bfetch\s*\(|XMLHttpRequest|localStorage|indexedDB/.test(script));
           console.log('PASS: local reviewer syntax, decisions and nonpublishing boundaries');
           JS
+      - name: Test browser proposal through independent approval to candidate
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-eatery.xlsx',read_only=True,data_only=True)
+          head=list(next(wb['Restaurants'].values));first=list(wb['Restaurants'].values)[1]
+          rid=first[0];old=first[head.index('name')]
+          proposal={'history_id':'BROWSER-1','restaurant_id':rid,'field_path':'name','recorded_at':'2026-11-08','researcher':'Researcher A','action':'propose','previous_value':old,'proposed_value':old+' approved','disposition':'pending','source_url':'https://example.org','claim':'test claim'}
+          research={'schema':'mba-rde-research-proposals-v1','publication_status':'not_approved','restaurant_count':206,'proposals':[proposal]}
+          Path('/tmp/rde-browser-proposals.json').write_text(json.dumps(research))
+          def run(*args):
+           p=subprocess.run(['python',*args],capture_output=True,text=True)
+           assert p.returncode==0,p.stderr
+          run('scripts/rde_ingest.py','/tmp/rde-eatery.xlsx','/tmp/rde-browser-proposals.json','/tmp/rde-browser-ingested.xlsx')
+          review={'history_id':'BROWSER-1','restaurant_id':rid,'field_path':'name','decision':'accepted','reviewer':'Reviewer B','reviewed_at':'2026-11-08','reason':'checked source'}
+          decisions={'schema':'mba-rde-review-decisions-v1','publication_status':'not_published','restaurant_count':206,'proposals':[proposal],'reviews':[review]}
+          Path('/tmp/rde-browser-review.json').write_text(json.dumps(decisions))
+          run('scripts/rde_review_ingest.py','/tmp/rde-browser-ingested.xlsx','/tmp/rde-browser-review.json','/tmp/rde-browser-reviewed.xlsx')
+          run('scripts/rde_approve.py','/tmp/rde-browser-reviewed.xlsx','data/eateries.json','/tmp/rde-browser-candidate.json')
+          candidate=json.loads(Path('/tmp/rde-browser-candidate.json').read_text())
+          original=json.loads(Path('data/eateries.json').read_text())
+          assert len(candidate)==len(original)==206
+          assert candidate[0]['name']==old+' approved'
+          assert {**candidate[0],'name':old}==original[0]
+          assert candidate[1:]==original[1:]
+          decisions['reviews'][0]['reviewer']='Researcher A'
+          Path('/tmp/rde-browser-review.json').write_text(json.dumps(decisions))
+          blocked=subprocess.run(['python','scripts/rde_review_ingest.py','/tmp/rde-browser-ingested.xlsx','/tmp/rde-browser-review.json','/tmp/rde-browser-blocked.xlsx'],capture_output=True,text=True)
+          assert blocked.returncode!=0
+          print('PASS: browser research → independent review → candidate; self-review rejected')
+          PY
       - name: Verify existing application
         run: node scripts/validate.mjs
       - uses: actions/upload-artifact@v4
