@@ -265,6 +265,24 @@ jobs:
           assert blocked.returncode!=0
           print('PASS: browser research → independent review → candidate; self-review rejected')
           PY
+      - name: Reject unresolved conflicting research before candidate export
+        run: |
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-browser-reviewed.xlsx')
+          rid=wb['ReviewQueue']['C2'].value
+          wb['ReviewQueue'].append(['R:CONFLICT','H:CONFLICT',rid,'name','conflicting','Reviewer C','2026-11-08','conflicting source'])
+          wb.save('/tmp/rde-browser-conflict.xlsx')
+          dest=Path('/tmp/rde-conflict-should-not-exist.json')
+          if dest.exists():dest.unlink()
+          result=subprocess.run(['python','scripts/rde_approve.py','/tmp/rde-browser-conflict.xlsx','data/eateries.json',str(dest)],capture_output=True,text=True)
+          assert result.returncode!=0,result.stdout
+          assert 'Unresolved conflicting' in result.stderr
+          assert not dest.exists()
+          print('PASS: conflicting review blocks candidate output')
+          PY
       - name: Verify existing application
         run: node scripts/validate.mjs
       - uses: actions/upload-artifact@v4
