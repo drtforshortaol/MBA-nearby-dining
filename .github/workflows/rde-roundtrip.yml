@@ -375,6 +375,25 @@ jobs:
           for(const term of ["proposals=[];reviews=[];for(const id of", "'reviewList').replaceChildren()", "'count').textContent='0 restaurants'"])assert.ok(html.includes(term),term);
           console.log('PASS: source URL checks and failed-import state isolation');
           JS
+      - name: Check proposal ID uniqueness and immutable baseline
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          import {webcrypto} from 'node:crypto';
+          const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
+          const fn=html.match(/function newHistoryId\(\)\{[^\n]+/);
+          assert.ok(fn);
+          const context={crypto:webcrypto,Uint8Array,Array};
+          vm.createContext(context);vm.runInContext(fn[0]+';this.generate=newHistoryId;',context);
+          const ids=new Set(Array.from({length:1000},()=>context.generate()));
+          assert.equal(ids.size,1000);
+          for(const id of ids)assert.match(id,/^H-LOCAL-[0-9a-f]{32}$/);
+          assert.ok(html.includes('previous_value:(original.find(x=>x.id===rid)?.[field]??null)'));
+          assert.ok(!html.includes("history_id:'H-LOCAL-'+(proposals.length+1)"));
+          console.log('PASS: unique proposal IDs and original baseline linkage');
+          JS
       - name: Verify existing application
         run: node scripts/validate.mjs
       - uses: actions/upload-artifact@v4
