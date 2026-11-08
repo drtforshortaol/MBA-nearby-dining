@@ -53,6 +53,7 @@ def apply(workbook,review_file,destination):
   reviewer=review.get("reviewer");reason=review.get("reason");date=review.get("reviewed_at")
   if not all(isinstance(x,str) and x.strip() for x in (reviewer,reason,date)): raise ValueError("Reviewer, date, reason required")
   if decision=="accepted" and reviewer.strip().casefold()==str(h[5]).strip().casefold(): raise ValueError("Independent reviewer required")
+  if decision=="pending": continue  # No decision: leave queue open for a later independent review.
   row[4].value=decision;row[5].value=reviewer;row[6].value=date;row[7].value=reason
   # ResearchHistory is historical record, not a mutable approval status.
  wb.save(destination)
