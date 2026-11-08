@@ -34,6 +34,25 @@ jobs:
           assert len(list(wb['LegacyFields'].values))-1==206
           print('PASS: 12 worksheets, 206 unique IDs and 206 lossless payloads')
           PY
+      - name: Validate relational category foreign keys
+        run: |
+          python - <<'PY'
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-eatery.xlsx',read_only=True,data_only=True)
+          ids={r[0] for r in list(wb['Restaurants'].values)[1:]}
+          categories={r[0] for r in list(wb['Categories'].values)[1:]}
+          relations=list(wb['RestaurantCategories'].values)[1:]
+          assert categories, 'Category dimension not populated'
+          assert relations, 'Restaurant categories missing'
+          assert len(categories)==len(list(wb['Categories'].values))-1
+          for rid,category,*_ in relations:
+           assert rid in ids, f'Orphan restaurant {rid}'
+           assert category in categories, f'Orphan category {category}'
+          for sheet,column in [('Hours',1),('Menus',1),('Media',1),('Features',0),('ResearchStatus',0)]:
+           for row in list(wb[sheet].values)[1:]:
+            assert row[column] in ids, f'Orphan {sheet}: {row[column]}'
+          print(f'PASS: {len(categories)} categories and {len(relations)} restaurant links; no orphan references')
+          PY
       - name: Verify intentional editing and reject legacy corruption
         run: |
           python - <<'PY'
