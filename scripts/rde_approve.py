@@ -18,6 +18,8 @@ def fail(message):
 def promote(workbook,baseline,destination):
  src=Path(baseline).resolve();dst=Path(destination).resolve()
  if src==dst: fail("Refusing to overwrite baseline JSON")
+ production=(Path(__file__).resolve().parent.parent/"data"/"eateries.json").resolve()
+ if dst==production: fail("Refusing to overwrite canonical production JSON")
  data=json.loads(src.read_text(encoding="utf-8"))
  if not isinstance(data,list): fail("Expected restaurant array")
  byid={r["id"]:r for r in data}
@@ -73,7 +75,7 @@ def promote(workbook,baseline,destination):
   previous=h["previous_value"]
   if previous!=current: fail("Stale previous value: "+rid+" "+field)
   proposed=h["proposed_value"]
-  if not isinstance(proposed,str): fail("Proposed value must be text")
+  if not isinstance(proposed,str) or not proposed.strip(): fail("Proposed value must be nonempty text")
   byid[rid][field]=proposed
   changes.append({"restaurant_id":rid,"field":field,"review_id":review["review_id"],"history_id":hid})
  # Validation occurs before writing any output.
