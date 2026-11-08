@@ -93,7 +93,14 @@ def import_(src,dst):
 def verify(src,dst):
  a=json.loads(Path(src).read_text(encoding="utf-8"))
  b=json.loads(Path(dst).read_text(encoding="utf-8"))
- if a!=b: raise SystemExit("FAIL: JSON differs; do not migrate")
+ if a!=b:
+  diffs=[]
+  for old,new in zip(a,b):
+   for key in set(old)|set(new):
+    if old.get(key)!=new.get(key) or (key in old)!=(key in new):
+     diffs.append((old.get("id"),key,repr(old.get(key))[:100],repr(new.get(key))[:100]))
+  for diff in diffs[:20]: print("DIFF",diff)
+  raise SystemExit(f"FAIL: {len(diffs)} JSON field differences; do not migrate")
  print("PASS: lossless semantic round-trip",len(a),"records")
 if __name__=="__main__":
  p=argparse.ArgumentParser();p.add_argument("action",choices=["export","import","verify"]);p.add_argument("source");p.add_argument("destination");a=p.parse_args()
