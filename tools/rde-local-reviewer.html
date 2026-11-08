@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RDE Independent Review</title><style>body{font:16px system-ui;max-width:900px;margin:2rem auto;padding:1rem;color:#173b50}section{border:1px solid #ccd;padding:1rem;margin:1rem 0;border-radius:8px}label{display:block;margin:.5rem 0}input,select,button{padding:.5rem;font:inherit}button{background:#174a67;color:white;border:0;border-radius:5px;min-height:44px;max-width:100%}input,select{box-sizing:border-box;max-width:100%;min-height:44px}section{overflow-wrap:anywhere}#items section{background:#f7fafc}#items select{display:block;width:100%;margin-top:.75rem}#status{overflow-wrap:anywhere}details{background:#eef5f8;padding:.75rem;border-radius:8px;margin:1rem 0}summary{cursor:pointer;font-weight:600;min-height:44px}pre{white-space:pre-wrap}@media(max-width:600px){body{margin:0;padding:1rem}section{margin:.75rem 0;padding:.75rem}h1{font-size:1.5rem}#export{width:100%}}</style><h1>RDE Independent Review</h1><p>Local-only reviewer. Decisions are not publication authorization.</p><details><summary>iPhone testing instructions</summary><p>Save the research proposal JSON to Files. Tap <strong>Load research proposal bundle</strong>, then Browse to select it. Review each proposed change, enter a different reviewer name and a reason, then tap Export. Find the result in Safari Downloads or Files. This page does not publish changes.</p><p>If the HTML opens as a Files preview rather than an interactive Safari page, use a desktop browser until an isolated HTTPS beta page is approved.</p></details><label>Load research proposal bundle <input id="file" type="file" accept=".json"></label><label>Reviewer <input id="reviewer"></label><label>Reason <input id="reason"></label><div id="items"></div><button id="export" disabled>Export review decisions (not published)</button><p id="status" role="status"></p><script>
 'use strict';
 const $=id=>document.getElementById(id);
-let bundle=null,decisions=[];
+let bundle=null,decisions=[],dirty=false;
 const allowed=['pending','accepted','rejected','conflicting','needs_more_evidence'];
 $('file').addEventListener('change',async e=>{
  try{
@@ -10,8 +10,8 @@ $('file').addEventListener('change',async e=>{
   if(new Set(data.proposals.map(p=>p.history_id)).size!==data.proposals.length)throw Error('Duplicate history identifiers');
   if(new Set(data.proposals.map(p=>JSON.stringify([p.restaurant_id,p.field_path]))).size!==data.proposals.length)throw Error('Duplicate restaurant field proposals');
   for(const p of data.proposals){if(!p.history_id||!p.restaurant_id||!p.field_path||p.disposition!=='pending'||p.action!=='propose'||!p.source_url||!p.researcher||typeof p.proposed_value!=='string'||!p.proposed_value.trim())throw Error('Incomplete proposal');const source=new URL(p.source_url);if(!['http:','https:'].includes(source.protocol)||!source.hostname)throw Error('Invalid evidence source URL');}
-  if(bundle&&!confirm('Replace current review bundle and discard unexported decisions?')){e.target.value='';return;}
-  bundle=data;decisions=[];$('items').replaceChildren();
+  if(dirty&&!confirm('Replace current review bundle and discard unexported decisions?')){e.target.value='';return;}
+  bundle=data;decisions=[];dirty=false;$('items').replaceChildren();
   for(const p of data.proposals){
    const box=document.createElement('section'),title=document.createElement('h3'),detail=document.createElement('p'),select=document.createElement('select');
    title.textContent=p.restaurant_id+' — '+p.field_path;
@@ -20,7 +20,7 @@ $('file').addEventListener('change',async e=>{
    source.textContent='Evidence source: ';
    try{const u=new URL(p.source_url);if(!['https:','http:'].includes(u.protocol))throw Error('Unsupported source URL');link.href=u.href;link.textContent=u.href;link.target='_blank';link.rel='noopener noreferrer';source.append(link);}catch{source.append(document.createTextNode(String(p.source_url)+' (invalid URL)'));}
    for(const value of allowed){const option=document.createElement('option');option.value=value;option.textContent=value;select.append(option);}
-   select.dataset.historyId=p.history_id;box.append(title,detail,source,select);$('items').append(box);
+   select.dataset.historyId=p.history_id;select.addEventListener('change',()=>{dirty=true;});box.append(title,detail,source,select);$('items').append(box);
   }
   $('export').disabled=false;$('status').textContent=data.proposals.length+' proposals ready for independent review.';
  }catch(err){e.target.value='';$('status').textContent='Import blocked; existing review preserved: '+err.message;}
@@ -39,6 +39,7 @@ $('export').addEventListener('click',()=>{
  }
  const payload={schema:'mba-rde-review-decisions-v1',publication_status:'not_published',restaurant_count:bundle.restaurant_count,proposals:bundle.proposals,reviews:decisions};
  const blob=new Blob([JSON.stringify(payload,null,2)+'\n'],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;const stamp=new Date().toISOString().replace(/[:.]/g,'-');a.download='rde-review-decisions-'+stamp+'-not-published.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),3000);
- $('status').textContent='Review bundle exported as '+a.download+'. Check Safari Downloads or Files. No production changes.';
+ dirty=false;$('status').textContent='Review bundle exported as '+a.download+'. Check Safari Downloads or Files. No production changes.';
 });
+window.addEventListener('beforeunload',event=>{if(dirty){event.preventDefault();event.returnValue='';}});
 </script></html>
