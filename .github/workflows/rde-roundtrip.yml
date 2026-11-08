@@ -610,6 +610,26 @@ jobs:
           }
           console.log('PASS: reviewer responsive controls and evidence wrapping present');
           JS
+      - name: Verify Goodies candidate installer fails safely without asset
+        run: |
+          python - <<'PY'
+          import json
+          import subprocess
+          from pathlib import Path
+          original=Path('data/eateries.json').read_bytes()
+          target=Path('/tmp/goodies-photo-candidate-ci.json')
+          target.unlink(missing_ok=True)
+          result=subprocess.run(
+              ['python','scripts/rde_install_photo.py',
+               '--image','assets/photos/goodies-delicatessen-storefront.jpg',
+               '--output',str(target)],capture_output=True,text=True)
+          assert result.returncode!=0, result.stdout
+          assert 'Image bytes must already exist' in result.stderr,result.stderr
+          assert not target.exists()
+          assert Path('data/eateries.json').read_bytes()==original
+          assert len(json.loads(original))==206
+          print('PASS: missing image rejected; no candidate or production mutation')
+          PY
       - name: Verify image references and offline-cache readiness
         run: |
           python - <<'PY'
