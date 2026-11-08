@@ -1,0 +1,20 @@
+{
+  "schema": "mba-eatery-photo-intake-v1",
+  "publication_status": "not_published",
+  "items": [
+    {
+      "restaurant_id": "MBA-DINE-0068",
+      "restaurant_name": "Goodies Delicatessen",
+      "asset_status": "awaiting_binary_import",
+      "photo_type": "storefront",
+      "photographer": "Olivia Sarkis",
+      "credit": "© Olivia Sarkis. Used with permission.",
+      "permission_status": "owner_confirmed_via_project_owner",
+      "permission_scope": "MBA Eatery App",
+      "permission_record": "docs/photo-intake-goodies-delicatessen-20261108.md",
+      "source_asset": "conversation upload 2026-11-08",
+      "repository_asset_path": null,
+      "offline_verified": false
+    }
+  ]
+}
