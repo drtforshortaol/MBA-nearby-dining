@@ -540,3 +540,20 @@ jobs:
            assert not output.exists(),sheet
           print('PASS: duplicate review/evidence IDs block candidate export')
           PY
+      - name: Verify independent reviewer import safeguards
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-reviewer.html','utf8');
+          const script=html.split('<script>')[1]?.split('</script>')[0];
+          assert.ok(script);
+          new vm.Script(script);
+          for(const guard of [
+            "throw Error('Duplicate restaurant field proposals')",
+            "confirm('Replace current review bundle and discard unexported decisions?')",
+            "'Import blocked; existing review preserved: '"
+          ])assert.ok(script.includes(guard),guard);
+          console.log('PASS: reviewer duplicate-target and import-preservation safeguards');
+          JS
