@@ -182,7 +182,7 @@ jobs:
           const script=html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
           assert.ok(script,'Missing editor script');
           new vm.Script(script);
-          for(const required of ['type="file"','Export candidate JSON','Discard edits','Permanent ID','beforeunload','URL.createObjectURL','Protected field changed','Expected 206 restaurant records','mba-rde-research-proposals-v1','publication_status','not_approved','source_url','Queue for review','mba-rde-review-decisions-v1','not_published','Independent reviewer required for acceptance','Record review']){
+          for(const required of ['type="file"','Export candidate JSON','Discard edits','Permanent ID','beforeunload','URL.createObjectURL','Protected field changed','Expected 206 restaurant records','mba-rde-research-proposals-v1','publication_status','not_approved','source_url','Queue for review','mba-rde-review-decisions-v1','not_published','Independent reviewer required for acceptance','Record review','@media(max-width:680px)','min-height:44px','aria-live="polite"','focus-visible']){
             assert.ok(html.includes(required),'Missing editor safeguard: '+required);
           }
           assert.ok(!/\bfetch\s*\(/.test(script),'Local editor must not make network calls');
