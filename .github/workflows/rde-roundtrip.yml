@@ -34,6 +34,34 @@ jobs:
           assert len(list(wb['LegacyFields'].values))-1==206
           print('PASS: 12 worksheets, 206 unique IDs and 206 lossless payloads')
           PY
+      - name: Verify intentional editing and reject legacy corruption
+        run: |
+          python - <<'PY'
+          import json
+          import subprocess
+          from openpyxl import load_workbook
+          from pathlib import Path
+          workbook='/tmp/rde-eatery.xlsx'
+          original=json.loads(Path('data/eateries.json').read_text())
+          wb=load_workbook(workbook)
+          ws=wb['Restaurants']
+          header=[cell.value for cell in ws[1]]
+          col=header.index('name')+1
+          prior=ws.cell(2,col).value
+          ws.cell(2,col).value=prior+' [RDE EDIT TEST]'
+          wb.save('/tmp/rde-edited.xlsx')
+          subprocess.run(['python','scripts/rde_workbook.py','import','/tmp/rde-edited.xlsx','/tmp/rde-edited.json'],check=True)
+          changed=json.loads(Path('/tmp/rde-edited.json').read_text())
+          assert changed[0]['name']==prior+' [RDE EDIT TEST]'
+          assert changed[1:]==original[1:]
+          assert {**changed[0], 'name':prior}==original[0]
+          wb=load_workbook(workbook)
+          wb['LegacyFields'].cell(2,2).value='{}'
+          wb.save('/tmp/rde-tampered.xlsx')
+          attempt=subprocess.run(['python','scripts/rde_workbook.py','import','/tmp/rde-tampered.xlsx','/tmp/rde-tampered.json'],capture_output=True,text=True)
+          assert attempt.returncode!=0, 'Tampered source must be rejected'
+          print('PASS: intentional edit isolated; tampering rejected')
+          PY
       - name: Verify existing application
         run: node scripts/validate.mjs
       - uses: actions/upload-artifact@v4
