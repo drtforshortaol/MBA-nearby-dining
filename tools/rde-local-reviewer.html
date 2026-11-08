@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RDE Independent Review</title><style>body{font:16px system-ui;max-width:900px;margin:2rem auto;padding:1rem;color:#173b50}section{border:1px solid #ccd;padding:1rem;margin:1rem 0;border-radius:8px}label{display:block;margin:.5rem 0}input,select,button{padding:.5rem;font:inherit}button{background:#174a67;color:white;border:0;border-radius:5px}pre{white-space:pre-wrap}</style><h1>RDE Independent Review</h1><p>Local-only reviewer. Decisions are not publication authorization.</p><label>Load research proposal bundle <input id="file" type="file" accept=".json"></label><label>Reviewer <input id="reviewer"></label><label>Reason <input id="reason"></label><div id="items"></div><button id="export" disabled>Export review decisions (not published)</button><p id="status" role="status"></p><script>
+'use strict';
+const $=id=>document.getElementById(id);
+let bundle=null,decisions=[];
+const allowed=['pending','accepted','rejected','conflicting','needs_more_evidence'];
+$('file').addEventListener('change',async e=>{
+ try{
+  const data=JSON.parse(await e.target.files[0].text());
+  if(data.schema!=='mba-rde-research-proposals-v1'||data.publication_status!=='not_approved'||!Array.isArray(data.proposals)||data.restaurant_count!==206)throw Error('Invalid research bundle');
+  if(new Set(data.proposals.map(p=>p.history_id)).size!==data.proposals.length)throw Error('Duplicate history identifiers');
+  for(const p of data.proposals){if(!p.history_id||!p.restaurant_id||!p.field_path||p.disposition!=='pending'||p.action!=='propose'||!p.source_url||!p.researcher)throw Error('Incomplete proposal');}
+  bundle=data;decisions=[];$('items').replaceChildren();
+  for(const p of data.proposals){
+   const box=document.createElement('section'),title=document.createElement('h3'),detail=document.createElement('p'),select=document.createElement('select');
+   title.textContent=p.restaurant_id+' — '+p.field_path;
+   detail.textContent='Current: '+String(p.previous_value)+' → Proposed: '+p.proposed_value+' | Source: '+p.source_url+' | Researcher: '+p.researcher;
+   for(const value of allowed){const option=document.createElement('option');option.value=value;option.textContent=value;select.append(option);}
+   select.dataset.historyId=p.history_id;box.append(title,detail,select);$('items').append(box);
+  }
+  $('export').disabled=false;$('status').textContent=data.proposals.length+' proposals ready for independent review.';
+ }catch(err){bundle=null;$('export').disabled=true;$('items').replaceChildren();$('status').textContent='Import blocked: '+err.message;}
+});
+$('export').addEventListener('click',()=>{
+ if(!bundle)return;
+ const reviewer=$('reviewer').value.trim(),reason=$('reason').value.trim();
+ if(!reviewer||!reason){$('status').textContent='Reviewer and reason required.';return;}
+ const selects=[...$('items').querySelectorAll('select')],byId=new Map(bundle.proposals.map(p=>[p.history_id,p]));
+ decisions=[];
+ for(const select of selects){
+  const p=byId.get(select.dataset.historyId),decision=select.value;
+  if(!allowed.includes(decision)||!p){$('status').textContent='Invalid decision.';return;}
+  if(decision==='accepted'&&reviewer.toLowerCase()===p.researcher.trim().toLowerCase()){$('status').textContent='Accepted findings require independent reviewer.';return;}
+  decisions.push({history_id:p.history_id,restaurant_id:p.restaurant_id,field_path:p.field_path,decision,reviewer,reviewed_at:new Date().toISOString(),reason});
+ }
+ const payload={schema:'mba-rde-review-decisions-v1',publication_status:'not_published',restaurant_count:bundle.restaurant_count,proposals:bundle.proposals,reviews:decisions};
+ const blob=new Blob([JSON.stringify(payload,null,2)+'\n'],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='rde-review-decisions-not-published.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),3000);
+ $('status').textContent='Review bundle exported. No production changes.';
+});
+</script></html>
