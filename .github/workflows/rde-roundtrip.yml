@@ -625,3 +625,14 @@ jobs:
           assert.equal(new Set(keys).size,2,'Composite keys must not collide');
           console.log('PASS: reviewer validates nonblank values and collision-safe field keys');
           JS
+      - name: Verify in-app iPhone review guidance
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const html=fs.readFileSync('tools/rde-local-reviewer.html','utf8');
+          for(const text of ['<details>','iPhone testing instructions','Safari Downloads or Files','does not publish changes','isolated HTTPS beta page']){
+            assert.ok(html.includes(text),'Missing iPhone review guidance: '+text);
+          }
+          console.log('PASS: reviewer includes concise iPhone test and publication boundaries');
+          JS
