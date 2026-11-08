@@ -19,6 +19,7 @@ def apply(workbook,review_file,destination):
  if data.get("restaurant_count")!=wb["Restaurants"].max_row-1: raise ValueError("Restaurant count mismatch")
  history={r[0]:r for r in list(wb["ResearchHistory"].values)[1:]}
  evidence={r[0]:r for r in list(wb["Evidence"].values)[1:]}
+ sources={r[0]:r for r in list(wb["Sources"].values)[1:]}
  queue={}
  for row in wb["ReviewQueue"].iter_rows(min_row=2):
   hid=row[1].value
@@ -26,11 +27,17 @@ def apply(workbook,review_file,destination):
   queue[hid]=row
  expected=set()
  for p in proposals:
+  if not isinstance(p,dict) or not isinstance(p.get("history_id"),str): raise ValueError("Invalid proposal record")
   hid="INGEST:H:"+str(p["history_id"])
   if hid not in history: raise ValueError("Research history not ingested: "+hid)
   h=history[hid]
   if h[1]!=p["restaurant_id"] or h[2]!=p["field_path"] or h[8]!=p["proposed_value"] or h[7]!=p.get("previous_value"): raise ValueError("Research history mismatch: "+hid)
   if h[3] not in evidence: raise ValueError("Missing linked evidence: "+hid)
+  ev=evidence[h[3]]
+  source=sources.get(ev[2])
+  if not source or ev[1]!=p["restaurant_id"] or ev[3]!=p["field_path"] or ev[4]!=p.get("claim") or source[1]!=p.get("source_url"): raise ValueError("Evidence or source mismatch: "+hid)
+  if h[4]!=p.get("recorded_at") or h[5]!=p.get("researcher") or h[6]!=p.get("action") or h[9]!=p.get("disposition"): raise ValueError("Research metadata mismatch: "+hid)
+  if hid in expected: raise ValueError("Duplicate proposal in review bundle: "+hid)
   if hid not in queue: raise ValueError("Review queue missing: "+hid)
   expected.add(hid)
  seen=set()
