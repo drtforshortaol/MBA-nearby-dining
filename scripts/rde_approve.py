@@ -30,6 +30,7 @@ def promote(workbook,baseline,destination):
   history[key]=row
  for row in read(wb["ReviewQueue"]):
   reviews.append(row)
+ evidence={row["evidence_id"]:row for row in read(wb["Evidence"])}
  seen=set();changes=[]
  for review in reviews:
   if review["decision"]!="accepted": continue
@@ -41,7 +42,8 @@ def promote(workbook,baseline,destination):
   if review["restaurant_id"]!=rid or review["field_path"]!=field: fail("Review/history mismatch")
   if not review["review_id"] or not review["reviewer"] or not review["reviewed_at"] or not review["reason"]:
    fail("Accepted review lacks reviewer, date, reason or ID")
-  if not h["evidence_id"]: fail("Accepted finding requires evidence")
+  if not h["evidence_id"] or h["evidence_id"] not in evidence: fail("Accepted finding requires existing evidence")
+  if evidence[h["evidence_id"]]["restaurant_id"]!=rid: fail("Evidence belongs to another restaurant")
   if not h["researcher"] or not h["recorded_at"]: fail("Finding lacks researcher/date")
   if (rid,field) in seen: fail("Multiple accepted edits for same field")
   seen.add((rid,field))
