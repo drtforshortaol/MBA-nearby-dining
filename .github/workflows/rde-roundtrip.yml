@@ -630,6 +630,25 @@ jobs:
           assert len(json.loads(original))==206
           print('PASS: missing image rejected; no candidate or production mutation')
           PY
+      - name: Stage Goodies photo candidate from uploaded asset
+        run: |
+          python scripts/rde_install_photo.py --image assets/photos/IMG_4940.jpeg --output /tmp/goodies-photo-candidate-ci.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          original=json.loads(Path('data/eateries.json').read_text())
+          candidate=json.loads(Path('/tmp/goodies-photo-candidate-ci.json').read_text())
+          assert len(original)==len(candidate)==206
+          changed=[(a,b) for a,b in zip(original,candidate) if a!=b]
+          assert len(changed)==1
+          before,after=changed[0]
+          assert before['id']==after['id']=='MBA-DINE-0068'
+          assert before['photo'] is None
+          assert after['photo']=='assets/photos/IMG_4940.jpeg'
+          assert after['photoCreator']=='Olivia Sarkis'
+          assert Path(after['photo']).is_file()
+          print('PASS: Goodies candidate staged; 205 other records untouched')
+          PY
       - name: Verify image references and offline-cache readiness
         run: |
           python - <<'PY'
