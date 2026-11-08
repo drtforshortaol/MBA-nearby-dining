@@ -65,6 +65,23 @@ jobs:
           assert 'verified_no' in allowed and 'unknown' in allowed and 'researched_no_result' in allowed
           print('PASS: explicit research status dropdowns present')
           PY
+      - name: Validate evidence provenance and references
+        run: |
+          python - <<'PY'
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-eatery.xlsx',read_only=True,data_only=True)
+          ids={r[0] for r in list(wb['Restaurants'].values)[1:]}
+          sources={r[0]:r for r in list(wb['Sources'].values)[1:]}
+          evidence=list(wb['Evidence'].values)[1:]
+          assert len(sources)==len(list(wb['Sources'].values))-1
+          assert evidence, 'Expected imported source leads'
+          assert len({r[0] for r in evidence})==len(evidence)
+          for eid,rid,sid,path,claim,status,reviewed in evidence:
+           assert rid in ids and sid in sources, f'Orphan evidence: {eid}'
+           assert status=='unverified', f'Legacy reference incorrectly asserted verified: {eid}'
+           assert sources[sid][1].startswith(('http://','https://'))
+          print(f'PASS: {len(sources)} sources and {len(evidence)} unverified evidence leads')
+          PY
       - name: Verify intentional editing and reject legacy corruption
         run: |
           python - <<'PY'
