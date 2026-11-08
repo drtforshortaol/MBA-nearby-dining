@@ -18,10 +18,16 @@
       "source_image_verified": true,
       "source_image_format": "JPEG",
       "source_image_dimensions_px": {
-        "width": 1408,
-        "height": 1074
+        "width": 1536,
+        "height": 1172
       },
-      "source_image_visual_check": "Storefront shows DELICATESSEN sign above entrance, Goodies window logo, patio seating, and seasonal decorations."
+      "source_image_visual_check": "Storefront shows DELICATESSEN sign above entrance, Goodies window logo, patio seating, and seasonal decorations.",
+      "prepared_asset_filename": "goodies-delicatessen-storefront.jpg",
+      "prepared_asset_dimensions_px": {
+        "width": 1200,
+        "height": 916
+      },
+      "prepared_asset_status": "prepared_locally_not_uploaded"
     }
   ]
 }
