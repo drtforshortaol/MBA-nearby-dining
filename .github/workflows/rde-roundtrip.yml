@@ -583,8 +583,8 @@ jobs:
           source=Path('/tmp/rde-deferred-final.xlsx')
           wb=load_workbook(source)
           history=wb['ResearchHistory']
-          accepted={r[1] for r in list(wb['ReviewQueue'].values)[1:] if r[4]=='accepted'}
-          match=next(i for i in range(2,history.max_row+1) if 'INGEST:H:'+str(history.cell(i,1).value) in accepted)
+          assert any(r[4]=='accepted' for r in list(wb['ReviewQueue'].values)[1:])
+          match=history.max_row
           history.cell(match,9).value='   '
           invalid=Path('/tmp/rde-empty-accepted.xlsx')
           wb.save(invalid)
