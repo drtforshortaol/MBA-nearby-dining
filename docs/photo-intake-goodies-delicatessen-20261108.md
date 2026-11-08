@@ -8,11 +8,12 @@
 - Attribution: Photo © Olivia Sarkis. Used with permission.
 - Rights evidence: Owner's confirmation in conversation; no separate written license attached.
 - Binary image: **Not yet uploaded to this GitHub repository.** Do not mark the application image as installed or published.
-- Restaurant identifier: **Not yet matched to a permanent ID.** Verify against the 206-record canonical dataset before linking.
+- Restaurant identifier: **MBA-DINE-0068**, verified against the 206-record canonical `data/eateries.json` on November 8, 2026.
+- Canonical restaurant record: Goodies Delicatessen, 510 Lighthouse Ave Suite 2, Pacific Grove.
 - Deployment: None authorized.
 
 ## Next integration steps
 1. Transfer the original image bytes into a reviewed development asset path, retaining the original image separately.
-2. Match Goodies Delicatessen to its permanent restaurant ID; do not create or renumber identifiers.
+2. Use verified permanent ID `MBA-DINE-0068`; do not create or renumber identifiers.
 3. Update the image register and app reference in the development branch; test image loading and offline cache.
 4. Request separate deployment authorization before publishing.
