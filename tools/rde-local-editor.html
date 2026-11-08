@@ -16,12 +16,12 @@ small{color:#526579}.warning{color:#8a4400}#message{font-weight:600}label{displa
 <button id="download" disabled>Export candidate JSON</button><button id="exportResearch" disabled>Export research proposals</button><button id="discard" disabled>Discard edits</button>
 <p id="message" role="status">No data loaded.</p></header>
 <section><strong id="count">0 restaurants</strong><small> — Editable fields: name, address, city, phone, website, hours, cuisine, area. Permanent IDs and all other fields remain protected.</small></section>
-<section><h2>Research proposal (review required)</h2><label>Restaurant <select id="researchRestaurant" disabled></select></label><label>Field <select id="researchField"><option>name</option><option>address</option><option>city</option><option>phone</option><option>website</option><option>hours</option><option>cuisine</option><option>area</option></select></label><label>Proposed value <input id="proposed" type="text"></label><label>Source URL <input id="sourceUrl" type="url"></label><label>Researcher <input id="researcher" type="text"></label><label>Reason <input id="claim" type="text"></label><button id="addResearch" disabled>Queue for review</button><div id="researchList"></div></section><div class="scroll"><table><thead><tr><th>Permanent ID</th><th>Restaurant</th><th>City</th><th>Cuisine</th><th>Phone</th><th>Website</th><th>Hours</th></tr></thead><tbody id="rows"></tbody></table></div>
+<section><h2>Research proposal (review required)</h2><label>Restaurant <select id="researchRestaurant" disabled></select></label><label>Field <select id="researchField"><option>name</option><option>address</option><option>city</option><option>phone</option><option>website</option><option>hours</option><option>cuisine</option><option>area</option></select></label><label>Proposed value <input id="proposed" type="text"></label><label>Source URL <input id="sourceUrl" type="url"></label><label>Researcher <input id="researcher" type="text"></label><label>Reason <input id="claim" type="text"></label><button id="addResearch" disabled>Queue for review</button><div id="researchList"></div><h3>Review pending proposals</h3><label>Reviewer <input id="reviewer" type="text"></label><label>Review reason <input id="reviewReason" type="text"></label><label>Proposal <select id="reviewTarget"></select></label><label>Decision <select id="reviewDecision"><option>pending</option><option>accepted</option><option>rejected</option><option>conflicting</option><option>needs_more_evidence</option></select></label><button id="recordReview" disabled>Record review</button><button id="exportReviews" disabled>Export review bundle</button><div id="reviewList"></div></section><div class="scroll"><table><thead><tr><th>Permanent ID</th><th>Restaurant</th><th>City</th><th>Cuisine</th><th>Phone</th><th>Website</th><th>Hours</th></tr></thead><tbody id="rows"></tbody></table></div>
 <script>
 'use strict';
 const FIELDS=['name','city','cuisine','phone','website','hours'];
 const EDITABLE=new Set(['name','address','city','phone','website','hours','cuisine','area']);
-let original=null,records=null,proposals=[];
+let original=null,records=null,proposals=[],reviews=[];
 const $=id=>document.getElementById(id);
 const clone=value=>JSON.parse(JSON.stringify(value));
 function valid(items){
@@ -35,7 +35,7 @@ function valid(items){
 function changed(){
  return records&&JSON.stringify(records)!==JSON.stringify(original);
 }
-function renderResearch(){const list=$('researchList');list.replaceChildren();for(const p of proposals){const row=document.createElement('p');row.textContent=p.restaurant_id+' · '+p.field_path+' · '+p.disposition+' · '+p.proposed_value;list.append(row);}}
+function renderResearch(){const target=$('reviewTarget');target.replaceChildren();for(const p of proposals){const opt=document.createElement('option');opt.value=p.history_id;opt.textContent=p.restaurant_id+' '+p.field_path;target.append(opt);}const list=$('researchList');list.replaceChildren();for(const p of proposals){const row=document.createElement('p');row.textContent=p.restaurant_id+' · '+p.field_path+' · '+p.disposition+' · '+p.proposed_value;list.append(row);}}
 function render(){
  const query=$('search').value.trim().toLowerCase();
  const tbody=$('rows');tbody.replaceChildren();
@@ -68,7 +68,7 @@ $('file').addEventListener('change',async e=>{
  try{
   const file=e.target.files[0];if(!file)return;
   const parsed=JSON.parse(await file.text());valid(parsed);
-  original=clone(parsed);records=clone(parsed);proposals=[];$('download').disabled=false;$('discard').disabled=false;$('addResearch').disabled=false;$('exportResearch').disabled=false;const select=$('researchRestaurant');select.replaceChildren();select.disabled=false;for(const r of records){const opt=document.createElement('option');opt.value=r.id;opt.textContent=r.name+' ('+r.id+')';select.append(opt);}renderResearch();
+  original=clone(parsed);records=clone(parsed);proposals=[];reviews=[];$('recordReview').disabled=false;$('exportReviews').disabled=false;$('download').disabled=false;$('discard').disabled=false;$('addResearch').disabled=false;$('exportResearch').disabled=false;const select=$('researchRestaurant');select.replaceChildren();select.disabled=false;for(const r of records){const opt=document.createElement('option');opt.value=r.id;opt.textContent=r.name+' ('+r.id+')';select.append(opt);}renderResearch();
   $('message').textContent='Loaded '+records.length+' restaurants locally. No server upload.';render();
  }catch(err){original=null;records=null;$('download').disabled=true;$('discard').disabled=true;$('message').textContent='Import blocked: '+err.message;$('rows').replaceChildren();}
 });
@@ -81,6 +81,23 @@ $('addResearch').addEventListener('click',()=>{
  proposals.push({history_id:'H-LOCAL-'+(proposals.length+1),restaurant_id:rid,field_path:field,recorded_at:new Date().toISOString(),researcher,action:'propose',previous_value:r[field]??null,proposed_value:proposed,disposition:'pending',source_url:url,claim});
  $('proposed').value='';$('claim').value='';$('message').textContent='Research proposal queued; restaurant unchanged.';renderResearch();
 });
+$('recordReview').addEventListener('click',()=>{
+ const history_id=$('reviewTarget').value,decision=$('reviewDecision').value,reviewer=$('reviewer').value.trim(),reason=$('reviewReason').value.trim();
+ const p=proposals.find(x=>x.history_id===history_id);
+ if(!p||!reviewer||!reason){$('message').textContent='Select proposal, reviewer and reason.';return;}
+ if(decision==='accepted'&&reviewer.toLowerCase()===p.researcher.trim().toLowerCase()){$('message').textContent='Independent reviewer required for acceptance.';return;}
+ if(reviews.some(x=>x.history_id===history_id)){$('message').textContent='Already reviewed. Create a new research cycle for reconsideration.';return;}
+ reviews.push({history_id,restaurant_id:p.restaurant_id,field_path:p.field_path,decision,reviewer,reviewed_at:new Date().toISOString(),reason});
+ const row=document.createElement('p');row.textContent=p.restaurant_id+' '+p.field_path+' — '+decision+' by '+reviewer;$('reviewList').append(row);
+ $('message').textContent='Decision recorded locally; no application changes.';
+});
+$('exportReviews').addEventListener('click',()=>{
+ if(!records)return;
+ const payload={schema:'mba-rde-review-decisions-v1',publication_status:'not_published',restaurant_count:records.length,proposals,reviews};
+ const blob=new Blob([JSON.stringify(payload,null,2)+'\\n'],{type:'application/json'});
+ const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='rde-review-decisions-not-published.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),3000);
+ $('message').textContent='Review bundle exported for controlled validation; not published.';
+});
 $('exportResearch').addEventListener('click',()=>{
  if(!records)return;
  const payload={schema:'mba-rde-research-proposals-v1',publication_status:'not_approved',restaurant_count:records.length,proposals};
@@ -88,7 +105,7 @@ $('exportResearch').addEventListener('click',()=>{
  const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='rde-research-proposals-review-only.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),3000);
  $('message').textContent='Research proposals exported for review; not published.';
 });
-$('discard').addEventListener('click',()=>{if(!original)return;records=clone(original);proposals=[];renderResearch();$('message').textContent='Edits and proposals discarded.';render();});
+$('discard').addEventListener('click',()=>{if(!original)return;records=clone(original);proposals=[];reviews=[];$('reviewList').replaceChildren();renderResearch();$('message').textContent='Edits and proposals discarded.';render();});
 $('download').addEventListener('click',()=>{
  try{
   valid(records);
