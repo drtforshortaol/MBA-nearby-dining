@@ -610,6 +610,27 @@ jobs:
           }
           console.log('PASS: reviewer responsive controls and evidence wrapping present');
           JS
+      - name: Verify reviewer evidence URL import gate
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-reviewer.html','utf8');
+          const script=html.split('<script>')[1]?.split('</script>')[0];
+          new vm.Script(script);
+          assert.ok(script.includes("throw Error('Invalid evidence source URL')"));
+          assert.ok(script.includes("['http:','https:'].includes(source.protocol)"));
+          for(const url of ['javascript:alert(1)','file:///private/data','data:text/plain,test']){
+            const parsed=new URL(url);
+            assert.equal(['http:','https:'].includes(parsed.protocol),false,url);
+          }
+          for(const url of ['https://example.org/source','http://example.org/source']){
+            const parsed=new URL(url);
+            assert.ok(['http:','https:'].includes(parsed.protocol)&&parsed.hostname,url);
+          }
+          console.log('PASS: reviewer URL gate syntax and allowed protocols');
+          JS
       - name: Verify beta reviewer proposal validation
         run: |
           node --input-type=module <<'JS'
