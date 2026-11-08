@@ -189,6 +189,35 @@ jobs:
           assert.ok(!/localStorage|indexedDB|XMLHttpRequest/.test(script),'Local editor must not silently persist records');
           console.log('PASS: browser editor parses and contains local-only safety boundaries');
           JS
+      - name: Test browser proposal ingestion into pending review
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-eatery.xlsx',read_only=True,data_only=True)
+          headers=[x.value for x in wb['Restaurants'][1]]
+          row=[x.value for x in wb['Restaurants'][2]]
+          rid=row[0];old=row[headers.index('name')]
+          payload={'schema':'mba-rde-research-proposals-v1','publication_status':'not_approved','restaurant_count':206,'proposals':[{'history_id':'H-LOCAL-1','restaurant_id':rid,'field_path':'name','recorded_at':'2026-11-08T12:00:00Z','researcher':'CI','action':'propose','previous_value':old,'proposed_value':'Research candidate','disposition':'pending','source_url':'https://example.org/source','claim':'Needs verification'}]}
+          Path('/tmp/rde-proposals.json').write_text(json.dumps(payload))
+          cmd=['python','scripts/rde_ingest.py','/tmp/rde-eatery.xlsx','/tmp/rde-proposals.json','/tmp/rde-ingested.xlsx']
+          result=subprocess.run(cmd,capture_output=True,text=True)
+          assert result.returncode==0,result.stderr
+          result=load_workbook('/tmp/rde-ingested.xlsx',read_only=True,data_only=True)
+          for sheet in ('Sources','Evidence','ResearchHistory','ReviewQueue'):
+           assert any(str(r[0]).startswith('INGEST:') for r in list(result[sheet].values)[1:]),sheet
+          assert list(result['ReviewQueue'].values)[-1][4]=='pending'
+          assert list(result['Restaurants'].values)[1][headers.index('name')]==old
+          reject=subprocess.run(cmd,capture_output=True,text=True)
+          assert reject.returncode==0,reject.stderr
+          payload['proposals'][0]['previous_value']='stale'
+          Path('/tmp/rde-proposals.json').write_text(json.dumps(payload))
+          reject=subprocess.run(cmd,capture_output=True,text=True)
+          assert reject.returncode!=0
+          assert json.loads(Path('data/eateries.json').read_text())[0]['id']
+          print('PASS: proposal ingestion creates pending linked records; stale edits rejected')
+          PY
       - name: Verify existing application
         run: node scripts/validate.mjs
       - uses: actions/upload-artifact@v4
