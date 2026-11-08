@@ -418,3 +418,24 @@ jobs:
           name: rde-eatery-workbook
           path: /tmp/rde-eatery.xlsx
           retention-days: 14
+
+      - name: Reject duplicate research targets in one bundle
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          source=Path('/tmp/rde-browser-proposals.json')
+          payload=json.loads(source.read_text())
+          first=payload['proposals'][0]
+          second={**first,'history_id':'BROWSER-SECOND','proposed_value':'Conflicting candidate'}
+          payload['proposals'].append(second)
+          path=Path('/tmp/rde-duplicate-targets.json')
+          path.write_text(json.dumps(payload))
+          dest=Path('/tmp/rde-duplicate-targets.xlsx')
+          if dest.exists(): dest.unlink()
+          result=subprocess.run(['python','scripts/rde_ingest.py','/tmp/rde-eatery.xlsx',str(path),str(dest)],capture_output=True,text=True)
+          assert result.returncode!=0, result.stdout
+          assert 'Duplicate restaurant field proposal' in result.stderr, result.stderr
+          assert not dest.exists(), 'Rejected proposals must not produce a workbook'
+          print('PASS: duplicate field proposals rejected without output')
+          PY
