@@ -8986,5 +8986,50 @@
       "checkedOn": "2026-11-07",
       "note": "Starbucks’ official store locator response for store 66442 at 316 Alvarado St confirms the Sunday 4 AM opening. This supersedes the prior directory schedule, which listed 4:30 AM daily."
     }
+  },
+  {
+    "id": "MBA-DINE-0236",
+    "name": "Rudolfo's Café",
+    "address": "543 Lighthouse Ave",
+    "city": "Pacific Grove",
+    "phone": "(831) 920-1381",
+    "phoneDigits": "8319201381",
+    "cuisine": "Italian / fresh pasta / sourdough pizza / American",
+    "distanceMiles": null,
+    "distanceVerified": false,
+    "lat": 36.620545,
+    "lon": -121.916944,
+    "website": "https://www.rudolfoseatery.com/",
+    "photo": null,
+    "photoCaption": "",
+    "photoCaution": "",
+    "photoLicense": "",
+    "photoCreator": "",
+    "photoSource": "",
+    "photoDate": "",
+    "statusNote": "Sunday operates as Heatwaves; menu differs from Italian service.",
+    "hours": "Mon closed; Tue–Thu 11 AM–8:30 PM; Fri–Sat 10 AM–8:30 PM; Sun Heatwaves (confirm hours).",
+    "serviceClass": "Italian / pasta / pizza",
+    "area": "Pacific Grove",
+    "batchReview": {
+      "batch": "user-reported-omission-2026-11-08",
+      "reviewedOn": "2026-11-08",
+      "sourceStatus": "official-website-verified; coordinates and live availability unverified",
+      "visitorTip": "Italian-inspired pasta and sourdough pizza; Sunday is Heatwaves. Confirm current menu and reservations directly.",
+      "sources": [
+        "https://www.rudolfoseatery.com/",
+        "https://www.rudolfoseatery.com/frequently-asked-questions",
+        "https://maps.roadtrippers.com/us/pacific-grove-ca/food-drink/rudolfos-pacific-grove-ca--0"
+      ],
+      "hoursVerified": true,
+      "photoVerified": false,
+      "verifiedFields": [
+        "address",
+        "hours",
+        "cuisine",
+        "website"
+      ],
+      "verificationNote": "Official restaurant website confirms address, menu concept and posted hours; phone supported by tourism directory. No real-time availability asserted. Approximate coordinates cross-checked with public map listing; not surveyed."
+    }
   }
 ]

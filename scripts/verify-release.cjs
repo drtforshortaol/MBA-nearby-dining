@@ -6,7 +6,7 @@ const path=require('node:path');
 const root=path.resolve(__dirname,'..');
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const data=JSON.parse(read('data/eateries.json'));
-assert.equal(data.length,205,'Expected 205 visitor-eligible eateries');
+assert.equal(data.length,206,'Expected 206 visitor-eligible eateries');
 const ids=new Set();
 for(const [i,r] of data.entries()){
   assert.match(r.id||'',/^MBA-DINE-\d{4}$/, 'Invalid ID at record '+i);
