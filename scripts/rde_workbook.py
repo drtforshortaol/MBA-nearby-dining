@@ -14,6 +14,7 @@ from pathlib import Path
 from openpyxl import Workbook, load_workbook
 from openpyxl.styles import Font, PatternFill
 from openpyxl.utils import get_column_letter
+from openpyxl.worksheet.datavalidation import DataValidation
 
 TABLES = {
  "Restaurants": ["restaurant_id","name","address","city","phone","website","lat","lon","area","cuisine","hours"],
@@ -66,6 +67,14 @@ def export(src,dst):
   wb["ResearchStatus"].append([rid,"general","not_yet_researched",None,None])
  for catid,label in sorted(categories.items()):
   wb["Categories"].append([catid,"cuisine",label,True])
+ # Explicit research-state vocabulary: unknown is not equivalent to verified no.
+ statuses="verified_yes,verified_no,unverified,unknown,not_applicable,not_yet_researched,researched_no_result,conflicting,outdated"
+ for sheet,col in [("ResearchStatus","C"),("RestaurantCategories","C"),("Features","D"),("Hours","D"),("Menus","D"),("Evidence","F")]:
+  ws=wb[sheet]
+  rule=DataValidation(type="list",formula1='"'+statuses+'"',allow_blank=True)
+  rule.error="Select a recognized research status";rule.errorTitle="Invalid status"
+  rule.showErrorMessage=True
+  ws.add_data_validation(rule);rule.add(f"{col}2:{col}10000")
  wb["LegacyFields"].column_dimensions["B"].width=65
  wb.save(dst)
  # Capture values exactly as Excel will return them (blank cells and float rounding).
