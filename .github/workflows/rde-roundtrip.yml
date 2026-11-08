@@ -557,3 +557,20 @@ jobs:
           ])assert.ok(script.includes(guard),guard);
           console.log('PASS: reviewer duplicate-target and import-preservation safeguards');
           JS
+      - name: Verify all browser JSON exports use valid trailing newline
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          for(const file of ['tools/rde-local-editor.html','tools/rde-local-reviewer.html']){
+            const html=fs.readFileSync(file,'utf8');
+            const script=html.split('<script>')[1]?.split('</script>')[0];
+            const literals=[...script.matchAll(/JSON\.stringify\((?:payload|records),null,2\)\+'([^']*)'/g)];
+            assert.ok(literals.length>=1,'Missing JSON export: '+file);
+            for(const match of literals){
+              assert.equal(match[1],String.raw`\n`,'Malformed JSON export suffix: '+file);
+              assert.deepEqual(JSON.parse(JSON.stringify({ok:true})+JSON.parse('"\\n"')),{ok:true});
+            }
+          }
+          console.log('PASS: browser JSON exports end with valid newline escape');
+          JS
