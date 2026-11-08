@@ -24,11 +24,14 @@ def ingest(workbook,proposals_path,destination):
  existing|={r[0] for r in list(wb["Evidence"].values)[1:]}
  existing|={r[0] for r in list(wb["Sources"].values)[1:]}
  existing|={r[0] for r in list(wb["ReviewQueue"].values)[1:]}
- pending=[];newids=set()
+ pending=[];newids=set();targets=set()
  for i,p in enumerate(proposals):
   if not isinstance(p,dict): raise ValueError("Invalid proposal")
   rid=p.get("restaurant_id");field=p.get("field_path")
   if rid not in restaurants or field not in FIELDS: raise ValueError("Unknown restaurant or field")
+  target=(rid,field)
+  if target in targets: raise ValueError("Duplicate restaurant field proposal in bundle")
+  targets.add(target)
   url=p.get("source_url")
   try:
    parsed=urlsplit(url) if isinstance(url,str) else None
