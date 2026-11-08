@@ -610,6 +610,22 @@ jobs:
           }
           console.log('PASS: reviewer responsive controls and evidence wrapping present');
           JS
+      - name: Verify unique editor exports and single exit warning
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
+          const script=html.split('<script>')[1]?.split('</script>')[0];
+          new vm.Script(script);
+          assert.equal(script.split("addEventListener('beforeunload'").length-1,1);
+          assert.ok(script.includes("function exportName(prefix)"));
+          for(const prefix of ['rde-review-decisions','rde-research-proposals','rde-unapproved-edit-draft']){
+            assert.ok(script.includes("a.download=exportName('"+prefix+"')"),prefix);
+          }
+          console.log('PASS: unique editor export filenames and one unsaved-work exit listener');
+          JS
       - name: Verify editor unsaved-work and replacement safeguards
         run: |
           node --input-type=module <<'JS'
