@@ -31,6 +31,14 @@ def promote(workbook,baseline,destination):
  for row in read(wb["ReviewQueue"]):
   reviews.append(row)
  evidence={row["evidence_id"]:row for row in read(wb["Evidence"])}
+ # Conflicts or unresolved evidence for the same restaurant/field block promotion.
+ unresolved=set()
+ for row in read(wb["ReviewQueue"]):
+  if row["decision"] in ("conflicting","needs_more_evidence"):
+   unresolved.add((row["restaurant_id"],row["field_path"]))
+ for row in read(wb["Evidence"]):
+  if row["status"]=="conflicting":
+   unresolved.add((row["restaurant_id"],row["field_path"]))
  seen=set();changes=[]
  for review in reviews:
   if review["decision"]!="accepted": continue
@@ -45,6 +53,7 @@ def promote(workbook,baseline,destination):
   if not h["evidence_id"] or h["evidence_id"] not in evidence: fail("Accepted finding requires existing evidence")
   if evidence[h["evidence_id"]]["restaurant_id"]!=rid: fail("Evidence belongs to another restaurant")
   if not h["researcher"] or not h["recorded_at"]: fail("Finding lacks researcher/date")
+  if (rid,field) in unresolved: fail("Unresolved conflicting evidence or review: "+rid+" "+field)
   if (rid,field) in seen: fail("Multiple accepted edits for same field")
   seen.add((rid,field))
   current=byid[rid].get(field)
