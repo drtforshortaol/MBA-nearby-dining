@@ -172,6 +172,23 @@ jobs:
           assert not Path('/tmp/rde-rejected-candidate.json').exists()
           print('PASS: approved candidate isolated; incomplete review rejected')
           PY
+      - name: Validate local browser editor safety boundaries
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
+          const script=html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
+          assert.ok(script,'Missing editor script');
+          new vm.Script(script);
+          for(const required of ['type="file"','Export candidate JSON','Discard edits','Permanent ID','beforeunload','URL.createObjectURL','Protected field changed','Expected 206 restaurant records']){
+            assert.ok(html.includes(required),'Missing editor safeguard: '+required);
+          }
+          assert.ok(!/\bfetch\s*\(/.test(script),'Local editor must not make network calls');
+          assert.ok(!/localStorage|indexedDB|XMLHttpRequest/.test(script),'Local editor must not silently persist records');
+          console.log('PASS: browser editor parses and contains local-only safety boundaries');
+          JS
       - name: Verify existing application
         run: node scripts/validate.mjs
       - uses: actions/upload-artifact@v4
