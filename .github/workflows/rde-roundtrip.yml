@@ -516,3 +516,25 @@ jobs:
           assert next(r for r in edited if r['id']==p['restaurant_id'])[p['field_path']]==p['proposed_value']
           print('PASS: pending → accepted → candidate; IDs preserved; production untouched')
           PY
+      - name: Reject duplicate review and evidence IDs at candidate gate
+        run: |
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          source=Path('/tmp/rde-deferred-final.xlsx')
+          for sheet,column in [('ReviewQueue',1),('Evidence',1)]:
+           wb=load_workbook(source)
+           ws=wb[sheet]
+           assert ws.max_row>=3,(sheet,ws.max_row)
+           ws.cell(3,column).value=ws.cell(2,column).value
+           corrupted=Path('/tmp/rde-duplicate-'+sheet+'.xlsx')
+           wb.save(corrupted)
+           output=Path('/tmp/rde-duplicate-'+sheet+'.json')
+           output.unlink(missing_ok=True)
+           run=subprocess.run(['python','scripts/rde_approve.py',str(corrupted),'data/eateries.json',str(output)],capture_output=True,text=True)
+           assert run.returncode!=0,(sheet,run.stdout,run.stderr)
+           assert 'duplicate' in run.stderr.lower(),(sheet,run.stderr)
+           assert not output.exists(),sheet
+          print('PASS: duplicate review/evidence IDs block candidate export')
+          PY
