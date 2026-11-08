@@ -218,6 +218,20 @@ jobs:
           assert json.loads(Path('data/eateries.json').read_text())[0]['id']
           print('PASS: proposal ingestion creates pending linked records; stale edits rejected')
           PY
+      - name: Validate independent local reviewer
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-reviewer.html','utf8');
+          const script=html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
+          assert.ok(script);
+          new vm.Script(script);
+          for(const text of ['mba-rde-research-proposals-v1','mba-rde-review-decisions-v1','not_published','independent reviewer','needs_more_evidence','reviewed_at'])assert.ok(html.includes(text),text);
+          assert.ok(!/\bfetch\s*\(|XMLHttpRequest|localStorage|indexedDB/.test(script));
+          console.log('PASS: local reviewer syntax, decisions and nonpublishing boundaries');
+          JS
       - name: Verify existing application
         run: node scripts/validate.mjs
       - uses: actions/upload-artifact@v4
