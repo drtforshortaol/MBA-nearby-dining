@@ -100,7 +100,7 @@ $('recordReview').addEventListener('click',()=>{
 $('exportReviews').addEventListener('click',()=>{
  if(!records||!proposals.length){$('message').textContent='No research proposals to review or export.';return;}
  const payload={schema:'mba-rde-review-decisions-v1',publication_status:'not_published',restaurant_count:records.length,proposals,reviews};
- const blob=new Blob([JSON.stringify(payload,null,2)+'\\n'],{type:'application/json'});
+ const blob=new Blob([JSON.stringify(payload,null,2)+'\n'],{type:'application/json'});
  const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='rde-review-decisions-not-published.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),3000);
  $('message').textContent='Review bundle exported for controlled validation; not published.';
 });
