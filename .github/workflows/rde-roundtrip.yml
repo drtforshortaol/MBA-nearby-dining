@@ -610,6 +610,34 @@ jobs:
           }
           console.log('PASS: reviewer responsive controls and evidence wrapping present');
           JS
+      - name: Verify image references and offline-cache readiness
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          restaurants=json.loads(Path('data/eateries.json').read_text())
+          sw=Path('sw.js').read_text()
+          assert "data.filter(r=>r.photo)" in sw
+          assert "cache.add('./'+r.photo)" in sw
+          referenced=0
+          for r in restaurants:
+              photo=r.get('photo')
+              if not photo:
+                  continue
+              assert isinstance(photo,str) and not photo.startswith(('/', 'http:', 'https:'))
+              assert '..' not in Path(photo).parts, (r['id'],photo)
+              assert Path(photo).is_file(), (r['id'],photo)
+              referenced+=1
+          intake=json.loads(Path('data/photo-intake-pending.json').read_text())
+          for item in intake['items']:
+              if item['asset_status']=='awaiting_binary_import':
+                  assert item['repository_asset_path'] is None
+                  assert item['offline_verified'] is False
+              else:
+                  path=item['repository_asset_path']
+                  assert path and Path(path).is_file(),item
+          print(f'PASS: {referenced} referenced images exist; pending photos not misrepresented as installed')
+          PY
       - name: Validate unpublished storefront photo intake
         run: |
           python - <<'PY'
