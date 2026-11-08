@@ -153,7 +153,8 @@ jobs:
           ev=next(iter(list(wb['Evidence'].values)[1:]))
           rid=ev[1]
           old=next(r['name'] for r in baseline if r['id']==rid)
-          wb['ResearchHistory'].append(['H:APPROVAL',rid,'name',ev[0],'2026-11-08','researcher','propose',old,old+' [REVIEWED]','pending'])
+          wb['Evidence'].append(['EV:APPROVAL',rid,ev[2],'name','reviewed name claim','unverified',None])
+          wb['ResearchHistory'].append(['H:APPROVAL',rid,'name','EV:APPROVAL','2026-11-08','researcher','propose',old,old+' [REVIEWED]','pending'])
           wb['ReviewQueue'].append(['R:APPROVAL','H:APPROVAL',rid,'name','accepted','reviewer','2026-11-08','source checked'])
           wb.save('/tmp/rde-approval.xlsx')
           command=['python','scripts/rde_approve.py','/tmp/rde-approval.xlsx','data/eateries.json','/tmp/rde-approved-candidate.json']
