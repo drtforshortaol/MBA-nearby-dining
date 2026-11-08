@@ -283,6 +283,15 @@ jobs:
           assert not dest.exists()
           print('PASS: conflicting review blocks candidate output')
           PY
+      - name: Check RDE acceptance documentation
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const guide=fs.readFileSync('docs/rde-browser-acceptance.md','utf8');
+          for(const required of ['206','rde-local-editor.html','rde-local-reviewer.html','rde_ingest.py','rde_review_ingest.py','rde_approve.py','Known limitations','No GitHub production'])assert.ok(guide.includes(required),required);
+          console.log('PASS: acceptance guide references the complete isolated workflow');
+          JS
       - name: Verify existing application
         run: node scripts/validate.mjs
       - uses: actions/upload-artifact@v4
