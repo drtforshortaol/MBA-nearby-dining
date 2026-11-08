@@ -38,7 +38,7 @@ function changed(){
 }
 function pendingWork(){return changed()||proposals.length>0||reviews.length>0;}
 function newHistoryId(){const bytes=new Uint8Array(16);crypto.getRandomValues(bytes);return 'H-LOCAL-'+Array.from(bytes,b=>b.toString(16).padStart(2,'0')).join('');}
-function validSourceUrl(raw){try{const u=new URL(raw);return (u.protocol==='https:'||u.protocol==='http:')&&!!u.hostname&&!u.username&&!u.password;}catch{return false;}}
+function validSourceUrl(raw){try{if(raw!==raw.trim()||/\s/.test(raw))return false;const u=new URL(raw);return (u.protocol==='https:'||u.protocol==='http:')&&!!u.hostname&&!u.username&&!u.password;}catch{return false;}}
 function renderResearch(){const target=$('reviewTarget');target.replaceChildren();for(const p of proposals){const opt=document.createElement('option');opt.value=p.history_id;opt.textContent=p.restaurant_id+' '+p.field_path;target.append(opt);}const list=$('researchList');list.replaceChildren();for(const p of proposals){const row=document.createElement('p');row.textContent=p.restaurant_id+' · '+p.field_path+' · '+p.disposition+' · '+p.proposed_value;list.append(row);}}
 function render(){
  const query=$('search').value.trim().toLowerCase();
@@ -71,6 +71,7 @@ function render(){
 $('file').addEventListener('change',async e=>{
  try{
   const file=e.target.files[0];if(!file)return;
+  if(pendingWork()&&!confirm('Loading another file will discard unsaved edits, proposals and reviews. Continue?')){e.target.value='';return;}
   const parsed=JSON.parse(await file.text());valid(parsed);
   original=clone(parsed);records=clone(parsed);proposals=[];reviews=[];$('recordReview').disabled=false;$('exportReviews').disabled=false;$('download').disabled=false;$('discard').disabled=false;$('addResearch').disabled=false;$('exportResearch').disabled=false;const select=$('researchRestaurant');select.replaceChildren();select.disabled=false;for(const r of records){const opt=document.createElement('option');opt.value=r.id;opt.textContent=r.name+' ('+r.id+')';select.append(opt);}renderResearch();
   $('message').textContent='Loaded '+records.length+' restaurants locally. No server upload.';render();
@@ -80,6 +81,7 @@ $('search').addEventListener('input',render);
 $('addResearch').addEventListener('click',()=>{
  if(!records)return;
  const rid=$('researchRestaurant').value,field=$('researchField').value,proposed=$('proposed').value.trim(),url=$('sourceUrl').value.trim(),researcher=$('researcher').value.trim(),claim=$('claim').value.trim();
+ if(proposals.some(p=>p.restaurant_id===rid&&p.field_path===field)){$('message').textContent='A proposal for this restaurant and field is already queued. Export or discard it before proposing another.';return;}
  if(!EDITABLE.has(field)||!proposed||!researcher||!claim||!validSourceUrl(url)){$('message').textContent='Proposal requires value, source URL, researcher and reason.';return;}
  const r=records.find(x=>x.id===rid);if(!r)return;
  proposals.push({history_id:newHistoryId(),restaurant_id:rid,field_path:field,recorded_at:new Date().toISOString(),researcher,action:'propose',previous_value:(original.find(x=>x.id===rid)?.[field]??null),proposed_value:proposed,disposition:'pending',source_url:url,claim});
@@ -109,7 +111,7 @@ $('exportResearch').addEventListener('click',()=>{
  const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='rde-research-proposals-review-only.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),3000);
  $('message').textContent='Research proposals exported for review; not published.';
 });
-$('discard').addEventListener('click',()=>{if(!original)return;records=clone(original);proposals=[];reviews=[];$('reviewList').replaceChildren();renderResearch();$('message').textContent='Edits and proposals discarded.';render();});
+$('discard').addEventListener('click',()=>{if(!original)return;if(pendingWork()&&!confirm('Discard all unsaved edits, proposals and reviews?'))return;records=clone(original);proposals=[];reviews=[];$('reviewList').replaceChildren();renderResearch();$('message').textContent='Edits and proposals discarded.';render();});
 $('download').addEventListener('click',()=>{
  try{
   valid(records);
