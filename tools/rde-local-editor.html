@@ -37,6 +37,7 @@ function changed(){
  return records&&JSON.stringify(records)!==JSON.stringify(original);
 }
 function pendingWork(){return changed()||proposals.length>0||reviews.length>0;}
+function validSourceUrl(raw){try{const u=new URL(raw);return (u.protocol==='https:'||u.protocol==='http:')&&!!u.hostname&&!u.username&&!u.password;}catch{return false;}}
 function renderResearch(){const target=$('reviewTarget');target.replaceChildren();for(const p of proposals){const opt=document.createElement('option');opt.value=p.history_id;opt.textContent=p.restaurant_id+' '+p.field_path;target.append(opt);}const list=$('researchList');list.replaceChildren();for(const p of proposals){const row=document.createElement('p');row.textContent=p.restaurant_id+' · '+p.field_path+' · '+p.disposition+' · '+p.proposed_value;list.append(row);}}
 function render(){
  const query=$('search').value.trim().toLowerCase();
@@ -72,13 +73,13 @@ $('file').addEventListener('change',async e=>{
   const parsed=JSON.parse(await file.text());valid(parsed);
   original=clone(parsed);records=clone(parsed);proposals=[];reviews=[];$('recordReview').disabled=false;$('exportReviews').disabled=false;$('download').disabled=false;$('discard').disabled=false;$('addResearch').disabled=false;$('exportResearch').disabled=false;const select=$('researchRestaurant');select.replaceChildren();select.disabled=false;for(const r of records){const opt=document.createElement('option');opt.value=r.id;opt.textContent=r.name+' ('+r.id+')';select.append(opt);}renderResearch();
   $('message').textContent='Loaded '+records.length+' restaurants locally. No server upload.';render();
- }catch(err){original=null;records=null;$('download').disabled=true;$('discard').disabled=true;$('message').textContent='Import blocked: '+err.message;$('rows').replaceChildren();}
+ }catch(err){original=null;records=null;proposals=[];reviews=[];for(const id of ['download','discard','addResearch','exportResearch','recordReview','exportReviews','researchRestaurant'])$(id).disabled=true;$('researchRestaurant').replaceChildren();$('researchList').replaceChildren();$('reviewTarget').replaceChildren();$('reviewList').replaceChildren();$('count').textContent='0 restaurants';$('message').textContent='Import blocked: '+err.message;$('rows').replaceChildren();}
 });
 $('search').addEventListener('input',render);
 $('addResearch').addEventListener('click',()=>{
  if(!records)return;
  const rid=$('researchRestaurant').value,field=$('researchField').value,proposed=$('proposed').value.trim(),url=$('sourceUrl').value.trim(),researcher=$('researcher').value.trim(),claim=$('claim').value.trim();
- if(!EDITABLE.has(field)||!proposed||!researcher||!claim||!/^https?:\/\/\S+$/.test(url)){$('message').textContent='Proposal requires value, source URL, researcher and reason.';return;}
+ if(!EDITABLE.has(field)||!proposed||!researcher||!claim||!validSourceUrl(url)){$('message').textContent='Proposal requires value, source URL, researcher and reason.';return;}
  const r=records.find(x=>x.id===rid);if(!r)return;
  proposals.push({history_id:'H-LOCAL-'+(proposals.length+1),restaurant_id:rid,field_path:field,recorded_at:new Date().toISOString(),researcher,action:'propose',previous_value:r[field]??null,proposed_value:proposed,disposition:'pending',source_url:url,claim});
  $('proposed').value='';$('claim').value='';$('message').textContent='Research proposal queued; restaurant unchanged.';renderResearch();
