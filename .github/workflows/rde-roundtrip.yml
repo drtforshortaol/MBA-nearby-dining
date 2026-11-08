@@ -142,6 +142,36 @@ jobs:
           assert attempt.returncode!=0, 'Tampered source must be rejected'
           print('PASS: intentional edit isolated; tampering rejected')
           PY
+      - name: Test approved candidate export and rejection gates
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          baseline=json.loads(Path('data/eateries.json').read_text())
+          wb=load_workbook('/tmp/rde-eatery.xlsx')
+          ev=next(iter(list(wb['Evidence'].values)[1:]))
+          rid=ev[1]
+          old=next(r['name'] for r in baseline if r['id']==rid)
+          wb['ResearchHistory'].append(['H:APPROVAL',rid,'name',ev[0],'2026-11-08','researcher','propose',old,old+' [REVIEWED]','pending'])
+          wb['ReviewQueue'].append(['R:APPROVAL','H:APPROVAL',rid,'name','accepted','reviewer','2026-11-08','source checked'])
+          wb.save('/tmp/rde-approval.xlsx')
+          command=['python','scripts/rde_approve.py','/tmp/rde-approval.xlsx','data/eateries.json','/tmp/rde-approved-candidate.json']
+          result=subprocess.run(command,capture_output=True,text=True)
+          assert result.returncode==0,result.stderr
+          candidate=json.loads(Path('/tmp/rde-approved-candidate.json').read_text())
+          assert len(candidate)==len(baseline)==206
+          assert next(r['name'] for r in candidate if r['id']==rid)==old+' [REVIEWED]'
+          for a,b in zip(baseline,candidate):
+           if a['id']==rid: assert {**b,'name':old}==a
+           else: assert a==b
+          wb['ReviewQueue']['H2']=''
+          wb.save('/tmp/rde-unapproved.xlsx')
+          blocked=subprocess.run(['python','scripts/rde_approve.py','/tmp/rde-unapproved.xlsx','data/eateries.json','/tmp/rde-rejected-candidate.json'],capture_output=True,text=True)
+          assert blocked.returncode!=0
+          assert not Path('/tmp/rde-rejected-candidate.json').exists()
+          print('PASS: approved candidate isolated; incomplete review rejected')
+          PY
       - name: Verify existing application
         run: node scripts/validate.mjs
       - uses: actions/upload-artifact@v4
