@@ -9,7 +9,7 @@ $('file').addEventListener('change',async e=>{
   if(data.schema!=='mba-rde-research-proposals-v1'||data.publication_status!=='not_approved'||!Array.isArray(data.proposals)||data.restaurant_count!==206)throw Error('Invalid research bundle');
   if(new Set(data.proposals.map(p=>p.history_id)).size!==data.proposals.length)throw Error('Duplicate history identifiers');
   if(new Set(data.proposals.map(p=>JSON.stringify([p.restaurant_id,p.field_path]))).size!==data.proposals.length)throw Error('Duplicate restaurant field proposals');
-  for(const p of data.proposals){if(!p.history_id||!p.restaurant_id||!p.field_path||p.disposition!=='pending'||p.action!=='propose'||!p.source_url||!p.researcher||typeof p.proposed_value!=='string'||!p.proposed_value.trim())throw Error('Incomplete proposal');}
+  for(const p of data.proposals){if(!p.history_id||!p.restaurant_id||!p.field_path||p.disposition!=='pending'||p.action!=='propose'||!p.source_url||!p.researcher||typeof p.proposed_value!=='string'||!p.proposed_value.trim())throw Error('Incomplete proposal');const source=new URL(p.source_url);if(!['http:','https:'].includes(source.protocol)||!source.hostname)throw Error('Invalid evidence source URL');}
   if(bundle&&!confirm('Replace current review bundle and discard unexported decisions?')){e.target.value='';return;}
   bundle=data;decisions=[];$('items').replaceChildren();
   for(const p of data.proposals){
