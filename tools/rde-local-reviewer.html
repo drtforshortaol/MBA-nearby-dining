@@ -25,6 +25,7 @@ $('file').addEventListener('change',async e=>{
   $('export').disabled=false;$('status').textContent=data.proposals.length+' proposals ready for independent review.';
  }catch(err){e.target.value='';$('status').textContent='Import blocked; existing review preserved: '+err.message;}
 });
+for(const id of ['reviewer','reason'])$(id).addEventListener('input',()=>{if(bundle)dirty=true;});
 $('export').addEventListener('click',()=>{
  if(!bundle)return;
  const reviewer=$('reviewer').value.trim(),reason=$('reason').value.trim();
