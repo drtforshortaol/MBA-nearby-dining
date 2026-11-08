@@ -610,6 +610,21 @@ jobs:
           }
           console.log('PASS: reviewer responsive controls and evidence wrapping present');
           JS
+      - name: Verify distinct iPhone review download names
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-reviewer.html','utf8');
+          const script=html.split('<script>')[1]?.split('</script>')[0];
+          new vm.Script(script);
+          assert.ok(script.includes("new Date().toISOString().replace(/[:.]/g,'-')"));
+          assert.ok(script.includes("'rde-review-decisions-'+stamp+'-not-published.json'"));
+          assert.ok(script.includes('Check Safari Downloads or Files'));
+          assert.ok(!script.includes("a.download='rde-review-decisions-not-published.json'"));
+          console.log('PASS: timestamped review download names and iPhone retrieval guidance');
+          JS
       - name: Verify reviewer evidence URL import gate
         run: |
           node --input-type=module <<'JS'
