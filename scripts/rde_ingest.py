@@ -5,7 +5,7 @@ Usage: python scripts/rde_ingest.py workbook.xlsx proposals.json review-workbook
 import json
 import sys
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlsplit
 from openpyxl import load_workbook
 
 FIELDS={"name","address","city","phone","website","hours","cuisine","area"}
@@ -30,7 +30,15 @@ def ingest(workbook,proposals_path,destination):
   rid=p.get("restaurant_id");field=p.get("field_path")
   if rid not in restaurants or field not in FIELDS: raise ValueError("Unknown restaurant or field")
   url=p.get("source_url")
-  if not isinstance(url,str) or urlparse(url).scheme not in ("http","https") or not urlparse(url).netloc:
+  try:
+   parsed=urlsplit(url) if isinstance(url,str) else None
+   valid_url=(parsed is not None and parsed.scheme in ("http","https")
+              and bool(parsed.hostname) and parsed.username is None and parsed.password is None
+              and url==url.strip() and not any(ch.isspace() for ch in url))
+   if valid_url: _=parsed.port  # Reject malformed port syntax.
+  except ValueError:
+   valid_url=False
+  if not valid_url:
    raise ValueError("Invalid source URL")
   if any(not isinstance(p.get(k),str) or not p[k].strip() for k in ("history_id","researcher","recorded_at","claim","proposed_value")):
    raise ValueError("Incomplete research proposal")
