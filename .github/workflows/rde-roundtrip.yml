@@ -394,6 +394,23 @@ jobs:
           assert.ok(!html.includes("history_id:'H-LOCAL-'+(proposals.length+1)"));
           console.log('PASS: unique proposal IDs and original baseline linkage');
           JS
+      - name: Reject unsafe source URLs at ingestion boundary
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          baseline=json.loads(Path('data/eateries.json').read_text())
+          row=baseline[0]
+          for i,url in enumerate(['https://user:pass@example.org/page','https://example.org:bad/page','https://example.org/has space','file:///etc/passwd']):
+           proposal={'history_id':'H-URL-TEST-'+str(i),'restaurant_id':row['id'],'field_path':'name','recorded_at':'2026-11-08T12:00:00Z','researcher':'tester','action':'propose','previous_value':row['name'],'proposed_value':'Test name','disposition':'pending','source_url':url,'claim':'test'}
+           path=Path('/tmp/rde-unsafe-url.json');path.write_text(json.dumps({'schema':'mba-rde-research-proposals-v1','publication_status':'not_approved','restaurant_count':206,'proposals':[proposal]}))
+           output=Path('/tmp/rde-unsafe-url-output.xlsx')
+           output.unlink(missing_ok=True)
+           run=subprocess.run(['python','scripts/rde_ingest.py','/tmp/rde-eatery.xlsx',str(path),str(output)],capture_output=True,text=True)
+           assert run.returncode!=0,(url,run.stdout,run.stderr)
+           assert not output.exists(),url
+          print('PASS: unsafe URLs rejected without review workbook')
+          PY
       - name: Verify existing application
         run: node scripts/validate.mjs
       - uses: actions/upload-artifact@v4
