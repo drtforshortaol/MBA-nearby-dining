@@ -447,12 +447,14 @@ jobs:
           import assert from 'node:assert/strict';
           import vm from 'node:vm';
           const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
-          const script=html.match(/<script>([\\s\\S]*?)<\\/script>/)?.[1];
+          const script=html.split('<script>')[1]?.split('</script>')[0];
           assert.ok(script);
           new vm.Script(script);
-          assert.match(script,/proposals\\.some\\(p=>p\\.restaurant_id===rid&&p\\.field_path===field\\)/);
-          assert.match(script,/pendingWork\\(\\)&&!confirm\\('Loading another file/);
-          assert.match(script,/pendingWork\\(\\)&&!confirm\\('Discard all unsaved edits/);
-          assert.match(script,/raw!==raw\\.trim\\(\\)\\|\\|\\/\\\\s\\//);
+          for(const term of [
+            'proposals.some(p=>p.restaurant_id===rid&&p.field_path===field)',
+            "pendingWork()&&!confirm('Loading another file",
+            "pendingWork()&&!confirm('Discard all unsaved edits",
+            'raw!==raw.trim()'
+          ]) assert.ok(script.includes(term),'Missing browser guard: '+term);
           console.log('PASS: duplicate target and unsaved-work guards present');
           JS
