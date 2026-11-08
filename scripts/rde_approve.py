@@ -53,6 +53,10 @@ def promote(workbook,baseline,destination):
   if not h["evidence_id"] or h["evidence_id"] not in evidence: fail("Accepted finding requires existing evidence")
   if evidence[h["evidence_id"]]["restaurant_id"]!=rid: fail("Evidence belongs to another restaurant")
   if not h["researcher"] or not h["recorded_at"]: fail("Finding lacks researcher/date")
+  if str(review["reviewer"]).strip().casefold()==str(h["researcher"]).strip().casefold(): fail("Independent reviewer required")
+  ev=evidence[h["evidence_id"]]
+  if ev["field_path"]!=field: fail("Evidence field mismatch")
+  if ev["status"] not in ("unverified","verified_yes"): fail("Evidence status not eligible for approval")
   if (rid,field) in unresolved: fail("Unresolved conflicting evidence or review: "+rid+" "+field)
   if (rid,field) in seen: fail("Multiple accepted edits for same field")
   seen.add((rid,field))
