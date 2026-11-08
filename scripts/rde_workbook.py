@@ -65,6 +65,14 @@ def export(src,dst):
   for k,v in (r.get("attributes") or {}).items():
    if isinstance(v,dict): wb["Features"].append([rid,k,str(v.get("value","unknown")),str(v.get("status","unverified")),None,None])
   wb["ResearchStatus"].append([rid,"general","not_yet_researched",None,None])
+  # Existing source references are imported as unverified leads, not as verified claims.
+  for field,source_field in [("website","website"),("photo","photoSource")]:
+   url=r.get(source_field)
+   if isinstance(url,str) and url.startswith(("https://","http://")):
+    sid="SRC:"+rid+":"+field
+    eid="EV:"+rid+":"+field
+    wb["Sources"].append([sid,url,None,None,"legacy_reference"])
+    wb["Evidence"].append([eid,rid,sid,field,None,"unverified",None])
  for catid,label in sorted(categories.items()):
   wb["Categories"].append([catid,"cuisine",label,True])
  # Explicit research-state vocabulary: unknown is not equivalent to verified no.
