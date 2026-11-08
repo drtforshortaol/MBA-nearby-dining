@@ -292,6 +292,23 @@ jobs:
           for(const required of ['206','rde-local-editor.html','rde-local-reviewer.html','rde_ingest.py','rde_review_ingest.py','rde_approve.py','Known limitations','No GitHub production'])assert.ok(guide.includes(required),required);
           console.log('PASS: acceptance guide references the complete isolated workflow');
           JS
+      - name: Reject altered browser review evidence and metadata
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          src=Path('/tmp/rde-browser-review.json')
+          base=json.loads(src.read_text())
+          # The earlier test changes the reviewer to the researcher; restore an independent reviewer.
+          base['reviews'][0]['reviewer']='Reviewer B'
+          for key,value in [('source_url','https://tampered.example.org'),('claim','tampered evidence'),('researcher','Fake Researcher'),('recorded_at','2099-01-01')]:
+           bad=json.loads(json.dumps(base))
+           bad['proposals'][0][key]=value
+           Path('/tmp/rde-tampered-review.json').write_text(json.dumps(bad))
+           result=subprocess.run(['python','scripts/rde_review_ingest.py','/tmp/rde-browser-ingested.xlsx','/tmp/rde-tampered-review.json','/tmp/rde-tampered-output.xlsx'],capture_output=True,text=True)
+           assert result.returncode!=0,(key,result.stdout)
+          print('PASS: tampered source, evidence, author and timestamp rejected')
+          PY
       - name: Verify existing application
         run: node scripts/validate.mjs
       - uses: actions/upload-artifact@v4
