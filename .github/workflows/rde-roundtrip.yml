@@ -28,11 +28,11 @@ jobs:
           python - <<'PY'
           from openpyxl import load_workbook
           wb=load_workbook('/tmp/rde-eatery.xlsx',read_only=True)
-          assert len(wb.sheetnames)==12, wb.sheetnames
+          assert len(wb.sheetnames)==13, wb.sheetnames
           ids=[r[0] for r in list(wb['Restaurants'].values)[1:]]
           assert len(ids)==206 and len(set(ids))==206
           assert len(list(wb['LegacyFields'].values))-1==206
-          print('PASS: 12 worksheets, 206 unique IDs and 206 lossless payloads')
+          print('PASS: 13 worksheets, 206 unique IDs and 206 lossless payloads')
           PY
       - name: Validate relational category foreign keys
         run: |
@@ -81,6 +81,21 @@ jobs:
            assert status=='unverified', f'Legacy reference incorrectly asserted verified: {eid}'
            assert sources[sid][1].startswith(('http://','https://'))
           print(f'PASS: {len(sources)} sources and {len(evidence)} unverified evidence leads')
+          PY
+      - name: Verify history is preserved but cannot silently alter delivery JSON
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-eatery.xlsx')
+          assert 'ResearchHistory' in wb.sheetnames
+          rid=wb['Restaurants']['A2'].value
+          wb['ResearchHistory'].append(['HISTORY:TEST',rid,'name',None,'2026-11-08','test','propose','old','new','conflicting'])
+          wb.save('/tmp/rde-history.xlsx')
+          subprocess.run(['python','scripts/rde_workbook.py','import','/tmp/rde-history.xlsx','/tmp/rde-history.json'],check=True)
+          assert json.loads(Path('/tmp/rde-history.json').read_text())==json.loads(Path('data/eateries.json').read_text())
+          print('PASS: research history cannot silently overwrite delivery data')
           PY
       - name: Verify intentional editing and reject legacy corruption
         run: |
