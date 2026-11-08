@@ -47,18 +47,25 @@ def export(src,dst):
   ws.auto_filter.ref=f"A1:{get_column_letter(len(headers))}1"
   for cell in ws[1]: cell.font=Font(color="FFFFFF",bold=True);cell.fill=PatternFill("solid",fgColor="174A67")
   ws.column_dimensions["A"].width=25
+ categories={}
  for r in records:
   rid=r["id"]
   wb["Restaurants"].append([rid]+[r.get(f) if not isinstance(r.get(f),(dict,list)) else canonical(r[f]) for f in FIELDS])
   raw=canonical(r)
   wb["LegacyFields"].append([rid,raw,digest(raw)])
-  if r.get("cuisine"): wb["RestaurantCategories"].append([rid,"CUISINE:"+str(r["cuisine"]),"unverified",None])
+  if r.get("cuisine"):
+   label=str(r["cuisine"])
+   catid="CUISINE:"+label
+   categories[catid]=label
+   wb["RestaurantCategories"].append([rid,catid,"unverified",None])
   if r.get("hours"): wb["Hours"].append(["H:"+rid,rid,r["hours"],"unverified",None,None])
   if r.get("menuUrl"): wb["Menus"].append(["M:"+rid,rid,r["menuUrl"],"unverified",None,None])
   if r.get("photo"): wb["Media"].append(["P:"+rid,rid,r["photo"],"legacy",r.get("photoLicense"),r.get("photoCreator"),r.get("photoCaption"),None])
   for k,v in (r.get("attributes") or {}).items():
    if isinstance(v,dict): wb["Features"].append([rid,k,str(v.get("value","unknown")),str(v.get("status","unverified")),None,None])
   wb["ResearchStatus"].append([rid,"general","not_yet_researched",None,None])
+ for catid,label in sorted(categories.items()):
+  wb["Categories"].append([catid,"cuisine",label,True])
  wb["LegacyFields"].column_dimensions["B"].width=65
  wb.save(dst)
  # Capture values exactly as Excel will return them (blank cells and float rounding).
