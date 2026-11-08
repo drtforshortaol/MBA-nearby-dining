@@ -11,10 +11,10 @@ th{position:sticky;top:0;background:#e6f1f7}.scroll{max-height:65vh;overflow:aut
 small{color:#526579}.warning{color:#8a4400}#message{font-weight:600}label{display:inline-block}
 </style></head><body>
 <header><h1>Research Data Editor</h1><p>Local-only prototype • No Excel required • No automatic publishing</p>
-<p class="warning">Load a copy of the current restaurant JSON. Exports are candidate files for review, not production updates. Research evidence and approval must be handled separately.</p>
+<p class="warning">Load a copy of the current restaurant JSON. Direct edit exports are UNAPPROVED drafts, not production updates. Only evidence-backed, independently reviewed research can be promoted through the controlled exporter.</p>
 <label>Choose restaurant JSON <input id="file" type="file" accept=".json,application/json"></label>
 <label>Search <input id="search" type="search" placeholder="Restaurant name or ID"></label>
-<button id="download" disabled>Export candidate JSON</button><button id="exportResearch" disabled>Export research proposals</button><button id="discard" disabled>Discard edits</button>
+<button id="download" disabled>Export unapproved edit draft</button><button id="exportResearch" disabled>Export research proposals</button><button id="discard" disabled>Discard edits</button>
 <p id="message" role="status" aria-live="polite">No data loaded.</p></header>
 <section><strong id="count">0 restaurants</strong><small> — Editable fields: name, address, city, phone, website, hours, cuisine, area. Permanent IDs and all other fields remain protected.</small></section>
 <section><h2>Research proposal (review required)</h2><label>Restaurant <select id="researchRestaurant" disabled></select></label><label>Field <select id="researchField"><option>name</option><option>address</option><option>city</option><option>phone</option><option>website</option><option>hours</option><option>cuisine</option><option>area</option></select></label><label>Proposed value <input id="proposed" type="text"></label><label>Source URL <input id="sourceUrl" type="url"></label><label>Researcher <input id="researcher" type="text"></label><label>Reason <input id="claim" type="text"></label><button id="addResearch" disabled>Queue for review</button><div id="researchList"></div><h3>Review pending proposals</h3><label>Reviewer <input id="reviewer" type="text"></label><label>Review reason <input id="reviewReason" type="text"></label><label>Proposal <select id="reviewTarget"></select></label><label>Decision <select id="reviewDecision"><option>pending</option><option>accepted</option><option>rejected</option><option>conflicting</option><option>needs_more_evidence</option></select></label><button id="recordReview" disabled>Record review</button><button id="exportReviews" disabled>Export review bundle</button><div id="reviewList"></div></section><div class="scroll"><table><thead><tr><th>Permanent ID</th><th>Restaurant</th><th>City</th><th>Cuisine</th><th>Phone</th><th>Website</th><th>Hours</th></tr></thead><tbody id="rows"></tbody></table></div>
@@ -29,7 +29,7 @@ function valid(items){
  if(!Array.isArray(items)||items.length!==206)throw Error('Expected 206 restaurant records; no data imported.');
  const ids=new Set();
  for(const item of items){
-  if(!item||typeof item.id!=='string'||!/^MBA-DINE-\d+$/.test(item.id)||ids.has(item.id))throw Error('Invalid or duplicate permanent ID.');
+  if(!item||typeof item.id!=='string'||!/^MBA-DINE-\d+$/.test(item.id)||ids.has(item.id)||typeof item.name!=='string'||!item.name.trim())throw Error('Invalid record, restaurant name, or duplicate permanent ID.');
   ids.add(item.id);
  }
 }
@@ -118,9 +118,9 @@ $('download').addEventListener('click',()=>{
    }
   }
   const blob=new Blob([JSON.stringify(records,null,2)+'\n'],{type:'application/json'});
-  const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='rde-candidate-review-only.json';a.click();
+  const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='rde-unapproved-edit-draft.json';a.click();
   setTimeout(()=>URL.revokeObjectURL(url),3000);
-  $('message').textContent='Candidate downloaded for validation and review. Not published.';
+  $('message').textContent='UNAPPROVED edit draft downloaded. Not eligible for publication without research and independent review.';
  }catch(err){$('message').textContent='Export blocked: '+err.message;}
 });
 window.addEventListener('beforeunload',e=>{if(changed()){e.preventDefault();e.returnValue='';}});
