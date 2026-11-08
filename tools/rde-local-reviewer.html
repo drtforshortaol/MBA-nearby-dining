@@ -15,9 +15,12 @@ $('file').addEventListener('change',async e=>{
   for(const p of data.proposals){
    const box=document.createElement('section'),title=document.createElement('h3'),detail=document.createElement('p'),select=document.createElement('select');
    title.textContent=p.restaurant_id+' — '+p.field_path;
-   detail.textContent='Current: '+String(p.previous_value)+' → Proposed: '+p.proposed_value+' | Source: '+p.source_url+' | Researcher: '+p.researcher;
+   detail.textContent='Current: '+String(p.previous_value)+' → Proposed: '+p.proposed_value+' | Researcher: '+p.researcher;
+   const source=document.createElement('p'),link=document.createElement('a');
+   source.textContent='Evidence source: ';
+   try{const u=new URL(p.source_url);if(!['https:','http:'].includes(u.protocol))throw Error('Unsupported source URL');link.href=u.href;link.textContent=u.href;link.target='_blank';link.rel='noopener noreferrer';source.append(link);}catch{source.append(document.createTextNode(String(p.source_url)+' (invalid URL)'));}
    for(const value of allowed){const option=document.createElement('option');option.value=value;option.textContent=value;select.append(option);}
-   select.dataset.historyId=p.history_id;box.append(title,detail,select);$('items').append(box);
+   select.dataset.historyId=p.history_id;box.append(title,detail,source,select);$('items').append(box);
   }
   $('export').disabled=false;$('status').textContent=data.proposals.length+' proposals ready for independent review.';
  }catch(err){e.target.value='';$('status').textContent='Import blocked; existing review preserved: '+err.message;}
