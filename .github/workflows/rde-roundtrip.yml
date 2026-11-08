@@ -471,3 +471,23 @@ jobs:
           assert.ok(script.includes("original=null;records=null;proposals=[];reviews=[]"));
           console.log('PASS: invalid replacement preserves loaded state; initial invalid import clears state');
           JS
+      - name: Pending reviews remain open for future independent decisions
+        run: |
+          python - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          proposals=json.loads(Path('/tmp/rde-browser-proposals.json').read_text())
+          p=proposals['proposals'][0]
+          review={'history_id':p['history_id'],'restaurant_id':p['restaurant_id'],'field_path':p['field_path'],'decision':'pending','reviewer':'independent reviewer','reviewed_at':'2026-11-08T12:00:00Z','reason':'Awaiting evidence'}
+          payload={'schema':'mba-rde-review-decisions-v1','publication_status':'not_published','restaurant_count':206,'proposals':proposals['proposals'],'reviews':[review]}
+          source=Path('/tmp/rde-pending-review.json');source.write_text(json.dumps(payload))
+          ingested=Path('/tmp/rde-pending-ingested.xlsx')
+          subprocess.run(['python','scripts/rde_ingest.py','/tmp/rde-eatery.xlsx','/tmp/rde-browser-proposals.json',str(ingested)],check=True)
+          output=Path('/tmp/rde-pending-reviewed.xlsx')
+          subprocess.run(['python','scripts/rde_review_ingest.py',str(ingested),str(source),str(output)],check=True)
+          queue=list(load_workbook(output)['ReviewQueue'].values)
+          row=next(r for r in queue[1:] if r[1]=='INGEST:H:'+p['history_id'])
+          assert row[4]=='pending' and row[5] is None and row[6] is None and row[7] is None,row
+          print('PASS: pending review does not finalize or lock queue')
+          PY
