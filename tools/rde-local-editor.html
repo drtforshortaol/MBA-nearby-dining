@@ -6,7 +6,8 @@ body{font:15px system-ui,sans-serif;margin:1.5rem;color:#183047;background:#f5f8
 header,section{background:white;padding:1rem;border:1px solid #d4e0e8;border-radius:10px;margin-bottom:1rem}
 button,input,select{font:inherit;padding:.5rem;margin:.25rem}button{cursor:pointer;background:#174a67;color:white;border:0;border-radius:5px}
 button:disabled{opacity:.5}table{border-collapse:collapse;width:100%;background:white}th,td{padding:.5rem;border:1px solid #dae2e8;text-align:left}
-th{position:sticky;top:0;background:#e6f1f7}.scroll{max-height:65vh;overflow:auto}input[type=text]{max-width:220px}
+th{position:sticky;top:0;background:#e6f1f7}.scroll{max-height:65vh;overflow:auto}input[type=text]{max-width:220px}input,select,button{max-width:100%;box-sizing:border-box}input:focus-visible,select:focus-visible,button:focus-visible{outline:3px solid #eea800;outline-offset:2px}
+@media(max-width:680px){body{margin:.5rem;font-size:16px}header,section{padding:.75rem}label{display:block;margin:.65rem 0}input,select,button{font-size:16px;min-height:44px}label input,label select{display:block;width:100%;max-width:none}button{margin:.35rem .15rem}.scroll{max-height:55vh}table{min-width:920px}th,td{padding:.35rem}td input{min-width:130px}}
 small{color:#526579}.warning{color:#8a4400}#message{font-weight:600}label{display:inline-block}
 </style></head><body>
 <header><h1>Research Data Editor</h1><p>Local-only prototype • No Excel required • No automatic publishing</p>
@@ -14,7 +15,7 @@ small{color:#526579}.warning{color:#8a4400}#message{font-weight:600}label{displa
 <label>Choose restaurant JSON <input id="file" type="file" accept=".json,application/json"></label>
 <label>Search <input id="search" type="search" placeholder="Restaurant name or ID"></label>
 <button id="download" disabled>Export candidate JSON</button><button id="exportResearch" disabled>Export research proposals</button><button id="discard" disabled>Discard edits</button>
-<p id="message" role="status">No data loaded.</p></header>
+<p id="message" role="status" aria-live="polite">No data loaded.</p></header>
 <section><strong id="count">0 restaurants</strong><small> — Editable fields: name, address, city, phone, website, hours, cuisine, area. Permanent IDs and all other fields remain protected.</small></section>
 <section><h2>Research proposal (review required)</h2><label>Restaurant <select id="researchRestaurant" disabled></select></label><label>Field <select id="researchField"><option>name</option><option>address</option><option>city</option><option>phone</option><option>website</option><option>hours</option><option>cuisine</option><option>area</option></select></label><label>Proposed value <input id="proposed" type="text"></label><label>Source URL <input id="sourceUrl" type="url"></label><label>Researcher <input id="researcher" type="text"></label><label>Reason <input id="claim" type="text"></label><button id="addResearch" disabled>Queue for review</button><div id="researchList"></div><h3>Review pending proposals</h3><label>Reviewer <input id="reviewer" type="text"></label><label>Review reason <input id="reviewReason" type="text"></label><label>Proposal <select id="reviewTarget"></select></label><label>Decision <select id="reviewDecision"><option>pending</option><option>accepted</option><option>rejected</option><option>conflicting</option><option>needs_more_evidence</option></select></label><button id="recordReview" disabled>Record review</button><button id="exportReviews" disabled>Export review bundle</button><div id="reviewList"></div></section><div class="scroll"><table><thead><tr><th>Permanent ID</th><th>Restaurant</th><th>City</th><th>Cuisine</th><th>Phone</th><th>Website</th><th>Hours</th></tr></thead><tbody id="rows"></tbody></table></div>
 <script>
