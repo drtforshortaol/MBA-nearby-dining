@@ -491,3 +491,28 @@ jobs:
           assert row[4]=='pending' and row[5] is None and row[6] is None and row[7] is None,row
           print('PASS: pending review does not finalize or lock queue')
           PY
+      - name: Complete deferred review in a later independent cycle
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          proposals=json.loads(Path('/tmp/rde-browser-proposals.json').read_text())
+          p=proposals['proposals'][0]
+          review={'history_id':p['history_id'],'restaurant_id':p['restaurant_id'],'field_path':p['field_path'],'decision':'accepted','reviewer':'second independent reviewer','reviewed_at':'2026-11-08T13:00:00Z','reason':'Evidence independently checked'}
+          payload={'schema':'mba-rde-review-decisions-v1','publication_status':'not_published','restaurant_count':206,'proposals':proposals['proposals'],'reviews':[review]}
+          path=Path('/tmp/rde-deferred-accepted.json');path.write_text(json.dumps(payload))
+          result=Path('/tmp/rde-deferred-final.xlsx')
+          subprocess.run(['python','scripts/rde_review_ingest.py','/tmp/rde-pending-reviewed.xlsx',str(path),str(result)],check=True)
+          queue=list(load_workbook(result)['ReviewQueue'].values)
+          row=next(r for r in queue[1:] if r[1]=='INGEST:H:'+p['history_id'])
+          assert row[4]=='accepted' and row[5]=='second independent reviewer',row
+          candidate=Path('/tmp/rde-deferred-candidate.json')
+          subprocess.run(['python','scripts/rde_approve.py',str(result),'data/eateries.json',str(candidate)],check=True)
+          baseline=json.loads(Path('data/eateries.json').read_text())
+          edited=json.loads(candidate.read_text())
+          assert len(edited)==len(baseline)==206
+          assert [r['id'] for r in edited]==[r['id'] for r in baseline]
+          assert next(r for r in edited if r['id']==p['restaurant_id'])[p['field_path']]==p['proposed_value']
+          print('PASS: pending → accepted → candidate; IDs preserved; production untouched')
+          PY
