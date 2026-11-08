@@ -1,0 +1,43 @@
+name: RDE lossless workbook smoke test
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'scripts/rde_workbook.py'
+      - '.github/workflows/rde-roundtrip.yml'
+      - 'data/eateries.json'
+jobs:
+  roundtrip:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install openpyxl==3.1.5
+      - name: Export 206 restaurants to Excel
+        run: python scripts/rde_workbook.py export data/eateries.json /tmp/rde-eatery.xlsx
+      - name: Import Excel to staging JSON
+        run: python scripts/rde_workbook.py import /tmp/rde-eatery.xlsx /tmp/rde-candidate.json
+      - name: Verify exact semantic round trip
+        run: python scripts/rde_workbook.py verify data/eateries.json /tmp/rde-candidate.json
+      - name: Verify workbook structure and identifiers
+        run: |
+          python - <<'PY'
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-eatery.xlsx',read_only=True)
+          assert len(wb.sheetnames)==12, wb.sheetnames
+          ids=[r[0] for r in list(wb['Restaurants'].values)[1:]]
+          assert len(ids)==206 and len(set(ids))==206
+          assert len(list(wb['LegacyFields'].values))-1==206
+          print('PASS: 12 worksheets, 206 unique IDs and 206 lossless payloads')
+          PY
+      - name: Verify existing application
+        run: node scripts/validate.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rde-eatery-workbook
+          path: /tmp/rde-eatery.xlsx
+          retention-days: 14
