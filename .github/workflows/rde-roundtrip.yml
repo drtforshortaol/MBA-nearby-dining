@@ -610,6 +610,26 @@ jobs:
           }
           console.log('PASS: reviewer responsive controls and evidence wrapping present');
           JS
+      - name: Validate unpublished storefront photo intake
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          photos=json.loads(Path('data/photo-intake-pending.json').read_text())
+          eateries=json.loads(Path('data/eateries.json').read_text())
+          by_id={r['id']:r for r in eateries}
+          assert photos['schema']=='mba-eatery-photo-intake-v1'
+          assert photos['publication_status']=='not_published'
+          for item in photos['items']:
+              assert item['restaurant_id'] in by_id
+              assert by_id[item['restaurant_id']]['name']==item['restaurant_name']
+              assert item['asset_status']=='awaiting_binary_import'
+              assert item['repository_asset_path'] is None
+              assert item['offline_verified'] is False
+              assert not by_id[item['restaurant_id']].get('photo')
+              assert item['permission_record'] and Path(item['permission_record']).is_file()
+          print('PASS: authorized photo intake linked to permanent ID without false publication or offline claims')
+          PY
       - name: Verify unique editor exports and single exit warning
         run: |
           node --input-type=module <<'JS'
