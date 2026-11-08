@@ -322,6 +322,25 @@ jobs:
           assert.ok(html.includes('!item.name.trim()'));
           console.log('PASS: direct browser draft clearly separated from reviewed candidate');
           JS
+      - name: Enforce reviewer independence at final exporter boundary
+        run: |
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-browser-reviewed.xlsx')
+          for row in wb['ReviewQueue'].iter_rows(min_row=2):
+           if row[4].value=='accepted':
+            row[5].value='Researcher A'
+            break
+          wb.save('/tmp/rde-selfapproved.xlsx')
+          dest=Path('/tmp/rde-selfapproved-candidate.json')
+          if dest.exists():dest.unlink()
+          p=subprocess.run(['python','scripts/rde_approve.py','/tmp/rde-selfapproved.xlsx','data/eateries.json',str(dest)],capture_output=True,text=True)
+          assert p.returncode!=0 and 'Independent reviewer required' in p.stderr
+          assert not dest.exists()
+          print('PASS: final exporter blocks self-approval')
+          PY
       - name: Verify existing application
         run: node scripts/validate.mjs
       - uses: actions/upload-artifact@v4
