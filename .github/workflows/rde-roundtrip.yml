@@ -351,6 +351,15 @@ jobs:
           for(const term of ['206 restaurants','rde-local-editor.html','unapproved edit draft','Self-approval','not','No production deployment','iOS'])assert.ok(guide.toLowerCase().includes(term.toLowerCase()),term);
           console.log('PASS: iPhone acceptance guide covers mobile, safety and limitations');
           JS
+      - name: Check mobile file picker and unsaved research warnings
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
+          for(const term of ['Choose restaurant JSON → Browse','Safari Downloads','function pendingWork()','proposals.length>0','reviews.length>0','if(pendingWork())','Queue a research proposal before exporting'])assert.ok(html.includes(term),term);
+          console.log('PASS: mobile file handling guidance and unsaved-work warning');
+          JS
       - name: Verify existing application
         run: node scripts/validate.mjs
       - uses: actions/upload-artifact@v4
