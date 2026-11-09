@@ -4762,18 +4762,20 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Thu 5–9 PM; Fri–Sat kitchen 4:30–10 PM (bar until 11 PM); Sun 4:30–9 PM.",
     "serviceClass": "Restaurant / full service",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch8-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-08",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.44,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Restaurant / full service at 474 Alvarado St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.alejandros.co/location/alejandros/"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": []
     }
@@ -5525,18 +5527,20 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Wed–Mon 11 AM–3 PM and 4:30–9:30 PM; closed Tuesday.",
     "serviceClass": "Chinese restaurant",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch7-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-08",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.38,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Chinese restaurant at 429 Alvarado St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.fullmoonca.com/"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": []
     }
@@ -5804,18 +5808,20 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Thu 11:30 AM–9 PM; Fri 11:30 AM–10 PM; Sat 10 AM–10 PM; Sun 10 AM–8 PM.",
     "serviceClass": "Gastropub / burgers / wood-fired pizza / brunch",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch8-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-08",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.49,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Gastropub / burgers / wood-fired pizza / brunch at 484 Washington St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://melvilletav.com/"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": []
     }
@@ -6194,18 +6200,20 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Sun–Thu 10 AM–10 PM; Fri–Sat 10 AM–11 PM.",
     "serviceClass": "Mexican / taqueria",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch8-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-08",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.42,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Mexican / taqueria at 462 Alvarado St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.papachanostaqueria.com/"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": []
     }
@@ -6468,18 +6476,20 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 6 AM–1 PM (Monterey/Alvarado location).",
     "serviceClass": "Bakery / café",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch7-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-08",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.39,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Bakery / café at 433 Alvarado St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.redsdonutsinc.com/where-to-find-us"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": []
     }
@@ -6628,18 +6638,20 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Sat 11 AM–2:45 PM and 4:30–8 PM; Sun noon–3 PM and 5–8 PM.",
     "serviceClass": "Restaurant / prepared meals",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch9-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-08",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.6,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Restaurant / prepared meals at 131 Webster St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.siamesebayrestaurant.com/contact/"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": []
     }
