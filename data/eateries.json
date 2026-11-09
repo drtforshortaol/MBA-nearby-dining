@@ -3177,18 +3177,20 @@
     "photoCreator": "",
     "photoSource": "",
     "photoDate": "",
-    "statusNote": "Use current 650 Lighthouse Ave, Pacific Grove location; former Monterey storefront is historical.",
+    "statusNote": "Use current 650 Lighthouse Ave, Pacific Grove location; former Monterey storefront is historical. Official contact page currently states 'Temporary Closed- We are moving'; do not recommend as an open dining option until reconfirmed.",
     "hours": "",
     "serviceClass": "Bakery / breakfast / lunch / espresso",
     "area": "Pacific Grove",
     "batchReview": {
       "batch": "nearby-20-batch4-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-08",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1,
-      "sourceStatus": "existing-record-only; official website not independently verified",
+      "sourceStatus": "official-website-temporary-closure-no-hours",
       "visitorTip": "Bakery / breakfast / lunch / espresso at 650 Lighthouse Ave Suite 100. Current menu, hours and operating status require confirmation before recommending.",
-      "sources": [],
+      "sources": [
+        "https://www.theperfectcrumbbakery.net/contact"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": []
@@ -6323,18 +6325,20 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Fri 7 AM–5 PM; Sat–Sun 8 AM–4 PM.",
     "serviceClass": "Juice / smoothie shop",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch8-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-08",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.46,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Juice / smoothie shop at 491 Alvarado St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.perfectlypressedjuice.com/contact-1"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": []
     }
@@ -6677,17 +6681,19 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Wed–Mon 6:30 AM–2:30 PM; closed Tuesday (January 2026 opening announcement; reconfirm before visit).",
     "serviceClass": "Bakery / café",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch9-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-08",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.59,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "local-association-published-schedule-provisional",
       "visitorTip": "Bakery / café at 160 Webster St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
+      "sources": [
+        "https://www.oldmonterey.org/news/2026/01/new-specialty-coffee-shop-downtown-monterey-six-over"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": []
@@ -6874,18 +6880,20 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Sat 7:30 AM–7 PM; Sun 7:30 AM–6 PM.",
     "serviceClass": "Plant-based bowls / café",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch8-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-08",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.44,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Plant-based bowls / café at 475 Alvarado Street. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://terrasuperfoods.com/"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": []
     }
@@ -7924,18 +7932,20 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon, Wed–Sun 7 AM–3:30 PM; closed Tuesday.",
     "serviceClass": "Cafe and bakery",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch9-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-08",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.69,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "official-website-checked-hours",
       "visitorTip": "Cafe and bakery at 731 Munras Ave Suite B. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://www.thewildplumcafe.com/contact"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": []
     }
@@ -7998,17 +8008,19 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 11 AM–8 PM (April 2025 opening schedule; historical, reconfirm before visiting).",
     "serviceClass": "Vietnamese; pho, rice dishes, banh mi, boba",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch7-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-08",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.4,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "historical-local-association-schedule-provisional",
       "visitorTip": "Vietnamese; pho, rice dishes, banh mi, boba at 422 Tyler St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
+      "sources": [
+        "https://www.oldmonterey.org/blogs?%2526page=826&page=1"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": []
@@ -8035,17 +8047,19 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon–Thu 1–10 PM; Fri 1–11 PM; Sat–Sun noon–11 PM (July 2026 published schedule; reconfirm).",
     "serviceClass": "Dessert / snacks",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch9-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-08",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.57,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "local-association-published-schedule-provisional",
       "visitorTip": "Dessert / snacks at 595 Munras Ave, Suite 103. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
+      "sources": [
+        "https://www.oldmonterey.org/blogs?%2526page=470&page=1"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": []
@@ -8262,17 +8276,19 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "Public outdoor EAT takeout window is distinct from the nightclub. June 8, 2026 district report says everyone can order Friday/Saturday until 2am. Nightclub restrictions do not prove restrictions at the outdoor window. Current opening time and ongoing food schedule unverified; confirm before a special trip.",
-    "hours": "",
+    "hours": "Fri–Sat takeout window serves late-night food until 2 AM; opening time and other days unverified.",
     "serviceClass": "Late-night takeout: hot dogs, chicken strips, fries",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch7-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-08",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.39,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "partial-hours-local-association",
       "visitorTip": "Late-night takeout: hot dogs, chicken strips, fries at 420 Tyler St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
+      "sources": [
+        "https://www.oldmonterey.org/news?page=2"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": []
