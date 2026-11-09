@@ -10,7 +10,7 @@ const photo=(r,cl='thumb')=>`<button type="button" class="${cl}" data-action="ph
 const addr=r=>[r.address,r.city,'CA'].filter(Boolean).join(', ');
 const directions=(r)=>'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(addr(r))+'&travelmode='+(travel==='drive'?'driving':'walking');
 const mapLink=(r)=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(addr(r));
-function nav(m,id){if(mode!==m||id&&id!==selected)navHistory.push({mode,selected,shared});mode=m;if(id)selected=id;photoExpanded=false;render();scrollTo({top:0,behavior:'instant'})}
+function nav(m,id){if(shared&&m!=='guest'&&m!=='go')return;if(shared&&m==='go'&&!idsFromUrl().includes(id))return;if(mode!==m||id&&id!==selected)navHistory.push({mode,selected,shared});mode=m;if(id)selected=id;photoExpanded=false;render();scrollTo({top:0,behavior:'instant'})}
 function back(){if(shared&&mode==='guest')return;if($('lightbox')){$('lightbox').remove();return}if(navHistory.length){let previous=navHistory.pop();mode=previous.mode;selected=previous.selected;shared=previous.shared}else if(mode==='share')mode='basket';else mode=shared?'guest':'explore';render();scrollTo({top:0,behavior:'instant'})}
 function home(){if(shared)return;if($('lightbox'))$('lightbox').remove();navHistory=[];mode='explore';selected=null;shared=false;photoExpanded=false;let u=new URL(location.href);u.searchParams.delete('share');history.replaceState(null,'',u.pathname+u.search+u.hash);render();scrollTo({top:0,behavior:'instant'})}
 
