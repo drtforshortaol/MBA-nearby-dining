@@ -2811,12 +2811,12 @@
     "lat": 36.6203932,
     "lon": -121.9159643,
     "website": "https://goodiesdelipg.com/",
-    "photo": null,
-    "photoCaption": "",
-    "photoCaution": "",
+    "photo": "IMG_4940.jpeg",
+    "photoCaption": "Goodies Delicatessen storefront and entrance with Goodies window sign and outdoor seating. Appearance may change.",
+    "photoCaution": "Photograph capture date and current storefront appearance not independently verified.",
     "photoLicense": "",
     "photoCreator": "",
-    "photoSource": "",
+    "photoSource": "Owner-provided photo uploaded to project repository (IMG_4940.jpeg).",
     "photoDate": "",
     "statusNote": "",
     "hours": "Mon–Sat 9 AM–5 PM; Sun closed.",
@@ -2837,7 +2837,8 @@
       "verifiedFields": [
         "visitorTip",
         "hours"
-      ]
+      ],
+      "photoReviewStatus": "owner-supplied image; capture date and rights not independently documented"
     }
   },
   {
