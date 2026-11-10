@@ -281,6 +281,24 @@
         "hours"
       ],
       "hoursNote": "Location-specific published schedule checked 2026-11-07; holiday changes possible."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://canneryrow.com/plan-your-visit/dine/",
+        "https://cannerypizzaco.webnode.page/contact/"
+      ],
+      "food": "Build-your-own, made-to-order pizza according to existing operator and Cannery Row research.",
+      "experience": "Casual pizza stop near the aquarium.",
+      "seating": "Dine-in tables, outdoor seating and group capacity not independently verified.",
+      "accessibility": "Step-free entrance and accessible restroom not independently verified.",
+      "dietary": "Gluten-free crust, vegan cheese and allergen handling not independently verified.",
+      "family": "Existing research describes a casual family-friendly pizza option; children's menu and highchairs not independently verified.",
+      "reservation": "Advance ordering, group orders and table reservations not independently verified.",
+      "entrance": "751 Cannery Row; exact shop entrance and accessible route not independently verified.",
+      "hoursNote": "Location-specific schedule checked November 7; confirm holiday and special hours.",
+      "hoursSource": "https://cannerypizzaco.webnode.page/"
     }
   },
   {
@@ -479,6 +497,24 @@
       "source": "https://www.menupix.com/california/restaurants/5548663/Dippin-Dots-Menu-Monterey-CA",
       "checkedOn": "2026-11-07",
       "note": "MenuPix, Restaurantji, and SuperPages publish the same seven-day schedule for the shop at 711 Cannery Row and the same phone number. SuperPages says hours may vary. The official chain locator confirms the shop and phone. Its store-hours field is empty. The earlier 11 AM–5:30 PM candidate lacked an identifiable hours page."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://canneryrow.com/plan-your-visit/dine/",
+        "https://canneryrow.com/experience/snack-attack/"
+      ],
+      "food": "Flash-frozen beaded ice cream, traditional scoops and sodas in prior Cannery Row research.",
+      "experience": "Quick dessert stop on Cannery Row.",
+      "seating": "Indoor or outdoor seating not independently verified.",
+      "accessibility": "Accessible entrance and queue route not independently verified.",
+      "dietary": "Dairy, nut and other allergens may be present; vegan options and cross-contact practices not independently verified.",
+      "family": "Dessert stop; age-appropriate food choices and seating not independently verified.",
+      "reservation": "Walk-in and group-order arrangements not independently verified.",
+      "entrance": "711 Cannery Row; exact counter and building access not independently verified.",
+      "hoursNote": "Hours from prior location research; confirm before visiting.",
+      "hoursSource": "https://www.dippindots.com/"
     }
   },
   {
@@ -842,6 +878,23 @@
       "source": "https://www.tripadvisor.com.mx/Restaurant_Review-g32737-d849140-Reviews-Lilly_Mae_s_Cinnamon_Rolls-Monterey_Monterey_County_California.html",
       "checkedOn": "2026-11-07",
       "note": "Tripadvisor and Yellow Pages publish the same seven-day schedule at Suite H, 700 Cannery Row. The Cannery Row business directory confirms address and phone."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://canneryrow.com/plan-your-visit/dine/"
+      ],
+      "food": "Cinnamon rolls, baked goods and coffee according to existing Cannery Row listing.",
+      "experience": "Quick sweet snack or breakfast treat.",
+      "seating": "Dine-in seating and takeout setup not independently verified.",
+      "accessibility": "Step-free entrance and accessible counter not independently verified.",
+      "dietary": "Baked goods may contain wheat, dairy, eggs or nuts; allergen and cross-contact practices not independently verified.",
+      "family": "Quick pastry stop; children's seating not independently verified.",
+      "reservation": "Preordering and group-order policies not independently verified.",
+      "entrance": "700 Cannery Row; exact suite or doorway not independently verified.",
+      "hoursNote": "Hours from earlier Cannery Row research; reconfirm.",
+      "hoursSource": "https://canneryrow.com/business/lilly-maes-cinnamon-rolls/"
     }
   },
   {
@@ -1247,7 +1300,25 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://www.ihg.com/intercontinental/hotels/us/en/monterey/mryha/hoteldetail/dining"
+    "menuUrl": "https://www.ihg.com/intercontinental/hotels/us/en/monterey/mryha/hoteldetail/dining",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://canneryrow.com/experience/menu-matters/",
+        "https://www.ihg.com/intercontinental/hotels/us/en/monterey/mryha/hoteldetail/dining"
+      ],
+      "food": "California coastal hotel restaurant; breakfast and dinner described in previously reviewed operator materials.",
+      "experience": "Oceanfront dining at street level of The Clement hotel; bar reportedly opens at 4 PM.",
+      "seating": "Bay-facing setting reported; specific tables, patio and group capacity not independently verified.",
+      "accessibility": "Hotel and restaurant step-free entry, dining route and restrooms not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen accommodations not independently verified.",
+      "family": "Hotel restaurant; children's menu and highchairs not independently verified.",
+      "reservation": "Table reservation and walk-in policies not independently verified.",
+      "entrance": "750 Cannery Row at The Clement hotel; precise restaurant doorway and accessible route not independently verified.",
+      "hoursNote": "Breakfast and dinner listed in prior operator review; no regular lunch service confirmed. Verify hours before visiting.",
+      "hoursSource": "https://www.ihg.com/intercontinental/hotels/us/en/monterey/mryha/hoteldetail/dining"
+    }
   },
   {
     "id": "MBA-DINE-0023",
