@@ -6,6 +6,7 @@ const app=read('app.js'),sw=read('sw.js'),css=read('style.css');
 const data=JSON.parse(read('data/eateries.json'));
 const meta=JSON.parse(read('data/metadata.json'));
 assert.equal(data.length,206,'Restaurant count changed');
+assert.match(app,/\$\{travel==='drive'\?'🚗':'🚶'\} \$\{travelLabel\(r,travel\)\}/,'Restaurant cards must reflect selected walking or driving mode');
 assert.match(app,/shared=new URL\(location.href\)\.searchParams.has\('share'\)/,'Guest mode must include malformed shared URLs');
 assert(app.includes('This shared dining link has no available restaurant suggestions'),'Empty share message missing');
 assert.match(app,/mode=shared\?'guest':'explore'/,'Shared URL must open guest view');
