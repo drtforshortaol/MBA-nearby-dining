@@ -5523,6 +5523,23 @@
         "hours-provisional"
       ],
       "verificationNote": "Two versions of the official store listing conflict on Wednesday opening; leave provisional."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://restaurants.subway.com/united-states/ca/pacific-grove/190-country-club-gate"
+      ],
+      "food": "Restaurant / prepared meals at 190 Country Club Gate. Verify current operating status, hours and menu before recommending.",
+      "experience": "Quick dining or snack option described in existing research; exact menu and service availability not freshly verified.",
+      "seating": "Indoor seating, outdoor seating and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Ingredient, dietary and allergen cross-contact details not independently verified; confirm directly.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Walk-in, ordering and group policies not independently verified; no live availability checked.",
+      "entrance": "190 Country Club Gate; precise doorway and accessible approach not independently verified.",
+      "hoursNote": "Previously recorded schedule: Daily 8 AM–10 PM (official store page; another official variant lists Wednesday 9 AM opening).. Source classification: existing-record-only; requires independent source verification. Verify location-specific hours before recommending.",
+      "hoursSource": "https://restaurants.subway.com/united-states/ca/pacific-grove/190-country-club-gate"
     }
   },
   {
@@ -6208,6 +6225,23 @@
         "hours-directory-listed"
       ],
       "verificationNote": "Hours published by Monterey Wharf venue directory; not independently confirmed with restaurant, so hoursVerified remains false."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.montereywharf.com/dining/"
+      ],
+      "food": "Ice cream / shakes / sundaes at 43 Old Fisherman's Wharf. Verify current menu, operating status and hours before recommending.",
+      "experience": "Quick dining or snack option described in existing research; exact menu and service availability not freshly verified.",
+      "seating": "Indoor seating, outdoor seating and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Ingredient, dietary and allergen cross-contact details not independently verified; confirm directly.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Walk-in, ordering and group policies not independently verified; no live availability checked.",
+      "entrance": "43 Old Fisherman's Wharf; precise doorway and accessible approach not independently verified.",
+      "hoursNote": "Previously recorded schedule: Noon–7 PM (Monterey Wharf venue directory; independently reconfirm before visitor recommendation).. Source classification: existing-record-only; requires independent source verification. Verify location-specific hours before recommending.",
+      "hoursSource": "https://www.montereybaycreamery.com/"
     }
   },
   {
@@ -6248,6 +6282,23 @@
       "photoVerified": false,
       "verifiedFields": [],
       "hoursNote": "Wharf directory gives an undated schedule; provisional, not independently confirmed current."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.montereywharf.com/dining/kafe-toribashi.html"
+      ],
+      "food": "Ramen bar / ice cream / café (wharf district listing) at 95 Old Fisherman's Wharf. Verify current menu, operating status and hours before recommending.",
+      "experience": "Quick dining or snack option described in existing research; exact menu and service availability not freshly verified.",
+      "seating": "Indoor seating, outdoor seating and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Ingredient, dietary and allergen cross-contact details not independently verified; confirm directly.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Walk-in, ordering and group policies not independently verified; no live availability checked.",
+      "entrance": "95 Old Fisherman's Wharf; precise doorway and accessible approach not independently verified.",
+      "hoursNote": "Previously recorded schedule: Reported Mon–Fri 8 AM–3:30 PM; Sat–Sun 8 AM–5 PM. Confirm before visiting.. Source classification: directory-hours-provisional. Verify location-specific hours before recommending.",
+      "hoursSource": "https://kafe-toribashi.com/menu/"
     }
   },
   {
@@ -6631,6 +6682,24 @@
         "visitorTip"
       ],
       "hoursNote": "Provisional or conflicting schedule; source checked but not confirmed as current official hours."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.thebagelbakery.com/location.html",
+        "https://www.yellowpages.com/monterey-ca/mip/the-bagel-bakery-11779487"
+      ],
+      "food": "Bagel bakery at 452 Alvarado Street; official locations page confirms address but does not establish current hours.",
+      "experience": "Quick dining or snack option described in existing research; exact menu and service availability not freshly verified.",
+      "seating": "Indoor seating, outdoor seating and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Ingredient, dietary and allergen cross-contact details not independently verified; confirm directly.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Walk-in, ordering and group policies not independently verified; no live availability checked.",
+      "entrance": "452 Alvarado St; precise doorway and accessible approach not independently verified.",
+      "hoursNote": "Previously recorded schedule: Mon–Sat 7 AM–3 PM; Sun 11 AM–2 PM (directory-listed; confirm before visiting).. Source classification: directory-or-conflicting-hours-provisional. Verify location-specific hours before recommending.",
+      "hoursSource": "https://www.thebagelbakery.com/"
     }
   },
   {
@@ -6935,6 +7004,23 @@
         "hours"
       ],
       "verificationNote": "Official location-specific store hours checked 2026-11-07."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://locations.chipotle.com/ca/monterey/560-munras-ave"
+      ],
+      "food": "Fast casual / Mexican at 560 Munras Ave, Suite 20. Verify operating status, current menu and hours before recommending.",
+      "experience": "Quick dining or snack option described in existing research; exact menu and service availability not freshly verified.",
+      "seating": "Indoor seating, outdoor seating and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Ingredient, dietary and allergen cross-contact details not independently verified; confirm directly.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Walk-in, ordering and group policies not independently verified; no live availability checked.",
+      "entrance": "560 Munras Ave, Suite 20; precise doorway and accessible approach not independently verified.",
+      "hoursNote": "Previously recorded schedule: Daily 10:45 AM–10 PM.. Source classification: existing-record-only; requires independent source verification. Verify location-specific hours before recommending.",
+      "hoursSource": "https://locations.chipotle.com/ca/monterey/560-munras-ave"
     }
   },
   {
@@ -7425,6 +7511,23 @@
         "hours"
       ],
       "verificationNote": "Official location-specific store hours checked 2026-11-07."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://locations.ikessandwich.com/ca/monterey/115/"
+      ],
+      "food": "Restaurant / prepared meals at 570 Munras Ave, Suite 70. Verify operating status, current menu and hours before recommending.",
+      "experience": "Quick dining or snack option described in existing research; exact menu and service availability not freshly verified.",
+      "seating": "Indoor seating, outdoor seating and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Ingredient, dietary and allergen cross-contact details not independently verified; confirm directly.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Walk-in, ordering and group policies not independently verified; no live availability checked.",
+      "entrance": "570 Munras Ave, Suite 70; precise doorway and accessible approach not independently verified.",
+      "hoursNote": "Previously recorded schedule: Daily 10 AM–8:30 PM.. Source classification: existing-record-only; requires independent source verification. Verify location-specific hours before recommending.",
+      "hoursSource": "https://locations.ikessandwich.com/ca/monterey/115/"
     }
   },
   {
@@ -7526,6 +7629,23 @@
         "hours"
       ],
       "verificationNote": "Official location-specific store hours checked 2026-11-07."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://locations.jamba.com/ca/monterey/398-alvarado-street"
+      ],
+      "food": "Smoothies / fruit bowls / juices / snacks at 398 Alvarado St. Verify current operating status, hours and menu before recommending.",
+      "experience": "Quick dining or snack option described in existing research; exact menu and service availability not freshly verified.",
+      "seating": "Indoor seating, outdoor seating and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Ingredient, dietary and allergen cross-contact details not independently verified; confirm directly.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Walk-in, ordering and group policies not independently verified; no live availability checked.",
+      "entrance": "398 Alvarado St; precise doorway and accessible approach not independently verified.",
+      "hoursNote": "Previously recorded schedule: Mon–Sat 9 AM–6 PM; Sun 9 AM–5 PM.. Source classification: existing-record-only; requires independent source verification. Verify location-specific hours before recommending.",
+      "hoursSource": "https://locations.jamba.com/ca/monterey/398-alvarado-street"
     }
   },
   {
@@ -8217,6 +8337,23 @@
         "hours"
       ],
       "verificationNote": "Official location-specific store hours checked 2026-11-07."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.pandaexpress.com/locations/ca/monterey/3222"
+      ],
+      "food": "Chinese-American / quick service at 570 Munras Ave. Verify operating status, current menu and hours before recommending.",
+      "experience": "Quick dining or snack option described in existing research; exact menu and service availability not freshly verified.",
+      "seating": "Indoor seating, outdoor seating and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Ingredient, dietary and allergen cross-contact details not independently verified; confirm directly.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Walk-in, ordering and group policies not independently verified; no live availability checked.",
+      "entrance": "570 Munras Ave; precise doorway and accessible approach not independently verified.",
+      "hoursNote": "Previously recorded schedule: Daily 9:30 AM–9:30 PM.. Source classification: existing-record-only; requires independent source verification. Verify location-specific hours before recommending.",
+      "hoursSource": "https://www.pandaexpress.com/locations/ca/monterey/3222"
     }
   },
   {
@@ -8360,6 +8497,23 @@
         "hours"
       ],
       "verificationNote": "Official location-specific store hours checked 2026-11-07."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.peets.com/pages/store/monterey"
+      ],
+      "food": "Bakery / café at 560 Munras Ave. Verify operating status, current menu and hours before recommending.",
+      "experience": "Quick dining or snack option described in existing research; exact menu and service availability not freshly verified.",
+      "seating": "Indoor seating, outdoor seating and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Ingredient, dietary and allergen cross-contact details not independently verified; confirm directly.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Walk-in, ordering and group policies not independently verified; no live availability checked.",
+      "entrance": "560 Munras Ave; precise doorway and accessible approach not independently verified.",
+      "hoursNote": "Previously recorded schedule: Mon–Fri 5:30 AM–6 PM; Sat–Sun 6 AM–6 PM.. Source classification: existing-record-only; requires independent source verification. Verify location-specific hours before recommending.",
+      "hoursSource": "https://www.peets.com/pages/store/monterey"
     }
   },
   {
@@ -8563,6 +8717,23 @@
       "photoVerified": false,
       "verifiedFields": [],
       "hoursNote": "Third-party hours, unconfirmed by business."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.waze.com/live-map/directions/us/ca/monterey/plumes-coffee-and-tea?to=place.ChIJaR6TxyPkjYARA1HuUVvhKYc"
+      ],
+      "food": "Bakery / café at 400 Alvarado St. Verify current operating status, hours and menu before recommending.",
+      "experience": "Quick dining or snack option described in existing research; exact menu and service availability not freshly verified.",
+      "seating": "Indoor seating, outdoor seating and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Ingredient, dietary and allergen cross-contact details not independently verified; confirm directly.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Walk-in, ordering and group policies not independently verified; no live availability checked.",
+      "entrance": "400 Alvarado St; precise doorway and accessible approach not independently verified.",
+      "hoursNote": "Previously recorded schedule: Daily 6 AM–8:30 PM (navigation directory listing; confirm).. Source classification: directory-hours-provisional. Verify location-specific hours before recommending.",
+      "hoursSource": "https://www.oldmonterey.org/biz/plumes-coffee-house"
     }
   },
   {
@@ -8779,6 +8950,23 @@
       "photoVerified": false,
       "verifiedFields": [],
       "hoursNote": "Provisional or conflicting schedule; source checked but not confirmed as current official hours."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://ordering.roundtablepizza.com/site/rt79"
+      ],
+      "food": "Restaurant / prepared meals at 375 Alvarado St. Verify current operating status, hours and menu before recommending.",
+      "experience": "Quick dining or snack option described in existing research; exact menu and service availability not freshly verified.",
+      "seating": "Indoor seating, outdoor seating and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Ingredient, dietary and allergen cross-contact details not independently verified; confirm directly.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Walk-in, ordering and group policies not independently verified; no live availability checked.",
+      "entrance": "375 Alvarado St; precise doorway and accessible approach not independently verified.",
+      "hoursNote": "Previously recorded schedule: Daily 11 AM–10 PM; Fri–Sat until 11 PM (official ordering page also displays conflicting Tuesday/Wednesday opening times; confirm).. Source classification: directory-or-conflicting-hours-provisional. Verify location-specific hours before recommending.",
+      "hoursSource": "https://ordering.roundtablepizza.com/site/rt79"
     }
   },
   {
@@ -8979,6 +9167,23 @@
         "hours"
       ],
       "hoursNote": "Current location-specific official schedule checked; holiday changes possible."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://restaurants.subway.com/united-states/ca/monterey/195-w-franklin-st"
+      ],
+      "food": "Restaurant / prepared meals at 195 W Franklin St. Verify current operating status, hours and menu before recommending.",
+      "experience": "Quick dining or snack option described in existing research; exact menu and service availability not freshly verified.",
+      "seating": "Indoor seating, outdoor seating and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Ingredient, dietary and allergen cross-contact details not independently verified; confirm directly.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Walk-in, ordering and group policies not independently verified; no live availability checked.",
+      "entrance": "195 W Franklin St; precise doorway and accessible approach not independently verified.",
+      "hoursNote": "Previously recorded schedule: Sun–Thu 8 AM–10 PM; Fri–Sat 8 AM–11 PM.. Source classification: official-website-checked-hours. Verify location-specific hours before recommending.",
+      "hoursSource": "https://restaurants.subway.com/united-states/ca/monterey/195-w-franklin-st"
     }
   },
   {
@@ -9476,6 +9681,23 @@
       "source": "https://www.google.com/maps/place/Gelato+By+The+Sea/@36.6163708,-121.8997753,17z/data=!3m1!4b1!4m6!3m5!1s0x808de5faceade5dd:0x676b8e0fc1c0b2c8!8m2!3d36.6163708!4d-121.8997753!16s%2Fg%2F11nvvchgtt?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D",
       "checkedOn": "2026-11-07",
       "note": "The live Google Maps weekly hours are for 700 Cannery Row, Suite O, Monterey. The Carmel branch has a separate Maps listing with different hours. The Cannery Row property directory and Monterey County Now confirm the Suite O shop next to The Fish Hopper. MenuPix corroborates the Cannery Row address and the shared 831-869-7798 phone. Google Maps flags possible holiday exceptions."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.montereycountynow.com/eat_drink/morsels/sweet-sea/article_9cd294dd-90a8-4299-b706-776f3feb091b.html"
+      ],
+      "food": "Gelato shop newly opened on Cannery Row in 2026, near The Fish Hopper. Quick stop for a frozen dessert.",
+      "experience": "Quick dining or snack option described in existing research; exact menu and service availability not freshly verified.",
+      "seating": "Indoor seating, outdoor seating and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Ingredient, dietary and allergen cross-contact details not independently verified; confirm directly.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Walk-in, ordering and group policies not independently verified; no live availability checked.",
+      "entrance": "700 Cannery Row; precise doorway and accessible approach not independently verified.",
+      "hoursNote": "Previously recorded schedule: Mon–Thu 11 AM–9 PM; Fri–Sun 11 AM–10 PM. Source classification: local-report-verified. Verify location-specific hours before recommending.",
+      "hoursSource": "Previously reviewed source; reconfirm."
     }
   },
   {
@@ -10884,6 +11106,23 @@
       "verifiedFields": [
         "hours"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.mountainmikespizza.com/locations/monterey-abrego/"
+      ],
+      "food": "Pizza; dine-in; takeout; delivery at 724 Abrego St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Quick dining or snack option described in existing research; exact menu and service availability not freshly verified.",
+      "seating": "Indoor seating, outdoor seating and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Ingredient, dietary and allergen cross-contact details not independently verified; confirm directly.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Walk-in, ordering and group policies not independently verified; no live availability checked.",
+      "entrance": "724 Abrego St; precise doorway and accessible approach not independently verified.",
+      "hoursNote": "Previously recorded schedule: Daily 10 AM–10 PM.. Source classification: official-website-checked-hours. Verify location-specific hours before recommending.",
+      "hoursSource": "https://www.mountainmikespizza.com/locations/monterey-abrego/"
     }
   },
   {
@@ -10932,6 +11171,23 @@
       "source": "https://www.pretzelmaker.com/locations/",
       "checkedOn": "2026-11-07",
       "note": "The brand’s store locator publishes these store hours for 520 Del Monte Center, phone 831-521-6001. It lists delivery separately. Restaurantji and Yellow Pages corroborate the schedule."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.delmontecenter.com/directory"
+      ],
+      "food": "Pretzels / quick snack at Del Monte Center. The shopping center directory lists this business; check individual restaurant hours, which may differ from center hours.",
+      "experience": "Quick dining or snack option described in existing research; exact menu and service availability not freshly verified.",
+      "seating": "Indoor seating, outdoor seating and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Ingredient, dietary and allergen cross-contact details not independently verified; confirm directly.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Walk-in, ordering and group policies not independently verified; no live availability checked.",
+      "entrance": "520 Del Monte Center; precise doorway and accessible approach not independently verified.",
+      "hoursNote": "Previously recorded schedule: Mon–Fri 11 AM–8 PM; Sat 11 AM–7 PM; Sun 11 AM–5 PM. Source classification: shopping-center-directory-checked; hours not verified. Verify location-specific hours before recommending.",
+      "hoursSource": "https://www.delmontecenter.com/store/pretzelmaker"
     }
   },
   {
