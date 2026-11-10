@@ -602,6 +602,26 @@
         "hours-provisional"
       ],
       "verificationNote": "Official page has two conflicting hours blocks; daily 10 AM–9 PM shown in one, Fri–Sat 10 PM in another. Keep unverified."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-10",
+      "status": "verified-with-explicit-unknowns",
+      "sources": [
+        "https://www.ghirardelli.com/stores/monterey"
+      ],
+      "food": "Hot fudge sundaes, ice cream, shakes, hot cocoa and packaged chocolates; operator lists a non-dairy sundae.",
+      "experience": "Dessert and chocolate shop suitable for a treat or take-home chocolate gifts.",
+      "seating": "Seating layout and availability not independently verified.",
+      "accessibility": "Step-free entrance and accessible facilities not independently verified.",
+      "dietary": "Operator lists a non-dairy sundae; allergens and cross-contact precautions require direct confirmation.",
+      "family": "Dessert-focused menu likely appealing to families; children's amenities not independently verified.",
+      "reservation": "Reservations not confirmed; contact shop for group visits.",
+      "entrance": "660 Cannery Row; exact doorway and accessible approach not independently verified.",
+      "hoursSource": "https://www.ghirardelli.com/stores/monterey",
+      "hoursConflictNote": "Official store page contains two different hour blocks: one lists daily 10 AM–9 PM, another lists Friday and Saturday until 10 PM. Confirm late closing directly.",
+      "hoursConflictSources": [
+        "https://www.ghirardelli.com/stores/monterey"
+      ]
     }
   },
   {
@@ -739,7 +759,7 @@
     "hours": "Official website lists summer hours: daily 11 AM–10 PM; seasonal hours may differ.",
     "serviceClass": "California / seafood",
     "area": "Monterey",
-    "menuUrl": "https://www.lallagrill.com/location/oceanside/",
+    "menuUrl": "https://www.lallagrill.com/menu-oceanside/",
     "batchReview": {
       "batch": "nearby-20-batch2-2026-11-07",
       "reviewedOn": "2026-11-07",
@@ -754,6 +774,26 @@
       "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": []
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-10",
+      "status": "verified-with-explicit-unknowns",
+      "sources": [
+        "https://www.lallagrill.com/location/oceanside/",
+        "https://www.lallagrill.com/menu-oceanside/",
+        "https://www.lallagrill.com/menu/dinner-menu-oceanside/"
+      ],
+      "food": "Seafood, flatbreads, burgers, sandwiches, pasta, steaks and cocktails, including local sanddabs and cioppino.",
+      "experience": "Sit-down New American grill on Cannery Row with bar service; seasonal schedule is posted by operator.",
+      "seating": "Operator menu mentions bar and patio service; exact patio availability and seating arrangements require confirmation.",
+      "accessibility": "Step-free entry, elevator access and accessible restrooms not independently verified.",
+      "dietary": "Vegetable and salad choices are listed. Operator warns that its kitchen handles major allergens and cannot guarantee avoidance of cross-contact.",
+      "family": "Burgers, flatbreads and other familiar dishes are available; children's menu and highchairs not independently verified.",
+      "reservation": "Operator provides a reservation form and publishes a final-party-size policy; verify conditions when booking.",
+      "entrance": "654 Cannery Row; precise entry door and any stairs not independently verified.",
+      "menuSource": "https://www.lallagrill.com/menu-oceanside/",
+      "hoursSource": "https://www.lallagrill.com/location/oceanside/",
+      "hoursConflictNote": "Location page describes daily 11 AM–10 PM as summer hours; dinner menu advertises dinner service until 11 PM Friday–Saturday. Current seasonal and kitchen hours need direct confirmation."
     }
   },
   {
