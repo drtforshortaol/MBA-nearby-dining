@@ -441,6 +441,22 @@
         "menuUrl",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-10",
+      "status": "verified-with-explicit-unknowns",
+      "sources": [
+        "https://www.eltorito.com/location/monterey/",
+        "https://www.eltorito.com/menus-m/"
+      ],
+      "food": "Mexican dishes including fajitas, tacos, enchiladas, guacamole, breakfast and Sunday brunch.",
+      "experience": "Sit-down Mexican restaurant with cantina specials, Taco Tuesday and Sunday brunch.",
+      "seating": "Indoor seating is offered; outdoor seating and views not independently verified.",
+      "accessibility": "Step-free entry and accessible facilities not independently verified.",
+      "dietary": "Menu includes vegetable dishes; vegan, gluten-free and allergen handling require direct confirmation.",
+      "family": "Operator describes family-oriented dining; children's menu at this location not independently confirmed.",
+      "reservation": "Operator offers reservation links; availability not checked.",
+      "entrance": "600 Cannery Row; exact entrance and step-free route not verified."
     }
   },
   {
