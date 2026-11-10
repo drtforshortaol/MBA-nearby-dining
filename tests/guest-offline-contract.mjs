@@ -7,6 +7,7 @@ const data=JSON.parse(read('data/eateries.json'));
 const meta=JSON.parse(read('data/metadata.json'));
 assert.equal(data.length,206,'Restaurant count changed');
 assert.match(app,/shared=idsFromUrl\(\)\.length>0/,'Guest mode must derive from shared URL');
+assert(app.includes('This shared dining link has no available restaurant suggestions'),'Empty share message missing');
 assert.match(app,/mode=shared\?'guest':'explore'/,'Shared URL must open guest view');
 for(const id of ['basketTop','navBack','navHome'])assert(app.includes("$('"+id+"').hidden=shared"),id+' must hide in guest mode');
 assert.match(app,/if\(shared&&m!=='guest'&&m!=='go'\)return/,'Guest navigation guard missing');
