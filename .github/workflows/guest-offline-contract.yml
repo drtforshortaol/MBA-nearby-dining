@@ -1,0 +1,23 @@
+name: Guest and offline contract
+on:
+  pull_request:
+    paths:
+      - 'app.js'
+      - 'style.css'
+      - 'sw.js'
+      - 'data/eateries.json'
+      - 'data/metadata.json'
+      - 'tests/guest-offline-contract.mjs'
+      - '.github/workflows/guest-offline-contract.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  guest-offline-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node tests/guest-offline-contract.mjs

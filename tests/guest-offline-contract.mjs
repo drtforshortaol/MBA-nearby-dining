@@ -1,0 +1,19 @@
+// Run: node tests/guest-offline-contract.mjs
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
+const app=read('app.js'),sw=read('sw.js'),css=read('style.css');
+const data=JSON.parse(read('data/eateries.json'));
+const meta=JSON.parse(read('data/metadata.json'));
+assert.equal(data.length,206,'Restaurant count changed');
+assert.match(app,/shared=idsFromUrl\(\)\.length>0/,'Guest mode must derive from shared URL');
+assert.match(app,/mode=shared\?'guest':'explore'/,'Shared URL must open guest view');
+for(const id of ['basketTop','navBack','navHome'])assert(app.includes("$('"+id+"').hidden=shared"),id+' must hide in guest mode');
+assert.match(app,/if\(shared&&m!=='guest'&&m!=='go'\)return/,'Guest navigation guard missing');
+assert.match(app,/if\(shared&&m==='go'&&!idsFromUrl\(\)\.includes\(id\)\)return/,'Guest restaurant access guard missing');
+assert.match(css,/\[hidden\]\s*\{\s*display\s*:\s*none\s*!important\s*\}/,'Hidden navigation CSS enforcement missing');
+for(const asset of ['./index.html','./style.css','./app.js','./qr-local.js','./data/eateries.json','./data/metadata.json','./data/roads.json'])assert(sw.includes("'"+asset+"'"),'Offline core asset missing: '+asset);
+assert(sw.includes('cache.addAll(CORE)'),'Offline precache missing');
+assert(sw.includes('data.filter(r=>r.photo)'),'Restaurant photo caching missing');
+assert(sw.includes('mba-eatery-v'+meta.appVersion),'Offline cache version mismatch');
+console.log('PASS: guest navigation guards, 206 records, and offline asset contract');
