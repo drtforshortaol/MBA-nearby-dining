@@ -347,7 +347,22 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://conigliodeli.com/"
+    "menuUrl": "https://conigliodeli.com/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-10",
+      "status": "verified-with-explicit-unknowns",
+      "sources": [
+        "https://conigliodeli.com/"
+      ],
+      "food": "Italian deli sandwiches including salami, prosciutto, roast beef, tuna and vegetarian-friendly combinations subject to menu.",
+      "experience": "Quick-service Italian delicatessen suited to takeaway lunch.",
+      "seating": "Seating arrangements not independently verified.",
+      "accessibility": "Step-free entry and accessible facilities not independently verified.",
+      "dietary": "Menu ingredients are published; gluten-free, vegan and allergy accommodations not confirmed.",
+      "family": "Children's menu and family amenities not independently verified.",
+      "reservation": "Call-ahead ordering advertised; reservations not confirmed.",
+      "entrance": "750 Cannery Row, Suite 108; exact doorway and accessible approach not independently verified."
+    }
   },
   {
     "id": "MBA-DINE-0008",
