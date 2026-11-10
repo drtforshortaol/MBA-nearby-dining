@@ -1682,7 +1682,25 @@
         "menuUrl"
       ]
     },
-    "menuUrl": "https://thewhalingstation.com/menus"
+    "menuUrl": "https://thewhalingstation.com/menus",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://thewhalingstation.com/visit",
+        "https://thewhalingstation.com/menus"
+      ],
+      "food": "Classic steakhouse; consult operator menu for current steak and side-dish options.",
+      "experience": "Dinner-focused steakhouse uphill from Cannery Row; existing research notes complimentary private-lot parking.",
+      "seating": "Specific dining rooms, outdoor tables and availability not independently verified.",
+      "accessibility": "Steep approach, step-free entrance, parking accessibility and restrooms not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen accommodations not independently verified.",
+      "family": "Children's menu and highchairs not independently verified.",
+      "reservation": "Reservations recommended in prior operator-backed review; current availability not confirmed.",
+      "entrance": "Uphill from Cannery Row; exact doorway and accessible parking route not independently verified.",
+      "hoursNote": "Dinner begins at 4:30 PM per prior review; closing time not confirmed.",
+      "hoursSource": "https://thewhalingstation.com/"
+    }
   },
   {
     "id": "MBA-DINE-0030",
@@ -1763,6 +1781,24 @@
       "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": []
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.bistromoulin.com/",
+        "https://bistromoulin.com/contact/"
+      ],
+      "food": "French dinner bistro; check operator website for current dishes and prices.",
+      "experience": "Small dinner bistro uphill from Cannery Row; prior research notes parking behind the restaurant.",
+      "seating": "Table layout, patio seating and group capacity not independently verified.",
+      "accessibility": "Uphill approach, accessible entrance and restroom not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen accommodations not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations recommended in prior review; booking availability not confirmed.",
+      "entrance": "One block uphill from Cannery Row; rear parking noted, exact accessible entrance not independently verified.",
+      "hoursNote": "Previously reviewed hours show Tuesday closed; reconfirm before visiting.",
+      "hoursSource": "https://www.bistromoulin.com/"
     }
   },
   {
@@ -2056,7 +2092,24 @@
         "menuUrl"
       ]
     },
-    "menuUrl": "https://www.crystalfish-monterey.com/menu/"
+    "menuUrl": "https://www.crystalfish-monterey.com/menu/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.crystalfish-monterey.com/menu/"
+      ],
+      "food": "Sushi, sashimi and Japanese dishes according to previously reviewed operator menu.",
+      "experience": "Japanese restaurant on Lighthouse Avenue; prior research notes online ordering.",
+      "seating": "Dine-in seating, counter availability and group accommodations not independently verified.",
+      "accessibility": "Step-free entry and accessible restrooms not independently verified.",
+      "dietary": "Raw seafood and common allergens may be present; cross-contact, vegetarian and gluten-free accommodations not independently verified.",
+      "family": "Children's menu and highchairs not independently verified.",
+      "reservation": "Online ordering reported; table reservations not independently verified.",
+      "entrance": "514 Lighthouse Avenue; exact entrance and accessible route not independently verified.",
+      "hoursNote": "Previously reviewed weekday hours include an afternoon break between lunch and dinner; confirm before visiting.",
+      "hoursSource": "https://www.crystalfish-monterey.com/"
+    }
   },
   {
     "id": "MBA-DINE-0038",
