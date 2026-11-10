@@ -116,14 +116,15 @@
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-09",
       "proximityMethod": "straight-line estimate from aquarium coordinates; NOT walking distance",
       "straightLineMilesApprox": 0.2,
-      "sourceStatus": "partial-verified",
+      "sourceStatus": "operating business confirmed; hours not published in reviewed sources",
       "visitorTip": "Coffee, pastries and sandwiches in the former Starbucks space. A convenient breakfast or café break near the aquarium.",
       "sources": [
         "https://canneryrow.com/plan-your-visit/dine/",
-        "https://www.montereycountynow.com/eat_drink/morsels/coffee-row/article_a92ef7e9-2148-4d3d-aa1e-baeae478279c.html"
+        "https://www.montereycountynow.com/eat_drink/morsels/coffee-row/article_a92ef7e9-2148-4d3d-aa1e-baeae478279c.html",
+        "https://canneryrow.com/properties/711-cannery-row/"
       ],
       "hoursVerified": false,
       "photoVerified": false,
@@ -773,26 +774,28 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "Supper club/event venue. Confirm reservation, ticket and event requirements before visiting.",
-    "hours": "",
+    "hours": "Dinner/theatre: event-dependent; check ticketed show schedule. Office Mon–Fri 10 AM–5 PM (not dining hours).",
     "serviceClass": "Supper club / live entertainment",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-09",
       "proximityMethod": "straight-line estimate from aquarium coordinates; NOT walking distance",
       "straightLineMilesApprox": 0.2,
-      "sourceStatus": "partial-verified",
+      "sourceStatus": "event-dependent; office hours distinct from dining",
       "visitorTip": "Dinner theater and special events upstairs in the red Monterey Canning Company building at Cannery Row and Prescott. Check the show schedule before visiting; not a standard walk-in restaurant.",
       "sources": [
         "https://www.paperwing.com/parking/",
         "https://www.paperwing.com/",
-        "https://members.montereychamber.com/list/member/paper-wing-theatre-supper-club-monterey-7231"
+        "https://members.montereychamber.com/list/member/paper-wing-theatre-supper-club-monterey-7231",
+        "https://www.paperwing.com/paper-wing-events-2/"
       ],
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": [
         "address",
-        "visitorTip"
+        "visitorTip",
+        "partialHours"
       ]
     },
     "hoursConfidence": "unknown",
@@ -4695,20 +4698,24 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "Market/deli concept related to Domenico’s restaurant at same address; separate legal ownership not asserted.",
-    "hours": "",
+    "hours": "Fish market/deli hours not independently verified. Related Domenico's restaurant at same address opens daily 11:30 AM–close; these are NOT confirmed market/deli hours.",
     "serviceClass": "Seafood / fish market / deli",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch5-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-09",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.1,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "related restaurant hours only; market hours unverified",
       "visitorTip": "Seafood / fish market / deli at 50 Old Fisherman's Wharf. Verify current menu, operating status and hours before recommending.",
-      "sources": [],
+      "sources": [
+        "https://www.montereywharf.com/dining/domenicos-fish-market-and-deli.html"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "partialHours"
+      ]
     },
     "hoursConfidence": "unknown",
     "hoursProvisional": null,
@@ -8672,20 +8679,24 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Soft opening: daily 4–8 PM reported in late Oct/early Nov 2026; hours may change soon—confirm before visiting.",
     "serviceClass": "American comfort food with Pacific Islander influences",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch7-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-09",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.4,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "third-party soft-opening hours; subject to change",
       "visitorTip": "American comfort food with Pacific Islander influences at 444 Alvarado St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
+      "sources": [
+        "https://hoodline.com/2026/10/benny-walker-s-soft-opens-in-downtown-monterey-with-a-1-700-year-old-sequoia-bar/"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "partialHours"
+      ]
     },
     "hoursConfidence": "unverified",
     "hoursProvisional": "Daily 4–8 PM (reported soft opening)",
@@ -8712,20 +8723,24 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "Public outdoor EAT takeout window is distinct from the nightclub. June 8, 2026 district report says everyone can order Friday/Saturday until 2am. Nightclub restrictions do not prove restrictions at the outdoor window. Current opening time and ongoing food schedule unverified; confirm before a special trip.",
-    "hours": "",
+    "hours": "EAT outdoor takeout window: Fri–Sat until 2 AM (opening time unverified); schedule may change. Nightclub hours are different.",
     "serviceClass": "Late-night takeout: hot dogs, chicken strips, fries",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch7-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-09",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.39,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "partial hours from operator announcement; opening time unknown",
       "visitorTip": "Late-night takeout: hot dogs, chicken strips, fries at 420 Tyler St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
+      "sources": [
+        "https://www.oldmonterey.org/news/2026/06/late-night-eats-compact-disco"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "partialHours"
+      ]
     },
     "hoursConfidence": "unverified",
     "hoursProvisional": "Fri–Sat 10 PM–2 AM (June report)",
