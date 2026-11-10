@@ -7160,6 +7160,23 @@
         "hours"
       ],
       "hoursNote": "Published location-specific hours checked; holiday changes possible."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.fullmoonca.com/"
+      ],
+      "food": "Chinese restaurant at 429 Alvarado St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Visitor description from prior dated source review; current operating status and menu not freshly confirmed.",
+      "seating": "Indoor/outdoor seating and group capacity not independently verified unless explicitly reported in visitor tip.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Dietary choices, ingredients and allergen cross-contact must be confirmed with staff.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservation and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "429 Alvarado St; precise door and accessible approach not independently verified.",
+      "hoursNote": "Split lunch/dinner schedule; Tuesday closed in prior operator research.",
+      "hoursSource": "https://www.fullmoonca.com/"
     }
   },
   {
@@ -7389,6 +7406,23 @@
         "hours"
       ],
       "hoursNote": "Published location-specific hours checked; holiday changes possible."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://lacasadelsazonmonterey.com/"
+      ],
+      "food": "Mexican / Michoacán cuisine at 431 Tyler St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Visitor description from prior dated source review; current operating status and menu not freshly confirmed.",
+      "seating": "Indoor/outdoor seating and group capacity not independently verified unless explicitly reported in visitor tip.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Dietary choices, ingredients and allergen cross-contact must be confirmed with staff.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservation and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "431 Tyler St; precise door and accessible approach not independently verified.",
+      "hoursNote": "Monday not listed; do not assume closure without confirmation.",
+      "hoursSource": "https://lacasadelsazonmonterey.com/"
     }
   },
   {
@@ -7490,6 +7524,23 @@
         "hours"
       ],
       "hoursNote": "Published location-specific hours checked; holiday changes possible."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://melvilletav.com/"
+      ],
+      "food": "Gastropub / burgers / wood-fired pizza / brunch at 484 Washington St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Visitor description from prior dated source review; current operating status and menu not freshly confirmed.",
+      "seating": "Indoor/outdoor seating and group capacity not independently verified unless explicitly reported in visitor tip.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Dietary choices, ingredients and allergen cross-contact must be confirmed with staff.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservation and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "484 Washington St; precise door and accessible approach not independently verified.",
+      "hoursNote": "Saturday and Sunday brunch starts earlier than weekday service in prior review.",
+      "hoursSource": "https://melvilletav.com/"
     }
   },
   {
@@ -7674,6 +7725,23 @@
       "photoVerified": false,
       "verifiedFields": [],
       "hoursNote": "Provisional or conflicting published schedule; do not present as verified."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.nachobiz.biz/"
+      ],
+      "food": "Loaded nachos / burritos / comfort food at 470 Alvarado St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Visitor description from prior dated source review; current operating status and menu not freshly confirmed.",
+      "seating": "Indoor/outdoor seating and group capacity not independently verified unless explicitly reported in visitor tip.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Dietary choices, ingredients and allergen cross-contact must be confirmed with staff.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservation and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "470 Alvarado St; precise door and accessible approach not independently verified.",
+      "hoursNote": "Official published hours conflict by about 20–80 minutes; confirm before visiting.",
+      "hoursSource": "https://nachobiz.biz/"
     }
   },
   {
@@ -7717,6 +7785,23 @@
       ],
       "verificationNote": "Official homepage has conflicting hours listings; not verified.",
       "hoursNote": "Provisional or conflicting published schedule; do not present as verified."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://namimonterey.com/"
+      ],
+      "food": "Japanese fusion, seafood and steak with breakfast, lunch and dinner; the official page displays conflicting hours, so confirm before visiting.",
+      "experience": "Visitor description from prior dated source review; current operating status and menu not freshly confirmed.",
+      "seating": "Indoor/outdoor seating and group capacity not independently verified unless explicitly reported in visitor tip.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Dietary choices, ingredients and allergen cross-contact must be confirmed with staff.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservation and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "301 Alvarado St; precise door and accessible approach not independently verified.",
+      "hoursNote": "Operator homepage and footer display conflicting opening/closing times.",
+      "hoursSource": "https://namimonterey.com/"
     }
   },
   {
@@ -7759,6 +7844,23 @@
         "hours"
       ],
       "hoursNote": "Official location-specific hours; subject to change."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.nickthegreek.com/monterey/"
+      ],
+      "food": "Greek / quick service at 481 Alvarado St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Visitor description from prior dated source review; current operating status and menu not freshly confirmed.",
+      "seating": "Indoor/outdoor seating and group capacity not independently verified unless explicitly reported in visitor tip.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Dietary choices, ingredients and allergen cross-contact must be confirmed with staff.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservation and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "481 Alvarado St; precise door and accessible approach not independently verified.",
+      "hoursNote": "Friday/Saturday closing reported later than Sunday–Thursday.",
+      "hoursSource": "https://www.nickthegreek.com/menu"
     }
   },
   {
@@ -7951,6 +8053,23 @@
         "hours"
       ],
       "hoursNote": "Current location-specific official schedule checked; holiday changes possible."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.papachanostaqueria.com/"
+      ],
+      "food": "Mexican / taqueria at 462 Alvarado St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Visitor description from prior dated source review; current operating status and menu not freshly confirmed.",
+      "seating": "Indoor/outdoor seating and group capacity not independently verified unless explicitly reported in visitor tip.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Dietary choices, ingredients and allergen cross-contact must be confirmed with staff.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservation and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "462 Alvarado St; precise door and accessible approach not independently verified.",
+      "hoursNote": "Friday/Saturday closing reported later than Sunday–Thursday.",
+      "hoursSource": "https://www.papachanostaqueria.com/"
     }
   },
   {
@@ -8077,6 +8196,23 @@
         "hours"
       ],
       "hoursNote": "Official location-specific hours; subject to change."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.perfectlypressedjuice.com/contact-1"
+      ],
+      "food": "Juice / smoothie shop at 491 Alvarado St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Visitor description from prior dated source review; current operating status and menu not freshly confirmed.",
+      "seating": "Indoor/outdoor seating and group capacity not independently verified unless explicitly reported in visitor tip.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Dietary choices, ingredients and allergen cross-contact must be confirmed with staff.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservation and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "491 Alvarado St; precise door and accessible approach not independently verified.",
+      "hoursNote": "Weekend opening reported one hour later than weekdays.",
+      "hoursSource": "https://www.perfectlypressedjuice.com/"
     }
   },
   {
@@ -8263,6 +8399,23 @@
         "hours"
       ],
       "hoursNote": "Published location-specific hours checked; holiday changes possible."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.redsdonutsinc.com/menu"
+      ],
+      "food": "Bakery / café at 433 Alvarado St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Visitor description from prior dated source review; current operating status and menu not freshly confirmed.",
+      "seating": "Indoor/outdoor seating and group capacity not independently verified unless explicitly reported in visitor tip.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Dietary choices, ingredients and allergen cross-contact must be confirmed with staff.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservation and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "433 Alvarado St; precise door and accessible approach not independently verified.",
+      "hoursNote": "Monterey location (not Seaside); previously reviewed daily morning-only schedule.",
+      "hoursSource": "https://www.redsdonutsinc.com/"
     }
   },
   {
@@ -8462,6 +8615,23 @@
         "hours"
       ],
       "hoursNote": "Official location-specific hours; subject to change."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.siamesebayrestaurant.com/contact/"
+      ],
+      "food": "Restaurant / prepared meals at 131 Webster St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Visitor description from prior dated source review; current operating status and menu not freshly confirmed.",
+      "seating": "Indoor/outdoor seating and group capacity not independently verified unless explicitly reported in visitor tip.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Dietary choices, ingredients and allergen cross-contact must be confirmed with staff.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservation and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "131 Webster St; precise door and accessible approach not independently verified.",
+      "hoursNote": "Split lunch/dinner schedule with different Sunday opening times.",
+      "hoursSource": "https://www.siamesebayrestaurant.com/"
     }
   },
   {
@@ -8544,6 +8714,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.stokesadobe.com/contact-us"
+      ],
+      "food": "Seasonal California dinner and cocktails inside a historic adobe, with indoor and outdoor seating.",
+      "experience": "Visitor description from prior dated source review; current operating status and menu not freshly confirmed.",
+      "seating": "Indoor/outdoor seating and group capacity not independently verified unless explicitly reported in visitor tip.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Dietary choices, ingredients and allergen cross-contact must be confirmed with staff.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservation and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "500 Hartnell St; precise door and accessible approach not independently verified.",
+      "hoursNote": "Happy hour and dinner are separate services; prior operator research lists happy hour 4–5:30 PM, dinner 5–9 PM.",
+      "hoursSource": "https://www.stokesadobe.com/"
     }
   },
   {
