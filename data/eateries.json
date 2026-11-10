@@ -4263,6 +4263,23 @@
         "visitorTip",
         "hours"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.peppersmexicalicafe.com/"
+      ],
+      "food": "Mexican lunch and dinner; menu specifics not independently verified.",
+      "experience": "Indoor/outdoor dining and takeout reported.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Vegetarian, gluten-free and allergen handling not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking, walk-in and group policies not independently verified; confirm directly.",
+      "entrance": "170 Forest Ave; exact entrance and accessible route not independently verified.",
+      "hoursNote": "Sunday dinner only; Tuesday closed according to previous operator review.",
+      "hoursSource": "https://www.peppersmexicalicafe.com/"
     }
   },
   {
@@ -4393,6 +4410,23 @@
         "visitorTip",
         "hours"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.pgmeetinghouse.com/"
+      ],
+      "food": "Morning coffee and chai; evening cocktails. Food menu not independently verified.",
+      "experience": "Coffeehouse by day and bar in evening, with occasional music.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Milk alternatives, snacks and allergen handling not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking, walk-in and group policies not independently verified; confirm directly.",
+      "entrance": "599 Lighthouse Ave; exact entrance and accessible route not independently verified.",
+      "hoursNote": "Coffee and bar have separate hours; Sunday bar closed according to previous review.",
+      "hoursSource": "https://www.pgmeetinghouse.com/"
     }
   },
   {
@@ -4437,6 +4471,24 @@
         "hours"
       ],
       "verificationNote": "Official restaurant location page."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://redhousecafe.com/",
+        "https://redhousecafe.com/location.html"
+      ],
+      "food": "Contemporary American café menu; current dishes not independently verified.",
+      "experience": "Historic Victorian house dining.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Vegetarian, vegan and gluten-free offerings not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking, walk-in and group policies not independently verified; confirm directly.",
+      "entrance": "662 Lighthouse Ave; exact entrance and accessible route not independently verified.",
+      "hoursNote": "Sunday/Monday shorter service than Tuesday–Saturday in prior operator review.",
+      "hoursSource": "https://redhousecafe.com/"
     }
   },
   {
@@ -4479,6 +4531,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.snackshackloverspoint.com/"
+      ],
+      "food": "Burgers, fries and soft-serve ice cream reported in prior operator review.",
+      "experience": "Casual seaside snack stop at Lovers Point.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Dairy, wheat and other allergens may be relevant; handling unverified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking, walk-in and group policies not independently verified; confirm directly.",
+      "entrance": "618 Ocean View Blvd; exact entrance and accessible route not independently verified.",
+      "hoursNote": "Previously published hours differ weekdays and weekends; confirm weather-related changes.",
+      "hoursSource": "https://www.snackshackloverspoint.com/"
     }
   },
   {
@@ -4521,6 +4590,23 @@
         "visitorTip",
         "hours"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.spottedduckpg.com/"
+      ],
+      "food": "Seasonal bistro dinner; current dishes not independently verified.",
+      "experience": "Dinner restaurant in downtown Pacific Grove.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen handling not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking, walk-in and group policies not independently verified; confirm directly.",
+      "entrance": "542 Lighthouse Ave; exact entrance and accessible route not independently verified.",
+      "hoursNote": "Tuesday and Wednesday closed according to prior operator review.",
+      "hoursSource": "https://spottedduckpg.com/"
     }
   },
   {
@@ -4607,7 +4693,24 @@
         "menuUrl"
       ]
     },
-    "menuUrl": "https://vivoloschowderhouse.com/"
+    "menuUrl": "https://vivoloschowderhouse.com/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://vivoloschowderhouse.com/"
+      ],
+      "food": "Seafood and clam chowder reported in earlier operator-backed research.",
+      "experience": "Family-friendly seafood restaurant with limited outdoor seating and takeout reported.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Shellfish and dairy allergens may be relevant; preparation and cross-contact unverified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking, walk-in and group policies not independently verified; confirm directly.",
+      "entrance": "127 Central Ave; exact entrance and accessible route not independently verified.",
+      "hoursNote": "January–May hours may vary according to prior operator review.",
+      "hoursSource": "https://vivoloschowderhouse.com/"
+    }
   },
   {
     "id": "MBA-DINE-0086",
@@ -4865,6 +4968,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.juliasveg.com/"
+      ],
+      "food": "Vegetarian restaurant with vegan and gluten-free choices reported; breakfast until 1 PM.",
+      "experience": "Vegetarian-focused breakfast and dining.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Vegetarian focus, vegan and gluten-free choices reported; allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking, walk-in and group policies not independently verified; confirm directly.",
+      "entrance": "1180 Forest Ave Suite F; exact entrance and accessible route not independently verified.",
+      "hoursNote": "Prior site listed unusual 8:58 AM–9:02 PM hours, approximated 9 AM–9 PM; verify before time-sensitive visits.",
+      "hoursSource": "https://www.juliasveg.com/"
     }
   },
   {
@@ -5033,6 +5153,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://lucyspg.com/"
+      ],
+      "food": "Hot dogs including veggie options, Marianne's ice cream reported.",
+      "experience": "Casual outdoor beer-garden seating.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Veggie hot dog option reported; vegan preparation and allergens not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking, walk-in and group policies not independently verified; confirm directly.",
+      "entrance": "1120 Lighthouse Ave; exact entrance and accessible route not independently verified.",
+      "hoursNote": "Thursday–Sunday service reported; Monday–Wednesday not listed as open.",
+      "hoursSource": "https://lucyspg.com/"
     }
   },
   {
