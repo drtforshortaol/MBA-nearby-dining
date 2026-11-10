@@ -95,7 +95,7 @@
     "name": "Beans of Eden",
     "address": "711 Cannery Row, Suites A & E",
     "city": "Monterey",
-    "phone": "Not identified",
+    "phone": "(831) 215-6209",
     "phoneDigits": "",
     "cuisine": "Coffee / bakery",
     "distanceMiles": null,
@@ -116,25 +116,29 @@
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-09",
       "proximityMethod": "straight-line estimate from aquarium coordinates; NOT walking distance",
       "straightLineMilesApprox": 0.2,
-      "sourceStatus": "partial-verified",
+      "sourceStatus": "third-party-listed-hours; official hours not independently confirmed",
       "visitorTip": "Coffee, pastries and sandwiches in the former Starbucks space. A convenient breakfast or café break near the aquarium.",
       "sources": [
         "https://canneryrow.com/plan-your-visit/dine/",
-        "https://www.montereycountynow.com/eat_drink/morsels/coffee-row/article_a92ef7e9-2148-4d3d-aa1e-baeae478279c.html"
+        "https://www.montereycountynow.com/eat_drink/morsels/coffee-row/article_a92ef7e9-2148-4d3d-aa1e-baeae478279c.html",
+        "https://canneryrow.com/properties/711-cannery-row/",
+        "https://maps.roadtrippers.com/us/monterey-ca/food-drink/beans-of-eden-monterey-ca--0"
       ],
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": [
         "address",
-        "visitorTip"
+        "visitorTip",
+        "thirdPartyListedHours",
+        "thirdPartyListedPhone"
       ]
     },
     "hoursConfidence": "unverified",
-    "hoursProvisional": "Mon–Thu 7 AM–6 PM; Fri–Sun 7 AM–8 PM",
-    "hoursCaution": "Conflicting directory listings; call to confirm."
+    "hoursProvisional": "Daily 7 AM–8 PM (third-party listing; conflicts with other directories)",
+    "hoursCaution": "Conflicting third-party schedules; official hours not verified. Call before visiting."
   },
   {
     "id": "MBA-DINE-0003",
@@ -778,21 +782,23 @@
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-09",
       "proximityMethod": "straight-line estimate from aquarium coordinates; NOT walking distance",
       "straightLineMilesApprox": 0.2,
-      "sourceStatus": "partial-verified",
+      "sourceStatus": "event-dependent; office hours distinct from dining",
       "visitorTip": "Dinner theater and special events upstairs in the red Monterey Canning Company building at Cannery Row and Prescott. Check the show schedule before visiting; not a standard walk-in restaurant.",
       "sources": [
         "https://www.paperwing.com/parking/",
         "https://www.paperwing.com/",
-        "https://members.montereychamber.com/list/member/paper-wing-theatre-supper-club-monterey-7231"
+        "https://members.montereychamber.com/list/member/paper-wing-theatre-supper-club-monterey-7231",
+        "https://www.paperwing.com/paper-wing-events-2/"
       ],
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": [
         "address",
-        "visitorTip"
+        "visitorTip",
+        "partialHours"
       ]
     },
     "hoursConfidence": "unknown",
@@ -4700,15 +4706,19 @@
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch5-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-09",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.1,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "related restaurant hours only; market hours unverified",
       "visitorTip": "Seafood / fish market / deli at 50 Old Fisherman's Wharf. Verify current menu, operating status and hours before recommending.",
-      "sources": [],
+      "sources": [
+        "https://www.montereywharf.com/dining/domenicos-fish-market-and-deli.html"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "partialHours"
+      ]
     },
     "hoursConfidence": "unknown",
     "hoursProvisional": null,
@@ -5878,19 +5888,23 @@
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch6-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-09",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.35,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "online-ordering-schedule-checked; dine-in hours unverified",
       "visitorTip": "Restaurant / prepared meals at 414 Alvarado St. Verify current operating status, hours and menu before recommending.",
-      "sources": [],
+      "sources": [
+        "https://kuma.menu11.com/monterey/order"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "onlineOrderingHours"
+      ]
     },
     "hoursConfidence": "unverified",
-    "hoursProvisional": "Daily 5–10 PM",
-    "hoursCaution": "Conflicts with Chamber and ordering hours; call for dine-in schedule."
+    "hoursProvisional": "Online ordering: Mon closed; Tue–Sat 11 AM–2:30 PM and 5–8 PM; Sun 4–8 PM",
+    "hoursCaution": "Online ordering schedule only; dine-in hours conflict with other listings and are unverified."
   },
   {
     "id": "MBA-DINE-0145",
@@ -8673,15 +8687,19 @@
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch7-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-09",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.4,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "third-party soft-opening hours; subject to change",
       "visitorTip": "American comfort food with Pacific Islander influences at 444 Alvarado St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
+      "sources": [
+        "https://hoodline.com/2026/10/benny-walker-s-soft-opens-in-downtown-monterey-with-a-1-700-year-old-sequoia-bar/"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "partialHours"
+      ]
     },
     "hoursConfidence": "unverified",
     "hoursProvisional": "Daily 4–8 PM (reported soft opening)",
@@ -8713,19 +8731,23 @@
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch7-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-09",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.39,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "partial hours from operator announcement; opening time unknown",
       "visitorTip": "Late-night takeout: hot dogs, chicken strips, fries at 420 Tyler St. Verify operating status, current menu and hours before recommending.",
-      "sources": [],
+      "sources": [
+        "https://www.oldmonterey.org/news/2026/06/late-night-eats-compact-disco"
+      ],
       "hoursVerified": false,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "partialHours"
+      ]
     },
     "hoursConfidence": "unverified",
-    "hoursProvisional": "Fri–Sat 10 PM–2 AM (June report)",
-    "hoursCaution": "Historical schedule for EAT walk-up window, not nightclub."
+    "hoursProvisional": "Fri–Sat until 2 AM (reported June 2026; opening time unknown)",
+    "hoursCaution": "Historical EAT window schedule; not nightclub hours. Confirm availability."
   },
   {
     "id": "MBA-DINE-0224",
@@ -8842,23 +8864,25 @@
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch10-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-09",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 2.24,
-      "sourceStatus": "shopping-center-directory-checked; hours not verified",
+      "sourceStatus": "official-store-hours-checked; prepared-food-hours-unverified",
       "visitorTip": "Grocery / prepared food at Del Monte Center. The shopping center directory lists this business; check individual restaurant hours, which may differ from center hours.",
       "sources": [
-        "https://www.delmontecenter.com/directory"
+        "https://www.delmontecenter.com/directory",
+        "https://www.wholefoodsmarket.com/stores/monterey"
       ],
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": [
-        "shoppingCenterListing"
+        "shoppingCenterListing",
+        "storeHoursOnly"
       ]
     },
     "hoursConfidence": "unverified",
-    "hoursProvisional": "Daily 9 AM–8 PM (Market Cocina / Sandwich listings)",
-    "hoursCaution": "Provisional counter listings; hot bar hours unknown."
+    "hoursProvisional": "Store daily 8 AM–9 PM; prepared-food counter hours unknown",
+    "hoursCaution": "Official grocery store hours only; hot bar and prepared-food counters may differ."
   },
   {
     "id": "MBA-DINE-0231",
