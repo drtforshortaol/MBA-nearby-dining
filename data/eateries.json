@@ -1887,6 +1887,23 @@
       "verifiedFields": [
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.tripadvisor.com/Restaurant_Review-g32737-d8788046-Reviews-Wave_Street_Cafe-Monterey_Monterey_County_California.html"
+      ],
+      "food": "Breakfast/brunch café with bay-view patio, located on lower level.",
+      "experience": "Breakfast and brunch at 550 Wave Street, lower level. Bay-view patio; popular on weekends, so allow extra time.",
+      "seating": "Seating capacity, outdoor availability and weather restrictions not independently verified unless specified in visitor tip.",
+      "accessibility": "Lower-level entrance: step-free route/elevator not independently verified.",
+      "dietary": "Ingredients, dietary substitutions and allergen cross-contact require direct confirmation; menu markings do not guarantee allergy safety.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "550 Wave St. Lower-level entrance: step-free route/elevator not independently verified.",
+      "hoursNote": "Hours from directory only; weekend queues reported. Confirm opening before early visits.",
+      "hoursSource": "https://www.wavestreetcafe.com/"
     }
   },
   {
@@ -3258,6 +3275,23 @@
       "verifiedFields": [
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.lighthousedistrict.net/biz/taqueria-del-mar"
+      ],
+      "food": "Casual Mexican seafood taqueria with fish/crab tacos and seafood burritos.",
+      "experience": "Casual Mexican seafood taqueria at 530 Lighthouse Avenue. Fish and crab tacos, seafood burritos and chimichangas; call to confirm Sunday service.",
+      "seating": "Seating capacity, outdoor availability and weather restrictions not independently verified unless specified in visitor tip.",
+      "accessibility": "Door and accessible route not independently verified.",
+      "dietary": "Ingredients, dietary substitutions and allergen cross-contact require direct confirmation; menu markings do not guarantee allergy safety.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "530 Lighthouse Ave. Door and accessible route not independently verified.",
+      "hoursNote": "Sunday service unconfirmed; weekday hours from directory.",
+      "hoursSource": "https://www.lighthousedistrict.net/biz/taqueria-del-mar"
     }
   },
   {
@@ -3365,7 +3399,25 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://locations.baskinrobbins.com/ca/monterey/406-lighthouse-ave-361187-br"
+    "menuUrl": "https://locations.baskinrobbins.com/ca/monterey/406-lighthouse-ave-361187-br",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://locations.baskinrobbins.com/ca/monterey/406-lighthouse-ave-361187-br",
+        "https://www.restaurantji.com/ca/monterey/baskin-robbins-/"
+      ],
+      "food": "Ice cream scoops, sundaes and cakes.",
+      "experience": "Ice cream scoops, sundaes and cakes at 406 Lighthouse Avenue. Hours are from a third-party listing, not confirmed by the operator.",
+      "seating": "Seating capacity, outdoor availability and weather restrictions not independently verified unless specified in visitor tip.",
+      "accessibility": "Door and accessible route not independently verified.",
+      "dietary": "Ingredients, dietary substitutions and allergen cross-contact require direct confirmation; menu markings do not guarantee allergy safety.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "406 Lighthouse Ave. Door and accessible route not independently verified.",
+      "hoursNote": "11 AM–10 PM schedule from third-party directory only; operator locator did not confirm.",
+      "hoursSource": "https://locations.baskinrobbins.com/ca/monterey/406-lighthouse-ave-361187-br"
+    }
   },
   {
     "id": "MBA-DINE-0058",
@@ -4033,6 +4085,23 @@
         "hours"
       ],
       "verificationNote": "Official restaurant website business hours."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.internationalcuisineca.com/"
+      ],
+      "food": "Multi-cuisine restaurant described as offering American, Italian, Greek, Indian and Mexican dishes.",
+      "experience": "International / American / Italian / Greek / Indian / Mexican and other cuisines at 620 Lighthouse Ave Suite 220. Current menu, hours and operating status require confirmation before recommending.",
+      "seating": "Seating capacity, outdoor availability and weather restrictions not independently verified unless specified in visitor tip.",
+      "accessibility": "Suite 220: building entry, floor access and elevator not independently verified.",
+      "dietary": "Ingredients, dietary substitutions and allergen cross-contact require direct confirmation; menu markings do not guarantee allergy safety.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "620 Lighthouse Ave Suite 220. Suite 220: building entry, floor access and elevator not independently verified.",
+      "hoursNote": "Earlier official website review lists daily 11 AM–9 PM; menu and operating status not independently checked.",
+      "hoursSource": "https://www.internationalcuisineca.com/"
     }
   },
   {
@@ -4075,6 +4144,23 @@
         "hours"
       ],
       "verificationNote": "Official contact page publishes exact times; some other official pages state 5 PM–close."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://lamiacucinaristorante.com/contact-us/"
+      ],
+      "food": "Italian white-tablecloth dinner restaurant.",
+      "experience": "Italian / white-tablecloth dining at 208 17th St. Current menu, hours and operating status require confirmation before recommending.",
+      "seating": "Seating capacity, outdoor availability and weather restrictions not independently verified unless specified in visitor tip.",
+      "accessibility": "Door and accessible route not independently verified.",
+      "dietary": "Ingredients, dietary substitutions and allergen cross-contact require direct confirmation; menu markings do not guarantee allergy safety.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "208 17th St. Door and accessible route not independently verified.",
+      "hoursNote": "Closed Monday/Tuesday; Friday/Saturday service slightly later according to prior operator contact page.",
+      "hoursSource": "https://lamiacucinaristorante.com/"
     }
   },
   {
@@ -4162,6 +4248,23 @@
         "hours-provisional"
       ],
       "verificationNote": "Official restaurant website; partial schedule. Hours not independently confirmed with restaurant."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.pacificthaicuisineca.com/"
+      ],
+      "food": "Thai cuisine; current menu not independently checked.",
+      "experience": "Thai at 663 Lighthouse Ave. Current menu, hours and operating status require confirmation before recommending.",
+      "seating": "Seating capacity, outdoor availability and weather restrictions not independently verified unless specified in visitor tip.",
+      "accessibility": "Door and accessible route not independently verified.",
+      "dietary": "Ingredients, dietary substitutions and allergen cross-contact require direct confirmation; menu markings do not guarantee allergy safety.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "663 Lighthouse Ave. Door and accessible route not independently verified.",
+      "hoursNote": "Operator site lists weekday split lunch/dinner, weekends from noon; closing time unknown.",
+      "hoursSource": "https://www.pacificthaicuisineca.com/"
     }
   },
   {
@@ -4839,6 +4942,23 @@
         "hours-provisional"
       ],
       "verificationNote": "Two pages on official restaurant website contradict Sunday opening. Do not treat Sunday as confirmed."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.zumsushi.com/"
+      ],
+      "food": "Sushi and rolls; menu and dietary details not independently checked.",
+      "experience": "Sushi restaurant in Pacific Grove. Sushi and rolls; check current menu, opening hours and availability before recommending a visit.",
+      "seating": "Seating capacity, outdoor availability and weather restrictions not independently verified unless specified in visitor tip.",
+      "accessibility": "Door and accessible route not independently verified.",
+      "dietary": "Ingredients, dietary substitutions and allergen cross-contact require direct confirmation; menu markings do not guarantee allergy safety.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "159 Central Ave. Door and accessible route not independently verified.",
+      "hoursNote": "Sunday hours CONFLICT across official pages (open noon–8 PM versus closed). Confirm directly.",
+      "hoursSource": "https://www.zumsushi.com/"
     }
   },
   {
@@ -4881,6 +5001,23 @@
         "hours"
       ],
       "hoursNote": "Location-specific published schedule checked 2026-11-07; holiday changes possible."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://alfredospastariaandmozzarellabar.com/contact"
+      ],
+      "food": "Italian fresh pasta and mozzarella bar.",
+      "experience": "Italian / fresh pasta / mozzarella bar at 1188 Forest Ave. Verify operating status, current menu and hours before recommending.",
+      "seating": "Seating capacity, outdoor availability and weather restrictions not independently verified unless specified in visitor tip.",
+      "accessibility": "Door and accessible route not independently verified.",
+      "dietary": "Ingredients, dietary substitutions and allergen cross-contact require direct confirmation; menu markings do not guarantee allergy safety.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "1188 Forest Ave. Door and accessible route not independently verified.",
+      "hoursNote": "Previously reviewed Wed–Sun dinner only; closed Monday/Tuesday and Thanksgiving/Christmas.",
+      "hoursSource": "https://alfredospastariaandmozzarellabar.com/"
     }
   },
   {
@@ -5069,6 +5206,23 @@
         "hours"
       ],
       "hoursNote": "Location-specific published schedule checked 2026-11-07; holiday changes possible."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://losamigosrestaurantepg.com/"
+      ],
+      "food": "Mexican and Oaxacan specialties.",
+      "experience": "Mexican / Oaxacan specialties at 1184 Forest Ave Suite H. Verify operating status, current menu and hours before recommending.",
+      "seating": "Seating capacity, outdoor availability and weather restrictions not independently verified unless specified in visitor tip.",
+      "accessibility": "Suite H: precise entry and accessible route not independently verified.",
+      "dietary": "Ingredients, dietary substitutions and allergen cross-contact require direct confirmation; menu markings do not guarantee allergy safety.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "1184 Forest Ave Suite H. Suite H: precise entry and accessible route not independently verified.",
+      "hoursNote": "Previously reviewed Tue–Sun 11 AM–9 PM; Monday closed.",
+      "hoursSource": "https://losamigosrestaurantepg.com/"
     }
   },
   {
@@ -5252,6 +5406,23 @@
         "hours"
       ],
       "hoursNote": "Location-specific published schedule checked 2026-11-07; holiday changes possible."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.patisseriebechler.com/contactus.shtml"
+      ],
+      "food": "French pastries, bakery café and weekday lunch.",
+      "experience": "French patisserie / bakery / cafe lunch at 1225 Forest Ave. Verify operating status, current menu and hours before recommending.",
+      "seating": "Seating capacity, outdoor availability and weather restrictions not independently verified unless specified in visitor tip.",
+      "accessibility": "Door and accessible route not independently verified.",
+      "dietary": "Ingredients, dietary substitutions and allergen cross-contact require direct confirmation; menu markings do not guarantee allergy safety.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "1225 Forest Ave. Door and accessible route not independently verified.",
+      "hoursNote": "Lunch Tue–Sat 11 AM–2 PM; Sunday bakery closes at noon, Monday closed.",
+      "hoursSource": "https://www.patisseriebechler.com/"
     }
   },
   {
@@ -5293,6 +5464,23 @@
       "verifiedFields": [
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.pizzamyway.com/"
+      ],
+      "food": "Pizza, calzones, pasta and salads; menu marks gluten-free, vegan and halal options.",
+      "experience": "Pizza, calzones, pasta and salads with gluten-free, vegan and halal options noted on the official menu.",
+      "seating": "Seating capacity, outdoor availability and weather restrictions not independently verified unless specified in visitor tip.",
+      "accessibility": "Suite D: precise entry and accessible route not independently verified.",
+      "dietary": "Ingredients, dietary substitutions and allergen cross-contact require direct confirmation; menu markings do not guarantee allergy safety.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "1157 Forest Ave Suite D. Suite D: precise entry and accessible route not independently verified.",
+      "hoursNote": "Operator page showed 11 AM–9:30 PM without day-specific schedule; verify before visiting.",
+      "hoursSource": "https://www.pizzamyway.com/"
     }
   },
   {
@@ -6104,6 +6292,24 @@
         "hours-provisional"
       ],
       "verificationNote": "Official homepage says daily 7 AM–4 PM, another official page says 7 AM–7 PM or sold out. Hours conflict; requires confirmation. July 2026 seasonal notice; may no longer apply in November; not reliable current hours."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.adastrabread.com/",
+        "https://www.oldmonterey.org/news/2026/07/ad-astra-bread-summer-hours-and-menu"
+      ],
+      "food": "Sourdough bread, pastries and coffee; popular items may sell out.",
+      "experience": "Sourdough breads, pastries and coffee at 479 Alvarado; arrive early because popular items sell out. Official pages disagree on closing time (4 PM versus 7 PM); do not rely on listed hours.",
+      "seating": "Seating capacity, outdoor availability and weather restrictions not independently verified unless specified in visitor tip.",
+      "accessibility": "Door and accessible route not independently verified.",
+      "dietary": "Ingredients, dietary substitutions and allergen cross-contact require direct confirmation; menu markings do not guarantee allergy safety.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policies not independently verified; no real-time availability checked.",
+      "entrance": "479 Alvarado St. Door and accessible route not independently verified.",
+      "hoursNote": "Official pages conflict on closing time; summer hours cannot establish November schedule.",
+      "hoursSource": "https://www.adastrabread.com/"
     }
   },
   {
