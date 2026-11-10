@@ -447,16 +447,35 @@
       "status": "verified-with-explicit-unknowns",
       "sources": [
         "https://www.eltorito.com/location/monterey/",
-        "https://www.eltorito.com/menus-m/"
+        "https://www.eltorito.com/menus-m/",
+        "https://www.eltorito.com/specials/"
       ],
       "food": "Mexican dishes including fajitas, tacos, enchiladas, guacamole, breakfast and Sunday brunch.",
       "experience": "Sit-down Mexican restaurant with cantina specials, Taco Tuesday and Sunday brunch.",
       "seating": "Indoor seating is offered; outdoor seating and views not independently verified.",
       "accessibility": "Step-free entry and accessible facilities not independently verified.",
       "dietary": "Menu includes vegetable dishes; vegan, gluten-free and allergen handling require direct confirmation.",
-      "family": "Operator describes family-oriented dining; children's menu at this location not independently confirmed.",
+      "family": "Operator publishes a children's breakfast menu and Wednesday kids' meal promotion; confirm terms at restaurant.",
       "reservation": "Operator offers reservation links; availability not checked.",
-      "entrance": "600 Cannery Row; exact entrance and step-free route not verified."
+      "entrance": "600 Cannery Row; exact entrance and step-free route not verified.",
+      "hoursNote": "Monterey location page confirms daily opening at 9 AM; Friday and Saturday close at 11 PM, other days at 10 PM.",
+      "specialsCaution": "Monterey location page advertises weekday Cantina happy hour until 9 PM, while general specials page lists 7 PM. Confirm location-specific terms."
+    },
+    "attributes": {
+      "family": {
+        "value": "yes",
+        "status": "verified",
+        "source": "https://www.eltorito.com/specials/",
+        "reviewedOn": "2026-11-10",
+        "note": "Operator advertises a Wednesday children's meal promotion; kids' breakfast menu also published."
+      },
+      "alcohol": {
+        "value": "yes",
+        "status": "verified",
+        "source": "https://www.eltorito.com/menus-m/",
+        "reviewedOn": "2026-11-10",
+        "note": "Official Monterey menu includes margaritas and cocktails."
+      }
     }
   },
   {
