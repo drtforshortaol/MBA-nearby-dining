@@ -213,7 +213,22 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://www.bubbagump.com/location/bubba-gump-monterey-ca/"
+    "menuUrl": "https://www.bubbagump.com/location/bubba-gump-monterey-ca/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-10",
+      "status": "verified-with-explicit-unknowns",
+      "sources": [
+        "https://www.bubbagump.com/location/bubba-gump-monterey-ca/"
+      ],
+      "food": "Shrimp and seafood dishes, burgers, sandwiches and children's meals.",
+      "experience": "Casual Forrest Gump-themed waterfront dining with memorabilia and Monterey Bay views.",
+      "seating": "Indoor dining documented; outdoor seating not independently verified.",
+      "accessibility": "Step-free entrance and wheelchair access not independently verified; call ahead.",
+      "dietary": "Gluten-free buns and a plant-based burger patty option appear on the operator menu; confirm preparation and allergens directly.",
+      "family": "Children's menu confirmed by the restaurant.",
+      "reservation": "Reservations link offered on operator's store locator; availability not checked.",
+      "entrance": "720 Cannery Row; exact doorway and access route not independently verified."
+    }
   },
   {
     "id": "MBA-DINE-0005",
