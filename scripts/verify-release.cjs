@@ -41,6 +41,7 @@ assert.equal(sw.match(/const CACHE='([^']+)'/)?.[1],'mba-eatery-v'+appVersion,'S
 assert.equal(html.match(/Eatery App <b>v([^<]+)<\/b>/)?.[1],appVersion,'Visible footer version differs from application');
 assert.equal(meta.eligibleCount,data.length,'Database eligible count differs from records');
 assert(/^\d{4}-\d{2}-\d{2}$/.test(meta.databaseDate),'Database date must be YYYY-MM-DD');
+assert.equal(html.match(/<span>Database (\d{4}-\d{2}-\d{2})<\/span>/)?.[1],meta.databaseDate,'Visible footer database date differs from authoritative metadata');
 
 assert(sw.includes('data/eateries.json')&&sw.includes('data/roads.json'),'Offline essentials not cached');
 assert(fs.existsSync(path.join(root,'data/roads.json')),'Offline road data missing');
