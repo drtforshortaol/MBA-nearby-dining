@@ -2211,6 +2211,23 @@
         "hours"
       ],
       "verificationNote": "Official website schedule."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [
+        "https://americanburgermonterey.com/contact/"
+      ],
+      "food": "Burger restaurant at 738 Lighthouse Avenue. Convenient casual option in the Lighthouse District; hours and menu require confirmation.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "738 Lighthouse Ave; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Sun–Mon 11 AM–5 PM; Tue–Thu 11 AM–7 PM; Fri–Sat 11 AM–8 PM.. Source status: existing-record-only. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -3980,6 +3997,23 @@
         "hours-provisional"
       ],
       "verificationNote": "Official site displays dated private-event exceptions and inconsistent Tuesday wording; Saturday regular hours not reliably published. Kitchen closes one hour earlier."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [
+        "https://www.hopsandfog.beer/reservations"
+      ],
+      "food": "Brewery / pizza / bar bites at 511 Lighthouse Ave. Current menu, hours and operating status require confirmation before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "511 Lighthouse Ave; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Mon–Wed 4–9 PM; Thu noon–9 PM; Fri noon–10 PM; Sun noon–9 PM. Saturday and Tuesday special-event changes: check before visiting.. Source status: existing-record-only; official website not independently verified. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -4934,6 +4968,21 @@
       "source": "https://business.pacificgrove.org/directory/Details/winston-s-a-brunch-place-2340963",
       "checkedOn": "2026-11-07",
       "note": "The Chamber's entry for 602 Lighthouse Avenue and the current Tripadvisor listing agree. Shorter online ordering times are separate."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Restaurant / prepared meals at 602 Lighthouse Ave. Current menu, hours and operating status require confirmation before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "602 Lighthouse Ave; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Wed–Mon 8 AM–2:30 PM; Tue closed. Source status: existing-record-only; official website not independently verified. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -5097,6 +5146,21 @@
       "source": "https://www.jerseymikes.com/20397/pacific-grove-ca",
       "checkedOn": "2026-11-07",
       "note": "The chain's official store page identifies 100 Country Club Gate Center in Pacific Grove and gives explicit store hours."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Sandwich shop / quick service at 100 Country Club Gate. Verify current operating status, hours and menu before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "100 Country Club Gate; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Daily 10 AM–9 PM. Source status: existing-record-only; requires independent source verification. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -5432,6 +5496,21 @@
         "hours-provisional"
       ],
       "verificationNote": "Business directory listing, checked 2026-11-07. Hours not independently confirmed with restaurant."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Restaurant / prepared meals at 1126 Forest Ave. Verify current operating status, hours and menu before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "1126 Forest Ave; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Mon–Sat 10 AM–8:30 PM; Sunday not listed.. Source status: existing-record-only; requires independent source verification. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -5769,6 +5848,21 @@
         "hours-business-listing"
       ],
       "verificationNote": "Coordinates missing; geocoding required before proximity sorting. Hours are third-party business-listing estimates, not independently confirmed by restaurant."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Seafood / steaks / Italian / Mexican at 25 Old Fisherman's Wharf. Verify current operating status, menu and hours before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "25 Old Fisherman's Wharf; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Mon–Thu and Sun 11 AM–9:30 PM; Fri–Sat 11 AM–10 PM (business listing; confirm before visit).. Source status: existing-record-only; requires independent source verification. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -5927,6 +6021,21 @@
         "hours-business-listing"
       ],
       "verificationNote": "Coordinates missing; geocoding required before proximity sorting. Hours are third-party business-listing estimates, not independently confirmed by restaurant."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Seafood / oyster bar / fish market at 42 Old Fisherman's Wharf. Verify current operating status, menu and hours before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "42 Old Fisherman's Wharf; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Daily 11 AM–9 PM (business listing; confirm before visit).. Source status: existing-record-only; requires independent source verification. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -6080,6 +6189,21 @@
       "source": "https://www.seemonterey.com/directory/crab-house/",
       "checkedOn": "2026-11-07",
       "note": "Published regular hours; holidays and temporary changes may differ."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Seafood / waterfront dining at 60 Fisherman's Wharf #1. Verify current menu, operating status and hours before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "60 Fisherman's Wharf #1; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Daily 11 AM–9 PM. Source status: existing-record-only; requires independent source verification. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -6224,6 +6348,21 @@
       "source": "https://frankiapp.com/business/fish-chips-cafe-262253",
       "checkedOn": "2026-11-07",
       "note": "Franki and Restaurant Guru agree on hours for the named cafe at 57 Fisherman's Wharf. Franki matches the wharf association's phone and links to the cafe listing. This is the outdoor cafe; Abalonetti's full-service dining schedule is separate."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Fish and chips / chowder / casual outdoor dining at 57 Old Fisherman's Wharf. Verify current menu, operating status and hours before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "57 Old Fisherman's Wharf; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Daily 11 AM–9 PM. Source status: existing-record-only; requires independent source verification. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -6923,6 +7062,21 @@
       "source": "https://www.google.com/maps/place/Bobalicious+and+Bites/@36.5983842,-121.8942005,17z/data=!3m1!4b1!4m6!3m5!1s0x808de5b7f060101f:0x933763ce33976d96!8m2!3d36.5983842!4d-121.8942005!16s%2Fg%2F11k7b6rpmc?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D",
       "checkedOn": "2026-11-07",
       "note": "The live Google Maps profile for 474 Tyler St and the October 31, 2026 Restaurantji update agree on the full week. Wanderlog attributes its data to Google and repeats the shorter times seen in an older Restaurantji snapshot. The shop's June 2026 district post also confirms noon–8 PM on Mondays during the promotion. Online ordering times are separate."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Bubble tea / milk tea / drinks / desserts at 474 Tyler St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "474 Tyler St; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Daily noon–8 PM. Source status: existing-record-only; requires independent source verification. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -7202,6 +7356,21 @@
       "source": "https://www.chongsszechwan.com/",
       "checkedOn": "2026-11-07",
       "note": "Restaurant contact section gives hours at 485 Tyler St. Old Monterey Business Association corroborates the schedule and identifies indoor dining and takeout."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Restaurant / prepared meals at 485 Tyler St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "485 Tyler St; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Tue–Sun 11 AM–9 PM; Mon closed. Source status: existing-record-only; requires independent source verification. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -7358,6 +7527,21 @@
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": []
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Restaurant / prepared meals at 300 Fremont St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "300 Fremont St; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Open 24 hours (official location page, reviewed 2026-11-05; holidays may vary). Source status: existing-record-only; requires independent source verification. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -7403,6 +7587,21 @@
       "source": "https://www.socialwave.net/biz/east-village-cafe",
       "checkedOn": "2026-11-07",
       "note": "The local merchant directory gives a full week at 498 Washington St, corroborated by the claimed Tripadvisor listing. The cafe website could not be reached."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Bakery / café at 498 Washington St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "498 Washington St; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Daily 7 AM–5 PM. Source status: existing-record-only; requires independent source verification. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -8215,6 +8414,21 @@
       "source": "https://www.restaurantji.com/ca/monterey/mundos-sandwich-and-burger-house-2/",
       "checkedOn": "2026-11-07",
       "note": "Restaurantji's location listing updated September 23, 2026 matches SuperPages at 170 Webster St. Uber Eats lists delivery hours. The 3 Mundos website represents the separate 2233 N Fremont St storefront."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Restaurant / prepared meals at 170 Webster St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "170 Webster St; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Mon–Fri 10 AM–5 PM; Sat–Sun 10 AM–4 PM. Source status: existing-record-only; requires independent source verification. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -8499,6 +8713,21 @@
       "source": "https://www.waze.com/live-map/directions/old-monterey-cafe-alvarado-st-489?to=place.w.156041582.1560481356.1645584",
       "checkedOn": "2026-11-07",
       "note": "Waze and Roadtrippers agree on the full week for 489 Alvarado St. The cafe previously published the same hours through the Old Monterey Business Association. Its own linked domain was inaccessible."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Bakery / café at 489 Alvarado St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "489 Alvarado St; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Daily 6:45 AM–2:30 PM. Source status: existing-record-only; requires independent source verification. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -8898,6 +9127,21 @@
       "source": "https://www.menupix.com/california/restaurants/map/5548743/Petra-Cafe-Monterey-CA/",
       "checkedOn": "2026-11-07",
       "note": "MenuPix and Tripadvisor match for regular hours at 435 Alvarado St. Old Monterey's merchant page confirms seven-day dine-in and separate late-night Fri–Sat takeout. Exact late-night takeout hours remain unconfirmed."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Bakery / café at 435 Alvarado St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "435 Alvarado St; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Daily 11 AM–9 PM. Source status: existing-record-only; requires independent source verification. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -9526,6 +9770,21 @@
       "source": "https://locations.tacobell.com/ca/monterey/321-alvarado-st.html",
       "checkedOn": "2026-11-07",
       "note": "The official location page for 321 Alvarado St embeds all seven days in its Restaurant JSON-LD openingHoursSpecification, explicitly labeled Dine-In. The visible daily snapshot shows only one day. The full schedule matches FindOpen. Older chain category pages and some directories show different closing times."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Restaurant / prepared meals at 321 Alvarado St. Verify current operating status, hours and menu before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "321 Alvarado St; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Dine-in Sun–Thu 10 AM–11 PM; Fri–Sat 10 AM–2 AM next day. Source status: existing-record-only; requires independent source verification. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -9571,6 +9830,21 @@
       "source": "https://terrasuperfoods.com/",
       "checkedOn": "2026-11-07",
       "note": "Official homepage publishes hours under its Monterey storefront at 475 Alvarado St."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Plant-based bowls / café at 475 Alvarado Street. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "475 Alvarado Street; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Mon–Sat 7:30 AM–7 PM; Sun 7:30 AM–6 PM. Source status: existing-record-only; requires independent source verification. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -9616,6 +9890,21 @@
       "source": "https://toribashi.com/",
       "checkedOn": "2026-11-07",
       "note": "Regular published hours; verify holiday and temporary changes."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Japanese / ramen at 487 Alvarado St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "487 Alvarado St; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Mon–Thu 11 AM–2 PM and 5–8 PM; Fri 11 AM–2 PM and 5–8:30 PM; Sat–Sun 11 AM–2:30 PM and 5–8:30 PM. Source status: existing-record-only; requires independent source verification. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
@@ -9661,6 +9950,21 @@
       "source": "https://www.turn12barandgrill.com/location/",
       "checkedOn": "2026-11-07",
       "note": "Regular published hours; verify holiday and temporary changes."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Restaurant / prepared meals at 400 Tyler St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing directory record only; current operating status, visitor experience and menu require independent verification.",
+      "seating": "Seating type and capacity not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Dietary accommodations, ingredients and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations, ordering and walk-in policy not independently verified; no live availability checked.",
+      "entrance": "400 Tyler St; exact storefront entrance and accessible approach not independently verified.",
+      "hoursNote": "UNVERIFIED existing schedule: Mon–Fri 11:30 AM–1 AM; Sat–Sun 10 AM–1 AM (following day). Source status: existing-record-only; requires independent source verification. Do not represent as operator-confirmed.",
+      "hoursSource": "Existing database record only; independent source needed."
     }
   },
   {
