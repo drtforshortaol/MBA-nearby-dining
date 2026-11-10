@@ -579,7 +579,23 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://jackbao.com/"
+    "menuUrl": "https://jackbao.com/online-ordering/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-10",
+      "status": "verified-with-explicit-unknowns",
+      "sources": [
+        "https://jackbao.com/",
+        "https://jackbao.com/online-ordering/"
+      ],
+      "food": "Shanghai-style bao, soup dumplings, wontons, noodle dishes, rice bowls and tea drinks.",
+      "experience": "Casual quick-service Chinese street-food restaurant with pickup and delivery options.",
+      "seating": "Seating configuration not independently verified.",
+      "accessibility": "Step-free entry and accessible facilities not independently verified.",
+      "dietary": "Vegetable bao and vegetable/mushroom noodle soup described by operator; vegan and allergy preparation not confirmed.",
+      "family": "Children's menu and highchairs not independently verified.",
+      "reservation": "Pickup ordering is available; dine-in reservations not confirmed.",
+      "entrance": "751 Cannery Row, Suite 121; exact doorway and access route not verified."
+    }
   },
   {
     "id": "MBA-DINE-0013",
