@@ -1067,6 +1067,24 @@
         "menuUrl",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://schoonersmonterey.com/",
+        "https://schoonersmonterey.com/menus"
+      ],
+      "food": "Seafood and coastal California cuisine; breakfast, lunch and dinner menus are linked from the operator site.",
+      "experience": "Oceanfront dining at Monterey Plaza Hotel, with bay-facing patio views; existing research notes cashless payment and up to two hours validated valet parking.",
+      "seating": "Oceanfront patio reported in existing operator-backed review; table availability and weather restrictions unverified.",
+      "accessibility": "Accessible entry route, patio accessibility and restrooms not independently confirmed.",
+      "dietary": "Current allergen, vegetarian, vegan and gluten-free accommodations not independently confirmed.",
+      "family": "Family seating and children's menu not independently confirmed.",
+      "reservation": "Booking method and walk-in policy not independently confirmed; call before visiting.",
+      "entrance": "At Monterey Plaza Hotel, 400 Cannery Row; precise restaurant entrance and accessible route not independently confirmed.",
+      "hoursSource": "https://schoonersmonterey.com/",
+      "hoursNote": "Existing review lists breakfast, lunch and dinner service; verify current schedule."
     }
   },
   {
@@ -1113,7 +1131,26 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://www.slymcflys.com/menu"
+    "menuUrl": "https://www.slymcflys.com/menu",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.slymcflys.com/",
+        "https://www.slymcflys.com/menu",
+        "https://www.slymcflys.com/contact/copy-of-band-inquiries"
+      ],
+      "food": "Existing operator-backed review describes seafood, burgers and cocktails; see the operator menu for current offerings.",
+      "experience": "Restaurant, bar and live music. Kitchen and late-night bar have separate operating hours.",
+      "seating": "Indoor/outdoor seating arrangements not independently confirmed.",
+      "accessibility": "Step-free entry, stage-area access and accessible restrooms not independently confirmed.",
+      "dietary": "Allergen precautions and vegetarian, vegan or gluten-free options not independently confirmed.",
+      "family": "Family suitability varies by entertainment and bar environment; age rules and children's menu not independently confirmed.",
+      "reservation": "Table reservations and event admission policies not independently confirmed.",
+      "entrance": "700 Cannery Row; historical photo shows Sly McFly's signage, but current door/signage not verified.",
+      "hoursSource": "https://www.slymcflys.com/",
+      "hoursNote": "Kitchen closes before bar; confirm food availability for late visits."
+    }
   },
   {
     "id": "MBA-DINE-0022",
@@ -1273,7 +1310,25 @@
         "menuUrl"
       ]
     },
-    "menuUrl": "https://www.the-salty-seal.com/menu"
+    "menuUrl": "https://www.the-salty-seal.com/menu",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.the-salty-seal.com/",
+        "https://www.the-salty-seal.com/menu"
+      ],
+      "food": "Operator-backed review describes pub fare, burgers, seafood and tacos; see current operator menu.",
+      "experience": "Sports bar with games, live music and a heated outdoor patio. Existing research notes front game-bar area is 21+ and venue becomes 21+ after 9 PM.",
+      "seating": "Heated outdoor patio reported; current seating availability and weather policies unverified.",
+      "accessibility": "Accessible entrance, patio route and restrooms not independently confirmed.",
+      "dietary": "Allergen precautions and vegetarian, vegan or gluten-free options not independently confirmed.",
+      "family": "Age restrictions are important: existing review reports front game-bar area 21+ and whole venue 21+ after 9 PM. Verify current rules before recommending to families.",
+      "reservation": "Table bookings and event admission policies not independently confirmed.",
+      "entrance": "653 Cannery Row; precise doorway and accessible approach not independently confirmed.",
+      "hoursSource": "https://www.the-salty-seal.com/",
+      "hoursNote": "Kitchen closes before bar; confirm current hours and age restrictions."
+    }
   },
   {
     "id": "MBA-DINE-0025",
