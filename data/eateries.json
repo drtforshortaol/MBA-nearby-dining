@@ -1425,7 +1425,25 @@
         "hours"
       ]
     },
-    "menuUrl": "https://www.sardinefactory.com/menus/"
+    "menuUrl": "https://www.sardinefactory.com/menus/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.sardinefactory.com/location/sardine-factory/",
+        "https://www.sardinefactory.com/menus/"
+      ],
+      "food": "Existing operator-backed research identifies seafood and steaks; current dishes and prices are on the operator menu.",
+      "experience": "Historic fine-dining steakhouse with lounge happy-hour periods; reservations recommended in prior review.",
+      "seating": "Specific dining-room, lounge and outdoor seating availability not independently verified.",
+      "accessibility": "Step-free entry and accessible restroom availability not independently verified.",
+      "dietary": "Allergen and vegetarian, vegan or gluten-free accommodations not independently verified.",
+      "family": "Formal dinner setting; children's menu and family facilities not independently verified.",
+      "reservation": "Reservations recommended in existing research; booking availability and policies not independently confirmed.",
+      "entrance": "701 Wave Street; exact door, parking route and accessible entrance not independently verified.",
+      "hoursSource": "https://www.sardinefactory.com/",
+      "hoursNote": "Hours carried from earlier operator-backed research; confirm current service hours before a time-sensitive visit."
+    }
   },
   {
     "id": "MBA-DINE-0026",
@@ -1470,6 +1488,24 @@
         "menuUrl",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.tidalcoffeemonterey.com/our-flagship",
+        "https://www.tidalcoffeemonterey.com/menus"
+      ],
+      "food": "Existing operator-backed research describes coffee, house-made pastries, paninis and breakfast items.",
+      "experience": "Early-opening coffeehouse overlooking Monterey Bay; existing review describes cashless payment.",
+      "seating": "Bay-facing setting reported; seating availability and outdoor options not independently verified.",
+      "accessibility": "Step-free entrance and accessible restrooms not independently verified.",
+      "dietary": "Plant-based milk, gluten-free pastries and allergen handling not independently verified.",
+      "family": "Casual coffee and breakfast setting; children's amenities not independently verified.",
+      "reservation": "Walk-in and preordering policies not independently verified.",
+      "entrance": "400 Cannery Row; exact café door and accessible approach not independently verified.",
+      "hoursSource": "https://www.tidalcoffeemonterey.com/",
+      "hoursNote": "Hours carried from earlier operator-backed research; confirm current service hours before a time-sensitive visit."
     }
   },
   {
@@ -1516,7 +1552,25 @@
       ],
       "verificationNote": "Official Monterey location page publishes schedule; age restrictions apply after 7 PM golf and 10 PM restaurant."
     },
-    "menuUrl": "https://tipsyputt.com/tipsy-putt-monterey/"
+    "menuUrl": "https://tipsyputt.com/tipsy-putt-monterey/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://tipsyputt.com/tipsy-putt-monterey/",
+        "https://tipsyputt.com/plan-a-par-tee/monterey/"
+      ],
+      "food": "Existing operator-backed research describes Mexican-inspired pub food and drinks; check the current operator menu.",
+      "experience": "Indoor mini golf and games; age restrictions change in the evening.",
+      "seating": "Indoor gaming and dining areas described; table availability and seating configuration not independently verified.",
+      "accessibility": "Accessible mini golf, step-free entry and restrooms not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen accommodations not independently verified.",
+      "family": "Prior review reports mini golf becomes 21+ after 7 PM and entire venue 21+ after 10 PM. Confirm current age restrictions before recommending to families.",
+      "reservation": "Existing review describes walk-ins welcome; large group and event policies should be confirmed.",
+      "entrance": "95 Prescott Avenue; exact entry and accessible route not independently verified.",
+      "hoursSource": "https://tipsyputt.com/tipsy-putt-monterey/",
+      "hoursNote": "Hours carried from earlier operator-backed research; confirm current service hours before a time-sensitive visit."
+    }
   },
   {
     "id": "MBA-DINE-0028",
