@@ -3091,7 +3091,25 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://www.paprikacafe-monterey.com/"
+    "menuUrl": "https://www.paprikacafe-monterey.com/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.paprikacafe-monterey.com/",
+        "https://guide.michelin.com/us/en/california/monterey/restaurant/paprika-cafe"
+      ],
+      "food": "Falafel, spanakopita, baba ghanoush and vegan baklava reported in previous restaurant and guide research.",
+      "experience": "Small Mediterranean café with limited seating.",
+      "seating": "Limited seating reported; outdoor seating and capacity not independently verified.",
+      "accessibility": "Step-free entry, narrow seating areas and accessible restrooms not independently verified.",
+      "dietary": "Vegetarian and vegan-friendly choices reported; gluten-free handling and allergens not independently verified.",
+      "family": "Children's menu, highchairs and stroller space not independently verified.",
+      "reservation": "Table reservations and takeaway arrangements not independently verified.",
+      "entrance": "309 Lighthouse Avenue, Suite A; exact suite access not independently verified.",
+      "hoursNote": "Hours from MICHELIN listing; source disagreement noted, confirm before visiting.",
+      "hoursSource": "https://www.paprikacafe-monterey.com/"
+    }
   },
   {
     "id": "MBA-DINE-0053",
@@ -3136,7 +3154,25 @@
         "menuUrl"
       ]
     },
-    "menuUrl": "https://www.pelicanpizzaonline.com/menu"
+    "menuUrl": "https://www.pelicanpizzaonline.com/menu",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.pelicanpizzaonline.com/",
+        "https://www.pelicanpizzaonline.com/menu"
+      ],
+      "food": "Pizza, calzones, subs and salads reported in prior operator-backed research.",
+      "experience": "Locally owned pizzeria with dine-in, pickup and delivery; later hours than many nearby cafés.",
+      "seating": "Dine-in service reported; seating capacity and outdoor tables not independently verified.",
+      "accessibility": "Accessible entry, restroom and delivery pickup route not independently verified.",
+      "dietary": "Gluten-free crust, vegan options and allergen cross-contact not independently verified.",
+      "family": "Casual pizza option; children's menu and highchairs not independently verified.",
+      "reservation": "Pickup and delivery reported; table reservations and delivery coverage not independently verified.",
+      "entrance": "522 Lighthouse Avenue; exact entrance and accessible route not independently verified.",
+      "hoursNote": "Previously reviewed operator hours include late Friday/Saturday service; reconfirm.",
+      "hoursSource": "https://www.pelicanpizzaonline.com/"
+    }
   },
   {
     "id": "MBA-DINE-0054",
@@ -3267,7 +3303,26 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://www.zabzabmonterey.com/menu"
+    "menuUrl": "https://www.zabzabmonterey.com/menu",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.zabzabmonterey.com/",
+        "https://www.zabzabmonterey.com/menu",
+        "https://orderzabzabthaicuisine.com/contact"
+      ],
+      "food": "Northeastern Thai curries, noodles and lunch specials in prior operator research.",
+      "experience": "Thai restaurant with takeout and split weekday lunch/dinner service.",
+      "seating": "Dining capacity and outdoor seating not independently verified.",
+      "accessibility": "Step-free entrance and accessible restroom not independently verified.",
+      "dietary": "Fish sauce, shellfish and nuts may be relevant allergens; vegan, vegetarian and gluten-free preparation not independently verified.",
+      "family": "Children's menu and highchairs not independently verified.",
+      "reservation": "Reservations and takeout ordering policy not independently verified.",
+      "entrance": "401 Lighthouse Avenue; exact entrance not independently verified.",
+      "hoursNote": "Monday hours conflict between operator-related pages; call before recommending.",
+      "hoursSource": "https://www.zabzabmonterey.com/"
+    }
   },
   {
     "id": "MBA-DINE-0057",
@@ -3397,6 +3452,23 @@
         "visitorTip",
         "hours"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.victoriancornerpg.com/hours/"
+      ],
+      "food": "Breakfast, lunch and dinner reported in previous operator-backed research; current menu details not independently verified.",
+      "experience": "Pacific Grove restaurant with indoor seating, patio and takeout reported.",
+      "seating": "Indoor seating and patio reported; availability and weather rules not independently verified.",
+      "accessibility": "Step-free patio and dining room access, restrooms and parking not independently verified.",
+      "dietary": "Vegan, vegetarian, gluten-free and allergen accommodations not independently verified.",
+      "family": "Children's menu and highchairs not independently verified.",
+      "reservation": "Reservations, walk-ins and takeout timing not independently verified.",
+      "entrance": "541 Lighthouse Avenue, Pacific Grove; exact door and accessible approach not independently verified.",
+      "hoursNote": "Existing review states no Sunday dinner; confirm current hours.",
+      "hoursSource": "https://www.victoriancornerpg.com/"
     }
   },
   {
@@ -3439,6 +3511,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://beachhousepg.com/visit"
+      ],
+      "food": "Oceanfront dinner restaurant and bar; current menu and prices not independently verified.",
+      "experience": "Dinner overlooking Lovers Point; outdoor Solarium seating subject to weather and availability.",
+      "seating": "Outdoor Solarium reported; specific bay-view tables, weather closures and capacity not independently verified.",
+      "accessibility": "Accessible entrance, Solarium route and restrooms not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen accommodations not independently verified.",
+      "family": "Children's menu and highchairs not independently verified.",
+      "reservation": "Reservations recommended for sunset and weekends in existing operator-backed review; availability not confirmed.",
+      "entrance": "620 Ocean View Boulevard, Pacific Grove; exact entry and accessible route not independently verified.",
+      "hoursNote": "Prior operator review shows daily dinner 4:30–9 PM; holiday and event hours may vary.",
+      "hoursSource": "https://beachhousepg.com/"
     }
   },
   {
@@ -3481,6 +3570,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.bookworkspg.com/"
+      ],
+      "food": "Coffee, tea and specialty drinks reported alongside bookstore operations; pastry and meal menu not independently verified.",
+      "experience": "Coffee shop and bookstore sharing location; café opens earlier than bookstore.",
+      "seating": "Café seating, outdoor tables and bookstore browsing space not independently verified.",
+      "accessibility": "Accessible entrance, café counter and bookstore aisles not independently verified.",
+      "dietary": "Milk alternatives, food allergens and gluten-free options not independently verified.",
+      "family": "Bookstore/café environment; children's facilities not independently verified.",
+      "reservation": "Coffee preorders and event booking not independently verified.",
+      "entrance": "667 Lighthouse Avenue, Pacific Grove; café and bookstore entrances not independently verified.",
+      "hoursNote": "Café previously listed daily 7 AM–5:30 PM; bookstore 9:30 AM–5:30 PM. Do not confuse their opening times.",
+      "hoursSource": "https://www.bookworkspg.com/"
     }
   },
   {
