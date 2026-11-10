@@ -1,0 +1,38 @@
+name: Eatery research controller (30-minute)
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: eatery-research-controller
+  cancel-in-progress: false
+jobs:
+  audit-and-plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check research backlog
+        run: |
+          mkdir -p research-output
+          node scripts/audit-data-gaps.cjs --csv > research-output/backlog.csv
+          node scripts/audit-data-gaps.cjs > research-output/summary.json
+      - name: Publish run summary
+        run: |
+          echo '## Eatery research controller' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Read-only audit completed. Photo work deferred. AI enrichment workers not yet configured.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Production, merges and deployment untouched.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Research gaps (JSON):' >> "$GITHUB_STEP_SUMMARY"
+          echo '\`\`\`json' >> "$GITHUB_STEP_SUMMARY"
+          cat research-output/summary.json >> "$GITHUB_STEP_SUMMARY"
+          echo '\`\`\`' >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: eatery-backlog-${{ github.run_id }}
+          path: research-output/
+          retention-days: 7
