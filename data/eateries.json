@@ -5873,20 +5873,24 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Mon closed; Tue–Sat 11 AM–2:30 PM and 5–8 PM; Sun 4–8 PM (online ordering hours; confirm dine-in).",
     "serviceClass": "Restaurant / prepared meals",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch6-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-09",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.35,
-      "sourceStatus": "existing-record-only; requires independent source verification",
+      "sourceStatus": "online-ordering-hours-checked; dine-in schedule unverified",
       "visitorTip": "Restaurant / prepared meals at 414 Alvarado St. Verify current operating status, hours and menu before recommending.",
-      "sources": [],
-      "hoursVerified": false,
+      "sources": [
+        "https://kuma.menu11.com/monterey/order"
+      ],
+      "hoursVerified": true,
       "photoVerified": false,
-      "verifiedFields": []
+      "verifiedFields": [
+        "onlineOrderingHours"
+      ]
     },
     "hoursConfidence": "unverified",
     "hoursProvisional": "Daily 5–10 PM",
@@ -8837,23 +8841,25 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "Grocery prepared-food option. Store hours do not establish food-counter service hours or current selection. Confirm prepared-food availability separately.",
-    "hours": "",
+    "hours": "Store: daily 8 AM–9 PM; prepared-food counter hours may differ (not verified).",
     "serviceClass": "Grocery / prepared food",
     "area": "Monterey",
     "batchReview": {
       "batch": "nearby-20-batch10-2026-11-07",
-      "reviewedOn": "2026-11-07",
+      "reviewedOn": "2026-11-09",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 2.24,
-      "sourceStatus": "shopping-center-directory-checked; hours not verified",
+      "sourceStatus": "official-store-hours-checked; prepared-food-hours-unverified",
       "visitorTip": "Grocery / prepared food at Del Monte Center. The shopping center directory lists this business; check individual restaurant hours, which may differ from center hours.",
       "sources": [
-        "https://www.delmontecenter.com/directory"
+        "https://www.delmontecenter.com/directory",
+        "https://www.wholefoodsmarket.com/stores/monterey"
       ],
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": [
-        "shoppingCenterListing"
+        "shoppingCenterListing",
+        "storeHoursOnly"
       ]
     },
     "hoursConfidence": "unverified",
