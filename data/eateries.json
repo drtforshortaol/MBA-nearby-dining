@@ -2779,6 +2779,23 @@
         "menuUrl",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://lighthouse-bistro.com/"
+      ],
+      "food": "Globally inspired breakfast, lunch and dinner described by prior operator-backed review; current menu details unverified.",
+      "experience": "All-day restaurant with takeout and delivery reported.",
+      "seating": "Indoor and outdoor seating, group capacity and waits not independently verified.",
+      "accessibility": "Step-free entry, restrooms and accessible parking not independently verified.",
+      "dietary": "Vegan, vegetarian, gluten-free and allergen accommodations not independently verified.",
+      "family": "Children's menu and highchairs not independently verified.",
+      "reservation": "Table reservations and delivery service areas not independently verified.",
+      "entrance": "570 Lighthouse Avenue; precise door and accessible route not independently verified.",
+      "hoursNote": "Previously reviewed operator hours; confirm current schedule.",
+      "hoursSource": "https://lighthouse-bistro.com/"
     }
   },
   {
@@ -2824,7 +2841,26 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://mission19taqueria.com/menu"
+    "menuUrl": "https://mission19taqueria.com/menu",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://mission19taqueria.com/",
+        "https://mission19taqueria.com/menu",
+        "https://mission19taqueriaca.com/"
+      ],
+      "food": "Tijuana-style taqueria with handmade corn tortillas, birria, tacos, tortas and burritos in prior operator research.",
+      "experience": "Casual Mexican taqueria.",
+      "seating": "Dining area and outdoor seating not independently verified.",
+      "accessibility": "Step-free entry and accessible restrooms not independently verified.",
+      "dietary": "Corn tortillas reported; gluten-free preparation, allergens and vegetarian/vegan options not independently verified.",
+      "family": "Children's menu and highchairs not independently verified.",
+      "reservation": "Advance ordering and large group policies not independently verified.",
+      "entrance": "598 Lighthouse Avenue; exact doorway and accessible route not independently verified.",
+      "hoursNote": "Two operator-related sites disagree on Saturday closing time; confirm directly.",
+      "hoursSource": "https://mission19taqueria.com/"
+    }
   },
   {
     "id": "MBA-DINE-0048",
@@ -2869,7 +2905,25 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://namasteibmonterey.com/menu"
+    "menuUrl": "https://namasteibmonterey.com/menu",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://namasteibmonterey.com/",
+        "https://namasteibmonterey.com/menu"
+      ],
+      "food": "Indian dishes and a daily 11 AM–3 PM lunch buffet reported in existing operator-backed research.",
+      "experience": "Indian restaurant with takeout and delivery reported.",
+      "seating": "Buffet seating, table capacity and group arrangements not independently verified.",
+      "accessibility": "Step-free entrance and accessible restrooms not independently verified.",
+      "dietary": "Vegetarian dishes and halal-certified offerings reported; certification scope, allergens and cross-contact should be confirmed with staff.",
+      "family": "Buffet may suit groups; children's menu and highchairs not independently verified.",
+      "reservation": "Reservations, buffet pricing and delivery coverage not independently verified.",
+      "entrance": "538 Lighthouse Avenue; exact doorway and accessible route not independently verified.",
+      "hoursNote": "Previously reviewed operator hours; verify current buffet and dinner service.",
+      "hoursSource": "https://namasteibmonterey.com/"
+    }
   },
   {
     "id": "MBA-DINE-0049",
@@ -2914,7 +2968,25 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://www.oystertownusa.com/"
+    "menuUrl": "https://www.oystertownusa.com/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.oystertownusa.com/hours",
+        "https://www.oystertownusa.com/"
+      ],
+      "food": "Oysters and seasonal small plates in prior operator-backed research.",
+      "experience": "Evening oyster bar with reported Mon–Sat 4:30–5:30 PM happy hour.",
+      "seating": "Bar and dining seating configuration not independently verified.",
+      "accessibility": "Step-free entry and accessible restrooms not independently verified.",
+      "dietary": "Shellfish central to menu; allergen and cross-contact procedures not independently verified.",
+      "family": "Children's menu and age restrictions not independently verified.",
+      "reservation": "Existing operator review states walk-ins only and no reservations.",
+      "entrance": "281 Lighthouse Avenue; shares address with O-Town Espresso Bar, which operates at different hours; exact entry not independently verified.",
+      "hoursNote": "Prior review shows Sunday closed; confirm current evening hours.",
+      "hoursSource": "https://www.oystertownusa.com/hours"
+    }
   },
   {
     "id": "MBA-DINE-0050",
@@ -2958,7 +3030,24 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://www.oystertownusa.com/"
+    "menuUrl": "https://www.oystertownusa.com/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.oystertownusa.com/hours"
+      ],
+      "food": "Espresso and morning coffee service described in previously reviewed operator hours.",
+      "experience": "Morning espresso bar sharing address with Oystertown, whose oyster-bar service starts later.",
+      "seating": "Coffee seating and takeaway setup not independently verified.",
+      "accessibility": "Step-free entrance and accessible counter not independently verified.",
+      "dietary": "Milk alternatives, food menu and allergen handling not independently verified.",
+      "family": "Coffee bar; children's drinks and seating not independently verified.",
+      "reservation": "Preordering and group orders not independently verified.",
+      "entrance": "281 Lighthouse Avenue; shares address with Oystertown; precise counter entrance not independently verified.",
+      "hoursNote": "Prior operator review shows Mon–Sat 8 AM–1 PM and Sunday closed; do not confuse with evening oyster bar hours.",
+      "hoursSource": "https://www.oystertownusa.com/"
+    }
   },
   {
     "id": "MBA-DINE-0051",
