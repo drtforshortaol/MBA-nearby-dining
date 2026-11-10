@@ -3630,6 +3630,23 @@
         "hours"
       ],
       "verificationNote": "Official restaurant site; Friday listed under weekdays 8–3, contrary to chamber directory 8–5."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.cafeguarani.com/"
+      ],
+      "food": "Paraguayan-inspired bakery and café with empanadas and yerba mate drinks reported in prior research.",
+      "experience": "Casual café with garden patio.",
+      "seating": "Garden patio reported; indoor capacity and weather availability not independently verified.",
+      "accessibility": "Step-free garden patio and restroom access not independently verified.",
+      "dietary": "Empanada ingredients, vegetarian options and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Preorders and table reservations not independently verified.",
+      "entrance": "111 Central Avenue, Pacific Grove; patio entrance and accessible route not independently verified.",
+      "hoursNote": "Official website weekday hours differed from a chamber listing for Friday; confirm current schedule.",
+      "hoursSource": "https://www.cafeguarani.com/"
     }
   },
   {
@@ -3671,6 +3688,23 @@
       "verifiedFields": [
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.colettesicecream.com/contact-us"
+      ],
+      "food": "Small-batch ice cream reported in existing operator research; current flavors not independently verified.",
+      "experience": "Ice cream stop with seasonal opening hours.",
+      "seating": "Indoor/outdoor seating and takeaway arrangements not independently verified.",
+      "accessibility": "Step-free entrance and counter accessibility not independently verified.",
+      "dietary": "Dairy-free flavors, nut allergens and cross-contact not independently verified.",
+      "family": "Dessert option; seating and children's facilities not independently verified.",
+      "reservation": "Custom orders and pickup policies not independently verified.",
+      "entrance": "520 Lighthouse Avenue, Suite 100, Pacific Grove; exact entrance not independently verified.",
+      "hoursNote": "Published schedule is for spring/summer, NOT confirmed for November.",
+      "hoursSource": "https://www.colettesicecream.com/"
     }
   },
   {
@@ -3713,6 +3747,23 @@
         "visitorTip",
         "hours"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://fandangorestaurant.com/"
+      ],
+      "food": "European and Mediterranean-style sit-down dinner reported in earlier operator research.",
+      "experience": "Special-occasion dinner; reservations useful according to previous research.",
+      "seating": "Dining room seating, private dining and outdoor tables not independently verified.",
+      "accessibility": "Step-free entry, accessible restrooms and parking not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen accommodations not independently verified.",
+      "family": "Children's menu and highchairs not independently verified.",
+      "reservation": "Reservations suggested for special occasions; current booking availability unverified.",
+      "entrance": "223 17th Street, Pacific Grove; precise doorway and accessible approach not independently verified.",
+      "hoursNote": "Prior operator review reports dinner from 5 PM, last seating 8:30 PM; reconfirm.",
+      "hoursSource": "https://fandangorestaurant.com/"
     }
   },
   {
@@ -3756,6 +3807,23 @@
         "hours"
       ],
       "photoReviewStatus": "owner-supplied image; capture date and rights not independently documented"
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://goodiesdelipg.com/"
+      ],
+      "food": "Sandwiches, soup, coffee and pastries; vegetarian sandwich options in previous operator-backed research.",
+      "experience": "Quick lunch and deli stop.",
+      "seating": "Indoor seating and takeout counter setup not independently verified.",
+      "accessibility": "Step-free entry, accessible counter and restroom not independently verified.",
+      "dietary": "Vegetarian sandwich options reported; vegan, gluten-free and allergen handling not independently verified.",
+      "family": "Casual deli; children's menu and highchairs not independently verified.",
+      "reservation": "Advance ordering and group catering policies not independently verified.",
+      "entrance": "510 Lighthouse Avenue, Suite 2, Pacific Grove; suite access not independently verified.",
+      "hoursNote": "Previously reviewed operator hours Mon–Sat 9 AM–5 PM; Sunday closed.",
+      "hoursSource": "https://goodiesdelipg.com/"
     }
   },
   {
@@ -3800,6 +3868,24 @@
         "hours-provisional"
       ],
       "verificationNote": "Official café page and Chamber say 7 AM; official contact page says 8 AM. Opening discrepancy remains unresolved."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://happygirlkitchen.com/",
+        "https://happygirlkitchen.com/pages/cafe"
+      ],
+      "food": "Breakfast, coffee, light lunches and locally made jams and pickles in earlier café research.",
+      "experience": "Pacific Grove café combined with preserves shop.",
+      "seating": "Café seating and outdoor space not independently verified.",
+      "accessibility": "Step-free entrance, accessible seating and restrooms not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen accommodations not independently verified.",
+      "family": "Children's menu and highchairs not independently verified.",
+      "reservation": "Preordering, table reservations and shop pickup not independently verified.",
+      "entrance": "173 Central Avenue, Pacific Grove; precise café/shop doorway not independently verified.",
+      "hoursNote": "Official café page and official contact page conflict: 7 AM versus 8 AM opening. Verify before morning referrals.",
+      "hoursSource": "https://happygirlkitchen.com/pages/cafe"
     }
   },
   {
@@ -3887,7 +3973,25 @@
         "menuUrl"
       ]
     },
-    "menuUrl": "https://www.ilvecchiorestaurant.com/dinner-menu"
+    "menuUrl": "https://www.ilvecchiorestaurant.com/dinner-menu",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://ilvecchiorestaurant.com/",
+        "https://www.ilvecchiorestaurant.com/dinner-menu"
+      ],
+      "food": "Italian pasta and dinner; prior operator menu includes vegetarian and gluten-free markings.",
+      "experience": "Italian sit-down restaurant with lunch most days; Monday dinner only.",
+      "seating": "Dining capacity, outdoor tables and group arrangements not independently verified.",
+      "accessibility": "Step-free entrance and accessible restrooms not independently verified.",
+      "dietary": "Menu markings for vegetarian and gluten-free dishes reported; cross-contact and accommodations require direct confirmation.",
+      "family": "Children's menu and highchairs not independently verified.",
+      "reservation": "Reservation and walk-in policies not independently verified.",
+      "entrance": "110 Central Avenue, Pacific Grove; exact doorway and accessible route not independently verified.",
+      "hoursNote": "Prior operator schedule has Monday dinner only; confirm holiday exceptions.",
+      "hoursSource": "https://ilvecchiorestaurant.com/"
+    }
   },
   {
     "id": "MBA-DINE-0072",
@@ -4100,6 +4204,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://passionfish.net/"
+      ],
+      "food": "Seafood-focused dinner with a sustainability emphasis and wine list in prior operator research.",
+      "experience": "Sit-down dinner destination; no regular lunch service advertised.",
+      "seating": "Dining capacity and outdoor seating not independently verified.",
+      "accessibility": "Step-free entry, accessible restrooms and parking not independently verified.",
+      "dietary": "Seafood allergens are relevant; vegetarian, vegan, gluten-free and cross-contact policies not independently verified.",
+      "family": "Children's menu and highchairs not independently verified.",
+      "reservation": "Reservations available according to earlier operator review; no real-time availability checked.",
+      "entrance": "701 Lighthouse Avenue, Pacific Grove; precise entrance and accessible route not independently verified.",
+      "hoursNote": "Dinner nightly from 5 PM in previous review; closing time not confirmed.",
+      "hoursSource": "https://passionfish.net/"
     }
   },
   {
