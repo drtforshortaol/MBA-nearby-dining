@@ -6571,6 +6571,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://bulgogihousemonterey.com/pannels/staticContent/MTI3Nw/NTUx/NzkyMg/STORE%20HOURS"
+      ],
+      "food": "Korean restaurant with separate lunch and dinner services; closed Wednesday and Thursday.",
+      "experience": "Visitor description is from existing dated source review; current availability and service details not freshly checked.",
+      "seating": "Seating capacity, outdoor availability and group arrangements not independently verified unless specifically described in visitor tip.",
+      "accessibility": "Step-free entrance, accessible seating and restroom access not independently verified.",
+      "dietary": "Confirm current dietary options, ingredients, allergen handling and cross-contact directly; do not infer from cuisine.",
+      "family": "Children's menu, highchairs and stroller access not independently verified unless explicitly described in visitor tip.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservation availability checked.",
+      "entrance": "413 Alvarado St; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Split lunch and dinner; Wednesday and Thursday closed in previous operator review.",
+      "hoursSource": "https://bulgogihousemonterey.com/"
     }
   },
   {
@@ -6613,6 +6630,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.cellarestaurant.com/"
+      ],
+      "food": "Seasonal, locally focused dinner restaurant in the historic Cooper-Molera Adobe setting; reservations are recommended for special occasions.",
+      "experience": "Visitor description is from existing dated source review; current availability and service details not freshly checked.",
+      "seating": "Seating capacity, outdoor availability and group arrangements not independently verified unless specifically described in visitor tip.",
+      "accessibility": "Step-free entrance, accessible seating and restroom access not independently verified.",
+      "dietary": "Confirm current dietary options, ingredients, allergen handling and cross-contact directly; do not infer from cuisine.",
+      "family": "Children's menu, highchairs and stroller access not independently verified unless explicitly described in visitor tip.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservation availability checked.",
+      "entrance": "525 Polk St; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Previously listed Tuesday–Saturday dinner only, Sunday/Monday closed.",
+      "hoursSource": "https://www.cellarestaurant.com/"
     }
   },
   {
@@ -6783,7 +6817,24 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://crepesofbrittany.com/monterey/"
+    "menuUrl": "https://crepesofbrittany.com/monterey/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://crepesofbrittany.com/monterey/"
+      ],
+      "food": "Quick breakfast or lunch with sweet crêpes, savory galettes, pastries and coffee. Savory crêpes are not gluten-free.",
+      "experience": "Visitor description is from existing dated source review; current availability and service details not freshly checked.",
+      "seating": "Seating capacity, outdoor availability and group arrangements not independently verified unless specifically described in visitor tip.",
+      "accessibility": "Step-free entrance, accessible seating and restroom access not independently verified.",
+      "dietary": "Confirm current dietary options, ingredients, allergen handling and cross-contact directly; do not infer from cuisine.",
+      "family": "Children's menu, highchairs and stroller access not independently verified unless explicitly described in visitor tip.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservation availability checked.",
+      "entrance": "211 Alvarado St; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Prior menu specifically says savory crêpes are NOT gluten-free.",
+      "hoursSource": "https://crepesofbrittany.com/monterey/"
+    }
   },
   {
     "id": "MBA-DINE-0134",
@@ -6949,6 +7000,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.elcharrito.com/monterey/"
+      ],
+      "food": "Takeout-focused breakfast and lunch burritos, bowls and taquitos; enter from Calle Principal behind Alejandro's, not the Alvarado Street frontage.",
+      "experience": "Visitor description is from existing dated source review; current availability and service details not freshly checked.",
+      "seating": "Seating capacity, outdoor availability and group arrangements not independently verified unless specifically described in visitor tip.",
+      "accessibility": "Step-free entrance, accessible seating and restroom access not independently verified.",
+      "dietary": "Confirm current dietary options, ingredients, allergen handling and cross-contact directly; do not infer from cuisine.",
+      "family": "Children's menu, highchairs and stroller access not independently verified unless explicitly described in visitor tip.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservation availability checked.",
+      "entrance": "483 Calle Principal; precise doorway and accessible route not independently verified. Prior operator guidance: use Calle Principal entrance behind Alejandro's.",
+      "hoursNote": "Enter from Calle Principal behind Alejandro's, NOT Alvarado Street frontage.",
+      "hoursSource": "https://www.elcharrito.com/monterey/"
     }
   },
   {
@@ -7033,6 +7101,23 @@
         "hours"
       ],
       "hoursNote": "Current location-specific official schedule checked; holiday changes possible."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.marriott.com/en-us/hotels/mryca-monterey-marriott/dining/"
+      ],
+      "food": "Hotel restaurant at 350 Calle Principal. Verify current operating status, hours and menu before recommending.",
+      "experience": "Visitor description is from existing dated source review; current availability and service details not freshly checked.",
+      "seating": "Seating capacity, outdoor availability and group arrangements not independently verified unless specifically described in visitor tip.",
+      "accessibility": "Step-free entrance, accessible seating and restroom access not independently verified.",
+      "dietary": "Confirm current dietary options, ingredients, allergen handling and cross-contact directly; do not infer from cuisine.",
+      "family": "Children's menu, highchairs and stroller access not independently verified unless explicitly described in visitor tip.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservation availability checked.",
+      "entrance": "350 Calle Principal; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Hotel restaurant and bar have different schedules; restaurant breakfast and dinner only.",
+      "hoursSource": "https://www.marriott.com/en-us/hotels/mryca-monterey-marriott/dining/"
     }
   },
   {
@@ -7159,6 +7244,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.portolahotel.com/dining/jacks-monterey/"
+      ],
+      "food": "California-inspired sit-down dining in the Portola Hotel lobby; breakfast and dinner with seafood and cocktails.",
+      "experience": "Visitor description is from existing dated source review; current availability and service details not freshly checked.",
+      "seating": "Seating capacity, outdoor availability and group arrangements not independently verified unless specifically described in visitor tip.",
+      "accessibility": "Step-free entrance, accessible seating and restroom access not independently verified.",
+      "dietary": "Confirm current dietary options, ingredients, allergen handling and cross-contact directly; do not infer from cuisine.",
+      "family": "Children's menu, highchairs and stroller access not independently verified unless explicitly described in visitor tip.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservation availability checked.",
+      "entrance": "2 Portola Plaza; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Hotel breakfast and dinner schedules differ; late Friday/Saturday service is BAR ONLY.",
+      "hoursSource": "https://www.portolahotel.com/dining/jacks-monterey/"
     }
   },
   {
@@ -7329,6 +7431,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://manasiriscrepe.com/"
+      ],
+      "food": "Crêpes, sandwiches, coffee and breakfast/brunch options, including halal and gluten-free items listed by the restaurant.",
+      "experience": "Visitor description is from existing dated source review; current availability and service details not freshly checked.",
+      "seating": "Seating capacity, outdoor availability and group arrangements not independently verified unless specifically described in visitor tip.",
+      "accessibility": "Step-free entrance, accessible seating and restroom access not independently verified.",
+      "dietary": "Confirm current dietary options, ingredients, allergen handling and cross-contact directly; do not infer from cuisine.",
+      "family": "Children's menu, highchairs and stroller access not independently verified unless explicitly described in visitor tip.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservation availability checked.",
+      "entrance": "321 Alvarado St; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Halal and gluten-free items reported on operator menu; verify preparation and cross-contact.",
+      "hoursSource": "https://manasiriscrepe.com/"
     }
   },
   {
@@ -7453,6 +7572,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.montrio.com/"
+      ],
+      "food": "Downtown Monterey dinner restaurant; dinner service begins at 4:30 PM, with later closing Friday and Saturday.",
+      "experience": "Visitor description is from existing dated source review; current availability and service details not freshly checked.",
+      "seating": "Seating capacity, outdoor availability and group arrangements not independently verified unless specifically described in visitor tip.",
+      "accessibility": "Step-free entrance, accessible seating and restroom access not independently verified.",
+      "dietary": "Confirm current dietary options, ingredients, allergen handling and cross-contact directly; do not infer from cuisine.",
+      "family": "Children's menu, highchairs and stroller access not independently verified unless explicitly described in visitor tip.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservation availability checked.",
+      "entrance": "414 Calle Principal; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Prior operator hours show later Friday/Saturday closing than weekdays.",
+      "hoursSource": "https://www.montrio.com/"
     }
   },
   {
@@ -7668,6 +7804,24 @@
       ],
       "verificationNote": "Official home says Mon–Sat 11:30 AM–7 PM, official hours page says noon–7 PM. Opening time not verified.",
       "hoursNote": "Published location-specific hours checked; holiday changes possible."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.oceansushi.com/locations-menus-hours",
+        "https://www.oceansushi.com/"
+      ],
+      "food": "Casual sushi, bento and Japanese comfort food, with dine-in and takeout. Official site disagrees on opening time (11:30 AM versus noon); closed Sunday.",
+      "experience": "Visitor description is from existing dated source review; current availability and service details not freshly checked.",
+      "seating": "Seating capacity, outdoor availability and group arrangements not independently verified unless specifically described in visitor tip.",
+      "accessibility": "Step-free entrance, accessible seating and restroom access not independently verified.",
+      "dietary": "Confirm current dietary options, ingredients, allergen handling and cross-contact directly; do not infer from cuisine.",
+      "family": "Children's menu, highchairs and stroller access not independently verified unless explicitly described in visitor tip.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservation availability checked.",
+      "entrance": "165 Webster St; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Official pages disagree on 11:30 AM versus noon opening; Sunday closed/not listed.",
+      "hoursSource": "https://www.oceansushi.com/"
     }
   },
   {
@@ -7965,6 +8119,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.portolahotel.com/dining/peter-bs/"
+      ],
+      "food": "Brewpub and sports bar behind Portola Hotel with burgers, pizza, vegetarian/vegan-marked menu choices and a pet-friendly patio. Wednesday closed.",
+      "experience": "Visitor description is from existing dated source review; current availability and service details not freshly checked.",
+      "seating": "Seating capacity, outdoor availability and group arrangements not independently verified unless specifically described in visitor tip.",
+      "accessibility": "Step-free entrance, accessible seating and restroom access not independently verified.",
+      "dietary": "Confirm current dietary options, ingredients, allergen handling and cross-contact directly; do not infer from cuisine.",
+      "family": "Children's menu, highchairs and stroller access not independently verified unless explicitly described in visitor tip.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservation availability checked.",
+      "entrance": "2 Portola Plaza; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Wednesday closed; Sunday breakfast may be seasonal; confirm before recommending.",
+      "hoursSource": "https://www.portolahotel.com/dining/peter-bs/"
     }
   },
   {
@@ -8133,6 +8304,23 @@
       "verifiedFields": [
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://revivalicecream.com/pages/where-to-find-us"
+      ],
+      "food": "Small-batch ice cream made with local ingredients, including dairy-free and vegan options. Nut and egg allergens may be present in the facility.",
+      "experience": "Visitor description is from existing dated source review; current availability and service details not freshly checked.",
+      "seating": "Seating capacity, outdoor availability and group arrangements not independently verified unless specifically described in visitor tip.",
+      "accessibility": "Step-free entrance, accessible seating and restroom access not independently verified.",
+      "dietary": "Confirm current dietary options, ingredients, allergen handling and cross-contact directly; do not infer from cuisine.",
+      "family": "Children's menu, highchairs and stroller access not independently verified unless explicitly described in visitor tip.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservation availability checked.",
+      "entrance": "463 Alvarado St; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Hours explicitly marked SUMMER schedule; confirm seasonal changes. Nut/egg allergens possible.",
+      "hoursSource": "https://revivalicecream.com/"
     }
   },
   {
@@ -8175,6 +8363,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.rosinesmonterey.com/"
+      ],
+      "food": "Family-run Monterey institution for breakfast, comfort food, lasagna and generous cakes; breakfast menu served until 3 PM.",
+      "experience": "Visitor description is from existing dated source review; current availability and service details not freshly checked.",
+      "seating": "Seating capacity, outdoor availability and group arrangements not independently verified unless specifically described in visitor tip.",
+      "accessibility": "Step-free entrance, accessible seating and restroom access not independently verified.",
+      "dietary": "Confirm current dietary options, ingredients, allergen handling and cross-contact directly; do not infer from cuisine.",
+      "family": "Children's menu, highchairs and stroller access not independently verified unless explicitly described in visitor tip.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservation availability checked.",
+      "entrance": "434 Alvarado St; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Breakfast menu reported served until 3 PM; confirm current hours.",
+      "hoursSource": "https://www.rosinesmonterey.com"
     }
   },
   {
