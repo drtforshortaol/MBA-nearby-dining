@@ -301,6 +301,50 @@
         "menuUrl",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-10",
+      "status": "verified-with-explicit-unknowns",
+      "sources": [
+        "https://www.chart-house.com/location/chart-house-monterey-ca/",
+        "https://www.seemonterey.com/directory/chart-house/",
+        "https://www.opentable.com/r/chart-house-restaurant-monterey"
+      ],
+      "food": "Seafood, steak, prime rib, brunch dishes, desserts and cocktails.",
+      "experience": "Waterfront sit-down restaurant with Monterey Bay views, weekday happy hour and weekend brunch.",
+      "seating": "Indoor dining confirmed; outdoor/patio seating reported by third-party booking listing, not operator-verified.",
+      "accessibility": "See Monterey visitor bureau lists ADA-compliant amenities; specific entrance route not confirmed.",
+      "dietary": "Menu includes salads and a plant-based burger; allergen accommodations not independently verified.",
+      "family": "Visitor bureau lists family-friendly dining, highchairs and children's menu.",
+      "reservation": "Operator provides a reservations option; availability not checked.",
+      "entrance": "444 Cannery Row; precise entrance/parking approach not independently verified."
+    },
+    "attributes": {
+      "ocean": {
+        "value": "yes",
+        "status": "verified",
+        "source": "https://www.chart-house.com/location/chart-house-monterey-ca/",
+        "reviewedOn": "2026-11-10"
+      },
+      "alcohol": {
+        "value": "yes",
+        "status": "verified",
+        "source": "https://www.chart-house.com/location/chart-house-monterey-ca/",
+        "reviewedOn": "2026-11-10"
+      },
+      "family": {
+        "value": "yes",
+        "status": "verified",
+        "source": "https://www.seemonterey.com/directory/chart-house/",
+        "reviewedOn": "2026-11-10"
+      },
+      "price": {
+        "value": "$$$",
+        "status": "verified",
+        "source": "https://www.seemonterey.com/directory/chart-house/",
+        "reviewedOn": "2026-11-10",
+        "note": "Visitor bureau price category; current prices may vary"
+      }
     }
   },
   {
