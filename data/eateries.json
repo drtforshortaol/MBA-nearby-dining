@@ -1317,7 +1317,26 @@
       ],
       "verificationNote": "Official website's day-specific hours widget checked; corroborated by business listing."
     },
-    "menuUrl": "https://www.fishhopper.com/menu/"
+    "menuUrl": "https://www.fishhopper.com/menu/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://canneryrow.com/experience/menu-matters/",
+        "https://www.fishhopper.com/contact-us/",
+        "https://www.fishhopper.com/menu/"
+      ],
+      "food": "Existing operator-backed review identifies seafood and steaks; current choices on official menu.",
+      "experience": "Waterfront dining on Cannery Row with bay views.",
+      "seating": "Bay-facing seating described; specific tables and outdoor seating not independently verified.",
+      "accessibility": "Accessible entrance, restrooms and waterfront seating route not independently verified.",
+      "dietary": "Allergen, vegetarian, vegan and gluten-free accommodations not independently verified.",
+      "family": "Family menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservation and walk-in policies not independently verified.",
+      "entrance": "700 Cannery Row; exact doorway and accessible approach not independently verified.",
+      "hoursNote": "Existing operator review lists daily hours that may change; reconfirm before visiting.",
+      "hoursSource": "https://www.fishhopper.com/contact-us/"
+    }
   },
   {
     "id": "MBA-DINE-0024",
@@ -1785,6 +1804,25 @@
       "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": []
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.montereybayaquarium.org/visit/dining-shopping",
+        "https://www.montereybayaquarium.org/visit/accessibility-inclusion",
+        "https://www.montereybayaquarium.org/visit/visitor-faqs"
+      ],
+      "food": "Existing aquarium-sourced review reports vegan, vegetarian and gluten-free options; kitchen is not allergen-free.",
+      "experience": "Inside Monterey Bay Aquarium; admission is required to reach the café.",
+      "seating": "Specific seating locations and current availability not independently verified.",
+      "accessibility": "Aquarium accessibility information is linked in sources; café-specific route and facilities should be confirmed with aquarium staff.",
+      "dietary": "Vegan, vegetarian and gluten-free options reported; not an allergen-free kitchen. Ask staff about ingredients and cross-contact.",
+      "family": "Aquarium café for guests; admission required. Children's menu and highchairs not independently verified.",
+      "reservation": "Table reservations and preordering not independently verified.",
+      "entrance": "Inside Monterey Bay Aquarium; cannot be accessed as a regular street-front restaurant without admission.",
+      "hoursNote": "Closes 30 minutes before Aquarium closing per existing research; check Aquarium hours for the day.",
+      "hoursSource": "https://www.montereybayaquarium.org/visit/dining-shopping"
     }
   },
   {
@@ -1830,7 +1868,25 @@
         "menuUrl"
       ]
     },
-    "menuUrl": "https://seaharvestrestaurant.com/menu/"
+    "menuUrl": "https://seaharvestrestaurant.com/menu/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://seaharvestrestaurant.com/contact.html",
+        "https://seaharvestrestaurant.com/menu/"
+      ],
+      "food": "Existing operator-backed review describes fish and chips, chowder and grilled seafood; also operates as a fish market.",
+      "experience": "Casual seafood dining and fish-market service.",
+      "seating": "Outdoor seating reported in existing research; current availability and weather conditions not independently verified.",
+      "accessibility": "Accessible entrance, outdoor route and restrooms not independently verified.",
+      "dietary": "Fish and shellfish are central to menu; allergen cross-contact and other dietary accommodations not independently verified.",
+      "family": "Casual dining; children's menu and highchairs not independently verified.",
+      "reservation": "Reservations, queue policy and takeout arrangements not independently verified.",
+      "entrance": "598 Foam Street; restaurant versus fish-market entrances not independently verified.",
+      "hoursNote": "Hours from earlier operator-backed research; reconfirm before time-sensitive visits.",
+      "hoursSource": "https://seaharvestrestaurant.com/"
+    }
   },
   {
     "id": "MBA-DINE-0034",
