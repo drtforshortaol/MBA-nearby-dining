@@ -53,7 +53,7 @@
         "note": "Guided wine tastings and private events; live music schedule unverified"
       }
     },
-    "menuUrl": "https://atasteofmonterey.com/bistro/",
+    "menuUrl": "https://atasteofmonterey.com/wp-content/uploads/2026/08/Bistro-Menu_080626-Q3.pdf",
     "diningDetails": {
       "reviewedOn": "2026-11-07",
       "status": "verified",
@@ -70,7 +70,16 @@
       "family": "Family suitability and children's menu not verified; wine-focused venue.",
       "reservation": "Reservations encouraged; walk-ins accepted when space permits.",
       "entrance": "Second floor of 700 Cannery Row, Suite KK. Exact entrance/stairwell location unverified.",
-      "hoursSource": "https://atasteofmonterey.com/bistro/"
+      "hoursSource": "https://atasteofmonterey.com/bistro/",
+      "menuSource": "https://atasteofmonterey.com/wp-content/uploads/2026/08/Bistro-Menu_080626-Q3.pdf",
+      "menuReviewedOn": "2026-11-10",
+      "menuNote": "Official summer 2026 PDF menu; offerings and prices may change.",
+      "hoursConflictNote": "Official bistro page lists Fri–Sat noon–8 PM, but the operator's wine-tasting and private-events pages list noon–7 PM. Retain bistro-specific hours; confirm directly before relying on evening closing time.",
+      "hoursConflictSources": [
+        "https://atasteofmonterey.com/bistro/",
+        "https://atasteofmonterey.com/wine-tasting/",
+        "https://atasteofmonterey.com/private-events/"
+      ]
     },
     "batchReview": {
       "batch": "nearby-5-batch11-2026-11-07",
