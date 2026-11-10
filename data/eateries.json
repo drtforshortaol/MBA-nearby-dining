@@ -111,7 +111,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "Daily 7 AM–8 PM (third-party listing; confirm before visiting).",
+    "hours": "",
     "serviceClass": "Coffee / bakery",
     "area": "Monterey",
     "batchReview": {
@@ -137,8 +137,8 @@
       ]
     },
     "hoursConfidence": "unverified",
-    "hoursProvisional": "Mon–Thu 7 AM–6 PM; Fri–Sun 7 AM–8 PM",
-    "hoursCaution": "Conflicting directory listings; call to confirm."
+    "hoursProvisional": "Daily 7 AM–8 PM (third-party listing; conflicts with other directories)",
+    "hoursCaution": "Conflicting third-party schedules; official hours not verified. Call before visiting."
   },
   {
     "id": "MBA-DINE-0003",
@@ -777,7 +777,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "Supper club/event venue. Confirm reservation, ticket and event requirements before visiting.",
-    "hours": "Dinner/theatre: event-dependent; check ticketed show schedule. Office Mon–Fri 10 AM–5 PM (not dining hours).",
+    "hours": "",
     "serviceClass": "Supper club / live entertainment",
     "area": "Monterey",
     "batchReview": {
@@ -4701,7 +4701,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "Market/deli concept related to Domenico’s restaurant at same address; separate legal ownership not asserted.",
-    "hours": "Fish market/deli hours not independently verified. Related Domenico's restaurant at same address opens daily 11:30 AM–close; these are NOT confirmed market/deli hours.",
+    "hours": "",
     "serviceClass": "Seafood / fish market / deli",
     "area": "Monterey",
     "batchReview": {
@@ -5883,7 +5883,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "Mon closed; Tue–Sat 11 AM–2:30 PM and 5–8 PM; Sun 4–8 PM (online ordering hours; confirm dine-in).",
+    "hours": "",
     "serviceClass": "Restaurant / prepared meals",
     "area": "Monterey",
     "batchReview": {
@@ -5891,20 +5891,20 @@
       "reviewedOn": "2026-11-09",
       "proximityMethod": "approximate straight-line distance from 36.6183,-121.9019; NOT walking distance",
       "straightLineMilesApprox": 1.35,
-      "sourceStatus": "online-ordering-hours-checked; dine-in schedule unverified",
+      "sourceStatus": "online-ordering-schedule-checked; dine-in hours unverified",
       "visitorTip": "Restaurant / prepared meals at 414 Alvarado St. Verify current operating status, hours and menu before recommending.",
       "sources": [
         "https://kuma.menu11.com/monterey/order"
       ],
-      "hoursVerified": true,
+      "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": [
         "onlineOrderingHours"
       ]
     },
     "hoursConfidence": "unverified",
-    "hoursProvisional": "Daily 5–10 PM",
-    "hoursCaution": "Conflicts with Chamber and ordering hours; call for dine-in schedule."
+    "hoursProvisional": "Online ordering: Mon closed; Tue–Sat 11 AM–2:30 PM and 5–8 PM; Sun 4–8 PM",
+    "hoursCaution": "Online ordering schedule only; dine-in hours conflict with other listings and are unverified."
   },
   {
     "id": "MBA-DINE-0145",
@@ -8682,7 +8682,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "Soft opening: daily 4–8 PM reported in late Oct/early Nov 2026; hours may change soon—confirm before visiting.",
+    "hours": "",
     "serviceClass": "American comfort food with Pacific Islander influences",
     "area": "Monterey",
     "batchReview": {
@@ -8726,7 +8726,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "Public outdoor EAT takeout window is distinct from the nightclub. June 8, 2026 district report says everyone can order Friday/Saturday until 2am. Nightclub restrictions do not prove restrictions at the outdoor window. Current opening time and ongoing food schedule unverified; confirm before a special trip.",
-    "hours": "EAT outdoor takeout window: Fri–Sat until 2 AM (opening time unverified); schedule may change. Nightclub hours are different.",
+    "hours": "",
     "serviceClass": "Late-night takeout: hot dogs, chicken strips, fries",
     "area": "Monterey",
     "batchReview": {
@@ -8746,8 +8746,8 @@
       ]
     },
     "hoursConfidence": "unverified",
-    "hoursProvisional": "Fri–Sat 10 PM–2 AM (June report)",
-    "hoursCaution": "Historical schedule for EAT walk-up window, not nightclub."
+    "hoursProvisional": "Fri–Sat until 2 AM (reported June 2026; opening time unknown)",
+    "hoursCaution": "Historical EAT window schedule; not nightclub hours. Confirm availability."
   },
   {
     "id": "MBA-DINE-0224",
@@ -8859,7 +8859,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "Grocery prepared-food option. Store hours do not establish food-counter service hours or current selection. Confirm prepared-food availability separately.",
-    "hours": "Store: daily 8 AM–9 PM; prepared-food counter hours may differ (not verified).",
+    "hours": "",
     "serviceClass": "Grocery / prepared food",
     "area": "Monterey",
     "batchReview": {
@@ -8881,8 +8881,8 @@
       ]
     },
     "hoursConfidence": "unverified",
-    "hoursProvisional": "Daily 9 AM–8 PM (Market Cocina / Sandwich listings)",
-    "hoursCaution": "Provisional counter listings; hot bar hours unknown."
+    "hoursProvisional": "Store daily 8 AM–9 PM; prepared-food counter hours unknown",
+    "hoursCaution": "Official grocery store hours only; hot bar and prepared-food counters may differ."
   },
   {
     "id": "MBA-DINE-0231",
