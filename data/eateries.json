@@ -95,7 +95,7 @@
     "name": "Beans of Eden",
     "address": "711 Cannery Row, Suites A & E",
     "city": "Monterey",
-    "phone": "Not identified",
+    "phone": "(831) 215-6209",
     "phoneDigits": "",
     "cuisine": "Coffee / bakery",
     "distanceMiles": null,
@@ -111,7 +111,7 @@
     "photoSource": "",
     "photoDate": "",
     "statusNote": "",
-    "hours": "",
+    "hours": "Daily 7 AM–8 PM (third-party listing; confirm before visiting).",
     "serviceClass": "Coffee / bakery",
     "area": "Monterey",
     "batchReview": {
@@ -119,18 +119,21 @@
       "reviewedOn": "2026-11-09",
       "proximityMethod": "straight-line estimate from aquarium coordinates; NOT walking distance",
       "straightLineMilesApprox": 0.2,
-      "sourceStatus": "operating business confirmed; hours not published in reviewed sources",
+      "sourceStatus": "third-party-listed-hours; official hours not independently confirmed",
       "visitorTip": "Coffee, pastries and sandwiches in the former Starbucks space. A convenient breakfast or café break near the aquarium.",
       "sources": [
         "https://canneryrow.com/plan-your-visit/dine/",
         "https://www.montereycountynow.com/eat_drink/morsels/coffee-row/article_a92ef7e9-2148-4d3d-aa1e-baeae478279c.html",
-        "https://canneryrow.com/properties/711-cannery-row/"
+        "https://canneryrow.com/properties/711-cannery-row/",
+        "https://maps.roadtrippers.com/us/monterey-ca/food-drink/beans-of-eden-monterey-ca--0"
       ],
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": [
         "address",
-        "visitorTip"
+        "visitorTip",
+        "thirdPartyListedHours",
+        "thirdPartyListedPhone"
       ]
     },
     "hoursConfidence": "unverified",
