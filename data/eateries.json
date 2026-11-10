@@ -4752,6 +4752,23 @@
         "hours-provisional"
       ],
       "verificationNote": "Chamber directory schedule; not independently confirmed with restaurant."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://business.pacificgrove.org/directory/Details/toasties-cafe-2115328"
+      ],
+      "food": "American / breakfast / lunch at 702 Lighthouse Ave. Verify current menu, operating status and hours before recommending.",
+      "experience": "Visitor guidance derived from existing dated source review, not a fresh live check.",
+      "seating": "Seating and group capacity not independently verified.",
+      "accessibility": "Step-free entrance, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, dietary accommodations and allergen cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policy not independently verified; no real-time availability checked.",
+      "entrance": "702 Lighthouse Ave; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Existing record: Mon–Sat 6:30 AM–2:30 PM; Sun 7 AM–2 PM (Pacific Grove Chamber directory).. Prior research status: existing-record-only; requires independent source verification. ",
+      "hoursSource": "https://business.pacificgrove.org/directory/Details/toasties-cafe-2115328"
     }
   },
   {
@@ -4855,6 +4872,23 @@
         "hours"
       ],
       "verificationNote": "Official restaurant website."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.wild-fish.com/location/"
+      ],
+      "food": "Seafood at 545 Lighthouse Ave. Current menu, hours and operating status require confirmation before recommending.",
+      "experience": "Visitor guidance derived from existing dated source review, not a fresh live check.",
+      "seating": "Seating and group capacity not independently verified.",
+      "accessibility": "Step-free entrance, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, dietary accommodations and allergen cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policy not independently verified; no real-time availability checked.",
+      "entrance": "545 Lighthouse Ave; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Existing record: Sun–Thu lunch 11:30 AM–3 PM, dinner 5–9 PM; Fri–Sat lunch 11:30 AM–3 PM, dinner 5–9:30 PM.. Prior research status: existing-record-only; official website not independently verified. ",
+      "hoursSource": "https://wild-fish.com/"
     }
   },
   {
@@ -5164,6 +5198,23 @@
         "hours"
       ],
       "verificationNote": "Official site hours."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://littlechickenhouse.com/"
+      ],
+      "food": "Chicken / quick service at 1193 Forest Ave. Verify operating status, current menu and hours before recommending.",
+      "experience": "Visitor guidance derived from existing dated source review, not a fresh live check.",
+      "seating": "Seating and group capacity not independently verified.",
+      "accessibility": "Step-free entrance, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, dietary accommodations and allergen cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policy not independently verified; no real-time availability checked.",
+      "entrance": "1193 Forest Ave; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Existing record: Mon–Sat 11 AM–9 PM; Sun 2–7 PM.. Prior research status: existing-record-only; requires independent source verification. ",
+      "hoursSource": "https://littlechickenhouse.com/"
     }
   },
   {
@@ -5265,6 +5316,23 @@
         "hours"
       ],
       "verificationNote": "Official site hours; its 'Monday–Friday' text excludes explicitly closed Wednesday."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://lovethaipg.com/"
+      ],
+      "food": "Thai / curries / noodles / salads at 1180 Forest Ave Suite A. Verify operating status, current menu and hours before recommending.",
+      "experience": "Visitor guidance derived from existing dated source review, not a fresh live check.",
+      "seating": "Seating and group capacity not independently verified.",
+      "accessibility": "Step-free entrance, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, dietary accommodations and allergen cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policy not independently verified; no real-time availability checked.",
+      "entrance": "1180 Forest Ave Suite A; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Existing record: Mon–Tue and Thu–Fri 11 AM–2:30 PM, 4–8:30 PM; Wed closed; Sat–Sun noon–8:30 PM.. Prior research status: existing-record-only; requires independent source verification. ",
+      "hoursSource": "https://lovethaipg.com/"
     }
   },
   {
@@ -5644,6 +5712,23 @@
         "hours"
       ],
       "verificationNote": "Current official visit page; older website page differs on Friday and Saturday closing."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://abalonetti.com/visit"
+      ],
+      "food": "Restaurant / prepared meals at 57 Old Fisherman's Wharf. Verify current menu, operating status and hours before recommending.",
+      "experience": "Visitor guidance derived from existing dated source review, not a fresh live check.",
+      "seating": "Seating and group capacity not independently verified.",
+      "accessibility": "Step-free entrance, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, dietary accommodations and allergen cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policy not independently verified; no real-time availability checked.",
+      "entrance": "57 Old Fisherman's Wharf; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Existing record: Sun–Thu 11:30 AM–8:30 PM; Fri–Sat 11:30 AM–9 PM.. Prior research status: existing-record-only; requires independent source verification. ",
+      "hoursSource": "https://abalonetti.com/"
     }
   },
   {
@@ -6183,7 +6268,24 @@
     },
     "hoursConfidence": "unknown",
     "hoursProvisional": null,
-    "hoursCaution": "Market/deli counter hours unknown; dining room has different hours."
+    "hoursCaution": "Market/deli counter hours unknown; dining room has different hours.",
+    "diningDetails": {
+      "reviewedOn": "2026-11-09",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.montereywharf.com/dining/domenicos-fish-market-and-deli.html"
+      ],
+      "food": "Seafood / fish market / deli at 50 Old Fisherman's Wharf. Verify current menu, operating status and hours before recommending.",
+      "experience": "Visitor guidance derived from existing dated source review, not a fresh live check.",
+      "seating": "Seating and group capacity not independently verified.",
+      "accessibility": "Step-free entrance, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, dietary accommodations and allergen cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policy not independently verified; no real-time availability checked.",
+      "entrance": "50 Old Fisherman's Wharf; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Existing record: hours unknown. Prior research status: related restaurant hours only; market hours unverified. Related restaurant hours must NOT be used for fish market.",
+      "hoursSource": "https://domenicosmonterey.com/"
+    }
   },
   {
     "id": "MBA-DINE-0116",
@@ -6403,6 +6505,23 @@
         "hours"
       ],
       "hoursNote": "Location-specific published schedule checked 2026-11-07; holiday changes possible."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.albatrossridge.com/tasting-rooms/"
+      ],
+      "food": "Winery with restaurant / kitchen at 316 Alvarado St. Verify current operating status, hours and menu before recommending.",
+      "experience": "Visitor guidance derived from existing dated source review, not a fresh live check.",
+      "seating": "Seating and group capacity not independently verified.",
+      "accessibility": "Step-free entrance, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, dietary accommodations and allergen cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policy not independently verified; no real-time availability checked.",
+      "entrance": "316 Alvarado St; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Existing record: Sun 1–6 PM; Tue & Thu 4–8 PM; Fri–Sat 2–9 PM; closed Mon & Wed.. Prior research status: official-website-checked-hours. ",
+      "hoursSource": "https://www.albatrossridge.com/tasting-rooms/"
     }
   },
   {
@@ -6962,6 +7081,23 @@
       "photoVerified": false,
       "verifiedFields": [],
       "hoursNote": "Provisional or conflicting schedule; source checked but not confirmed as current official hours."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.restaurantji.com/ca/monterey/china-garden-/"
+      ],
+      "food": "Chinese / Hunan / Mandarin / Szechuan at 600 Munras Ave. Verify operating status, current menu and hours before recommending.",
+      "experience": "Visitor guidance derived from existing dated source review, not a fresh live check.",
+      "seating": "Seating and group capacity not independently verified.",
+      "accessibility": "Step-free entrance, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, dietary accommodations and allergen cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policy not independently verified; no real-time availability checked.",
+      "entrance": "600 Munras Ave; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Existing record: Mon–Tue and Thu–Sun 11 AM–3 PM, 4–8 PM; closed Wed (directory-listed; confirm).. Prior research status: directory-or-conflicting-hours-provisional. ",
+      "hoursSource": "https://www.chinagardenmonterey.com/"
     }
   },
   {
@@ -7168,6 +7304,23 @@
         "hours"
       ],
       "verificationNote": "Official homepage gives opening days/times and menu page gives dinner 4–10 PM; full closing time not confirmed."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://crownandanchor.net/"
+      ],
+      "food": "Pub / food service at 150 W Franklin St. Verify current operating status, hours and menu before recommending.",
+      "experience": "Visitor guidance derived from existing dated source review, not a fresh live check.",
+      "seating": "Seating and group capacity not independently verified.",
+      "accessibility": "Step-free entrance, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, dietary accommodations and allergen cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policy not independently verified; no real-time availability checked.",
+      "entrance": "150 W Franklin St; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Existing record: Mon–Fri from 4 PM; Sat–Sun from noon. Dinner served daily 4–10 PM.. Prior research status: existing-record-only; requires independent source verification. ",
+      "hoursSource": "https://crownandanchor.net/"
     }
   },
   {
@@ -7351,6 +7504,23 @@
         "hours"
       ],
       "verificationNote": "Official about page; other official pages disagree on weekend brunch schedule, so use about-page schedule and retain discrepancy note."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.estebanrestaurant.com/about"
+      ],
+      "food": "Restaurant / prepared meals at 700 Munras Ave. Verify operating status, current menu and hours before recommending.",
+      "experience": "Visitor guidance derived from existing dated source review, not a fresh live check.",
+      "seating": "Seating and group capacity not independently verified.",
+      "accessibility": "Step-free entrance, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, dietary accommodations and allergen cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policy not independently verified; no real-time availability checked.",
+      "entrance": "700 Munras Ave; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Existing record: Breakfast Mon–Fri 7–10 AM; Sat 8 AM–noon; Sun brunch 9 AM–1:30 PM; dinner Sun–Thu 4:30–8:30 PM, Fri–Sat 4:30–9 PM.. Prior research status: existing-record-only; requires independent source verification. ",
+      "hoursSource": "https://www.estebanrestaurant.com/"
     }
   },
   {
@@ -7690,7 +7860,24 @@
     },
     "hoursConfidence": "unverified",
     "hoursProvisional": "Online ordering: Mon closed; Tue–Sat 11 AM–2:30 PM and 5–8 PM; Sun 4–8 PM",
-    "hoursCaution": "Online ordering schedule only; dine-in hours conflict with other listings and are unverified."
+    "hoursCaution": "Online ordering schedule only; dine-in hours conflict with other listings and are unverified.",
+    "diningDetails": {
+      "reviewedOn": "2026-11-09",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://kuma.menu11.com/monterey/order"
+      ],
+      "food": "Restaurant / prepared meals at 414 Alvarado St. Verify current operating status, hours and menu before recommending.",
+      "experience": "Visitor guidance derived from existing dated source review, not a fresh live check.",
+      "seating": "Seating and group capacity not independently verified.",
+      "accessibility": "Step-free entrance, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, dietary accommodations and allergen cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policy not independently verified; no real-time availability checked.",
+      "entrance": "414 Alvarado St; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Existing record: hours unknown. Prior research status: online-ordering-schedule-checked; dine-in hours unverified. Online ordering times do not establish dine-in hours.",
+      "hoursSource": "https://kuma.menu11.com/monterey/order"
+    }
   },
   {
     "id": "MBA-DINE-0145",
@@ -7907,6 +8094,23 @@
       "photoVerified": false,
       "verifiedFields": [],
       "hoursNote": "Provisional or conflicting published schedule; do not present as verified."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.midicitheneapolitanmonterey.com/"
+      ],
+      "food": "Neapolitan pizza / Italian / pasta at 467 Alvarado St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Visitor guidance derived from existing dated source review, not a fresh live check.",
+      "seating": "Seating and group capacity not independently verified.",
+      "accessibility": "Step-free entrance, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, dietary accommodations and allergen cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policy not independently verified; no real-time availability checked.",
+      "entrance": "467 Alvarado St; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Existing record: Online-ordering page shows noon–11:30 PM; daily schedule not established. Confirm before visiting.. Prior research status: published-hours-partial-or-conflicting. Online ordering time does not establish full weekly schedule.",
+      "hoursSource": "https://mymidici.com/stores/california/monterey/downtown-monterey"
     }
   },
   {
@@ -8455,6 +8659,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://parkerlusseau.com/"
+      ],
+      "food": "French-style bakery and café in the historic Fremont Adobe. Ownership transitioned to Bees Knees Bakery in 2026; established bakery continues.",
+      "experience": "Visitor guidance derived from existing dated source review, not a fresh live check.",
+      "seating": "Seating and group capacity not independently verified.",
+      "accessibility": "Step-free entrance, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, dietary accommodations and allergen cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policy not independently verified; no real-time availability checked.",
+      "entrance": "539 Hartnell St; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Existing record: Mon–Fri 7:30 AM–4 PM; Sat 7:30 AM–3 PM; Sunday hours not published.. Prior research status: official-source-checked. Prior source reports ownership transition to Bees Knees Bakery; confirm current business identity.",
+      "hoursSource": "https://parkerlusseau.com/"
     }
   },
   {
@@ -9066,6 +9287,23 @@
       "photoVerified": false,
       "verifiedFields": [],
       "hoursNote": "Provisional or conflicting schedule; source checked but not confirmed as current official hours."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.oldmonterey.org/blogs?page=5"
+      ],
+      "food": "Bakery / café at 160 Webster St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Visitor guidance derived from existing dated source review, not a fresh live check.",
+      "seating": "Seating and group capacity not independently verified.",
+      "accessibility": "Step-free entrance, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, dietary accommodations and allergen cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policy not independently verified; no real-time availability checked.",
+      "entrance": "160 Webster St; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Existing record: Wed–Mon 6:30 AM–2:30 PM; closed Tue (business-submitted January 2026 announcement; confirm current hours).. Prior research status: directory-or-conflicting-hours-provisional. ",
+      "hoursSource": "https://www.oldmonterey.org/biz/six-over-coffee-and-company"
     }
   },
   {
@@ -10061,6 +10299,23 @@
       "source": "https://locations.chipotle.com/ca/monterey/500-del-monte-ctr",
       "checkedOn": "2026-11-07",
       "note": "Regular published hours; holidays and temporary changes may differ."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.delmontecenter.com/directory"
+      ],
+      "food": "Mexican fast casual at Del Monte Center. The shopping center directory lists this business; check individual restaurant hours, which may differ from center hours.",
+      "experience": "Visitor guidance derived from existing dated source review, not a fresh live check.",
+      "seating": "Seating and group capacity not independently verified.",
+      "accessibility": "Step-free entrance, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, dietary accommodations and allergen cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Reservations and walk-in policy not independently verified; no real-time availability checked.",
+      "entrance": "500 Del Monte Center; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Existing record: Mon–Sun 10:45 AM–10 PM. Prior research status: shopping-center-directory-checked; hours not verified. Shopping center hours are NOT individual store hours.",
+      "hoursSource": "https://www.delmontecenter.com/directory"
     }
   },
   {
