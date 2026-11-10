@@ -5379,6 +5379,24 @@
         "hours-provisional"
       ],
       "verificationNote": "Restaurant confirms opening; third-party listing provides closing; closing unverified by restaurant."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://rockfishmonterey.com/",
+        "https://rockfishmonterey.com/contact"
+      ],
+      "food": "Waterfront seafood and harbor views at Old Fisherman's Wharf; family-oriented setting reported.",
+      "experience": "Casual waterfront seafood and harbor views at Old Fisherman's Wharf; suitable for visitors of all ages. Reservations offered.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen cross-contact requirements must be confirmed with restaurant; do not assume availability beyond documented menu options.",
+      "family": "Children's menu and highchairs not independently verified unless explicitly noted in experience.",
+      "reservation": "Reservations offered in earlier operator research; availability unverified.",
+      "entrance": "101 Fisherman’s Wharf #1; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Restaurant website lists 11:30 AM opening, but closing time not published; third-party reservation listing estimated 8:30 PM.",
+      "hoursSource": "https://rockfishmonterey.com/"
     }
   },
   {
@@ -5503,6 +5521,23 @@
         "hours"
       ],
       "verificationNote": "Restaurant website lists daily 8 AM–9 PM; wharf directory lists 7:30 AM–9 PM. Restaurant source preferred; conflicting directory opening time noted."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://crablouiesbistro.com/about"
+      ],
+      "food": "Seafood and casual waterfront dining at Fisherman's Wharf; menu specifics not independently verified.",
+      "experience": "Seafood / casual waterfront dining at 46 Fisherman's Wharf. Verify current operating status, menu and hours before recommending.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen cross-contact requirements must be confirmed with restaurant; do not assume availability beyond documented menu options.",
+      "family": "Children's menu and highchairs not independently verified unless explicitly noted in experience.",
+      "reservation": "Reservations and walk-in arrangements not independently verified.",
+      "entrance": "46 Fisherman's Wharf; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Operator website previously listed daily 8 AM–9 PM; directory hours conflicted. Reconfirm.",
+      "hoursSource": "https://crablouiesbistro.com/"
     }
   },
   {
@@ -5545,6 +5580,23 @@
         "hours"
       ],
       "verificationNote": "Official website lists 11:30 AM–close daily. Exact closing time remains unverified; third-party listings vary."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://domenicosmonterey.com/contact/"
+      ],
+      "food": "Seafood, Italian dishes and steaks reported for waterfront dining.",
+      "experience": "Seafood / Italian / steaks at 50 Fisherman's Wharf 1. Verify current operating status, menu and hours before recommending.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen cross-contact requirements must be confirmed with restaurant; do not assume availability beyond documented menu options.",
+      "family": "Children's menu and highchairs not independently verified unless explicitly noted in experience.",
+      "reservation": "Reservations and walk-in arrangements not independently verified.",
+      "entrance": "50 Fisherman's Wharf 1; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Operator website listed daily opening at 11:30 AM; closing time not published.",
+      "hoursSource": "https://domenicosmonterey.com/"
     }
   },
   {
@@ -5630,6 +5682,24 @@
         "hours"
       ],
       "verificationNote": "Official restaurant website publishes detailed weekday/weekend closing times; supersedes wharf directory's rounded 9 PM closing time."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.oldfishermansgrotto.com/",
+        "https://www.montereywharf.com/dining/old-fishermans-grotto.html"
+      ],
+      "food": "Wharf seafood, clam chowder, steak and pasta reported in earlier operator research.",
+      "experience": "Wharf seafood restaurant known for clam chowder, seafood, steak and pasta; sit-down dining.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen cross-contact requirements must be confirmed with restaurant; do not assume availability beyond documented menu options.",
+      "family": "Children's menu and highchairs not independently verified unless explicitly noted in experience.",
+      "reservation": "Reservations and walk-in arrangements not independently verified.",
+      "entrance": "39 Old Fisherman's Wharf; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Previously reviewed operator schedule varies slightly between weekdays and weekends.",
+      "hoursSource": "https://www.oldfishermansgrotto.com/"
     }
   },
   {
@@ -5762,6 +5832,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.cafefina.com/"
+      ],
+      "food": "Italian-inspired seafood, pasta and cioppino reported in previous operator research.",
+      "experience": "Harbor-view Italian-inspired seafood, pasta and cioppino on the wharf; outdoor seating and reservations available.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen cross-contact requirements must be confirmed with restaurant; do not assume availability beyond documented menu options.",
+      "family": "Children's menu and highchairs not independently verified unless explicitly noted in experience.",
+      "reservation": "Outdoor seating and reservations reported; current availability not checked.",
+      "entrance": "47 Old Fisherman's Wharf; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Previously reviewed operator hours show weekday noon opening, weekend 11:30 AM opening.",
+      "hoursSource": "https://www.cafefina.com/"
     }
   },
   {
@@ -6101,6 +6188,23 @@
         "hours"
       ],
       "hoursNote": "Published location-specific hours checked; holiday changes possible."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.alejandros.co/location/alejandros/"
+      ],
+      "food": "Downtown full-service restaurant; menu specifics not independently verified.",
+      "experience": "Restaurant / full service at 474 Alvarado St. Verify operating status, current menu and hours before recommending.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen cross-contact requirements must be confirmed with restaurant; do not assume availability beyond documented menu options.",
+      "family": "Children's menu and highchairs not independently verified unless explicitly noted in experience.",
+      "reservation": "Reservations, group seating and walk-ins not independently verified.",
+      "entrance": "474 Alvarado St; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Previously reviewed kitchen hours differ from bar hours on Friday/Saturday; bar reported open until 11 PM.",
+      "hoursSource": "https://www.alejandros.co/"
     }
   },
   {
@@ -6143,6 +6247,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.altamonterey.com/"
+      ],
+      "food": "Fresh pastries, coffee and daytime café food in prior operator-backed research.",
+      "experience": "Bakery and café serving fresh pastries, coffee and daytime food at the historic Cooper-Molera Adobe complex.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen cross-contact requirements must be confirmed with restaurant; do not assume availability beyond documented menu options.",
+      "family": "Children's menu and highchairs not independently verified unless explicitly noted in experience.",
+      "reservation": "Takeout, seating capacity and patio availability not independently verified.",
+      "entrance": "502 Munras Ave; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Previously reviewed operator schedule daily 7 AM–4 PM; reconfirm.",
+      "hoursSource": "https://www.altamonterey.com/"
     }
   },
   {
@@ -6185,6 +6306,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.alvaradostreetbrewery.com/pages/montereybrewpub"
+      ],
+      "food": "Family-friendly brewpub; kids' menu, vegetarian/vegan/gluten-free-marked dishes and dog-friendly beer garden reported.",
+      "experience": "Family-friendly downtown brewpub with a kids' menu, dog-friendly beer garden, and vegetarian/vegan/gluten-free-marked dishes. Walk-ins for fewer than five.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen cross-contact requirements must be confirmed with restaurant; do not assume availability beyond documented menu options.",
+      "family": "Children's menu and highchairs not independently verified unless explicitly noted in experience.",
+      "reservation": "Walk-ins for groups under five reported; larger group booking rules unverified.",
+      "entrance": "426 Alvarado St; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Kitchen and bar have DIFFERENT closing times; use kitchen schedule for dining recommendations.",
+      "hoursSource": "https://www.alvaradostreetbrewery.com/pages/montereybrewpub"
     }
   },
   {
@@ -6227,6 +6365,23 @@
         "visitorTip"
       ],
       "verificationNote": "Official site lists 9 PM dinner close daily, ordering site lists 9:30 PM Fri–Sat; confirm late service."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://monterey.ambrosiaib.com/"
+      ],
+      "food": "Indian weekday lunch buffet, weekend/holiday brunch buffet and à la carte dinner; vegetarian choices reported.",
+      "experience": "Indian lunch buffet on weekdays, brunch buffet on weekends and federal holidays; vegetarian choices and à la carte dinner.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen cross-contact requirements must be confirmed with restaurant; do not assume availability beyond documented menu options.",
+      "family": "Children's menu and highchairs not independently verified unless explicitly noted in experience.",
+      "reservation": "Buffet pricing, group reservations and availability not independently verified.",
+      "entrance": "565 Abrego St; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Operator pages conflict on exact Friday/Saturday closing time; reconfirm.",
+      "hoursSource": "https://monterey.ambrosiaib.com/contact/"
     }
   },
   {
@@ -6312,6 +6467,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.benihana.com/locations/monterey/"
+      ],
+      "food": "Table-side teppanyaki and sushi, with children's menu in prior operator research.",
+      "experience": "Table-side teppanyaki cooking and sushi; kids' menu available. Official site reports wheelchair access by lift; reservations offered.",
+      "seating": "Specific table availability, capacity and weather restrictions not independently verified.",
+      "accessibility": "Prior operator research reports wheelchair access by lift; confirm lift operation and full accessible route.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen cross-contact requirements must be confirmed with restaurant; do not assume availability beyond documented menu options.",
+      "family": "Children's menu and highchairs not independently verified unless explicitly noted in experience.",
+      "reservation": "Reservations offered; live availability unverified.",
+      "entrance": "136 Olivier St; precise doorway and accessible route not independently verified.",
+      "hoursNote": "Operator review distinguishes restaurant and takeout/delivery hours; confirm current schedule.",
+      "hoursSource": "https://www.benihana.com/locations/monterey/"
     }
   },
   {
