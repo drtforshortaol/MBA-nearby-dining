@@ -2298,6 +2298,23 @@
         "hours-provisional"
       ],
       "verificationNote": "Business directory listing, checked 2026-11-07. Hours not independently confirmed with restaurant."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://curryjourney.com/"
+      ],
+      "food": "Thai curry dishes reported in previously collected directory-supported research; current menu unverified.",
+      "experience": "Casual Thai curry restaurant with dine-in and takeout reported.",
+      "seating": "Dine-in seating reported; capacity and outdoor tables not independently verified.",
+      "accessibility": "Step-free entry and accessible restroom not independently verified.",
+      "dietary": "Vegan, vegetarian, gluten-free and allergen accommodations not independently verified; ask about fish sauce and shellfish.",
+      "family": "Children's menu and highchairs not independently verified.",
+      "reservation": "Table reservations, online ordering and takeout timing not independently verified.",
+      "entrance": "794 Lighthouse Avenue; precise door and accessible approach not independently verified.",
+      "hoursNote": "Provisional directory hours, not independently confirmed by operator; Monday hours unlisted.",
+      "hoursSource": "https://curryjourney.com/"
     }
   },
   {
@@ -2467,7 +2484,24 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://giannis.restaurantengine.com/"
+    "menuUrl": "https://giannis.restaurantengine.com/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://giannis.restaurantengine.com/"
+      ],
+      "food": "Pizza, pasta, calzones, sandwiches and gelato in earlier restaurant-backed research.",
+      "experience": "Family-owned pizzeria offering takeout.",
+      "seating": "Dine-in tables and group capacity not independently verified.",
+      "accessibility": "Accessible entrance, restroom and parking not independently verified.",
+      "dietary": "Gluten-free crust, vegan options and allergen cross-contact not independently verified.",
+      "family": "Casual pizza dining; children's menu and highchairs not independently verified.",
+      "reservation": "Takeout reported; table reservations and large orders not independently verified.",
+      "entrance": "725 Lighthouse Avenue; exact doorway and accessible route not independently verified.",
+      "hoursNote": "Previously reviewed operator hours; confirm current hours and holiday exceptions.",
+      "hoursSource": "https://www.giannispizzamonterey.com/"
+    }
   },
   {
     "id": "MBA-DINE-0042",
@@ -2514,7 +2548,26 @@
       ],
       "verificationNote": "Monterey-specific business listings agree; restaurant official site does not publish Monterey-specific hours in checked pages."
     },
-    "menuUrl": "https://www.hulastiki.com/menus-1-1"
+    "menuUrl": "https://www.hulastiki.com/menus-1-1",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.hulastiki.com/",
+        "https://www.hulastiki.com/menus-1-1",
+        "https://www.opentable.com/restaurant/profile/283249"
+      ],
+      "food": "Island-fusion menu with seafood, tacos and tofu dishes in prior Monterey-specific operator research.",
+      "experience": "Tiki-inspired restaurant with tropical cocktails; verify Monterey menu rather than Santa Cruz menu.",
+      "seating": "Indoor seating, bar, patio and group capacity not independently verified.",
+      "accessibility": "Step-free entry and accessible restroom not independently verified.",
+      "dietary": "Tofu dishes reported; vegan preparation, gluten-free options and allergen cross-contact not independently verified.",
+      "family": "Children's menu, highchairs and age restrictions not independently verified.",
+      "reservation": "Reservation availability and walk-in policies not independently verified.",
+      "entrance": "622 Lighthouse Avenue; precise doorway and accessible approach not independently verified.",
+      "hoursNote": "Hours are directory estimates, NOT operator-confirmed for Monterey; verify before visiting.",
+      "hoursSource": "https://www.hulastiki.com/"
+    }
   },
   {
     "id": "MBA-DINE-0043",
@@ -2619,6 +2672,24 @@
       "verifiedFields": [
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.lighthousedistrict.net/biz/international-market-deli",
+        "https://www.restaurantji.com/ca/monterey/international-market-and-deli-/"
+      ],
+      "food": "Imported groceries, halal goods, baklava and Turkish delight reported by local business directories.",
+      "experience": "Mediterranean specialty market; sister International Café nearby serves prepared meals. Do not present market as a full-service restaurant.",
+      "seating": "Prepared-food seating and dine-in service not independently verified.",
+      "accessibility": "Step-free entrance, accessible aisles and restroom not independently verified.",
+      "dietary": "Halal products reported; individual product certification, nut allergens and cross-contact require checking labels or staff.",
+      "family": "Retail market; family dining facilities not independently verified.",
+      "reservation": "Retail shopping; meal reservations not applicable based on current research.",
+      "entrance": "580 Lighthouse Avenue; exact market entrance and accessible route not independently verified.",
+      "hoursNote": "Directory-supported opening hours not operator-confirmed; verify before directing visitors.",
+      "hoursSource": "https://www.lighthousedistrict.net/directory/food_and_drink/dining"
     }
   },
   {
