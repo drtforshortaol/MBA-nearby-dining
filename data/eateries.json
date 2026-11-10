@@ -8815,6 +8815,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://surburger.com/contact-us-1"
+      ],
+      "food": "Burgers, chicken and vegetarian options; counter-service dining.",
+      "experience": "Casual burgers, chicken and vegetarian options; counter-service style dining.",
+      "seating": "Reported seating arrangements are described in visitor tip where available; capacity and weather restrictions unverified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, allergen handling and cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservations checked.",
+      "entrance": "409 Alvarado St; exact doorway and accessible approach not independently verified.",
+      "hoursNote": "Prior operator schedule daily 11 AM–9 PM.",
+      "hoursSource": "https://surburger.com/"
     }
   },
   {
@@ -9082,6 +9099,23 @@
         "visitorTip",
         "hours"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.lacotebleuepg.com/"
+      ],
+      "food": "Coastal Mediterranean bistro; fish and pasta; sit-down service.",
+      "experience": "Coastal Mediterranean bistro serving fish, pasta and other sit-down dishes; closed Tuesday.",
+      "seating": "Reported seating arrangements are described in visitor tip where available; capacity and weather restrictions unverified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, allergen handling and cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservations checked.",
+      "entrance": "209 Forest Ave; exact doorway and accessible approach not independently verified.",
+      "hoursNote": "Closed Tuesday; split lunch and dinner hours.",
+      "hoursSource": "https://lacotebleuepg.com/"
     }
   },
   {
@@ -9125,6 +9159,24 @@
         "visitorTip"
       ],
       "verificationNote": "Official website confirms opening at 11 AM daily and Sunday brunch 10:30 AM–2 PM; Monterey Chamber directory lists closing at 9 PM. Exact closing time not confirmed by restaurant; hoursVerified remains false."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://sandbarandgrillmonterey.com/location-hours",
+        "https://members.montereychamber.com/list/member/sandbar-grill-restaurant-4116"
+      ],
+      "food": "Seafood with marina views, below boardwalk on Municipal Wharf II.",
+      "experience": "Casual seafood and marina views below the boardwalk on Municipal Wharf II. Sunday brunch 10:30 AM–2 PM; restaurant opens daily at 11 AM otherwise.",
+      "seating": "Reported seating arrangements are described in visitor tip where available; capacity and weather restrictions unverified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, allergen handling and cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservations checked.",
+      "entrance": "Wharf II; exact doorway and accessible approach not independently verified.",
+      "hoursNote": "Sunday brunch begins 10:30 AM; official closing time unconfirmed despite chamber listing.",
+      "hoursSource": "https://sandbarandgrillmonterey.com/"
     }
   },
   {
@@ -9260,6 +9312,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://fishwife.com/contact"
+      ],
+      "food": "Seafood restaurant near Asilomar.",
+      "experience": "Seafood restaurant near Asilomar; official contact page confirms the location and published hours.",
+      "seating": "Reported seating arrangements are described in visitor tip where available; capacity and weather restrictions unverified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, allergen handling and cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservations checked.",
+      "entrance": "1996 1/2 Sunset Drive; exact doorway and accessible approach not independently verified.",
+      "hoursNote": "Prior operator hours vary Fri/Sat versus Sun–Thu.",
+      "hoursSource": "https://fishwife.com/contact"
     }
   },
   {
@@ -9305,6 +9374,24 @@
         "menuUrl",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.coastalkitchenmonterey.com/",
+        "https://montereyplazahotel.com/dining/coastal-kitchen"
+      ],
+      "food": "Upscale ocean-view prix-fixe tasting menus, not à la carte; cashless.",
+      "experience": "Upscale ocean-view tasting-menu restaurant at 400 Cannery Row. Prix-fixe menus rather than à la carte; dietary needs can be noted when booking. Cashless.",
+      "seating": "Reported seating arrangements are described in visitor tip where available; capacity and weather restrictions unverified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, allergen handling and cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Dietary requests may be noted at booking; real-time reservations not checked.",
+      "entrance": "400 Cannery Row; exact doorway and accessible approach not independently verified.",
+      "hoursNote": "Tuesday–Saturday dinner, Sunday brunch, Monday closed. Dietary requests may be noted when booking.",
+      "hoursSource": "https://www.coastalkitchenmonterey.com/"
     }
   },
   {
@@ -9349,7 +9436,24 @@
         "menuUrl"
       ]
     },
-    "menuUrl": "https://montereyplazahotel.com/dining"
+    "menuUrl": "https://montereyplazahotel.com/dining",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://montereyplazahotel.com/dining"
+      ],
+      "food": "Hotel lounge with bay views, cocktails and small plates; cashless.",
+      "experience": "Hotel lounge at 400 Cannery Row offering cocktails, small plates and bay views. Live music nightly as advertised; cashless payment.",
+      "seating": "Reported seating arrangements are described in visitor tip where available; capacity and weather restrictions unverified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, allergen handling and cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservations checked.",
+      "entrance": "400 Cannery Row; exact doorway and accessible approach not independently verified.",
+      "hoursNote": "Evening lounge hours and advertised live music hours differ.",
+      "hoursSource": "https://montereyplazahotel.com/dining"
+    }
   },
   {
     "id": "MBA-DINE-0185",
@@ -9574,6 +9678,25 @@
         "visitorTip"
       ],
       "verificationNote": "Coordinates independently cross-checked against two published listings (36.5836037,-121.8946395 and 36.5836287208,-121.894653397); approximate storefront point, not surveyed entrance."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.coldstonecreamery.com/stores/ice-cream-near-monterey/20282",
+        "https://opengovny.com/place/ChIJR4Dt7CzkjYAR31ZYsUrbkW4",
+        "https://www.merchantcircle.com/ca-monterey/food-and-dining/restaurants/desserts"
+      ],
+      "food": "Ice cream mixed to order, shakes, smoothies and cakes.",
+      "experience": "Ice cream mixed to order, shakes, smoothies and cakes at Del Monte Center. Store-specific location and hours confirmed.",
+      "seating": "Reported seating arrangements are described in visitor tip where available; capacity and weather restrictions unverified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, allergen handling and cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservations checked.",
+      "entrance": "1470 Del Monte Center; exact doorway and accessible approach not independently verified.",
+      "hoursNote": "Store-specific Fri/Sat closing later than Sun–Thu.",
+      "hoursSource": "https://www.coldstonecreamery.com/stores/ice-cream-near-monterey/20282"
     }
   },
   {
@@ -9761,6 +9884,23 @@
         "hours-business-listing"
       ],
       "verificationNote": "Complete operating hours not independently confirmed from official restaurant source. Hours are third-party business-listing estimates, not independently confirmed by restaurant."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.delmontecenter.com/directory"
+      ],
+      "food": "All-you-can-eat Korean BBQ and buffet, tabletop grilling and side dishes.",
+      "experience": "All-you-can-eat Korean BBQ and buffet with tabletop grilling and Korean side dishes. Location confirmed by shopping center and regional tourism listings; hours not confirmed by official restaurant source.",
+      "seating": "Reported seating arrangements are described in visitor tip where available; capacity and weather restrictions unverified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, allergen handling and cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservations checked.",
+      "entrance": "1290 Del Monte Center, Suite 92; exact doorway and accessible approach not independently verified.",
+      "hoursNote": "Hours are directory-based, not verified by restaurant operator.",
+      "hoursSource": "https://www.delmontecenter.com/directory"
     }
   },
   {
@@ -10257,6 +10397,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.comanchecellars.com/"
+      ],
+      "food": "Wine flights, cheese and charcuterie boards; NOT a full-service restaurant.",
+      "experience": "Downtown wine tasting room serving wine flights and cheese/charcuterie boards. Walk-ins welcome; primarily wine tasting, not a full-service restaurant.",
+      "seating": "Reported seating arrangements are described in visitor tip where available; capacity and weather restrictions unverified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, allergen handling and cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservations checked.",
+      "entrance": "412 Alvarado St; exact doorway and accessible approach not independently verified.",
+      "hoursNote": "Walk-ins reported; operating hours vary by day.",
+      "hoursSource": "https://www.comanchecellars.com/"
     }
   },
   {
@@ -10657,6 +10814,23 @@
         "hours",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://dustbowlbrewing.com/locations/tap-depot/"
+      ],
+      "food": "Historic train depot taproom, heated patio, bike racks and resident taco truck.",
+      "experience": "Taproom in a historic train depot with a heated outdoor patio, bike racks and resident Wedo's Tacos food truck. Food truck closes an hour before taproom.",
+      "seating": "Reported seating arrangements are described in visitor tip where available; capacity and weather restrictions unverified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, allergen handling and cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservations checked.",
+      "entrance": "290 Figueroa St; exact doorway and accessible approach not independently verified.",
+      "hoursNote": "Food truck closes one hour before taproom; do not equate service schedules.",
+      "hoursSource": "https://dustbowlbrewing.com/locations/tap-depot/"
     }
   },
   {
@@ -10698,6 +10872,23 @@
       "verifiedFields": [
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://dustbowlbrewing.com/locations/tap-depot/"
+      ],
+      "food": "Walk-up tacos from resident truck at Dust Bowl Tap Depot.",
+      "experience": "Resident walk-up taco truck at Dust Bowl's historic Tap Depot. Check truck operating status separately; taproom hours are not necessarily truck hours.",
+      "seating": "Reported seating arrangements are described in visitor tip where available; capacity and weather restrictions unverified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, allergen handling and cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservations checked.",
+      "entrance": "290 Figueroa St; exact doorway and accessible approach not independently verified.",
+      "hoursNote": "Independent truck opening hours unknown; closes one hour before taproom, subject to operation.",
+      "hoursSource": "https://dustbowlbrewing.com/locations/tap-depot/"
     }
   },
   {
@@ -10788,6 +10979,25 @@
         "website"
       ],
       "verificationNote": "Official restaurant website confirms address, menu concept and posted hours; phone supported by tourism directory. No real-time availability asserted. Approximate coordinates cross-checked with public map listing; not surveyed."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-08",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.rudolfoseatery.com/",
+        "https://www.rudolfoseatery.com/frequently-asked-questions",
+        "https://maps.roadtrippers.com/us/pacific-grove-ca/food-drink/rudolfos-pacific-grove-ca--0"
+      ],
+      "food": "Italian-inspired pasta and sourdough pizza; Sunday Heatwaves service.",
+      "experience": "Italian-inspired pasta and sourdough pizza; Sunday is Heatwaves. Confirm current menu and reservations directly.",
+      "seating": "Reported seating arrangements are described in visitor tip where available; capacity and weather restrictions unverified.",
+      "accessibility": "Step-free entry, accessible seating and restrooms not independently verified.",
+      "dietary": "Ingredients, allergen handling and cross-contact require direct confirmation.",
+      "family": "Children's menu, highchairs and stroller access not independently verified.",
+      "reservation": "Booking and walk-in policies not independently verified; no real-time reservations checked.",
+      "entrance": "543 Lighthouse Ave; exact doorway and accessible approach not independently verified.",
+      "hoursNote": "Monday closed; Sunday service/hours require direct confirmation.",
+      "hoursSource": "https://www.rudolfoseatery.com/"
     }
   }
 ]
