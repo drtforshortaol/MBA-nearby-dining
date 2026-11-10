@@ -883,6 +883,23 @@
       "hoursVerified": true,
       "photoVerified": false,
       "verifiedFields": []
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.louielinguinis.com/",
+        "https://canneryrow.com/plan-your-visit/dine/"
+      ],
+      "food": "Existing operator-backed review describes Italian-inspired seafood, pizza and pasta; check current menu for dishes and prices.",
+      "experience": "Casual waterfront restaurant with bay views and a wraparound porch overlooking McAbee Beach.",
+      "seating": "Wraparound porch reported in existing research; weather-dependent outdoor seating availability unverified.",
+      "accessibility": "Step-free access to dining areas and porch, and accessible restrooms, not independently verified.",
+      "dietary": "Vegetarian, vegan, gluten-free and allergen accommodations not independently verified.",
+      "family": "Casual pizza and pasta choices may suit families; children's menu and highchairs unverified.",
+      "reservation": "Booking and walk-in policies not independently verified.",
+      "entrance": "660 Cannery Row; precise entrance and accessible route unverified.",
+      "hoursSource": "https://www.louielinguinis.com/"
     }
   },
   {
@@ -928,7 +945,25 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://nicosicecreamca.com/"
+    "menuUrl": "https://nicosicecreamca.com/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://nicosicecreamca.com/",
+        "https://www.seemonterey.com/directory/nicos-ice-cream/"
+      ],
+      "food": "New Zealand-style real-fruit ice cream blended to order, per existing operator-backed research.",
+      "experience": "Quick-service frozen dessert inside Monterey Canning Co. building.",
+      "seating": "Seating and takeout arrangements not independently verified.",
+      "accessibility": "Step-free access to the shop inside the building not independently verified.",
+      "dietary": "Fruit-based flavors are described, but dairy content, vegan options, allergens and cross-contact must be confirmed directly.",
+      "family": "Dessert-focused stop; children's amenities unverified.",
+      "reservation": "Walk-in and group-order policies not independently verified.",
+      "entrance": "Inside Monterey Canning Co. building, 711 Cannery Row; exact interior door and accessible route unverified.",
+      "hoursNote": "Restaurant site and other listings have differed; confirm before visiting.",
+      "hoursSource": "https://nicosicecreamca.com/"
+    }
   },
   {
     "id": "MBA-DINE-0017",
@@ -1022,7 +1057,24 @@
         "address"
       ]
     },
-    "menuUrl": "https://quicklybobamonterey.com/"
+    "menuUrl": "https://quicklybobamonterey.com/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://quicklybobamonterey.com/"
+      ],
+      "food": "Milk teas, fruit drinks, tapioca boba and mochi waffles, per existing operator-backed research.",
+      "experience": "Quick-service boba and snack shop.",
+      "seating": "Dine-in seating not independently verified.",
+      "accessibility": "Suite S entry and step-free route not independently verified.",
+      "dietary": "Tea drinks and waffles may contain milk, gluten or other allergens; substitutions and cross-contact not independently verified.",
+      "family": "Boba drinks and snacks may appeal to families; age-specific choking precautions for tapioca pearls should be considered for young children.",
+      "reservation": "Advance ordering and group order policies not independently verified.",
+      "entrance": "700 Cannery Row, Suite S; exact entrance and accessible route unverified.",
+      "hoursNote": "Hours from previously reviewed restaurant website; reconfirm before time-sensitive visits.",
+      "hoursSource": "https://quicklybobamonterey.com/"
+    }
   },
   {
     "id": "MBA-DINE-0020",
