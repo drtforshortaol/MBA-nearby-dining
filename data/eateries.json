@@ -147,7 +147,27 @@
     },
     "hoursConfidence": "unverified",
     "hoursProvisional": "Daily 7 AM–8 PM (third-party listing; conflicts with other directories)",
-    "hoursCaution": "Conflicting third-party schedules; official hours not verified. Call before visiting."
+    "hoursCaution": "Conflicting third-party schedules; official hours not verified. Call before visiting.",
+    "diningDetails": {
+      "reviewedOn": "2026-11-09",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://canneryrow.com/plan-your-visit/dine/",
+        "https://www.montereycountynow.com/eat_drink/morsels/coffee-row/article_a92ef7e9-2148-4d3d-aa1e-baeae478279c.html",
+        "https://canneryrow.com/properties/711-cannery-row/",
+        "https://maps.roadtrippers.com/us/monterey-ca/food-drink/beans-of-eden-monterey-ca--0"
+      ],
+      "food": "Coffee, pastries and sandwiches according to previously collected local listings.",
+      "experience": "Casual café in the former Starbucks space near the aquarium.",
+      "seating": "Indoor and outdoor seating, queue length and takeout setup not independently verified.",
+      "accessibility": "Accessible entrance, restroom and counter not independently verified.",
+      "dietary": "Milk alternatives, gluten-free food and allergen handling not independently verified.",
+      "family": "Casual café; children's options and highchairs not independently verified.",
+      "reservation": "Ordering, walk-in and advance-order policies not independently verified.",
+      "entrance": "711 Cannery Row, Suites A & E; exact entrance not independently verified.",
+      "hoursNote": "Official operating hours have NOT been independently confirmed; check before recommending.",
+      "hoursSource": "Third-party listings only; official hours unverified."
+    }
   },
   {
     "id": "MBA-DINE-0003",
@@ -708,6 +728,24 @@
       "source": "https://www.google.com/maps/place/Great+American+Cookies/@36.6167293,-121.9011177,17z/data=!3m1!4b1!4m6!3m5!1s0x808de5fe4f4d71af:0x1e0b49cf25aecf55!8m2!3d36.6167293!4d-121.9011177!16s%2Fg%2F11scw84v81?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D",
       "checkedOn": "2026-11-07",
       "note": "The live Google Maps profile for 751 Cannery Row #105 and Restaurantji's October 16, 2026 update both show 11 AM–9 PM on all seven days. SuperPages agrees. Restaurantji's older snapshot, Roadtrippers, Restaurant Guru, and the owner-labeled 411.info listing showed 8 PM closing. The latter listings do not establish a more recent hours update."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://canneryrow.com/plan-your-visit/dine/",
+        "https://www.restaurantji.com/ca/monterey/great-american-cookies-/"
+      ],
+      "food": "Cookies and cookie cakes described in earlier Cannery Row and directory research.",
+      "experience": "Quick sweet snack or dessert stop on Cannery Row.",
+      "seating": "Seating availability and takeout counter arrangement not independently verified.",
+      "accessibility": "Accessible entrance, counter and restrooms not independently verified.",
+      "dietary": "Cookies may contain wheat, dairy, eggs and nuts; ingredients and cross-contact not independently verified.",
+      "family": "Casual dessert stop; family seating not independently verified.",
+      "reservation": "Custom cake ordering and advance pickup arrangements not independently verified.",
+      "entrance": "751 Cannery Row, Suite 105; exact suite access not independently verified.",
+      "hoursNote": "Posted hours vary by directory; prior hours should be reconfirmed.",
+      "hoursSource": "https://www.greatamericancookies.com/"
     }
   },
   {
@@ -1065,7 +1103,27 @@
     },
     "hoursConfidence": "unknown",
     "hoursProvisional": null,
-    "hoursCaution": "Dining depends on ticketed shows; check the event calendar."
+    "hoursCaution": "Dining depends on ticketed shows; check the event calendar.",
+    "diningDetails": {
+      "reviewedOn": "2026-11-09",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://www.paperwing.com/parking/",
+        "https://www.paperwing.com/",
+        "https://members.montereychamber.com/list/member/paper-wing-theatre-supper-club-monterey-7231",
+        "https://www.paperwing.com/paper-wing-events-2/"
+      ],
+      "food": "Dinner or refreshments may be associated with special performances; food service and menu not independently verified.",
+      "experience": "Event-based theater and supper club, NOT a standard walk-in restaurant; consult event calendar.",
+      "seating": "Performance seating and any dining seating depend on event; arrangements not independently verified.",
+      "accessibility": "Second-floor venue; elevator, stairs, accessible seating and restrooms not independently verified.",
+      "dietary": "Event-specific food, allergens and dietary accommodations not independently verified.",
+      "family": "Show-specific age limits and suitability must be checked before recommending.",
+      "reservation": "Tickets and event booking may be required; do not present as regular restaurant reservations.",
+      "entrance": "711 Cannery Row, second floor in red Monterey Canning Company building near Prescott; exact stair/elevator access unverified.",
+      "hoursNote": "Event-dependent schedule; office hours are NOT dining or show hours.",
+      "hoursSource": "Event calendar; regular dining hours unavailable."
+    }
   },
   {
     "id": "MBA-DINE-0018",
@@ -1708,6 +1766,23 @@
       "source": "https://troyamry.com/pages/contact",
       "checkedOn": "2026-11-07",
       "note": "Regular published hours; verify holiday and temporary changes."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "partially-verified-existing-research",
+      "sources": [
+        "https://troyamry.com/"
+      ],
+      "food": "Turkish delight, baklava, Turkish coffee and giftable sweets in prior operator-backed research.",
+      "experience": "Specialty sweets and coffee shop on Cannery Row.",
+      "seating": "Café seating and takeaway options not independently verified.",
+      "accessibility": "Step-free entry and accessible counter not independently verified.",
+      "dietary": "Many sweets may contain nuts; ask staff about ingredients, allergens and cross-contact.",
+      "family": "Sweet-shop visit; family seating not independently verified.",
+      "reservation": "Preorders, custom gifts and group-order policies not independently verified.",
+      "entrance": "685 Cannery Row, Suite 107; precise suite doorway and accessible approach unverified.",
+      "hoursNote": "Hours from prior operator-backed review; reconfirm before time-sensitive visits.",
+      "hoursSource": "https://troyamry.com/"
     }
   },
   {
