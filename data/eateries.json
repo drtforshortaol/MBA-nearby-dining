@@ -222,7 +222,22 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://www.bubbagump.com/location/bubba-gump-monterey-ca/"
+    "menuUrl": "https://www.bubbagump.com/location/bubba-gump-monterey-ca/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-10",
+      "status": "verified-with-explicit-unknowns",
+      "sources": [
+        "https://www.bubbagump.com/location/bubba-gump-monterey-ca/"
+      ],
+      "food": "Shrimp and seafood dishes, burgers, sandwiches and children's meals.",
+      "experience": "Casual Forrest Gump-themed waterfront dining with memorabilia and Monterey Bay views.",
+      "seating": "Indoor dining documented; outdoor seating not independently verified.",
+      "accessibility": "Step-free entrance and wheelchair access not independently verified; call ahead.",
+      "dietary": "Gluten-free buns and a plant-based burger patty option appear on the operator menu; confirm preparation and allergens directly.",
+      "family": "Children's menu confirmed by the restaurant.",
+      "reservation": "Reservations link offered on operator's store locator; availability not checked.",
+      "entrance": "720 Cannery Row; exact doorway and access route not independently verified."
+    }
   },
   {
     "id": "MBA-DINE-0005",
@@ -310,6 +325,50 @@
         "menuUrl",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-10",
+      "status": "verified-with-explicit-unknowns",
+      "sources": [
+        "https://www.chart-house.com/location/chart-house-monterey-ca/",
+        "https://www.seemonterey.com/directory/chart-house/",
+        "https://www.opentable.com/r/chart-house-restaurant-monterey"
+      ],
+      "food": "Seafood, steak, prime rib, brunch dishes, desserts and cocktails.",
+      "experience": "Waterfront sit-down restaurant with Monterey Bay views, weekday happy hour and weekend brunch.",
+      "seating": "Indoor dining confirmed; outdoor/patio seating reported by third-party booking listing, not operator-verified.",
+      "accessibility": "See Monterey visitor bureau lists ADA-compliant amenities; specific entrance route not confirmed.",
+      "dietary": "Menu includes salads and a plant-based burger; allergen accommodations not independently verified.",
+      "family": "Visitor bureau lists family-friendly dining, highchairs and children's menu.",
+      "reservation": "Operator provides a reservations option; availability not checked.",
+      "entrance": "444 Cannery Row; precise entrance/parking approach not independently verified."
+    },
+    "attributes": {
+      "ocean": {
+        "value": "yes",
+        "status": "verified",
+        "source": "https://www.chart-house.com/location/chart-house-monterey-ca/",
+        "reviewedOn": "2026-11-10"
+      },
+      "alcohol": {
+        "value": "yes",
+        "status": "verified",
+        "source": "https://www.chart-house.com/location/chart-house-monterey-ca/",
+        "reviewedOn": "2026-11-10"
+      },
+      "family": {
+        "value": "yes",
+        "status": "verified",
+        "source": "https://www.seemonterey.com/directory/chart-house/",
+        "reviewedOn": "2026-11-10"
+      },
+      "price": {
+        "value": "$$$",
+        "status": "verified",
+        "source": "https://www.seemonterey.com/directory/chart-house/",
+        "reviewedOn": "2026-11-10",
+        "note": "Visitor bureau price category; current prices may vary"
+      }
     }
   },
   {
@@ -356,7 +415,22 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://conigliodeli.com/"
+    "menuUrl": "https://conigliodeli.com/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-10",
+      "status": "verified-with-explicit-unknowns",
+      "sources": [
+        "https://conigliodeli.com/"
+      ],
+      "food": "Italian deli sandwiches including salami, prosciutto, roast beef, tuna and vegetarian-friendly combinations subject to menu.",
+      "experience": "Quick-service Italian delicatessen suited to takeaway lunch.",
+      "seating": "Seating arrangements not independently verified.",
+      "accessibility": "Step-free entry and accessible facilities not independently verified.",
+      "dietary": "Menu ingredients are published; gluten-free, vegan and allergy accommodations not confirmed.",
+      "family": "Children's menu and family amenities not independently verified.",
+      "reservation": "Call-ahead ordering advertised; reservations not confirmed.",
+      "entrance": "750 Cannery Row, Suite 108; exact doorway and accessible approach not independently verified."
+    }
   },
   {
     "id": "MBA-DINE-0008",
@@ -450,6 +524,41 @@
         "menuUrl",
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-10",
+      "status": "verified-with-explicit-unknowns",
+      "sources": [
+        "https://www.eltorito.com/location/monterey/",
+        "https://www.eltorito.com/menus-m/",
+        "https://www.eltorito.com/specials/"
+      ],
+      "food": "Mexican dishes including fajitas, tacos, enchiladas, guacamole, breakfast and Sunday brunch.",
+      "experience": "Sit-down Mexican restaurant with cantina specials, Taco Tuesday and Sunday brunch.",
+      "seating": "Indoor seating is offered; outdoor seating and views not independently verified.",
+      "accessibility": "Step-free entry and accessible facilities not independently verified.",
+      "dietary": "Menu includes vegetable dishes; vegan, gluten-free and allergen handling require direct confirmation.",
+      "family": "Operator publishes a children's breakfast menu and Wednesday kids' meal promotion; confirm terms at restaurant.",
+      "reservation": "Operator offers reservation links; availability not checked.",
+      "entrance": "600 Cannery Row; exact entrance and step-free route not verified.",
+      "hoursNote": "Monterey location page confirms daily opening at 9 AM; Friday and Saturday close at 11 PM, other days at 10 PM.",
+      "specialsCaution": "Monterey location page advertises weekday Cantina happy hour until 9 PM, while general specials page lists 7 PM. Confirm location-specific terms."
+    },
+    "attributes": {
+      "family": {
+        "value": "yes",
+        "status": "verified",
+        "source": "https://www.eltorito.com/specials/",
+        "reviewedOn": "2026-11-10",
+        "note": "Operator advertises a Wednesday children's meal promotion; kids' breakfast menu also published."
+      },
+      "alcohol": {
+        "value": "yes",
+        "status": "verified",
+        "source": "https://www.eltorito.com/menus-m/",
+        "reviewedOn": "2026-11-10",
+        "note": "Official Monterey menu includes margaritas and cocktails."
+      }
     }
   },
   {
@@ -588,7 +697,23 @@
         "visitorTip"
       ]
     },
-    "menuUrl": "https://jackbao.com/"
+    "menuUrl": "https://jackbao.com/online-ordering/",
+    "diningDetails": {
+      "reviewedOn": "2026-11-10",
+      "status": "verified-with-explicit-unknowns",
+      "sources": [
+        "https://jackbao.com/",
+        "https://jackbao.com/online-ordering/"
+      ],
+      "food": "Shanghai-style bao, soup dumplings, wontons, noodle dishes, rice bowls and tea drinks.",
+      "experience": "Casual quick-service Chinese street-food restaurant with pickup and delivery options.",
+      "seating": "Seating configuration not independently verified.",
+      "accessibility": "Step-free entry and accessible facilities not independently verified.",
+      "dietary": "Vegetable bao and vegetable/mushroom noodle soup described by operator; vegan and allergy preparation not confirmed.",
+      "family": "Children's menu and highchairs not independently verified.",
+      "reservation": "Pickup ordering is available; dine-in reservations not confirmed.",
+      "entrance": "751 Cannery Row, Suite 121; exact doorway and access route not verified."
+    }
   },
   {
     "id": "MBA-DINE-0013",
