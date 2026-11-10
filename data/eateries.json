@@ -2127,6 +2127,23 @@
         "hours-provisional"
       ],
       "verificationNote": "Business listing schedule; restaurant website not independently checked for exact schedule."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [
+        "https://www.osteriaalmare.com/"
+      ],
+      "food": "Italian / seafood at 32 Cannery Row Suite H. Current menu, hours and operating status require confirmation before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "32 Cannery Row Suite H; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Tue–Sun 11:30 AM–9 PM; closed Monday (business listing).. Prior source classification: existing-record-only; official website not independently verified.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -2169,6 +2186,23 @@
         "hours"
       ],
       "verificationNote": "Official website lists Suite C while database says Suite G; address discrepancy requires follow-up."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [
+        "https://www.piccolopaninigrill.com/"
+      ],
+      "food": "Italian panini / pizza / soups / salads at 32 Cannery Row Suite G. Current menu, hours and operating status require confirmation before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "32 Cannery Row Suite G; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Mon, Wed–Sun 10:30 AM–5:30 PM; closed Tue.. Prior source classification: existing-record-only; official website not independently verified.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -2769,6 +2803,21 @@
       "source": "https://www.lighthousedistrict.net/biz/la-bahia-restaurant",
       "checkedOn": "2026-11-07",
       "note": "The local district lists indoor dining hours for the exact address and phone. The current Roadtrippers listing agrees."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Mexican-American restaurant at 675 Lighthouse Avenue. Verify current operating hours and menu before directing visitors.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "675 Lighthouse Ave; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Tue–Sun 11 AM–8 PM; Mon closed. Prior source classification: existing-record-only.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -3251,6 +3300,21 @@
       "source": "https://www.lighthousedistrict.net/news/2023/02/hot-drinks-go-sunrise-cafe",
       "checkedOn": "2026-11-07",
       "note": "The cafe's post on the district site specifies the schedule at 204 Lighthouse Avenue. A current location listing with 2026 reviews corroborates it."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Breakfast / lunch café at 204 Lighthouse Ave. Current menu, hours and operating status require confirmation before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "204 Lighthouse Ave; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Thu–Tue 8 AM–2 PM; Wed closed. Prior source classification: existing-record-only; official website not independently verified.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -3479,6 +3543,21 @@
       "source": "https://www.starbucks.com/store-locator/store/1008792",
       "checkedOn": "2026-11-07",
       "note": "Starbucks’ official store locator response lists all seven days for store 1008792 at 865 Lighthouse Ave. These are general store hours. The response lists a drive-through but does not supply a separate schedule for it."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Starbucks location in Monterey's Lighthouse District. Coffee and quick breakfast or snack items; confirm opening hours in the store locator.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "865 Lighthouse Ave; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Mon–Sat 4:30 AM–9 PM; Sun 4:30 AM–8:30 PM. Prior source classification: existing-record-only.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -4240,6 +4319,21 @@
       "source": "https://www.findglocal.com/US/Pacific-Grove/1897955690215352/The-Monarch-Pub-%26-Restaurant",
       "checkedOn": "2026-11-07",
       "note": "The pub’s August 10, 2026 post reproduced in the listing gives daily dine-in and takeout hours at 617 Lighthouse Ave. The 2026 Pacific Grove Guide gives the same schedule. Other directories list different closing times. Separate bar hours are unconfirmed."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Restaurant / prepared meals at 617 Lighthouse Ave. Current menu, hours and operating status require confirmation before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "617 Lighthouse Ave; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Dine-in and takeout daily 11 AM–10 PM. Prior source classification: existing-record-only; official website not independently verified.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -4465,6 +4559,23 @@
       "source": "https://www.google.com/maps/place/The+Perfect+Crumb+Bakery+Inc./@36.6221055,-121.919425,17z/data=!3m1!4b1!4m6!3m5!1s0x808de41d25610d33:0xe60db9dd60942948!8m2!3d36.6221055!4d-121.919425!16s%2Fg%2F11cjt4d7pc?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D",
       "checkedOn": "2026-11-07",
       "note": "The live Google Maps profile for 650 Lighthouse Ave in Pacific Grove and the October 31, 2026 Restaurantji update agree on every day. Restaurantji's August 19 snapshot and Restaurant Guru's June 14 update carried the older 6:30 AM schedule also listed by joe coffee and Edible Monterey Bay. The official site's embedded hours identify the old 301 Lighthouse Ave location in Monterey. Its visible contact page still carries a move notice, while its home page confirms the new storefront."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-possibly-closed",
+      "sources": [
+        "https://www.theperfectcrumbbakery.net/contact"
+      ],
+      "food": "Bakery / breakfast / lunch / espresso at 650 Lighthouse Ave Suite 100. Current menu, hours and operating status require confirmation before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "650 Lighthouse Ave Suite 100; storefront door and accessible approach not independently verified.",
+      "hoursNote": "PRIOR OFFICIAL SOURCE REPORTS TEMPORARILY CLOSED; do not recommend as open without new verification. Prior listed schedule (NOT independently confirmed): Wed–Mon 7 AM–5 PM; Tue closed. Prior source classification: official-website-reports-temporarily-closed.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -4505,6 +4616,21 @@
         "hours-provisional"
       ],
       "verificationNote": "Business directory listing, checked 2026-11-07. Hours not independently confirmed with restaurant."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Restaurant / prepared meals at 477 Lighthouse Ave. Current menu, hours and operating status require confirmation before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "477 Lighthouse Ave; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Mon–Thu 11 AM–7:30 PM; Fri–Sat 11 AM–8 PM; Sunday not listed.. Prior source classification: existing-record-only; official website not independently verified.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -6144,6 +6270,21 @@
       "source": "https://www.opentable.com/r/the-gig-monterey",
       "checkedOn": "2026-11-07",
       "note": "OpenTable lists hours of operation for The Gig at 6 Old Fisherman's Wharf. The current Tripadvisor listing agrees. Older Paluca information is for the prior operator."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Italian / trattoria (directory description may be outdated; verify current identity) at 6 Old Fisherman's Wharf. Verify current menu, operating status and hours before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "6 Old Fisherman's Wharf; storefront door and accessible approach not independently verified.",
+      "hoursNote": "Current name and prior Paluca Trattoria identity require verification. Prior listed schedule (NOT independently confirmed): Daily 11:30 AM–9 PM. Prior source classification: existing-record-only; requires independent source verification.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -6303,6 +6444,21 @@
         "hours-business-listing"
       ],
       "verificationNote": "Coordinates missing; geocoding required before proximity sorting. Hours are third-party business-listing estimates, not independently confirmed by restaurant."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Seafood / chowder / takeout at Old Fisherman's Wharf (number pending). Verify current operating status, menu and hours before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "Old Fisherman's Wharf (number pending); storefront door and accessible approach not independently verified.",
+      "hoursNote": "Exact wharf street number remains unknown. Prior listed schedule (NOT independently confirmed): Mon–Fri 9 AM–9:30 PM; Sat–Sun 9 AM–10 PM (business listing; confirm before visit).. Prior source classification: existing-record-only; requires independent source verification.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -10010,6 +10166,21 @@
       "source": "https://www.restaurantji.com/ca/monterey/tzone-monterey-/",
       "checkedOn": "2026-11-07",
       "note": "Restaurantji and Boba Places independently display the same full week for 460 Alvarado St. The Old Monterey merchant directory confirms the location and contact. The Tripadvisor hours are malformed and the linked brand site was inaccessible."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Tea / beverage shop at 460 Alvarado St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "460 Alvarado St; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Sun–Thu 11 AM–8 PM; Fri–Sat 11 AM–9 PM. Prior source classification: existing-record-only; requires independent source verification.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -10175,6 +10346,21 @@
       "source": "https://www.tastecafebistro.com/",
       "checkedOn": "2026-11-07",
       "note": "The restaurant homepage explicitly labels these as current hours for 1199 Forest Ave. RestaurantJump corroborates Sunday closure. The directions page includes Sunday, which conflicts with the homepage. The online order window closes earlier."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Bakery / café at 1199 Forest Ave. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "1199 Forest Ave; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Dinner Tue–Sat 4:30–8 PM; Sun–Mon closed. Prior source classification: existing-record-only; requires independent source verification.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -10468,6 +10654,21 @@
       "source": "https://aquinosbirrieria.com/",
       "checkedOn": "2026-11-07",
       "note": "Official Store tab at 1116A Forest Ave lists 11 AM–8 PM Tue–Sun, corroborated by Roadtrippers. The separate brunch page lists Tue–Fri 11 AM–3 PM and Sat–Sun 9 AM–3 PM, conflicting with the current Store tab on weekend opening. The homepage also advertises brunch all day. Publish regular store hours with a call-ahead note and keep exact brunch times pending."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Restaurant / prepared meals at 1116A Forest Ave. Verify current operating status, hours and menu before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "1116A Forest Ave; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Regular store hours Tue–Sun 11 AM–8 PM; Mon closed. Call to confirm weekend brunch opening.. Prior source classification: existing-record-only; requires independent source verification.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -10510,6 +10711,24 @@
       "verifiedFields": [
         "visitorTip"
       ]
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-reopening-unconfirmed",
+      "sources": [
+        "https://locations.carlsjr.com/ca/monterey/902-lighthouse-avenue",
+        "https://www.ksbw.com/article/reconstruction-begins-at-former-carls-jr-site-in-monterey/71818764"
+      ],
+      "food": "Carl's Jr. at 902 Lighthouse Avenue. Reopening anticipated; check the operator's location page for current service and hours.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "902 Lighthouse Avenue; storefront door and accessible approach not independently verified.",
+      "hoursNote": "REOPENING NOT VERIFIED; do not recommend as open. Prior listed schedule (NOT independently confirmed): Hours after reopening not confirmed.. Prior source classification: reopening-anticipated-unverified.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -10555,6 +10774,21 @@
       "source": "https://members.montereychamber.com/list/member/monterey-s-fish-house-1773",
       "checkedOn": "2026-11-07",
       "note": "Published regular hours; holidays and temporary changes may differ."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Seafood; American; Italian-American pasta at 2114 Del Monte Avenue. Verify current operating status, menu and hours before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "2114 Del Monte Avenue; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Daily lunch 11:30 AM–2 PM; dinner 5–8:30 PM. Prior source classification: existing-record-only; requires independent source verification.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -11244,6 +11478,21 @@
       "source": "https://www.restaurantji.com/ca/monterey/chopstix-vietnamese-restaurant-/",
       "checkedOn": "2026-11-07",
       "note": "Restaurantji and MenuToEat both publish the full weekly restaurant schedule at 1244 Munras Ave. Tourism directory confirms the address and phone. The restaurant website displays the menu without hours."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Vietnamese at 1244 Munras Ave. Verify current operating status, menu and hours before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "1244 Munras Ave; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Daily 11 AM–8 PM. Prior source classification: existing-record-only; requires independent source verification.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -11289,6 +11538,21 @@
       "source": "https://kruathaimonterey.com/contact/",
       "checkedOn": "2026-11-07",
       "note": "Official contact schedule at 731 Munras Avenue explicitly lists Monday hours. Footer omits Monday. Tripadvisor independently confirms Monday 4–8 PM. The website lists a break between lunch and dinner Tuesday through Saturday."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Thai at 731 Munras Ave Suite A. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "731 Munras Ave Suite A; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Mon 4–8 PM; Tue–Fri 11 AM–2:30 PM and 4:30–8 PM; Sat noon–2:30 PM and 4:30–8 PM; Sun closed. Prior source classification: existing-record-only; requires independent source verification.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -11334,6 +11598,21 @@
       "source": "https://www.thewildplumcafe.com/contact",
       "checkedOn": "2026-11-07",
       "note": "Official downtown location at 731 Munras Ave, Suite B, lists daily hours with an explicit Tuesday closure. Ryan Ranch is a separate location."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Cafe and bakery at 731 Munras Ave Suite B. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "731 Munras Ave Suite B; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Wed–Mon 7 AM–3:30 PM; Tue closed. Prior source classification: existing-record-only; requires independent source verification.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -11371,6 +11650,21 @@
       "hoursVerified": false,
       "photoVerified": false,
       "verifiedFields": []
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Italian counter-service cafe / gelato / coffee at 482 Alvarado St, Suite A. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "482 Alvarado St, Suite A; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Cafe opens 11:30am; food noon–8:30pm. Weekly day coverage not stated in reviewed text; check operator before visiting. Earlier 7am–8pm grand-opening schedule is historical.. Prior source classification: existing-record-only; requires independent source verification.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -11416,6 +11710,21 @@
       "source": "https://riceandrootsmonterey.com/",
       "checkedOn": "2026-11-07",
       "note": "Official website lists new hours with Wednesday closed. The older downtown association opening announcement says daily. The newer first-party schedule supersedes it."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Vietnamese; pho, rice dishes, banh mi, boba at 422 Tyler St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "422 Tyler St; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Thu–Tue 11 AM–8 PM; Wed closed. Prior source classification: existing-record-only; requires independent source verification.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -11461,6 +11770,21 @@
       "source": "https://www.oldmonterey.org/news/2026/07/affogato-lattes-now-scoops",
       "checkedOn": "2026-11-07",
       "note": "The shop posted these regular hours for 595 Munras Avenue on the downtown association website on July 7, 2026. Its Social Wave merchant listing matches. Roadtrippers lists an earlier Sunday close, while MenuPix lists a substantially different weekly schedule. Prefer the operator schedule corroborated by the Social Wave merchant listing."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Dessert / snacks at 595 Munras Ave, Suite 103. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "595 Munras Ave, Suite 103; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Mon–Thu 1–10 PM; Fri 1–11 PM; Sat–Sun noon–11 PM. Prior source classification: existing-record-only; requires independent source verification.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -11565,6 +11889,21 @@
       "source": "https://chefpepe.com/carmel-bakery-at-portola-hotel/",
       "checkedOn": "2026-11-07",
       "note": "Official bakery location page confirms the Monterey shop at 220 Alvarado St, Suite 220. Its weekly retail hours are separate from the special Paseo Night Market listing."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Bakery, coffee and beverages at 220 Alvarado St. Verify current menu, operating status and hours before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "220 Alvarado St; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Daily 7:30 AM–3 PM. Prior source classification: existing-record-only; requires independent source verification.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -11610,6 +11949,21 @@
       "source": "https://indiansummermry.com/#visit",
       "checkedOn": "2026-11-07",
       "note": "Official venue hours at 220 Olivier Street. The published schedule applies to the hookah lounge and cocktail bar. Separate kitchen hours are unavailable and should be confirmed with the venue."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Bar and grill; hookah lounge at 220 Olivier St. Verify current menu, operating status and hours before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "220 Olivier St; storefront door and accessible approach not independently verified.",
+      "hoursNote": "Lounge hours do not establish kitchen service hours. Prior listed schedule (NOT independently confirmed): Lounge hours: Mon 7 PM–midnight; Tue–Thu and Sun 5 PM–midnight; Fri–Sat 5 PM–2 AM next day. Kitchen hours unconfirmed.. Prior source classification: existing-record-only; requires independent source verification.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -11655,6 +12009,21 @@
       "source": "https://members.montereychamber.com/members/member/puma-road-at-portola-plaza-7181",
       "checkedOn": "2026-11-07",
       "note": "Chamber member listing at 281 Alvarado Street identifies these as tasting room hours. The winery’s pickup schedule for that tasting room matches."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Wine tasting; charcuterie and small bites at 281 Alvarado St. Verify current operating status, hours and menu before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "281 Alvarado St; storefront door and accessible approach not independently verified.",
+      "hoursNote": "Wine tasting and small bites, not a full-service restaurant. Prior listed schedule (NOT independently confirmed): Sun–Thu 2–7 PM; Fri–Sat 2–8 PM. Prior source classification: existing-record-only; requires independent source verification.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
@@ -11699,7 +12068,24 @@
     },
     "hoursConfidence": "unverified",
     "hoursProvisional": "Daily 4–8 PM (reported soft opening)",
-    "hoursCaution": "Reported October 2026; hours may change November 11. Check operator."
+    "hoursCaution": "Reported October 2026; hours may change November 11. Check operator.",
+    "diningDetails": {
+      "reviewedOn": "2026-11-09",
+      "status": "provisional-unverified-existing-record",
+      "sources": [
+        "https://hoodline.com/2026/10/benny-walker-s-soft-opens-in-downtown-monterey-with-a-1-700-year-old-sequoia-bar/"
+      ],
+      "food": "American comfort food with Pacific Islander influences at 444 Alvarado St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "444 Alvarado St; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): unknown. Prior source classification: third-party soft-opening hours; subject to change.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
+    }
   },
   {
     "id": "MBA-DINE-0218",
@@ -11743,7 +12129,24 @@
     },
     "hoursConfidence": "unverified",
     "hoursProvisional": "Fri–Sat until 2 AM (reported June 2026; opening time unknown)",
-    "hoursCaution": "Historical EAT window schedule; not nightclub hours. Confirm availability."
+    "hoursCaution": "Historical EAT window schedule; not nightclub hours. Confirm availability.",
+    "diningDetails": {
+      "reviewedOn": "2026-11-09",
+      "status": "provisional-unverified-existing-record",
+      "sources": [
+        "https://www.oldmonterey.org/news/2026/06/late-night-eats-compact-disco"
+      ],
+      "food": "Late-night takeout: hot dogs, chicken strips, fries at 420 Tyler St. Verify operating status, current menu and hours before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "420 Tyler St; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): unknown. Prior source classification: partial hours from operator announcement; opening time unknown.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
+    }
   },
   {
     "id": "MBA-DINE-0224",
@@ -12092,6 +12495,21 @@
       "source": "https://www.starbucks.com/store-locator/store/66442",
       "checkedOn": "2026-11-07",
       "note": "Starbucks’ official store locator response for store 66442 at 316 Alvarado St confirms the Sunday 4 AM opening. This supersedes the prior directory schedule, which listed 4:30 AM daily."
+    },
+    "diningDetails": {
+      "reviewedOn": "2026-11-07",
+      "status": "provisional-unverified-existing-record",
+      "sources": [],
+      "food": "Coffee shop / quick breakfast / pastries at 316 Alvarado St. Verify current operating status, hours and menu before recommending.",
+      "experience": "Existing record only; independently confirm current business identity, operation and visitor experience.",
+      "seating": "Indoor/outdoor seating and capacity not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom not verified.",
+      "dietary": "Dietary choices, ingredients and allergen handling not verified.",
+      "family": "Children's menu, highchairs and stroller access not verified.",
+      "reservation": "Reservation, ordering and walk-in policies not verified; no live availability checked.",
+      "entrance": "316 Alvarado St; storefront door and accessible approach not independently verified.",
+      "hoursNote": " Prior listed schedule (NOT independently confirmed): Mon–Sat 4:30 AM–9 PM; Sun 4 AM–9 PM. Prior source classification: existing-record-only; requires independent source verification.",
+      "hoursSource": "Existing database and prior dated research only; operator confirmation required."
     }
   },
   {
