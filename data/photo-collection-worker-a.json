@@ -31,10 +31,13 @@
       "address": "886 Cannery Row, Monterey",
       "sourcePage": "https://www.montereybayaquarium.org/visit/dining-shopping",
       "photoFound": false,
-      "photoSourceUrl": null,
+      "photoSourceUrl": "https://www.montereybayaquarium.org/visit/dining-shopping",
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "sourceVerified": true,
+      "photoSearchStatus": "operator-photo-present-license-unverified",
+      "notes": "Official aquarium dining page displays a photograph of the actual cafe interior and counters; source candidate only. Permission/reuse terms not established; do not copy or publish without rights review."
     },
     {
       "restaurantId": "MBA-DINE-0035",
