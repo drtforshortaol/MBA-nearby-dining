@@ -20,10 +20,12 @@
       "address": "763 Wave St, Monterey",
       "sourcePage": "https://thewhalingstation.com/",
       "photoFound": false,
-      "photoSourceUrl": null,
+      "photoSourceUrl": "https://thewhalingstation.com/gallery",
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "photoSearchStatus": "photo-source-lead-rights-unverified",
+      "notes": "Official gallery shows real dining room and restaurant photography. Exterior entrance not verified. Reuse rights not established."
     },
     {
       "restaurantId": "MBA-DINE-0033",
