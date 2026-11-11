@@ -1,0 +1,1282 @@
+{
+  "date": "2026-11-11",
+  "phase": "discovery",
+  "database_ref": "4de81356b69e3ef918ea5bfbbdeedccdfc055722",
+  "scope": {
+    "first_position": 1,
+    "last_position": 52,
+    "total": 208
+  },
+  "method": "Individual restaurant and locality queries against the web index for Wikimedia Commons and Flickr, with targeted category, album, and address follow-ups. FOUND means an individual photograph page with a discovery-stage venue association. POSSIBLE means a lead with unresolved subject or locality. NOT_FOUND_IN_SEARCH records the result of this bounded pass. Verification and integration are deferred.",
+  "summary": {
+    "searched": 52,
+    "found": 14,
+    "possible_only": 2,
+    "no_match_in_search": 36,
+    "historical_with_direct_in_scope_photo": 6,
+    "new_photo_pages": 48,
+    "new_possible_photo_pages_or_leads": 4
+  },
+  "restaurants": [
+    {
+      "position": 1,
+      "id": "MBA-DINE-0001",
+      "name": "A Taste of Monterey Wine Market & Bistro",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"A Taste of Monterey Wine Market & Bistro\" \"Monterey\"",
+          "\"A Taste of Monterey\""
+        ],
+        "flickr": [
+          "\"A Taste of Monterey Wine Market & Bistro\" \"Monterey\"",
+          "\"A Taste of Monterey\""
+        ]
+      },
+      "wikimedia_commons": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Cannery_Row,_Monterey_3_2017-11-21.jpg",
+          "type": "venue context",
+          "discovery": "FOUND",
+          "origin": "historical"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Cannery_Row,_Monterey,_California,_USA_(3).jpg",
+          "type": "venue context",
+          "discovery": "FOUND",
+          "origin": "historical"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Cannery_Row,_Monterey,_California,_USA_(5).jpg",
+          "type": "venue or Cannery Row context",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:DSC26376,_Cannery_Row,_Monterey,_California,_USA_(5329244348).jpg",
+          "type": "venue or Cannery Row context",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:DSC26378,_Cannery_Row,_Monterey,_California,_USA_(6987656782).jpg",
+          "type": "venue or Cannery Row context",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:DSC26385,_Cannery_Row,_Monterey,_California,_USA_(6987657092).jpg",
+          "type": "venue or Cannery Row context",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:DSC26387,_Cannery_Row,_Monterey,_California,_USA_(5024963926).jpg",
+          "type": "venue or Cannery Row context",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ],
+      "flickr": [],
+      "notes": "Historical Commons record is data/photo-candidate-MBA-DINE-0001.json. Existing approved app asset is an illustration."
+    },
+    {
+      "position": 2,
+      "id": "MBA-DINE-0002",
+      "name": "Beans of Eden",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Beans of Eden\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Beans of Eden\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 3,
+      "id": "MBA-DINE-0003",
+      "name": "Bubba Gump Shrimp Company",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Bubba Gump Shrimp Company\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Bubba Gump Shrimp Company\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/seemonterey/9323349796/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/jimg944/3676445295/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/seemonterey/9323351042/",
+          "type": "restaurant dish",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "id": "MBA-DINE-0005",
+      "name": "Cannery Pizza Company",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Cannery Pizza Company\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Cannery Pizza Company\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 5,
+      "id": "MBA-DINE-0006",
+      "name": "Chart House",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Chart House\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Chart House\" \"Monterey\"",
+          "Chart House Monterey 444 Cannery Row site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 6,
+      "id": "MBA-DINE-0007",
+      "name": "Coniglio Brothers Italian Deli",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Coniglio Brothers Italian Deli\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Coniglio Brothers Italian Deli\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 7,
+      "id": "MBA-DINE-0008",
+      "name": "Dippin' Dots",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Dippin' Dots\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Dippin' Dots\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 8,
+      "id": "MBA-DINE-0009",
+      "name": "El Torito",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"El Torito\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"El Torito\" \"Monterey\"",
+          "El Torito Monterey 600 Cannery Row site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 9,
+      "id": "MBA-DINE-0010",
+      "name": "Ghirardelli Ice Cream & Chocolate Shop",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Ghirardelli Ice Cream & Chocolate Shop\" \"Monterey\"",
+          "Ghirardelli Cannery Row"
+        ],
+        "flickr": [
+          "\"Ghirardelli Ice Cream & Chocolate Shop\" \"Monterey\"",
+          "Ghirardelli Cannery Row"
+        ]
+      },
+      "wikimedia_commons": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:DSC26340_Cannery_Row_Monterey_California_USA_(6062142524).jpg",
+          "type": "possible storefront or street context",
+          "discovery": "POSSIBLE",
+          "origin": "historical",
+          "note": "Historical Commons lead. The Flickr dessert is a separate discovery."
+        }
+      ],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/57440551%40N03/27600596869/",
+          "type": "food",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ],
+      "notes": "Flickr title explicitly names the Cannery Row shop."
+    },
+    {
+      "position": 10,
+      "id": "MBA-DINE-0011",
+      "name": "Great American Cookies",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Great American Cookies\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Great American Cookies\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 11,
+      "id": "MBA-DINE-0012",
+      "name": "Jack's Bao",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Jack's Bao\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Jack's Bao\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 12,
+      "id": "MBA-DINE-0013",
+      "name": "Lalla Oceanside Grill",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Lalla Oceanside Grill\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Lalla Oceanside Grill\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 13,
+      "id": "MBA-DINE-0014",
+      "name": "Lilly Mae's Cinnamon Rolls",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Lilly Mae's Cinnamon Rolls\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Lilly Mae's Cinnamon Rolls\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 14,
+      "id": "MBA-DINE-0015",
+      "name": "Louie Linguini's",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Louie Linguini's\" \"Monterey\"",
+          "\"Louie Linguini\" Cannery Row"
+        ],
+        "flickr": [
+          "\"Louie Linguini's\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Louie_Linguini_(18123828338).jpg",
+          "type": "venue photo, type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/seemonterey/5137833276/",
+          "type": "interior",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/guillotinehead/5825502395/",
+          "type": "food",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 15,
+      "id": "MBA-DINE-0016",
+      "name": "Nico's Ice Cream",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Nico's Ice Cream\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Nico's Ice Cream\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 16,
+      "id": "MBA-DINE-0017",
+      "name": "Paper Wing Theatre & Supper Club",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Paper Wing Theatre & Supper Club\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Paper Wing Theatre & Supper Club\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 17,
+      "id": "MBA-DINE-0018",
+      "name": "Quickly Boba Tea",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Quickly Boba Tea\" \"Monterey\""
+        ],
+        "flickr": [
+          "Quickly Boba Tea Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 18,
+      "id": "MBA-DINE-0020",
+      "name": "Schooners Monterey",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Schooners Monterey\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Schooners Monterey\" \"Monterey\"",
+          "Schooners Monterey Monterey site:flickr.com",
+          "Schooners Monterey 400 Cannery Row site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 19,
+      "id": "MBA-DINE-0021",
+      "name": "Sly's Refueling Station (Sly McFly's)",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Sly's Refueling Station\" \"Monterey\"",
+          "Sly's Refueling Station Monterey site:commons.wikimedia.org",
+          "\"Sly McFly\" Cannery Row"
+        ],
+        "flickr": [
+          "\"Sly's Refueling Station\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Sly_McFly%27s_(15398690180).jpg",
+          "type": "existing app photograph",
+          "discovery": "FOUND",
+          "origin": "historical"
+        }
+      ],
+      "flickr": []
+    },
+    {
+      "position": 20,
+      "id": "MBA-DINE-0022",
+      "name": "The C Restaurant + Bar",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"The C Restaurant + Bar\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"The C Restaurant + Bar\" \"Monterey\"",
+          "The C Restaurant + Bar Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/seemonterey/8593938816/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/foodnut/2761179479/",
+          "type": "beverages",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/foodnut/2761170853/",
+          "type": "food",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 21,
+      "id": "MBA-DINE-0023",
+      "name": "The Fish Hopper",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"The Fish Hopper\" \"Monterey\"",
+          "The Fish Hopper Monterey site:commons.wikimedia.org",
+          "\"Fish Hopper\" Cannery Row"
+        ],
+        "flickr": [
+          "\"The Fish Hopper\" \"Monterey\"",
+          "\"Fish Hopper\" Cannery Row"
+        ]
+      },
+      "wikimedia_commons": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Cannery_Row,_Monterey_2_2017-11-21.jpg",
+          "type": "existing app photograph",
+          "discovery": "FOUND",
+          "origin": "historical"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:A_Beautiful_Beach_In_Monterey_California_United_States_(90939265).jpeg",
+          "type": "waterfront context",
+          "discovery": "POSSIBLE",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Cannery_Row,_Monterey,_California,_USA_(3).jpg",
+          "type": "venue photo, type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:DSC28377,_Cannery_Row,_Monterey,_California,_USA_(4533158786).jpg",
+          "type": "venue photo, type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Fish_Hopper_Restauran_on_Cannery_Row_(6706320381).jpg",
+          "type": "venue photo, type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Fish_Hopper,_Restaurant_in_Monterey_(Kalifornien).JPG",
+          "type": "venue photo, type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Monterey,_CA_-_McAbee_Beach_pano_01.jpg",
+          "type": "waterfront context",
+          "discovery": "POSSIBLE",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:The_Fish_Hopper_-_December_2018_-_Stierch_01.jpg",
+          "type": "venue photo, type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:The_Fish_Hopper_-_December_2018_-_Stierch_02.jpg",
+          "type": "venue photo, type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:The_Fish_Hopper_-_December_2018_-_Stierch_03.jpg",
+          "type": "venue photo, type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/seemonterey/15499395662/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/jdyke74/33229716433/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/mudsharkalex/40258117313/",
+          "type": "interior detail",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/photophyl/2748303386/",
+          "type": "view from restaurant",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/axemann/8547533360/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ],
+      "notes": "Commons gallery includes waterfront context and venue photos."
+    },
+    {
+      "position": 22,
+      "id": "MBA-DINE-0024",
+      "name": "The Salty Seal Brewpub & Sports Bar",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"The Salty Seal Brewpub & Sports Bar\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"The Salty Seal Brewpub & Sports Bar\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 23,
+      "id": "MBA-DINE-0025",
+      "name": "The Sardine Factory",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"The Sardine Factory\" \"Monterey\"",
+          "\"Sardine Factory\" Monterey restaurant"
+        ],
+        "flickr": [
+          "\"The Sardine Factory\" \"Monterey\"",
+          "\"Sardine Factory\" Monterey restaurant"
+        ]
+      },
+      "wikimedia_commons": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:The_Sardine_Factory_-_Stierch_-_2018_01.jpg",
+          "type": "existing app photograph",
+          "discovery": "FOUND",
+          "origin": "historical"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Sardine_Factory_-_panoramio.jpg",
+          "type": "venue photo, type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:The_Sardine_Factory_-_Stierch_-_2018_02.jpg",
+          "type": "venue photo, type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:The_Sardine_Factory_-_Stierch_-_2018_03.jpg",
+          "type": "venue photo, type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:The_Sardine_Factory_-_Stierch_-_2018_04.jpg",
+          "type": "venue photo, type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:The_Sardine_Factory_-_Stierch_-_2018_05.jpg",
+          "type": "venue photo, type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:The_Sardine_Factory_-_Stierch_-_2018_07.jpg",
+          "type": "venue photo, type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:The_Sardine_Factory_-_Stierch_-_2018_08.jpg",
+          "type": "venue photo, type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:The_Sardine_Factory_-_Stierch_-_2018_09.jpg",
+          "type": "venue photo, type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:The_Sardine_Factory_-_Stierch_-_2018_10.jpg",
+          "type": "venue photo, type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/125438722%40N07/15375627207/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/ty328/55162859376/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/seemonterey/15496597911/",
+          "type": "wine cellar",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/seemonterey/15312842929/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/seemonterey/15312841179/",
+          "type": "interior",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/seemonterey/15499388012/",
+          "type": "interior",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 24,
+      "id": "MBA-DINE-0026",
+      "name": "Tidal Coffee",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Tidal Coffee\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Tidal Coffee\" \"Monterey\"",
+          "Tidal Coffee Monterey 400 Cannery Row site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 25,
+      "id": "MBA-DINE-0027",
+      "name": "Tipsy Putt Monterey",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Tipsy Putt Monterey\" \"Monterey\""
+        ],
+        "flickr": [
+          "Tipsy Putt Monterey Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 26,
+      "id": "MBA-DINE-0028",
+      "name": "Troya Turkish Delight & Coffee",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Troya Turkish Delight & Coffee\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Troya Turkish Delight & Coffee\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 27,
+      "id": "MBA-DINE-0029",
+      "name": "Whaling Station Steakhouse",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Whaling Station Steakhouse\" \"Monterey\""
+        ],
+        "flickr": [
+          "Whaling Station Steakhouse Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 28,
+      "id": "MBA-DINE-0030",
+      "name": "Wave Street Cafe",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Wave Street Cafe\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Wave Street Cafe\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 29,
+      "id": "MBA-DINE-0031",
+      "name": "Bistro Moulin",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Bistro Moulin\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Bistro Moulin\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Bistro_Moulin_Monterey.jpg",
+          "type": "existing app photograph",
+          "discovery": "FOUND",
+          "origin": "historical"
+        }
+      ],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/8145662%40N07/8090701600/",
+          "type": "food",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/8145662%40N07/8090702484/",
+          "type": "food",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 30,
+      "id": "MBA-DINE-0032",
+      "name": "Monterey Bay Aquarium Cafe",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Monterey Bay Aquarium Cafe\" \"Monterey\"",
+          "\"Monterey Bay Aquarium\" cafe restaurant cafeteria"
+        ],
+        "flickr": [
+          "Monterey Bay Aquarium Cafe Monterey site:flickr.com",
+          "\"Monterey Bay Aquarium\" cafe restaurant cafeteria"
+        ]
+      },
+      "wikimedia_commons": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Restaurant_at_the_Monterey_Bay_Aquarium_-_Stierch_2018_01.jpg",
+          "type": "historical venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Restaurant_at_the_Monterey_Bay_Aquarium_-_Stierch_2018_02.jpg",
+          "type": "historical venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ],
+      "flickr": [],
+      "notes": "Commons files document the aquarium restaurant in 2018."
+    },
+    {
+      "position": 31,
+      "id": "MBA-DINE-0033",
+      "name": "Sea Harvest Restaurant & Fish Market",
+      "discovery_status": "POSSIBLE",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Sea Harvest Restaurant & Fish Market\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Sea Harvest Restaurant & Fish Market\" \"Monterey\"",
+          "Sea Harvest Restaurant & Fish Market Monterey site:flickr.com",
+          "Sea Harvest  & Fish Market Monterey 598 Foam St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/gclabaugh/8201940650/",
+          "type": "venue photo",
+          "discovery": "POSSIBLE",
+          "origin": "this_pass",
+          "note": "Exact Sea Harvest branch unclear."
+        }
+      ]
+    },
+    {
+      "position": 32,
+      "id": "MBA-DINE-0034",
+      "name": "Osteria Al Mare",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Osteria Al Mare\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Osteria Al Mare\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/153638711%40N04/55626841542/",
+          "type": "exterior silhouette",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 33,
+      "id": "MBA-DINE-0035",
+      "name": "Piccolo",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Piccolo\" \"Monterey\"",
+          "Piccolo Monterey site:commons.wikimedia.org"
+        ],
+        "flickr": [
+          "\"Piccolo\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 34,
+      "id": "MBA-DINE-0036",
+      "name": "American Burger",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"American Burger\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"American Burger\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 35,
+      "id": "MBA-DINE-0037",
+      "name": "Crystal Fish Sushi",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Crystal Fish Sushi\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Crystal Fish Sushi\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/jimg944/3644959725/",
+          "type": "type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 36,
+      "id": "MBA-DINE-0038",
+      "name": "Curry Journey",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Curry Journey\" \"Monterey\""
+        ],
+        "flickr": [
+          "Curry Journey Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 37,
+      "id": "MBA-DINE-0039",
+      "name": "El Cantaro Vegan Mexican Restaurant",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"El Cantaro Vegan Mexican Restaurant\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"El Cantaro Vegan Mexican Restaurant\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 38,
+      "id": "MBA-DINE-0040",
+      "name": "First Awakenings",
+      "discovery_status": "POSSIBLE",
+      "queries": {
+        "wikimedia_commons": [
+          "\"First Awakenings\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"First Awakenings\" \"Monterey\"",
+          "First Awakenings Monterey 300 David Ave site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/52985700%40N08/5067212280/",
+          "type": "historical menu photograph",
+          "discovery": "POSSIBLE",
+          "origin": "this_pass",
+          "note": "Exact location unclear."
+        }
+      ],
+      "notes": "Previously flagged Commons photo is from Salinas."
+    },
+    {
+      "position": 39,
+      "id": "MBA-DINE-0041",
+      "name": "Gianni's Pizza",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Gianni's Pizza\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Gianni's Pizza\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/ileff/4744441252/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 40,
+      "id": "MBA-DINE-0042",
+      "name": "Hula's Island Grill",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Hula's Island Grill\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Hula's Island Grill\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Hula%E2%80%99s_Island_Grill_Monterey.jpg",
+          "type": "existing app photograph",
+          "discovery": "FOUND",
+          "origin": "historical"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Dark_and_stormy_at_Hula%27s_Island_Grill.jpg",
+          "type": "cocktail",
+          "discovery": "FOUND",
+          "origin": "historical"
+        }
+      ],
+      "flickr": []
+    },
+    {
+      "position": 41,
+      "id": "MBA-DINE-0043",
+      "name": "International Cafe",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"International Cafe\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"International Cafe\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 42,
+      "id": "MBA-DINE-0044",
+      "name": "International Market & Deli",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"International Market & Deli\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"International Market & Deli\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 43,
+      "id": "MBA-DINE-0045",
+      "name": "La Bahia Mexican American Restaurant",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"La Bahia Mexican American Restaurant\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"La Bahia Mexican American Restaurant\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 44,
+      "id": "MBA-DINE-0046",
+      "name": "Lighthouse Bistro Global Cuisine",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Lighthouse Bistro Global Cuisine\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Lighthouse Bistro Global Cuisine\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 45,
+      "id": "MBA-DINE-0047",
+      "name": "Mission 19 Taqueria",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Mission 19 Taqueria\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Mission 19 Taqueria\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 46,
+      "id": "MBA-DINE-0048",
+      "name": "Namaste India Bistro",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Namaste India Bistro\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Namaste India Bistro\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 47,
+      "id": "MBA-DINE-0049",
+      "name": "Oystertown",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Oystertown\" \"Monterey\"",
+          "Oystertown Monterey site:commons.wikimedia.org"
+        ],
+        "flickr": [
+          "\"Oystertown\" \"Monterey\"",
+          "Oystertown Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 48,
+      "id": "MBA-DINE-0050",
+      "name": "O-Town Espresso Bar",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"O-Town Espresso Bar\" \"Monterey\"",
+          "O-Town Espresso Bar Monterey site:commons.wikimedia.org"
+        ],
+        "flickr": [
+          "\"O-Town Espresso Bar\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 49,
+      "id": "MBA-DINE-0051",
+      "name": "Paprika Cafe",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Paprika Cafe\" \"Monterey\""
+        ],
+        "flickr": [
+          "Paprika Cafe Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 50,
+      "id": "MBA-DINE-0053",
+      "name": "Pelican Pizza",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Pelican Pizza\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Pelican Pizza\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 51,
+      "id": "MBA-DINE-0054",
+      "name": "Sunrise Cafe",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Sunrise Cafe\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Sunrise Cafe\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 52,
+      "id": "MBA-DINE-0055",
+      "name": "Taqueria Del Mar",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Taqueria Del Mar\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Taqueria Del Mar\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    }
+  ]
+}
