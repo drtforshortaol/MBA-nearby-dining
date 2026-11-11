@@ -9,6 +9,12 @@ ALLOWED = {
     'MBA-DINE-0068': 'IMG_4940.jpeg',
     'MBA-DINE-0031': 'photos/MBA-DINE-0031.webp',
     'MBA-DINE-0042': 'photos/MBA-DINE-0042.webp',
+    'MBA-DINE-0021': 'photos/MBA-DINE-0021.webp',
+    'MBA-DINE-0023': 'photos/MBA-DINE-0023.webp',
+    'MBA-DINE-0025': 'photos/MBA-DINE-0025.webp',
+    'MBA-DINE-0105': 'photos/MBA-DINE-0105.webp',
+    'MBA-DINE-0149': 'photos/MBA-DINE-0149.webp',
+    'MBA-DINE-0166': 'photos/MBA-DINE-0166.webp',
 }
 
 def main():
