@@ -1,0 +1,990 @@
+{
+  "date": "2026-11-11",
+  "phase": "discovery",
+  "database_ref": "4de81356b69e3ef918ea5bfbbdeedccdfc055722",
+  "scope": {
+    "first_position": 53,
+    "last_position": 104,
+    "total": 208
+  },
+  "method": "Individual restaurant and locality queries against the web index for Wikimedia Commons and Flickr, with targeted category, album, and address follow-ups. FOUND means an individual photograph page with a discovery-stage venue association. POSSIBLE means a lead with unresolved subject or locality. NOT_FOUND_IN_SEARCH records the result of this bounded pass. Verification and integration are deferred.",
+  "summary": {
+    "searched": 52,
+    "found": 9,
+    "possible_only": 1,
+    "no_match_in_search": 42,
+    "historical_with_direct_in_scope_photo": 0,
+    "new_photo_pages": 14,
+    "new_possible_photo_pages_or_leads": 0
+  },
+  "restaurants": [
+    {
+      "position": 53,
+      "id": "MBA-DINE-0056",
+      "name": "Zab Zab Thai Cuisine",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Zab Zab Thai Cuisine\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Zab Zab Thai Cuisine\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 54,
+      "id": "MBA-DINE-0057",
+      "name": "Baskin-Robbins",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Baskin-Robbins\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Baskin-Robbins\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 55,
+      "id": "MBA-DINE-0058",
+      "name": "Starbucks Coffee (Lighthouse District)",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Starbucks Coffee\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Starbucks Coffee\" \"Monterey\"",
+          "Starbucks Coffee Monterey 865 Lighthouse Ave site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 56,
+      "id": "MBA-DINE-0061",
+      "name": "Aliotti's Victorian Corner Restaurant",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Aliotti's Victorian Corner Restaurant\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Aliotti's Victorian Corner Restaurant\" \"Pacific Grove\"",
+          "Aliotti's Victorian Corner Pacific Grove 541 Lighthouse Ave site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/thespotlightkid/52429817966/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 57,
+      "id": "MBA-DINE-0062",
+      "name": "Beach House Restaurant + Bar",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Beach House Restaurant + Bar\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Beach House Restaurant + Bar\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 58,
+      "id": "MBA-DINE-0064",
+      "name": "The BookWorks",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"The BookWorks\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"The BookWorks\" \"Pacific Grove\"",
+          "The BookWorks Pacific Grove 667 Lighthouse Ave site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 59,
+      "id": "MBA-DINE-0065",
+      "name": "Cafe Guarani",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Cafe Guarani\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Cafe Guarani\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 60,
+      "id": "MBA-DINE-0066",
+      "name": "Colette's Ice Cream",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Colette's Ice Cream\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Colette's Ice Cream\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 61,
+      "id": "MBA-DINE-0067",
+      "name": "Fandango Restaurant",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Fandango Restaurant\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Fandango Restaurant\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/davelsworld/9137632343/",
+          "type": "type undetermined",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/81918828%40N00/48370076801/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 62,
+      "id": "MBA-DINE-0068",
+      "name": "Goodies Delicatessen",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Goodies Delicatessen\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Goodies Delicatessen\" \"Pacific Grove\"",
+          "Goodies Delicatessen Pacific Grove 510 Lighthouse Ave Suite 2 site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [],
+      "notes": "Owner-supplied app photo is outside the two-source search scope."
+    },
+    {
+      "position": 63,
+      "id": "MBA-DINE-0069",
+      "name": "Happy Girl Kitchen Company",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Happy Girl Kitchen Company\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Happy Girl Kitchen Company\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 64,
+      "id": "MBA-DINE-0070",
+      "name": "Hops and Fog Brewing Co",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Hops and Fog Brewing Co\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Hops and Fog Brewing Co\" \"Pacific Grove\"",
+          "Hops and Fog Brewing Co Pacific Grove site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 65,
+      "id": "MBA-DINE-0071",
+      "name": "il Vecchio Restaurant",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"il Vecchio Restaurant\" \"Pacific Grove\"",
+          "il Vecchio Restaurant Pacific Grove site:commons.wikimedia.org"
+        ],
+        "flickr": [
+          "\"il Vecchio Restaurant\" \"Pacific Grove\"",
+          "il Vecchio Pacific Grove 110 Central Ave site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 66,
+      "id": "MBA-DINE-0072",
+      "name": "International Cuisine",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"International Cuisine\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"International Cuisine\" \"Pacific Grove\"",
+          "International Cuisine Pacific Grove 620 Lighthouse Ave Suite 220 site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 67,
+      "id": "MBA-DINE-0073",
+      "name": "La Mia Cucina Ristorante",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"La Mia Cucina Ristorante\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"La Mia Cucina Ristorante\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 68,
+      "id": "MBA-DINE-0074",
+      "name": "Monarch Pub & Restaurant",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Monarch Pub & Restaurant\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Monarch Pub & Restaurant\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 69,
+      "id": "MBA-DINE-0075",
+      "name": "Pacific Thai Cuisine",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Pacific Thai Cuisine\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Pacific Thai Cuisine\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 70,
+      "id": "MBA-DINE-0076",
+      "name": "Passionfish",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Passionfish\" \"Pacific Grove\"",
+          "Passionfish restaurant Pacific Grove"
+        ],
+        "flickr": [
+          "\"Passionfish\" \"Pacific Grove\"",
+          "Passionfish restaurant Pacific Grove",
+          "Passionfish Pacific Grove 701 Lighthouse Ave site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 71,
+      "id": "MBA-DINE-0077",
+      "name": "Peppers MexiCali Cafe",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Peppers MexiCali Cafe\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Peppers MexiCali Cafe\" \"Pacific Grove\"",
+          "Peppers MexiCali Cafe Pacific Grove 170 Forest Ave site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 72,
+      "id": "MBA-DINE-0078",
+      "name": "The Perfect Crumb Bakery",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"The Perfect Crumb Bakery\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"The Perfect Crumb Bakery\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 73,
+      "id": "MBA-DINE-0079",
+      "name": "Petra Restaurant",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Petra Restaurant\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Petra Restaurant\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 74,
+      "id": "MBA-DINE-0080",
+      "name": "PG Meetinghouse",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"PG Meetinghouse\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"PG Meetinghouse\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 75,
+      "id": "MBA-DINE-0081",
+      "name": "Red House Cafe",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Red House Cafe\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Red House Cafe\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/tilley_things/52512444056/",
+          "type": "dining visit",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/81918828%40N00/16283046029/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/suendercafe/22366590066/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 76,
+      "id": "MBA-DINE-0082",
+      "name": "Snack Shack at Lovers Point",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Snack Shack at Lovers Point\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Snack Shack at Lovers Point\" \"Pacific Grove\"",
+          "Snack Shack at Lovers Point Pacific Grove 618 Ocean View Blvd site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/ty328/55225403114/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 77,
+      "id": "MBA-DINE-0083",
+      "name": "Spotted Duck Restaurant",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Spotted Duck Restaurant\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Spotted Duck Restaurant\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 78,
+      "id": "MBA-DINE-0084",
+      "name": "Toasties Cafe",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Toasties Cafe\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Toasties Cafe\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 79,
+      "id": "MBA-DINE-0085",
+      "name": "Vivolo's Chowder House",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Vivolo's Chowder House\" \"Pacific Grove\"",
+          "Vivolo's Chowder House Pacific Grove site:commons.wikimedia.org"
+        ],
+        "flickr": [
+          "\"Vivolo's Chowder House\" \"Pacific Grove\"",
+          "Vivolo's Chowder House Pacific Grove 127 Central Ave site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 80,
+      "id": "MBA-DINE-0086",
+      "name": "Wild Fish Restaurant",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Wild Fish Restaurant\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Wild Fish Restaurant\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/thespotlightkid/52430099239/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 81,
+      "id": "MBA-DINE-0087",
+      "name": "Winston's - A Brunch Place",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Winston's - A Brunch Place\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Winston's - A Brunch Place\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 82,
+      "id": "MBA-DINE-0088",
+      "name": "Zum Sushi",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Zum Sushi\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Zum Sushi\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 83,
+      "id": "MBA-DINE-0089",
+      "name": "Alfredo's Pastaria & Mozzarella Bar",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Alfredo's Pastaria & Mozzarella Bar\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Alfredo's Pastaria & Mozzarella Bar\" \"Pacific Grove\"",
+          "Alfredo's Pastaria & Mozzarella Bar Pacific Grove 1188 Forest Ave site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 84,
+      "id": "MBA-DINE-0090",
+      "name": "Jersey Mike's Subs",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Jersey Mike's Subs\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Jersey Mike's Subs\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 85,
+      "id": "MBA-DINE-0091",
+      "name": "Julia's Vegetarian Restaurant",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Julia's Vegetarian Restaurant\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Julia's Vegetarian Restaurant\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 86,
+      "id": "MBA-DINE-0092",
+      "name": "Little Chicken House",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Little Chicken House\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Little Chicken House\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 87,
+      "id": "MBA-DINE-0093",
+      "name": "Los Amigos Restaurante",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Los Amigos Restaurante\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Los Amigos Restaurante\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 88,
+      "id": "MBA-DINE-0094",
+      "name": "Love Thai Cuisine",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Love Thai Cuisine\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Love Thai Cuisine\" \"Pacific Grove\"",
+          "Love Thai Cuisine Pacific Grove site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 89,
+      "id": "MBA-DINE-0095",
+      "name": "Lucy's on Lighthouse",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Lucy's on Lighthouse\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Lucy's on Lighthouse\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 90,
+      "id": "MBA-DINE-0096",
+      "name": "Michael's Grill & Taqueria",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Michael's Grill & Taqueria\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Michael's Grill & Taqueria\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 91,
+      "id": "MBA-DINE-0097",
+      "name": "Patisserie Bechler",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Patisserie Bechler\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Patisserie Bechler\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 92,
+      "id": "MBA-DINE-0098",
+      "name": "Pizza My Way",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Pizza My Way\" \"Pacific Grove\"",
+          "Pizza My Way Pacific Grove site:commons.wikimedia.org"
+        ],
+        "flickr": [
+          "\"Pizza My Way\" \"Pacific Grove\"",
+          "Pizza My Way Pacific Grove site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 93,
+      "id": "MBA-DINE-0099",
+      "name": "Subway Sandwiches",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Subway Sandwiches\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Subway Sandwiches\" \"Pacific Grove\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 94,
+      "id": "MBA-DINE-0100",
+      "name": "Rockfish Harbor Grill",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Rockfish Harbor Grill\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Rockfish Harbor Grill\" \"Monterey\"",
+          "Rockfish Harbor Grill Monterey 101 Fisherman’s Wharf #1 site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 95,
+      "id": "MBA-DINE-0101",
+      "name": "Abalonetti Bar & Grill",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Abalonetti Bar & Grill\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Abalonetti Bar & Grill\" \"Monterey\"",
+          "Abalonetti Bar & Grill Monterey 57 Old Fisherman's Wharf site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/whatatrip/6804297020/",
+          "type": "food",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/whatatrip/6804296576/",
+          "type": "food",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/whatatrip/6804296204/",
+          "type": "food",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 96,
+      "id": "MBA-DINE-0102",
+      "name": "Crabby Jim's",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Crabby Jim's\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Crabby Jim's\" \"Monterey\"",
+          "Crabby Jim's Monterey 25 Old Fisherman's Wharf site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/seemonterey/39424974820/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 97,
+      "id": "MBA-DINE-0103",
+      "name": "Crab Louie's Bistro",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Crab Louie's Bistro\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Crab Louie's Bistro\" \"Monterey\"",
+          "Crab Louie's Bistro Monterey 46 Fisherman's Wharf site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 98,
+      "id": "MBA-DINE-0104",
+      "name": "Domenico's on the Wharf",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Domenico's on the Wharf\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Domenico's on the Wharf\" \"Monterey\"",
+          "Domenico's on the Wharf Monterey 50 Fisherman's Wharf 1 site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 99,
+      "id": "MBA-DINE-0105",
+      "name": "Grotto Fish Market / Kokomo's",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Grotto Fish Market\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Grotto Fish Market\" \"Monterey\"",
+          "Grotto Fish Market Monterey 42 Old Fisherman's Wharf site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [],
+      "notes": "Existing Library of Congress app source is outside the two-source search scope."
+    },
+    {
+      "position": 100,
+      "id": "MBA-DINE-0106",
+      "name": "Old Fisherman's Grotto",
+      "discovery_status": "POSSIBLE",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Old Fisherman's Grotto\" \"Monterey\"",
+          "\"Old Fisherman's Grotto\" wharf Monterey"
+        ],
+        "flickr": [
+          "\"Old Fisherman's Grotto\" \"Monterey\"",
+          "\"Old Fisherman's Grotto\" wharf Monterey",
+          "Old Fisherman's Grotto Monterey 39 Old Fisherman's Wharf site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/spiritedstormywgj9254/sets/72157670582111342",
+          "type": "album lead",
+          "discovery": "POSSIBLE",
+          "origin": "historical",
+          "note": "Caption mentions dining at the venue. Individual photo not isolated."
+        }
+      ],
+      "notes": "Historical Commons category is for San Francisco. Monterey Flickr album remains possible."
+    },
+    {
+      "position": 101,
+      "id": "MBA-DINE-0107",
+      "name": "The Gig Monterey (formerly Paluca Trattoria)",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"The Gig Monterey\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"The Gig Monterey\" \"Monterey\"",
+          "The Gig Monterey 6 Old Fisherman's Wharf site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 102,
+      "id": "MBA-DINE-0108",
+      "name": "Monterey Crab House",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Monterey Crab House\" \"Monterey\""
+        ],
+        "flickr": [
+          "Monterey Crab House Monterey site:flickr.com",
+          "Crab House Monterey 60 Fisherman's Wharf #1 site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/153638711%40N04/55518076376/",
+          "type": "facade",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 103,
+      "id": "MBA-DINE-0111",
+      "name": "Cafe Fina",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Cafe Fina\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Cafe Fina\" \"Monterey\"",
+          "Cafe Fina Monterey 47 Old Fisherman's Wharf site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/153638711%40N04/55518186973/",
+          "type": "facade",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 104,
+      "id": "MBA-DINE-0113",
+      "name": "Dock Side Fish Market",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Dock Side Fish Market\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Dock Side Fish Market\" \"Monterey\"",
+          "Dock Side Fish Market Monterey Old Fisherman's Wharf (number pending) site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    }
+  ]
+}
