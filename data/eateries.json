@@ -112,13 +112,13 @@
     "lat": 36.6161126,
     "lon": -121.9004924,
     "website": "",
-    "photo": null,
-    "photoCaption": "",
-    "photoCaution": "",
-    "photoLicense": "",
-    "photoCreator": "",
-    "photoSource": "",
-    "photoDate": "",
+    "photo": "photos/MBA-DINE-0002-concept.svg",
+    "photoCaption": "Original conceptual illustration; NOT a verified image of this restaurant or entrance.",
+    "photoCaution": "Artist's concept only. Do not rely on depicted signage, building facade, or doorway for wayfinding.",
+    "photoLicense": "Original project illustration (not copied from third-party photography)",
+    "photoCreator": "MBA Eatery project / generated SVG artwork",
+    "photoSource": "Local project asset; illustrative depiction, no photo source",
+    "photoDate": "2026-11-10",
     "statusNote": "",
     "hours": "",
     "serviceClass": "Coffee / bakery",
@@ -148,18 +148,22 @@
     "hoursConfidence": "unverified",
     "hoursProvisional": "Daily 7 AM–8 PM (third-party listing; conflicts with other directories)",
     "hoursCaution": "Third-party directory lists daily 7 AM–8 PM, but operator hours remain unverified. Call before visiting.",
-  "operatingStatusEvidence": {
-    "status": "corroborated-open-in-2026-not-live-verified",
-    "checkedOn": "2026-11-10",
-    "sources": ["https://canneryrow.com/plan-your-visit/", "https://canneryrow.com/properties/711-cannery-row/", "https://www.montereycountynow.com/eat_drink/morsels/coffee-row/article_a92ef7e9-2148-4d3d-aa1e-baeae478279c.html"],
-    "note": "Cannery Row district business directory lists Beans of Eden at 711 Cannery Row; July 9, 2026 local news reports the café opened. Neither confirms live operating hours."
-  },
-  "hoursEvidence": {
-    "status": "third-party-only-unverified",
-    "checkedOn": "2026-11-10",
-    "source": "https://maps.roadtrippers.com/us/monterey-ca/food-drink/beans-of-eden-monterey-ca--0",
-    "note": "Roadtrippers lists daily 7 AM–8 PM. Not confirmed by operator; retain provisional hours separately from verified hours."
-  },
+    "operatingStatusEvidence": {
+      "status": "corroborated-open-in-2026-not-live-verified",
+      "checkedOn": "2026-11-10",
+      "sources": [
+        "https://canneryrow.com/plan-your-visit/",
+        "https://canneryrow.com/properties/711-cannery-row/",
+        "https://www.montereycountynow.com/eat_drink/morsels/coffee-row/article_a92ef7e9-2148-4d3d-aa1e-baeae478279c.html"
+      ],
+      "note": "Cannery Row district business directory lists Beans of Eden at 711 Cannery Row; July 9, 2026 local news reports the café opened. Neither confirms live operating hours."
+    },
+    "hoursEvidence": {
+      "status": "third-party-only-unverified",
+      "checkedOn": "2026-11-10",
+      "source": "https://maps.roadtrippers.com/us/monterey-ca/food-drink/beans-of-eden-monterey-ca--0",
+      "note": "Roadtrippers lists daily 7 AM–8 PM. Not confirmed by operator; retain provisional hours separately from verified hours."
+    },
     "diningDetails": {
       "reviewedOn": "2026-11-09",
       "status": "partially-verified-existing-research",
@@ -1081,13 +1085,13 @@
     "lat": 36.6161126,
     "lon": -121.9004924,
     "website": "https://www.paperwing.com/",
-    "photo": null,
-    "photoCaption": "",
-    "photoCaution": "",
-    "photoLicense": "",
-    "photoCreator": "",
-    "photoSource": "",
-    "photoDate": "",
+    "photo": "photos/MBA-DINE-0017-concept.svg",
+    "photoCaption": "Original conceptual illustration; NOT a verified image of this restaurant or entrance.",
+    "photoCaution": "Artist's concept only. Do not rely on depicted signage, building facade, or doorway for wayfinding.",
+    "photoLicense": "Original project illustration (not copied from third-party photography)",
+    "photoCreator": "MBA Eatery project / generated SVG artwork",
+    "photoSource": "Local project asset; illustrative depiction, no photo source",
+    "photoDate": "2026-11-10",
     "statusNote": "Supper club/event venue. Confirm reservation, ticket and event requirements before visiting.",
     "hours": "",
     "serviceClass": "Supper club / live entertainment",
@@ -1126,8 +1130,19 @@
         "https://www.paperwing.com/paper-wing-events-2/"
       ],
       "food": "Operator describes a dinner-and-show menu including fish and chips, fried chicken, and vegetarian/vegan options; offerings and availability may depend on event.",
-      "foodEvidence": {"status": "operator-described", "checkedOn": "2026-11-10", "source": "https://www.paperwing.com/about/", "note": "Menu items are examples, not confirmed available at every performance."},
-      "officeHoursEvidence": {"status": "chamber-listed", "checkedOn": "2026-11-10", "source": "https://members.montereychamber.com/list/member/paper-wing-theatre-supper-club-monterey-7231", "officeHours": "Monday–Friday 10 AM–5 PM", "note": "Administrative office hours only; NOT dining or performance hours."},
+      "foodEvidence": {
+        "status": "operator-described",
+        "checkedOn": "2026-11-10",
+        "source": "https://www.paperwing.com/about/",
+        "note": "Menu items are examples, not confirmed available at every performance."
+      },
+      "officeHoursEvidence": {
+        "status": "chamber-listed",
+        "checkedOn": "2026-11-10",
+        "source": "https://members.montereychamber.com/list/member/paper-wing-theatre-supper-club-monterey-7231",
+        "officeHours": "Monday–Friday 10 AM–5 PM",
+        "note": "Administrative office hours only; NOT dining or performance hours."
+      },
       "experience": "Event-based theater and supper club, NOT a standard walk-in restaurant; consult event calendar.",
       "seating": "Performance seating and any dining seating depend on event; arrangements not independently verified.",
       "accessibility": "Second-floor venue; elevator, stairs, accessible seating and restrooms not independently verified.",
@@ -4540,13 +4555,13 @@
     "lat": 36.6218852,
     "lon": -121.9192835,
     "website": "https://www.theperfectcrumbbakery.net/",
-    "photo": null,
-    "photoCaption": "",
-    "photoCaution": "",
-    "photoLicense": "",
-    "photoCreator": "",
-    "photoSource": "",
-    "photoDate": "",
+    "photo": "photos/MBA-DINE-0078-concept.svg",
+    "photoCaption": "Original conceptual illustration; NOT a verified image of this restaurant or entrance.",
+    "photoCaution": "Artist's concept only. Do not rely on depicted signage, building facade, or doorway for wayfinding.",
+    "photoLicense": "Original project illustration (not copied from third-party photography)",
+    "photoCreator": "MBA Eatery project / generated SVG artwork",
+    "photoSource": "Local project asset; illustrative depiction, no photo source",
+    "photoDate": "2026-11-10",
     "statusNote": "Pacific Grove location confirmed; official contact page still says temporarily closed while newer local sources report reopening. Call to confirm before recommending.",
     "hours": "Wed–Mon 7 AM–5 PM; Tue closed",
     "serviceClass": "Bakery / breakfast / lunch / espresso",
@@ -4580,9 +4595,16 @@
       "operatingStatusEvidence": {
         "status": "conflicting-sources",
         "checkedOn": "2026-11-10",
-        "sources": ["https://www.theperfectcrumbbakery.net/contact", "https://www.lighthousedistrict.net/news/2025/10/perfect-crumb-reopens-pacific-grove", "https://business.pacificgrove.org/directory/Details/the-perfect-crumb-bakery-4214002"],
+        "sources": [
+          "https://www.theperfectcrumbbakery.net/contact",
+          "https://www.lighthousedistrict.net/news/2025/10/perfect-crumb-reopens-pacific-grove",
+          "https://business.pacificgrove.org/directory/Details/the-perfect-crumb-bakery-4214002"
+        ],
         "note": "Official contact page still says Temporary Closed- We are moving, while October 2025 reopening announcement, Monterey County tourism 2026 update, Pacific Grove Chamber listing, and July-August 2026 customer reviews indicate the new location has operated. Current-day opening and hours remain unconfirmed.",
-        "additionalSources": ["https://www.seemonterey.com/blog/whats-new-in-2026/", "https://www.restaurantji.com/ca/monterey/the-perfect-crumb-bakery-inc-/"],
+        "additionalSources": [
+          "https://www.seemonterey.com/blog/whats-new-in-2026/",
+          "https://www.restaurantji.com/ca/monterey/the-perfect-crumb-bakery-inc-/"
+        ],
         "evidenceScope": "Historical reopening corroborated; no live operating-hours verification"
       },
       "sources": [
