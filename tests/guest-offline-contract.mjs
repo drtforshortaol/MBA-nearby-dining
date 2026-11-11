@@ -5,7 +5,7 @@ const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
 const app=read('app.js'),sw=read('sw.js'),css=read('style.css');
 const data=JSON.parse(read('data/eateries.json'));
 const meta=JSON.parse(read('data/metadata.json'));
-assert.equal(data.length,206,'Restaurant count changed');
+assert.equal(data.length,208,'Restaurant count changed');
 assert.match(app,/<button type="button" data-action="resetSearch">Show all eateries<\/button>/,'Empty search results must offer a one-tap reset');
 for(const method of ['walk','drive'])assert(app.includes('data-action="settravel" data-value="'+method+'" aria-pressed="${travel===\''+method+'\'}"'),'Destination travel toggle must announce selected state: '+method);
 assert.match(app,/\$\{travel==='drive'\?'🚗':'🚶'\} \$\{travelLabel\(r,travel\)\}/,'Restaurant cards must reflect selected walking or driving mode');
@@ -20,4 +20,4 @@ for(const asset of ['./index.html','./style.css','./app.js','./qr-local.js','./d
 assert(sw.includes('cache.addAll(CORE)'),'Offline precache missing');
 assert(sw.includes('data.filter(r=>r.photo)'),'Restaurant photo caching missing');
 assert(sw.includes('mba-eatery-v'+meta.appVersion),'Offline cache version mismatch');
-console.log('PASS: guest navigation guards, 206 records, and offline asset contract');
+console.log('PASS: guest navigation guards, 208 records, and offline asset contract');
