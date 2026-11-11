@@ -6,7 +6,7 @@ Run `node scripts/research-readiness.mjs` to see the current JSON report, includ
 
 Run `node scripts/research-readiness.mjs --write` to write `reports/research-readiness.json` for other tools.
 
-## Priority policy
+Run `node scripts/research-readiness.mjs --csv` to view the priority queue as spreadsheet-compatible CSV. Add `--write` to save it to `reports/research-priority.csv` for review in Excel or other spreadsheet software. This is a research queue, not an assertion of verified business details.\n\n## Priority policy
 
 1. Confirm restaurants marked possibly closed or reopening unconfirmed before recommending them.
 2. Research missing hours and contact information.
