@@ -8,7 +8,7 @@ const worker = fs.readFileSync('sw.js', 'utf8');
 const streets = JSON.parse(fs.readFileSync('data/roads.json', 'utf8'));
 assert.ok(Array.isArray(streets.features) && streets.features.length >= 80, 'Real county roads missing');
 const eateries = JSON.parse(fs.readFileSync('data/eateries.json', 'utf8'));
-assert.equal(eateries.length, 206, 'Expected 206 visitor-eligible eateries');
+assert.equal(eateries.length, 208, 'Expected 208 visitor-eligible eateries');
 assert.equal(new Set(eateries.map(r => r.id)).size, eateries.length, 'Duplicate eatery IDs');
 for (const expression of [
   /function travelEstimate\s*\(/,
