@@ -1,0 +1,13 @@
+{
+  "stage": "discovery_only",
+  "entries": [
+    {
+      "id": "MBA-DINE-0106",
+      "name": "Old Fisherman's Grotto",
+      "source": "https://www.flickr.com/photos/spiritedstormywgj9254/sets/72157670582111342",
+      "photo_kind": "album_mentions_restaurant_photo_not_confirmed",
+      "discovery": "lead_only",
+      "verification": "deferred"
+    }
+  ]
+}
