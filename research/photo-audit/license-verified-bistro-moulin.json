@@ -1,0 +1,14 @@
+{
+  "restaurant_id": "MBA-DINE-0031",
+  "name": "Bistro Moulin",
+  "source": "https://commons.wikimedia.org/wiki/File:Bistro_Moulin_Monterey.jpg",
+  "location_confirmed": true,
+  "photo_type": "restaurant exterior",
+  "author": "Sesamehoneytart",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "license_verified": true,
+  "attribution_required": true,
+  "adaptations_sharealike": true,
+  "review_status": "license_and_identity_verified_not_integrated"
+}
