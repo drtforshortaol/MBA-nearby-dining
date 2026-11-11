@@ -1,0 +1,919 @@
+{
+  "date": "2026-11-11",
+  "phase": "discovery",
+  "database_ref": "4de81356b69e3ef918ea5bfbbdeedccdfc055722",
+  "scope": {
+    "first_position": 157,
+    "last_position": 208,
+    "total": 208
+  },
+  "method": "Individual restaurant and locality queries against the web index for Wikimedia Commons and Flickr, with targeted category, album, and address follow-ups. FOUND means an individual photograph page with a discovery-stage venue association. POSSIBLE means a lead with unresolved subject or locality. NOT_FOUND_IN_SEARCH records the result of this bounded pass. Verification and integration are deferred.",
+  "summary": {
+    "searched": 52,
+    "found": 3,
+    "possible_only": 0,
+    "no_match_in_search": 49,
+    "historical_with_direct_in_scope_photo": 0,
+    "new_photo_pages": 4,
+    "new_possible_photo_pages_or_leads": 0
+  },
+  "restaurants": [
+    {
+      "position": 157,
+      "id": "MBA-DINE-0167",
+      "name": "Round Table Pizza",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Round Table Pizza\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Round Table Pizza\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 158,
+      "id": "MBA-DINE-0168",
+      "name": "Siamese Bay Restaurant",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Siamese Bay Restaurant\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Siamese Bay Restaurant\" \"Monterey\"",
+          "Siamese Bay Restaurant Monterey site:flickr.com",
+          "Siamese Bay Monterey 131 Webster St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 159,
+      "id": "MBA-DINE-0169",
+      "name": "Six Over Coffee and Company",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Six Over Coffee and Company\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Six Over Coffee and Company\" \"Monterey\"",
+          "Six Over Coffee and Company Monterey 160 Webster St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 160,
+      "id": "MBA-DINE-0170",
+      "name": "Stokes Adobe",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Stokes Adobe\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Stokes Adobe\" \"Monterey\"",
+          "Stokes Adobe Monterey 500 Hartnell St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/army_arch/51931468692/",
+          "type": "building exterior",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/army_arch/51878018538/",
+          "type": "building exterior",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ],
+      "notes": "Photos show the restaurant building. Signage and date suitability remain for later review."
+    },
+    {
+      "position": 161,
+      "id": "MBA-DINE-0171",
+      "name": "Subway Sandwiches & Salads",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Subway Sandwiches & Salads\" \"Monterey\""
+        ],
+        "flickr": [
+          "Subway Sandwiches & Salads Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 162,
+      "id": "MBA-DINE-0172",
+      "name": "Sur Burger",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Sur Burger\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Sur Burger\" \"Monterey\"",
+          "Sur Burger Monterey 409 Alvarado St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 163,
+      "id": "MBA-DINE-0173",
+      "name": "Taco Bell",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Taco Bell\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Taco Bell\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 164,
+      "id": "MBA-DINE-0174",
+      "name": "Terra Superfoods",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Terra Superfoods\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Terra Superfoods\" \"Monterey\"",
+          "Terra Superfoods Monterey 475 Alvarado Street site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 165,
+      "id": "MBA-DINE-0175",
+      "name": "Toribashi",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Toribashi\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Toribashi\" \"Monterey\"",
+          "Toribashi Monterey 487 Alvarado St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 166,
+      "id": "MBA-DINE-0176",
+      "name": "Turn 12 Bar & Grill",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Turn 12 Bar & Grill\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Turn 12 Bar & Grill\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/seemonterey/11988080843/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 167,
+      "id": "MBA-DINE-0177",
+      "name": "TZone Monterey",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"TZone Monterey\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"TZone Monterey\" \"Monterey\"",
+          "TZone Monterey 460 Alvarado St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 168,
+      "id": "MBA-DINE-0178",
+      "name": "La Cote Bleue",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"La Cote Bleue\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"La Cote Bleue\" \"Pacific Grove\"",
+          "La Cote Bleue Pacific Grove 209 Forest Ave site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 169,
+      "id": "MBA-DINE-0179",
+      "name": "Sandbar & Grill",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Sandbar & Grill\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Sandbar & Grill\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/bwalsh/4105260477/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 170,
+      "id": "MBA-DINE-0180",
+      "name": "Taste Cafe & Bistro",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Taste Cafe & Bistro\" \"Pacific Grove\"",
+          "Taste Cafe & Bistro Pacific Grove site:commons.wikimedia.org"
+        ],
+        "flickr": [
+          "\"Taste Cafe & Bistro\" \"Pacific Grove\"",
+          "Taste Cafe & Bistro Pacific Grove 1199 Forest Ave site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 171,
+      "id": "MBA-DINE-0181",
+      "name": "Gelato By The Sea",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Gelato By The Sea\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Gelato By The Sea\" \"Monterey\"",
+          "Gelato By The Sea Monterey 700 Cannery Row site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 172,
+      "id": "MBA-DINE-0182",
+      "name": "Fishwife at Asilomar",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Fishwife at Asilomar\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Fishwife at Asilomar\" \"Pacific Grove\"",
+          "Fishwife at Asilomar Pacific Grove 1996 1/2 Sunset Drive site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 173,
+      "id": "MBA-DINE-0183",
+      "name": "Coastal Kitchen",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Coastal Kitchen\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Coastal Kitchen\" \"Monterey\"",
+          "Coastal Kitchen Monterey 400 Cannery Row site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 174,
+      "id": "MBA-DINE-0184",
+      "name": "Lobby Lounge at Monterey Plaza",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Lobby Lounge at Monterey Plaza\" \"Monterey\"",
+          "Lobby Lounge at Monterey Plaza Monterey site:commons.wikimedia.org"
+        ],
+        "flickr": [
+          "\"Lobby Lounge at Monterey Plaza\" \"Monterey\"",
+          "Lobby Lounge at  Plaza Monterey 400 Cannery Row site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 175,
+      "id": "MBA-DINE-0185",
+      "name": "Aquino's Birrieria & Brunch",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Aquino's Birrieria & Brunch\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Aquino's Birrieria & Brunch\" \"Pacific Grove\"",
+          "Aquino's Birrieria & Brunch Pacific Grove 1116A Forest Ave site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 176,
+      "id": "MBA-DINE-0186",
+      "name": "Carl's Jr. (902 Lighthouse)",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Carl's Jr.\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Carl's Jr.\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 177,
+      "id": "MBA-DINE-0188",
+      "name": "Monterey’s Fish House",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Monterey’s Fish House\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Monterey’s Fish House\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 178,
+      "id": "MBA-DINE-0189",
+      "name": "Chipotle Mexican Grill (Del Monte Center)",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Chipotle Mexican Grill\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Chipotle Mexican Grill\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 179,
+      "id": "MBA-DINE-0190",
+      "name": "Cold Stone Creamery (Del Monte Center)",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Cold Stone Creamery\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Cold Stone Creamery\" \"Monterey\"",
+          "Cold Stone Creamery Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 180,
+      "id": "MBA-DINE-0191",
+      "name": "Dametra Fresh Mediterranean",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Dametra Fresh Mediterranean\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Dametra Fresh Mediterranean\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 181,
+      "id": "MBA-DINE-0192",
+      "name": "Kona Steak & Seafood",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Kona Steak & Seafood\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Kona Steak & Seafood\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 182,
+      "id": "MBA-DINE-0193",
+      "name": "Lalla Grill Del Monte",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Lalla Grill Del Monte\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Lalla Grill Del Monte\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 183,
+      "id": "MBA-DINE-0194",
+      "name": "Little Korea",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Little Korea\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Little Korea\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 184,
+      "id": "MBA-DINE-0195",
+      "name": "Pizza My Heart (Del Monte Center)",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Pizza My Heart\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Pizza My Heart\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 185,
+      "id": "MBA-DINE-0196",
+      "name": "Poke House (Del Monte Center)",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Poke House\" \"Monterey\""
+        ],
+        "flickr": [
+          "Poke House Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 186,
+      "id": "MBA-DINE-0197",
+      "name": "Starbucks (Del Monte Center)",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Starbucks\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Starbucks\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 187,
+      "id": "MBA-DINE-0198",
+      "name": "California Pizza Kitchen (Del Monte Center)",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"California Pizza Kitchen\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"California Pizza Kitchen\" \"Monterey\"",
+          "California Pizza Kitchen Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 188,
+      "id": "MBA-DINE-0199",
+      "name": "Chopstix Vietnamese Restaurant",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Chopstix Vietnamese Restaurant\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Chopstix Vietnamese Restaurant\" \"Monterey\"",
+          "Chopstix Vietnamese Monterey 1244 Munras Ave site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 189,
+      "id": "MBA-DINE-0200",
+      "name": "Krua Thai Restaurant",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Krua Thai Restaurant\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Krua Thai Restaurant\" \"Monterey\"",
+          "Krua Thai Monterey 731 Munras Ave Suite A site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 190,
+      "id": "MBA-DINE-0201",
+      "name": "The Wild Plum Cafe",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"The Wild Plum Cafe\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"The Wild Plum Cafe\" \"Monterey\"",
+          "The Wild Plum Cafe Monterey 731 Munras Ave Suite B site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 191,
+      "id": "MBA-DINE-0203",
+      "name": "Pazzo Italian Cafe",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Pazzo Italian Cafe\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Pazzo Italian Cafe\" \"Monterey\"",
+          "Pazzo Italian Cafe Monterey 482 Alvarado St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 192,
+      "id": "MBA-DINE-0204",
+      "name": "Rice and Roots",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Rice and Roots\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Rice and Roots\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 193,
+      "id": "MBA-DINE-0205",
+      "name": "Scoops Ice Cream Parlor",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Scoops Ice Cream Parlor\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Scoops Ice Cream Parlor\" \"Monterey\"",
+          "Scoops Ice Cream Parlor Monterey 595 Munras Ave site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 194,
+      "id": "MBA-DINE-0210",
+      "name": "Comanche Cellars Wine Room",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Comanche Cellars Wine Room\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Comanche Cellars Wine Room\" \"Monterey\"",
+          "Comanche Cellars Wine Room Monterey 412 Alvarado St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 195,
+      "id": "MBA-DINE-0212",
+      "name": "Carmel Bakery and Coffee House",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Carmel Bakery and Coffee House\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Carmel Bakery and Coffee House\" \"Monterey\"",
+          "Carmel Bakery and Coffee House Monterey 220 Alvarado St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 196,
+      "id": "MBA-DINE-0213",
+      "name": "Indian Summer Hookah Lounge, Bar & Grill",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Indian Summer Hookah Lounge, Bar & Grill\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Indian Summer Hookah Lounge, Bar & Grill\" \"Monterey\"",
+          "Indian Summer Hookah Lounge, Bar & Grill Monterey 220 Olivier St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 197,
+      "id": "MBA-DINE-0215",
+      "name": "Puma Road at Portola Plaza",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Puma Road at Portola Plaza\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Puma Road at Portola Plaza\" \"Monterey\"",
+          "Puma Road at Portola Plaza Monterey 281 Alvarado St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 198,
+      "id": "MBA-DINE-0217",
+      "name": "Benny Walker's",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Benny Walker's\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Benny Walker's\" \"Monterey\"",
+          "Benny Walker's Monterey 444 Alvarado St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 199,
+      "id": "MBA-DINE-0218",
+      "name": "Compact Disco — EAT takeout window",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Compact Disco — EAT takeout window\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Compact Disco — EAT takeout window\" \"Monterey\"",
+          "Compact Disco — EAT takeout window Monterey 420 Tyler St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 200,
+      "id": "MBA-DINE-0224",
+      "name": "Mountain Mike's Pizza — Monterey/Abrego",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Mountain Mike's Pizza — Monterey/Abrego\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Mountain Mike's Pizza — Monterey/Abrego\" \"Monterey\"",
+          "Mountain Mike's Pizza — /Abrego Monterey 724 Abrego St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 201,
+      "id": "MBA-DINE-0225",
+      "name": "Pretzelmaker",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Pretzelmaker\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Pretzelmaker\" \"Monterey\"",
+          "Pretzelmaker Monterey 520 Del Monte Center site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 202,
+      "id": "MBA-DINE-0229",
+      "name": "Whole Foods Market — Prepared Foods",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Whole Foods Market — Prepared Foods\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Whole Foods Market — Prepared Foods\" \"Monterey\"",
+          "Whole Foods Market — Prepared Foods Monterey 800 Del Monte Center site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 203,
+      "id": "MBA-DINE-0231",
+      "name": "Dust Bowl Brewing Co. — Monterey Tap Depot",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Dust Bowl Brewing Co. — Monterey Tap Depot\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Dust Bowl Brewing Co. — Monterey Tap Depot\" \"Monterey\"",
+          "Dust Bowl Brewing Co. —  Tap Depot Monterey 290 Figueroa St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 204,
+      "id": "MBA-DINE-0232",
+      "name": "Wedo’s Tacos — Dust Bowl Tap Depot resident food truck",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Wedo’s Tacos — Dust Bowl Tap Depot resident food truck\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Wedo’s Tacos — Dust Bowl Tap Depot resident food truck\" \"Monterey\"",
+          "Wedo’s Tacos — Dust Bowl Tap Depot resident food truck Monterey 290 Figueroa St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 205,
+      "id": "MBA-DINE-0235",
+      "name": "Starbucks Coffee — Downtown Alvarado",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Starbucks Coffee — Downtown Alvarado\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Starbucks Coffee — Downtown Alvarado\" \"Monterey\"",
+          "Starbucks Coffee — Downtown Alvarado Monterey 316 Alvarado St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 206,
+      "id": "MBA-DINE-0236",
+      "name": "Rudolfo's Café",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Rudolfo's Café\" \"Pacific Grove\""
+        ],
+        "flickr": [
+          "\"Rudolfo's Café\" \"Pacific Grove\"",
+          "Rudolfo's Café Pacific Grove 543 Lighthouse Ave site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 207,
+      "id": "MBA-DINE-0237",
+      "name": "McDonald's",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"McDonald's\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"McDonald's\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 208,
+      "id": "MBA-DINE-0238",
+      "name": "Jack in the Box",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Jack in the Box\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Jack in the Box\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    }
+  ]
+}
