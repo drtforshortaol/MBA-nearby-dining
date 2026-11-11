@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+const run=spawnSync(process.execPath,['scripts/research-readiness.mjs'],{encoding:'utf8'});
+assert.equal(run.status,0,run.stderr||run.stdout);
+const report=JSON.parse(run.stdout);
+assert.equal(report.recordCount,report.metadataEligibleCount);
+assert.equal(report.duplicateIds.length,0);
+assert(Array.isArray(report.priorityQueue));
+assert(report.priorityQueue.every((r,i,a)=>i===0||a[i-1].score>=r.score));
+assert(report.priorityQueue.every(r=>r.flags.length>0&&r.id&&r.name));
+console.log('PASS: research readiness priorities, unique IDs and count consistency');

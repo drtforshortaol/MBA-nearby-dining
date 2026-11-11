@@ -5,6 +5,7 @@ on:
       - 'data/eateries.json'
       - 'data/metadata.json'
       - 'scripts/research-readiness.mjs'
+      - 'tests/research-priority-contract.mjs'
       - '.github/workflows/research-readiness.yml'
   workflow_dispatch:
 permissions:
@@ -18,4 +19,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - run: node tests/research-priority-contract.mjs
       - run: node scripts/research-readiness.mjs
