@@ -9,7 +9,9 @@
   if(guest){status.hidden=true;button.hidden=true;return;}
   if(!('serviceWorker' in navigator)){status.textContent='Online updates unavailable';button.hidden=true;return;}
   let registration=null,checking=false,activated=false;
-  const say=(message,showButton=false)=>{status.textContent=message;button.hidden=!showButton;};
+  button.hidden=false;
+  button.textContent='Check Updates';
+  const say=(message,showButton=true)=>{status.textContent=message;button.hidden=!showButton;button.textContent=registration?.waiting?'Update Now':'Check Updates';};
   async function check(manual=false){
     if(checking||!navigator.onLine)return;
     checking=true;
