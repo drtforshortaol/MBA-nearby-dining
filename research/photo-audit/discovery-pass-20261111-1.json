@@ -1,0 +1,21 @@
+{
+  "stage": "discovery_only",
+  "entries": [
+    {
+      "id": "MBA-DINE-0042",
+      "name": "Hula's Island Grill",
+      "source": "https://commons.wikimedia.org/wiki/File:Dark_and_stormy_at_Hula%27s_Island_Grill.jpg",
+      "photo_kind": "cocktail",
+      "discovery": "found",
+      "verification": "deferred"
+    },
+    {
+      "id": "MBA-DINE-0042",
+      "name": "Hula's Island Grill",
+      "source": "https://commons.wikimedia.org/wiki/File:Hula%E2%80%99s_Island_Grill_Monterey.jpg",
+      "photo_kind": "restaurant",
+      "discovery": "found",
+      "verification": "deferred"
+    }
+  ]
+}
