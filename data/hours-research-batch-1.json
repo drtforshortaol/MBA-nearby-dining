@@ -1,0 +1,297 @@
+{
+  "batch": 1,
+  "total": 18,
+  "scope": "Missing-hours research only; do not publish without dated source evidence",
+  "records": [
+    {
+      "id": "MBA-DINE-0002",
+      "name": "Beans of Eden",
+      "website": null,
+      "sourceStatus": "conflicting",
+      "hoursVerified": false,
+      "verificationStatus": "conflicting",
+      "verifiedHours": null,
+      "sourceUrl": "https://maps.roadtrippers.com/us/monterey-ca/food-drink/beans-of-eden-monterey-ca--0",
+      "checkedOn": "2026-11-07",
+      "notes": "Two dated snapshots of the same directory give daily 7 AM–8 PM and 8 AM–8 PM. Cannery Row confirms the address without hours. Call the listed cafe number (831) 215-6209 to confirm current opening time. Live Google Maps at the exact address shows Mon–Thu 7 AM–6 PM and Fri–Sun 7 AM–8 PM. The conflicting Roadtrippers snapshots did not show that day split, and no second source has confirmed it.",
+      "corroboratingSources": [
+        "https://canneryrow.com/business/beans-of-eden/",
+        "https://www.google.com/maps/place/Beans+of+Eden/@36.6160266,-121.9004639,17z/data=!3m1!4b1!4m6!3m5!1s0x808de5717c5a1af1:0xb73654171bf56c2c!8m2!3d36.6160266!4d-121.9004639!16s%2Fg%2F11z5s74kjy?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D"
+      ]
+    },
+    {
+      "id": "MBA-DINE-0008",
+      "name": "Dippin' Dots",
+      "website": "https://www.dippindots.com/",
+      "sourceStatus": "verified-corroborated-business-listings",
+      "hoursVerified": true,
+      "verificationStatus": "verified-corroborated-business-listings",
+      "verifiedHours": "Sun–Fri noon–6 PM; Sat 11 AM–8 PM",
+      "sourceUrl": "https://www.menupix.com/california/restaurants/5548663/Dippin-Dots-Menu-Monterey-CA",
+      "checkedOn": "2026-11-07",
+      "notes": "MenuPix, Restaurantji, and SuperPages publish the same seven-day schedule for the shop at 711 Cannery Row and the same phone number. SuperPages says hours may vary. The official chain locator confirms the shop and phone. Its store-hours field is empty. The earlier 11 AM–5:30 PM candidate lacked an identifiable hours page.",
+      "corroboratingSources": [
+        "https://www.restaurantji.com/ca/monterey/dippin-dots-/",
+        "https://www.superpages.com/pebble-beach-ca/ice-cream-frozen-desserts",
+        "https://www.dippindots.com/locations/",
+        "https://www.storemapper.co/api/users/14171/stores.js?callback=SMcallback2"
+      ]
+    },
+    {
+      "id": "MBA-DINE-0011",
+      "name": "Great American Cookies",
+      "website": "https://www.greatamericancookies.com/",
+      "sourceStatus": "verified-corroborated-current-business-listings",
+      "hoursVerified": true,
+      "verificationStatus": "verified-corroborated-current-business-listings",
+      "verifiedHours": "Daily 11 AM–9 PM",
+      "sourceUrl": "https://www.google.com/maps/place/Great+American+Cookies/@36.6167293,-121.9011177,17z/data=!3m1!4b1!4m6!3m5!1s0x808de5fe4f4d71af:0x1e0b49cf25aecf55!8m2!3d36.6167293!4d-121.9011177!16s%2Fg%2F11scw84v81?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D",
+      "checkedOn": "2026-11-07",
+      "notes": "The live Google Maps profile for 751 Cannery Row #105 and Restaurantji's October 16, 2026 update both show 11 AM–9 PM on all seven days. SuperPages agrees. Restaurantji's older snapshot, Roadtrippers, Restaurant Guru, and the owner-labeled 411.info listing showed 8 PM closing. The latter listings do not establish a more recent hours update.",
+      "corroboratingSources": [
+        "https://maps.roadtrippers.com/us/monterey-ca/food-drink/great-american-cookies-monterey",
+        "https://restaurantguru.com/Great-American-Cookies-Monterey",
+        "https://411.info/business/Great-American-Cookies-Monterey-CA-20248729",
+        "https://www.superpages.com/del-rey-oaks-ca/gift-baskets",
+        "https://canneryrow.com/business/nestle-toll-house-cafe/",
+        "https://www.restaurantji.com/ca/monterey/great-american-cookies-/",
+        "https://ordernew.greatamericancookies.com/locations/"
+      ]
+    },
+    {
+      "id": "MBA-DINE-0014",
+      "name": "Lilly Mae's Cinnamon Rolls",
+      "website": "https://canneryrow.com/business/lilly-maes-cinnamon-rolls/",
+      "sourceStatus": "verified-corroborated-business-listings",
+      "hoursVerified": true,
+      "verificationStatus": "verified-corroborated-business-listings",
+      "verifiedHours": "Daily 9 AM–7:30 PM",
+      "sourceUrl": "https://www.tripadvisor.com.mx/Restaurant_Review-g32737-d849140-Reviews-Lilly_Mae_s_Cinnamon_Rolls-Monterey_Monterey_County_California.html",
+      "checkedOn": "2026-11-07",
+      "notes": "Tripadvisor and Yellow Pages publish the same seven-day schedule at Suite H, 700 Cannery Row. The Cannery Row business directory confirms address and phone.",
+      "corroboratingSources": [
+        "https://www.yellowpages.com/monterey-ca/mip/lilly-maes-cinnamon-rolls-8757395",
+        "https://canneryrow.com/business/lilly-maes-cinnamon-rolls/"
+      ]
+    },
+    {
+      "id": "MBA-DINE-0017",
+      "name": "Paper Wing Theatre & Supper Club",
+      "website": "https://www.paperwing.com/",
+      "sourceStatus": "needs-manual-review",
+      "hoursVerified": false,
+      "verificationStatus": "needs-manual-review",
+      "verifiedHours": null,
+      "sourceUrl": "https://www.paperwing.com/",
+      "checkedOn": "2026-11-07",
+      "notes": "The theater advertises specific shows and ticketed dining events. The Chamber's Mon–Fri 10 AM–5 PM applies to its office, and its Thu–Mon 4–10 PM listing applies to a separate sushi walk-up window. Call (831) 905-5684 for the event's meal service time or to confirm any regular dining hours. The current theater calendar directs visitors to individual showtimes. The VIP Dinner Package page confirms that dinner can be part of a particular ticket.",
+      "corroboratingSources": [
+        "https://members.montereychamber.com/list/member/paper-wing-theatre-supper-club-monterey-7231",
+        "https://www.seemonterey.com/directory/paper-wing-theatre-company-supper-club/",
+        "https://www.paperwing.com/paper-wing-events-2/",
+        "https://www.paperwing.com/the-rocky-horror-show-vip-dinner-package/"
+      ]
+    },
+    {
+      "id": "MBA-DINE-0028",
+      "name": "Troya Turkish Delight & Coffee",
+      "website": "https://troyamry.com/",
+      "sourceStatus": "official-verified-partial",
+      "hoursVerified": false,
+      "verificationStatus": "verified-official-location",
+      "verifiedHours": "Mon–Sat 10:00 AM–8:00 PM; Sun 10:00 AM–7:00 PM",
+      "sourceUrl": "https://troyamry.com/pages/contact",
+      "checkedOn": "2026-11-07",
+      "notes": "Official contact page; 685 Cannery Row #107."
+    },
+    {
+      "id": "MBA-DINE-0045",
+      "name": "La Bahia Mexican American Restaurant",
+      "website": null,
+      "sourceStatus": "verified-district-business-directory",
+      "hoursVerified": true,
+      "verificationStatus": "verified-district-business-directory",
+      "verifiedHours": "Tue–Sun 11 AM–8 PM; Mon closed",
+      "sourceUrl": "https://www.lighthousedistrict.net/biz/la-bahia-restaurant",
+      "checkedOn": "2026-11-07",
+      "notes": "The local district lists indoor dining hours for the exact address and phone. The current Roadtrippers listing agrees.",
+      "corroboratingSources": [
+        "https://maps.roadtrippers.com/us/monterey-ca/food-drink/la-bahia-mexican-american-restaurant"
+      ]
+    },
+    {
+      "id": "MBA-DINE-0054",
+      "name": "Sunrise Cafe",
+      "website": null,
+      "sourceStatus": "verified-merchant-district-post",
+      "hoursVerified": true,
+      "verificationStatus": "verified-merchant-district-post",
+      "verifiedHours": "Thu–Tue 8 AM–2 PM; Wed closed",
+      "sourceUrl": "https://www.lighthousedistrict.net/news/2023/02/hot-drinks-go-sunrise-cafe",
+      "checkedOn": "2026-11-07",
+      "notes": "The cafe's post on the district site specifies the schedule at 204 Lighthouse Avenue. A current location listing with 2026 reviews corroborates it.",
+      "corroboratingSources": [
+        "https://maps.roadtrippers.com/us/monterey-ca/food-drink/sunrise-cafe-monterey"
+      ]
+    },
+    {
+      "id": "MBA-DINE-0058",
+      "name": "Starbucks Coffee (Lighthouse District)",
+      "website": "https://www.starbucks.com/store-locator/store/1008792",
+      "sourceStatus": "verified-official-location",
+      "hoursVerified": true,
+      "verificationStatus": "verified-official-location",
+      "verifiedHours": "Mon–Sat 4:30 AM–9 PM; Sun 4:30 AM–8:30 PM",
+      "sourceUrl": "https://www.starbucks.com/apiproxy/v1/locations?lat=36.603&lng=-121.902",
+      "checkedOn": "2026-11-07",
+      "notes": "The public Starbucks locator response (JSON with the site's XMLHttpRequest header) identifies store 1008792 at 865 Lighthouse Ave and returns one store schedule. It does not provide a separate drive-through schedule.",
+      "corroboratingSources": [
+        "https://www.starbucks.com/store-locator/store/1008792",
+        "https://www.yellowpages.com/monterey-ca/mip/starbucks-coffee-504705829"
+      ]
+    },
+    {
+      "id": "MBA-DINE-0074",
+      "name": "Monarch Pub & Restaurant",
+      "website": "https://business.pacificgrove.org/directory/Details/monarch-pub-restaurant-the-2115337",
+      "sourceStatus": "verified-merchant-post-and-visitor-guide",
+      "hoursVerified": true,
+      "verificationStatus": "verified-merchant-post-and-visitor-guide",
+      "verifiedHours": "Daily 11 AM–10 PM",
+      "sourceUrl": "https://www.findglocal.com/US/Pacific-Grove/1897955690215352/The-Monarch-Pub-%26-Restaurant",
+      "checkedOn": "2026-11-07",
+      "notes": "An Aug 10, 2026 merchant post reproduced on FindGlocal explicitly gives daily dine-in and takeout hours at 617 Lighthouse Ave. The listing's seven-day schedule and the 2026 Pacific Grove visitor guide agree. The Chamber entry has an apparent AM/PM typo and other listings vary on late hours. A separate bar closing time was not confirmed.",
+      "corroboratingSources": [
+        "https://fbs.advantageinc.com/pacificgrove/guide2026/26/",
+        "https://business.pacificgrove.org/directory/Details/the-monarch-pub-restaurant-2115337",
+        "https://www.tripadvisor.com/Restaurant_Review-g32840-d15053928-Reviews-The_Monarch_Pub_and_Restaurant-Pacific_Grove_Monterey_County_California.html"
+      ]
+    },
+    {
+      "id": "MBA-DINE-0078",
+      "name": "The Perfect Crumb Bakery",
+      "website": "https://www.theperfectcrumbbakery.net/",
+      "sourceStatus": "verified-corroborated-current-business-listings",
+      "hoursVerified": true,
+      "verificationStatus": "verified-corroborated-current-business-listings",
+      "verifiedHours": "Wed–Mon 7 AM–5 PM; Tue closed",
+      "sourceUrl": "https://www.google.com/maps/place/The+Perfect+Crumb+Bakery+Inc./@36.6221055,-121.919425,17z/data=!3m1!4b1!4m6!3m5!1s0x808de41d25610d33:0xe60db9dd60942948!8m2!3d36.6221055!4d-121.919425!16s%2Fg%2F11cjt4d7pc?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D",
+      "checkedOn": "2026-11-07",
+      "notes": "The live Google Maps profile for 650 Lighthouse Ave in Pacific Grove and the October 31, 2026 Restaurantji update agree on every day. Restaurantji's August 19 snapshot and Restaurant Guru's June 14 update carried the older 6:30 AM schedule also listed by joe coffee and Edible Monterey Bay. The official site's embedded hours identify the old 301 Lighthouse Ave location in Monterey. Its visible contact page still carries a move notice, while its home page confirms the new storefront.",
+      "corroboratingSources": [
+        "https://www.restaurantji.com/ca/monterey/the-perfect-crumb-bakery-inc-/",
+        "https://joe.coffee/locations/ca/pacific-grove/the-perfect-crumb-bakery-inc-pacific-grove/",
+        "https://www.theperfectcrumbbakery.net/",
+        "https://www.theperfectcrumbbakery.net/contact",
+        "https://business.pacificgrove.org/directory/Details/the-perfect-crumb-bakery-4214002",
+        "https://ediblemontereybay.com/dine-local-guide/dine-local-guide-the-perfect-crumb-bakery/",
+        "https://restaurantguru.com/The-Perfect-Crumb-Bakery-Monterey"
+      ]
+    },
+    {
+      "id": "MBA-DINE-0087",
+      "name": "Winston's - A Brunch Place",
+      "website": "https://business.pacificgrove.org/directory/Details/winston-s-a-brunch-place-2340963",
+      "sourceStatus": "verified-chamber-directory",
+      "hoursVerified": true,
+      "verificationStatus": "verified-chamber-directory",
+      "verifiedHours": "Wed–Mon 8 AM–2:30 PM; Tue closed",
+      "sourceUrl": "https://business.pacificgrove.org/directory/Details/winston-s-a-brunch-place-2340963",
+      "checkedOn": "2026-11-07",
+      "notes": "The Chamber's entry for 602 Lighthouse Avenue and the current Tripadvisor listing agree. Shorter online ordering times are separate.",
+      "corroboratingSources": [
+        "https://www.tripadvisor.com/Restaurant_Review-g32840-d34442681-Reviews-Winston_s_A_Brunch_Place-Pacific_Grove_Monterey_County_California.html"
+      ]
+    },
+    {
+      "id": "MBA-DINE-0090",
+      "name": "Jersey Mike's Subs",
+      "website": "https://www.jerseymikes.com/",
+      "sourceStatus": "verified-official-location",
+      "hoursVerified": true,
+      "verificationStatus": "verified-official-location",
+      "verifiedHours": "Daily 10 AM–9 PM",
+      "sourceUrl": "https://www.jerseymikes.com/20397/pacific-grove-ca",
+      "checkedOn": "2026-11-07",
+      "notes": "The chain's official store page identifies 100 Country Club Gate Center in Pacific Grove and gives explicit store hours."
+    },
+    {
+      "id": "MBA-DINE-0107",
+      "name": "The Gig Monterey (formerly Paluca Trattoria)",
+      "website": "https://www.thegigmonterey.com/",
+      "sourceStatus": "verified-reservation-listing",
+      "hoursVerified": true,
+      "verificationStatus": "verified-reservation-listing",
+      "verifiedHours": "Daily 11:30 AM–9 PM",
+      "sourceUrl": "https://www.opentable.com/r/the-gig-monterey",
+      "checkedOn": "2026-11-07",
+      "notes": "OpenTable lists hours of operation for The Gig at 6 Old Fisherman's Wharf. The current Tripadvisor listing agrees. Older Paluca information is for the prior operator.",
+      "corroboratingSources": [
+        "https://www.tripadvisor.ca/Restaurant_Review-g32737-d34685105-Reviews-The_Gig-Monterey_Monterey_County_California.html",
+        "https://www.montereywharf.com/dining/the-gig-monterey.html"
+      ]
+    },
+    {
+      "id": "MBA-DINE-0108",
+      "name": "Monterey Crab House",
+      "website": "https://www.crabhousemonterey.com/",
+      "sourceStatus": "existing-record-only; requires independent source verification",
+      "hoursVerified": false,
+      "verificationStatus": "verified-current-destination-directory",
+      "verifiedHours": "Daily 11:00 AM–9:00 PM",
+      "sourceUrl": "https://www.seemonterey.com/directory/crab-house/",
+      "checkedOn": "2026-11-07",
+      "notes": "See Monterey destination directory explicitly lists lunch and dinner seven days a week 11am–9pm; 60 Fisherman's Wharf. Not an official restaurant-site confirmation."
+    },
+    {
+      "id": "MBA-DINE-0114",
+      "name": "Fish and Chips Cafe",
+      "website": "https://www.montereywharf.com/dining/fish-and-chips-cafe.html",
+      "sourceStatus": "verified-corroborated-business-listings",
+      "hoursVerified": true,
+      "verificationStatus": "verified-corroborated-business-listings",
+      "verifiedHours": "Daily 11 AM–9 PM",
+      "sourceUrl": "https://frankiapp.com/business/fish-chips-cafe-262253",
+      "checkedOn": "2026-11-07",
+      "notes": "Franki and Restaurant Guru agree on hours for the named cafe at 57 Fisherman's Wharf. Franki matches the wharf association's phone and links to the cafe listing. This is the outdoor cafe; Abalonetti's full-service dining schedule is separate.",
+      "corroboratingSources": [
+        "https://restaurantguru.com/Fish-and-Chips-Cafe-Monterey",
+        "https://www.montereywharf.com/dining/fish-and-chips-cafe.html"
+      ]
+    },
+    {
+      "id": "MBA-DINE-0115",
+      "name": "Domenico's Fish Market and Deli",
+      "website": "https://domenicosmonterey.com/",
+      "sourceStatus": "needs-manual-review",
+      "hoursVerified": false,
+      "verificationStatus": "needs-manual-review",
+      "verifiedHours": null,
+      "sourceUrl": "https://www.montereywharf.com/dining/domenicos-fish-market-and-deli.html",
+      "checkedOn": "2026-11-07",
+      "notes": "The Wharf Association lists the market and deli separately without hours. Domenico's site explicitly gives daily 11:30 AM to close for the dining room only. Call (831) 372-3655 for separate market counter hours.",
+      "corroboratingSources": [
+        "https://domenicosmonterey.com/contact/"
+      ]
+    },
+    {
+      "id": "MBA-DINE-0127",
+      "name": "Bobalicious and Bites",
+      "website": "https://bobaliciousbites.com/",
+      "sourceStatus": "verified-corroborated-current-business-listings",
+      "hoursVerified": true,
+      "verificationStatus": "verified-corroborated-current-business-listings",
+      "verifiedHours": "Daily noon–8 PM",
+      "sourceUrl": "https://www.google.com/maps/place/Bobalicious+and+Bites/@36.5983842,-121.8942005,17z/data=!3m1!4b1!4m6!3m5!1s0x808de5b7f060101f:0x933763ce33976d96!8m2!3d36.5983842!4d-121.8942005!16s%2Fg%2F11k7b6rpmc?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D",
+      "checkedOn": "2026-11-07",
+      "notes": "The live Google Maps profile for 474 Tyler St and the October 31, 2026 Restaurantji update agree on the full week. Wanderlog attributes its data to Google and repeats the shorter times seen in an older Restaurantji snapshot. The shop's June 2026 district post also confirms noon–8 PM on Mondays during the promotion. Online ordering times are separate.",
+      "corroboratingSources": [
+        "https://www.restaurantji.com/ca/monterey/bobalicious-and-bites-/",
+        "https://www.oldmonterey.org/news/2026/06/monterey-mondays-special-locals-bobalicious-bites",
+        "https://www.oldmonterey.org/biz/bobalicious-and-bites",
+        "https://bobaliciousbites.com/",
+        "https://wanderlog.com/place/details/4426726"
+      ]
+    }
+  ]
+}
