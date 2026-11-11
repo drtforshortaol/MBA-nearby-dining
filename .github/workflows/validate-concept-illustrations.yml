@@ -1,0 +1,26 @@
+name: Validate concept illustrations
+on:
+  pull_request:
+    paths:
+      - 'photos/**'
+      - 'data/eateries.json'
+      - 'scripts/validate-concept-illustrations.cjs'
+      - '.github/workflows/validate-concept-illustrations.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'photos/**'
+      - 'data/eateries.json'
+      - 'scripts/validate-concept-illustrations.cjs'
+      - '.github/workflows/validate-concept-illustrations.yml'
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/validate-concept-illustrations.cjs
