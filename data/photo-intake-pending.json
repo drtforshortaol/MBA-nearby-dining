@@ -1,0 +1,34 @@
+{
+  "schema": "mba-eatery-photo-intake-v1",
+  "publication_status": "not_published",
+  "items": [
+    {
+      "restaurant_id": "MBA-DINE-0068",
+      "restaurant_name": "Goodies Delicatessen",
+      "asset_status": "binary_uploaded_pending_candidate",
+      "photo_type": "storefront",
+      "photographer": "Olivia Sarkis",
+      "credit": "© Olivia Sarkis. Used with permission.",
+      "permission_status": "owner_confirmed_via_project_owner",
+      "permission_scope": "MBA Eatery App",
+      "permission_record": "docs/photo-intake-goodies-delicatessen-20261108.md",
+      "source_asset": "conversation upload 2026-11-08",
+      "repository_asset_path": "assets/photos/IMG_4940.jpeg",
+      "offline_verified": false,
+      "source_image_verified": true,
+      "source_image_format": "JPEG",
+      "source_image_dimensions_px": {
+        "width": 1536,
+        "height": 1172
+      },
+      "source_image_visual_check": "Storefront shows DELICATESSEN sign above entrance, Goodies window logo, patio seating, and seasonal decorations.",
+      "prepared_asset_filename": "goodies-delicatessen-storefront.jpg",
+      "prepared_asset_dimensions_px": {
+        "width": 1200,
+        "height": 916
+      },
+      "prepared_asset_status": "original_uploaded_instead_of_prepared_asset",
+      "uploaded_blob_sha": "59546918936be5f4e99a5fb15ece2c9e5e828bf8"
+    }
+  ]
+}

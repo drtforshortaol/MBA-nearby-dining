@@ -1,0 +1,814 @@
+name: RDE lossless workbook smoke test
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'scripts/rde_workbook.py'
+      - '.github/workflows/rde-roundtrip.yml'
+      - 'data/eateries.json'
+jobs:
+  roundtrip:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install openpyxl==3.1.5
+      - name: Export 206 restaurants to Excel
+        run: python scripts/rde_workbook.py export data/eateries.json /tmp/rde-eatery.xlsx
+      - name: Import Excel to staging JSON
+        run: python scripts/rde_workbook.py import /tmp/rde-eatery.xlsx /tmp/rde-candidate.json
+      - name: Verify exact semantic round trip
+        run: python scripts/rde_workbook.py verify data/eateries.json /tmp/rde-candidate.json
+      - name: Verify workbook structure and identifiers
+        run: |
+          python - <<'PY'
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-eatery.xlsx',read_only=True)
+          assert len(wb.sheetnames)==14, wb.sheetnames
+          ids=[r[0] for r in list(wb['Restaurants'].values)[1:]]
+          assert len(ids)==206 and len(set(ids))==206
+          assert len(list(wb['LegacyFields'].values))-1==206
+          print('PASS: 14 worksheets, 206 unique IDs and 206 lossless payloads')
+          PY
+      - name: Validate relational category foreign keys
+        run: |
+          python - <<'PY'
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-eatery.xlsx',read_only=True,data_only=True)
+          ids={r[0] for r in list(wb['Restaurants'].values)[1:]}
+          categories={r[0] for r in list(wb['Categories'].values)[1:]}
+          relations=list(wb['RestaurantCategories'].values)[1:]
+          assert categories, 'Category dimension not populated'
+          assert relations, 'Restaurant categories missing'
+          assert len(categories)==len(list(wb['Categories'].values))-1
+          for rid,category,*_ in relations:
+           assert rid in ids, f'Orphan restaurant {rid}'
+           assert category in categories, f'Orphan category {category}'
+          for sheet,column in [('Hours',1),('Menus',1),('Media',1),('Features',0),('ResearchStatus',0)]:
+           for row in list(wb[sheet].values)[1:]:
+            assert row[column] in ids, f'Orphan {sheet}: {row[column]}'
+          print(f'PASS: {len(categories)} categories and {len(relations)} restaurant links; no orphan references')
+          PY
+      - name: Validate research status vocabulary and dropdowns
+        run: |
+          python - <<'PY'
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-eatery.xlsx')
+          for name in ['ResearchStatus','RestaurantCategories','Features','Hours','Menus','Evidence']:
+           ws=wb[name]
+           assert len(ws.data_validations.dataValidation)>0, f'Missing dropdown: {name}'
+          allowed={'verified_yes','verified_no','unverified','unknown','not_applicable','not_yet_researched','researched_no_result','conflicting','outdated'}
+          assert 'verified_no' in allowed and 'unknown' in allowed and 'researched_no_result' in allowed
+          print('PASS: explicit research status dropdowns present')
+          PY
+      - name: Validate evidence provenance and references
+        run: |
+          python - <<'PY'
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-eatery.xlsx',read_only=True,data_only=True)
+          ids={r[0] for r in list(wb['Restaurants'].values)[1:]}
+          sources={r[0]:r for r in list(wb['Sources'].values)[1:]}
+          evidence=list(wb['Evidence'].values)[1:]
+          assert len(sources)==len(list(wb['Sources'].values))-1
+          assert evidence, 'Expected imported source leads'
+          assert len({r[0] for r in evidence})==len(evidence)
+          for eid,rid,sid,path,claim,status,reviewed in evidence:
+           assert rid in ids and sid in sources, f'Orphan evidence: {eid}'
+           assert status=='unverified', f'Legacy reference incorrectly asserted verified: {eid}'
+           assert sources[sid][1].startswith(('http://','https://'))
+          print(f'PASS: {len(sources)} sources and {len(evidence)} unverified evidence leads')
+          PY
+      - name: Verify history is preserved but cannot silently alter delivery JSON
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-eatery.xlsx')
+          assert 'ResearchHistory' in wb.sheetnames
+          rid=wb['Restaurants']['A2'].value
+          wb['ResearchHistory'].append(['HISTORY:TEST',rid,'name',None,'2026-11-08','test','propose','old','new','conflicting'])
+          wb.save('/tmp/rde-history.xlsx')
+          subprocess.run(['python','scripts/rde_workbook.py','import','/tmp/rde-history.xlsx','/tmp/rde-history.json'],check=True)
+          assert json.loads(Path('/tmp/rde-history.json').read_text())==json.loads(Path('data/eateries.json').read_text())
+          print('PASS: research history cannot silently overwrite delivery data')
+          PY
+      - name: Verify review decisions do not publish without approval gate
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-eatery.xlsx')
+          assert 'ReviewQueue' in wb.sheetnames
+          assert len(wb['ReviewQueue'].data_validations.dataValidation)>0
+          rid=wb['Restaurants']['A2'].value
+          wb['ResearchHistory'].append(['HISTORY:REVIEW',rid,'name',None,'2026-11-08','tester','propose','old','replacement','pending'])
+          wb['ReviewQueue'].append(['REVIEW:TEST','HISTORY:REVIEW',rid,'name','accepted','tester','2026-11-08','test only'])
+          wb.save('/tmp/rde-reviewed.xlsx')
+          subprocess.run(['python','scripts/rde_workbook.py','import','/tmp/rde-reviewed.xlsx','/tmp/rde-reviewed.json'],check=True)
+          assert json.loads(Path('/tmp/rde-reviewed.json').read_text())==json.loads(Path('data/eateries.json').read_text())
+          print('PASS: recorded approval alone cannot silently publish')
+          PY
+      - name: Verify intentional editing and reject legacy corruption
+        run: |
+          python - <<'PY'
+          import json
+          import subprocess
+          from openpyxl import load_workbook
+          from pathlib import Path
+          workbook='/tmp/rde-eatery.xlsx'
+          original=json.loads(Path('data/eateries.json').read_text())
+          wb=load_workbook(workbook)
+          ws=wb['Restaurants']
+          header=[cell.value for cell in ws[1]]
+          col=header.index('name')+1
+          prior=ws.cell(2,col).value
+          ws.cell(2,col).value=prior+' [RDE EDIT TEST]'
+          wb.save('/tmp/rde-edited.xlsx')
+          subprocess.run(['python','scripts/rde_workbook.py','import','/tmp/rde-edited.xlsx','/tmp/rde-edited.json'],check=True)
+          changed=json.loads(Path('/tmp/rde-edited.json').read_text())
+          assert changed[0]['name']==prior+' [RDE EDIT TEST]'
+          assert changed[1:]==original[1:]
+          assert {**changed[0], 'name':prior}==original[0]
+          wb=load_workbook(workbook)
+          wb['LegacyFields'].cell(2,2).value='{}'
+          wb.save('/tmp/rde-tampered.xlsx')
+          attempt=subprocess.run(['python','scripts/rde_workbook.py','import','/tmp/rde-tampered.xlsx','/tmp/rde-tampered.json'],capture_output=True,text=True)
+          assert attempt.returncode!=0, 'Tampered source must be rejected'
+          print('PASS: intentional edit isolated; tampering rejected')
+          PY
+      - name: Test approved candidate export and rejection gates
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          baseline=json.loads(Path('data/eateries.json').read_text())
+          wb=load_workbook('/tmp/rde-eatery.xlsx')
+          ev=next(iter(list(wb['Evidence'].values)[1:]))
+          rid=ev[1]
+          old=next(r['name'] for r in baseline if r['id']==rid)
+          wb['Evidence'].append(['EV:APPROVAL',rid,ev[2],'name','reviewed name claim','unverified',None])
+          wb['ResearchHistory'].append(['H:APPROVAL',rid,'name','EV:APPROVAL','2026-11-08','researcher','propose',old,old+' [REVIEWED]','pending'])
+          wb['ReviewQueue'].append(['R:APPROVAL','H:APPROVAL',rid,'name','accepted','reviewer','2026-11-08','source checked'])
+          wb.save('/tmp/rde-approval.xlsx')
+          command=['python','scripts/rde_approve.py','/tmp/rde-approval.xlsx','data/eateries.json','/tmp/rde-approved-candidate.json']
+          result=subprocess.run(command,capture_output=True,text=True)
+          assert result.returncode==0,result.stderr
+          candidate=json.loads(Path('/tmp/rde-approved-candidate.json').read_text())
+          assert len(candidate)==len(baseline)==206
+          assert next(r['name'] for r in candidate if r['id']==rid)==old+' [REVIEWED]'
+          for a,b in zip(baseline,candidate):
+           if a['id']==rid: assert {**b,'name':old}==a
+           else: assert a==b
+          wb['ReviewQueue']['H2']=''
+          wb.save('/tmp/rde-unapproved.xlsx')
+          blocked=subprocess.run(['python','scripts/rde_approve.py','/tmp/rde-unapproved.xlsx','data/eateries.json','/tmp/rde-rejected-candidate.json'],capture_output=True,text=True)
+          assert blocked.returncode!=0
+          assert not Path('/tmp/rde-rejected-candidate.json').exists()
+          print('PASS: approved candidate isolated; incomplete review rejected')
+          PY
+      - name: Validate local browser editor safety boundaries
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
+          const script=html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
+          assert.ok(script,'Missing editor script');
+          new vm.Script(script);
+          for(const required of ['type="file"','Export unapproved edit draft','Discard edits','Permanent ID','beforeunload','URL.createObjectURL','Protected field changed','Expected 206 restaurant records','mba-rde-research-proposals-v1','publication_status','not_approved','source_url','Queue for review','mba-rde-review-decisions-v1','not_published','Independent reviewer required for acceptance','Record review','@media(max-width:680px)','min-height:44px','aria-live="polite"','focus-visible']){
+            assert.ok(html.includes(required),'Missing editor safeguard: '+required);
+          }
+          assert.ok(!/\bfetch\s*\(/.test(script),'Local editor must not make network calls');
+          assert.ok(!/localStorage|indexedDB|XMLHttpRequest/.test(script),'Local editor must not silently persist records');
+          console.log('PASS: browser editor parses and contains local-only safety boundaries');
+          JS
+      - name: Test browser proposal ingestion into pending review
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-eatery.xlsx',read_only=True,data_only=True)
+          headers=[x.value for x in wb['Restaurants'][1]]
+          row=[x.value for x in wb['Restaurants'][2]]
+          rid=row[0];old=row[headers.index('name')]
+          payload={'schema':'mba-rde-research-proposals-v1','publication_status':'not_approved','restaurant_count':206,'proposals':[{'history_id':'H-LOCAL-1','restaurant_id':rid,'field_path':'name','recorded_at':'2026-11-08T12:00:00Z','researcher':'CI','action':'propose','previous_value':old,'proposed_value':'Research candidate','disposition':'pending','source_url':'https://example.org/source','claim':'Needs verification'}]}
+          Path('/tmp/rde-proposals.json').write_text(json.dumps(payload))
+          cmd=['python','scripts/rde_ingest.py','/tmp/rde-eatery.xlsx','/tmp/rde-proposals.json','/tmp/rde-ingested.xlsx']
+          result=subprocess.run(cmd,capture_output=True,text=True)
+          assert result.returncode==0,result.stderr
+          result=load_workbook('/tmp/rde-ingested.xlsx',read_only=True,data_only=True)
+          for sheet in ('Sources','Evidence','ResearchHistory','ReviewQueue'):
+           assert any(str(r[0]).startswith('INGEST:') for r in list(result[sheet].values)[1:]),sheet
+          assert list(result['ReviewQueue'].values)[-1][4]=='pending'
+          assert list(result['Restaurants'].values)[1][headers.index('name')]==old
+          reject=subprocess.run(cmd,capture_output=True,text=True)
+          assert reject.returncode==0,reject.stderr
+          payload['proposals'][0]['previous_value']='stale'
+          Path('/tmp/rde-proposals.json').write_text(json.dumps(payload))
+          reject=subprocess.run(cmd,capture_output=True,text=True)
+          assert reject.returncode!=0
+          assert json.loads(Path('data/eateries.json').read_text())[0]['id']
+          print('PASS: proposal ingestion creates pending linked records; stale edits rejected')
+          PY
+      - name: Validate independent local reviewer
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-reviewer.html','utf8');
+          const script=html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
+          assert.ok(script);
+          new vm.Script(script);
+          for(const text of ['mba-rde-research-proposals-v1','mba-rde-review-decisions-v1','not_published','independent reviewer','needs_more_evidence','reviewed_at'])assert.ok(html.includes(text),text);
+          assert.ok(!/\bfetch\s*\(|XMLHttpRequest|localStorage|indexedDB/.test(script));
+          console.log('PASS: local reviewer syntax, decisions and nonpublishing boundaries');
+          JS
+      - name: Test browser proposal through independent approval to candidate
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-eatery.xlsx',read_only=True,data_only=True)
+          head=list(next(wb['Restaurants'].values));first=list(wb['Restaurants'].values)[1]
+          rid=first[0];old=first[head.index('name')]
+          proposal={'history_id':'BROWSER-1','restaurant_id':rid,'field_path':'name','recorded_at':'2026-11-08','researcher':'Researcher A','action':'propose','previous_value':old,'proposed_value':old+' approved','disposition':'pending','source_url':'https://example.org','claim':'test claim'}
+          research={'schema':'mba-rde-research-proposals-v1','publication_status':'not_approved','restaurant_count':206,'proposals':[proposal]}
+          Path('/tmp/rde-browser-proposals.json').write_text(json.dumps(research))
+          def run(*args):
+           p=subprocess.run(['python',*args],capture_output=True,text=True)
+           assert p.returncode==0,p.stderr
+          run('scripts/rde_ingest.py','/tmp/rde-eatery.xlsx','/tmp/rde-browser-proposals.json','/tmp/rde-browser-ingested.xlsx')
+          review={'history_id':'BROWSER-1','restaurant_id':rid,'field_path':'name','decision':'accepted','reviewer':'Reviewer B','reviewed_at':'2026-11-08','reason':'checked source'}
+          decisions={'schema':'mba-rde-review-decisions-v1','publication_status':'not_published','restaurant_count':206,'proposals':[proposal],'reviews':[review]}
+          Path('/tmp/rde-browser-review.json').write_text(json.dumps(decisions))
+          run('scripts/rde_review_ingest.py','/tmp/rde-browser-ingested.xlsx','/tmp/rde-browser-review.json','/tmp/rde-browser-reviewed.xlsx')
+          run('scripts/rde_approve.py','/tmp/rde-browser-reviewed.xlsx','data/eateries.json','/tmp/rde-browser-candidate.json')
+          candidate=json.loads(Path('/tmp/rde-browser-candidate.json').read_text())
+          original=json.loads(Path('data/eateries.json').read_text())
+          assert len(candidate)==len(original)==206
+          assert candidate[0]['name']==old+' approved'
+          assert {**candidate[0],'name':old}==original[0]
+          assert candidate[1:]==original[1:]
+          decisions['reviews'][0]['reviewer']='Researcher A'
+          Path('/tmp/rde-browser-review.json').write_text(json.dumps(decisions))
+          blocked=subprocess.run(['python','scripts/rde_review_ingest.py','/tmp/rde-browser-ingested.xlsx','/tmp/rde-browser-review.json','/tmp/rde-browser-blocked.xlsx'],capture_output=True,text=True)
+          assert blocked.returncode!=0
+          print('PASS: browser research → independent review → candidate; self-review rejected')
+          PY
+      - name: Reject unresolved conflicting research before candidate export
+        run: |
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-browser-reviewed.xlsx')
+          rid=wb['ReviewQueue']['C2'].value
+          wb['ReviewQueue'].append(['R:CONFLICT','H:CONFLICT',rid,'name','conflicting','Reviewer C','2026-11-08','conflicting source'])
+          wb.save('/tmp/rde-browser-conflict.xlsx')
+          dest=Path('/tmp/rde-conflict-should-not-exist.json')
+          if dest.exists():dest.unlink()
+          result=subprocess.run(['python','scripts/rde_approve.py','/tmp/rde-browser-conflict.xlsx','data/eateries.json',str(dest)],capture_output=True,text=True)
+          assert result.returncode!=0,result.stdout
+          assert 'Unresolved conflicting' in result.stderr
+          assert not dest.exists()
+          print('PASS: conflicting review blocks candidate output')
+          PY
+      - name: Check RDE acceptance documentation
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const guide=fs.readFileSync('docs/rde-browser-acceptance.md','utf8');
+          for(const required of ['206','rde-local-editor.html','rde-local-reviewer.html','rde_ingest.py','rde_review_ingest.py','rde_approve.py','Known limitations','No GitHub production'])assert.ok(guide.includes(required),required);
+          console.log('PASS: acceptance guide references the complete isolated workflow');
+          JS
+      - name: Reject altered browser review evidence and metadata
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          src=Path('/tmp/rde-browser-review.json')
+          base=json.loads(src.read_text())
+          # The earlier test changes the reviewer to the researcher; restore an independent reviewer.
+          base['reviews'][0]['reviewer']='Reviewer B'
+          for key,value in [('source_url','https://tampered.example.org'),('claim','tampered evidence'),('researcher','Fake Researcher'),('recorded_at','2099-01-01')]:
+           bad=json.loads(json.dumps(base))
+           bad['proposals'][0][key]=value
+           Path('/tmp/rde-tampered-review.json').write_text(json.dumps(bad))
+           result=subprocess.run(['python','scripts/rde_review_ingest.py','/tmp/rde-browser-ingested.xlsx','/tmp/rde-tampered-review.json','/tmp/rde-tampered-output.xlsx'],capture_output=True,text=True)
+           assert result.returncode!=0,(key,result.stdout)
+          print('PASS: tampered source, evidence, author and timestamp rejected')
+          PY
+      - name: Confirm browser direct edits cannot masquerade as approved output
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
+          assert.ok(html.includes("a.download=exportName('rde-unapproved-edit-draft')"));
+          assert.ok(html.includes('Export unapproved edit draft'));
+          assert.ok(html.includes('Only evidence-backed, independently reviewed research'));
+          assert.ok(!html.includes('rde-candidate-review-only.json'));
+          assert.ok(html.includes('!item.name.trim()'));
+          console.log('PASS: direct browser draft clearly separated from reviewed candidate');
+          JS
+      - name: Enforce reviewer independence at final exporter boundary
+        run: |
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          wb=load_workbook('/tmp/rde-browser-reviewed.xlsx')
+          for row in wb['ReviewQueue'].iter_rows(min_row=2):
+           if row[4].value=='accepted':
+            row[5].value='Researcher A'
+            break
+          wb.save('/tmp/rde-selfapproved.xlsx')
+          dest=Path('/tmp/rde-selfapproved-candidate.json')
+          if dest.exists():dest.unlink()
+          p=subprocess.run(['python','scripts/rde_approve.py','/tmp/rde-selfapproved.xlsx','data/eateries.json',str(dest)],capture_output=True,text=True)
+          assert p.returncode!=0 and 'Independent reviewer required' in p.stderr
+          assert not dest.exists()
+          print('PASS: final exporter blocks self-approval')
+          PY
+      - name: Verify iPhone acceptance checklist
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const guide=fs.readFileSync('docs/rde-iphone-acceptance.md','utf8');
+          for(const term of ['206 restaurants','rde-local-editor.html','unapproved edit draft','Self-approval','not','No production deployment','iOS'])assert.ok(guide.toLowerCase().includes(term.toLowerCase()),term);
+          console.log('PASS: iPhone acceptance guide covers mobile, safety and limitations');
+          JS
+      - name: Check mobile file picker and unsaved research warnings
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
+          for(const term of ['Choose restaurant JSON → Browse','Safari Downloads','function pendingWork()','proposals.length>0','reviews.length>0','if(pendingWork())','Queue a research proposal before exporting'])assert.ok(html.includes(term),term);
+          console.log('PASS: mobile file handling guidance and unsaved-work warning');
+          JS
+      - name: Check failed-import isolation and URL validation
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
+          const fn=html.match(/function validSourceUrl\(raw\)\{[^\n]+/);
+          assert.ok(fn,'Missing source URL validation');
+          const sandbox={URL};vm.createContext(sandbox);vm.runInContext(fn[0]+';this.check=validSourceUrl;',sandbox);
+          for(const url of ['https://example.org/article','http://example.org'])assert.equal(sandbox.check(url),true);
+          for(const url of ['javascript:alert(1)','file:///tmp/x','https://user:pass@example.org','invalid','https://'])assert.equal(sandbox.check(url),false,url);
+          for(const term of ["proposals=[];reviews=[];for(const id of", "'reviewList').replaceChildren()", "'count').textContent='0 restaurants'"])assert.ok(html.includes(term),term);
+          console.log('PASS: source URL checks and failed-import state isolation');
+          JS
+      - name: Check proposal ID uniqueness and immutable baseline
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          import {webcrypto} from 'node:crypto';
+          const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
+          const fn=html.match(/function newHistoryId\(\)\{[^\n]+/);
+          assert.ok(fn);
+          const context={crypto:webcrypto,Uint8Array,Array};
+          vm.createContext(context);vm.runInContext(fn[0]+';this.generate=newHistoryId;',context);
+          const ids=new Set(Array.from({length:1000},()=>context.generate()));
+          assert.equal(ids.size,1000);
+          for(const id of ids)assert.match(id,/^H-LOCAL-[0-9a-f]{32}$/);
+          assert.ok(html.includes('previous_value:(original.find(x=>x.id===rid)?.[field]??null)'));
+          assert.ok(!html.includes("history_id:'H-LOCAL-'+(proposals.length+1)"));
+          console.log('PASS: unique proposal IDs and original baseline linkage');
+          JS
+      - name: Reject unsafe source URLs at ingestion boundary
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          baseline=json.loads(Path('data/eateries.json').read_text())
+          row=baseline[0]
+          for i,url in enumerate(['https://user:pass@example.org/page','https://example.org:bad/page','https://example.org/has space','file:///etc/passwd']):
+           proposal={'history_id':'H-URL-TEST-'+str(i),'restaurant_id':row['id'],'field_path':'name','recorded_at':'2026-11-08T12:00:00Z','researcher':'tester','action':'propose','previous_value':row['name'],'proposed_value':'Test name','disposition':'pending','source_url':url,'claim':'test'}
+           path=Path('/tmp/rde-unsafe-url.json');path.write_text(json.dumps({'schema':'mba-rde-research-proposals-v1','publication_status':'not_approved','restaurant_count':206,'proposals':[proposal]}))
+           output=Path('/tmp/rde-unsafe-url-output.xlsx')
+           output.unlink(missing_ok=True)
+           run=subprocess.run(['python','scripts/rde_ingest.py','/tmp/rde-eatery.xlsx',str(path),str(output)],capture_output=True,text=True)
+           assert run.returncode!=0,(url,run.stdout,run.stderr)
+           assert not output.exists(),url
+          print('PASS: unsafe URLs rejected without review workbook')
+          PY
+      - name: Verify existing application
+        run: node scripts/validate.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rde-eatery-workbook
+          path: /tmp/rde-eatery.xlsx
+          retention-days: 14
+
+      - name: Reject duplicate research targets in one bundle
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          source=Path('/tmp/rde-browser-proposals.json')
+          payload=json.loads(source.read_text())
+          first=payload['proposals'][0]
+          second={**first,'history_id':'BROWSER-SECOND','proposed_value':'Conflicting candidate'}
+          payload['proposals'].append(second)
+          path=Path('/tmp/rde-duplicate-targets.json')
+          path.write_text(json.dumps(payload))
+          dest=Path('/tmp/rde-duplicate-targets.xlsx')
+          if dest.exists(): dest.unlink()
+          result=subprocess.run(['python','scripts/rde_ingest.py','/tmp/rde-eatery.xlsx',str(path),str(dest)],capture_output=True,text=True)
+          assert result.returncode!=0, result.stdout
+          assert 'Duplicate restaurant field proposal' in result.stderr, result.stderr
+          assert not dest.exists(), 'Rejected proposals must not produce a workbook'
+          print('PASS: duplicate field proposals rejected without output')
+          PY
+
+      - name: Verify browser duplicate and destructive-action safeguards
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
+          const script=html.split('<script>')[1]?.split('</script>')[0];
+          assert.ok(script);
+          new vm.Script(script);
+          for(const term of [
+            'proposals.some(p=>p.restaurant_id===rid&&p.field_path===field)',
+            "pendingWork()&&!confirm('Loading another file",
+            "pendingWork()&&!confirm('Discard all unsaved edits",
+            'raw!==raw.trim()'
+          ]) assert.ok(script.includes(term),'Missing browser guard: '+term);
+          console.log('PASS: duplicate target and unsaved-work guards present');
+          JS
+      - name: Verify failed replacement imports preserve existing work
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
+          const script=html.split('<script>')[1]?.split('</script>')[0];
+          new vm.Script(script);
+          assert.ok(script.includes("if(records){e.target.value='';$('message').textContent='Import blocked; existing work preserved: '"));
+          assert.ok(script.includes("original=null;records=null;proposals=[];reviews=[]"));
+          console.log('PASS: invalid replacement preserves loaded state; initial invalid import clears state');
+          JS
+      - name: Pending reviews remain open for future independent decisions
+        run: |
+          python - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          proposals=json.loads(Path('/tmp/rde-browser-proposals.json').read_text())
+          p=proposals['proposals'][0]
+          review={'history_id':p['history_id'],'restaurant_id':p['restaurant_id'],'field_path':p['field_path'],'decision':'pending','reviewer':'independent reviewer','reviewed_at':'2026-11-08T12:00:00Z','reason':'Awaiting evidence'}
+          payload={'schema':'mba-rde-review-decisions-v1','publication_status':'not_published','restaurant_count':206,'proposals':proposals['proposals'],'reviews':[review]}
+          source=Path('/tmp/rde-pending-review.json');source.write_text(json.dumps(payload))
+          ingested=Path('/tmp/rde-pending-ingested.xlsx')
+          subprocess.run(['python','scripts/rde_ingest.py','/tmp/rde-eatery.xlsx','/tmp/rde-browser-proposals.json',str(ingested)],check=True)
+          output=Path('/tmp/rde-pending-reviewed.xlsx')
+          subprocess.run(['python','scripts/rde_review_ingest.py',str(ingested),str(source),str(output)],check=True)
+          queue=list(load_workbook(output)['ReviewQueue'].values)
+          row=next(r for r in queue[1:] if r[1]=='INGEST:H:'+p['history_id'])
+          assert row[4]=='pending' and row[5] is None and row[6] is None and row[7] is None,row
+          print('PASS: pending review does not finalize or lock queue')
+          PY
+      - name: Complete deferred review in a later independent cycle
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          proposals=json.loads(Path('/tmp/rde-browser-proposals.json').read_text())
+          p=proposals['proposals'][0]
+          review={'history_id':p['history_id'],'restaurant_id':p['restaurant_id'],'field_path':p['field_path'],'decision':'accepted','reviewer':'second independent reviewer','reviewed_at':'2026-11-08T13:00:00Z','reason':'Evidence independently checked'}
+          payload={'schema':'mba-rde-review-decisions-v1','publication_status':'not_published','restaurant_count':206,'proposals':proposals['proposals'],'reviews':[review]}
+          path=Path('/tmp/rde-deferred-accepted.json');path.write_text(json.dumps(payload))
+          result=Path('/tmp/rde-deferred-final.xlsx')
+          subprocess.run(['python','scripts/rde_review_ingest.py','/tmp/rde-pending-reviewed.xlsx',str(path),str(result)],check=True)
+          queue=list(load_workbook(result)['ReviewQueue'].values)
+          row=next(r for r in queue[1:] if r[1]=='INGEST:H:'+p['history_id'])
+          assert row[4]=='accepted' and row[5]=='second independent reviewer',row
+          candidate=Path('/tmp/rde-deferred-candidate.json')
+          subprocess.run(['python','scripts/rde_approve.py',str(result),'data/eateries.json',str(candidate)],check=True)
+          baseline=json.loads(Path('data/eateries.json').read_text())
+          edited=json.loads(candidate.read_text())
+          assert len(edited)==len(baseline)==206
+          assert [r['id'] for r in edited]==[r['id'] for r in baseline]
+          assert next(r for r in edited if r['id']==p['restaurant_id'])[p['field_path']]==p['proposed_value']
+          print('PASS: pending → accepted → candidate; IDs preserved; production untouched')
+          PY
+      - name: Reject duplicate review and evidence IDs at candidate gate
+        run: |
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          source=Path('/tmp/rde-deferred-final.xlsx')
+          for sheet,column in [('ReviewQueue',1),('Evidence',1)]:
+           wb=load_workbook(source)
+           ws=wb[sheet]
+           assert ws.max_row>=2,(sheet,ws.max_row)
+           target_row=ws.max_row+1
+           for col in range(1,ws.max_column+1):
+            ws.cell(target_row,col).value=ws.cell(2,col).value
+           corrupted=Path('/tmp/rde-duplicate-'+sheet+'.xlsx')
+           wb.save(corrupted)
+           output=Path('/tmp/rde-duplicate-'+sheet+'.json')
+           output.unlink(missing_ok=True)
+           run=subprocess.run(['python','scripts/rde_approve.py',str(corrupted),'data/eateries.json',str(output)],capture_output=True,text=True)
+           assert run.returncode!=0,(sheet,run.stdout,run.stderr)
+           assert 'duplicate' in run.stderr.lower(),(sheet,run.stderr)
+           assert not output.exists(),sheet
+          print('PASS: duplicate review/evidence IDs block candidate export')
+          PY
+      - name: Verify independent reviewer import safeguards
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-reviewer.html','utf8');
+          const script=html.split('<script>')[1]?.split('</script>')[0];
+          assert.ok(script);
+          new vm.Script(script);
+          for(const guard of [
+            "throw Error('Duplicate restaurant field proposals')",
+            "confirm('Replace current review bundle and discard unexported decisions?')",
+            "'Import blocked; existing review preserved: '"
+          ])assert.ok(script.includes(guard),guard);
+          console.log('PASS: reviewer duplicate-target and import-preservation safeguards');
+          JS
+      - name: Verify all browser JSON exports use valid trailing newline
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          for(const file of ['tools/rde-local-editor.html','tools/rde-local-reviewer.html']){
+            const html=fs.readFileSync(file,'utf8');
+            const script=html.split('<script>')[1]?.split('</script>')[0];
+            const literals=[...script.matchAll(/JSON\.stringify\((?:payload|records),null,2\)\+'([^']*)'/g)];
+            assert.ok(literals.length>=1,'Missing JSON export: '+file);
+            for(const match of literals){
+              assert.equal(match[1],String.raw`\n`,'Malformed JSON export suffix: '+file);
+              assert.deepEqual(JSON.parse(JSON.stringify({ok:true})+JSON.parse('"\\n"')),{ok:true});
+            }
+          }
+          console.log('PASS: browser JSON exports end with valid newline escape');
+          JS
+      - name: Beta gate rejects empty approved values and production output
+        run: |
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          from openpyxl import load_workbook
+          source=Path('/tmp/rde-deferred-final.xlsx')
+          wb=load_workbook(source)
+          history=wb['ResearchHistory']
+          assert any(r[4]=='accepted' for r in list(wb['ReviewQueue'].values)[1:])
+          match=history.max_row
+          history.cell(match,9).value='   '
+          invalid=Path('/tmp/rde-empty-accepted.xlsx')
+          wb.save(invalid)
+          output=Path('/tmp/rde-empty-accepted.json')
+          output.unlink(missing_ok=True)
+          result=subprocess.run(['python','scripts/rde_approve.py',str(invalid),'data/eateries.json',str(output)],capture_output=True,text=True)
+          assert result.returncode!=0 and 'nonempty' in result.stderr.lower(),result.stderr
+          assert not output.exists()
+          result=subprocess.run(['python','scripts/rde_approve.py',str(source),'data/eateries.json','data/eateries.json'],capture_output=True,text=True)
+          assert result.returncode!=0 and 'overwrite' in result.stderr.lower(),result.stderr
+          result=subprocess.run(['python','scripts/rde_approve.py',str(source),'/tmp/rde-deferred-candidate.json','data/eateries.json'],capture_output=True,text=True)
+          assert result.returncode!=0 and 'canonical production' in result.stderr.lower(),result.stderr
+          print('PASS: empty accepted values and canonical production overwrite blocked')
+          PY
+      - name: Verify reviewer iPhone layout safeguards
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const html=fs.readFileSync('tools/rde-local-reviewer.html','utf8');
+          for(const token of ['viewport','@media(max-width:600px)','min-height:44px','overflow-wrap:anywhere','#items select{display:block;width:100%']){
+            assert.ok(html.includes(token),'Missing narrow-screen safeguard: '+token);
+          }
+          console.log('PASS: reviewer responsive controls and evidence wrapping present');
+          JS
+      - name: Verify Goodies candidate installer fails safely without asset
+        run: |
+          python - <<'PY'
+          import json
+          import subprocess
+          from pathlib import Path
+          original=Path('data/eateries.json').read_bytes()
+          target=Path('/tmp/goodies-photo-candidate-ci.json')
+          target.unlink(missing_ok=True)
+          result=subprocess.run(
+              ['python','scripts/rde_install_photo.py',
+               '--image','assets/photos/goodies-delicatessen-storefront.jpg',
+               '--output',str(target)],capture_output=True,text=True)
+          assert result.returncode!=0, result.stdout
+          assert 'Image bytes must already exist' in result.stderr,result.stderr
+          assert not target.exists()
+          assert Path('data/eateries.json').read_bytes()==original
+          assert len(json.loads(original))==206
+          print('PASS: missing image rejected; no candidate or production mutation')
+          PY
+      - name: Stage Goodies photo candidate from uploaded asset
+        run: |
+          python scripts/rde_install_photo.py --image assets/photos/IMG_4940.jpeg --output /tmp/goodies-photo-candidate-ci.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          original=json.loads(Path('data/eateries.json').read_text())
+          candidate=json.loads(Path('/tmp/goodies-photo-candidate-ci.json').read_text())
+          assert len(original)==len(candidate)==206
+          changed=[(a,b) for a,b in zip(original,candidate) if a!=b]
+          assert len(changed)==1
+          before,after=changed[0]
+          assert before['id']==after['id']=='MBA-DINE-0068'
+          assert before['photo'] is None
+          assert after['photo']=='assets/photos/IMG_4940.jpeg'
+          assert after['photoCreator']=='Olivia Sarkis'
+          assert Path(after['photo']).is_file()
+          print('PASS: Goodies candidate staged; 205 other records untouched')
+          PY
+      - name: Verify image references and offline-cache readiness
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          restaurants=json.loads(Path('data/eateries.json').read_text())
+          sw=Path('sw.js').read_text()
+          assert "data.filter(r=>r.photo)" in sw
+          assert "cache.add('./'+r.photo)" in sw
+          referenced=0
+          for r in restaurants:
+              photo=r.get('photo')
+              if not photo:
+                  continue
+              assert isinstance(photo,str) and not photo.startswith(('/', 'http:', 'https:'))
+              assert '..' not in Path(photo).parts, (r['id'],photo)
+              assert Path(photo).is_file(), (r['id'],photo)
+              referenced+=1
+          intake=json.loads(Path('data/photo-intake-pending.json').read_text())
+          for item in intake['items']:
+              if item['asset_status']=='awaiting_binary_import':
+                  assert item['repository_asset_path'] is None
+                  assert item['offline_verified'] is False
+              else:
+                  path=item['repository_asset_path']
+                  assert path and Path(path).is_file(),item
+          print(f'PASS: {referenced} referenced images exist; pending photos not misrepresented as installed')
+          PY
+      - name: Validate unpublished storefront photo intake
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          photos=json.loads(Path('data/photo-intake-pending.json').read_text())
+          eateries=json.loads(Path('data/eateries.json').read_text())
+          by_id={r['id']:r for r in eateries}
+          assert photos['schema']=='mba-eatery-photo-intake-v1'
+          assert photos['publication_status']=='not_published'
+          for item in photos['items']:
+              assert item['restaurant_id'] in by_id
+              assert by_id[item['restaurant_id']]['name']==item['restaurant_name']
+              assert item['asset_status']=='awaiting_binary_import'
+              assert item['repository_asset_path'] is None
+              assert item['offline_verified'] is False
+              assert not by_id[item['restaurant_id']].get('photo')
+              assert item['permission_record'] and Path(item['permission_record']).is_file()
+              if item.get('prepared_asset_status')=='prepared_locally_not_uploaded':
+                  assert item['asset_status']=='awaiting_binary_import'
+                  assert item['prepared_asset_filename'].lower().endswith(('.jpg','.jpeg','.png','.webp'))
+                  assert item['prepared_asset_dimensions_px']['width']>0
+                  assert item['prepared_asset_dimensions_px']['height']>0
+                  assert item['repository_asset_path'] is None
+                  assert item['offline_verified'] is False
+          print('PASS: authorized photo intake linked to permanent ID without false publication or offline claims')
+          PY
+      - name: Verify unique editor exports and single exit warning
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
+          const script=html.split('<script>')[1]?.split('</script>')[0];
+          new vm.Script(script);
+          assert.equal(script.split("addEventListener('beforeunload'").length-1,1);
+          assert.ok(script.includes("function exportName(prefix)"));
+          for(const prefix of ['rde-review-decisions','rde-research-proposals','rde-unapproved-edit-draft']){
+            assert.ok(script.includes("a.download=exportName('"+prefix+"')"),prefix);
+          }
+          console.log('PASS: unique editor export filenames and one unsaved-work exit listener');
+          JS
+      - name: Verify editor unsaved-work and replacement safeguards
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-editor.html','utf8');
+          const script=html.split('<script>')[1]?.split('</script>')[0];
+          new vm.Script(script);
+          assert.ok(script.includes("window.addEventListener('beforeunload'"));
+          assert.ok(script.includes("if(pendingWork()){e.preventDefault();e.returnValue=''"));
+          const validation=script.indexOf('valid(parsed);');
+          const prompt=script.indexOf("if(pendingWork()&&!confirm('Loading another file");
+          assert.ok(validation>=0&&prompt>validation,'Replacement must validate before discard confirmation');
+          console.log('PASS: unsaved work warning and validation-first replacement');
+          JS
+      - name: Verify unexported review selection protections
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-reviewer.html','utf8');
+          const script=html.split('<script>')[1]?.split('</script>')[0];
+          new vm.Script(script);
+          for(const token of ["let bundle=null,decisions=[],dirty=false","if(dirty&&!confirm(","select.addEventListener('change',()=>{dirty=true;})","['reviewer','reason']","if(bundle)dirty=true","window.addEventListener('beforeunload'","dirty=false;$('status')"]){
+            assert.ok(script.includes(token),'Missing review protection: '+token);
+          }
+          console.log('PASS: unexported reviewer selections and metadata guarded');
+          JS
+      - name: Verify distinct iPhone review download names
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-reviewer.html','utf8');
+          const script=html.split('<script>')[1]?.split('</script>')[0];
+          new vm.Script(script);
+          assert.ok(script.includes("new Date().toISOString().replace(/[:.]/g,'-')"));
+          assert.ok(script.includes("'rde-review-decisions-'+stamp+'-not-published.json'"));
+          assert.ok(script.includes('Check Safari Downloads or Files'));
+          assert.ok(!script.includes("a.download='rde-review-decisions-not-published.json'"));
+          console.log('PASS: timestamped review download names and iPhone retrieval guidance');
+          JS
+      - name: Verify reviewer evidence URL import gate
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-reviewer.html','utf8');
+          const script=html.split('<script>')[1]?.split('</script>')[0];
+          new vm.Script(script);
+          assert.ok(script.includes("throw Error('Invalid evidence source URL')"));
+          assert.ok(script.includes("['http:','https:'].includes(source.protocol)"));
+          for(const url of ['javascript:alert(1)','file:///private/data','data:text/plain,test']){
+            const parsed=new URL(url);
+            assert.equal(['http:','https:'].includes(parsed.protocol),false,url);
+          }
+          for(const url of ['https://example.org/source','http://example.org/source']){
+            const parsed=new URL(url);
+            assert.ok(['http:','https:'].includes(parsed.protocol)&&parsed.hostname,url);
+          }
+          console.log('PASS: reviewer URL gate syntax and allowed protocols');
+          JS
+      - name: Verify beta reviewer proposal validation
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import vm from 'node:vm';
+          const html=fs.readFileSync('tools/rde-local-reviewer.html','utf8');
+          const script=html.split('<script>')[1]?.split('</script>')[0];
+          new vm.Script(script);
+          assert.ok(script.includes('JSON.stringify([p.restaurant_id,p.field_path])'));
+          assert.ok(script.includes("typeof p.proposed_value!=='string'||!p.proposed_value.trim()"));
+          const keys=[['a|b','c'],['a','b|c']].map(x=>JSON.stringify(x));
+          assert.equal(new Set(keys).size,2,'Composite keys must not collide');
+          console.log('PASS: reviewer validates nonblank values and collision-safe field keys');
+          JS
+      - name: Verify in-app iPhone review guidance
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const html=fs.readFileSync('tools/rde-local-reviewer.html','utf8');
+          for(const text of ['<details>','iPhone testing instructions','Safari Downloads or Files','does not publish changes','isolated HTTPS beta page']){
+            assert.ok(html.includes(text),'Missing iPhone review guidance: '+text);
+          }
+          console.log('PASS: reviewer includes concise iPhone test and publication boundaries');
+          JS
