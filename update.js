@@ -8,7 +8,7 @@
   const guest=new URL(location.href).searchParams.has('share');
   if(guest){status.hidden=true;button.hidden=true;return;}
   if(!('serviceWorker' in navigator)){status.textContent='Online updates unavailable';button.hidden=true;return;}
-  let registration=null,checking=false,activated=false;
+  let registration=null,checking=false,activated=false,userRequestedActivation=false;
   button.hidden=false;
   button.textContent='Check Updates';
   const say=(message,showButton=true)=>{status.textContent=message;button.hidden=!showButton;button.textContent=registration?.waiting?'Update Now':'Check Updates';};
@@ -36,14 +36,15 @@
     await check(true);
     if(registration?.waiting&&navigator.serviceWorker.controller){
       say('Installing update…');
+      userRequestedActivation=true;
       registration.waiting.postMessage({type:'SKIP_WAITING'});
     }
   });
   navigator.serviceWorker.addEventListener('controllerchange',()=>{
-    if(activated)return;
+    if(activated||!userRequestedActivation)return;
     activated=true;
-    // Reload only when the user is not editing a share basket or navigating a detail.
-    // Basket/favorites persist in localStorage, and URL parameters are preserved.
+    // Reload only after the guide explicitly requests the update.
+    // Basket/favorites persist in localStorage; URL parameters are preserved.
     location.reload();
   });
   navigator.serviceWorker.ready.then(reg=>{
