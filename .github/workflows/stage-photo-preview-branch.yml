@@ -26,6 +26,9 @@ jobs:
           python scripts/generate-photo-cleanup-preview.py --restaurant-id MBA-DINE-0068
           python scripts/generate-photo-cleanup-preview.py --restaurant-id MBA-DINE-0031
           python scripts/generate-photo-cleanup-preview.py --restaurant-id MBA-DINE-0042
+          for id in MBA-DINE-0021 MBA-DINE-0023 MBA-DINE-0025 MBA-DINE-0105 MBA-DINE-0149 MBA-DINE-0166; do
+            python scripts/generate-photo-cleanup-preview.py --restaurant-id "$id"
+          done
           python scripts/test-photo-cleanup-preview.py
       - name: Stage previews only on dedicated review branch
         shell: bash
@@ -41,7 +44,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No preview changes'
           else
-            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'review: stage three minimally cleaned real-photo previews'
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'review: stage nine minimally cleaned real-photo previews'
             git push origin HEAD:refs/heads/review/real-photo-cleanup-previews
           fi
       - name: Upload before-after artifact
