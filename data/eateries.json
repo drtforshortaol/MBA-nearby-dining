@@ -12575,5 +12575,129 @@
       "hoursNote": "Monday closed; Sunday service/hours require direct confirmation.",
       "hoursSource": "https://www.rudolfoseatery.com/"
     }
+  },
+  {
+    "id": "MBA-DINE-0237",
+    "name": "McDonald's",
+    "address": "610 Del Monte Ave",
+    "city": "Monterey",
+    "phone": "(831) 373-3939",
+    "phoneDigits": "8313733939",
+    "cuisine": "American / burgers / breakfast / fast food",
+    "distanceMiles": null,
+    "distanceVerified": false,
+    "lat": 36.599699,
+    "lon": -121.8881022,
+    "website": "https://www.mcdonalds.com/us/en-us/location/ca/monterey/610-del-monte-ave/1949.html",
+    "photo": null,
+    "photoCaption": "",
+    "photoCaution": "Storefront photo not verified.",
+    "photoLicense": "",
+    "photoCreator": "",
+    "photoSource": "",
+    "photoDate": "",
+    "statusNote": "Official restaurant listing confirms operation. Lobby and drive-thru hours differ; check before visiting.",
+    "hours": "Lobby daily 6 AM–9 PM; drive-thru Sun–Thu 5 AM–midnight, Fri–Sat 5 AM–1 AM (following day).",
+    "serviceClass": "Fast food / burgers / breakfast",
+    "area": "Monterey",
+    "attributes": {
+      "price": {
+        "value": "$",
+        "status": "verified",
+        "source": "https://www.ubereats.com/store/mcdonalds-610-del-monte-ave/oNAZb1csQYyRoTzcXzFcCg",
+        "reviewedOn": "2026-11-10",
+        "note": "Third-party indicative price tier; individual menu prices vary."
+      },
+      "family": {
+        "value": "yes",
+        "status": "verified",
+        "source": "https://www.mcdonalds.com/us/en-us/location/ca/monterey/610-del-monte-ave/1949.html",
+        "reviewedOn": "2026-11-10",
+        "note": "Familiar family-oriented quick-service menu."
+      }
+    },
+    "menuUrl": "https://www.mcdonalds.com/us/en-us/full-menu.html",
+    "diningDetails": {
+      "reviewedOn": "2026-11-10",
+      "status": "verified-with-explicit-unknowns",
+      "sources": [
+        "https://www.mcdonalds.com/us/en-us/location/ca/monterey/610-del-monte-ave/1949.html",
+        "https://www.ubereats.com/store/mcdonalds-610-del-monte-ave/oNAZb1csQYyRoTzcXzFcCg",
+        "https://www.latlong.net/poi/mcdonald-s-639756"
+      ],
+      "food": "Burgers, fries, chicken nuggets, breakfast sandwiches, coffee and children's meals; availability varies by time.",
+      "experience": "Quick-service counter, lobby dining, drive-thru, mobile ordering and delivery; Wi-Fi listed by operator.",
+      "seating": "Lobby seating available during posted lobby hours; outdoor seating not verified.",
+      "accessibility": "Step-free entrance, accessible seating and restroom details not independently verified.",
+      "dietary": "Ingredient, allergy and cross-contact needs must be checked with restaurant; no specific accommodations verified.",
+      "family": "Family-friendly quick-service food; exact children's menu availability may vary.",
+      "reservation": "No reservations expected for counter-service dining; policy not separately verified.",
+      "entrance": "610 Del Monte Ave; exact pedestrian entrance and accessible approach not verified.",
+      "hoursSource": "https://www.mcdonalds.com/us/en-us/location/ca/monterey/610-del-monte-ave/1949.html",
+      "hoursNote": "Lobby daily 6 AM–9 PM; drive-thru Sun–Thu 5 AM–midnight and Fri–Sat 5 AM–1 AM. Holiday hours may differ.",
+      "verificationNote": "Operating status, address, phone and separately categorized hours sourced to official location page. Geographic route and entrance not verified. Approximate coordinates from mapped POI, not surveyed."
+    }
+  },
+  {
+    "id": "MBA-DINE-0238",
+    "name": "Jack in the Box",
+    "address": "889 Abrego St",
+    "city": "Monterey",
+    "phone": "(831) 275-3493",
+    "phoneDigits": "8312753493",
+    "cuisine": "American / burgers / tacos / breakfast / fast food",
+    "distanceMiles": null,
+    "distanceVerified": false,
+    "lat": 36.5929339,
+    "lon": -121.8929423,
+    "website": "https://locations.jackinthebox.com/us/ca/monterey/889-abrego-st",
+    "photo": null,
+    "photoCaption": "",
+    "photoCaution": "Storefront photo not verified.",
+    "photoLicense": "",
+    "photoCreator": "",
+    "photoSource": "",
+    "photoDate": "",
+    "statusNote": "Official restaurant listing confirms operation. Lobby and drive-thru hours differ; confirm holiday schedules.",
+    "hours": "Lobby daily 6 AM–10 PM; drive-thru listed 24 hours daily (4 AM–4 AM).",
+    "serviceClass": "Fast food / burgers / tacos / breakfast",
+    "area": "Monterey",
+    "attributes": {
+      "price": {
+        "value": "$",
+        "status": "verified",
+        "source": "https://www.ubereats.com/store/jack-in-the-box-889-abrego-st/K5_JPjX-SNa_VYfSCs3SsA",
+        "reviewedOn": "2026-11-10",
+        "note": "Third-party indicative price tier; menu prices vary."
+      },
+      "family": {
+        "value": "yes",
+        "status": "verified",
+        "source": "https://locations.jackinthebox.com/us/ca/monterey/889-abrego-st",
+        "reviewedOn": "2026-11-10",
+        "note": "Familiar quick-service menu; children's meal and seating specifics not independently verified."
+      }
+    },
+    "menuUrl": "https://www.jackinthebox.com/food",
+    "diningDetails": {
+      "reviewedOn": "2026-11-10",
+      "status": "verified-with-explicit-unknowns",
+      "sources": [
+        "https://locations.jackinthebox.com/us/ca/monterey/889-abrego-st",
+        "https://www.ubereats.com/store/jack-in-the-box-889-abrego-st/K5_JPjX-SNa_VYfSCs3SsA",
+        "https://www.latlong.net/poi/mcdonald-s-639756"
+      ],
+      "food": "Burgers, tacos, chicken sandwiches, fries, shakes and breakfast offerings; check current location menu.",
+      "experience": "Quick-service restaurant with drive-thru and lobby dining; useful for late-night meals.",
+      "seating": "Lobby dining available during posted lobby hours; outdoor seating not verified.",
+      "accessibility": "Step-free entry, accessible seating and restroom access not independently verified.",
+      "dietary": "Allergens and cross-contact accommodation not independently verified; confirm directly.",
+      "family": "Casual family-oriented quick-service dining; children's menu and highchairs not verified.",
+      "reservation": "No reservations expected for counter-service dining; policy not separately verified.",
+      "entrance": "889 Abrego St; exact pedestrian entrance and accessible approach not verified.",
+      "hoursSource": "https://locations.jackinthebox.com/us/ca/monterey/889-abrego-st",
+      "hoursNote": "Lobby daily 6 AM–10 PM; official drive-thru listing shows 4 AM–4 AM (24 hours) daily. Holiday hours may differ.",
+      "verificationNote": "Operator location page confirms address, phone and hours. Route distance and entrance unverified. Approximate coordinates from third-party mapped POI, not surveyed."
+    }
   }
 ]

@@ -22,5 +22,5 @@ jobs:
           node --check scripts/audit-enrichment-coverage.cjs
           node scripts/audit-enrichment-coverage.cjs > /tmp/enrichment-coverage.json
           node scripts/audit-enrichment-coverage.cjs --csv > /tmp/enrichment-coverage.csv
-          node -e "const r=require('/tmp/enrichment-coverage.json');if(r.totals.restaurantCount!==206||r.totals.enriched+r.totals.notEnriched!==206)process.exit(1)"
-          test "$(wc -l < /tmp/enrichment-coverage.csv)" -eq 207
+          node -e "const r=require('/tmp/enrichment-coverage.json');if(r.totals.restaurantCount!==208||r.totals.enriched+r.totals.notEnriched!==208)process.exit(1)"
+          test "$(wc -l < /tmp/enrichment-coverage.csv)" -eq 209
