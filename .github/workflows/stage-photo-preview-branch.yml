@@ -1,9 +1,5 @@
 name: Stage cleaned real-photo previews on review branch
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/stage-photo-preview-branch.yml'
   workflow_dispatch:
 permissions:
   contents: write
