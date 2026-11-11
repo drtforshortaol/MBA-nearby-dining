@@ -1,0 +1,21 @@
+{
+  "stage": "discovery_only",
+  "entries": [
+    {
+      "id": "MBA-DINE-0166",
+      "name": "Rosine's Restaurant",
+      "source": "https://commons.wikimedia.org/wiki/File:Rosine%27s_-_Dec_2018_-_Stierch.jpg",
+      "photo_kind": "restaurant_sign",
+      "discovery": "found",
+      "verification": "deferred"
+    },
+    {
+      "id": "MBA-DINE-0149",
+      "name": "Montrio",
+      "source": "https://commons.wikimedia.org/wiki/File:Montrio_Bistro_Monterey_California.jpg",
+      "photo_kind": "restaurant",
+      "discovery": "found",
+      "verification": "deferred"
+    }
+  ]
+}
