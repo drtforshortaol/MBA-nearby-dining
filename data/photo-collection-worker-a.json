@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "worker": "A",
+  "objective": "Find actual storefront/entrance photos; record provenance and reuse permission; no invented images",
+  "records": [
+    {
+      "restaurantId": "MBA-DINE-0024",
+      "name": "The Salty Seal Brewpub & Sports Bar",
+      "address": "653 Cannery Row, Monterey",
+      "sourcePage": "https://www.the-salty-seal.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0028",
+      "name": "Troya Turkish Delight & Coffee",
+      "address": "685 Cannery Row Suite 107, Monterey",
+      "sourcePage": "https://troyamry.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0032",
+      "name": "Monterey Bay Aquarium Cafe",
+      "address": "886 Cannery Row, Monterey",
+      "sourcePage": "https://www.montereybayaquarium.org/visit/dining-shopping",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0035",
+      "name": "Piccolo",
+      "address": "32 Cannery Row Suite G, Monterey",
+      "sourcePage": "https://www.piccolopaninigrill.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0038",
+      "name": "Curry Journey",
+      "address": "794 Lighthouse Ave, Monterey",
+      "sourcePage": "https://curryjourney.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0041",
+      "name": "Gianni's Pizza",
+      "address": "725 Lighthouse Ave, Monterey",
+      "sourcePage": "https://www.giannispizzamonterey.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0045",
+      "name": "La Bahia Mexican American Restaurant",
+      "address": "675 Lighthouse Ave, Monterey",
+      "sourcePage": null,
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0048",
+      "name": "Namaste India Bistro",
+      "address": "538 Lighthouse Ave, Monterey",
+      "sourcePage": "https://namasteibmonterey.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0051",
+      "name": "Paprika Cafe",
+      "address": "309 Lighthouse Ave Suite A, Monterey",
+      "sourcePage": "https://www.paprikacafe-monterey.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    }
+  ]
+}
