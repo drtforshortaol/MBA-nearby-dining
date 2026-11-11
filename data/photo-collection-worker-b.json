@@ -12,7 +12,12 @@
       "photoSourceUrl": null,
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "googleMapsResearchUrl": "https://www.google.com/maps/search/?api=1&query=Tidal%20Coffee%2C%20400%20Cannery%20Row%2C%20Monterey%2C%20California",
+      "streetViewStatus": "not-reviewed",
+      "streetViewPanoramaUrl": null,
+      "streetViewImageAcquired": false,
+      "streetViewRightsStatus": "not-assessed"
     },
     {
       "restaurantId": "MBA-DINE-0029",
@@ -25,7 +30,12 @@
       "entranceVerified": false,
       "blocker": null,
       "photoSearchStatus": "photo-source-lead-rights-unverified",
-      "notes": "Official gallery shows real dining room and restaurant photography. Exterior entrance not verified. Reuse rights not established."
+      "notes": "Official gallery shows real dining room and restaurant photography. Exterior entrance not verified. Reuse rights not established.",
+      "googleMapsResearchUrl": "https://www.google.com/maps/search/?api=1&query=Whaling%20Station%20Steakhouse%2C%20763%20Wave%20St%2C%20Monterey%2C%20California",
+      "streetViewStatus": "not-reviewed",
+      "streetViewPanoramaUrl": null,
+      "streetViewImageAcquired": false,
+      "streetViewRightsStatus": "not-assessed"
     },
     {
       "restaurantId": "MBA-DINE-0033",
@@ -36,7 +46,12 @@
       "photoSourceUrl": null,
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "googleMapsResearchUrl": "https://www.google.com/maps/search/?api=1&query=Sea%20Harvest%20Restaurant%20%26%20Fish%20Market%2C%20598%20Foam%20St%2C%20Monterey%2C%20California",
+      "streetViewStatus": "not-reviewed",
+      "streetViewPanoramaUrl": null,
+      "streetViewImageAcquired": false,
+      "streetViewRightsStatus": "not-assessed"
     },
     {
       "restaurantId": "MBA-DINE-0036",
@@ -47,7 +62,12 @@
       "photoSourceUrl": null,
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "googleMapsResearchUrl": "https://www.google.com/maps/search/?api=1&query=American%20Burger%2C%20738%20Lighthouse%20Ave%2C%20Monterey%2C%20California",
+      "streetViewStatus": "not-reviewed",
+      "streetViewPanoramaUrl": null,
+      "streetViewImageAcquired": false,
+      "streetViewRightsStatus": "not-assessed"
     },
     {
       "restaurantId": "MBA-DINE-0039",
@@ -58,7 +78,12 @@
       "photoSourceUrl": null,
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "googleMapsResearchUrl": "https://www.google.com/maps/search/?api=1&query=El%20Cantaro%20Vegan%20Mexican%20Restaurant%2C%20791%20Foam%20St%2C%20Monterey%2C%20California",
+      "streetViewStatus": "not-reviewed",
+      "streetViewPanoramaUrl": null,
+      "streetViewImageAcquired": false,
+      "streetViewRightsStatus": "not-assessed"
     },
     {
       "restaurantId": "MBA-DINE-0043",
@@ -69,7 +94,12 @@
       "photoSourceUrl": null,
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "googleMapsResearchUrl": "https://www.google.com/maps/search/?api=1&query=International%20Cafe%2C%20296%20Lighthouse%20Ave%20Unit%20C%2C%20Monterey%2C%20California",
+      "streetViewStatus": "not-reviewed",
+      "streetViewPanoramaUrl": null,
+      "streetViewImageAcquired": false,
+      "streetViewRightsStatus": "not-assessed"
     },
     {
       "restaurantId": "MBA-DINE-0046",
@@ -80,7 +110,12 @@
       "photoSourceUrl": null,
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "googleMapsResearchUrl": "https://www.google.com/maps/search/?api=1&query=Lighthouse%20Bistro%20Global%20Cuisine%2C%20570%20Lighthouse%20Ave%2C%20Monterey%2C%20California",
+      "streetViewStatus": "not-reviewed",
+      "streetViewPanoramaUrl": null,
+      "streetViewImageAcquired": false,
+      "streetViewRightsStatus": "not-assessed"
     },
     {
       "restaurantId": "MBA-DINE-0049",
@@ -91,7 +126,12 @@
       "photoSourceUrl": null,
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "googleMapsResearchUrl": "https://www.google.com/maps/search/?api=1&query=Oystertown%2C%20281%20Lighthouse%20Ave%2C%20Monterey%2C%20California",
+      "streetViewStatus": "not-reviewed",
+      "streetViewPanoramaUrl": null,
+      "streetViewImageAcquired": false,
+      "streetViewRightsStatus": "not-assessed"
     }
   ]
 }
