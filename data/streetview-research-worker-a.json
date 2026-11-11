@@ -12,7 +12,14 @@
       "storefrontVerified": false,
       "photoAcquired": false,
       "reuseRightsVerified": false,
-      "reviewStatus": "not-reviewed"
+      "reviewStatus": "owner-approved-existing-image-do-not-resolicit",
+      "ownerApproval": {
+        "status": "approved",
+        "asset": "taste_monterey_illustration.jpg",
+        "retainExisting": true,
+        "source": "explicit owner instruction",
+        "notes": "Approved image is an illustration, not a verified Street View photograph. Do not mislabel it as a real photo or seek replacement without owner request."
+      }
     },
     {
       "restaurantId": "MBA-DINE-0005",
