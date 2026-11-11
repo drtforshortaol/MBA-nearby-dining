@@ -1,0 +1,968 @@
+{
+  "date": "2026-11-11",
+  "phase": "discovery",
+  "database_ref": "4de81356b69e3ef918ea5bfbbdeedccdfc055722",
+  "scope": {
+    "first_position": 105,
+    "last_position": 156,
+    "total": 208
+  },
+  "method": "Individual restaurant and locality queries against the web index for Wikimedia Commons and Flickr, with targeted category, album, and address follow-ups. FOUND means an individual photograph page with a discovery-stage venue association. POSSIBLE means a lead with unresolved subject or locality. NOT_FOUND_IN_SEARCH records the result of this bounded pass. Verification and integration are deferred.",
+  "summary": {
+    "searched": 52,
+    "found": 7,
+    "possible_only": 2,
+    "no_match_in_search": 43,
+    "historical_with_direct_in_scope_photo": 3,
+    "new_photo_pages": 9,
+    "new_possible_photo_pages_or_leads": 2
+  },
+  "restaurants": [
+    {
+      "position": 105,
+      "id": "MBA-DINE-0114",
+      "name": "Fish and Chips Cafe",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Fish and Chips Cafe\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Fish and Chips Cafe\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 106,
+      "id": "MBA-DINE-0115",
+      "name": "Domenico's Fish Market and Deli",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Domenico's Fish Market and Deli\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Domenico's Fish Market and Deli\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 107,
+      "id": "MBA-DINE-0116",
+      "name": "Monterey Bay Creamery",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Monterey Bay Creamery\" \"Monterey\""
+        ],
+        "flickr": [
+          "Monterey Bay Creamery Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 108,
+      "id": "MBA-DINE-0117",
+      "name": "Kafe Toribashi",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Kafe Toribashi\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Kafe Toribashi\" \"Monterey\"",
+          "Kafe Toribashi Monterey 95 Old Fisherman's Wharf site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 109,
+      "id": "MBA-DINE-0118",
+      "name": "Ad Astra Bread Co",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Ad Astra Bread Co\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Ad Astra Bread Co\" \"Monterey\"",
+          "Ad Astra Bread Co Monterey 479 Alvarado St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 110,
+      "id": "MBA-DINE-0119",
+      "name": "Albatross Ridge Winery & Kitchen",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Albatross Ridge Winery & Kitchen\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Albatross Ridge Winery & Kitchen\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 111,
+      "id": "MBA-DINE-0120",
+      "name": "Alejandro's",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Alejandro's\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Alejandro's\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 112,
+      "id": "MBA-DINE-0122",
+      "name": "Alta Bakery + Cafe",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Alta Bakery + Cafe\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Alta Bakery + Cafe\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 113,
+      "id": "MBA-DINE-0123",
+      "name": "Alvarado Street Brewery & Grill",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Alvarado Street Brewery & Grill\" \"Monterey\"",
+          "\"Alvarado Street Brewery\" Monterey"
+        ],
+        "flickr": [
+          "Alvarado Street Brewery & Grill Monterey site:flickr.com",
+          "Alvarado Street Brewery & Grill Monterey 426 Alvarado St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [],
+      "notes": "Flickr beer result identifies the Carmel-by-the-Sea brewery."
+    },
+    {
+      "position": 114,
+      "id": "MBA-DINE-0124",
+      "name": "Ambrosia India Bistro",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Ambrosia India Bistro\" \"Monterey\"",
+          "Ambrosia India Bistro Monterey site:commons.wikimedia.org"
+        ],
+        "flickr": [
+          "\"Ambrosia India Bistro\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 115,
+      "id": "MBA-DINE-0125",
+      "name": "Bagel Bakery",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Bagel Bakery\" \"Monterey\""
+        ],
+        "flickr": [
+          "Bagel Bakery Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 116,
+      "id": "MBA-DINE-0126",
+      "name": "Benihana Monterey",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Benihana Monterey\" \"Monterey\""
+        ],
+        "flickr": [
+          "Benihana Monterey Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 117,
+      "id": "MBA-DINE-0127",
+      "name": "Bobalicious and Bites",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Bobalicious and Bites\" \"Monterey\"",
+          "Bobalicious and Bites Monterey site:commons.wikimedia.org"
+        ],
+        "flickr": [
+          "\"Bobalicious and Bites\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 118,
+      "id": "MBA-DINE-0128",
+      "name": "Bulgogi House",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Bulgogi House\" \"Monterey\""
+        ],
+        "flickr": [
+          "Bulgogi House Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 119,
+      "id": "MBA-DINE-0129",
+      "name": "Cella Restaurant and Bar",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Cella Restaurant and Bar\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Cella Restaurant and Bar\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 120,
+      "id": "MBA-DINE-0130",
+      "name": "China Garden",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"China Garden\" \"Monterey\"",
+          "China Garden Monterey site:commons.wikimedia.org"
+        ],
+        "flickr": [
+          "\"China Garden\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/paul-mcclure/6818038902/",
+          "type": "exterior",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 121,
+      "id": "MBA-DINE-0131",
+      "name": "Chipotle",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Chipotle\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Chipotle\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 122,
+      "id": "MBA-DINE-0132",
+      "name": "Chong's Szechwan Restaurant",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Chong's Szechwan Restaurant\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Chong's Szechwan Restaurant\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 123,
+      "id": "MBA-DINE-0133",
+      "name": "Crepes of Brittany",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Crepes of Brittany\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Crepes of Brittany\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 124,
+      "id": "MBA-DINE-0134",
+      "name": "Crown and Anchor",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Crown and Anchor\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Crown and Anchor\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/wetgraphite/2919343132/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 125,
+      "id": "MBA-DINE-0135",
+      "name": "Denny's Restaurant",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Denny's Restaurant\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Denny's Restaurant\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 126,
+      "id": "MBA-DINE-0136",
+      "name": "East Village Cafe",
+      "discovery_status": "POSSIBLE",
+      "queries": {
+        "wikimedia_commons": [
+          "\"East Village Cafe\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"East Village Cafe\" \"Monterey\"",
+          "East Village Cafe Monterey 498 Washington St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/79761301%40N00/55313274171/",
+          "type": "former venue building",
+          "discovery": "POSSIBLE",
+          "origin": "this_pass",
+          "note": "Photo caption names a successor at the same address."
+        }
+      ]
+    },
+    {
+      "position": 127,
+      "id": "MBA-DINE-0137",
+      "name": "El Charrito Express",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"El Charrito Express\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"El Charrito Express\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 128,
+      "id": "MBA-DINE-0138",
+      "name": "Esteban Restaurant",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Esteban Restaurant\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Esteban Restaurant\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/40948917%40N02/3837468297/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/40948917%40N02/3837466597/",
+          "type": "patio",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/40948917%40N02/3837469153/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 129,
+      "id": "MBA-DINE-0139",
+      "name": "Fin + Field",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Fin + Field\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Fin + Field\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 130,
+      "id": "MBA-DINE-0140",
+      "name": "Full Moon Mandarin Cuisine",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Full Moon Mandarin Cuisine\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Full Moon Mandarin Cuisine\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 131,
+      "id": "MBA-DINE-0141",
+      "name": "Ike's Love and Sandwiches",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Ike's Love and Sandwiches\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Ike's Love and Sandwiches\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 132,
+      "id": "MBA-DINE-0142",
+      "name": "Jacks Monterey",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Jacks Monterey\" \"Monterey\""
+        ],
+        "flickr": [
+          "Jacks Monterey Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 133,
+      "id": "MBA-DINE-0143",
+      "name": "Jamba",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Jamba\" \"Monterey\""
+        ],
+        "flickr": [
+          "Jamba Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 134,
+      "id": "MBA-DINE-0144",
+      "name": "Kuma Sushi",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Kuma Sushi\" \"Monterey\""
+        ],
+        "flickr": [
+          "Kuma Sushi Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 135,
+      "id": "MBA-DINE-0145",
+      "name": "La Casa del Sazon",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"La Casa del Sazon\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"La Casa del Sazon\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 136,
+      "id": "MBA-DINE-0146",
+      "name": "Manasiri's Crepes and Sandwiches",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Manasiri's Crepes and Sandwiches\" \"Monterey\"",
+          "Manasiri's Crepes and Sandwiches Monterey site:commons.wikimedia.org"
+        ],
+        "flickr": [
+          "\"Manasiri's Crepes and Sandwiches\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 137,
+      "id": "MBA-DINE-0147",
+      "name": "Melville Tavern",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Melville Tavern\" \"Monterey\""
+        ],
+        "flickr": [
+          "Melville Tavern Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Melville_Tavern_-_December_2018_-_Stierch.jpg",
+          "type": "food_photo_not_storefront",
+          "discovery": "FOUND",
+          "origin": "historical"
+        }
+      ],
+      "flickr": []
+    },
+    {
+      "position": 138,
+      "id": "MBA-DINE-0148",
+      "name": "MidiCi Neapolitan Pizza",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"MidiCi Neapolitan Pizza\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"MidiCi Neapolitan Pizza\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 139,
+      "id": "MBA-DINE-0149",
+      "name": "Montrio",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Montrio\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Montrio\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Montrio_Bistro_Monterey_California.jpg",
+          "type": "existing app photograph",
+          "discovery": "FOUND",
+          "origin": "historical"
+        }
+      ],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/81918828%40N00/8362285014/",
+          "type": "building exterior",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/seemonterey/18123797573/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        },
+        {
+          "url": "https://www.flickr.com/photos/seemonterey/18556744030/",
+          "type": "venue photo",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 140,
+      "id": "MBA-DINE-0150",
+      "name": "Mundos Sandwich & Burger House",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Mundos Sandwich & Burger House\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Mundos Sandwich & Burger House\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 141,
+      "id": "MBA-DINE-0151",
+      "name": "Nacho Bizness",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Nacho Bizness\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Nacho Bizness\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 142,
+      "id": "MBA-DINE-0152",
+      "name": "Nami",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Nami\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Nami\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 143,
+      "id": "MBA-DINE-0153",
+      "name": "Nick the Greek",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Nick the Greek\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Nick the Greek\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 144,
+      "id": "MBA-DINE-0154",
+      "name": "Ocean Sushi Deli",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Ocean Sushi Deli\" \"Monterey\"",
+          "Ocean Sushi Deli Monterey site:commons.wikimedia.org"
+        ],
+        "flickr": [
+          "\"Ocean Sushi Deli\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 145,
+      "id": "MBA-DINE-0155",
+      "name": "Old Monterey Cafe",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Old Monterey Cafe\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Old Monterey Cafe\" \"Monterey\"",
+          "Old Monterey Cafe Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/hankzby/53183285944/",
+          "type": "food",
+          "discovery": "FOUND",
+          "origin": "this_pass"
+        }
+      ]
+    },
+    {
+      "position": 146,
+      "id": "MBA-DINE-0156",
+      "name": "Panda Express",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Panda Express\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Panda Express\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 147,
+      "id": "MBA-DINE-0157",
+      "name": "Papa Chano's Taqueria",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Papa Chano's Taqueria\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Papa Chano's Taqueria\" \"Monterey\"",
+          "Papa Chano's Taqueria Monterey 462 Alvarado St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 148,
+      "id": "MBA-DINE-0158",
+      "name": "Parker-Lusseau Pastries & Cafe",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Parker-Lusseau Pastries & Cafe\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Parker-Lusseau Pastries & Cafe\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 149,
+      "id": "MBA-DINE-0159",
+      "name": "Peet's Coffee & Tea",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Peet's Coffee & Tea\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Peet's Coffee & Tea\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 150,
+      "id": "MBA-DINE-0160",
+      "name": "Perfectly Pressed Juice",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Perfectly Pressed Juice\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Perfectly Pressed Juice\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 151,
+      "id": "MBA-DINE-0161",
+      "name": "Peter B's Brewpub",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Peter B's Brewpub\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Peter B's Brewpub\" \"Monterey\"",
+          "Peter B's Brewpub Monterey 2 Portola Plaza site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 152,
+      "id": "MBA-DINE-0162",
+      "name": "Petra Cafe",
+      "discovery_status": "POSSIBLE",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Petra Cafe\" \"Monterey\""
+        ],
+        "flickr": [
+          "Petra Cafe Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": [
+        {
+          "url": "https://www.flickr.com/photos/mateoric/54894254873/",
+          "type": "type undetermined",
+          "discovery": "POSSIBLE",
+          "origin": "this_pass",
+          "note": "Title matches. Locality unclear."
+        }
+      ]
+    },
+    {
+      "position": 153,
+      "id": "MBA-DINE-0163",
+      "name": "Plumes Coffee House",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Plumes Coffee House\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Plumes Coffee House\" \"Monterey\""
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 154,
+      "id": "MBA-DINE-0164",
+      "name": "Red's Donuts",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Red's Donuts\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Red's Donuts\" \"Monterey\"",
+          "Red's Donuts Monterey 433 Alvarado St site:flickr.com/photos"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 155,
+      "id": "MBA-DINE-0165",
+      "name": "Revival Ice Cream",
+      "discovery_status": "NOT_FOUND_IN_SEARCH",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Revival Ice Cream\" \"Monterey\""
+        ],
+        "flickr": [
+          "\"Revival Ice Cream\" \"Monterey\"",
+          "Revival Ice Cream Monterey site:flickr.com"
+        ]
+      },
+      "wikimedia_commons": [],
+      "flickr": []
+    },
+    {
+      "position": 156,
+      "id": "MBA-DINE-0166",
+      "name": "Rosine's Restaurant",
+      "discovery_status": "FOUND",
+      "queries": {
+        "wikimedia_commons": [
+          "\"Rosine's Restaurant\" \"Monterey\"",
+          "Rosine restaurant Monterey"
+        ],
+        "flickr": [
+          "\"Rosine's Restaurant\" \"Monterey\"",
+          "Rosine restaurant Monterey"
+        ]
+      },
+      "wikimedia_commons": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Rosine%27s_-_Dec_2018_-_Stierch.jpg",
+          "type": "existing app photograph",
+          "discovery": "FOUND",
+          "origin": "historical"
+        }
+      ],
+      "flickr": []
+    }
+  ]
+}
