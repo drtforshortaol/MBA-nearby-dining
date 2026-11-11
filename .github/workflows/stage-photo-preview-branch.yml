@@ -30,6 +30,14 @@ jobs:
             python scripts/generate-photo-cleanup-preview.py --restaurant-id "$id"
           done
           python scripts/test-photo-cleanup-preview.py
+          python - <<'PY'
+          from pathlib import Path
+          ids = ('0021','0023','0025','0031','0042','0068','0105','0149','0166')
+          for id in ids:
+              p = Path(f'photo-review-previews/MBA-DINE-{id}-cleanup-preview.jpg')
+              assert p.is_file() and p.stat().st_size > 1000, f'Missing derivative: {p}'
+          print('All nine real-photo derivatives generated')
+          PY
       - name: Stage previews only on dedicated review branch
         shell: bash
         run: |
