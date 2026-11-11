@@ -4533,7 +4533,7 @@
     "photoCreator": "",
     "photoSource": "",
     "photoDate": "",
-    "statusNote": "Use current 650 Lighthouse Ave, Pacific Grove location; former Monterey storefront is historical.",
+    "statusNote": "Pacific Grove location confirmed; official contact page still says temporarily closed while newer local sources report reopening. Call to confirm before recommending.",
     "hours": "Wed–Mon 7 AM–5 PM; Tue closed",
     "serviceClass": "Bakery / breakfast / lunch / espresso",
     "area": "Pacific Grove",
@@ -4562,7 +4562,13 @@
     },
     "diningDetails": {
       "reviewedOn": "2026-11-07",
-      "status": "provisional-possibly-closed",
+      "status": "provisional-conflicting-operating-evidence",
+      "operatingStatusEvidence": {
+        "status": "conflicting-sources",
+        "checkedOn": "2026-11-10",
+        "sources": ["https://www.theperfectcrumbbakery.net/contact", "https://www.lighthousedistrict.net/news/2025/10/perfect-crumb-reopens-pacific-grove", "https://business.pacificgrove.org/directory/Details/the-perfect-crumb-bakery-4214002"],
+        "note": "Official contact page still says Temporary Closed- We are moving, while October 2025 reopening announcement and Pacific Grove Chamber listing describe the new location as operating. Direct confirmation still needed."
+      },
       "sources": [
         "https://www.theperfectcrumbbakery.net/contact"
       ],
@@ -10691,7 +10697,7 @@
     "photoCreator": "",
     "photoSource": "",
     "photoDate": "",
-    "statusNote": "Grand reopening anticipated; opening date and operating hours not independently confirmed.",
+    "statusNote": "Operator location page currently labels this location Temporarily Closed; do not recommend as open. Listed hours may be stale.",
     "hours": "Hours after reopening not confirmed.",
     "serviceClass": "Burger / quick service",
     "area": "Monterey",
@@ -10714,7 +10720,13 @@
     },
     "diningDetails": {
       "reviewedOn": "2026-11-07",
-      "status": "provisional-reopening-unconfirmed",
+      "status": "provisional-operator-temporarily-closed",
+      "operatingStatusEvidence": {
+        "status": "operator-reports-temporarily-closed",
+        "checkedOn": "2026-11-10",
+        "source": "https://locations.carlsjr.com/ca/monterey/902-lighthouse-avenue",
+        "note": "Official page explicitly states Temporarily Closed and Temporarily Unavailable, although it also lists regular hours. Do not infer reopening from hours alone."
+      },
       "sources": [
         "https://locations.carlsjr.com/ca/monterey/902-lighthouse-avenue",
         "https://www.ksbw.com/article/reconstruction-begins-at-former-carls-jr-site-in-monterey/71818764"
