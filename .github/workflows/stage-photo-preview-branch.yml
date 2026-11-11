@@ -30,6 +30,7 @@ jobs:
             python scripts/generate-photo-cleanup-preview.py --restaurant-id "$id"
           done
           python scripts/test-photo-cleanup-preview.py
+          test "$(find photo-review-previews -name '*-cleanup-preview.jpg' | wc -l)" -eq 9
           python - <<'PY'
           from pathlib import Path
           ids = ('0021','0023','0025','0031','0042','0068','0105','0149','0166')
