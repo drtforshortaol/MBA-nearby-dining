@@ -1,0 +1,30 @@
+{
+  "checked_on": "2026-11-11",
+  "method": "Targeted web search; only explicit locality evidence counts. These are evidence notes, not completion claims.",
+  "results": [
+    {
+      "id": "MBA-DINE-0003",
+      "restaurant": "Bubba Gump Shrimp Company — Monterey",
+      "commons": "chain-category-found-but-locality-not-established",
+      "source": "https://commons.wikimedia.org/wiki/Category:Bubba_Gump_Shrimp_Company",
+      "finding": "Global chain category contains images from other cities; do not accept without Monterey-specific confirmation.",
+      "flickr": "not_verified",
+      "license": "not_verified"
+    },
+    {
+      "id": "MBA-DINE-0006",
+      "restaurant": "Chart House — Monterey",
+      "commons": "not_verified",
+      "finding": "Generic Chart House and ChartRoomRestaurant images do not establish Monterey identity.",
+      "license": "not_verified"
+    },
+    {
+      "id": "MBA-DINE-0029",
+      "restaurant": "Whaling Station Steakhouse",
+      "commons": "false-positive-excluded",
+      "source": "https://commons.wikimedia.org/wiki/Category:Old_Whaling_Station",
+      "finding": "Historic Old Whaling Station photographs show a different building, not evidence of the steakhouse.",
+      "license": "not_applicable"
+    }
+  ]
+}
