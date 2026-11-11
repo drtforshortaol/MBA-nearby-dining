@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Artist's conceptual illustration for Paper Wing Theatre, not a verified storefront">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#bedbe5"/><stop offset="1" stop-color="#f6e9d2"/></linearGradient><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#e9d5ba"/><stop offset="1" stop-color="#c6a68a"/></linearGradient></defs>
+<rect width="800" height="500" fill="url(#sky)"/><path d="M0 350Q200 328 400 348T800 345V500H0" fill="#9ca5a0"/><path d="M0 400H800" stroke="#eee8dc" stroke-width="5"/>
+<rect x="128" y="115" width="545" height="260" rx="6" fill="url(#wall)" stroke="#7e6b5e" stroke-width="6"/>
+<path d="M115 117L168 65H636L687 117Z" fill="#6a7779"/><path d="M158 165H644V220H158Z" fill="#b84d46"/>
+<text x="400" y="199" font-family="Arial,sans-serif" font-size="28" text-anchor="middle" fill="#fff" font-weight="bold">SECOND-FLOOR VENUE</text>
+<rect x="188" y="244" width="165" height="120" fill="#6f9ca7" stroke="#fff4e5" stroke-width="10"/><rect x="444" y="244" width="160" height="120" fill="#6f9ca7" stroke="#fff4e5" stroke-width="10"/>
+<rect x="363" y="235" width="70" height="140" fill="#4b666a" stroke="#fff4e5" stroke-width="8"/><circle cx="418" cy="307" r="5" fill="#e6c67b"/>
+<path d="M182 260L340 346M448 344L597 260" stroke="#d7edf0" stroke-width="4" opacity=".7"/>
+<rect x="22" y="16" width="756" height="48" rx="10" fill="#173c4a" opacity=".95"/><text x="400" y="48" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" fill="white" font-weight="bold">Paper Wing Theatre</text>
+<rect x="72" y="407" width="656" height="72" rx="10" fill="#173c4a"/><text x="400" y="437" font-family="Arial,sans-serif" font-size="20" text-anchor="middle" fill="white">Dinner · performances • 711 Cannery Row · upstairs</text><text x="400" y="464" font-family="Arial,sans-serif" font-size="15" text-anchor="middle" fill="#f3d49e">CONCEPT ILLUSTRATION — actual entrance and signage may differ</text>
+</svg>
