@@ -27,7 +27,15 @@ for(const r of eateries){
 }
 const report={recordCount:eateries.length,metadataEligibleCount:meta.eligibleCount,countsMatch:eateries.length===meta.eligibleCount,duplicateIds:duplicates,statusCounts:Object.fromEntries([...counts].sort()),missingCounts:Object.fromEntries(Object.entries(missing).map(([k,v])=>[k,v.length])),missingIds:missing,priorityQueue:priorityQueue.sort((a,b)=>b.score-a.score||a.id.localeCompare(b.id)),priorityQueuePolicy:'Flags identify research needs, not confirmed inaccuracies. Operating status first, then missing visitor-critical details.'};
 const output=JSON.stringify(report,null,2)+'\n';
-if(process.argv.includes('--write')){
+if(process.argv.includes('--csv')){
+  const escape=value=>'"'+String(value??'').replaceAll('"','""')+'"';
+  const rows=[['id','name','priorityScore','researchFlags'],...report.priorityQueue.map(r=>[r.id,r.name,r.score,r.flags.join('; ')])];
+  const csv=rows.map(row=>row.map(escape).join(',')).join('\n')+'\n';
+  if(process.argv.includes('--write')){
+    writeFileSync(new URL('../reports/research-priority.csv',import.meta.url),csv);
+    console.log('Wrote reports/research-priority.csv');
+  }else process.stdout.write(csv);
+}else if(process.argv.includes('--write')){
   writeFileSync(new URL('../reports/research-readiness.json',import.meta.url),output);
   console.log('Wrote reports/research-readiness.json');
 }else console.log(output);
