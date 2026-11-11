@@ -10,6 +10,26 @@
   "photographAcquired": false,
   "entranceVerified": false,
   "licenseVerified": false,
-  "reviewStatus": "candidate-real-venue-photos",
-  "notes": "Commons category contains seven photographic files associated with this restaurant; inspect individual photos for entrance, current venue match, and image-specific licensing before integration."
+  "reviewStatus": "two-image-licenses-verified-entrance-pending",
+  "notes": "Commons category contains seven photographic files associated with this restaurant; inspect individual photos for entrance, current venue match, and image-specific licensing before integration.",
+  "licenseReviews": [
+    {
+      "filePage": "https://commons.wikimedia.org/wiki/File:Cannery_Row,_Monterey_3_2017-11-21.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "F ASTILY",
+      "photoYear": 2017,
+      "licenseVerified": true,
+      "entranceVerified": false,
+      "notes": "Image-specific Commons license verified; exact restaurant entrance remains unverified."
+    },
+    {
+      "filePage": "https://commons.wikimedia.org/wiki/File:Cannery_Row,_Monterey,_California,_USA_(3).jpg",
+      "license": "CC BY 2.0",
+      "author": "Jim G",
+      "photoYear": 2009,
+      "licenseVerified": true,
+      "entranceVerified": false,
+      "notes": "Commons file categories include A Taste of Monterey and The Fish Hopper; actual entrance unverified."
+    }
+  ]
 }
