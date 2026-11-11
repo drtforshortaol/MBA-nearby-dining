@@ -12,6 +12,8 @@ assert(worker.includes("mba-eatery-v"+version),'Worker cache version mismatch');
 assert(app.includes("APP_VERSION='"+version+"'"),'App version mismatch');
 assert(html.includes('v'+version+'</b>'),'Visible version mismatch');
 assert(updates.includes("registration.update()"),'Online update check missing');
+assert(updates.includes('registration.installing'),'Must not claim up to date while installing');
+assert(updates.includes('Downloading update'),'Installing worker must show pending status');
 assert(updates.includes("visibilitychange"),'Foreground check missing');
 assert(updates.includes("addEventListener('online'"),'Reconnect check missing');
 assert(updates.includes("registration.waiting.postMessage"),'Manual update activation missing');

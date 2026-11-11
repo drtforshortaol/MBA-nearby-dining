@@ -13,7 +13,8 @@
   button.textContent='Check Updates';
   const say=(message,showButton=true)=>{status.textContent=message;button.hidden=!showButton;button.textContent=registration?.waiting?'Update Now':'Check Updates';};
   async function check(manual=false){
-    if(checking||!navigator.onLine)return;
+    if(checking)return;
+    if(!navigator.onLine){if(manual)say('Offline — update check needs internet');return;}
     checking=true;
     if(manual)say('Checking for updates…');
     try{
@@ -22,11 +23,13 @@
       await registration.update();
       if(registration.waiting&&navigator.serviceWorker.controller){
         say('Update ready',true);
+      }else if(registration.installing){
+        say('Downloading update…');
       }else if(manual){
         say('Up to date');
       }
     }catch(err){
-      if(manual)say('Update check unavailable. Try again online.',true);
+      say('Update check unavailable. Try again online.',true);
       console.warn('Eatery update check failed',err);
     }finally{checking=false;}
   }
@@ -54,6 +57,7 @@
       worker?.addEventListener('statechange',()=>{
         if(worker.state==='installed'&&navigator.serviceWorker.controller)
           say('Update ready',true);
+        else if(worker.state==='redundant')say('Update unavailable. Try again online.',true);
       });
     });
     check();
