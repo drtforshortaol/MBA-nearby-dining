@@ -1113,7 +1113,9 @@
         "https://members.montereychamber.com/list/member/paper-wing-theatre-supper-club-monterey-7231",
         "https://www.paperwing.com/paper-wing-events-2/"
       ],
-      "food": "Dinner or refreshments may be associated with special performances; food service and menu not independently verified.",
+      "food": "Operator describes a dinner-and-show menu including fish and chips, fried chicken, and vegetarian/vegan options; offerings and availability may depend on event.",
+      "foodEvidence": {"status": "operator-described", "checkedOn": "2026-11-10", "source": "https://www.paperwing.com/about/", "note": "Menu items are examples, not confirmed available at every performance."},
+      "officeHoursEvidence": {"status": "chamber-listed", "checkedOn": "2026-11-10", "source": "https://members.montereychamber.com/list/member/paper-wing-theatre-supper-club-monterey-7231", "officeHours": "Monday–Friday 10 AM–5 PM", "note": "Administrative office hours only; NOT dining or performance hours."},
       "experience": "Event-based theater and supper club, NOT a standard walk-in restaurant; consult event calendar.",
       "seating": "Performance seating and any dining seating depend on event; arrangements not independently verified.",
       "accessibility": "Second-floor venue; elevator, stairs, accessible seating and restrooms not independently verified.",
