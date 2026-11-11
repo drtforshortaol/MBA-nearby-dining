@@ -35,5 +35,5 @@ for item in manifest["images"]:
     img.thumbnail((1200,900))
     target=outdir/(item["restaurantId"]+".webp")
     img.save(target,format="WEBP",quality=82,method=6)
-    (outdir/(rid+".attribution.json")).write_text(json.dumps({"restaurantId":rid,"sourcePage":item["sourcePage"],"author":item["author"],"license":license_name,"commonsFileTitle":title},indent=2)+"\\n")
+    (outdir/(rid+".attribution.json")).write_text(json.dumps({"restaurantId":rid,"sourcePage":item["sourcePage"],"author":item["author"],"license":license_name,"commonsFileTitle":title},indent=2)+"\n")
     print(f"STAGED {target} {img.width}x{img.height} license={license_name}")
