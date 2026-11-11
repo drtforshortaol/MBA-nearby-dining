@@ -1,7 +1,7 @@
 name: Eatery research controller (30-minute)
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 permissions:
   contents: read
