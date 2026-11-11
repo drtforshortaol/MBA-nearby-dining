@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "notes": "Staging only. Do not modify production app; verify storefront matching before approval.",
+  "images": [
+    {
+      "restaurantId": "MBA-DINE-0001",
+      "commonsFileTitle": "Cannery Row, Monterey 3 2017-11-21.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cannery_Row,_Monterey_3_2017-11-21.jpg",
+      "author": "F ASTILY",
+      "license": "CC BY-SA 4.0",
+      "enabled": false,
+      "notes": "Disabled: owner-approved existing A Taste of Monterey image must not be replaced."
+    }
+  ]
+}
