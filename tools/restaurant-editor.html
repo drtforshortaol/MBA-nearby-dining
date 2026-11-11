@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MBA Dining — Offline Data Editor (Prototype)</title>
+<style>body{font:16px system-ui;margin:20px;max-width:1200px}button,input{font:inherit;padding:8px;margin:4px}table{border-collapse:collapse;min-width:850px}th,td{border:1px solid #bbb;padding:6px}th{background:#eee;position:sticky;top:0}td input{width:150px;box-sizing:border-box}section{overflow:auto;max-height:65vh}.warn{color:#9a3700}label{display:inline-block}</style>
+<h1>Restaurant data editor — prototype</h1>
+<p>Offline only. Load a local eateries.json; edits stay in this browser until you export. Import to GitHub is a separate, validated step.</p>
+<label>Open JSON <input type="file" id="file" accept=".json,application/json"></label>
+<label>Search <input id="search" placeholder="Name, ID, cuisine"></label>
+<button id="add">Add restaurant</button><button id="export">Export JSON</button>
+<p id="status" role="status">No file loaded.</p><section><table><thead><tr><th>ID</th><th>Name</th><th>Cuisine</th><th>Address</th><th>Phone</th><th>Hours</th><th>Website</th><th>Missing</th></tr></thead><tbody id="rows"></tbody></table></section>
+<script>
+let records=[];const keys=['id','name','cuisine','address','phone','hours','website'];const $=id=>document.getElementById(id);
+const missing=r=>keys.slice(1).filter(k=>!String(r[k]??'').trim());
+function render(){const q=$('search').value.toLowerCase();$('rows').replaceChildren();for(const r of records.filter(r=>keys.some(k=>String(r[k]??'').toLowerCase().includes(q)))){const tr=document.createElement('tr');for(const k of keys){const td=document.createElement('td'),input=document.createElement('input');input.value=r[k]??'';input.setAttribute('aria-label',k+' for '+(r.name||r.id));input.addEventListener('change',()=>{r[k]=input.value;render()});td.append(input);tr.append(td)}const td=document.createElement('td');td.className='warn';td.textContent=missing(r).join(', ');tr.append(td);$('rows').append(tr)}renderStatus()}
+function renderStatus(){$('status').textContent=records.length+' restaurants; '+records.filter(r=>missing(r).length).length+' with missing basic fields. Changes are not saved until export.'}
+$('file').addEventListener('change',async e=>{try{const data=JSON.parse(await e.target.files[0].text());if(!Array.isArray(data)||data.some(r=>!r||typeof r!=='object'||!r.id))throw Error('Expected restaurant array with IDs');records=data;render()}catch(err){$('status').textContent='Cannot load: '+err.message}});
+$('search').addEventListener('input',render);
+$('add').addEventListener('click',()=>{const id=prompt('Enter a new unique permanent ID (MBA-DINE-####)');if(!id)return;if(!/^MBA-DINE-\d{4}$/.test(id)||records.some(r=>r.id===id)){alert('Invalid or duplicate ID');return}records.push({id,name:'',cuisine:'',address:'',city:'',phone:'',hours:'',website:''});$('search').value='';render()});
+$('export').addEventListener('click',()=>{if(!records.length){alert('Load a file first');return}const blob=new Blob([JSON.stringify(records,null,2)+'\n'],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='eateries-edited.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)});
+</script></html>
