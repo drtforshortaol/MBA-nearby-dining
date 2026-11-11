@@ -4567,7 +4567,9 @@
         "status": "conflicting-sources",
         "checkedOn": "2026-11-10",
         "sources": ["https://www.theperfectcrumbbakery.net/contact", "https://www.lighthousedistrict.net/news/2025/10/perfect-crumb-reopens-pacific-grove", "https://business.pacificgrove.org/directory/Details/the-perfect-crumb-bakery-4214002"],
-        "note": "Official contact page still says Temporary Closed- We are moving, while October 2025 reopening announcement and Pacific Grove Chamber listing describe the new location as operating. Direct confirmation still needed."
+        "note": "Official contact page still says Temporary Closed- We are moving, while October 2025 reopening announcement, Monterey County tourism 2026 update, Pacific Grove Chamber listing, and July-August 2026 customer reviews indicate the new location has operated. Current-day opening and hours remain unconfirmed.",
+        "additionalSources": ["https://www.seemonterey.com/blog/whats-new-in-2026/", "https://www.restaurantji.com/ca/monterey/the-perfect-crumb-bakery-inc-/"],
+        "evidenceScope": "Historical reopening corroborated; no live operating-hours verification"
       },
       "sources": [
         "https://www.theperfectcrumbbakery.net/contact"
