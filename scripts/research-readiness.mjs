@@ -17,7 +17,7 @@ for(const r of eateries){
   if(!r.diningDetails)missing.diningDetails.push(r.id);
   if(!r.diningDetails?.sources?.length)missing.sources.push(r.id);
   const flags=[];
-  if(/possibly-closed|reopening-unconfirmed/.test(status))flags.push('operating-status-uncertain');
+  if(/possibly-closed|reopening-unconfirmed|temporarily-closed|conflicting-operating-evidence/.test(status))flags.push('operating-status-uncertain');
   if(!r.hours&&!r.hoursProvisional)flags.push('hours-missing');
   if(!r.phone)flags.push('phone-missing');
   if(!r.website)flags.push('website-missing');
