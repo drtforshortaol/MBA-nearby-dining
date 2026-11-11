@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "worker": "B",
+  "objective": "Find actual storefront/entrance photos; record provenance and reuse permission; no invented images",
+  "records": [
+    {
+      "restaurantId": "MBA-DINE-0026",
+      "name": "Tidal Coffee",
+      "address": "400 Cannery Row, Monterey",
+      "sourcePage": "https://www.tidalcoffeemonterey.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0029",
+      "name": "Whaling Station Steakhouse",
+      "address": "763 Wave St, Monterey",
+      "sourcePage": "https://thewhalingstation.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0033",
+      "name": "Sea Harvest Restaurant & Fish Market",
+      "address": "598 Foam St, Monterey",
+      "sourcePage": "https://seaharvestrestaurant.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0036",
+      "name": "American Burger",
+      "address": "738 Lighthouse Ave, Monterey",
+      "sourcePage": "https://americanburgermonterey.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0039",
+      "name": "El Cantaro Vegan Mexican Restaurant",
+      "address": "791 Foam St, Monterey",
+      "sourcePage": "https://www.orderelcantaro.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0043",
+      "name": "International Cafe",
+      "address": "296 Lighthouse Ave Unit C, Monterey",
+      "sourcePage": "https://internationalcafemonterey.com",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0046",
+      "name": "Lighthouse Bistro Global Cuisine",
+      "address": "570 Lighthouse Ave, Monterey",
+      "sourcePage": "https://lighthouse-bistro.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0049",
+      "name": "Oystertown",
+      "address": "281 Lighthouse Ave, Monterey",
+      "sourcePage": "https://www.oystertownusa.com/hours",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    }
+  ]
+}
