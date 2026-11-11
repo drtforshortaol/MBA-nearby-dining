@@ -1,0 +1,37 @@
+{
+  "phase": "discovery_only",
+  "date": "2026-11-11",
+  "searched_restaurants": [
+    {
+      "id": "MBA-DINE-0010",
+      "name": "Ghirardelli Ice Cream & Chocolate Shop",
+      "outcome": "possible_photo_lead",
+      "url": "https://commons.wikimedia.org/wiki/Category:Ghirardelli_Chocolate",
+      "detail": "Category lists DSC26340 Cannery Row Monterey California USA (6062142524).jpg. Image subject not inspected; do not count as confirmed restaurant photo."
+    },
+    {
+      "id": "MBA-DINE-0106",
+      "name": "Old Fisherman's Grotto",
+      "outcome": "possible_photo_lead",
+      "url": "https://commons.wikimedia.org/wiki/Category:Seafood_restaurants_in_California",
+      "detail": "Category lists Fisherman's Grotto (5 files). City/restaurant identity unconfirmed."
+    },
+    {
+      "id": "MBA-DINE-0123",
+      "name": "Alvarado Street Brewery & Grill",
+      "outcome": "no_specific_match_from_targeted_search"
+    },
+    {
+      "id": "MBA-DINE-0161",
+      "name": "Peter B's Brewpub",
+      "outcome": "no_specific_match_from_targeted_search"
+    },
+    {
+      "id": "MBA-DINE-0081",
+      "name": "Red House Cafe",
+      "outcome": "no_specific_match_from_targeted_search"
+    }
+  ],
+  "licensing": "not_checked",
+  "note": "No claim that these restaurants lack photos; only targeted search outcome."
+}
