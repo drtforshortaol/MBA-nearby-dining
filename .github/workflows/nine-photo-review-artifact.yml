@@ -1,0 +1,39 @@
+name: Nine real-photo review artifact
+on:
+  pull_request:
+    paths:
+      - 'scripts/generate-photo-cleanup-preview.py'
+      - '.github/workflows/nine-photo-review-artifact.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'Pillow>=10,<13'
+      - name: Generate all nine real-photo derivatives
+        run: |
+          for id in 0021 0023 0025 0031 0042 0068 0105 0149 0166; do
+            python scripts/generate-photo-cleanup-preview.py --restaurant-id "MBA-DINE-$id"
+          done
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          paths=list(Path('photo-review-previews').glob('*-cleanup-preview.jpg'))
+          assert len(paths)==9, f'Expected 9 photos, got {len(paths)}'
+          for path in paths:
+              with Image.open(path) as im:
+                  im.verify()
+              assert path.stat().st_size > 1000
+          print('Nine JPEG derivatives validated')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nine-real-photo-before-after
+          path: photo-review-previews/*.jpg
+          retention-days: 14
