@@ -157,8 +157,8 @@
       "restaurantId": "MBA-DINE-0012",
       "name": "Jack's Bao",
       "address": "751 Cannery Row Suite 121, Monterey, CA",
-      "sourcePage": "https://jackbao.com/",
-      "sourceType": "operator-or-listed-website-unverified",
+      "sourcePage": "https://canneryrow.com/business/jacks-bao/",
+      "sourceType": "district-business-directory-current-address",
       "referenceImageUrl": null,
       "referenceImageLicense": null,
       "permissionStatus": "not-assessed",
@@ -166,7 +166,11 @@
       "buildingVerified": false,
       "referenceStatus": "source-page-candidate-only",
       "collectedOn": "2026-11-10",
-      "notes": "Prior generic cartoon illustration rejected; seek actual suite 121 signage/entrance reference."
+      "notes": "Address and suite 121 corroborated by Cannery Row business directory and operator website. District page displays an image but image type (food vs exterior), photographer, license and entrance details are NOT verified. Do not treat this as a licensed or verified storefront photo.",
+      "additionalSourcePages": [
+        "https://jackbao.com/",
+        "https://www.seemonterey.com/directory/jacks-bao/"
+      ]
     },
     {
       "restaurantId": "MBA-DINE-0013",
