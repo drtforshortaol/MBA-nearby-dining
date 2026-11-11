@@ -1,0 +1,21 @@
+// Run: node tests/update-contract.mjs
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
+const html=read('index.html'),app=read('app.js'),worker=read('sw.js'),updates=read('update.js');
+const meta=JSON.parse(read('data/metadata.json'));
+const version=meta.appVersion;
+assert(html.includes('<script src="update.js"></script>'),'Update controller missing from HTML');
+assert(html.includes('id="updateNow"')&&html.includes('id="updateStatus"'),'Manual update controls missing');
+assert(worker.includes("'./update.js'"),'Update controller must be cached offline');
+assert(worker.includes("mba-eatery-v"+version),'Worker cache version mismatch');
+assert(app.includes("APP_VERSION='"+version+"'"),'App version mismatch');
+assert(html.includes('v'+version+'</b>'),'Visible version mismatch');
+assert(updates.includes("registration.update()"),'Online update check missing');
+assert(updates.includes("visibilitychange"),'Foreground check missing');
+assert(updates.includes("addEventListener('online'"),'Reconnect check missing');
+assert(updates.includes("registration.waiting.postMessage"),'Manual update activation missing');
+assert(updates.includes("location.reload()"),'Activation reload missing');
+assert(updates.includes("searchParams.has('share')"),'Guest update controls must be hidden');
+assert(worker.includes("event.data?.type==='SKIP_WAITING'"),'Manual worker activation handler missing');
+console.log('PASS: PWA update checks, guest separation, version synchronization and offline asset contract');
