@@ -147,7 +147,19 @@
     },
     "hoursConfidence": "unverified",
     "hoursProvisional": "Daily 7 AM–8 PM (third-party listing; conflicts with other directories)",
-    "hoursCaution": "Conflicting third-party schedules; official hours not verified. Call before visiting.",
+    "hoursCaution": "Third-party directory lists daily 7 AM–8 PM, but operator hours remain unverified. Call before visiting.",
+  "operatingStatusEvidence": {
+    "status": "corroborated-open-in-2026-not-live-verified",
+    "checkedOn": "2026-11-10",
+    "sources": ["https://canneryrow.com/plan-your-visit/", "https://canneryrow.com/properties/711-cannery-row/", "https://www.montereycountynow.com/eat_drink/morsels/coffee-row/article_a92ef7e9-2148-4d3d-aa1e-baeae478279c.html"],
+    "note": "Cannery Row district business directory lists Beans of Eden at 711 Cannery Row; July 9, 2026 local news reports the café opened. Neither confirms live operating hours."
+  },
+  "hoursEvidence": {
+    "status": "third-party-only-unverified",
+    "checkedOn": "2026-11-10",
+    "source": "https://maps.roadtrippers.com/us/monterey-ca/food-drink/beans-of-eden-monterey-ca--0",
+    "note": "Roadtrippers lists daily 7 AM–8 PM. Not confirmed by operator; retain provisional hours separately from verified hours."
+  },
     "diningDetails": {
       "reviewedOn": "2026-11-09",
       "status": "partially-verified-existing-research",
