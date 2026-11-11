@@ -28,6 +28,8 @@ jobs:
       - name: Check outputs without overwriting originals
         run: python scripts/test-photo-cleanup-preview.py
 
+      - name: Validate photo cleanup queue against restaurant data
+        run: node scripts/validate-photo-cleanup-queue.cjs
       - name: Validate photo approval contract
         run: node scripts/check-photo-approval-contract.cjs
       - name: Upload generated before-after photographs for review
