@@ -127,7 +127,7 @@
       "restaurantId": "MBA-DINE-0010",
       "name": "Ghirardelli Ice Cream & Chocolate Shop",
       "address": "660 Cannery Row, Monterey, CA",
-      "sourcePage": "https://www.ghirardelli.com/stores/monterey",
+      "sourcePage": "https://canneryrow.com/plan-your-visit/dine/",
       "sourceType": "operator-or-listed-website-unverified",
       "referenceImageUrl": null,
       "referenceImageLicense": null,
@@ -136,13 +136,13 @@
       "buildingVerified": false,
       "referenceStatus": "source-page-candidate-only",
       "collectedOn": "2026-11-10",
-      "notes": ""
+      "notes": "District directory lists Ghirardelli at 660 Cannery Row. Directory image presence does not establish exterior image suitability or license."
     },
     {
       "restaurantId": "MBA-DINE-0011",
       "name": "Great American Cookies",
       "address": "751 Cannery Row, Suite 105, Monterey, CA",
-      "sourcePage": "https://www.greatamericancookies.com/",
+      "sourcePage": "https://canneryrow.com/plan-your-visit/dine/",
       "sourceType": "operator-or-listed-website-unverified",
       "referenceImageUrl": null,
       "referenceImageLicense": null,
@@ -151,7 +151,7 @@
       "buildingVerified": false,
       "referenceStatus": "source-page-candidate-only",
       "collectedOn": "2026-11-10",
-      "notes": ""
+      "notes": "District directory lists Great American Cookies at 751 Cannery Row. Image identity, door location and reuse permission unverified."
     },
     {
       "restaurantId": "MBA-DINE-0012",
@@ -176,7 +176,7 @@
       "restaurantId": "MBA-DINE-0013",
       "name": "Lalla Oceanside Grill",
       "address": "654 Cannery Row, Monterey, CA",
-      "sourcePage": "https://www.lallagrill.com/location/oceanside/",
+      "sourcePage": "https://canneryrow.com/plan-your-visit/dine/",
       "sourceType": "operator-or-listed-website-unverified",
       "referenceImageUrl": null,
       "referenceImageLicense": null,
@@ -185,13 +185,13 @@
       "buildingVerified": false,
       "referenceStatus": "source-page-candidate-only",
       "collectedOn": "2026-11-10",
-      "notes": ""
+      "notes": "District directory lists Lalla Oceanside Grill at 654 Cannery Row; candidate source only, entrance photo and license not verified."
     },
     {
       "restaurantId": "MBA-DINE-0014",
       "name": "Lilly Mae's Cinnamon Rolls",
       "address": "700 Cannery Row, Monterey, CA",
-      "sourcePage": "https://canneryrow.com/business/lilly-maes-cinnamon-rolls/",
+      "sourcePage": "https://canneryrow.com/plan-your-visit/dine/",
       "sourceType": "operator-or-listed-website-unverified",
       "referenceImageUrl": null,
       "referenceImageLicense": null,
@@ -200,13 +200,13 @@
       "buildingVerified": false,
       "referenceStatus": "source-page-candidate-only",
       "collectedOn": "2026-11-10",
-      "notes": ""
+      "notes": "District directory lists Lilly Mae's at 700 Cannery Row; no licensed entrance photo verified."
     },
     {
       "restaurantId": "MBA-DINE-0015",
       "name": "Louie Linguini's",
       "address": "660 Cannery Row, Monterey, CA",
-      "sourcePage": "https://www.louielinguinis.com/",
+      "sourcePage": "https://canneryrow.com/plan-your-visit/dine/",
       "sourceType": "operator-or-listed-website-unverified",
       "referenceImageUrl": null,
       "referenceImageLicense": null,
@@ -215,7 +215,7 @@
       "buildingVerified": false,
       "referenceStatus": "source-page-candidate-only",
       "collectedOn": "2026-11-10",
-      "notes": ""
+      "notes": "District directory lists Louie Linguini's at 660 Cannery Row; no licensed entrance photo verified."
     },
     {
       "restaurantId": "MBA-DINE-0016",
