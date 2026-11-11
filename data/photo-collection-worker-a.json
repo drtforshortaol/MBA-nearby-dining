@@ -12,7 +12,12 @@
       "photoSourceUrl": null,
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "googleMapsResearchUrl": "https://www.google.com/maps/search/?api=1&query=The%20Salty%20Seal%20Brewpub%20%26%20Sports%20Bar%2C%20653%20Cannery%20Row%2C%20Monterey%2C%20California",
+      "streetViewStatus": "not-reviewed",
+      "streetViewPanoramaUrl": null,
+      "streetViewImageAcquired": false,
+      "streetViewRightsStatus": "not-assessed"
     },
     {
       "restaurantId": "MBA-DINE-0028",
@@ -23,7 +28,12 @@
       "photoSourceUrl": null,
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "googleMapsResearchUrl": "https://www.google.com/maps/search/?api=1&query=Troya%20Turkish%20Delight%20%26%20Coffee%2C%20685%20Cannery%20Row%20Suite%20107%2C%20Monterey%2C%20California",
+      "streetViewStatus": "not-reviewed",
+      "streetViewPanoramaUrl": null,
+      "streetViewImageAcquired": false,
+      "streetViewRightsStatus": "not-assessed"
     },
     {
       "restaurantId": "MBA-DINE-0032",
@@ -37,7 +47,12 @@
       "blocker": null,
       "sourceVerified": true,
       "photoSearchStatus": "operator-photo-present-license-unverified",
-      "notes": "Official aquarium dining page displays a photograph of the actual cafe interior and counters; source candidate only. Permission/reuse terms not established; do not copy or publish without rights review."
+      "notes": "Official aquarium dining page displays a photograph of the actual cafe interior and counters; source candidate only. Permission/reuse terms not established; do not copy or publish without rights review.",
+      "googleMapsResearchUrl": "https://www.google.com/maps/search/?api=1&query=Monterey%20Bay%20Aquarium%20Cafe%2C%20886%20Cannery%20Row%2C%20Monterey%2C%20California",
+      "streetViewStatus": "not-reviewed",
+      "streetViewPanoramaUrl": null,
+      "streetViewImageAcquired": false,
+      "streetViewRightsStatus": "not-assessed"
     },
     {
       "restaurantId": "MBA-DINE-0035",
@@ -48,7 +63,12 @@
       "photoSourceUrl": null,
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "googleMapsResearchUrl": "https://www.google.com/maps/search/?api=1&query=Piccolo%2C%2032%20Cannery%20Row%20Suite%20G%2C%20Monterey%2C%20California",
+      "streetViewStatus": "not-reviewed",
+      "streetViewPanoramaUrl": null,
+      "streetViewImageAcquired": false,
+      "streetViewRightsStatus": "not-assessed"
     },
     {
       "restaurantId": "MBA-DINE-0038",
@@ -59,7 +79,12 @@
       "photoSourceUrl": null,
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "googleMapsResearchUrl": "https://www.google.com/maps/search/?api=1&query=Curry%20Journey%2C%20794%20Lighthouse%20Ave%2C%20Monterey%2C%20California",
+      "streetViewStatus": "not-reviewed",
+      "streetViewPanoramaUrl": null,
+      "streetViewImageAcquired": false,
+      "streetViewRightsStatus": "not-assessed"
     },
     {
       "restaurantId": "MBA-DINE-0041",
@@ -70,7 +95,12 @@
       "photoSourceUrl": null,
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "googleMapsResearchUrl": "https://www.google.com/maps/search/?api=1&query=Gianni's%20Pizza%2C%20725%20Lighthouse%20Ave%2C%20Monterey%2C%20California",
+      "streetViewStatus": "not-reviewed",
+      "streetViewPanoramaUrl": null,
+      "streetViewImageAcquired": false,
+      "streetViewRightsStatus": "not-assessed"
     },
     {
       "restaurantId": "MBA-DINE-0045",
@@ -81,7 +111,12 @@
       "photoSourceUrl": null,
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "googleMapsResearchUrl": "https://www.google.com/maps/search/?api=1&query=La%20Bahia%20Mexican%20American%20Restaurant%2C%20675%20Lighthouse%20Ave%2C%20Monterey%2C%20California",
+      "streetViewStatus": "not-reviewed",
+      "streetViewPanoramaUrl": null,
+      "streetViewImageAcquired": false,
+      "streetViewRightsStatus": "not-assessed"
     },
     {
       "restaurantId": "MBA-DINE-0048",
@@ -92,7 +127,12 @@
       "photoSourceUrl": null,
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "googleMapsResearchUrl": "https://www.google.com/maps/search/?api=1&query=Namaste%20India%20Bistro%2C%20538%20Lighthouse%20Ave%2C%20Monterey%2C%20California",
+      "streetViewStatus": "not-reviewed",
+      "streetViewPanoramaUrl": null,
+      "streetViewImageAcquired": false,
+      "streetViewRightsStatus": "not-assessed"
     },
     {
       "restaurantId": "MBA-DINE-0051",
@@ -103,7 +143,12 @@
       "photoSourceUrl": null,
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "googleMapsResearchUrl": "https://www.google.com/maps/search/?api=1&query=Paprika%20Cafe%2C%20309%20Lighthouse%20Ave%20Suite%20A%2C%20Monterey%2C%20California",
+      "streetViewStatus": "not-reviewed",
+      "streetViewPanoramaUrl": null,
+      "streetViewImageAcquired": false,
+      "streetViewRightsStatus": "not-assessed"
     }
   ]
 }
