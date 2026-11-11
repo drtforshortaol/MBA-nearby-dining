@@ -27,3 +27,10 @@ jobs:
           python scripts/generate-photo-cleanup-preview.py --restaurant-id MBA-DINE-0042
       - name: Check outputs without overwriting originals
         run: python scripts/test-photo-cleanup-preview.py
+
+      - name: Upload generated before-after photographs for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: actual-photo-cleanup-preview-three-restaurants
+          path: photo-review-previews/*.jpg
+          retention-days: 14
