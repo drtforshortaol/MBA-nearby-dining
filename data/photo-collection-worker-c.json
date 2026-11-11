@@ -9,10 +9,12 @@
       "address": "95 Prescott Ave, Monterey",
       "sourcePage": "https://tipsyputt.com/tipsy-putt-monterey/",
       "photoFound": false,
-      "photoSourceUrl": null,
+      "photoSourceUrl": "https://www.partyslate.com/venues/tipsy-putt-monterey",
       "photoLicense": null,
       "entranceVerified": false,
-      "blocker": null
+      "blocker": null,
+      "photoSearchStatus": "photo-source-lead-rights-unverified",
+      "notes": "Venue gallery identifies cover photo credited to Tipsy Putt In-House Team. Actual entrance not verified. Permission not established."
     },
     {
       "restaurantId": "MBA-DINE-0030",
