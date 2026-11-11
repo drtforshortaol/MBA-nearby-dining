@@ -1,6 +1,6 @@
 // Read-only research readiness report; no claims of live verification.
 // Run: node scripts/research-readiness.mjs
-import {readFileSync} from 'node:fs';
+import {readFileSync,writeFileSync} from 'node:fs';
 const read=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url),'utf8'));
 const eateries=read('data/eateries.json'),meta=read('data/metadata.json');
 const counts=new Map(),missing={website:[],phone:[],hours:[],coordinates:[],diningDetails:[],sources:[]};
@@ -26,5 +26,9 @@ for(const r of eateries){
   if(flags.length)priorityQueue.push({id:r.id,name:r.name,flags,score:flags.reduce((sum,flag)=>sum+({'operating-status-uncertain':100,'hours-missing':30,'phone-missing':15,'website-missing':10,'research-sources-missing':8,'provisional-research':5}[flag]||0),0)});
 }
 const report={recordCount:eateries.length,metadataEligibleCount:meta.eligibleCount,countsMatch:eateries.length===meta.eligibleCount,duplicateIds:duplicates,statusCounts:Object.fromEntries([...counts].sort()),missingCounts:Object.fromEntries(Object.entries(missing).map(([k,v])=>[k,v.length])),missingIds:missing,priorityQueue:priorityQueue.sort((a,b)=>b.score-a.score||a.id.localeCompare(b.id)),priorityQueuePolicy:'Flags identify research needs, not confirmed inaccuracies. Operating status first, then missing visitor-critical details.'};
-console.log(JSON.stringify(report,null,2));
+const output=JSON.stringify(report,null,2)+'\n';
+if(process.argv.includes('--write')){
+  writeFileSync(new URL('../reports/research-readiness.json',import.meta.url),output);
+  console.log('Wrote reports/research-readiness.json');
+}else console.log(output);
 if(!report.countsMatch||duplicates.length)process.exitCode=1;
