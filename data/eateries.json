@@ -12586,8 +12586,8 @@
     "cuisine": "American / burgers / breakfast / fast food",
     "distanceMiles": null,
     "distanceVerified": false,
-    "lat": null,
-    "lon": null,
+    "lat": 36.599699,
+    "lon": -121.8881022,
     "website": "https://www.mcdonalds.com/us/en-us/location/ca/monterey/610-del-monte-ave/1949.html",
     "photo": null,
     "photoCaption": "",
@@ -12622,7 +12622,8 @@
       "status": "verified-with-explicit-unknowns",
       "sources": [
         "https://www.mcdonalds.com/us/en-us/location/ca/monterey/610-del-monte-ave/1949.html",
-        "https://www.ubereats.com/store/mcdonalds-610-del-monte-ave/oNAZb1csQYyRoTzcXzFcCg"
+        "https://www.ubereats.com/store/mcdonalds-610-del-monte-ave/oNAZb1csQYyRoTzcXzFcCg",
+        "https://www.latlong.net/poi/mcdonald-s-639756"
       ],
       "food": "Burgers, fries, chicken nuggets, breakfast sandwiches, coffee and children's meals; availability varies by time.",
       "experience": "Quick-service counter, lobby dining, drive-thru, mobile ordering and delivery; Wi-Fi listed by operator.",
@@ -12634,7 +12635,7 @@
       "entrance": "610 Del Monte Ave; exact pedestrian entrance and accessible approach not verified.",
       "hoursSource": "https://www.mcdonalds.com/us/en-us/location/ca/monterey/610-del-monte-ave/1949.html",
       "hoursNote": "Lobby daily 6 AM–9 PM; drive-thru Sun–Thu 5 AM–midnight and Fri–Sat 5 AM–1 AM. Holiday hours may differ.",
-      "verificationNote": "Operating status, address, phone and separately categorized hours sourced to official location page. Geographic route and entrance not verified."
+      "verificationNote": "Operating status, address, phone and separately categorized hours sourced to official location page. Geographic route and entrance not verified. Approximate coordinates from mapped POI, not surveyed."
     }
   },
   {
@@ -12647,8 +12648,8 @@
     "cuisine": "American / burgers / tacos / breakfast / fast food",
     "distanceMiles": null,
     "distanceVerified": false,
-    "lat": null,
-    "lon": null,
+    "lat": 36.5929339,
+    "lon": -121.8929423,
     "website": "https://locations.jackinthebox.com/us/ca/monterey/889-abrego-st",
     "photo": null,
     "photoCaption": "",
@@ -12683,7 +12684,8 @@
       "status": "verified-with-explicit-unknowns",
       "sources": [
         "https://locations.jackinthebox.com/us/ca/monterey/889-abrego-st",
-        "https://www.ubereats.com/store/jack-in-the-box-889-abrego-st/K5_JPjX-SNa_VYfSCs3SsA"
+        "https://www.ubereats.com/store/jack-in-the-box-889-abrego-st/K5_JPjX-SNa_VYfSCs3SsA",
+        "https://www.latlong.net/poi/mcdonald-s-639756"
       ],
       "food": "Burgers, tacos, chicken sandwiches, fries, shakes and breakfast offerings; check current location menu.",
       "experience": "Quick-service restaurant with drive-thru and lobby dining; useful for late-night meals.",
@@ -12695,7 +12697,7 @@
       "entrance": "889 Abrego St; exact pedestrian entrance and accessible approach not verified.",
       "hoursSource": "https://locations.jackinthebox.com/us/ca/monterey/889-abrego-st",
       "hoursNote": "Lobby daily 6 AM–10 PM; official drive-thru listing shows 4 AM–4 AM (24 hours) daily. Holiday hours may differ.",
-      "verificationNote": "Operator location page confirms address, phone and hours. Route distance and entrance unverified."
+      "verificationNote": "Operator location page confirms address, phone and hours. Route distance and entrance unverified. Approximate coordinates from third-party mapped POI, not surveyed."
     }
   }
 ]
