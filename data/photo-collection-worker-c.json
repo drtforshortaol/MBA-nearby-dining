@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "worker": "C",
+  "objective": "Find actual storefront/entrance photos; record provenance and reuse permission; no invented images",
+  "records": [
+    {
+      "restaurantId": "MBA-DINE-0027",
+      "name": "Tipsy Putt Monterey",
+      "address": "95 Prescott Ave, Monterey",
+      "sourcePage": "https://tipsyputt.com/tipsy-putt-monterey/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0030",
+      "name": "Wave Street Cafe",
+      "address": "550 Wave St, Monterey",
+      "sourcePage": "https://www.wavestreetcafe.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0034",
+      "name": "Osteria Al Mare",
+      "address": "32 Cannery Row Suite H, Monterey",
+      "sourcePage": "https://www.osteriaalmare.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0037",
+      "name": "Crystal Fish Sushi",
+      "address": "514 Lighthouse Ave, Monterey",
+      "sourcePage": "https://www.crystalfish-monterey.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0040",
+      "name": "First Awakenings",
+      "address": "300 David Ave, Monterey",
+      "sourcePage": "https://firstawakenings.net/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0044",
+      "name": "International Market & Deli",
+      "address": "580 Lighthouse Ave, Monterey",
+      "sourcePage": "https://www.lighthousedistrict.net/directory/food_and_drink/dining",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0047",
+      "name": "Mission 19 Taqueria",
+      "address": "598 Lighthouse Ave, Monterey",
+      "sourcePage": "https://mission19taqueria.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    },
+    {
+      "restaurantId": "MBA-DINE-0050",
+      "name": "O-Town Espresso Bar",
+      "address": "281 Lighthouse Ave, Monterey",
+      "sourcePage": "https://www.oystertownusa.com/",
+      "photoFound": false,
+      "photoSourceUrl": null,
+      "photoLicense": null,
+      "entranceVerified": false,
+      "blocker": null
+    }
+  ]
+}
