@@ -1,8 +1,8 @@
 {
-  "appVersion": "3.0.21",
+  "appVersion": "3.0.22",
   "databaseDate": "2026-11-10",
   "eligibleCount": 208,
-  "photoCount": 12,
+  "photoCount": 13,
   "dataPolicy": "Only 208 visitor-recommendation-enabled records exposed; other research remains in original archival package.",
   "mapType": "Authentic offline Monterey County GIS street centerlines",
   "mapAccuracy": "Orientation only; road shapes and intersections not surveyed",
