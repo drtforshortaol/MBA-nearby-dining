@@ -1,4 +1,4 @@
-const CACHE='mba-eatery-v3.0.26';
+const CACHE='mba-eatery-v3.0.27';
 const CORE=['./','./index.html','./style.css','./app.js','./qr-local.js','./update.js','./icon.svg','./apple-touch-icon.png','./manifest.webmanifest','./data/eateries.json','./data/metadata.json','./data/roads.json'].map(path => new Request(path, {cache: 'reload'}));
 self.addEventListener('install',evt=>{evt.waitUntil(caches.open(CACHE).then(async cache=>{await cache.addAll(CORE);let data=await (await cache.match('./data/eateries.json')).json();await Promise.all(data.flatMap(r=>[r.photo,r.photoSecondary].filter(Boolean)).map(photo=>cache.add('./'+photo).catch(()=>{})))}))});
 self.addEventListener('activate',evt=>evt.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('mba-eatery-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
