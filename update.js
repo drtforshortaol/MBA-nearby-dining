@@ -37,10 +37,21 @@
     if(!navigator.onLine){say('Connect to the internet to update.',true);return;}
     say('Checking for updates…');
     await check(true);
-    if(registration?.waiting&&navigator.serviceWorker.controller){
+    userRequestedActivation=true;
+    if(registration?.waiting){
       say('Installing update…');
-      userRequestedActivation=true;
       registration.waiting.postMessage({type:'SKIP_WAITING'});
+    }else if(registration?.installing){
+      say('Downloading update…');
+      const worker=registration.installing;
+      worker.addEventListener('statechange',()=>{
+        if(worker.state==='installed'&&registration.waiting){
+          say('Installing update…');
+          registration.waiting.postMessage({type:'SKIP_WAITING'});
+        }
+      });
+    }else{
+      userRequestedActivation=false;
     }
   });
   navigator.serviceWorker.addEventListener('controllerchange',()=>{
