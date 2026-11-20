@@ -12756,17 +12756,17 @@
   },
   {
     "id": "MBA-DINE-0239",
-    "name": "Archie's",
+    "name": "Archie's American Diner",
     "address": "125 Ocean View Blvd, Suite 103",
     "city": "Pacific Grove",
-    "phone": "",
-    "phoneDigits": "",
-    "cuisine": "Restaurant — cuisine not yet verified",
+    "phone": "(831) 375-2802",
+    "phoneDigits": "8313752802",
+    "cuisine": "American diner / burgers / sandwiches / seafood",
     "distanceMiles": null,
     "distanceVerified": false,
-    "lat": null,
-    "lon": null,
-    "website": "",
+    "lat": 36.618834,
+    "lon": -121.904275,
+    "website": "https://americantincannery.com/directory/restaurants-candy/",
     "photo": "photos/IMG_5329.jpeg",
     "photoCaption": "Original photograph of Archie's, Pacific Grove. Photo: Glenn Takenaga.",
     "photoCaution": "Owner-submitted photographs; restaurant appearance may change.",
@@ -12774,18 +12774,59 @@
     "photoCreator": "Glenn Takenaga",
     "photoSource": "Owner-submitted photographs, November 19, 2026",
     "photoDate": "2026-11-19",
-    "statusNote": "At the American Tin Cannery. Hours, phone, menu, and current operation not independently verified.",
-    "hours": "",
+    "statusNote": "Suite 103 at American Tin Cannery, near Monterey Bay Aquarium. Map pin is approximate (shopping-center coordinates), not a surveyed entrance. Published hours and phone numbers differ across directories; confirm before visiting.",
+    "hours": "11 AM–5 PM daily (third-party listing; call to confirm)",
     "serviceClass": "Restaurant",
     "area": "Pacific Grove",
     "diningDetails": {
       "reviewedOn": "2026-11-19",
-      "status": "owner-photo-published",
-      "sources": [],
-      "seating": "Outdoor tables visible in owner-submitted photo; availability may vary.",
-      "entrance": "Storefront photographed by owner; verify current entrance details."
+      "status": "researched-partial",
+      "sources": [
+        "https://americantincannery.com/directory/restaurants-candy/",
+        "https://www.restaurantji.com/ca/pacific-grove/archies-american-diner-2/",
+        "https://order.online/store/archie%E2%80%99s-american-diner-pacific-grove-296501"
+      ],
+      "food": "American diner fare: burgers, sandwiches, garlic fries, fried artichoke hearts, fish and chips, and breakfast dishes. Menu offerings may change.",
+      "experience": "Casual diner at American Tin Cannery, a short walk from Monterey Bay Aquarium; outdoor patio reported with bay views.",
+      "seating": "Indoor seating and outdoor patio reported; current seating availability not verified.",
+      "accessibility": "Step-free restaurant access and accessible restroom not verified; call ahead.",
+      "dietary": "Vegetarian burger appears on an online ordering menu; vegan, gluten-free and allergy procedures not verified.",
+      "family": "Family-friendly diner; a children's menu is reported by a third-party directory.",
+      "reservation": "Reservations not verified; call ahead for larger groups.",
+      "entrance": "American Tin Cannery, 125 Ocean View Blvd, Suite 103. Exterior photographs provided by Glenn Takenaga.",
+      "hoursSource": "https://www.restaurantji.com/ca/pacific-grove/archies-american-diner-2/",
+      "hoursConflictNote": "Listings conflict: Restaurantji reports 11 AM–5 PM, while other directories show earlier opening and later closing. Call to verify.",
+      "menuSource": "https://order.online/store/archie%E2%80%99s-american-diner-pacific-grove-296501",
+      "menuReviewedOn": "2026-11-19",
+      "menuNote": "Third-party ordering menu; current offerings and prices may vary.",
+      "mapNote": "Approximate American Tin Cannery center location, not verified restaurant entrance."
     },
     "photoSecondary": "photos/IMG_5330.jpeg",
-    "photoSecondaryCaption": "Additional view of Archie's, Pacific Grove."
+    "photoSecondaryCaption": "Additional view of Archie's, Pacific Grove.",
+    "menuUrl": "https://order.online/store/archie%E2%80%99s-american-diner-pacific-grove-296501",
+    "hoursConfidence": "unverified",
+    "attributes": {
+      "price": {
+        "value": "$",
+        "status": "reported",
+        "source": "https://www.tripadvisor.com/Restaurant_Review-g32840-d545186-Reviews-Archie_s_American_Diner-Pacific_Grove_Monterey_County_California.html",
+        "reviewedOn": "2026-11-19",
+        "note": "Third-party indicative price category"
+      },
+      "family": {
+        "value": "yes",
+        "status": "reported",
+        "source": "https://americantincannery.com/directory/restaurants-candy/",
+        "reviewedOn": "2026-11-19",
+        "note": "Shopping center describes family dining"
+      },
+      "ocean": {
+        "value": "yes",
+        "status": "reported",
+        "source": "https://americantincannery.com/directory/restaurants-candy/",
+        "reviewedOn": "2026-11-19",
+        "note": "Patio bay view reported; not guaranteed"
+      }
+    }
   }
 ]
