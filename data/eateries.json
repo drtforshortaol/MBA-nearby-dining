@@ -12753,5 +12753,37 @@
       "hoursNote": "Lobby daily 6 AM–10 PM; official drive-thru listing shows 4 AM–4 AM (24 hours) daily. Holiday hours may differ.",
       "verificationNote": "Operator location page confirms address, phone and hours. Route distance and entrance unverified. Approximate coordinates from third-party mapped POI, not surveyed."
     }
+  },
+  {
+    "id": "MBA-DINE-0239",
+    "name": "Archie's",
+    "address": "125 Ocean View Blvd, Suite 103",
+    "city": "Pacific Grove",
+    "phone": "",
+    "phoneDigits": "",
+    "cuisine": "Restaurant — cuisine not yet verified",
+    "distanceMiles": null,
+    "distanceVerified": false,
+    "lat": null,
+    "lon": null,
+    "website": "",
+    "photo": "",
+    "photoCaption": "Original storefront and outdoor seating photographs provided by Glenn Takenaga; upload pending.",
+    "photoCaution": "Photos not yet uploaded.",
+    "photoLicense": "Photographed by Glenn Takenaga; publication authorized by photographer.",
+    "photoCreator": "Glenn Takenaga",
+    "photoSource": "Owner-submitted photographs, November 19, 2026",
+    "photoDate": "2026-11-19",
+    "statusNote": "At the American Tin Cannery. Hours, phone, menu, and current operation not independently verified.",
+    "hours": "",
+    "serviceClass": "Restaurant",
+    "area": "Pacific Grove",
+    "diningDetails": {
+      "reviewedOn": "2026-11-19",
+      "status": "partial-owner-photo",
+      "sources": [],
+      "seating": "Outdoor tables visible in owner-submitted photo; availability may vary.",
+      "entrance": "Storefront photographed by owner; verify current entrance details."
+    }
   }
 ]
