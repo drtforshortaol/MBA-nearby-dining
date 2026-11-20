@@ -12767,9 +12767,9 @@
     "lat": null,
     "lon": null,
     "website": "",
-    "photo": "",
-    "photoCaption": "Original storefront and outdoor seating photographs provided by Glenn Takenaga; upload pending.",
-    "photoCaution": "Photos not yet uploaded.",
+    "photo": "photos/IMG_5329.jpeg",
+    "photoCaption": "Original photograph of Archie's, Pacific Grove. Photo: Glenn Takenaga.",
+    "photoCaution": "Owner-submitted photographs; restaurant appearance may change.",
     "photoLicense": "Photographed by Glenn Takenaga; publication authorized by photographer.",
     "photoCreator": "Glenn Takenaga",
     "photoSource": "Owner-submitted photographs, November 19, 2026",
@@ -12780,10 +12780,12 @@
     "area": "Pacific Grove",
     "diningDetails": {
       "reviewedOn": "2026-11-19",
-      "status": "partial-owner-photo",
+      "status": "owner-photo-published",
       "sources": [],
       "seating": "Outdoor tables visible in owner-submitted photo; availability may vary.",
       "entrance": "Storefront photographed by owner; verify current entrance details."
-    }
+    },
+    "photoSecondary": "photos/IMG_5330.jpeg",
+    "photoSecondaryCaption": "Additional view of Archie's, Pacific Grove."
   }
 ]
